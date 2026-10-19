@@ -39,9 +39,9 @@ What happens on the journey from a first click or impression to the attribution 
      This attribution method is unique to Android devices. When a user clicks on a link and gets redirected to Google Play, Google Play gives it a unique Referrer ID. When the install takes place, we collect this ID from the device. Then we match it with Google Play records.
    * **Device ID matching**  
      We match the Device ID (IDFA for the iOS or GAID for the Android device) collected upon the click to the ID of the device that performs the install.
-   * [**Probabilistic modeling**](/appsflyer-marketers/docs/appsflyer-attribution-model#probabilistic-modeling)
+   * [**Probabilistic modeling**](/marketers/docs/appsflyer-attribution-model#probabilistic-modeling)
 
-   More about [attribution methods](/appsflyer-marketers/docs/appsflyer-attribution-model).
+   More about [attribution methods](/marketers/docs/appsflyer-attribution-model).
 
    We look for the referrer, device ID, and probabilistic modeling data points (in that order) in our click database. If we find a match, we attribute the install to the click. If not, we attribute the install to an organic download.
 6. Once the install is attributed, we send a postback with the conversion details to the ad network.
@@ -70,7 +70,7 @@ Link structure explanation:
 * Macro naming has no significance provided that your system replaces them with the actual and correct values. The parameters before the ‘=’ sign are placeholders used by AppsFlyer so we know which values you are sending us.
 * To integrate with AppsFlyer, send us the attribution link template by email with your macro names.
 
-Regard the parameters listed in the table that follows as the recommended minimum. We support a larger set of parameters. You should share with us as much information on the click as you collect. See the [list of attribution link parameters](/appsflyer-marketers/docs/about-link-structure-and-parameters#attribution-link-parameters).
+Regard the parameters listed in the table that follows as the recommended minimum. We support a larger set of parameters. You should share with us as much information on the click as you collect. See the [list of attribution link parameters](/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
 #### Recommended minimum attribution link parameters
 
@@ -81,8 +81,8 @@ Regard the parameters listed in the table that follows as the recommended minimu
 | `&c={campaign}` | The campaign name, as defined by the advertiser. |
 | `&af_siteid={publisher_id}` | Publisher or affiliate ID of the publisher or affiliate that drove the click. If IDFV is used to identify the event (IDFV can be used<br />for this purpose only in cross-promotion campaigns) use the app store<br />ID as the parameter value (without hashing). Failing to do so, will<br />cause the event not to be attributed. |
 | `&af_ad_type={search_text}` | Ad Type. You can use one of the following name conventions:  <br />search\_text  <br />banner  <br />interstitial  <br />video  <br />rewarded\_video  <br />playable  <br />sponsored\_content  <br />audio |
-| `&af_adset={adsetid}` | Adset Name - provided by the advertiser/publisher. Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/appsflyer-marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity) |
-| `&af_ad={ad_id}` | Ad Name ([see more](/appsflyer-marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)) - provided by the advertiser/publisher |
+| `&af_adset={adsetid}` | Adset Name - provided by the advertiser/publisher. Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity) |
+| `&af_ad={ad_id}` | Ad Name ([see more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)) - provided by the advertiser/publisher |
 | `&is_incentivized={true}` | Incentivized or non-incentivized campaigns (can be true/false) |
 | `&af_cost_value={cost_value}` | Conversion Cost Value - supports up to 4 digits after the decimal point.  <br />Make sure to use ONLY numerical digits (use the decimal point if needed), e.g., "56", "2.85" etc. |
 | `&af_cost_currency={currency}` | Cost Currency — currency code (e.g. USD, EUR). The default value is USD.  <br />[List of currency codes](https://en.wikipedia.org/wiki/ISO_4217). |

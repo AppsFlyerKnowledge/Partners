@@ -43,7 +43,7 @@ As an AppsFlyer integrated partner, your name and logo are presented on the Apps
 
 > 📘 **Note**
 >
-> <span id="3374412f-c633-465b-9ca9-657ee4be30f3"></span>Ad networks don’t have access to the Events Dashboard and can see in-app events on Overview Dashboard only after the advertiser enables the **Access aggregate in-app events data** [ad network permission](/appsflyer-marketers/docs/set-up-an-integrated-partner#permissions-tab). However, you can export in-app event-related data from the [In-app events postback](/docs/test-marketer-campaign-integration-with-the-ad-network#verifying-postback-data) report.
+> <span id="3374412f-c633-465b-9ca9-657ee4be30f3"></span>Ad networks don’t have access to the Events Dashboard and can see in-app events on Overview Dashboard only after the advertiser enables the **Access aggregate in-app events data** [ad network permission](/marketers/docs/set-up-an-integrated-partner#permissions-tab). However, you can export in-app event-related data from the [In-app events postback](/docs/test-marketer-campaign-integration-with-the-ad-network#verifying-postback-data) report.
 
 See [Ad Network Integration Guide](/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing).
 

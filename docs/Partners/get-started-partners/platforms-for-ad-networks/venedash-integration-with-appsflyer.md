@@ -49,7 +49,7 @@ x-zendesk:
    https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#ydrid#&af_siteid=#ydr_pid#&advertising_id=advertising_id&idfa=#iosidfa#">https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#ydrid#&af_siteid=#ydr_pid#&advertising_id=advertising_id&idfa=#iosidfa#
    ```
 
-   Learn more about [attribution link parameters](/appsflyer-marketers/docs/about-link-structure-and-parameters).
+   Learn more about [attribution link parameters](/marketers/docs/about-link-structure-and-parameters).
 4. In Venedash, create an offer and paste the AppsFlyer attribution link in the Destination URL field.
 
    ![venedash-destination_url-en_us.png](https://files.readme.io/2a284eab8d25f57f1bfa2981e2d86bf16bce16b64b61858fdb819d5ac14eac20-360016242798.png)

@@ -54,7 +54,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 {google_id}&idfa={ios_ifa}
 ```
 
-[AppsFlyer complete list of parameters](/appsflyer-marketers/docs/about-link-structure-and-parameters)
+[AppsFlyer complete list of parameters](/marketers/docs/about-link-structure-and-parameters)
 
 ## Global postbacks for installs and in-app events:
 
@@ -99,14 +99,14 @@ https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction
 
 | AppsFlyer Parameters | Hubscale Macros | Description |
 | --- | --- | --- |
-| pid | pub\_id | Media source name - for integrated partners  <br />and should not be changed. [More details](/appsflyer-marketers/docs/about-link-structure-and-parameters#partner-id-pid-parameter). |
+| pid | pub\_id | Media source name - for integrated partners  <br />and should not be changed. [More details](/marketers/docs/about-link-structure-and-parameters#partner-id-pid-parameter). |
 | c | campaign\_name | Campaign name - provided by the advertiser. |
 | clickid | transaction\_id | The Ad network unique click identifier |
 | af\_siteid | pub\_id | Ad Network publisher ID |
 | af\_sub\_siteid | sub\_pub\_id | Ad Sub-Network/Publisher ID |
 | af\_c\_id | campaign\_id | Campaign ID - provided by the advertiser |
-| af\_adset |  | Adset Name - provided by the advertiser. Adset  <br />is an intermediate level in the hierarchy between  <br />Campaign and Ad. [See more](/appsflyer-marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity) |
-| af\_ad | adv\_name | Ad Name ([see more](/appsflyer-marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)) |
+| af\_adset |  | Adset Name - provided by the advertiser. Adset  <br />is an intermediate level in the hierarchy between  <br />Campaign and Ad. [See more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity) |
+| af\_ad | adv\_name | Ad Name ([see more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)) |
 | af\_ad\_id | adv\_id | Ad ID |
 | af\_cost\_model | adv\_payout\_model | Cost model - CPI is currently the only supported  <br />model |
 | af\_cost\_currency | adv\_payout\_currency | Currency code (example: USD) |

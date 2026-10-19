@@ -37,7 +37,7 @@ Before you proceed, it’s essential to understand how AppsFlyer’s attribution
 3. AppsFlyer attribution link behind the ad is then populated with information collected during the click. We gather the information from the attribution link and store it in our database.
 4. The user is redirected to an app store.
 5. The user installs the app and opens it for the first time. The AppsFlyer SDK inside the app calls our servers with the information about the device that the app is installed on.
-6. We match this data to our click database using our [Attribution methods](/appsflyer-marketers/docs/appsflyer-attribution-model).
+6. We match this data to our click database using our [Attribution methods](/marketers/docs/appsflyer-attribution-model).
 7. If we find a match, we attribute the install to the click. If not, we attribute the install to an organic download.
 8. Once the install is attributed, we show it on marketer and agency dashboards and reports ([except Meta ads and X Ads](/docs/about-agency-accounts#self-reporting-ad-networks)).
 9. Then, we send a postback with the conversion details to the ad network, who can use this information for further optimization.
@@ -46,7 +46,7 @@ Before you proceed, it’s essential to understand how AppsFlyer’s attribution
 
 A marketer, who owns the app, integrates AppsFlyer SDK inside it in order to quantify their marketing effort.
 
-Some app owners choose to hire marketing agencies to run advertising campaigns on their behalf. To do so, the agency should have an AppsFlyer account, and marketers should give the agency [access to their apps](/appsflyer-marketers/docs/set-up-an-integrated-partner#agency-permissions).
+Some app owners choose to hire marketing agencies to run advertising campaigns on their behalf. To do so, the agency should have an AppsFlyer account, and marketers should give the agency [access to their apps](/marketers/docs/set-up-an-integrated-partner#agency-permissions).
 
 Agency, therefore, doesn’t technically own the apps but only promotes them on the marketing channels it works with, without the technical involvement, such an SDK integration. Depending on the set of permissions given by a marketer, an agency can have control over a range of functions.
 
@@ -84,7 +84,7 @@ Any agency individual or team requires permission from the app owner to:
 * make configuration changes
 * run campaigns
 
-Marketers [provide access to any agency](/appsflyer-marketers/docs/set-up-an-integrated-partner#agency-permissions) directly through the platform. Once your account is set up and you've received access to the apps, you can start running campaigns using AppsFlyer features.
+Marketers [provide access to any agency](/marketers/docs/set-up-an-integrated-partner#agency-permissions) directly through the platform. Once your account is set up and you've received access to the apps, you can start running campaigns using AppsFlyer features.
 
 ### What does it mean to get permission from a marketer
 
@@ -104,7 +104,7 @@ When you get permission from a marketer:
   > The agency gains control over the main toggle for ad network permissions and the individual permissions nested under it. Both the agency and the advertiser can change these settings, and the most recent change by either party determines the current state.
 
 
-Additional permissions include access to the Cohort report, the Protect360 dashboard, and aggregate organic data. See a [description of the different ad network permissions](/appsflyer-marketers/docs/set-up-an-integrated-partner#agency-permissions).
+Additional permissions include access to the Cohort report, the Protect360 dashboard, and aggregate organic data. See a [description of the different ad network permissions](/marketers/docs/set-up-an-integrated-partner#agency-permissions).
 
 ### App list
 
@@ -124,7 +124,7 @@ The apps page in your account lists up to 1000 apps. If the list of apps you hav
 
 ## Agency dashboard
 
-Click any app in the list of apps to access its [dashboard](/appsflyer-marketers/docs/getting-started-with-appsflyer-dashboards). When you start running campaigns, the aggregate data attributed to you is displayed here.
+Click any app in the list of apps to access its [dashboard](/marketers/docs/getting-started-with-appsflyer-dashboards). When you start running campaigns, the aggregate data attributed to you is displayed here.
 
 ![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
 
@@ -138,7 +138,7 @@ The Agency account dashboard includes default access to:
 
 ### Self-reporting networks (SRNs)
 
-SRNs, also knows as Self-attributing networks (SANs), are networks that don’t require AppsFlyer’s attribution link in order to report clicks and other data, and use direct integration with AppsFlyer instead. Among these networks are [Meta ads](/appsflyer-marketers/docs/meta-ads-faq#attributing-agencies-with-facebook), [X Ads](/appsflyer-marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#any-special-instructions-for-agencies), [Google Ads](/appsflyer-marketers/docs/google-ads-adwords-integration-setup-for-agencies), [Snapchat](/appsflyer-marketers/docs/snapchat-advanced-srn-integration-setup), DoubleClick, [Apple Ads Search](/appsflyer-marketers/docs/apple-ads-integration-setup), [Yahoo](/appsflyer-marketers/docs/yahoo-integration-setup), and [Yahoo! JAPAN](/appsflyer-marketers/docs/yahoo-japan-search-ads-campaign-configuration#agency-integration).
+SRNs, also knows as Self-attributing networks (SANs), are networks that don’t require AppsFlyer’s attribution link in order to report clicks and other data, and use direct integration with AppsFlyer instead. Among these networks are [Meta ads](/marketers/docs/meta-ads-faq#attributing-agencies-with-facebook), [X Ads](/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#any-special-instructions-for-agencies), [Google Ads](/marketers/docs/google-ads-adwords-integration-setup-for-agencies), [Snapchat](/marketers/docs/snapchat-advanced-srn-integration-setup), DoubleClick, [Apple Ads Search](/marketers/docs/apple-ads-integration-setup), [Yahoo](/marketers/docs/yahoo-integration-setup), and [Yahoo! JAPAN](/marketers/docs/yahoo-japan-search-ads-campaign-configuration#agency-integration).
 
 A majority of these networks require special setup for agencies. For example, since Meta ads and X Ads integration can only be configured by an app owner, the agency campaign names MUST begin with the agency's name to make sure that the installs are eventually correctly attributed to the agency.
 
@@ -191,7 +191,7 @@ For example, if your af\_prt is AgencyX, your campaign name may look like this:
 
 #### Access to SKAN Conversion Studio
 
-Agencies can [view and download](/appsflyer-marketers/docs/skan-conversion-studio#view-cv-mapping) a marketer's SKAN CV mapping configuration in [Conversion Studio](/appsflyer-marketers/docs/skan-conversion-studio#skan-conversion-studio-basics), but they can't configure or edit the settings.
+Agencies can [view and download](/marketers/docs/skan-conversion-studio#view-cv-mapping) a marketer's SKAN CV mapping configuration in [Conversion Studio](/marketers/docs/skan-conversion-studio#skan-conversion-studio-basics), but they can't configure or edit the settings.
 
 #### SKAdNetwork Dashboard
 
@@ -199,9 +199,9 @@ Agencies can [view and download](/appsflyer-marketers/docs/skan-conversion-studi
 
 **Further reading:**
 
-* [SKAdNetwork Quickstart guide](/appsflyer-marketers/docs/about-att-and-skan)
-* [SKAdNetwork Dashboard](/appsflyer-marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer)
-* [SKAdNetwork Solution](/appsflyer-marketers/docs/skadnetwork-skan-solution-guide)
+* [SKAdNetwork Quickstart guide](/marketers/docs/about-att-and-skan)
+* [SKAdNetwork Dashboard](/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer)
+* [SKAdNetwork Solution](/marketers/docs/skadnetwork-skan-solution-guide)
 
 ### Single Source of Truth (SSOT) for agencies
 
@@ -213,20 +213,20 @@ To include the SSOT flag in your overview dashboard, the marketer must turn on S
 
 **Further reading:**
 
-* [Single Source of Truth (SSOT) guide for iOS attribution](/appsflyer-marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution)
+* [Single Source of Truth (SSOT) guide for iOS attribution](/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution)
 
 ## What else you can do
 
 * Measure user retention
 * Use in-app events to optimize your campaigns
-* Run [retargeting](/appsflyer-marketers/docs/retargeting-attribution-guide) campaigns
-* Export your [data](/appsflyer-marketers/docs/manage-data-access-permissions)
-* [Register your test device](/appsflyer-marketers/docs/registering-test-devices)
+* Run [retargeting](/marketers/docs/retargeting-attribution-guide) campaigns
+* Export your [data](/marketers/docs/manage-data-access-permissions)
+* [Register your test device](/marketers/docs/registering-test-devices)
 * and more.
 
 You can find more information about advanced Agency account use [here](/docs/about-agency-accounts#agency-setting-up-campaigns).
 
-Stumbled upon an unfamiliar term? Find it in our [Glossary](/appsflyer-marketers/docs/appsflyer-knowledge-base-glossary).
+Stumbled upon an unfamiliar term? Find it in our [Glossary](/marketers/docs/appsflyer-knowledge-base-glossary).
 
 Got an urgent technical question? Search our Help Center: we probably have an answer. If we don't, contact our support team via the bottom right corner of your dashboard.
 

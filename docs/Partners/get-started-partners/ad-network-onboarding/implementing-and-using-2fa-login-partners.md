@@ -104,7 +104,7 @@ Note: If you are an account owner, you can reset your own 2FA in [the steps that
 
 | Name | Description |
 | --- | --- |
-| AppsFlyer apps | With 2FA enabled, both the AppsFlyer apps, **My Device ID by AppsFlyer** and **AppsFlyer**, cannot be used. To register test devices, use the method [here](/appsflyer-marketers/docs/registering-test-devices). |
+| AppsFlyer apps | With 2FA enabled, both the AppsFlyer apps, **My Device ID by AppsFlyer** and **AppsFlyer**, cannot be used. To register test devices, use the method [here](/marketers/docs/registering-test-devices). |
 
 </Accordion>
 

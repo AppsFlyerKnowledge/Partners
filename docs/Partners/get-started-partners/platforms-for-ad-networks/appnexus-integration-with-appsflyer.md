@@ -53,7 +53,7 @@ Below you can find the base attribution link with a detailed explanation per eac
 | clickid | $`{SSP_DATA}` | Request ID of each user session - **Required** |
 | af\_siteid | $`{PUBLISHER_ID}` | ID of the affiliate promoting the offer - **Optional** |
 
-For the complete AppsFlyer parameter list [click here](/appsflyer-marketers/docs/about-link-structure-and-parameters).
+For the complete AppsFlyer parameter list [click here](/marketers/docs/about-link-structure-and-parameters).
 
 For the complete AppNexus macro list [click here](https://wiki.appnexus.com/display/sdk/Welcome).
 

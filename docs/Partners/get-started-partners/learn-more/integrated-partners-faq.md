@@ -28,7 +28,7 @@ x-zendesk:
 
 An advertiser should invite you to be onboarded with us.
 
-Share [this invitation procedure](/appsflyer-marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer) with the advertiser. After the advertiser invites you, you will receive an email with a form to fill out.  
+Share [this invitation procedure](/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer) with the advertiser. After the advertiser invites you, you will receive an email with a form to fill out.  
 Once the form is filled out, we will let you know the next steps.
 
 Important: Use an email that has never been used before to create an account in AppsFlyer. Make sure the advertiser uses the same email in the invitation.
@@ -60,7 +60,7 @@ Follow [these instructions](/docs/integration-requests-for-partners#create-updat
 If you can't add an app to the **App search** screen, verify that:
 
 * The advertiser has added the app to their dashboard
-* The advertiser has activated the app integration with your network and given you [relevant permissions](/appsflyer-marketers/docs/set-up-an-integrated-partner#ad-network-permissions).
+* The advertiser has activated the app integration with your network and given you [relevant permissions](/marketers/docs/set-up-an-integrated-partner#ad-network-permissions).
 
 </Accordion>
 
@@ -143,7 +143,7 @@ The permissions are (depending on the advertiser account):
 * Retention reports
 * Protect360 dashboard
 
-For more information, visit the [Providing permissions to ad networks](/appsflyer-marketers/docs/set-up-an-integrated-partner#permissions-tab) guide.
+For more information, visit the [Providing permissions to ad networks](/marketers/docs/set-up-an-integrated-partner#permissions-tab) guide.
 
 </Accordion>
 
@@ -169,7 +169,7 @@ For more information, visit the [Providing permissions to ad networks](/appsflye
 
 <Accordion title="Why can’t I redirect users to a designated landing page?">
 
-The user journey prior to installing an advertised app can impact how users perceive the advertiser’s brand. For this reason, redirection to landing pages is restricted to domains that appear on the advertiser’s [domain redirect allowlist](/appsflyer-marketers/docs/set-up-your-domain-redirect-allowlist).
+The user journey prior to installing an advertised app can impact how users perceive the advertiser’s brand. For this reason, redirection to landing pages is restricted to domains that appear on the advertiser’s [domain redirect allowlist](/marketers/docs/set-up-your-domain-redirect-allowlist).
 
 The allowlist is managed by the advertiser. To use a specific landing page, share the page URL with your advertiser and ask them to add its domain to their allowlist.
 
@@ -193,7 +193,7 @@ Install and in-app data appears in reports within 15 minutes.
 
 | Reason | Solution |
 | --- | --- |
-| The advertiser didn't define any value for the dashboard parameters. | <ul><li>If you have access to the application setup,<ol><li>In the AppsFlyer Dashboard, go to **Active integrations**, and click on your logo.</li><li>Under the **Integration** tab, find the relevant parameter and check its value.</li><li>If it's not defined, contact the Advertiser and ask to fill in the value.</li></ol></li><li>If you don't have the application setup, ask the Advertiser to [enable Ad Network Permissions](/appsflyer-marketers/docs/set-up-an-integrated-partner#ad-network-permissions)</li></ul> |
+| The advertiser didn't define any value for the dashboard parameters. | <ul><li>If you have access to the application setup,<ol><li>In the AppsFlyer Dashboard, go to **Active integrations**, and click on your logo.</li><li>Under the **Integration** tab, find the relevant parameter and check its value.</li><li>If it's not defined, contact the Advertiser and ask to fill in the value.</li></ol></li><li>If you don't have the application setup, ask the Advertiser to [enable Ad Network Permissions](/marketers/docs/set-up-an-integrated-partner#ad-network-permissions)</li></ul> |
 
 </Accordion>
 
@@ -314,7 +314,7 @@ Ad networks get visibility to their setup done by advertisers, **but not when it
 
 <Accordion title="Click data is missing">
 
-If click data is missing from postbacks, make sure that the AppsFlyer link has all the data you want to return to you in the postbacks. See our [attribution link guide](/appsflyer-marketers/docs/about-link-structure-and-parameters) for more information.
+If click data is missing from postbacks, make sure that the AppsFlyer link has all the data you want to return to you in the postbacks. See our [attribution link guide](/marketers/docs/about-link-structure-and-parameters) for more information.
 
 If the advertiser configured the ad network to receive all postbacks, postbacks for events not attributed to the ad network don't contain click data.
 
@@ -379,14 +379,14 @@ For example, if your *af\_prt* is *greatagency*, your campaign name may look lik
 
 You can check blocked data only if the advertiser gives you access to Protect360 and Raw Data reports.
 
-1. Once the advertiser gives you the P360 access, you can download the blocked install/in-app events reports from the Export Data page of the dashboard. [More about report types](/appsflyer-marketers/docs/protect360-raw-data-reports#report-types).
+1. Once the advertiser gives you the P360 access, you can download the blocked install/in-app events reports from the Export Data page of the dashboard. [More about report types](/marketers/docs/protect360-raw-data-reports#report-types).
 2. In Raw Data reports you can:
    * check the blocking reasons/sub-reasons
    * filter down by Site to see which SiteIDs deliver high numbers of fraud results
 
 You can further investigate this with the publishers that deliver fraudulent traffic and make educated decisions about working with such publishers.
 
-Learn more about [fraud](/appsflyer-marketers/docs/protect360-anti-fraud-guide).
+Learn more about [fraud](/marketers/docs/protect360-anti-fraud-guide).
 
 </Accordion>
 
@@ -417,7 +417,7 @@ Each cluster is evaluated as a whole. If a cluster is identified as fraudulent w
 
 By default, all incoming installs are treated as live traffic. To prevent test installs from being evaluated by Protect360 anti-fraud algorithms, you must register your device as a test device before performing the test install.
 
-For instructions, see [Registering test devices](/appsflyer-marketers/docs/registering-test-devices).
+For instructions, see [Registering test devices](/marketers/docs/registering-test-devices).
 
 </Accordion>
 
@@ -427,7 +427,7 @@ For instructions, see [Registering test devices](/appsflyer-marketers/docs/regis
 
 Review the fraud sub-reason associated with the rejection to better understand why the event was blocked. This information is also available in Protect360 reports and on the Protect360 dashboard, subject to the advertiser’s access permissions.
 
-For more details, see [Protect360 blocked reasons](/appsflyer-marketers/docs/protect360-raw-data-reports#blocked-reasons).
+For more details, see [Protect360 blocked reasons](/marketers/docs/protect360-raw-data-reports#blocked-reasons).
 
 </Accordion>
 

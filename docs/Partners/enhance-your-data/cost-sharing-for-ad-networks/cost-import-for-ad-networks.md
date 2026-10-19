@@ -51,37 +51,37 @@ x-zendesk:
 
 **To submit Cost Import files by upload:**
 
-1. [For each app that you work with you need to do this once] [Ask the advertiser to grant you Cost Import permission](/appsflyer-marketers/docs/import-cost-data#cost-import-permissions-for-ad-networks).
-2. [Prepare the CSV file using this format and schema](/appsflyer-marketers/docs/import-cost-data#prepare-csv-file-with-cost-data).
+1. [For each app that you work with you need to do this once] [Ask the advertiser to grant you Cost Import permission](/marketers/docs/import-cost-data#cost-import-permissions-for-ad-networks).
+2. [Prepare the CSV file using this format and schema](/marketers/docs/import-cost-data#prepare-csv-file-with-cost-data).
 3. Click here to [log in to your AppsFlyer ad network account.](https://hq1.appsflyer.com/auth/login)
-4. [Upload and ingest the file](/appsflyer-marketers/docs/import-cost-data#upload-file).
+4. [Upload and ingest the file](/marketers/docs/import-cost-data#upload-file).
 5. In the AppsFlyer dashboard, monitor the ingestion:
 
-   * [Status](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard)
-   * [Matched rows](/appsflyer-marketers/docs/import-cost-data#matched-rows)
-   * [Cost Import actions](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard)
+   * [Status](/marketers/docs/import-cost-data#cost-import-dashboard)
+   * [Matched rows](/marketers/docs/import-cost-data#matched-rows)
+   * [Cost Import actions](/marketers/docs/import-cost-data#cost-import-dashboard)
 6. Additional procedures:
-   * [Overwrite previous ingestion](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard)
-   * [Revert (cancel)](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard)
+   * [Overwrite previous ingestion](/marketers/docs/import-cost-data#cost-import-dashboard)
+   * [Revert (cancel)](/marketers/docs/import-cost-data#cost-import-dashboard)
 
 #### Submission by email
 
 **To submit Cost Imports files by email:**
 
-1. [For each app that you work with you need to do this once] [Ask the advertiser to grant you Cost Import permission](/appsflyer-marketers/docs/import-cost-data#cost-import-permissions-for-ad-networks).
-2. [Prepare the CSV file using this format and schema](/appsflyer-marketers/docs/import-cost-data#prepare-csv-file-with-cost-data).
+1. [For each app that you work with you need to do this once] [Ask the advertiser to grant you Cost Import permission](/marketers/docs/import-cost-data#cost-import-permissions-for-ad-networks).
+2. [Prepare the CSV file using this format and schema](/marketers/docs/import-cost-data#prepare-csv-file-with-cost-data).
 3. If you don't have an Cost Import token (you'll need it when you email the file):
    * Click here to [log in to your AppsFlyer ad network account](https://hq1.appsflyer.com/auth/login).
-   * [Get an Ad Spend token.](/appsflyer-marketers/docs/import-cost-data#token-for-email-import) Note: The same token is used for all advertisers.
-4. Submit file by [Email](/appsflyer-marketers/docs/import-cost-data#email-file)
-5. AppsFlyer emails a status report; it notes if the ingest was successful or if issues were found. **Note**: If the status mail was not received see [the Cost import dashboard](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard).
+   * [Get an Ad Spend token.](/marketers/docs/import-cost-data#token-for-email-import) Note: The same token is used for all advertisers.
+4. Submit file by [Email](/marketers/docs/import-cost-data#email-file)
+5. AppsFlyer emails a status report; it notes if the ingest was successful or if issues were found. **Note**: If the status mail was not received see [the Cost import dashboard](/marketers/docs/import-cost-data#cost-import-dashboard).
 6. In the AppsFlyer dashboard monitor the ingestion:
 
-   * [Status](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard)
-   * [Matched rows](/appsflyer-marketers/docs/import-cost-data#matched-rows)
-   * [Cost Import actions](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard)
+   * [Status](/marketers/docs/import-cost-data#cost-import-dashboard)
+   * [Matched rows](/marketers/docs/import-cost-data#matched-rows)
+   * [Cost Import actions](/marketers/docs/import-cost-data#cost-import-dashboard)
 7. Additional procedures:
-   * [Overwrite previous ingestion](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard)
-   * [Revert (cancel)](/appsflyer-marketers/docs/import-cost-data#cost-import-dashboard)
+   * [Overwrite previous ingestion](/marketers/docs/import-cost-data#cost-import-dashboard)
+   * [Revert (cancel)](/marketers/docs/import-cost-data#cost-import-dashboard)
 
 <div data-zendesk-anchors="ad-spend-ingestion-for-ad-networks=cost-import-for-ad-networks h_01HX94WSX07YEG40X66TMRFJGA=cost-import-for-ad-networks h_01HX94WSX0HR2KTGRT7MQ481Y6=overview h_01HX94WSX0G429FTHKYCG07BB9=submitting-ad-spend-files-for-ad-networks h_01HX94WSX0ENTJEDMXWRHDCP0D=submission-by-file-upload h_01HX94WSX0HVTMFQQ0NMW0VSKP=submission-by-email" />

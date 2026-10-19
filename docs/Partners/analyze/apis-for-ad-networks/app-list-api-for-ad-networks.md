@@ -30,7 +30,7 @@ The following sections include information necessary for using the API.
 
 <Accordion title="Get app list basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/mng/apps</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows: <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a></li></ul></td></tr><tr><td rowspan="3"> Response</td><td>Results</td><td>Return in JSON</td></tr><tr><td>Request limit</td><td><ul><li>20 requests/minute</li><li>100 requests/day</li></ul></td></tr><tr><td>Record limit</td><td>1,000 records/request. If more than 1,000 records are to be returned, use follow-on pagination requests, described in this article.</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/mng/apps</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows: <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a></li></ul></td></tr><tr><td rowspan="3"> Response</td><td>Results</td><td>Return in JSON</td></tr><tr><td>Request limit</td><td><ul><li>20 requests/minute</li><li>100 requests/day</li></ul></td></tr><tr><td>Record limit</td><td>1,000 records/request. If more than 1,000 records are to be returned, use follow-on pagination requests, described in this article.</td></tr></tbody></table>
 
 </Accordion>
 
@@ -183,7 +183,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/mng/apps?capabiliti
 | 200 | OK | **Symptom**: No data returns<br /><br />**Action**: Make sure the authentication token is in the bearer header. |
 | 400 | Bad request | <ul><li>See the message contained in the JSON</li><li>Empty JSON: illegal capability specified</li></ul> |
 | 401 | Unauthorized | **Message**: Authorization token is malformed<br /><br />Make sure you have the correct token; token must have 700+ characters. |
-| 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer [IP addresses are allowlisted](/appsflyer-marketers/docs/appsflyer-server-ip-address-ranges-allowlisting)</li><li>Make sure you use the most recently-issued token.</li><li>No data found: The permission/integration (capabilities) type requested is legal, but no apps with permission were found.</li></ul> |
+| 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer [IP addresses are allowlisted](/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting)</li><li>Make sure you use the most recently-issued token.</li><li>No data found: The permission/integration (capabilities) type requested is legal, but no apps with permission were found.</li></ul> |
 | 429 | Too many requests | Exceeded rate limitation |
 
 </Accordion>

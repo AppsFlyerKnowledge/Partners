@@ -65,7 +65,7 @@ Add details about the services you provide. We recommend adding as much informat
 
 ### Overview
 
-* **Type of services you offer:** Select from the list up to 3 types of [supported capabilities](/appsflyer-marketers/docs/partner-integrations#supported-capabilities).
+* **Type of services you offer:** Select from the list up to 3 types of [supported capabilities](/marketers/docs/partner-integrations#supported-capabilities).
 * **Search tags:** Add up to 5 keywords or phrases for advertisers to find you when searching by feature. Press Enter after each keyword or phrase.
 * **Offering highlights:** List the highlights of your offering as bullet points.
 * **Offering description:** Provide an extensive description of your offering.
@@ -103,7 +103,7 @@ Add any additional marketing information about the offer:
 
 ## Contacts
 
-Select either of the following ways advertisers can [contact you](/appsflyer-marketers/docs/partner-integrations#contact-details) via the Partner Marketplace:
+Select either of the following ways advertisers can [contact you](/marketers/docs/partner-integrations#contact-details) via the Partner Marketplace:
 
 * **Sales contact:** Enter the contact details (email required) for the introductory email AppsFlyer sends on behalf of the advertiser. This email is sent when the advertiser clicks **Introduce me** on your marketplace details page.   
   **Note:** When no contact details are provided, the **Introduce me** button in the marketplace is grayed out.

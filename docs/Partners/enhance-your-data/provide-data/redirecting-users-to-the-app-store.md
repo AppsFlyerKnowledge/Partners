@@ -28,7 +28,7 @@ AppsFlyer receives engagement data (clicks and impressions) for attribution in a
 * The user **clicks** the ad and gets [redirected to AppsFlyer](#users-redirected-via-appsflyer), and then to the app store.
 * The user **clicks or views** the ad and is [directly sent to the app store](#users-sent-directly-by-the-ad-network), while the **attribution link is sent to AppsFlyer from the server**.
 
-In both cases, the regular [attribution link structure and parameters](/appsflyer-marketers/docs/about-link-structure-and-parameters) are used.
+In both cases, the regular [attribution link structure and parameters](/marketers/docs/about-link-structure-and-parameters) are used.
 
 > 📘 **Note**
 >

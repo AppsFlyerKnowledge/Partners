@@ -59,7 +59,7 @@ The following table lists the reject reason, reject reason value, and an explana
 
 | Reject reason | Reject reason value | Explanation |
 | --- | --- | --- |
-| Inherits from install | Inherits from install | Initial install identified as fake based on [install](/appsflyer-marketers/docs/protect360-raw-data-reports#blocked-reasons) or [denylisted](/appsflyer-marketers/docs/protect360-raw-data-reports#blocked-reasons) level reason |
+| Inherits from install | Inherits from install | Initial install identified as fake based on [install](/marketers/docs/protect360-raw-data-reports#blocked-reasons) or [denylisted](/marketers/docs/protect360-raw-data-reports#blocked-reasons) level reason |
 | inapps\_bots | fake\_device\_parameters | AppsFlyer algorithm detects fraud |
 | validation\_inapps | invalid\_event\_name | Based on requested or manually defined validation rule |
 | validation\_inapps | invalid\_event\_value | Based on requested or manually defined validation rule |

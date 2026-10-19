@@ -21,7 +21,7 @@ x-zendesk:
 ---
 ## SKAN CV schema API for ad networks
 
-With SKAdNetwork (SKAN) attribution, advertisers grade user quality by setting conversion values (CV) based on post-install user activity during specific time periods (windows). [Learn more about SKAN](/appsflyer-marketers/docs/skadnetwork-skan-solution-guide)
+With SKAdNetwork (SKAN) attribution, advertisers grade user quality by setting conversion values (CV) based on post-install user activity during specific time periods (windows). [Learn more about SKAN](/marketers/docs/skadnetwork-skan-solution-guide)
 
 iOS reports the CV via postbacks sent to the ad network placing the ad. Starting iOS 15 advertisers can also instruct iOS to send the postbacks directly to AppsFlyer.
 

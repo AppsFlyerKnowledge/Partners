@@ -74,5 +74,5 @@ To add more parameters, and improve your integration and visibility in the AppsF
 
 1. Check which parameters your integration is missing.
    * [Read about attribution link templates](/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing)
-   * [Check the full list of parameters available for use](/appsflyer-marketers/docs/about-link-structure-and-parameters#attribution-link-parameters)
+   * [Check the full list of parameters available for use](/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters)
 2. Contact your PDM to update the link template or get more information.

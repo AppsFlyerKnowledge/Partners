@@ -42,7 +42,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 | af\_siteid | `{pid}` | ID of the affiliate promoting the offer |
 | af\_c\_id | `{offer_id}` | ID of the offer |
 
-For a complete AppsFlyer parameter list [click here](/appsflyer-marketers/docs/about-link-structure-and-parameters).
+For a complete AppsFlyer parameter list [click here](/marketers/docs/about-link-structure-and-parameters).
 
 ## Complete attribution link template
 

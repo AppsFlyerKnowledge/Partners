@@ -34,7 +34,7 @@ The following activities need to be completed to access the Ad Revenue report in
 
 * Ad networks have to [onboard to Data Locker for Partners](/docs/data-locker-for-partners#set-up-data-locker).
 * Ad networks have to [configure the report output settings](#configure-the-report-output-settings) and [enable the Ad revenue report](#enable-the-ad-revenue-report).
-* Advertisers have to permit ad networks to view the report. [See advertiser instructions](/appsflyer-marketers/docs/share-ad-revenue-data-with-partners#ua-signals-for-ad-networks)
+* Advertisers have to permit ad networks to view the report. [See advertiser instructions](/marketers/docs/share-ad-revenue-data-with-partners#ua-signals-for-ad-networks)
 
 <div id="configure-the-report-output-settings" />
 
@@ -59,7 +59,7 @@ To configure the report output setting, follow the steps below:
 1. In the **Data Locker content** section select the **Ad revenue [daily]** report type.
 2. Click **Save connection**.
 3. Make sure that the advertiser permitted the Ad network to view the report.
-4. For instruction, see [Permit ad networks to get ad revenue data.](/appsflyer-marketers/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data)
+4. For instruction, see [Permit ad networks to get ad revenue data.](/marketers/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data)
 
 </Accordion>
 
@@ -72,7 +72,7 @@ To configure the report output setting, follow the steps below:
 * Format: Data arrives in CSV format to the UA partner's S3 bucket.
 * Level: Contains device-level dimensions and metrics.
 * Data enrichment: Includes ad revenue data from mediation partners, and adds attribution data relevant to the UA ad network (that is cleaned of all dimensions irrelevant to the UA ad network).
-* Data freshness: [Daily, meaning data for Day 0 arrives on Day 1](/appsflyer-marketers/docs/about-data-freshness-and-timezone-support#ad-revenue). Data is written daily at 17:00 [UTC time](/appsflyer-marketers/docs/about-data-freshness-and-timezone-support#daily-processing) to the h=23 of your Data Locker bucket.
+* Data freshness: [Daily, meaning data for Day 0 arrives on Day 1](/marketers/docs/about-data-freshness-and-timezone-support#ad-revenue). Data is written daily at 17:00 [UTC time](/marketers/docs/about-data-freshness-and-timezone-support#daily-processing) to the h=23 of your Data Locker bucket.
 * Apps included: A single report contains the data of all apps for which advertisers have granted permission.
 * The reports include data about all conversion types: Installs, re-attributions, re-engagements, and reinstalls.
 * Currency: In USD. Event revenue is calculated to USD on the day the event occurred.

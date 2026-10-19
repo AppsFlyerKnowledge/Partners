@@ -53,7 +53,7 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 >
 > See complete parameter lists for:
 >
-> * [AppsFlyer](/appsflyer-marketers/docs/about-link-structure-and-parameters)
+> * [AppsFlyer](/marketers/docs/about-link-structure-and-parameters)
 > * [Trackier](https://trackier.com/support/kb/tracking-macros/)
 
 | AppsFlyer parameter | Trackier macro | Description |

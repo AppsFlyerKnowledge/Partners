@@ -29,7 +29,7 @@ Testing consists of the following elements:
 
 ### Testing scope
 
-Advertisers control the data shared with ad networks via the Advanced Privacy setting. This setting, in conjunction with the app user [ATT](/appsflyer-marketers/docs/att-implications-ios-14-and-deprecation-of-lat) setting, impacts the postback type and the data shared with ad networks, as described in the [Advanced Privacy postback guide](/docs/advanced-privacy-guide-postback-macros-for-ad-networks). The following table lists test scenarios according to the setting combinations available.
+Advertisers control the data shared with ad networks via the Advanced Privacy setting. This setting, in conjunction with the app user [ATT](/marketers/docs/att-implications-ios-14-and-deprecation-of-lat) setting, impacts the postback type and the data shared with ad networks, as described in the [Advanced Privacy postback guide](/docs/advanced-privacy-guide-postback-macros-for-ad-networks). The following table lists test scenarios according to the setting combinations available.
 
 For each scenario, you can test installs and in-app events. In regards to in-app events, you can use [in-app event mapping](/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events) to map advertiser events to your events.
 

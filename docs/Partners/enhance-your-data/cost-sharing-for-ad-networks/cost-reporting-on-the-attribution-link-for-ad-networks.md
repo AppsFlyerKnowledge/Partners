@@ -172,8 +172,8 @@ print(urllib.quote_plus(base64.b64encode(enc)))
 
 ## Which networks support cost reporting?
 
-To see a full list of the networks that support cost reporting on the attribution link, click [here](/appsflyer-marketers/docs/view-aggregated-cost-data-for-attribution-links#ad-networks-providing-cost-by-click-data).
+To see a full list of the networks that support cost reporting on the attribution link, click [here](/marketers/docs/view-aggregated-cost-data-for-attribution-links#ad-networks-providing-cost-by-click-data).
 
-To see a full list of the networks that support cost reporting via API, click [here](/appsflyer-marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).
+To see a full list of the networks that support cost reporting via API, click [here](/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).
 
 <div data-zendesk-anchors="h_01J292SNHC1B88FBJJW1PY5YT2=how-to-share-cost h_01J292SNHCFG8QP8KK058EVEVQ=aes-encryption-process h_01J292SNHCVFR5GW4ECBYM63S6=which-networks-support-cost-reporting" />

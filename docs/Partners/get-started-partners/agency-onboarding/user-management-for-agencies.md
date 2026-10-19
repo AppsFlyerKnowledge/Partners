@@ -74,7 +74,7 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
   * The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [**User management**](/docs/user-management-for-agencies#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
     * If you do need to change the account owner, follow the [steps listed below](/docs/user-management-for-agencies#changing-the-account-owner).
   * The account owner is initially responsible for creating additional users (until additional users with user management capabilities are created).
-* Only a user with an admin role can [manage API and S2S tokens](/appsflyer-marketers/docs/managing-appsflyer-tokens).
+* Only a user with an admin role can [manage API and S2S tokens](/marketers/docs/managing-appsflyer-tokens).
 * Any Admin other than the account owner **can** be changed to a different role or deleted from the AppsFlyer account through the User management page.
 
 ## User management page
@@ -248,7 +248,7 @@ Because all Admins have the same permissions as the account owner, changing the 
 >
 > A few things to consider before you begin:
 >
-> * If you're still using Pull, Master, or GDPR APIs with token v1, changing the account owner automatically resets these services. To avoid data loss, [transition to start using these APIs with token v2](/appsflyer-marketers/docs/bulletin-api-token-changes) **before changing the account owner**.
+> * If you're still using Pull, Master, or GDPR APIs with token v1, changing the account owner automatically resets these services. To avoid data loss, [transition to start using these APIs with token v2](/marketers/docs/bulletin-api-token-changes) **before changing the account owner**.
 > * Changing the account owner must be completed manually according to these steps. It cannot be done from the **User management** page.
 
 #### #1–Send your request via the chat widget
@@ -262,8 +262,8 @@ To begin the process of changing the account owner, open the chat widget [using 
 
 Once the change has been processed, you will receive an email notification from AppsFlyer.
 
-* If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/appsflyer-marketers/docs/user-management#creating-users) for them and assign them a new role.
-* APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](/appsflyer-marketers/docs/managing-appsflyer-tokens).
+* If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/marketers/docs/user-management#creating-users) for them and assign them a new role.
+* APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](/marketers/docs/managing-appsflyer-tokens).
 
 </Accordion>
 
@@ -302,7 +302,7 @@ If a new user did not receive their [account activation invitation](/docs/user-m
 
 <Accordion title="Resetting two-factor authentication (2FA) of a user">
 
-For accounts using a 2FA, there may be occasions on which you need to reset a user’s 2FA. See [here](/appsflyer-marketers/docs/implementing-and-using-2fa-login#reset) how to do this.
+For accounts using a 2FA, there may be occasions on which you need to reset a user’s 2FA. See [here](/marketers/docs/implementing-and-using-2fa-login#reset) how to do this.
 
 </Accordion>
 

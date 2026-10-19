@@ -43,9 +43,9 @@ See below AppsFlyers base attribution link with a detailed explanation per macro
 | **clickid** | **`{tid}`** | **Request ID of each user session** - **Required** |
 | af\_siteid | `{publisher_id}` | ID of the Affiliate promoting the offer - Optional |
 
-For a complete list of AppsFlyer parameters, [click here](/appsflyer-marketers/docs/about-link-structure-and-parameters#attribution-link-parameters).
+For a complete list of AppsFlyer parameters, [click here](/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
-FOCUUS allows an unlimited number of macros, and you can name them as you wish, [click](/appsflyer-marketers/docs/about-link-structure-and-parameters#attribution-link-parameters) [here](http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros "Link: http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros").
+FOCUUS allows an unlimited number of macros, and you can name them as you wish, [click](/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters) [here](http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros "Link: http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros").
 
 ### Complete attribution link template
 

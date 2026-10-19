@@ -28,7 +28,7 @@ As of July 31, 2024, only traffic from agencies authorized by the ad networks wi
 
 > 📘 **Note**
 >
-> * This doesn't apply to agencies working with [SRNs](/appsflyer-marketers/docs/self-reporting-networks-srns)
+> * This doesn't apply to agencies working with [SRNs](/marketers/docs/self-reporting-networks-srns)
 > * Only admins have access to this page
 > * The list of authorized agencies can include up to 200 agencies
 

@@ -57,7 +57,7 @@ We recommend reading: [What is click flooding?](https://www.appsflyer.com/glossa
 
 AppsFlyer’s anti-fraud detection applies different methodologies across various protection layers, such as single installs and install clusters. Clusters are being reviewed in various aggregations: by publisher, media source, app, and so on. The fraudulent activity is examined using various statistical algorithms and machine learning algorithms that consider each cluster as a whole. Thus, if a cluster is found fraudulent with high statistical significance, all installs in that cluster are considered fraudulent. It's a well-known fraudster tactic to mix some legitimate installs into high volumes of fraudulent activity in the hope that the fraud will be “diluted” enough to avoid triggering blocking mechanisms.
 
-By default, all incoming installs are considered as LIVE traffic - hence to ensure your test install isn't categorized under the Protect360 algorithms, you would need to follow the steps mentioned in [this article](/appsflyer-marketers/docs/registering-test-devices) to register your device as a test device before performing a test.
+By default, all incoming installs are considered as LIVE traffic - hence to ensure your test install isn't categorized under the Protect360 algorithms, you would need to follow the steps mentioned in [this article](/marketers/docs/registering-test-devices) to register your device as a test device before performing a test.
 
 </Accordion>
 
@@ -67,7 +67,7 @@ By default, all incoming installs are considered as LIVE traffic - hence to ensu
 
 Please review the "fraud sub reason" associated with the rejection for better clarity. This data is also available in Protect360 reports and on the Protect360 dashboard, subject to access granted by the respective advertiser.
 
-We recommend reading about [Protect360 blocked reasons](/appsflyer-marketers/docs/protect360-raw-data-reports#blocked-reasons).
+We recommend reading about [Protect360 blocked reasons](/marketers/docs/protect360-raw-data-reports#blocked-reasons).
 
 </Accordion>
 
@@ -80,8 +80,8 @@ We recommend reading about [Protect360 blocked reasons](/appsflyer-marketers/doc
 You can view the results of our detection efforts using the Protect360 dashboard and raw data reports, subject to access granted by the respective advertiser.
 
 We recommend taking a look at these articles:  
-[Protect360 Dashboard](/appsflyer-marketers/docs/protect360-dashboard)  
-[Protect360 Raw Data](/appsflyer-marketers/docs/protect360-raw-data-reports#getting-raw-data-reports)
+[Protect360 Dashboard](/marketers/docs/protect360-dashboard)  
+[Protect360 Raw Data](/marketers/docs/protect360-raw-data-reports#getting-raw-data-reports)
 
 </Accordion>
 
@@ -105,7 +105,7 @@ Compared to real-time detection, post-attribution detection relies more on data 
 
 Considering the above, certain detection methods (timestamp\_anomalies, behavioral\_anomalies, etc.) are more likely to be detected in the post-attribution stage rather than in real time, since the data is inconclusive on the level of an individual install but gains significance when examined for its distribution in statistical analysis.
 
-Learn more about [post-attribution detection](/appsflyer-marketers/docs/protect360-anti-fraud-guide#postattribution-detection).
+Learn more about [post-attribution detection](/marketers/docs/protect360-anti-fraud-guide#postattribution-detection).
 
 </Accordion>
 

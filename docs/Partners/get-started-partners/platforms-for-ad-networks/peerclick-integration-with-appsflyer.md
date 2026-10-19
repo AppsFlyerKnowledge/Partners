@@ -47,7 +47,7 @@ Below you can find the base attribution link with a detailed explanation per eac
 
 > 📘 **Note**
 >
-> * For the complete AppsFlyer parameter list, [click here](/appsflyer-marketers/docs/about-link-structure-and-parameters)
+> * For the complete AppsFlyer parameter list, [click here](/marketers/docs/about-link-structure-and-parameters)
 > * For the complete PeerClick list, [click here](https://help-center.peerclick.com/en/)
 
 ### Complete attribution link template

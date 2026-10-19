@@ -32,10 +32,10 @@ To get reports you, the API partner must:
 
 The following reports are available to API partners: (daily)
 
-* [Cohort unified](/appsflyer-marketers/docs/cohort-analytics-via-data-locker) (daily)
-* [Cohort user acquisition](/appsflyer-marketers/docs/cohort-analytics-via-data-locker) (daily)
-* [Cohort retargeting](/appsflyer-marketers/docs/cohort-analytics-via-data-locker) (daily)
-* [Advanced aggregated (versioned) reports](/appsflyer-marketers/docs/advanced-aggregated-reports-in-data-locker) are also available, with better data freshness.
+* [Cohort unified](/marketers/docs/cohort-analytics-via-data-locker) (daily)
+* [Cohort user acquisition](/marketers/docs/cohort-analytics-via-data-locker) (daily)
+* [Cohort retargeting](/marketers/docs/cohort-analytics-via-data-locker) (daily)
+* [Advanced aggregated (versioned) reports](/marketers/docs/advanced-aggregated-reports-in-data-locker) are also available, with better data freshness.
 
 Reports are streamed to the h=23 folder.
 

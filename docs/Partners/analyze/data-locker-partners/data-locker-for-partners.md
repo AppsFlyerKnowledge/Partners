@@ -33,7 +33,7 @@ Data Locker for partners delivers app data to cloud storage. Advertisers set per
 
 | Feature | Description |
 | --- | --- |
-| Storage options (cloud) | Storage (bucket) owned by you on:<ul><li>AWS</li><li>GCS</li><li>Yandex</li><li>BigQuery</li></ul>[About storage options](/appsflyer-marketers/docs/data-locker-for-marketers#storage-options) |
+| Storage options (cloud) | Storage (bucket) owned by you on:<ul><li>AWS</li><li>GCS</li><li>Yandex</li><li>BigQuery</li></ul>[About storage options](/marketers/docs/data-locker-for-marketers#storage-options) |
 | Multi app support | Supports data of apps that are integrated with you. The advertiser must give permission per report for you to get the data. |
 | Data format options | <ul><li>For bucket cloud storage:<ul><li>CSV</li><li>Parquet</li><li>Adobe</li></ul></li><li>Data warehouse</li></ul> |
 | Data freshness | Freshness depends per report type:<ul><li>**Hourly:** Data generated continuously</li><li>**Daily:** Some reports are prepared on a daily basis and are ready on the following day</li></ul> |
@@ -97,7 +97,7 @@ Data of a given report is contained in the hour (h) folders associated with that
 
 Data files depend on segregation type.
 
-<table><thead><tr><th>Content</th><th colspan="2">Details</th></tr></thead><tbody><tr><td>Completion flag</td><td colspan="2"><p>The last file (completion) flag is set when all the data for a given h folder has been written. </p><ul><li><p>Don't read data in a folder before verifying that the _SUCCESS flag exists.</p></li><li><p>The _SUCCESS flag is set even in cases where there is no data to write to a given folder and the folder is empty. </p></li><li>Note! In the segregation by app option, the flag is set in the h folder and not the individual app folders. See the figures in the previous section. </li></ul></td></tr><tr><td>File types</td><td colspan="2"><ul><li>Data is provided in Snappy or GZIP compressed files, or uncompressed files, having Parquet or CSV format.</li><li>After unzipping, the data files are in Parquet or CSV format according to your settings.</li></ul></td></tr><tr><td>Column sequence (CSV files) </td><td colspan="2"><p>In the case of CSV files, the sequence of fields in reports is always the same. When we add new fields these are added to the right of the existing fields. </p><p>In this regard: </p><ul><li>The column structure of user journey reports is identical. This means you can have similar data loading procedures for different report types. You select the fields contained in the reports. The field meaning is detailed in the <a href="./raw-data-field-dictionary">raw data dictionary</a>. </li><li>Reports having an FF notation in the report availability section don't adhere to the common column structure. </li></ul></td></tr><tr><td>Field population considerations</td><td colspan="2"><p><strong>Blank or empty fields:</strong> Some fields are populated with <em>null </em>or are empty. This means that in the context of a given report there is no data to report. Typically <em>null </em>means this field is not populated in the context of a given report and app type. Blank "" means the field is relevant in its context but no data was found to populate it with. </p><p>In the case of the restricted media source, the content of restricted fields is set to null. </p><p>Overall regard null and blank as one and the same thing; there is no data available. </p><p><strong>Time zone and currency</strong></p><p>App-specific time zone and currency settings have no effect on data written to Data Locker. The following apply: </p><ul><li><strong>Time zone</strong>: Date and hour data are in UTC.</li><li><strong>Currency</strong>: The field event_revenue_usd is in USD.</li></ul><p><strong>Values with commas</strong>: These commas are contained between double quotes `"`, for example, <code>`"iPhone6,1"`</code>.</p></td></tr></tbody></table>
+<table><thead><tr><th>Content</th><th colspan="2">Details</th></tr></thead><tbody><tr><td>Completion flag</td><td colspan="2"><p>The last file (completion) flag is set when all the data for a given h folder has been written. </p><ul><li><p>Don't read data in a folder before verifying that the _SUCCESS flag exists.</p></li><li><p>The _SUCCESS flag is set even in cases where there is no data to write to a given folder and the folder is empty. </p></li><li>Note! In the segregation by app option, the flag is set in the h folder and not the individual app folders. See the figures in the previous section. </li></ul></td></tr><tr><td>File types</td><td colspan="2"><ul><li>Data is provided in Snappy or GZIP compressed files, or uncompressed files, having Parquet or CSV format.</li><li>After unzipping, the data files are in Parquet or CSV format according to your settings.</li></ul></td></tr><tr><td>Column sequence (CSV files) </td><td colspan="2"><p>In the case of CSV files, the sequence of fields in reports is always the same. When we add new fields these are added to the right of the existing fields. </p><p>In this regard: </p><ul><li>The column structure of user journey reports is identical. This means you can have similar data loading procedures for different report types. You select the fields contained in the reports. The field meaning is detailed in the <a href="/marketers/docs/raw-data-field-dictionary">raw data dictionary</a>. </li><li>Reports having an FF notation in the report availability section don't adhere to the common column structure. </li></ul></td></tr><tr><td>Field population considerations</td><td colspan="2"><p><strong>Blank or empty fields:</strong> Some fields are populated with <em>null </em>or are empty. This means that in the context of a given report there is no data to report. Typically <em>null </em>means this field is not populated in the context of a given report and app type. Blank "" means the field is relevant in its context but no data was found to populate it with. </p><p>In the case of the restricted media source, the content of restricted fields is set to null. </p><p>Overall regard null and blank as one and the same thing; there is no data available. </p><p><strong>Time zone and currency</strong></p><p>App-specific time zone and currency settings have no effect on data written to Data Locker. The following apply: </p><ul><li><strong>Time zone</strong>: Date and hour data are in UTC.</li><li><strong>Currency</strong>: The field event_revenue_usd is in USD.</li></ul><p><strong>Values with commas</strong>: These commas are contained between double quotes `"`, for example, <code>`"iPhone6,1"`</code>.</p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -119,7 +119,7 @@ Data files depend on segregation type.
 | Storage platform | AWS, GCS, Yandex, BigQuery |
 | Credentials to access data by you | Not known to AppsFlyer. Use credentials provided by the storage provider. |
 | Data retention | Controlled by you |
-| Security | You control the storage.<ul><li>**AWS**: AppsFlyer requires GetObject, ListBucket, DeleteObject, PutObject permission to the bucket. The bucket should be dedicated to AppsFlyer use. Don't use it for other purposes.</li><li>[GCS](/appsflyer-marketers/docs/data-locker-cloud-service-setup#gcs-storage)</li></ul> |
+| Security | You control the storage.<ul><li>**AWS**: AppsFlyer requires GetObject, ListBucket, DeleteObject, PutObject permission to the bucket. The bucket should be dedicated to AppsFlyer use. Don't use it for other purposes.</li><li>[GCS](/marketers/docs/data-locker-cloud-service-setup#gcs-storage)</li></ul> |
 
 #### **Notice to security officers**
 
@@ -164,10 +164,10 @@ Use this procedure to set up Data Locker. Changes to settings take effect within
 
 Complete one or more of the following storage procedures:
 
-* [AWS](/appsflyer-marketers/docs/data-locker-cloud-service-setup#aws-storage) bucket
-* [GCS](/appsflyer-marketers/docs/data-locker-cloud-service-setup#gcs-storage) bucket
-* [Beta] [Yandex](/appsflyer-marketers/docs/data-locker-cloud-service-setup#yandex) bucket
-* [BigQuery](/appsflyer-marketers/docs/data-locker-cloud-service-setup#bigquery) data warehouse
+* [AWS](/marketers/docs/data-locker-cloud-service-setup#aws-storage) bucket
+* [GCS](/marketers/docs/data-locker-cloud-service-setup#gcs-storage) bucket
+* [Beta] [Yandex](/marketers/docs/data-locker-cloud-service-setup#yandex) bucket
+* [BigQuery](/marketers/docs/data-locker-cloud-service-setup#bigquery) data warehouse
 
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/771bf2946e0e5bde4126a710540eda14172a849d58185b9c5dbd240481c2efe2-18107874528145.png) To set up Data Locker:**
 
@@ -175,7 +175,7 @@ Complete one or more of the following storage procedures:
 2. Go to:
    * **Advertisers**: In AppsFlyer, from the sidebar, open **Export** > **Data Locker**.
    * **Marketing partners**: Click the **account menu** > **Data Locker**.
-3. Follow the [Data Locker setup instructions](/appsflyer-marketers/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker) steps 3-16.
+3. Follow the [Data Locker setup instructions](/marketers/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker) steps 3-16.
 
 </Accordion>
 
@@ -200,7 +200,7 @@ Complete one or more of the following storage procedures:
 
 <Accordion title="Troubleshooting">
 
-[Use this troubleshooting guide](/appsflyer-marketers/docs/data-locker-for-marketers#troubleshooting).
+[Use this troubleshooting guide](/marketers/docs/data-locker-for-marketers#troubleshooting).
 
 </Accordion>
 

@@ -23,11 +23,11 @@ x-zendesk:
 
 ## **Prerequisites:**
 
-* You have to have login credentials (username and password) for AppsFlyer before you can manage attribution links and postbacks. To [create a partner](/docs/getting-started-onboarding-guide-for-ad-networks) account, ask an AppsFlyer customer (advertiser) to [invite you](/appsflyer-marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer).
+* You have to have login credentials (username and password) for AppsFlyer before you can manage attribution links and postbacks. To [create a partner](/docs/getting-started-onboarding-guide-for-ad-networks) account, ask an AppsFlyer customer (advertiser) to [invite you](/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer).
 * Management of attribution links and default postbacks is available only to partners who joined after February 1, 2022.
 * Verify that your servers are ready to receive postbacks by complying with the following:
-  * Allowlist AppsFlyer server [IP addresses](/appsflyer-marketers/docs/appsflyer-server-ip-address-ranges-allowlisting) in your firewalls and security systems to ensure communication with your endpoints
-  * TLS versions: TLS 1.1, TLS 1.2+ with the [ciphers listed.](/appsflyer-marketers/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client)
+  * Allowlist AppsFlyer server [IP addresses](/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting) in your firewalls and security systems to ensure communication with your endpoints
+  * TLS versions: TLS 1.1, TLS 1.2+ with the [ciphers listed.](/marketers/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client)
   * Ports: 80, 443
 * ![AppsFlyerAdmin_us-en.png](https://files.readme.io/047d2ffa8bd5258c09f60c6f560162b285c4e9742d98b1158952a26d988ce763-18271759619089.png) Only Admin users can access and manage this section.
 
@@ -61,7 +61,7 @@ Completion of attribution link configuration is mandatory
 3. Use the link preview to verify that everything is correct.
 4. Click **Save**.
 
-[More about attribution links and available parameters](/appsflyer-marketers/docs/about-link-structure-and-parameters).
+[More about attribution links and available parameters](/marketers/docs/about-link-structure-and-parameters).
 
 In the case of any issues, reach out using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
 
@@ -96,7 +96,7 @@ Postbacks are URLs containing macros populated by AppsFlyer and sent to your ser
 4. Use the postback template preview to verify that everything is correct.
 5. Click **Save**.
 
-[More postback info and examples.](/appsflyer-marketers/docs/in-app-event-postback-configuration)
+[More postback info and examples.](/marketers/docs/in-app-event-postback-configuration)
 
 In the case of any issues, use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
 

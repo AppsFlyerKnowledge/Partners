@@ -37,7 +37,7 @@ Ad networks share cost with AppsFlyer using any of the following: 
 
 ![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
 
-* A cost badge displays in the [partner details page](/appsflyer-marketers/docs/partner-integrations#partner-details-and-performance) highlighting partners using the InCost or Cost API.
+* A cost badge displays in the [partner details page](/marketers/docs/partner-integrations#partner-details-and-performance) highlighting partners using the InCost or Cost API.
 * The badge certifies that the partner as a cost-capable partner.
 * Internal analytics and extensive user surveys show that advertisers are always on the lookout for new partners. Those with a cost badge are more likely to stand out, as advertisers want to understand their marketing performance based on ROI analysis.
 

@@ -61,7 +61,7 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
   * The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [User management](/docs/user-management-for-ad-networks#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
     * If you do need to change the account owner, follow the [steps listed below](/docs/user-management-for-ad-networks#changing-the-account-owner).
   * The account owner is initially responsible for creating additional users (until additional users with user management capabilities are created).
-* Admins can [manage API and S2S tokens](/appsflyer-marketers/docs/managing-appsflyer-tokens).
+* Admins can [manage API and S2S tokens](/marketers/docs/managing-appsflyer-tokens).
 * Any Admin other than the account owner **can** be changed to a different role or deleted from the AppsFlyer account through the User management page.
 
 ## User management page
@@ -222,8 +222,8 @@ To begin the process of changing the account owner, open the chat widget [using 
 
 Once the change has been processed, you will receive an email notification from AppsFlyer.
 
-* If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/appsflyer-marketers/docs/user-management#creating-users) for them and assign them a new role.
-* APIs using token v2 aren't affected by changing the account owner.  [Learn more about managing tokens](/appsflyer-marketers/docs/managing-appsflyer-tokens).
+* If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/marketers/docs/user-management#creating-users) for them and assign them a new role.
+* APIs using token v2 aren't affected by changing the account owner.  [Learn more about managing tokens](/marketers/docs/managing-appsflyer-tokens).
 
 </Accordion>
 

@@ -44,7 +44,7 @@ Below you can find the base attribution link with a detailed explanation per eac
 | &clickid= | `{clickid}` | Unique transaction ID of the user session - **Required** |
 | ⁡\_siteid= | `{trafficsource.id}` | ID of the traffic source - **Optional** |
 
-** For complete AppsFlyer parameter list, [click here](/appsflyer-marketers/docs/about-link-structure-and-parameters)
+** For complete AppsFlyer parameter list, [click here](/marketers/docs/about-link-structure-and-parameters)
 
 ** For complete Voluum macro list, [click here](http://feedback.voluum.com/knowledgebase/articles/318681-click-urls)
 

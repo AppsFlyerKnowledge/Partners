@@ -36,7 +36,7 @@ Ad networks can then ingest this network-level data with cross-customer visibili
 * Data arrives in CSV format to the UA/retargeting partner's bucket.
 * Contains dimensions and metrics relevant to the ad network (that is cleaned of all dimensions irrelevant to the ad network).
 * Available via [Data Locker for Partners](/docs/data-locker-for-partners).
-* Data freshness: [Daily, meaning data for Day 0 arrives on Day 1](/appsflyer-marketers/docs/about-data-freshness-and-timezone-support#ad-revenue). Data is written daily at 07:00 [UTC time](/appsflyer-marketers/docs/about-data-freshness-and-timezone-support#daily-processing) to the h=23 of your Data Locker bucket.
+* Data freshness: [Daily, meaning data for Day 0 arrives on Day 1](/marketers/docs/about-data-freshness-and-timezone-support#ad-revenue). Data is written daily at 07:00 [UTC time](/marketers/docs/about-data-freshness-and-timezone-support#daily-processing) to the h=23 of your Data Locker bucket.
 * Apps included: A single report contains the data of all apps.
 
 ## Report types

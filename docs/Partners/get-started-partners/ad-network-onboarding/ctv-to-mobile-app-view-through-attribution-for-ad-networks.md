@@ -26,7 +26,7 @@ With AppsFlyer cross-platform impression URLs, you can attribute mobile app inst
 
 ![Diagram of the CTV-to-mobile app attribution flow](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
 
-CTV-to-mobile app view-through attribution uses a [OneLink impression URL](/appsflyer-marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup) based on a cross-platform OneLink template (with a template ID) created by the advertisers. This lets advertisers group multiple apps from different platforms (for example, both Android and iOS apps) using a single URL.
+CTV-to-mobile app view-through attribution uses a [OneLink impression URL](/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup) based on a cross-platform OneLink template (with a template ID) created by the advertisers. This lets advertisers group multiple apps from different platforms (for example, both Android and iOS apps) using a single URL.
 
 When users view the ad on CTV, you send AppsFlyer the impression URL in real time. 
 
@@ -74,7 +74,7 @@ The following parameters are used to provide attribution data and measurement t
 
 | Parameter | Mandatory | Description |
 | --- | --- | --- |
-| template\_id | **✓** | The ID of the [OneLink template](/appsflyer-marketers/docs/create-a-onelink-template). The template contains basic prediction settings for the advertiser apps and is the basis for creating other links. Note: Never encode the `template_id` value. |
+| template\_id | **✓** | The ID of the [OneLink template](/marketers/docs/create-a-onelink-template). The template contains basic prediction settings for the advertiser apps and is the basis for creating other links. Note: Never encode the `template_id` value. |
 | pid | **✓** | The partner identifier, allocated by AppsFlyer to the media source (ad network) placing the ad. |
 | af\_xplatform | **✓** | <ul><li>Set by the advertiser to indicate whether the link supports cross-platform attribution.</li><li>Values: true/false</li></ul> |
 | af\_xplatform\_vt\_lookback | **-** | Configurable window that indicates the number of hours following the impression during which the app install can be attributed to the impression. Available parameter values: 1h - 72h (hours). The default is 24h. |
@@ -83,7 +83,7 @@ The following parameters are used to provide attribution data and measurement t
 | af\_source\_platform | - | <ul><li>A set list of values to represent the operating system where the impression occurs.</li><li>Values:<ul><li>android</li><li>ios</li><li>tizen</li><li>webos</li><li>smartcast</li><li>roku</li><li>windowsphone</li><li>vidaa</li><li>PlayStation</li><li>website</li></ul></li></ul> |
 | af\_source\_device\_category | - | <ul><li>A set list of values to represent the device type where the impression occurs.<ul><li>tv</li><li>mobile\_phone</li><li>desktop</li><li>tablet</li><li>set\_top\_box</li><li>games\_console</li><li>unknown\_device\_category</li><li>media\_player</li></ul></li></ul> |
 
-Other parameters that can be added to the URL can be found in the [attribution link structure and parameters article](/appsflyer-marketers/docs/about-link-structure-and-parameters).
+Other parameters that can be added to the URL can be found in the [attribution link structure and parameters article](/marketers/docs/about-link-structure-and-parameters).
 
 </Accordion>
 

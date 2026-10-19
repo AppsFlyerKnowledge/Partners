@@ -63,7 +63,7 @@ See below for an example of an attribution Link once you have added additional O
   &idfa={idfa}
 ```
 
-For a complete list of AppsFlyer parameters, click [here](/appsflyer-marketers/docs/about-link-structure-and-parameters).
+For a complete list of AppsFlyer parameters, click [here](/marketers/docs/about-link-structure-and-parameters).
 
 Available Macros on AppsFlyer Attribution Links
 
