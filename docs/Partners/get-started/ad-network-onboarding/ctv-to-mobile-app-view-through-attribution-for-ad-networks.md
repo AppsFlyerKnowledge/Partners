@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-roi-tamir
+    - CTV Attribution
+    - Ad Networks
   created_at: '2022-08-21T06:49:24Z'
   edited_at: '2026-08-26T10:59:04Z'
   id: 8528418936977

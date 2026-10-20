@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-yael-sharabi
+    - Ad Networks
+    - Data Management
   created_at: '2018-04-30T08:08:25Z'
   edited_at: '2026-04-06T09:23:23Z'
   id: 360000807629

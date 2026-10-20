@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-roy-negri
+    - Platform essentials
+    - Agencies
   created_at: '2021-12-19T11:18:09Z'
   edited_at: '2024-01-04T11:08:46Z'
   id: 4414231896337

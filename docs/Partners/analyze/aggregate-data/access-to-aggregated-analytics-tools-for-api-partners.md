@@ -15,6 +15,11 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-nohar-avigal
+    - Marketers
+    - Marketing Analytics
+    - Ad Networks
   created_at: '2020-02-17T10:50:10Z'
   edited_at: '2026-08-13T13:36:27Z'
   id: 360005854857

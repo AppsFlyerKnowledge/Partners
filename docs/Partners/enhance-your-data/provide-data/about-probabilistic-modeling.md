@@ -10,6 +10,10 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-yael-sharabi
+    - Marketers
+    - Data Management
   created_at: '2025-10-21T14:32:11Z'
   edited_at: '2026-04-19T13:00:27Z'
   id: 40188089592209

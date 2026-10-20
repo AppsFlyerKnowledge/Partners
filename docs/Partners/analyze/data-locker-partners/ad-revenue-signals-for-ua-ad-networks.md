@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-michael-talapov
+    - ROI360
+    - Ad Networks
   created_at: '2021-06-21T13:39:13Z'
   edited_at: '2026-05-14T15:36:34Z'
   id: 4402898251409

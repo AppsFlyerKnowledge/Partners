@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-gil-or
+    - SKAdNetwork (SKAN)
+    - Ad Networks
   created_at: '2020-08-03T08:56:14Z'
   edited_at: '2026-05-17T09:44:53Z'
   id: 360011502657

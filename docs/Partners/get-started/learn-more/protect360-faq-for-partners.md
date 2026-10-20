@@ -10,6 +10,11 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-roy-yanai
+    - Protect360
+    - Agencies
+    - Ad Networks
   created_at: '2023-06-12T12:43:34Z'
   edited_at: '2026-01-25T06:59:41Z'
   id: 16091549732497

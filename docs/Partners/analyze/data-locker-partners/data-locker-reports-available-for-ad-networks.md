@@ -13,6 +13,11 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-rona-einat
+    - Marketers
+    - Data Locker
+    - Ad Networks
   created_at: '2022-03-02T08:51:14Z'
   edited_at: '2025-03-25T11:15:41Z'
   id: 4542778150545

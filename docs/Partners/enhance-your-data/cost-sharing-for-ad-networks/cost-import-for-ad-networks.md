@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-maytav-avnat
+    - ROI360
+    - Ad Networks
   created_at: '2019-10-20T06:03:13Z'
   edited_at: '2025-09-10T14:33:39Z'
   id: 360002868097

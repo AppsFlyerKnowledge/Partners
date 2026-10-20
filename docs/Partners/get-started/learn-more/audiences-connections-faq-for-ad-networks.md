@@ -13,6 +13,11 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-neama-benhabib
+    - Marketers
+    - Audience Segmentation
+    - Ad Networks
   created_at: '2023-11-27T08:25:39Z'
   edited_at: '2024-12-29T08:45:34Z'
   id: 20459388348305

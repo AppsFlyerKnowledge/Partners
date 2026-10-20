@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Partners
   category_id: 6550456653457
+  content_tags:
+    - pm-ravid-naori
+    - Mobile Attribution
+    - Ad Networks
   created_at: '2016-08-08T08:11:38Z'
   edited_at: '2023-10-11T12:54:23Z'
   id: 212955423
