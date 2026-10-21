@@ -165,7 +165,7 @@ However, real-time freshness is less accurate compared to X+1:
 
 <div id="what-are-the-iaa-postback-data-sources" />
 
-<Accordion title="What are the IAA postback data sources ?">
+<Accordion title="What are the IAA postback data sources?">
 
 The data for the IAA postback originates from Impression-level data that partners load onto client devices. This data is then shared with AppsFlyer through the ROI360 Ad Revenue SDK, which is installed on the device by the advertiser. The SDK API allows the app developer to report an impression event including certain parameters like the ILRD, the currency, the mediation platform, and the monetization source.
 

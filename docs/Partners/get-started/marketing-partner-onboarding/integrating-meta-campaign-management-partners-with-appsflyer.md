@@ -67,7 +67,7 @@ Upon In-app events, AppsFlyer can return the following parameters (in addition t
 
 > 📄 **Example**
 >
-> http://FMP_postbackURL.........&eventname=`{event_name}`
+> `http://FMP_postbackURL.........&eventname={event_name}`
 
 * The Meta campaign management partner can choose to receive the in-app event name as the advertiser configured it in AppsFlyer's SDK or to have the advertiser fill in a free text field per event.
 

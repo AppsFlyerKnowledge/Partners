@@ -54,8 +54,8 @@ The following table lists the reject reason, reject reason value, and an explana
 | click\_flood | Site ID or empty | **x** | Installs coming from clusters blocked by AppsFlyer due to a large number of installs with a high CTIT and low conversion rate. |
 | behavioral\_anomalies | N/A | **x** | Behavioral anomalies being install fraud blocked due to inconsistent and abnormal post-install behavior. |
 | install\_hijacking | N/A | **x** | Install hijacking being attributed clicks blocked based on unreasonable click and install time, based on Google Play Server-Side API. |
-| validation\_bots | Rule names or empty | **✓** | Customer-defined rule. |
-| validation\_hijacking | Rule names | **✓** | Customer-defined rule. |
+| validation\_bots | Rule names or empty | ✓ | Customer-defined rule. |
+| validation\_hijacking | Rule names | ✓ | Customer-defined rule. |
 | ai\_layer | N/A | **x** | AI models are utilized to analyze vast amounts of data points, enhancing detection capabilities for identifying fraudulent device and installation activities. |
 
 #### Reject reasons for in-app events

@@ -65,18 +65,18 @@ To create your install and in-app event postbacks at **FOCUUS**
 2. <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827766-s2s-integration">Generate pixel</Anchor> (postback) for implementation.
 3. Copy the postback URL that appears in the box labeled <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827766-s2s-integration">Server2Server Pixel</Anchor>.
 4. Replace the TRANSACTION\_ID with AppsFleyr macro - “**clickid**”  
-   https://pixel.focuusing.com/event.php?type=imp&tid=`{clickid}`**
+   `https://pixel.focuusing.com/event.php?type=imp&tid={clickid}`
 
 **Optional Postback Parameters**
 
 | FOCUUS Macros | Description | Example |
 | --- | --- | --- |
-| event\_value | Payout value for each type of event | https://pixel.focuusing.com/event.php?type=cpi&tid=`{Your_TRANSACTION_ID}&eid=49816&event_value={25}` |
+| event\_value | Payout value for each type of event | `https://pixel.focuusing.com/event.php?type=cpi&tid={Your_TRANSACTION_ID}&eid=49816&event_value={25}` |
 
 **Event name (Install, Registration, etc.) appears by default on the generated pixel. for example:**
 
-* https://traffic.focuusing.com/install?tid=`{TRANSACTION_ID}`
-* https://traffic.focuusing.com/conversion?tid=`{TRANSACTION_ID}`
-* https://traffic.focuusing.com/ftd?tid=`{TRANSACTION_ID}`
+* `https://traffic.focuusing.com/install?tid={TRANSACTION_ID}`
+* `https://traffic.focuusing.com/conversion?tid={TRANSACTION_ID}`
+* `https://traffic.focuusing.com/ftd?tid={TRANSACTION_ID}`
 
 <div data-zendesk-anchors="01JFT11W3GWZ3QFYPHEZTS7EX7=creating-your-attribution-link 01JFT11W3QWT08KMGEPGK7MV5R=recommended-attribution-link-parameters 01JFT11W3Y7HRB7FYS1K173G2W=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT11W3YMN4RBW0WFTQ9EADK=install-and-in-app-event-postbacks" />

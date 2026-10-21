@@ -33,7 +33,7 @@ x-zendesk:
 
 **To enable the integration with AppsFlyer:**
 
-1. In **AppsFlyer**, go to **Collaborate** **>** **Partner Integrations > Active Integrations** and select Venedash from the partner list.
+1. In **AppsFlyer**, go to **Collaborate** > **Partner Integrations > Active Integrations** and select Venedash from the partner list.
 2. In the **Integration** tab, enable **Activate partner**.
 3. Go to the **Attribution Link** tab and generate an attribution link with the following mandatory parameters:
 

@@ -151,7 +151,7 @@ Ad networks appointed (activated) by agencies: The agency can't grant permission
 
 **To allow the ad network to get aggregated performance data:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners***.*
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners**.
 2. Search for the partner and select it.
 3. Click **Set up integration**. You’re directed to the integration setup page.
 4. Verify that **Activate partner** is on. If not, data isn't shared.

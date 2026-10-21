@@ -58,7 +58,7 @@ See below the AppsFlyer base attribution link with a detailed explanation per ma
 
 | AppsFlyer Base URL | Description |
 | --- | --- |
-| https://app.appsflyer.com/`{app_id}`? | AppsFlyer end point<br /><br />app\_ id= Application unique ID – represents the ID of the app being promoted |
+| `https://app.appsflyer.com/{app_id}?` | AppsFlyer end point<br /><br />app\_ id= Application unique ID – represents the ID of the app being promoted |
 | pid= | Media source name concatenated with \_int to identify integrated networks. Example: mediaName\_int |
 | c= | Campaign name |
 

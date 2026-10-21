@@ -126,7 +126,7 @@ At the moment, no. The URLs are generated based on your unique `PARTNER_PULL_KEY
 
 Here’s an example URL:
 
-https://audiencespull.appsflyer.com/`{{PARTNER_PULL_KEY}}`/12cjv4dq1zyxz3nh-HASHED.csv?X-Amz-A lgorithm=AWS1-HMAC-SHA256&X-Amz-Date=20190503T091923Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=AKIB22QYTATEGB2HBFJR%2F20190603%2Feu-west-1%2Fs3%2Faws4\_request&X-Amz-Signature=c8287819a21d2f7832154df609c55ab8c0afe53540d542918b2739a9234923a
+`https://audiencespull.appsflyer.com/{{PARTNER_PULL_KEY}}/12cjv4dq1zyxz3nh-HASHED.csv?X-Amz-A` lgorithm=AWS1-HMAC-SHA256&X-Amz-Date=20190503T091923Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=AKIB22QYTATEGB2HBFJR%2F20190603%2Feu-west-1%2Fs3%2Faws4\_request&X-Amz-Signature=c8287819a21d2f7832154df609c55ab8c0afe53540d542918b2739a9234923a
 
 </Accordion>
 

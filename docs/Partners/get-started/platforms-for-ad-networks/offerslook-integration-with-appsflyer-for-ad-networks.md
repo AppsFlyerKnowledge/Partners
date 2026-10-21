@@ -129,7 +129,7 @@ Following is a step-by-step explanation of how to create your install postbacks 
 
 Global Install Postback:
 
-http://`{networkname}.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}`
+`http://{networkname}.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}`
 
 `networkname` is the domain name provided by Offerslook.
 

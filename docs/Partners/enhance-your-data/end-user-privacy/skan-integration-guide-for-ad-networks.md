@@ -226,7 +226,7 @@ The redirect method has the following advantages:
 
 #### **Implementation**
 
-1. Configure your server to respond with an HTTP 307 response redirecting the postback to [*https://skadredirect.appsflyer.com/api/redirects*](https://skadredirect.appsflyer.com/api/redirects)
+1. Configure your server to respond with an HTTP 307 response redirecting the postback to [https://skadredirect.appsflyer.com/api/redirects](https://skadredirect.appsflyer.com/api/redirects)
 2. Append query params that contain campaign details using the query params listed in the table that follows. Regard the sending of your campaign details as mandatory. Campaign details enable us to enrich SKAN data with cost and other campaign data and enable advertisers to effectively optimize campaigns.
 
 **Example redirect URL**

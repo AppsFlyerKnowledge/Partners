@@ -59,7 +59,7 @@ Advertisers can grant the following app-level permissions:
 
 **To grant API access to the partner:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners*.***
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners**.
 2. Search for the partner and select it.
 3. Click **Set up integration**. You're directed to the integration setup page.
 4. From the **API access** tab, turn on one or more permissions. Select from:
