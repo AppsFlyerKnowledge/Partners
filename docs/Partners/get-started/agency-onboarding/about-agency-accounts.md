@@ -1,6 +1,5 @@
 ---
 title: About agency accounts
-excerpt: Make the most of your AppsFlyer Agency account with advanced configuration.
 metadata:
   keywords:
     - In-App Events
@@ -34,6 +33,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034106-About-agency-accounts
 ---
+**At a glance:** Make the most of your AppsFlyer Agency account with advanced configuration.
+
 ## About agency accounts
 
 Agency accounts are used by agency teams to measure app marketing campaigns run by the agency on behalf of marketer clients (app owners).
@@ -43,11 +44,11 @@ Agency accounts are used by agency teams to measure app marketing campaigns run 
   * Lifetime value overview
   * In-app events
   * Retargeting
-* KPIs available include impressions, clicks, installs, user loyalty, cost, and ROI. About the [dashboard.](/marketers/docs/getting-started-with-appsflyer-dashboards)
+* KPIs available include impressions, clicks, installs, user loyalty, cost, and ROI. About the <Anchor target="_blank" href="/marketers/docs/getting-started-with-appsflyer-dashboards">dashboard.</Anchor>
 
 ### Agency access to marketer data
 
-Agencies always have access to data of traffic attributed to the agency. Marketers can [grant agencies access t](/marketers/docs/set-up-an-integrated-partner#agency-permissions) o additional data, for example, organic aggregate data. See [access to data by different types of users.](/marketers/docs/manage-data-access-permissions)
+Agencies always have access to data of traffic attributed to the agency. Marketers can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">grant agencies access t</Anchor> o additional data, for example, organic aggregate data. See <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">access to data by different types of users.</Anchor>
 
 ### Agency access to ad network integrations
 
@@ -56,11 +57,11 @@ To enable access to ad network integrations and have your campaigns measured, yo
 > 📘 **Note**
 >
 > * Applies also to empty af\_prt parameters on attribution links
-> * Doesn't apply to agencies working with [SRNs](/marketers/docs/self-reporting-networks-srns)
+> * Doesn't apply to agencies working with <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>
 
 ### Agency transparency
 
-Agency traffic is set by default to be transparent. [Learn more](/docs/getting-started-agency-onboarding#transparency)
+Agency traffic is set by default to be transparent. <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#transparency">Learn more</Anchor>
 
 ## Comparing different types of accounts
 
@@ -81,13 +82,13 @@ Account structures permit knowledge-sharing between global agency teams and enab
 | Account-level settings | Team members, team member permissions, settings, payment preferences | Agency team members and their permissions. |
 | App-level settings | Reattribution window, OneLink configuration, time zone, currency | Settings are according to those set by the marketer |
 | Integrated-partner-level configuration | <ul><li>Agency permissions</li><li>All non-SRN (attribution-link-based ad networks) configurations</li><li>SRN configurations</li><li>Link management</li></ul> | <ul><li>All non-SRN configurations</li><li>Some SRN configurations that require minimum intervention from the marketer's side:</li></ul><ul><li>Google Doubleclick<ul><li>Snapchat</li><li>Tencent</li></ul></li></ul>Other SRNs must be configured by the marketer in order for the agency to use them.<ul><li>Link management (using templates defined by Marketers)</li></ul> |
-| Additional features | Yes (some, if part of the subscription plan) | As per marketer subscription and [permissions](/marketers/docs/set-up-an-integrated-partner#agency-permissions) given to the agency (see the table below) |
+| Additional features | Yes (some, if part of the subscription plan) | As per marketer subscription and <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">permissions</Anchor> given to the agency (see the table below) |
 
 ### Features available to agencies
 
 | Available by default | Not available | Requires marketer permission |
 | --- | --- | --- |
-| <ul><li>Lifetime value overview dashboard</li><li>In-app events dashboard</li><li>Retargeting dashboard</li><li>Active integrations</li><li>[SSOT dashboard](/docs/getting-started-agency-onboarding#single-source-of-truth-ssot-for-agencies)\*\*</li></ul>\*\* Available only after the marketer has enabled this option. | <ul><li>Activity dashboard</li><li>Custom dashboard</li><li>People-based analytics</li><li>Audiences</li><li>Pivot report</li><li>Push API</li><li>Data locker</li></ul>*Only cohort reports are available upon marketer permission | <ul><li>Retention report</li><li>Cohort dashboard report</li><li>[Cohort report from Data Locker](/docs/data-locker-reports-for-agencies)</li><li>Protect360</li><li>Raw-data export</li><li>Aggregate organic data</li><li>Pull API</li></ul> |
+| <ul><li>Lifetime value overview dashboard</li><li>In-app events dashboard</li><li>Retargeting dashboard</li><li>Active integrations</li><li><Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#single-source-of-truth-ssot-for-agencies">SSOT dashboard</Anchor>\*\*</li></ul>\*\* Available only after the marketer has enabled this option. | <ul><li>Activity dashboard</li><li>Custom dashboard</li><li>People-based analytics</li><li>Audiences</li><li>Pivot report</li><li>Push API</li><li>Data locker</li></ul>*Only cohort reports are available upon marketer permission | <ul><li>Retention report</li><li>Cohort dashboard report</li><li><Anchor target="_blank" href="/partners/docs/data-locker-reports-for-agencies">Cohort report from Data Locker</Anchor></li><li>Protect360</li><li>Raw-data export</li><li>Aggregate organic data</li><li>Pull API</li></ul> |
 
 </Accordion>
 
@@ -112,7 +113,7 @@ Agencies can measure the following main traffic types:
 * [Self-reporting ad networks (SRNs)](/docs/about-agency-accounts#self-reporting-ad-networks)
 * [Non-SRNs (ad networks using attribution links)](/docs/about-agency-accounts#non-srns)
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > When working with agencies, turning off an integrated partner does not automatically disable certain attribution capabilities for the agencies linked to that partner:
 >
@@ -133,17 +134,17 @@ Self-reporting networks, such as Meta ads, Google Ads, or X Ads don't use extern
 
 | SRN | Marketer to perform initial SRN setup | Details |
 | --- | --- | --- |
-| Apple Search Ads | Yes | For details of agency configuration for Apple Search Ads campaigns, click [here](/marketers/docs/apple-ads-integration-setup#configuring-agencies-and-marketing-partners). |
-| Google Ads | Yes | For details of agency configuration for Google Ads campaigns, click [here](/marketers/docs/google-ads-adwords-integration-setup-for-agencies). |
-| Google Marketing Platform (GMP) | No | GMP has two different APIs. Learn more about the [differences between the two](/marketers/docs/google-marketing-platform-display-video-360-dv360-integration#comparing-the-legacy-and-new-integrations), and choose the one relevant to you. |
-| Meta ads  <br />and  <br />X Ads | Yes | **Note:** This section refers to Meta ads. For attribution of Facebook Social (posts), read about [Owned Media](/docs/about-agency-accounts#owned-media%E2%80%94onelink-and-custom-links).<br /><br />**All Meta ads and X Ads campaigns must start with the Agency account name followed by "\_".** The name is defined in the AppsFlyer platform.<br />Campaigns that aren't named correctly are visible to the marketer but remain invisible to the agency account.<br /><br />**Note:**<ul><li>The agency name is CASE SENSITIVE.</li><li>See more details about [Meta ads](/marketers/docs/meta-ads-faq#attributing-agencies-with-facebook) and [X Ads](/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#any-special-instructions-for-agencies) setup for agencies.</li><li>Contact [agency@appsflyer.com](mailto:agency@appsflyer.com) if you have any questions about this.</li></ul>**Example**<br />agencyx runs a Meta ads campaign called agencyx\_brilliantcampaign, which is visible to it.<br /><br />agencyz runs an X Ads campaign called AgencyZ\_whathaveidonewrong, but doesn't see any results. This happens because the agency name part of the campaign is different to the defined agency name (capital A and Z). |
-| Snapchat | No | For details of agency configuration for Snapchat campaigns, click [here](/marketers/docs/snapchat-advanced-srn-integration-setup). |
-| TikTok for Business | Yes | For details of agency configuration for TikTok for Business campaigns, click [here](/marketers/docs/tiktok-for-business-advanced-srn-integration-setup#setting-up-tiktok-for-business-for-agencies). |
-| Yahoo (Oath: Ad Platforms / Yahoo Gemini) | Yes | For details of agency configuration for Yahoo campaigns, [click here](/marketers/docs/yahoo-integration-setup#agency-configuration). |
+| Apple Search Ads | Yes | For details of agency configuration for Apple Search Ads campaigns, click <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#configuring-agencies-and-marketing-partners">here</Anchor>. |
+| Google Ads | Yes | For details of agency configuration for Google Ads campaigns, click <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">here</Anchor>. |
+| Google Marketing Platform (GMP) | No | GMP has two different APIs. Learn more about the <Anchor target="_blank" href="/marketers/docs/google-marketing-platform-display-video-360-dv360-integration#comparing-the-legacy-and-new-integrations">differences between the two</Anchor>, and choose the one relevant to you. |
+| Meta ads  <br />and  <br />X Ads | Yes | **Note:** This section refers to Meta ads. For attribution of Facebook Social (posts), read about [Owned Media](/docs/about-agency-accounts#owned-media%E2%80%94onelink-and-custom-links).<br /><br />**All Meta ads and X Ads campaigns must start with the Agency account name followed by "\_".** The name is defined in the AppsFlyer platform.<br />Campaigns that aren't named correctly are visible to the marketer but remain invisible to the agency account.<br /><br />**Note:**<ul><li>The agency name is CASE SENSITIVE.</li><li>See more details about <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#attributing-agencies-with-facebook">Meta ads</Anchor> and <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#any-special-instructions-for-agencies">X Ads</Anchor> setup for agencies.</li><li>Contact [agency@appsflyer.com](mailto:agency@appsflyer.com) if you have any questions about this.</li></ul>**Example**<br />agencyx runs a Meta ads campaign called agencyx\_brilliantcampaign, which is visible to it.<br /><br />agencyz runs an X Ads campaign called AgencyZ\_whathaveidonewrong, but doesn't see any results. This happens because the agency name part of the campaign is different to the defined agency name (capital A and Z). |
+| Snapchat | No | For details of agency configuration for Snapchat campaigns, click <Anchor target="_blank" href="/marketers/docs/snapchat-advanced-srn-integration-setup">here</Anchor>. |
+| TikTok for Business | Yes | For details of agency configuration for TikTok for Business campaigns, click <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup#setting-up-tiktok-for-business-for-agencies">here</Anchor>. |
+| Yahoo (Oath: Ad Platforms / Yahoo Gemini) | Yes | For details of agency configuration for Yahoo campaigns, <Anchor target="_blank" href="/marketers/docs/yahoo-integration-setup#agency-configuration">click here</Anchor>. |
 
 ### Non-SRNs
 
-Unlike SRNs, the vast majority of ad networks use attribution links for attribution purposes. [These attribution links are already provided](/marketers/docs/set-up-an-integrated-partner#attribution-link-tab) in each network's settings on AppsFlyer and can be simply copied from there directly.
+Unlike SRNs, the vast majority of ad networks use attribution links for attribution purposes. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">These attribution links are already provided</Anchor> in each network's settings on AppsFlyer and can be simply copied from there directly.
 
 For agencies, the process is almost identical to that of the marketers. Upon going to the setup window of any regular ad networks the attribution link is already there. The only difference is the automatic addition of the `af_prt` parameter to the attribution link.
 
@@ -191,7 +192,7 @@ The following table shows the full list of the all-launches networks:
 
 Working with these networks entails sending information from installs that are not brought by the agency. Therefore, these networks require the marketer to configure them BEFORE the **agency**.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Let's use agency attribution setup with Tapjoy as an example:
 >
@@ -209,7 +210,7 @@ For deep linking to work, the mobile app MUST be developed with deep linking cap
 
 ### Retargeting
 
-* * [Retargeting attribution](/marketers/docs/retargeting-attribution-guide) allows you to target existing or past users in your campaigns. Retargeting campaigns often require deep linking capabilities to work correctly.
+* * <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting attribution</Anchor> allows you to target existing or past users in your campaigns. Retargeting campaigns often require deep linking capabilities to work correctly.
 
 ### In-app events
 
@@ -217,9 +218,9 @@ App owners can have various events in their apps (e.g. purchase, watching a tuto
 
 #### In-app event postbacks
 
-Agencies can be given permission to configure [in-app event postbacks](/marketers/docs/in-app-event-postback-configuration) (including the [af\_app\_opened event](/marketers/docs/measure-sessions)) to ad networks, upon receipt of permission from the Marketer.
+Agencies can be given permission to configure <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">in-app event postbacks</Anchor> (including the <Anchor target="_blank" href="/marketers/docs/measure-sessions">af\_app\_opened event</Anchor>) to ad networks, upon receipt of permission from the Marketer.
 
-Agencies can give the ad networks permission to configure in-app postbacks to themselves. [Permission is granted](/marketers/docs/set-up-an-integrated-partner#agency-permissions) by marketers in the agency permission tab.
+Agencies can give the ad networks permission to configure in-app postbacks to themselves. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">Permission is granted</Anchor> by marketers in the agency permission tab.
 
 </Accordion>
 
@@ -228,13 +229,13 @@ Agencies can give the ad networks permission to configure in-app postbacks to th
 <Accordion title="Reporting for agencies">
 
 * Traffic statistics are viewed and downloaded directly from the AppsFlyer dashboard.
-* Reports are accessed via the [Export Data](/marketers/docs/raw-data-reporting-overview) page in the AppsFlyer dashboard. You can also access Cohort reports via [Data Locker](/docs/data-locker-reports-for-agencies).
+* Reports are accessed via the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Export Data</Anchor> page in the AppsFlyer dashboard. You can also access Cohort reports via <Anchor target="_blank" href="/partners/docs/data-locker-reports-for-agencies">Data Locker</Anchor>.
 * The following reports types are available:
   * Aggregate
   * Raw data
 * Marketers and agencies mostly cannot access the same data in the dashboard, reports, and so on.
 * Agencies are usually responsible for only a part of the marketer's traffic, so the agencies' access to the data is limited in comparison to that of marketers.
-* [This article](/marketers/docs/manage-data-access-permissions) breaks down these differences. The following sections highlight them
+* <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">This article</Anchor> breaks down these differences. The following sections highlight them
 
 > 📘 **Note**
 >
@@ -242,13 +243,13 @@ Agencies can give the ad networks permission to configure in-app postbacks to th
 
 ### Access to aggregate data
 
-* Performance reports also referred to as aggregate data reports, are available by default to agency accounts. Related reading: [Aggregate performance reports](/marketers/docs/aggregated-and-analytics-reporting-overview)
-* Access to aggregate organic data reports requires marketer[permission](/marketers/docs/set-up-an-integrated-partner#agency-permissions).
-* Agencies can receive access to Retention and Cohort reports, and Protect360 dashboard. This requires that the marketer enable [**Allow access to your retention and cohort reports**](/marketers/docs/set-up-an-integrated-partner#agency-permissions) or [**Allow access to your Protect360 dashboard**](/marketers/docs/set-up-an-integrated-partner#agency-permissions), respectively, in the **Permissions** tab of **Active integrations**.
+* Performance reports also referred to as aggregate data reports, are available by default to agency accounts. Related reading: <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">Aggregate performance reports</Anchor>
+* Access to aggregate organic data reports requires marketer <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">permission</Anchor>.
+* Agencies can receive access to Retention and Cohort reports, and Protect360 dashboard. This requires that the marketer enable <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">**Allow access to your retention and cohort reports**</Anchor> or <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">**Allow access to your Protect360 dashboard**</Anchor>, respectively, in the **Permissions** tab of **Active integrations**.
 
 ### Access to raw data
 
-[Raw data reports](/marketers/docs/raw-data-reporting-overview) (user-level data reports) contain attribution information and are divided into topics.
+<Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data reports</Anchor> (user-level data reports) contain attribution information and are divided into topics.
 
 ### Time zone and currency
 
@@ -256,7 +257,7 @@ Agencies see apps in the app-defined time zone and currency, but these settings 
 
 ### Cost reporting
 
-Agencies can enable **Get cost data** when configuring an integrated partner that [supports cost data](/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).
+Agencies can enable **Get cost data** when configuring an integrated partner that <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">supports cost data</Anchor>.
 
 **To enable Get cost data:**
 
@@ -280,7 +281,7 @@ Hybrid accounts are agency accounts that manage some of the apps as an Agency (a
 
 The following account-level features have limited availability:
 
-* [Custom dashboard](/marketers/docs/custom-dashboards): not available for agencies and hybrid accounts.
+* <Anchor target="_blank" href="/marketers/docs/custom-dashboards">Custom dashboard</Anchor>: not available for agencies and hybrid accounts.
 * Cohort report: available upon marketer's permission.
 * Protect360: available upon marketer's permission.
 

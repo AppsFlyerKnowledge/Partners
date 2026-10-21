@@ -1,8 +1,5 @@
 ---
 title: User management for ad networks
-excerpt: >-
-  Create and manage your ad network account's AppsFlyer users, and assign them a
-  role defining which features they can access.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4414238502289-User-management-for-ad-networks
 ---
+**At a glance:** Create and manage your ad network account's AppsFlyer users, and assign them a role defining which features they can access.
+
 ## Background
 
 AppsFlyer ad network accounts allow for multiple users, each with a role that defines their access to features and functions.
@@ -37,7 +36,7 @@ The **Admin** role has access to all capabilities. The **Marketing** role has ac
 
 As a general rule, all roles are predefined, and each role’s functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by changing their role (except for the [account owner](/docs/user-management-for-ad-networks#admina-special-role), as discussed below).
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You have assigned Bill Bates to the **Marketing** role. This role gives Bill the ability to manage **Validation Rules** but does not allow him access to the **Audit log.**
 >
@@ -66,7 +65,7 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
   * The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [User management](/docs/user-management-for-ad-networks#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
     * If you do need to change the account owner, follow the [steps listed below](/docs/user-management-for-ad-networks#changing-the-account-owner).
   * The account owner is initially responsible for creating additional users (until additional users with user management capabilities are created).
-* Admins can [manage API and S2S tokens](/marketers/docs/managing-appsflyer-tokens).
+* Admins can <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">manage API and S2S tokens</Anchor>.
 * Any Admin other than the account owner **can** be changed to a different role or deleted from the AppsFlyer account through the User management page.
 
 ## User management page
@@ -82,7 +81,7 @@ The **Users** tab displays a table of all existing users in your account. It is 
 
 * Click the **User** column heading to sort the table alphabetically (ascending/descending).
 * Use the search box to find and display specific users.
-* Click the filter icon ![filter_icon.png](https://files.readme.io/00fa39bef5e51bf9a8a0b2ae2dee4b631b57d423e261883bff1199d7293c0458-17387375698833.png) in the **Role** column heading to filter users by their role (including temp roles).
+* Click the filter icon <Image alt="filter_icon.png" src="https://files.readme.io/00fa39bef5e51bf9a8a0b2ae2dee4b631b57d423e261883bff1199d7293c0458-17387375698833.png" width="25px" /> in the **Role** column heading to filter users by their role (including temp roles).
   * To clear the filter, select **None** in the filter dropdown list.
 * Use the checkboxes to select and [edit multiple users](/docs/user-management-for-ad-networks#multi-user-editing) at the same time.
 
@@ -97,7 +96,7 @@ Click on the name of any role in the left panel to see:
 
 * Full details of the role’s capabilities
 * The number of users currently assigned that role (in the top-right corner of the screen)
-  * Hover over the user icon ![user_icon.png](https://files.readme.io/70d626cc0d2888c46c0e080dc76e4f005312fe5dea7e7811336e0324e4a846ad-17387375703569.png) to see a list of the first 20.
+  * Hover over the user icon <Image alt="user_icon.png" src="https://files.readme.io/70d626cc0d2888c46c0e080dc76e4f005312fe5dea7e7811336e0324e4a846ad-17387375703569.png" width="21px" /> to see a list of the first 20.
 
 ## Creating a user
 
@@ -113,14 +112,14 @@ Click on the name of any role in the left panel to see:
    * Two consecutive periods (..) and other special characters are not allowed.
    * Must end with a valid email domain.
 
-     > 📘 **Important!**
-     >
-     > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
-     >
-     > * It cannot later be changed without deleting and recreating the user.
-     > * It must be a valid email address at which the user can receive email.
-     > * It cannot be associated with another user in any AppsFlyer account.
-     > * If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management-for-ad-networks#troubleshooting-can-t-create-this-user) to resolve this issue.
+   > 🚧 **Important!**
+   >
+   > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+   >
+   > * It cannot later be changed without deleting and recreating the user.
+   > * It must be a valid email address at which the user can receive email.
+   > * It cannot be associated with another user in any AppsFlyer account.
+   >   * If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management-for-ad-networks#troubleshooting-can-t-create-this-user) to resolve this issue.
 
 4. Select the user’s department (optional).
 5. Select the user’s role (required).
@@ -144,7 +143,7 @@ Users can be edited either one at a time or in groups.
 
 **To edit an individual user:**
 
-1. On the **Users** tab, click the **Actions** ![actions_icon.png](https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png) button on the far-right side of the user’s row.
+1. On the **Users** tab, click the **Actions** <Image alt="actions_icon.png" src="https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png" width="25px" /> button on the far-right side of the user’s row.
 2. Select **Edit** from the menu.
 3. Edit user settings as required.
    * All settings other than email address are editable.
@@ -172,7 +171,7 @@ Multi-user editing is an efficient way to change the role of several users at on
 
 **To delete a user:**
 
-1. On the **Users** tab, click the **Actions** button ![actions_icon.png](https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png) on the far-right side of the user’s row.
+1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png" width="25px" /> on the far-right side of the user’s row.
 2. Select **Delete** from the menu.
 
 ## Special situations and additional procedures
@@ -195,7 +194,7 @@ Temp roles were designed specifically to allow seamless transition from our prio
 * When a user with a temp role is changed to a predefined role, they cannot be returned to the previously-assigned temp role (or to any other temp role).
 * If the last user in a temp role is removed from it, the role will no longer appear in your account.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Your account previously used our prior user management system. Diana and Edward were existing users at the time your account was moved to the new system. Diana is now in Temp role 1, and Edward is in Temp role 2.
 >
@@ -210,7 +209,7 @@ Temp roles were designed specifically to allow seamless transition from our prio
 
 Because all Admins have the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > A few things to consider before you begin:
 >
@@ -218,7 +217,7 @@ Because all Admins have the same permissions as the account owner, changing the 
 
 #### #1–Send your request via the chat widget
 
-To begin the process of changing the account owner, open the chat widget [using this link](https://hq1.appsflyer.com/apps/search?openAssistant=true) or by clicking the Help button on the top-right of the menu bar. Include the following information in the chat:
+To begin the process of changing the account owner, open the chat widget <Anchor target="_blank" href="https://hq1.appsflyer.com/apps/search?openAssistant=true">using this link</Anchor> or by clicking the Help button on the top-right of the menu bar. Include the following information in the chat:
 
 * Name of the account owner you would like to replace
 * Name, title, and email of the new account owner
@@ -227,8 +226,8 @@ To begin the process of changing the account owner, open the chat widget [using 
 
 Once the change has been processed, you will receive an email notification from AppsFlyer.
 
-* If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/marketers/docs/user-management#creating-users) for them and assign them a new role.
-* APIs using token v2 aren't affected by changing the account owner.  [Learn more about managing tokens](/marketers/docs/managing-appsflyer-tokens).
+* If you want the prior account owner to continue using your AppsFlyer account, <Anchor target="_blank" href="/marketers/docs/user-management#creating-users">create a new user</Anchor> for them and assign them a new role.
+* APIs using token v2 aren't affected by changing the account owner.  <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Learn more about managing tokens</Anchor>.
 
 </Accordion>
 
@@ -247,7 +246,7 @@ If the user’s email is used in a different account or you can’t determine th
 
 * Delete them from the other account and add them to yours (requires that either you or the user has the required permissions in the other account); or
 * Add them to your account using a different email address. This must be a valid email address at which they can actually receive an email; or
-* Contact AppsFlyer support for partners through the [partner assistant chatbot](/docs/using-the-partner-assistant-chatbot).
+* Contact AppsFlyer support for partners through the <Anchor target="_blank" href="/partners/docs/using-the-partner-assistant-chatbot">partner assistant chatbot</Anchor>.
 
 </Accordion>
 
@@ -257,7 +256,7 @@ If the user’s email is used in a different account or you can’t determine th
 
 If a new user did not receive their [account activation invitation](/docs/user-management-for-ad-networks#becoming-an-active-user) or if they did not activate within 48 hours, you can resend the email as follows:
 
-1. On the **Users** tab, click the **Actions** button ![actions_icon.png](https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png) on the far-right side of the user’s row.
+1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png" width="25px" /> on the far-right side of the user’s row.
    * Note that the user is still shown with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/1e334edd433f9ac13a175cdd48345adebe02892215896ea967768dc3cabf0349-17387375704209.png), indicating that they have not yet activated their account).
 2. Select **Resend email invite** from the menu.
 
@@ -269,10 +268,10 @@ If a new user did not receive their [account activation invitation](/docs/user-m
 
 If your account uses 2FA, there may be occasions on which you need to reset a user’s 2FA settings. Do so as follows:
 
-1. On the **Users** tab, click the **Actions** button ![actions_icon.png](https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png) on the far-right side of the user’s row.
+1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png" width="25px" /> on the far-right side of the user’s row.
 2. Select **Reset 2FA** from the menu.
 
-**Note:** An admin can reset any other admin's 2FA other than their own or the [account owner's](/docs/user-management-for-ad-networks#admina-special-role). To reset the account owner's 2FA, contact AppsFlyer support for partners through the [partner assistant chatbot](/docs/using-the-partner-assistant-chatbot).
+**Note:** An admin can reset any other admin's 2FA other than their own or the [account owner's](/docs/user-management-for-ad-networks#admina-special-role). To reset the account owner's 2FA, contact AppsFlyer support for partners through the <Anchor target="_blank" href="/partners/docs/using-the-partner-assistant-chatbot">partner assistant chatbot</Anchor>.
 
 </Accordion>
 

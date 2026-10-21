@@ -1,8 +1,5 @@
 ---
 title: Android integration testing for ad networks
-excerpt: >-
-  Test your AppsFlyer Android integration using the AppsFlyer Partner
-  Integrations app to trigger postbacks.
 metadata:
   keywords:
     - Ad Networks
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4412945443857-Android-integration-testing-for-ad-networks
 ---
+**At a glance:** Test your AppsFlyer Android integration using the AppsFlyer Partner Integrations app to trigger postbacks.
+
 ## Android integration testing
 
 Testing consists of the following elements:
@@ -35,7 +34,7 @@ Testing consists of the following elements:
 
 The following table lists test scenarios according to the setting combinations available.
 
-For each scenario, you can test installs and in-app events. For in-app events, you can use [in-app event mapping](/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events) to map advertiser events to your events.
+For each scenario, you can test installs and in-app events. For in-app events, you can use <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">in-app event mapping</Anchor> to map advertiser events to your events.
 
 ## Testing
 
@@ -49,10 +48,10 @@ Complete the prerequisites before beginning to execute the test procedure.
 
 | Prerequisites |
 | --- |
-| [Integrate the Android test app into your account.](/docs/turn-on-test-app-integration-for-ad-networks) |
+| <Anchor target="_blank" href="/partners/docs/turn-on-test-app-integration-for-ad-networks">Integrate the Android test app into your account.</Anchor> |
 | Verify that the test app is integrated into your account |
-| [Map in-app events to your event names](/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events). Event names to be mapped: `purchase`, `login`, `registration` |
-| [Prepare attribution link](/docs/ios-integration-testing-for-ad-networks#attribution-link) |
+| <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">Map in-app events to your event names</Anchor>. Event names to be mapped: `purchase`, `login`, `registration` |
+| <Anchor target="_blank" href="/partners/docs/ios-integration-testing-for-ad-networks#attribution-link">Prepare attribution link</Anchor> |
 | Test install attribution using a device running Android |
 | Test in-app event attribution using an Android device |
 | Test retargeting attribution using an Android device |
@@ -68,7 +67,7 @@ Complete the prerequisites before beginning to execute the test procedure.
 1. Send the attribution link previously prepared to a test device.
 2. Click on the link, install and then open the app.  
    The **Install Data** page displays.
-3. Validate the attribution using the following parameters. If the validation fails, see [Troubleshooting](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
+3. Validate the attribution using the following parameters. If the validation fails, see <Anchor target="_blank" href="/partners/docs/ios-integration-testing-for-ad-networks#troubleshooting">Troubleshooting</Anchor>.
 
    1. `install_time`: near the current time. Time is in UTC.
    2. `af_status: Non-organic` If this is not the case, the install was not attributed.
@@ -124,7 +123,7 @@ Prepare an attribution link in the AppsFlyer dashboard, using one of the followi
 
 **Example attribution link:**
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=pitestap_int&c=c-test-2020-12-20
 ```
 
@@ -161,7 +160,7 @@ You can also test retargeting attribution. The process is almost the same except
 
 Generate a new attribution link and add the parameter `is_retargeting=true` to it.
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAIGN&af_click_lookback=7d
           &clickid={clickid}&is_retargeting=true
 ```
@@ -186,7 +185,7 @@ Access your AppsFlyer dashboard and click on **Re-targeting** in the left-side m
 4. Make sure that **Enable view-through attribution** is ON.
 5. Copy the Impression attribution link.
 
-   ```
+   ```http
    https://impression.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAIGN&af_viewthrough_lookback=24h&advertising_id=YOUR_GAID&af_siteid=YOUR_SITEID
    ```
 

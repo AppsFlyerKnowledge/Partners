@@ -1,9 +1,5 @@
 ---
 title: Preload attribution for partners
-excerpt: >-
-  Attribute mobile app installs to campaigns that preload the app at the
-  Original Equipment Manufacturer (OEM) or when the device is first turned on by
-  the user.
 metadata:
   keywords:
     - Partners
@@ -25,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15321350340241-Preload-attribution-for-partners
 ---
+**At a glance:** Attribute mobile app installs to campaigns that preload the app at the Original Equipment Manufacturer (OEM) or when the device is first turned on by the user.
+
 ## Overview
 
 By supporting AppsFlyer preload attribution solutions, preload partners can have app installs attributed to preload campaigns. Preload campaigns are for when an app is installed on a device by a preload partner either at the factory or upon device activation (when the device is first turned on).
@@ -43,17 +41,17 @@ There are 3 ways to attribute preload campaigns:
 
 Postbacks are sent to you after each conversion.
 
-[Learn more about the preload campaign attribution methods](/marketers/docs/appsflyer-attribution-model#preload-campaigns)
+<Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">Learn more about the preload campaign attribution methods</Anchor>
 
 ## Set up preload attribution
 
 To set up preload attribution:
 
-1. Make sure you're an [AppsFlyer integrated partner](/docs/getting-started-onboarding-guide-for-ad-networks).
+1. Make sure you're an <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">AppsFlyer integrated partner</Anchor>.
 2. Choose the preload attribution solutions to integrate (based on advertiser needs). **Note**: Each integration needs an independent PID with an AppsFlyer Partner Account. Reach out to your partner solutions team via the support widget.
-   * [Recommended] [AppsFlyer referrer](/marketers/docs/set-up-appsflyer-preload-referrer-attribution): Contact your PDM for integration instructions.
-   * [Google Play auto-install (PAI)](/marketers/docs/measure-preload-campaigns-with-google-play-install): Configure the media source information in the Google Play Referrer API for PAI campaigns using the following UTM parameters: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=brandnamepai_int`. For example: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=xiaomipai_int`.
+   * [Recommended] <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution">AppsFlyer referrer</Anchor>: Contact your PDM for integration instructions.
+   * <Anchor target="_blank" href="/marketers/docs/measure-preload-campaigns-with-google-play-install">Google Play auto-install (PAI)</Anchor>: Configure the media source information in the Google Play Referrer API for PAI campaigns using the following UTM parameters: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=brandnamepai_int`. For example: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=xiaomipai_int`.
 3. Contact the AppsFlyer partner solutions team via the support widget to complete the integration and optionally set up postbacks.  
-   **Note**: See which postback macros are supported for the preload method of [Google PAI](/marketers/docs/measure-preload-campaigns-with-google-play-install#postbacks-for-preload-partners) and [AppsFlyer referrer/Android manifest file](/docs/postback-macros-for-ad-networks).
+   **Note**: See which postback macros are supported for the preload method of <Anchor target="_blank" href="/marketers/docs/measure-preload-campaigns-with-google-play-install#postbacks-for-preload-partners">Google PAI</Anchor> and <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">AppsFlyer referrer/Android manifest file</Anchor>.
 
 <div data-zendesk-anchors="organic-search-attribution=overview h_01HQFFB20SKDVW1X3ECMZCZQW0=overview h_01HQFFB20S6KJH3PBF5N2190TJ=set-up-preload-attribution" />

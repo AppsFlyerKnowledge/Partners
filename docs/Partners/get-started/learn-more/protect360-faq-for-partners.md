@@ -1,6 +1,5 @@
 ---
 title: Protect360—FAQ for partners
-excerpt: Find answers to questions frequently asked by partners about Protect360.
 metadata:
   keywords:
     - Agencies
@@ -24,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16091549732497-Protect360-FAQ-for-partners
 ---
+**At a glance:** Find answers to questions frequently asked by partners about Protect360.
+
 ## Impression level anomalies
 
 <div id="why-are-impressionsclicks-being-capped" />
@@ -37,8 +38,8 @@ Once the capping mechanism is triggered, Protect360 blocks the ad network’s im
 A network can avoid surpassing the threshold by stopping campaigns and publishers with unusually high volumes of ad engagements that do not show any impact on performance results.
 
 We recommend taking a look at these articles:  
-[Impression capping](/docs/protect360-for-integrated-partners#impression-capping)  
-[Capping FAQ](/docs/protect360-for-integrated-partners#faq)
+<Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#impression-capping">Impression capping</Anchor>  
+<Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#faq">Capping FAQ</Anchor>
 
 </Accordion>
 
@@ -50,7 +51,7 @@ Our click-flood algorithms run at various intervals over the course of the day, 
 
 **Please note:** Some of our click flood algorithms work across apps, implying that anomalies originating from identical fraudulent sources would be recognized for other advertised apps as well.
 
-We recommend reading: [What is click flooding?](https://www.appsflyer.com/glossary/click-flooding/)
+We recommend reading: <Anchor target="_blank" href="https://www.appsflyer.com/glossary/click-flooding/">What is click flooding?</Anchor>
 
 </Accordion>
 
@@ -62,7 +63,7 @@ We recommend reading: [What is click flooding?](https://www.appsflyer.com/glossa
 
 AppsFlyer’s anti-fraud detection applies different methodologies across various protection layers, such as single installs and install clusters. Clusters are being reviewed in various aggregations: by publisher, media source, app, and so on. The fraudulent activity is examined using various statistical algorithms and machine learning algorithms that consider each cluster as a whole. Thus, if a cluster is found fraudulent with high statistical significance, all installs in that cluster are considered fraudulent. It's a well-known fraudster tactic to mix some legitimate installs into high volumes of fraudulent activity in the hope that the fraud will be “diluted” enough to avoid triggering blocking mechanisms.
 
-By default, all incoming installs are considered as LIVE traffic - hence to ensure your test install isn't categorized under the Protect360 algorithms, you would need to follow the steps mentioned in [this article](/marketers/docs/registering-test-devices) to register your device as a test device before performing a test.
+By default, all incoming installs are considered as LIVE traffic - hence to ensure your test install isn't categorized under the Protect360 algorithms, you would need to follow the steps mentioned in <Anchor target="_blank" href="/marketers/docs/registering-test-devices">this article</Anchor> to register your device as a test device before performing a test.
 
 </Accordion>
 
@@ -72,7 +73,7 @@ By default, all incoming installs are considered as LIVE traffic - hence to ensu
 
 Please review the "fraud sub reason" associated with the rejection for better clarity. This data is also available in Protect360 reports and on the Protect360 dashboard, subject to access granted by the respective advertiser.
 
-We recommend reading about [Protect360 blocked reasons](/marketers/docs/protect360-raw-data-reports#blocked-reasons).
+We recommend reading about <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons">Protect360 blocked reasons</Anchor>.
 
 </Accordion>
 
@@ -85,8 +86,8 @@ We recommend reading about [Protect360 blocked reasons](/marketers/docs/protect3
 You can view the results of our detection efforts using the Protect360 dashboard and raw data reports, subject to access granted by the respective advertiser.
 
 We recommend taking a look at these articles:  
-[Protect360 Dashboard](/marketers/docs/protect360-dashboard)  
-[Protect360 Raw Data](/marketers/docs/protect360-raw-data-reports#getting-raw-data-reports)
+<Anchor target="_blank" href="/marketers/docs/protect360-dashboard">Protect360 Dashboard</Anchor>  
+<Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#getting-raw-data-reports">Protect360 Raw Data</Anchor>
 
 </Accordion>
 
@@ -96,7 +97,7 @@ We recommend taking a look at these articles:
 
 AppsFlyer provides rejected attribution postbacks to ad networks for every install Protect360 rejects from attribution.
 
-You can enable “rejected postback” by appending “rejected postback” parameters to your postback template by using [Integration Management](/docs/self-serve-integration-management-for-ad-networks).
+You can enable “rejected postback” by appending “rejected postback” parameters to your postback template by using <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks">Integration Management</Anchor>.
 
 </Accordion>
 
@@ -110,7 +111,7 @@ Compared to real-time detection, post-attribution detection relies more on data 
 
 Considering the above, certain detection methods (timestamp\_anomalies, behavioral\_anomalies, etc.) are more likely to be detected in the post-attribution stage rather than in real time, since the data is inconclusive on the level of an individual install but gains significance when examined for its distribution in statistical analysis.
 
-Learn more about [post-attribution detection](/marketers/docs/protect360-anti-fraud-guide#postattribution-detection).
+Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#postattribution-detection">post-attribution detection</Anchor>.
 
 </Accordion>
 

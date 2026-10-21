@@ -13,13 +13,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551058566033-Ad-network-onboarding
 ---
-- [Using the Partner Assistant Chatbot](/docs/using-the-partner-assistant-chatbot)
-- [Set up your list of authorized agencies](/docs/set-up-your-list-of-authorized-agencies)
-- [Getting started—onboarding guide for ad networks](/docs/getting-started-onboarding-guide-for-ad-networks)
-- [Implementing and using 2FA login](/docs/implementing-and-using-2fa-login-partners)
-- [User management for ad networks](/docs/user-management-for-ad-networks)
-- [Self-serve integration management for ad networks](/docs/self-serve-integration-management-for-ad-networks)
-- [AppsFlyer Partner Marketplace profile setup](/docs/appsflyer-partner-marketplace-profile-setup)
-- [CTV-to-mobile app view-through attribution for ad networks](/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks)
-- [Integration requests for partners](/docs/integration-requests-for-partners)
-- [Preload attribution for partners](/docs/preload-attribution-for-partners)
+- <Anchor target="_blank" href="/partners/docs/using-the-partner-assistant-chatbot">Using the Partner Assistant Chatbot</Anchor>
+- <Anchor target="_blank" href="/partners/docs/set-up-your-list-of-authorized-agencies">Set up your list of authorized agencies</Anchor>
+- <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">Getting started—onboarding guide for ad networks</Anchor>
+- <Anchor target="_blank" href="/partners/docs/implementing-and-using-2fa-login-partners">Implementing and using 2FA login</Anchor>
+- <Anchor target="_blank" href="/partners/docs/user-management-for-ad-networks">User management for ad networks</Anchor>
+- <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks">Self-serve integration management for ad networks</Anchor>
+- <Anchor target="_blank" href="/partners/docs/appsflyer-partner-marketplace-profile-setup">AppsFlyer Partner Marketplace profile setup</Anchor>
+- <Anchor target="_blank" href="/partners/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks">CTV-to-mobile app view-through attribution for ad networks</Anchor>
+- <Anchor target="_blank" href="/partners/docs/integration-requests-for-partners">Integration requests for partners</Anchor>
+- <Anchor target="_blank" href="/partners/docs/preload-attribution-for-partners">Preload attribution for partners</Anchor>

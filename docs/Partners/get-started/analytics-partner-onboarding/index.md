@@ -12,4 +12,4 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/34732438397841-Analytics-partner-onboarding
 ---
-- [Getting started—onboarding guide for analytics partners](/docs/getting-started-onboarding-guide-for-analytics-partners)
+- <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-analytics-partners">Getting started—onboarding guide for analytics partners</Anchor>

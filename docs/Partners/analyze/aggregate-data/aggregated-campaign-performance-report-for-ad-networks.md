@@ -1,9 +1,5 @@
 ---
 title: Aggregated campaign performance report for ad networks
-excerpt: >-
-  Ad networks load the aggregated performance report (AKA Cohort report) into
-  their BI systems to calculate campaign performance metrics like the 7-day
-  retention KPI.
 metadata:
   keywords:
     - Ad Networks
@@ -25,9 +21,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360020834237-Aggregated-campaign-performance-report-for-ad-networks
 ---
+**At a glance**: Ad networks load the aggregated performance report (AKA Cohort report) into their BI systems to calculate campaign performance metrics like the 7-day retention KPI.
+
 ## Aggregated campaign performance report
 
-This report provides campaign performance data, including the number of unique users performing a given event. You (the ad network), use the data in your BI systems to calculate campaign performance metrics in the context of advertiser KPIs. The report is available daily via [Data Locker for Partners](/docs/data-locker-for-partners)
+This report provides campaign performance data, including the number of unique users performing a given event. You (the ad network), use the data in your BI systems to calculate campaign performance metrics in the context of advertiser KPIs. The report is available daily via <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">Data Locker for Partners</Anchor>
 
 **Why do you need the report?**
 
@@ -42,11 +40,11 @@ Metrics are provided with the best granularity possible using the dimensions rep
 * Revenue
 * Number of times a given event is performed
 * Number of unique users performing an event
-* [Example report](https://docs.google.com/spreadsheets/d/e/2PACX-1vS89RlkFIss7uARroJcOcX1rU6gUmZ2ySYwfTprg9GaA2BYnvDPVqWmOicea1wrBnNuGgEuLPwzL_ac/pub?gid=0&single=true&output=csv)
+* <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS89RlkFIss7uARroJcOcX1rU6gUmZ2ySYwfTprg9GaA2BYnvDPVqWmOicea1wrBnNuGgEuLPwzL_ac/pub?gid=0&single=true&output=csv">Example report</Anchor>
 
 **How do you get the report?**
 
-* Provided via Data Locker for Partners. The report updates [Daily UTC time](/marketers/docs/about-data-freshness-and-timezone-support#daily-processing).
+* Provided via Data Locker for Partners. The report updates <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">Daily UTC time</Anchor>.
 * Before we start sharing the data with you, the advertisers must [grant permissions](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) in the dashboard.
 
 ## About the report
@@ -104,14 +102,14 @@ Metrics are provided with the best granularity possible using the dimensions rep
 
 The report contains user attributions, installs, re-attributions, and re-engagements, and their related in-app events.
 
-In your data consumption process, you must use logic to split the data between campaign types. Meaning, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type and is\_primary\_attribution field. See [Double attribution of retargeting events.](/marketers/docs/resolve-retargeting-double-attribution)
+In your data consumption process, you must use logic to split the data between campaign types. Meaning, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type and is\_primary\_attribution field. See <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">Double attribution of retargeting events.</Anchor>
 
 **Field-level considerations**
 
 * Use post-attribution days to enable easy calculation of retention metrics.
 * Calculating unique users using campaign name and campaign ID dimensions: If you can disregard campaign name granularity, you can sum unique count on campaign ID and the metrics are correct.
 * You can aggregate the data using the campaign hierarchy fields.
-* In-app events use the advertiser event name and aren't mapped to your event names. Ask the advertiser to provide you with the mappings or view them in the dashboard. [Partner in-app event mapping](/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
+* In-app events use the advertiser event name and aren't mapped to your event names. Ask the advertiser to provide you with the mappings or view them in the dashboard. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">Partner in-app event mapping</Anchor>.
 * Revenue is in USD is calculated using the exchange rate on the event day.
 * Ad revenue events are included where available but update with a lag of up to 5 days.
 
@@ -133,7 +131,7 @@ To create retention metrics, for example, retention day-7, do so by setting filt
 * days\_post\_install=7
 * event\_name=af\_session
 * conversion\_type as required
-* To prevent the inclusion of [duplicate retargeting events](/marketers/docs/resolve-retargeting-double-attribution), select is\_primary\_attribution=true or use conversion\_type to limit the data set to installs.
+* To prevent the inclusion of <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">duplicate retargeting events</Anchor>, select is\_primary\_attribution=true or use conversion\_type to limit the data set to installs.
 * Group by: campaign and other dimensions as needed.
 * Sum: unique\_users\_count
 

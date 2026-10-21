@@ -1,8 +1,5 @@
 ---
 title: ROI360—cost reporting options for agencies
-excerpt: >-
-  Report cost data via cost API (requires a subscription to ROI360 premium
-  solution), and cost by click.
 metadata:
   keywords:
     - clicks
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360014054998-ROI360-cost-reporting-options-for-agencies
 ---
+**At a glance:** Report cost data via cost API (requires a subscription to ROI360 premium solution), and cost by click.
+
 ## Cost reporting for agencies
 
 Advertisers use AppsFlyer as their source of truth for ROI, billing, and to make marketing budget allocation decisions. To do so, they need to have all the cost information on a single platform. ROI360, an AppsFlyer premium solution, enables advertisers and agencies to collect cost data via API, making it available for viewing using AppsFlyer dashboards and reporting tools. 
@@ -41,5 +40,5 @@ The following table lists cost aggregation capabilities available with, and with
 
 | Option | Requires ROI360 subscription | Description |
 | --- | --- | --- |
-| [Cost API](/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) | Yes | <ul><li>Agencies use their ad network API credentials to connect to enable cost API in the AppsFlyer dashboard.</li><li>Cost data is reflected according to [agency transparency](/marketers/docs/view-agency-data). (For SRNs, this includes clicks and impressions.)</li><li>Supports all cost models</li><li>Accurate</li><li>Data refresh rate: 6 times a day, every four hours.</li></ul> |
-| [Cost by click](/docs/cost-reporting-on-the-attribution-link-for-ad-networks)<br /><br />(on the attribution link) | No | <ul><li>Agencies send their CPI, value, and cost currency on the attribution link. AppsFlyer aggregates the cost.</li><li>Data freshness: Near real-time</li></ul>**Limitations:**<ul><li>Limited to CPI cost model</li><li>If the wrong data is sent on the link, it can't be changed retroactively.</li><li>Cost reported by click is not available in the SKAdNework dashboard.</li><li>Cost by click is less accurate if the advertiser uses SKAdNetwork.</li></ul> |
+| <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">Cost API</Anchor> | Yes | <ul><li>Agencies use their ad network API credentials to connect to enable cost API in the AppsFlyer dashboard.</li><li>Cost data is reflected according to <Anchor target="_blank" href="/marketers/docs/view-agency-data">agency transparency</Anchor>. (For SRNs, this includes clicks and impressions.)</li><li>Supports all cost models</li><li>Accurate</li><li>Data refresh rate: 6 times a day, every four hours.</li></ul> |
+| <Anchor target="_blank" href="/partners/docs/cost-reporting-on-the-attribution-link-for-ad-networks">Cost by click</Anchor><br /><br />(on the attribution link) | No | <ul><li>Agencies send their CPI, value, and cost currency on the attribution link. AppsFlyer aggregates the cost.</li><li>Data freshness: Near real-time</li></ul>**Limitations:**<ul><li>Limited to CPI cost model</li><li>If the wrong data is sent on the link, it can't be changed retroactively.</li><li>Cost reported by click is not available in the SKAdNework dashboard.</li><li>Cost by click is less accurate if the advertiser uses SKAdNetwork.</li></ul> |

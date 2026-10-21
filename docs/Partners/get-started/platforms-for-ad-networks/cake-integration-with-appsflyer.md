@@ -1,8 +1,5 @@
 ---
 title: Cake integration with AppsFlyer
-excerpt: >-
-  Ad networks that use CAKE can receive attribution data from AppsFlyer about
-  installs and in-app events.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207273986-Cake-integration-with-AppsFlyer
 ---
+**At a glance:** Ad networks that use CAKE can receive attribution data from AppsFlyer about installs and in-app events.
+
 ## Base attribution link
 
 Below you can find the base attribution link with a detailed explanation per each parameter:
@@ -47,13 +46,13 @@ Below you can find the base attribution link with a detailed explanation per eac
 | clickid | #oreqid# | Request ID of each user session - **Required** |
 | af\_siteid | #affid# | ID of the Affiliate promoting the offer - **Optional** |
 
-For a complete AppsFlyer parameter list, click [here](/marketers/docs/about-link-structure-and-parameters)
+For a complete AppsFlyer parameter list, click <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">here</Anchor>
 
-For a complete CAKE macro list, click [here](https://support.getcake.com/support/solutions/articles/5000566463-tokens).
+For a complete CAKE macro list, click <Anchor target="_blank" href="https://support.getcake.com/support/solutions/articles/5000566463-tokens">here</Anchor>.
 
 ### Complete attribution link template
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#oreqid#
 ```
 
@@ -61,13 +60,13 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#oreqid#
 
 ### Global install postback
 
-```
+```http
 https://{company-domain}.com/p.ashx?f=pb&r=(Click-ID)
 ```
 
 ### Global in-app event postback
 
-```
+```http
 Click-ID
 ```
 
@@ -83,7 +82,7 @@ Additional attribution information can be added to the postback by request such 
 
 ## Finalizing your registration
 
-* If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
 
 <div data-zendesk-anchors="01EZPMKP0AFM26H2ZG9FY1D2S4=base-attribution-link 01EZPMKP0A7DBV5KAGZ08C3R49=recommended-attribution-link-parameters 01EZPMKP0AH1MB0XYE3PXQPP0V=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01EZPMKP0A2D0PB41GD04HX9JX=install-and-in-app-event-postbacks 01EZPMKP0AVAJRP8YM48T4GV47=global-install-postback global-inapp-event-postback=global-in-app-event-postback 01EZPMKP0AM7JD7HWW7BCJDQF3=global-in-app-event-postback appsflyer-inapp-events-dashboard=appsflyer-in-app-events-dashboard 01EZPMKP0AJTYT0G9E8G833KT0=appsflyer-in-app-events-dashboard h_01HY03H1PMWZX3T12RZFV15CFE=finalizing-your-registration" />

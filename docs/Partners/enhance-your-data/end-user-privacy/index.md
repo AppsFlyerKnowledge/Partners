@@ -13,6 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551186412689-End-user-privacy
 ---
-- [SKAN CV schema API for ad networks](/docs/skan-cv-schema-api-for-ad-networks)
-- [SKAN integration guide for ad networks](/docs/skan-integration-guide-for-ad-networks)
-- [Advanced Privacy guide & postback macros for ad networks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks)
+- <Anchor target="_blank" href="/partners/docs/skan-cv-schema-api-for-ad-networks">SKAN CV schema API for ad networks</Anchor>
+- <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAN integration guide for ad networks</Anchor>
+- <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy guide & postback macros for ad networks</Anchor>

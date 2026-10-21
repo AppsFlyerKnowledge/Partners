@@ -1,8 +1,5 @@
 ---
 title: Integrating Meta campaign management partners with AppsFlyer
-excerpt: >-
-  Learn what data types Meta campaign management partners can receive from
-  AppsFlyer.
 metadata:
   keywords:
     - Callbacks
@@ -34,6 +31,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034146-Integrating-Meta-campaign-management-partners-with-AppsFlyer
 ---
+**At a glance:** Learn what data types Meta campaign management partners can receive from AppsFlyer.
+
 ## Install postbacks
 
 Upon conversion, AppsFlyer can return the following parameters:
@@ -53,7 +52,7 @@ Upon conversion, AppsFlyer can return the following parameters:
 | Channel (Instagram, Meta Audience Network, Facebook, Messenger) | `{af_channel}` |
 | Geo | `{user_country}` |
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > http://mcmp_postbackURL.........&mcmp_ADset_name =`{adset_name}`
 
@@ -66,7 +65,7 @@ Upon In-app events, AppsFlyer can return the following parameters (in addition t
 | Event Name* | `{event_name}` |
 | Event Value | `{event_value}` |
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > http://FMP_postbackURL.........&eventname=`{event_name}`
 
@@ -86,10 +85,10 @@ For example: If an install happened at 4.32 pm and 42 seconds, we can pass 5 pm 
 >
 > Based on Meta terms sending postbacks is available only for companies obtaining the following badges: Ad Technology
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > ![](https://files.readme.io/6832879dafaadb91a795988abdc5e51203c9c1775054e35829cfe60cb2175a66-360001440909.png)
 >
-> For the full list of Meta campaign management partners, click [here](https://www.facebook.com/business/partner-directory/search?programBadges=ADTECH_FB.ADTECH_IG&solution_type=campaign_management).
+> For the full list of Meta campaign management partners, click <Anchor target="_blank" href="https://www.facebook.com/business/partner-directory/search?programBadges=ADTECH_FB.ADTECH_IG&solution_type=campaign_management">here</Anchor>.
 
 <div data-zendesk-anchors="inapp-event-postbacks=in-app-event-postbacks userlevel-data-policy=user-level-data-policy" />

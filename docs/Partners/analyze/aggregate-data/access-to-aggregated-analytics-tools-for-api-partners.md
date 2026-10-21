@@ -1,9 +1,5 @@
 ---
 title: Access to aggregated analytics tools for API partners
-excerpt: >-
-  API partners can use their API token to access advertisers' data when granted
-  permission by the advertiser, allowing them to extract performance metrics
-  from the platform.
 metadata:
   keywords:
     - Advertisers
@@ -29,16 +25,18 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360005854857-Access-to-aggregated-analytics-tools-for-API-partners
 ---
+> **At a glance:** API partners can use their API token to access advertisers' data when granted permission by the advertiser, allowing them to extract performance metrics from the platform.
+
 ## API token permissions
 
-![api-access-permissions.jpg](https://files.readme.io/7961394cb39cf1e6f85d77cd732183edea5fb1408c220ca05b23ae7bbb50138e-23701010316689.jpg)
+<Image alt="api-access-permissions.jpg" src="https://files.readme.io/7961394cb39cf1e6f85d77cd732183edea5fb1408c220ca05b23ae7bbb50138e-23701010316689.jpg" width="439px" />
 
 Advertisers can grant the following app-level permissions:
 
 | Permission type | Reporting tool | Limitations |
 | --- | --- | --- |
-| Aggregated analytics reporting | [Cohort analytics data via DataLocker](/marketers/docs/cohort-analytics-via-data-locker) | X Ads campaign data isn't available to API partners due to their restrictions. |
-| SKAN reporting | <ul><li>[SKAN performance reporting](/marketers/docs/skan-aggregated-performance-report-api)</li><li>[SKAN aggregate postback reporting](/marketers/docs/skan-aggregated-postback-arrival-date-api)</li></ul> | -- |
+| Aggregated analytics reporting | <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort analytics data via DataLocker</Anchor> | X Ads campaign data isn't available to API partners due to their restrictions. |
+| SKAN reporting | <ul><li><Anchor target="_blank" href="/marketers/docs/skan-aggregated-performance-report-api">SKAN performance reporting</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/skan-aggregated-postback-arrival-date-api">SKAN aggregate postback reporting</Anchor></li></ul> | -- |
 
 
 ### Considerations
@@ -46,16 +44,18 @@ Advertisers can grant the following app-level permissions:
 * **Advertiser perspective**
   * Advertisers can grant the API partner permissions as listed in the preceding table.
 * **Partner perspective**
-  * Extract data by API. **Note**: Security is implemented via an authentication [token](/marketers/docs/managing-appsflyer-tokens) available in the AppsFlyer dashboard. The same token is valid for all apps and advertisers.
+  * Extract data by API. **Note**: Security is implemented via an authentication <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">token</Anchor> available in the AppsFlyer dashboard. The same token is valid for all apps and advertisers.
   * Get data via Data Locker
   * Advertisers can revoke permissions to access their app data. This won't impact your partner credentials.
 
 <Accordion title="Granting access to the partner">
 
-**warning**
-
-* The permissions type lets the partner access data, including traffic brought by other partners and organic data.
-* Don't share your token with partners.
+> 🚧 **Important**
+>
+> **warning**
+>
+> * The permissions type lets the partner access data, including traffic brought by other partners and organic data.
+> * Don't share your token with partners.
 
 **To grant API access to the partner:**
 

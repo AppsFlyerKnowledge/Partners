@@ -13,7 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551110127761-Enhance-your-data
 ---
-- [Provide data](/docs/provide-data)
-- [Receive data](/docs/receive-data)
-- [End-user privacy](/docs/end-user-privacy)
-- [Cost sharing for ad networks](/docs/cost-sharing-for-ad-networks)
+- <Anchor target="_blank" href="/partners/docs/provide-data">Provide data</Anchor>
+- <Anchor target="_blank" href="/partners/docs/receive-data">Receive data</Anchor>
+- <Anchor target="_blank" href="/partners/docs/end-user-privacy">End-user privacy</Anchor>
+- <Anchor target="_blank" href="/partners/docs/cost-sharing-for-ad-networks">Cost sharing for ad networks</Anchor>

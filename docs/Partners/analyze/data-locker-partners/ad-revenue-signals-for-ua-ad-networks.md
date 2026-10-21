@@ -1,8 +1,5 @@
 ---
 title: Ad revenue signals for UA ad networks
-excerpt: >-
-  Ad networks responsible for user acquisition can receive data regarding ad
-  revenue and use it to optimize their customers' UA campaigns.
 metadata:
   keywords:
     - Ad Network
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4402898251409-Ad-revenue-signals-for-UA-ad-networks
 ---
+**At a glance:** Ad networks responsible for user acquisition can receive data regarding ad revenue and use it to optimize their customers' UA campaigns.
+
 Ad networks can receive reports via Data Locker with valuable ad revenue information regarding users. These users may have been acquired from campaigns served through them, or they may be from a different media source.
 
 Ad networks can then ingest this data to campaign-targeting and optimization algorithms, and use it to improve ROAS campaigns based on a complete view of UA-generated revenue.
@@ -36,9 +35,9 @@ Ad networks can then ingest this data to campaign-targeting and optimization alg
 
 The following activities need to be completed to access the Ad Revenue report in Data Locker:
 
-* Ad networks have to [onboard to Data Locker for Partners](/docs/data-locker-for-partners#set-up-data-locker).
+* Ad networks have to <Anchor target="_blank" href="/partners/docs/data-locker-for-partners#set-up-data-locker">onboard to Data Locker for Partners</Anchor>.
 * Ad networks have to [configure the report output settings](#configure-the-report-output-settings) and [enable the Ad revenue report](#enable-the-ad-revenue-report).
-* Advertisers have to permit ad networks to view the report. [See advertiser instructions](/marketers/docs/share-ad-revenue-data-with-partners#ua-signals-for-ad-networks)
+* Advertisers have to permit ad networks to view the report. <Anchor target="_blank" href="/marketers/docs/share-ad-revenue-data-with-partners#ua-signals-for-ad-networks">See advertiser instructions</Anchor>
 
 <div id="configure-the-report-output-settings" />
 
@@ -52,7 +51,7 @@ To configure the report output setting, follow the steps below:
    * The report format (Parqet/CSV).
    * The report compression method (Snappy/GZIPO/Uncompressed).
    * The maximum number of rows in a file.
-4. Review the expected path of the report file outputs. The path is set according to your connection settings. To learn how to set up the connection see [Set up Data Locker](/docs/data-locker-for-partners#set-up-data-locker).
+4. Review the expected path of the report file outputs. The path is set according to your connection settings. To learn how to set up the connection see <Anchor target="_blank" href="/partners/docs/data-locker-for-partners#set-up-data-locker">Set up Data Locker</Anchor>.
 
 </Accordion>
 
@@ -63,7 +62,7 @@ To configure the report output setting, follow the steps below:
 1. In the **Data Locker content** section select the **Ad revenue [daily]** report type.
 2. Click **Save connection**.
 3. Make sure that the advertiser permitted the Ad network to view the report.
-4. For instruction, see [Permit ad networks to get ad revenue data.](/marketers/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data)
+4. For instruction, see <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">Permit ad networks to get ad revenue data.</Anchor>
 
 </Accordion>
 
@@ -76,11 +75,11 @@ To configure the report output setting, follow the steps below:
 * Format: Data arrives in CSV format to the UA partner's S3 bucket.
 * Level: Contains device-level dimensions and metrics.
 * Data enrichment: Includes ad revenue data from mediation partners, and adds attribution data relevant to the UA ad network (that is cleaned of all dimensions irrelevant to the UA ad network).
-* Data freshness: [Daily, meaning data for Day 0 arrives on Day 1](/marketers/docs/about-data-freshness-and-timezone-support#ad-revenue). Data is written daily at 17:00 [UTC time](/marketers/docs/about-data-freshness-and-timezone-support#daily-processing) to the h=23 of your Data Locker bucket.
+* Data freshness: <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#ad-revenue">Daily, meaning data for Day 0 arrives on Day 1</Anchor>. Data is written daily at 17:00 <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">UTC time</Anchor> to the h=23 of your Data Locker bucket.
 * Apps included: A single report contains the data of all apps for which advertisers have granted permission.
 * The reports include data about all conversion types: Installs, re-attributions, re-engagements, and reinstalls.
 * Currency: In USD. Event revenue is calculated to USD on the day the event occurred.
-* [See sample report](https://docs.google.com/spreadsheets/d/e/2PACX-1vSoV1U_pMUoTFhIpyYQmUI1zQWArY19c8gMmsfpRiAaGXVZEG4WqgSC26u5-fv32j8ZQN4uxtNgVkYs/pub?output=csv)
+* <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSoV1U_pMUoTFhIpyYQmUI1zQWArY19c8gMmsfpRiAaGXVZEG4WqgSC26u5-fv32j8ZQN4uxtNgVkYs/pub?output=csv">See sample report</Anchor>
 
 </Accordion>
 
@@ -96,7 +95,7 @@ To configure the report output setting, follow the steps below:
 | campaign, campaign\_id, adset\_name, adset\_id, ad\_name, ad\_name, ad\_id, site\_id | Only populated if UA is attributed to the partner receiving the data. |
 | idfa, idfv, advertising\_id | <ul><li>The same device ID, like IDFA, IDFV, or advertiser\_id could display in multiple rows if there are more than one ad revenue monetization events.</li><li>For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display.</li></ul> |
 | platform | Device platform: iOS, Android, or Windows Mobile |
-| country | Country code using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) Example: US, CN |
+| country | Country code using <Anchor target="_blank" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166 (alpha-2)</Anchor> Example: US, CN |
 | original\_url | <ul><li>For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display.</li><li>Only populated if UA is attributed to the partner receiving the data.</li></ul> |
 | ad\_unit |  |
 | placement |  |

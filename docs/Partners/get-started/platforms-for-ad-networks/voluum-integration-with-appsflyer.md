@@ -1,8 +1,5 @@
 ---
 title: Voluum integration with AppsFlyer
-excerpt: >-
-  Ad networks that use Voluum can utilize the AppsFlyer Probabilistic modeling
-  solution to receive attribution data about installs and in-app events.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207274016-Voluum-integration-with-AppsFlyer
 ---
+**At a glance:** Ad networks that use Voluum can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
+
 ## Starting the integration
 
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
@@ -49,9 +48,9 @@ Below you can find the base attribution link with a detailed explanation per eac
 | &clickid= | `{clickid}` | Unique transaction ID of the user session - **Required** |
 | ⁡\_siteid= | `{trafficsource.id}` | ID of the traffic source - **Optional** |
 
-** For complete AppsFlyer parameter list, [click here](/marketers/docs/about-link-structure-and-parameters)
+** For complete AppsFlyer parameter list, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">click here</Anchor>
 
-** For complete Voluum macro list, [click here](http://feedback.voluum.com/knowledgebase/articles/318681-click-urls)
+** For complete Voluum macro list, <Anchor target="_blank" href="http://feedback.voluum.com/knowledgebase/articles/318681-click-urls">click here</Anchor>
 
 ### Complete attribution link template
 
@@ -83,7 +82,7 @@ https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary
 
 ## Finalizing your registration
 
-* If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
 
 <div data-zendesk-anchors="01JFT0VZZ5KVMKYRD222JT55NH=starting-the-integration 01JFT0VZZ7B1RRY82B65GWF4P7=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT0VZZ86KYXSVE1QBD2V0HF=install-and-in-app-event-postbacks appsflyers-inapp-event-dashboard=appsflyers-in-app-event-dashboard 01JFT0VZZ9A4JWG38KPH0CNQ72=appsflyers-in-app-event-dashboard 01JFT0VZZATFYY75QPCPKZF3S6=finalizing-your-registration" />

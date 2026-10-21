@@ -1,8 +1,5 @@
 ---
 title: FOCUUS integration with AppsFlyer
-excerpt: >-
-  Ad networks that use FOCUUS can utilize the AppsFlyer Probabilistic modeling
-  solution to receive attribution data about installs and in-app events.
 metadata:
   keywords:
     - Focuus
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/213374546-FOCUUS-integration-with-AppsFlyer
 ---
+**At a glance:** Ad networks that use FOCUUS can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
+
 ## Creating your attribution link
 
 The attribution link consists of the below AppsFlyer base attribution link and additional macros added by the ad network.
@@ -48,23 +47,23 @@ See below AppsFlyers base attribution link with a detailed explanation per macro
 | **clickid** | **`{tid}`** | **Request ID of each user session** - **Required** |
 | af\_siteid | `{publisher_id}` | ID of the Affiliate promoting the offer - Optional |
 
-For a complete list of AppsFlyer parameters, [click here](/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters).
+For a complete list of AppsFlyer parameters, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">click here</Anchor>.
 
-FOCUUS allows an unlimited number of macros, and you can name them as you wish, [click](/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters) [here](http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros "Link: http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros").
+FOCUUS allows an unlimited number of macros, and you can name them as you wish, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">click</Anchor> <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros">here</Anchor>.
 
 ### Complete attribution link template
 
 `https://app.appsflyer.com/com.appsflyer?pid={traffic_source}&clickid={tid}&af_siteid={publisher_id}`
 
-This attribution link is set on your FOCUUS campaign [destination](http://support.focuus.com/knowledgebase/articles/827784-adding-a-new-link "Link: http://support.focuus.com/knowledgebase/articles/827784-adding-a-new-link").
+This attribution link is set on your FOCUUS campaign <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827784-adding-a-new-link">destination</Anchor>.
 
 ## Install and in-app event postbacks
 
 To create your install and in-app event postbacks at **FOCUUS**
 
-1. Create a [new event](http://support.focuus.com/knowledgebase/articles/827775-events "Link: http://support.focuus.com/knowledgebase/articles/827775-events") (Install and any other in-app events).
-2. [Generate pixel](http://support.focuus.com/knowledgebase/articles/827766-s2s-integration) (postback) for implementation.
-3. Copy the postback URL that appears in the box labeled [Server2Server Pixel](http://support.focuus.com/knowledgebase/articles/827766-s2s-integration "Link: http://support.focuus.com/knowledgebase/articles/827766-s2s-integration").
+1. Create a <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827775-events">new event</Anchor> (Install and any other in-app events).
+2. <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827766-s2s-integration">Generate pixel</Anchor> (postback) for implementation.
+3. Copy the postback URL that appears in the box labeled <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827766-s2s-integration">Server2Server Pixel</Anchor>.
 4. Replace the TRANSACTION\_ID with AppsFleyr macro - “**clickid**”  
    https://pixel.focuusing.com/event.php?type=imp&tid=`{clickid}`**
 

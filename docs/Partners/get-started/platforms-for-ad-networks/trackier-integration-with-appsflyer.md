@@ -1,8 +1,5 @@
 ---
 title: Trackier integration with AppsFlyer
-excerpt: >-
-  Ad networks that use Trackier can receive attribution data from AppsFlyer
-  about installs and in-app events.
 metadata:
   keywords:
     - AdNetwork Integration
@@ -30,6 +27,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360006111917-Trackier-integration-with-AppsFlyer
 ---
+**At a glance:** Ad networks that use Trackier can receive attribution data from AppsFlyer about installs and in-app events.
+
 To begin integration, provide AppsFlyer with both the attribution link URL and the postback URL. The URLs are needed for reporting purposes. This article explains how to build these URLs.
 
 ## Attribution link URL
@@ -38,7 +37,7 @@ This section provides the base attribution link and related parameter descriptio
 
 ### Base attribution link URL
 
-```
+```http
 https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_siteid={publishedr_id}
 &af_c_id={camp_id}
 ```
@@ -58,8 +57,8 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 >
 > See complete parameter lists for:
 >
-> * [AppsFlyer](/marketers/docs/about-link-structure-and-parameters)
-> * [Trackier](https://trackier.com/support/kb/tracking-macros/)
+> * <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer</Anchor>
+> * <Anchor target="_blank" href="https://trackier.com/support/kb/tracking-macros/">Trackier</Anchor>
 
 | AppsFlyer parameter | Trackier macro | Description |
 | --- | --- | --- |
@@ -75,13 +74,13 @@ This section provides examples of postback URLs and parameters for install and i
 
 #### Global install postback
 
-```
+```http
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&idfa={idfa}
 ```
 
 #### Global in-app event postback
 
-```
+```http
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&idfa={idfa}&goal_value={event-name}
 ```
 
@@ -89,13 +88,13 @@ https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxx
 
 #### Global install postback
 
-```
+```http
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&gaid={android_id}
 ```
 
 #### Global in-app event postback
 
-```
+```http
 https://yourdomain.com/acquisition?click_id={click_id}&security_token=xxxxxxxxxxxxxxx&gaid={android_id}&goal_value={event-name}
 ```
 
@@ -110,8 +109,8 @@ https://yourdomain.com/acquisition?click_id={click_id}&security_token=xxxxxxxxxx
 
 ## Finalizing your registration
 
-Already integrated with AppsFlyer? Send us the URLs using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+Already integrated with AppsFlyer? Send us the URLs using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 
-Not yet integrated with AppsFlyer? Complete the [Ad partners registration application](https://www.appsflyer.com/partners-registration/).
+Not yet integrated with AppsFlyer? Complete the <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">Ad partners registration application</Anchor>.
 
 <div data-zendesk-anchors="01JFT1SETSSMD0Z0EEQZCYPDB6=attribution-link-url 01JFT1SETTCEC1CAGT89SGNZNX=base-attribution-link-url 01JFT1SEVJTM09KHEKS51KQB7F=attribution-link-parameters 01JFT1SEVJR7TW06CAZWGMBZEB=note postback-urls-for-install-and-inapp-events=postback-urls-for-install-and-in-app-events 01JFT1SEWCM9DFRANRJRDSG5DC=postback-urls-for-install-and-in-app-events 01JFT1SEWCSS585NF8P0T251PZ=ios-postback-urls 01JFT1SEWD3A0JP6MRM1QXKX53=global-install-postback global-inapp-event-postback=global-in-app-event-postback 01JFT1SEWDT1CWHHTVWVACDT0B=global-in-app-event-postback 01JFT1SEWD0HA5WKC83V8HYAA2=android-postback-urls global-install-postback::1726dfc2=global-install-postback-1 01JFT1SEWDY7882HGY032SPGP7=global-install-postback-1 global-inapp-event-postback::ab23c9cb=global-in-app-event-postback-1 01JFT1SEWDYKTWDE536A4ZY34G=global-in-app-event-postback-1 01JFT1SEWEZQF38K9V9M6TNP3N=postback-parameters 01JFT1SEWTPX9BH7N1FPN4NJJW=finalizing-your-registration" />

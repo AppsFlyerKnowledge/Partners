@@ -1,8 +1,5 @@
 ---
 title: AppsFlyer Partner Marketplace profile setup
-excerpt: >-
-  Create a robust Partner Marketplace profile page with information about your
-  company and its services and solutions.
 metadata:
   keywords:
     - partner account
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/5688918701073-AppsFlyer-Partner-Marketplace-profile-setup
 ---
+**At a glance**: Create a robust Partner Marketplace profile page with information about your company and its services and solutions.
+
 ## Overview
 
 AppsFlyer Partner Marketplace is where advertisers can find new ad networks, agencies, and other platforms to work with. Create your profile and provide as much information as possible for them to see in the marketplace and make educated choices.
@@ -69,7 +68,7 @@ Add details about the services you provide. We recommend adding as much informat
 
 ### Overview
 
-* **Type of services you offer:** Select from the list up to 3 types of [supported capabilities](/marketers/docs/partner-integrations#supported-capabilities).
+* **Type of services you offer:** Select from the list up to 3 types of <Anchor target="_blank" href="/marketers/docs/partner-integrations#supported-capabilities">supported capabilities</Anchor>.
 * **Search tags:** Add up to 5 keywords or phrases for advertisers to find you when searching by feature. Press Enter after each keyword or phrase.
 * **Offering highlights:** List the highlights of your offering as bullet points.
 * **Offering description:** Provide an extensive description of your offering.
@@ -107,7 +106,7 @@ Add any additional marketing information about the offer:
 
 ## Contacts
 
-Select either of the following ways advertisers can [contact you](/marketers/docs/partner-integrations#contact-details) via the Partner Marketplace:
+Select either of the following ways advertisers can <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">contact you</Anchor> via the Partner Marketplace:
 
 * **Sales contact:** Enter the contact details (email required) for the introductory email AppsFlyer sends on behalf of the advertiser. This email is sent when the advertiser clicks **Introduce me** on your marketplace details page.   
   **Note:** When no contact details are provided, the **Introduce me** button in the marketplace is grayed out.

@@ -1,9 +1,5 @@
 ---
 title: Implementing and using 2FA login
-excerpt: >-
-  Two-factor authentication (2FA) is used to add an extra layer of security to
-  the login process. Login credentials for account users are supplemented by
-  Google or Microsoft Authenticator.
 metadata:
   keywords:
     - Marketers
@@ -24,16 +20,18 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/41585422141585-Implementing-and-using-2FA-login
 ---
+**At a glance:** Two-factor authentication (2FA) is used to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator.
+
 ## Intro
 
 > 📘 **Note**
 >
-> Each person who accesses AppsFlyer must have their own user account. User credentials can’t be shared, and 2FA must be set up individually for every user. If you need to add users to the account, go to User management and create new users as needed. For details, see [User management.](/docs/user-management-for-agencies)
+> Each person who accesses AppsFlyer must have their own user account. User credentials can’t be shared, and 2FA must be set up individually for every user. If you need to add users to the account, go to User management and create new users as needed. For details, see <Anchor target="_blank" href="/partners/docs/user-management-for-agencies">User management.</Anchor>
 
 * 2FA is mandatory by AppsFlyer.
 * 2FA must be set up using **Google or Microsoft Authenticator.**
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > After you set up 2FA, don’t delete your authenticator app. Doing so breaks the connection to AppsFlyer, and you won’t be able to log in.
 
@@ -108,7 +106,7 @@ Note: If you are an account owner, you can reset your own 2FA in [the steps that
 
 | Name | Description |
 | --- | --- |
-| AppsFlyer apps | With 2FA enabled, both the AppsFlyer apps, **My Device ID by AppsFlyer** and **AppsFlyer**, cannot be used. To register test devices, use the method [here](/marketers/docs/registering-test-devices). |
+| AppsFlyer apps | With 2FA enabled, both the AppsFlyer apps, **My Device ID by AppsFlyer** and **AppsFlyer**, cannot be used. To register test devices, use the method <Anchor target="_blank" href="/marketers/docs/registering-test-devices">here</Anchor>. |
 
 </Accordion>
 

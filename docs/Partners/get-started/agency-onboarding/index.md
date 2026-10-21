@@ -13,7 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551110223889-Agency-onboarding
 ---
-- [Getting started—agency onboarding](/docs/getting-started-agency-onboarding)
-- [About agency accounts](/docs/about-agency-accounts)
-- [User management for agencies](/docs/user-management-for-agencies)
-- [AppsFlyer Partner Marketplace profile setup for agencies](/docs/appsflyer-partner-marketplace-profile-setup-for-agencies)
+- <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding">Getting started—agency onboarding</Anchor>
+- <Anchor target="_blank" href="/partners/docs/about-agency-accounts">About agency accounts</Anchor>
+- <Anchor target="_blank" href="/partners/docs/user-management-for-agencies">User management for agencies</Anchor>
+- <Anchor target="_blank" href="/partners/docs/appsflyer-partner-marketplace-profile-setup-for-agencies">AppsFlyer Partner Marketplace profile setup for agencies</Anchor>

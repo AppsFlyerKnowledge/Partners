@@ -1,8 +1,5 @@
 ---
 title: Postback retries
-excerpt: >-
-  Learn how postback retries work in AppsFlyer and how integrated partners can
-  configure their postback mechanisms.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001376085-Postback-retries
 ---
+**At a glance:** Learn how postback retries work in AppsFlyer and how integrated partners can configure their postback mechanisms.
+
 ## Introduction
 
 Postbacks to partners are a critical part of the integration between AppsFlyer and our partners. Since any system can experience momentary issues in its responsiveness, AppsFlyer is able to retry failed postbacks.

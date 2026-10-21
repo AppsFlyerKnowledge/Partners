@@ -1,6 +1,5 @@
 ---
 title: Self-serve integration management for ad networks
-excerpt: Set up and manage your integration from the AppsFlyer dashboard.
 metadata:
   keywords:
     - postbacks
@@ -23,15 +22,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018512658-Self-serve-integration-management-for-ad-networks
 ---
+**At a glance**: Set up and manage your integration from the AppsFlyer dashboard.
+
 <Embed title="Self-serve integration management for ad networks" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
 
 ## **Prerequisites:**
 
-* You have to have login credentials (username and password) for AppsFlyer before you can manage attribution links and postbacks. To [create a partner](/docs/getting-started-onboarding-guide-for-ad-networks) account, ask an AppsFlyer customer (advertiser) to [invite you](/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer).
+* You have to have login credentials (username and password) for AppsFlyer before you can manage attribution links and postbacks. To <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">create a partner</Anchor> account, ask an AppsFlyer customer (advertiser) to <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer">invite you</Anchor>.
 * Management of attribution links and default postbacks is available only to partners who joined after February 1, 2022.
 * Verify that your servers are ready to receive postbacks by complying with the following:
-  * Allowlist AppsFlyer server [IP addresses](/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting) in your firewalls and security systems to ensure communication with your endpoints
-  * TLS versions: TLS 1.1, TLS 1.2+ with the [ciphers listed.](/marketers/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client)
+  * Allowlist AppsFlyer server <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">IP addresses</Anchor> in your firewalls and security systems to ensure communication with your endpoints
+  * TLS versions: TLS 1.1, TLS 1.2+ with the <Anchor target="_blank" href="/marketers/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client">ciphers listed.</Anchor>
   * Ports: 80, 443
 * ![AppsFlyerAdmin_us-en.png](https://files.readme.io/047d2ffa8bd5258c09f60c6f560162b285c4e9742d98b1158952a26d988ce763-18271759619089.png) Only Admin users can access and manage this section.
 
@@ -54,20 +55,20 @@ Completion of attribution link configuration is mandatory
    * **Your macro**: add the macro that populates the parameters with values.
    * **Include**: check the box to include the parameter in the link
 
-     > 📘 **Important!**
-     >
-     > * Add campaign and ad-related parameters to provide more robust data about campaign performance.
-     > * **Site ID** is a mandatory parameter
-     > * Advertisers use this link as a basis for the integration of a specific app and can add additional parameters to it.
-     > * App ID, Lookback window duration, and your Partner ID are added to the link automatically and you don't need to add them to this template.
+   > 🚧 **Important!**
+   >
+   > * Add campaign and ad-related parameters to provide more robust data about campaign performance.
+   > * **Site ID** is a mandatory parameter
+   > * Advertisers use this link as a basis for the integration of a specific app and can add additional parameters to it.
+   > * App ID, Lookback window duration, and your Partner ID are added to the link automatically and you don't need to add them to this template.
 
 2. **[Optional]** Add custom parameters that are not provided by AppsFlyer.
 3. Use the link preview to verify that everything is correct.
 4. Click **Save**.
 
-[More about attribution links and available parameters](/marketers/docs/about-link-structure-and-parameters).
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">More about attribution links and available parameters</Anchor>.
 
-In the case of any issues, reach out using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+In the case of any issues, reach out using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 
 ## Default postback
 
@@ -84,11 +85,11 @@ Postbacks are URLs containing macros populated by AppsFlyer and sent to your ser
    * **Install**: check the box to include the parameter in the install postback.
    * **In-app event**: check the box to include the parameter in the in-app event postback.
 
-   [Full list of postback macros](/docs/postback-macros-for-ad-networks)
+   <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">Full list of postback macros</Anchor>
 
-   > 📘 **Important!**
+   > 🚧 **Important!**
    >
-   > * To be able to distinguish between postbacks for legitimate events and rejected postbacks,  configure the [rejected postback macros](/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events).
+   > * To be able to distinguish between postbacks for legitimate events and rejected postbacks,  configure the <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events">rejected postback macros</Anchor>.
    > * To enable rejected install/in-app event postbacks, append the following parameters to your default postback template:
    >   * `is-rejected`
    >   * `blocked-reason`
@@ -100,9 +101,9 @@ Postbacks are URLs containing macros populated by AppsFlyer and sent to your ser
 4. Use the postback template preview to verify that everything is correct.
 5. Click **Save**.
 
-[More postback info and examples.](/marketers/docs/in-app-event-postback-configuration)
+<Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">More postback info and examples.</Anchor>
 
-In the case of any issues, use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+In the case of any issues, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 
 ## Advanced Privacy and SKAN postbacks
 
@@ -111,8 +112,8 @@ Advanced Privacy and SKAN postbacks can be configured only after the attribution
 **To manage the postbacks:**
 
 1. Select a postback type:
-   * [Advanced privacy](/docs/advanced-privacy-guide-postback-macros-for-ad-networks) postback.
-   * [SKAdNetwork](/docs/skan-integration-guide-for-ad-networks) postback.
+   * <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced privacy</Anchor> postback.
+   * <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> postback.
 2. Activate the builder.
 3. **[For SKAdNetwork postback configuration only]** Enter your SKAdNetwork ID. This field is mandatory and the configuration can't be saved without a valid ID.
 4. Enter the **endpoint addresses.** These are the endpoints to which postbacks are sent. Enter the relevant URLs for installs, in-app events, or both.
@@ -124,11 +125,11 @@ Advanced Privacy and SKAN postbacks can be configured only after the attribution
    * **Install**: Check the box to include the parameter in the install postback.
    * **In-app event**: Check the box to include the parameter in the in-app event postback.
 
-   List of [SKAdNetwork postback macros](/docs/skan-integration-guide-for-ad-networks#receive-data-from-appsflyer)
+   List of <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks#receive-data-from-appsflyer">SKAdNetwork postback macros</Anchor>
 
-   List of [Advanced Privacy postback macros](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
+   List of <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">Advanced Privacy postback macros</Anchor>
 
-   > 📘 **Important!**
+   > 🚧 **Important!**
    >
    > * To enable rejected install/in-app event postbacks, append the following parameters to your default postback template:
    >   * `is-rejected`
@@ -143,6 +144,6 @@ Advanced Privacy and SKAN postbacks can be configured only after the attribution
 8. Click **Save**.  
    Note, that when you save the postback, the changes take place immediately.
 
-In the case of any issues, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+In the case of any issues, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 
 <div data-zendesk-anchors="h_01KZTVV00EB224GJD5F7VBP071=prerequisites h_01H9FCSTYR157CCJWTYSNE9JQ0=accessing-integration-management h_01H9FCSTYR6HRSF9F8KCR4B3X7=attribution-link h_01H9FCSTYR4Q1985DTHNE1M1CC=important h_01H9FCSTYR2WX0M0ZW3B22EKBM=default-postback h_01H9FCSTYSEP367WAAKCFHZT58=important-1 h_01H9FCSTYSRKBMYR2BYNQJJKVM=advanced-privacy-and-skan-postbacks h_01H9FCSTYSEJD59AWCFNXDZMYW=important-2" />

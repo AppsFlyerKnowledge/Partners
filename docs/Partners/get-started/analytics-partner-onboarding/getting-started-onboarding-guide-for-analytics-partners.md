@@ -1,9 +1,5 @@
 ---
 title: Getting started—onboarding guide for analytics partners
-excerpt: >-
-  Set up your analytics partner integration with AppsFlyer, including
-  configuration of postback templates. This article outlines the steps,
-  timelines, and dependencies involved in the onboarding process.
 metadata:
   keywords:
     - Partners
@@ -25,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/34444156204689-Getting-started-onboarding-guide-for-analytics-partners
 ---
+**At a glance:** Set up your analytics partner integration with AppsFlyer, including configuration of postback templates. This article outlines the steps, timelines, and dependencies involved in the onboarding process.
+
 ![54150 Partners onboarding KB.png](https://files.readme.io/f8d8abe52561baf06cb3125d7f49760d2510aaa1ed63c6c0515d3543418dad91-34615688043409.png)
 
 ## About the analytics partner integration
@@ -40,8 +38,8 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
 <Accordion title="Step 1: Register account">
 
 1. **Create a new PID via advertiser invitation:**   
-   Analytics partner accounts (and PID creation) can only be initiated through an advertiser’s invitation. Share this [link](/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer) with your advertiser and ask them to send you an invitation.
-2. **Complete registration:**  
+   Analytics partner accounts (and PID creation) can only be initiated through an advertiser’s invitation. Share this <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer">link</Anchor> with your advertiser and ask them to send you an invitation.
+2. **Complete registration:**   
    Follow the steps provided in the invitation email to complete the ad network registration process.   
 
    **Note:** Ensure that the email address used for registration is not associated with an existing AppsFlyer account as a team member or admin.
@@ -53,7 +51,7 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
 <Accordion title="Step 2: Set up postback endpoint and profile">
 
 1. **Approval email:** Once your registration is approved, you’ll receive an email inviting you to complete mandatory integration steps.
-2. **Configure postback endpoint:** Refer to the [Postback macros for analytics partners](/docs/postback-macros-for-analytics-partners) article to set up your postback endpoint and macros using AppsFlyer’s [postback management platform](/docs/self-serve-integration-management-for-ad-networks).
+2. **Configure postback endpoint:** Refer to the <Anchor target="_blank" href="/partners/docs/postback-macros-for-analytics-partners">Postback macros for analytics partners</Anchor> article to set up your postback endpoint and macros using AppsFlyer’s <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks">postback management platform</Anchor>.
 3. **Profile setup:**
    1. In AppsFlyer, navigate to the menu bar and select your email address > **Partner Setup**.
    2. On the Profile tab, complete the company information, and upload your company logo.

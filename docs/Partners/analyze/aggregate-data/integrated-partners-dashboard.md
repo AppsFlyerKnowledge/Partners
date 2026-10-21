@@ -1,8 +1,5 @@
 ---
 title: Integrated partners dashboard
-excerpt: >-
-  Integrated partners use the dashboard and reports to view and analyze campaign
-  traffic attributed to you.
 metadata:
   keywords:
     - partner login
@@ -26,14 +23,16 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/212955423-Integrated-partners-dashboard
 ---
+**At a glance:** Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
+
 ## Using the AppsFlyer dashboard
 
 **To log in to AppsFlyer**:
 
-1. [Log in](https://hq1.appsflyer.com/auth/login) or navigate to https://hq1.appsflyer.com/auth/login  
+1. <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">Log in</Anchor> or navigate to https://hq1.appsflyer.com/auth/login  
    The list of apps displays.
 2. Select an app or search for it.  
-   Note! If you don't see the required app, ask the advertiser to grant you [Ad network permissions](/marketers/docs/set-up-an-integrated-partner#permissions-tab). The advertiser does this in the AppsFlyer dashboard in the permissions tab.
+   Note! If you don't see the required app, ask the advertiser to grant you <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Ad network permissions</Anchor>. The advertiser does this in the AppsFlyer dashboard in the permissions tab.
 
 ## Overview dashboard
 
@@ -44,22 +43,22 @@ Campaign performance metrics and charts are available in the Overview dashboard.
 To view report data:
 
 * In the side menu, select one of the following:
-  * [Raw Data Export](/marketers/docs/raw-data-export-page)
-  * [Aggregated Data Export](/marketers/docs/aggregated-data-export-page)  
+  * <Anchor target="_blank" href="/marketers/docs/raw-data-export-page">Raw Data Export</Anchor>
+  * <Anchor target="_blank" href="/marketers/docs/aggregated-data-export-page">Aggregated Data Export</Anchor>  
     The Reports window opens.
 
 > 📘 **Note**
 >
 > * Data shown in raw data reports is limited to raw data in postbacks attributed to the partner only.
-> * For Protect360 subscribers, when the **[Protect360 dashboard & raw data](/marketers/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data)** permission is granted by the advertiser, partners also have access to Protect360 raw data reports.
+> * For Protect360 subscribers, when the **<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data">Protect360 dashboard & raw data</Anchor>** permission is granted by the advertiser, partners also have access to Protect360 raw data reports.
 > * **Event value** data is not displayed in this report. To get event values, you can do one of the following:
 >
 > * * Request from the advertiser to provide you in-app event raw data reports
->   * Add `(event-value)` [macro to the postback URL](/docs/postback-macros-for-ad-networks)
+>   * Add `(event-value)` <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">macro to the postback URL</Anchor>
 
 ### Using Postback reports
 
-You can use the Installation and In-app event [postback reports](/marketers/docs/raw-data-reporting-overview#postbacks) to find 'missing' actions., i.e. when the advertiser's raw data shows user actions that were not recorded in the ad network.
+You can use the Installation and In-app event <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#postbacks">postback reports</Anchor> to find 'missing' actions., i.e. when the advertiser's raw data shows user actions that were not recorded in the ad network.
 
 Download the relevant Postbacks report and look for the **Postback URL** and **Postback HTTP Response Code** fields:
 
@@ -74,11 +73,11 @@ Click **Active Integrations** on the left side of the window to view the current
 
 Ad network can view the configuration on its dashboard only when it is set up by the advertiser. 
 
-Agencies can configure ad network setup upon getting relevant permission from the advertiser. Note that **whenthe configuration is made by an agency, the ad network sees it as inactive**.
+Agencies can configure ad network setup upon getting relevant permission from the advertiser. Note that **when** **the configuration is made by an agency, the ad network sees it as inactive**.
 
 ## Permissions
 
-Using the **Permissions** tab, advertisers can [grant different types of permissions to the ad networks](/marketers/docs/set-up-an-integrated-partner#permissions-tab).
+Using the **Permissions** tab, advertisers can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">grant different types of permissions to the ad networks</Anchor>.
 
 ### Enabling Permissions
 
@@ -93,7 +92,7 @@ The first step is for your client to enable permissions. Your client must switch
 If you want your team member to also view the app's dashboard, your client needs to give them permissions.
 
 1. Give your client the emails of the team members that you want the client to give permissions to.
-2. The client should then [add them to the integration with your ad network](/marketers/docs/set-up-an-integrated-partner#permissions-tab).
+2. The client should then <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">add them to the integration with your ad network</Anchor>.
 
 ### Granting additional permissions
 

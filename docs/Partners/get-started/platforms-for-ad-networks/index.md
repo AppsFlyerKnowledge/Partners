@@ -13,17 +13,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551055575185-Platforms-for-ad-networks
 ---
-- [PeerClick integration with AppsFlyer](/docs/peerclick-integration-with-appsflyer)
-- [Appnexus integration with AppsFlyer](/docs/appnexus-integration-with-appsflyer)
-- [Cake integration with AppsFlyer](/docs/cake-integration-with-appsflyer)
-- [Everflow integration with AppsFlyer](/docs/everflow-integration-with-appsflyer)
-- [FOCUUS integration with AppsFlyer](/docs/focuus-integration-with-appsflyer)
-- [Hubscale integration with AppsFlyer](/docs/hubscale-integration-with-appsflyer)
-- [Offerslook integration with AppsFlyer for ad networks](/docs/offerslook-integration-with-appsflyer-for-ad-networks)
-- [TUNE (formerly, HasOffers) integration with AppsFlyer](/docs/tune-formerly-hasoffers-integration-with-appsflyer)
-- [venedash integration with AppsFlyer](/docs/venedash-integration-with-appsflyer)
-- [Dynamic event mapping for in-app events](/docs/dynamic-event-mapping-for-in-app-events)
-- [Fuseclick integration with AppsFlyer](/docs/fuseclick-integration-with-appsflyer)
-- [Voluum integration with AppsFlyer](/docs/voluum-integration-with-appsflyer)
-- [Affise integration with AppsFlyer](/docs/affise-integration-with-appsflyer)
-- [Trackier integration with AppsFlyer](/docs/trackier-integration-with-appsflyer)
+- <Anchor target="_blank" href="/partners/docs/peerclick-integration-with-appsflyer">PeerClick integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/appnexus-integration-with-appsflyer">Appnexus integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/cake-integration-with-appsflyer">Cake integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/everflow-integration-with-appsflyer">Everflow integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/focuus-integration-with-appsflyer">FOCUUS integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/hubscale-integration-with-appsflyer">Hubscale integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/offerslook-integration-with-appsflyer-for-ad-networks">Offerslook integration with AppsFlyer for ad networks</Anchor>
+- <Anchor target="_blank" href="/partners/docs/tune-formerly-hasoffers-integration-with-appsflyer">TUNE (formerly, HasOffers) integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/venedash-integration-with-appsflyer">venedash integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/dynamic-event-mapping-for-in-app-events">Dynamic event mapping for in-app events</Anchor>
+- <Anchor target="_blank" href="/partners/docs/fuseclick-integration-with-appsflyer">Fuseclick integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/voluum-integration-with-appsflyer">Voluum integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/affise-integration-with-appsflyer">Affise integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/partners/docs/trackier-integration-with-appsflyer">Trackier integration with AppsFlyer</Anchor>

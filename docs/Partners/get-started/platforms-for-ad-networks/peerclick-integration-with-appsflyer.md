@@ -1,9 +1,5 @@
 ---
 title: PeerClick integration with AppsFlyer
-excerpt: >-
-  Ad networks that use PeerClick can benefit from the AppsFlyer Probabilistic
-  modeling solution to receive attribution data about installs and in-app
-  events.
 metadata:
   keywords:
     - Advertisers
@@ -28,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/21479841979793-PeerClick-integration-with-AppsFlyer
 ---
+**At a glance:** Ad networks that use PeerClick can benefit from the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
+
 ## Starting the integration
 
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
@@ -52,12 +50,12 @@ Below you can find the base attribution link with a detailed explanation per eac
 
 > 📘 **Note**
 >
-> * For the complete AppsFlyer parameter list, [click here](/marketers/docs/about-link-structure-and-parameters)
-> * For the complete PeerClick list, [click here](https://help-center.peerclick.com/en/)
+> * For the complete AppsFlyer parameter list, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">click here</Anchor>
+> * For the complete PeerClick list, <Anchor target="_blank" href="https://help-center.peerclick.com/en/">click here</Anchor>
 
 ### Complete attribution link template
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
 
@@ -65,7 +63,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 **Global Install Postback:**
 
-```
+```http
 https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 ```
 

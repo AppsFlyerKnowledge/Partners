@@ -1,8 +1,5 @@
 ---
 title: Data richness score for ad networks
-excerpt: >-
-  Improve the quality of the data you provide to advertisers using the AppsFlyer
-  data richness score.
 metadata:
   keywords:
     - Ad Networks
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360009443338-Data-richness-score-for-ad-networks
 ---
+**At a glance:** Improve the quality of the data you provide to advertisers using the AppsFlyer data richness score.
+
 The quality of the data that advertisers receive from ad networks on which they run their campaigns can play an important role in marketing decisions.
 
 The data provided by different ad networks vary in terms of its coverage, accuracy, and granularity. Partial and inaccurate data reduces the advertisers' ability to analyze and optimize their campaign performance on AppsFlyer.
@@ -77,6 +76,6 @@ In order to receive a high score, the following parameters should be provided by
 To add more parameters, and improve your integration and visibility in the AppsFlyer platform,
 
 1. Check which parameters your integration is missing.
-   * [Read about attribution link templates](/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing)
-   * [Check the full list of parameters available for use](/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters)
+   * <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing">Read about attribution link templates</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">Check the full list of parameters available for use</Anchor>
 2. Contact your PDM to update the link template or get more information.

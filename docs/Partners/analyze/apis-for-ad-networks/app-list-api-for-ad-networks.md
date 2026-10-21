@@ -1,8 +1,5 @@
 ---
 title: App list API for ad networks
-excerpt: >-
-  Ad networks can retrieve metadata of apps associated with their integrated
-  partner account.
 metadata:
   keywords:
     - API
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011700857-App-list-API-for-ad-networks
 ---
+**At a glance:** Ad networks can retrieve metadata of apps associated with their integrated partner account.
+
 ## Get app list API
 
 The following sections include information necessary for using the API.
@@ -34,7 +33,7 @@ The following sections include information necessary for using the API.
 
 <Accordion title="Get app list basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/mng/apps</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows: <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a></li></ul></td></tr><tr><td rowspan="3"> Response</td><td>Results</td><td>Return in JSON</td></tr><tr><td>Request limit</td><td><ul><li>20 requests/minute</li><li>100 requests/day</li></ul></td></tr><tr><td>Record limit</td><td>1,000 records/request. If more than 1,000 records are to be returned, use follow-on pagination requests, described in this article.</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/mng/apps</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows: <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a></li></ul></td></tr><tr><td rowspan="3"> Response</td><td>Results</td><td>Return in JSON</td></tr><tr><td>Request limit</td><td><ul><li>20 requests/minute</li><li>100 requests/day</li></ul></td></tr><tr><td>Record limit</td><td>1,000 records/request. If more than 1,000 records are to be returned, use follow-on pagination requests, described in this article.</td></tr></tbody></table>
 
 </Accordion>
 
@@ -52,7 +51,7 @@ GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
 
 #### Get app list mandatory parameters
 
-<table><thead><tr><th>Query parameter</th><th>Description</th></tr></thead><tbody><tr><td>capabilities</td><td><p>To get the list and number of apps to which you have permission/integration capabilities: set the capabilities parameter to one of the options listed. </p><figure><table><thead><tr><th>Option</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>protect_360</code></td><td>Report permission</td><td>Get <a href="./protect360-for-integrated-partners">Protect360 raw data reports for ad networks</a></td></tr><tr><td><code>cost</code> </td><td>Integration</td><td>App is enabled to get cost data <a href="./incost-api-for-ad-networks">via InCost API</a></td></tr></tbody></table></figure><p><strong>Example</strong>: List of apps for which you have Protect360 report API permission:<code>capabilities=protect_360</code></p></td></tr></tbody></table>
+<table><thead><tr><th>Query parameter</th><th>Description</th></tr></thead><tbody><tr><td>capabilities</td><td><p>To get the list and number of apps to which you have permission/integration capabilities: set the capabilities parameter to one of the options listed. </p><figure><table><thead><tr><th>Option</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>protect_360</code></td><td>Report permission</td><td>Get <a href="./protect360-for-integrated-partners" target="_blank">Protect360 raw data reports for ad networks</a></td></tr><tr><td><code>cost</code> </td><td>Integration</td><td>App is enabled to get cost data <a href="./incost-api-for-ad-networks" target="_blank">via InCost API</a></td></tr></tbody></table></figure><p><strong>Example</strong>: List of apps for which you have Protect360 report API permission:<code>capabilities=protect_360</code></p></td></tr></tbody></table>
 
 #### **Pagination mechanism**
 
@@ -187,7 +186,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/mng/apps?capabiliti
 | 200 | OK | **Symptom**: No data returns<br /><br />**Action**: Make sure the authentication token is in the bearer header. |
 | 400 | Bad request | <ul><li>See the message contained in the JSON</li><li>Empty JSON: illegal capability specified</li></ul> |
 | 401 | Unauthorized | **Message**: Authorization token is malformed<br /><br />Make sure you have the correct token; token must have 700+ characters. |
-| 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer [IP addresses are allowlisted](/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting)</li><li>Make sure you use the most recently-issued token.</li><li>No data found: The permission/integration (capabilities) type requested is legal, but no apps with permission were found.</li></ul> |
+| 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">IP addresses are allowlisted</Anchor></li><li>Make sure you use the most recently-issued token.</li><li>No data found: The permission/integration (capabilities) type requested is legal, but no apps with permission were found.</li></ul> |
 | 429 | Too many requests | Exceeded rate limitation |
 
 </Accordion>

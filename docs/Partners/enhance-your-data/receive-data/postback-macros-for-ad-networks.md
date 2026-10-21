@@ -1,9 +1,5 @@
 ---
 title: Postback macros for ad networks
-excerpt: >-
-  As an ad network, you can define the content and endpoints of postbacks sent
-  to you as part of your integration with AppsFlyer. Postbacks relate to app
-  user engagement like installs, in-app events, re-engagements, and so on.
 metadata:
   keywords:
     - postbacks
@@ -30,22 +26,24 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207273946-Postback-macros-for-ad-networks
 ---
+**At a glance:** As an ad network, you can define the content and endpoints of postbacks sent to you as part of your integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on.
+
 Related integrated partner postback guides:
 
-* [Advanced Privacy](/docs/advanced-privacy-guide-postback-macros-for-ad-networks)
-* [SKAdNetwork](/docs/skan-integration-guide-for-ad-networks)
-* [Rejected attribution postbacks](/docs/rejected-attribution-postbacks-to-integrated-partners)
+* <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy</Anchor>
+* <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor>
+* <Anchor target="_blank" href="/partners/docs/rejected-attribution-postbacks-to-integrated-partners">Rejected attribution postbacks</Anchor>
 
 ## Postbacks for ad networks
 
-* **Postback configuration:** To request changes to your postback settings, use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif), or contact your AppsFlyer partner development manager.
+* **Postback configuration:** To request changes to your postback settings, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>, or contact your AppsFlyer partner development manager.
 * **Postback types**: Postbacks are available for install and in-app events and blocked install and in-app events (due to fraud identified by Protect360 or in violation of targeting validation rules).
 
 ### Postback data sources
 
 | Source | Description |
 | --- | --- |
-| [Attribution link parameters](/marketers/docs/about-link-structure-and-parameters) | Parameters provided by the partner on click and impression URLs<br /><br />Example: click ID parameter on the attribution link - "&click\_id=CLICK\_ID" |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Attribution link parameters</Anchor> | Parameters provided by the partner on click and impression URLs<br /><br />Example: click ID parameter on the attribution link - "&click\_id=CLICK\_ID" |
 | Partner IDs in AppsFlyer | Unique IDs provided to the advertiser by the partner<br /><br />Examples: app ID, account ID, user ID, network ID |
 | SDK derived information | Information extracted from the device by the AppsFlyer SDK<br /><br />Example: iOS device IDs can be extracted by using "&IDFA=(idfa)" on the postback |
 | Derived by the AppsFlyer platform | Information derived by the AppsFlyer platform. |
@@ -70,13 +68,13 @@ The columns in the table below have the following meaning:
 | Postback macro (name) | Source | Send all | Description | [Base] Macros for all postbacks | [Optional] In-app and rejected events |
 | --- | --- | --- | --- | --- | --- |
 | <span id="advertising_id"></span>advertising\_id | SDK | Yes | User-resettable device ID, AKA GAID. Also available as: (sha1-advertiserId) | Yes |  |
-| <span id="af_ad"></span>af\_ad | LINK | No | Ad Name ([see more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)) provided by the advertiser/publisher | Yes | Yes |
+| <span id="af_ad"></span>af\_ad | LINK | No | Ad Name (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">see more</Anchor>) provided by the advertiser/publisher | Yes | Yes |
 | <span id="af_ad_id"></span>af\_ad\_id | LINK | No | Provided by the advertiser/publisher | Yes | Yes |
 | <span id="af_ad_type"></span>af\_ad\_type | Link | No | Use the following naming convention:<ul><li>**text:** an ad unit containing only text, for example a search result</li><li>**banner:** a basic format that appears at the top or bottom of the device screen</li><li>**interstitial:** a full-page ad that appears during breaks in the current experience</li><li>**video:** a standard video, that is non-rewarded</li><li>**rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video</li><li>**playable:** an ad unit containing an interactive preview of the app experience</li><li>**sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article</li><li>**audio:** an audio ad</li></ul> | Yes | Yes |
-| <span id="af_adset"></span>af\_adset | Link | No | <ul><li>Provided by the advertiser/publisher.</li><li>Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)</li></ul> | Yes | Yes |
+| <span id="af_adset"></span>af\_adset | Link | No | <ul><li>Provided by the advertiser/publisher.</li><li>Adset is an intermediate level in the hierarchy between Campaign and Ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">See more</Anchor></li></ul> | Yes | Yes |
 | <span id="af_adset_id"></span>af\_adset\_id | Link | No | Provided by the advertiser/publisher | Yes | Yes |
 | <span id="af_c_id"></span>af\_c\_id | Link | No | Provided by the advertiser/publisher | Yes | Yes |
-| <span id="af_siteid"></span>af\_siteid | Link | No | <ul><li>Unique ID that identifies the publisher that displays the ad. [Learn more](/marketers/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | Yes | Yes |
+| <span id="af_siteid"></span>af\_siteid | Link | No | <ul><li>Unique ID that identifies the publisher that displays the ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#site-id-parameter">Learn more</Anchor></li></ul> | Yes | Yes |
 | <span id="af_subsite_id"></span>af\_subsite\_id | Link | No | <ul><li>Ad sub-network/Publisher ID.</li><li>If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567</li></ul> | Yes | Yes |
 | <span id="af_validated"></span>af\_validated | AF | Yes | Indicates whether the purchase was successfully validated. Possible values: true or false. | Yes |  |
 | <span id="af_validation_type"></span>af\_validation\_type | AF | Yes | Indicates the type of validation performed. Possible values: roi360\_purchase, roi360\_subscription, or receipt\_validation. | Yes |  |
@@ -85,7 +83,7 @@ The columns in the table below have the following meaning:
 | <span id="app_version"></span>app\_version | SDK | Yes | App version name set by the developer in the app code | Yes |  |
 | <span id="appsflyer_id"></span>appsflyer\_id | SDK | Yes | AppsFlyer unique identifier recorded upon conversion | Yes |  |
 | <span id="att01"></span>att-0-1 | SDK | Yes | Possible values:<ul><li>1: The ATT status is authorized or af\_authorized.</li><li>0: Any other ATT status.</li></ul> | Yes |  |
-| <span id="attstatus"></span>att-status | SDK | Yes | The [ATT status](/marketers/docs/att-implications-ios-14-and-deprecation-of-lat#att-values) reported by iOS. Like authorized, not\_determined.<br /><br />In some cases there is no value and "" is returned. | Yes |  |
+| <span id="attstatus"></span>att-status | SDK | Yes | The <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat#att-values">ATT status</Anchor> reported by iOS. Like authorized, not\_determined.<br /><br />In some cases there is no value and "" is returned. | Yes |  |
 | <span id="attributed_touch_type"></span>attributed\_touch\_type | SDK | No | Possible values: click, impression, TV, pre-install | Yes |  |
 | <span id="blocked_reason"></span>blocked\_reason | AF | No | Fraud/validation rules reason | No | Rejected |
 | <span id="blocked_reason_value"></span>blocked\_reason\_value | AF | No | Fraud/validation rules reason value (like site ID) | No | Rejected |
@@ -109,8 +107,8 @@ The columns in the table below have the following meaning:
 | <span id="is_lat"></span>is\_lat | SDK | Yes | Limit ad tracking (LAT): iOS: Starting iOS 14 LAT is deprecated by Apple. Determine user privacy status using ATT. In this case disregard is\_lat. Before iOS 14, if true, IDFA is not available and is set to 0. Android: When true, the user has opted-out of interest-based ads. This does not prevent the collection of GAID. | Yes |  |
 | <span id="is_organic"></span>is\_organic | AF | Yes | If an install postback is sent for all media sources including organic, then the ad network will receive an indication as to whether an install was organic or non-organic. | Installs only |  |
 | <span id="is_primary_attribution"></span>is\_primary\_attribution | AF | Yes | If false, see is\_retargeting. | No | In-app |
-| <span id="is-reinstall"></span>is\_reinstall | AF | Yes | If true, the event is reported as [a reinstall](/marketers/docs/measure-reinstalls). |  |  |
-| <span id="is_retargeting"></span>is\_retargeting | Link | No | Use in conjunction with is\_primary\_attribution. Learn more about [double attribution of retargeting events.](/marketers/docs/resolve-retargeting-double-attribution)<br /><br />If true (1), the event is reported as part of a retargeting campaign and the media source is the retargeting media source.<br /><br />If false (0) and is\_primary\_attribution is false, the event is part of a retargeting campaign but the media source referenced is the user attribution media source | No |  |
+| <span id="is-reinstall"></span>is\_reinstall | AF | Yes | If true, the event is reported as <Anchor target="_blank" href="/marketers/docs/measure-reinstalls">a reinstall</Anchor>. |  |  |
+| <span id="is_retargeting"></span>is\_retargeting | Link | No | Use in conjunction with is\_primary\_attribution. Learn more about <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">double attribution of retargeting events.</Anchor><br /><br />If true (1), the event is reported as part of a retargeting campaign and the media source is the retargeting media source.<br /><br />If false (0) and is\_primary\_attribution is false, the event is part of a retargeting campaign but the media source referenced is the user attribution media source | No |  |
 | <span id="language"></span>language | SDK | Yes | Language (locale) reported by the device and set by the device OS. | Yes |  |
 | <span id="oaid"></span>oaid | SDK | Yes | User-resettable ID on some Android devices usually as an alternative to GAID | Yes |  |
 | <span id="partner_event_id"></span>partner\_event\_id | AF | Yes | Name/ID of the corresponding event in the partner's platform | No | In-app |
@@ -121,11 +119,11 @@ The columns in the table below have the following meaning:
 
 The examples that follow relate to in-app event postbacks available to partners.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Event postback template "&event=(event)&json=(encode)" was translated to the following postback for a specific af\_purchase event:
 >
-> ```
+> ```http
 > &event=af_purchase&json=%7B%22af_quantity%22%3A1%2C%22
 > af_revenue%22%3A%2212000%22%2C%22af_currency%22%3A%
 > 22USD%22%2C%22af_content_id%22%3A%221107%22%2C%22
@@ -134,49 +132,65 @@ The examples that follow relate to in-app event postbacks available to partners.
 >
 > The decoded JSON value of this postback is
 >
-> ```
-> `{"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
+> ```json
+> {"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}
 > ```
 
 #### **Encoded values**
 
 Postbacks may contain irregular characters, which are not alpha-numerical. To transfer these values correctly via postbacks, AppsFlyer URL-encodes non-alpha-numerical values.
 
-To decode or encode a postback use an [encoding web service.](https://www.urldecoder.org/)
+To decode or encode a postback use an <Anchor target="_blank" href="https://www.urldecoder.org/">encoding web service.</Anchor>
 
 ## Sample postbacks
 
 ### General install postback examples
 
-Android iOS
+<Tabs>
+<Tab title="Android">
 
-```
+```http
 http://YourCompanyDomain.com?site_id=(publisher_id)
 &advertising_id=(advertiser_id)&android_id=(android_id)
 &install_time=(install_unix_ts)
 ```
 
-```
+</Tab>
+
+<Tab title="iOS">
+
+```http
 http://YourCompanyDomain.com?&site_id=(publisher_id)&
 device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 ```
 
+</Tab>
+</Tabs>
+
 ### General in-app event postback examples
 
-Android iOS
+<Tabs>
+<Tab title="Android">
 
-```
+```http
 http://YourCompanyDomain.com?site_id=(publisher_id)&
 device_ip=(ip)&advertising_id=(advertiserId)&android_id=(android_id)&
 install_time=(install_unix_ts)&event_name=(event_name)&currency=(currency)&
 json=(event_value)
 ```
 
-```
+</Tab>
+
+<Tab title="iOS">
+
+```http
 http://YourCompanyDomain.com?clickid=(clickid)&site_id=(publisher_id)&
 device_ip=(ip)&idfa=(idfa)&install_time=(install_unix_ts)
 &event_name=(event_name)&currency=(currency)&json=(event_value)
 ```
+
+</Tab>
+</Tabs>
 
 ### In-app event postback example
 
@@ -189,7 +203,7 @@ Event Parameters:
 
 Postback:
 
-```
+```http
 http://YourCompanyDomain.com?clickid=8594845&site_id=click123&device_ip=
 38.166.144.142&advertising_id=121sxxxx-xxxx-xxxx-xxxx-52454bd7500b&
 android_id=9aaeecc4455xxxxx&;install_time=1451923560&event_name=af_purchase&

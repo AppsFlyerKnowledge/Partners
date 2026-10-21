@@ -1,9 +1,5 @@
 ---
 title: Data Locker reports for API partners
-excerpt: >-
-  Reports listed in this article are available to you (API partners) in your
-  Data Locker. Before we can share the data with you, the advertiser (app owner)
-  must grant you data access as detailed in this article.
 metadata:
   keywords:
     - Advertisers
@@ -27,19 +23,21 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/12000718524561-Data-Locker-reports-for-API-partners
 ---
+**At a glance**: Reports listed in this article are available to you (API partners) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article.
+
 ## Data Locker reports for API partners
 
 To get reports you, the API partner must:
 
-* Ensure that the advertiser has provided you with permission to [access Aggregated analytics reporting](/docs/access-to-aggregated-analytics-tools-for-api-partners#grant-permission-to-a-partner).
-* [Set up Data Locker](/docs/data-locker-for-partners#set-up-data-locker). **Note**: Skip steps 3-4.
+* Ensure that the advertiser has provided you with permission to <Anchor target="_blank" href="/partners/docs/access-to-aggregated-analytics-tools-for-api-partners#grant-permission-to-a-partner">access Aggregated analytics reporting</Anchor>.
+* <Anchor target="_blank" href="/partners/docs/data-locker-for-partners#set-up-data-locker">Set up Data Locker</Anchor>. **Note**: Skip steps 3-4.
 
 The following reports are available to API partners: (daily)
 
-* [Cohort unified](/marketers/docs/cohort-analytics-via-data-locker) (daily)
-* [Cohort user acquisition](/marketers/docs/cohort-analytics-via-data-locker) (daily)
-* [Cohort retargeting](/marketers/docs/cohort-analytics-via-data-locker) (daily)
-* [Advanced aggregated (versioned) reports](/marketers/docs/advanced-aggregated-reports-in-data-locker) are also available, with better data freshness.
+* <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort unified</Anchor> (daily)
+* <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort user acquisition</Anchor> (daily)
+* <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort retargeting</Anchor> (daily)
+* <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">Advanced aggregated (versioned) reports</Anchor> are also available, with better data freshness.
 
 Reports are streamed to the h=23 folder.
 
@@ -61,8 +59,8 @@ Trait
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Aggregated analytics tools for API partners](/docs/access-to-aggregated-analytics-tools-for-api-partners)
+> * <Anchor target="_blank" href="/partners/docs/access-to-aggregated-analytics-tools-for-api-partners">Aggregated analytics tools for API partners</Anchor>
 
 <div data-zendesk-anchors="data-locker-reports-for-marketing-partners=data-locker-reports-for-api-partners h_01HBZZ5BFJC82MW9JQ9MEX991S=data-locker-reports-for-api-partners h_01HBZZ5BFJYFH54X70RJ63CJCV=specifications-and-limitations h_01HE7RFGCZ65YJRX1VCND691CX=see-also" />

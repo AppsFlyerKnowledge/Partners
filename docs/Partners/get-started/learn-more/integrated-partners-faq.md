@@ -1,6 +1,5 @@
 ---
 title: Integrated partners—FAQ
-excerpt: FAQ and integration troubleshooting for integrated partners.
 metadata:
   keywords:
     - Advertisers
@@ -25,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4406549295249-Integrated-partners-FAQ
 ---
+**At a glance**: FAQ and integration troubleshooting for integrated partners.
+
 ## Account and dashboard
 
 <div id="i-want-to-become-an-integrated-partner" />
@@ -33,7 +34,7 @@ x-zendesk:
 
 An advertiser should invite you to be onboarded with us.
 
-Share [this invitation procedure](/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer) with the advertiser. After the advertiser invites you, you will receive an email with a form to fill out.  
+Share <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer">this invitation procedure</Anchor> with the advertiser. After the advertiser invites you, you will receive an email with a form to fill out.  
 Once the form is filled out, we will let you know the next steps.
 
 Important: Use an email that has never been used before to create an account in AppsFlyer. Make sure the advertiser uses the same email in the invitation.
@@ -44,9 +45,9 @@ Important: Use an email that has never been used before to create an account in 
 
 <Accordion title="How can I update my integration?">
 
-Take a look at the required update [here](/docs/integration-requests-for-partners) and follow the instructions provided.
+Take a look at the required update <Anchor target="_blank" href="/partners/docs/integration-requests-for-partners">here</Anchor> and follow the instructions provided.
 
-If your update isn't listed, contact AppsFlyer using the [partner assistant widget](https://files.readme.io/abd47a9d733ee12aaeef473b3e243f2063034bae8919dc671e4a85e97edb0ab8-42824303168657.gif), include your integration PID, and describe your request.
+If your update isn't listed, contact AppsFlyer using the <Anchor target="_blank" href="https://files.readme.io/abd47a9d733ee12aaeef473b3e243f2063034bae8919dc671e4a85e97edb0ab8-42824303168657.gif">partner assistant widget</Anchor>, include your integration PID, and describe your request.
 
 </Accordion>
 
@@ -54,7 +55,7 @@ If your update isn't listed, contact AppsFlyer using the [partner assistant widg
 
 <Accordion title="How do I change the login email of the account?">
 
-Follow [these instructions](/docs/integration-requests-for-partners#create-update-partner-dashboard-login-email).
+Follow <Anchor target="_blank" href="/partners/docs/integration-requests-for-partners#create-update-partner-dashboard-login-email">these instructions</Anchor>.
 
 </Accordion>
 
@@ -65,7 +66,7 @@ Follow [these instructions](/docs/integration-requests-for-partners#create-updat
 If you can't add an app to the **App search** screen, verify that:
 
 * The advertiser has added the app to their dashboard
-* The advertiser has activated the app integration with your network and given you [relevant permissions](/marketers/docs/set-up-an-integrated-partner#ad-network-permissions).
+* The advertiser has activated the app integration with your network and given you <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#ad-network-permissions">relevant permissions</Anchor>.
 
 </Accordion>
 
@@ -86,7 +87,7 @@ If you can't add an app to the **App search** screen, verify that:
 1. Check your spam folder.
 2. Clear the browser cache or open AppsFlyer in a different browser.
 3. Try to reset your password again (wait at least 20 minutes after the previous request).
-4. If you still don't receive password recovery emails, use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) to check the status of your email.
+4. If you still don't receive password recovery emails, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> to check the status of your email.
 
 </Accordion>
 
@@ -95,7 +96,7 @@ If you can't add an app to the **App search** screen, verify that:
 <Accordion title="How do I enable the AppsFlyer Audience integration?">
 
 1. Get approval from the advertiser to implement the Audience integration.
-2. Email the advertiser's CSM (ask the advertiser for the correct email) **and** contact AppsFlyer Partner Solutions using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+2. Email the advertiser's CSM (ask the advertiser for the correct email) **and** contact AppsFlyer Partner Solutions using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 3. Once the request is approved, we will proceed with the integration.
 
 </Accordion>
@@ -104,7 +105,7 @@ If you can't add an app to the **App search** screen, verify that:
 
 <Accordion title="How do I enable Advanced Privacy postbacks?">
 
-Follow [these instructions](/docs/self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks).
+Follow <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks">these instructions</Anchor>.
 
 </Accordion>
 
@@ -114,10 +115,10 @@ Follow [these instructions](/docs/self-serve-integration-management-for-ad-netwo
 
 If your ad network account doesn't show on the Partner Marketplace, it could be due to incomplete integration or because the integration is still under its validation period. For additional details, review the following articles:
 
-* [Self-serve integration management for ad networks](/docs/self-serve-integration-management-for-ad-networks?query=self%20serve) (for an incomplete integration)
-* [Integration validation period](/docs/getting-started-onboarding-guide-for-ad-networks#integration-validation-period)
+* <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks?query=self%20serve">Self-serve integration management for ad networks</Anchor> (for an incomplete integration)
+* <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks#integration-validation-period">Integration validation period</Anchor>
 
-For agency accounts seeking further assistance, contact AppsFlyer via the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+For agency accounts seeking further assistance, contact AppsFlyer via the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 
 </Accordion>
 
@@ -127,7 +128,7 @@ For agency accounts seeking further assistance, contact AppsFlyer via the [partn
 
 To view event data on the dashboard, the advertiser must grant you permission to access aggregated in-app event data. If this permission hasn’t been enabled, event data won’t be displayed.
 
-![截屏2025-12-01 15.03.05.png](https://files.readme.io/3a0c4a4f28c27479b0927ab33c97a46f1ad58963424c2368fd002af38f22ae81-42824303171601.png)
+<Image alt="截屏2025-12-01 15.03.05.png" src="https://files.readme.io/3a0c4a4f28c27479b0927ab33c97a46f1ad58963424c2368fd002af38f22ae81-42824303171601.png" width="578px" />
 
 </Accordion>
 
@@ -148,7 +149,7 @@ The permissions are (depending on the advertiser account):
 * Retention reports
 * Protect360 dashboard
 
-For more information, visit the [Providing permissions to ad networks](/marketers/docs/set-up-an-integrated-partner#permissions-tab) guide.
+For more information, visit the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Providing permissions to ad networks</Anchor> guide.
 
 </Accordion>
 
@@ -166,7 +167,7 @@ For more information, visit the [Providing permissions to ad networks](/marketer
 
 <Accordion title="What about agency permissions?">
 
-[Read here](/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer) about agency permissions given by a marketer.
+<Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer">Read here</Anchor> about agency permissions given by a marketer.
 
 </Accordion>
 
@@ -174,7 +175,7 @@ For more information, visit the [Providing permissions to ad networks](/marketer
 
 <Accordion title="Why can’t I redirect users to a designated landing page?">
 
-The user journey prior to installing an advertised app can impact how users perceive the advertiser’s brand. For this reason, redirection to landing pages is restricted to domains that appear on the advertiser’s [domain redirect allowlist](/marketers/docs/set-up-your-domain-redirect-allowlist).
+The user journey prior to installing an advertised app can impact how users perceive the advertiser’s brand. For this reason, redirection to landing pages is restricted to domains that appear on the advertiser’s <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">domain redirect allowlist</Anchor>.
 
 The allowlist is managed by the advertiser. To use a specific landing page, share the page URL with your advertiser and ask them to add its domain to their allowlist.
 
@@ -198,7 +199,7 @@ Install and in-app data appears in reports within 15 minutes.
 
 | Reason | Solution |
 | --- | --- |
-| The advertiser didn't define any value for the dashboard parameters. | <ul><li>If you have access to the application setup,<ol><li>In the AppsFlyer Dashboard, go to **Active integrations**, and click on your logo.</li><li>Under the **Integration** tab, find the relevant parameter and check its value.</li><li>If it's not defined, contact the Advertiser and ask to fill in the value.</li></ol></li><li>If you don't have the application setup, ask the Advertiser to [enable Ad Network Permissions](/marketers/docs/set-up-an-integrated-partner#ad-network-permissions)</li></ul> |
+| The advertiser didn't define any value for the dashboard parameters. | <ul><li>If you have access to the application setup,<ol><li>In the AppsFlyer Dashboard, go to **Active integrations**, and click on your logo.</li><li>Under the **Integration** tab, find the relevant parameter and check its value.</li><li>If it's not defined, contact the Advertiser and ask to fill in the value.</li></ol></li><li>If you don't have the application setup, ask the Advertiser to <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#ad-network-permissions">enable Ad Network Permissions</Anchor></li></ul> |
 
 </Accordion>
 
@@ -218,8 +219,8 @@ Install and in-app data appears in reports within 15 minutes.
 
 | Reason | Solution |
 | --- | --- |
-| Re-engagement postback is disabled in AppsFlyer backend | Use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and ask to verify that re-engagement postback is enabled in AppsFlyer backend. |
-| Your postback template doesn't have re-engagement identifier flag. | Use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and ask to add the identifier if it's missing. |
+| Re-engagement postback is disabled in AppsFlyer backend | Use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> and ask to verify that re-engagement postback is enabled in AppsFlyer backend. |
+| Your postback template doesn't have re-engagement identifier flag. | Use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> and ask to add the identifier if it's missing. |
 | Retargeting parameter isn't included in a click attribution URL, and therefore re-attribution cannot get recorded in AppsFlyer. | Make sure the parameter `is_retargeting=true` is added to the click attribution URL. |
 
 </Accordion>
@@ -230,7 +231,7 @@ Install and in-app data appears in reports within 15 minutes.
 
 | Reason | Solution |
 | --- | --- |
-| Your postback template doesn't have the re-attribution identifier flag. | Use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and ask to add the re-attribution identifier. |
+| Your postback template doesn't have the re-attribution identifier flag. | Use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> and ask to add the re-attribution identifier. |
 | Retargeting parameter isn't included in a click attribution URL, and therefore reattribution cannot get recorded in AppsFlyer. | Make sure the parameter `is_retargeting=true` is added to the click attribution URL. |
 
 </Accordion>
@@ -241,7 +242,7 @@ Install and in-app data appears in reports within 15 minutes.
 
 | Reason | Solution |
 | --- | --- |
-| Macro `(mapped-iae)` isn't integrated in the in-app event postback. | Use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and request to integrate the macro. Include the following information:<ul><li>pid or ad network email</li><li>receiving parameter of partner event identifier</li></ul>[More on postback macros](/docs/postback-macros-for-ad-networks#postback-macros). |
+| Macro `(mapped-iae)` isn't integrated in the in-app event postback. | Use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> and request to integrate the macro. Include the following information:<ul><li>pid or ad network email</li><li>receiving parameter of partner event identifier</li></ul><Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks#postback-macros">More on postback macros</Anchor>. |
 | Advertiser or agency didn't configure the partner event identifier correctly or at all. | If the click attribution URL contains `af_prt`<br /><br />ask the agency to check if the partner event identifier is correctly configured on their dashboard.<br /><br />If not,<br /><br />ask the advertiser to check if the partner event identifier is correctly configured on their dashboard. |
 
 </Accordion>
@@ -271,10 +272,10 @@ Even if the Advertiser allows sending you postbacks for traffic attributed to al
 
 To correctly perform integration tests using test apps, follow the relevant platform guide:
 
-* [Android integration testing for ad networks](/docs/android-integration-testing-for-ad-networks)
-* [iOS integration testing for ad networks](/docs/ios-integration-testing-for-ad-networks)
+* <Anchor target="_blank" href="/partners/docs/android-integration-testing-for-ad-networks">Android integration testing for ad networks</Anchor>
+* <Anchor target="_blank" href="/partners/docs/ios-integration-testing-for-ad-networks">iOS integration testing for ad networks</Anchor>
 
-To perform an integration test with an advertised app, follow these [guidelines](/docs/test-marketer-campaign-integration-with-the-ad-network) and make sure the advertiser has allowlisted the device used for testing.
+To perform an integration test with an advertised app, follow these <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network">guidelines</Anchor> and make sure the advertiser has allowlisted the device used for testing.
 
 </Accordion>
 
@@ -285,7 +286,7 @@ To perform an integration test with an advertised app, follow these [guidelines]
 If you believe that postbacks aren't sent to your servers:
 
 * Make sure that the postback endpoint is active
-* For iOS users, ensure you’ve completed the [Advanced Privacy postback integration](/docs/advanced-privacy-guide-postback-macros-for-ad-networks).
+* For iOS users, ensure you’ve completed the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy postback integration</Anchor>.
 
 </Accordion>
 
@@ -296,7 +297,7 @@ If you believe that postbacks aren't sent to your servers:
 If you believe postbacks aren’t being sent to your servers, verify the following:
 
 * The postback endpoint is active and reachable.
-* For iOS users, ensure you’ve completed the [Advanced Privacy postback integration](/docs/advanced-privacy-guide-postback-macros-for-ad-networks).
+* For iOS users, ensure you’ve completed the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy postback integration</Anchor>.
 
 </Accordion>
 
@@ -306,7 +307,7 @@ If you believe postbacks aren’t being sent to your servers, verify the followi
 
 Ad networks get visibility to their setup done by advertisers, **but not when it's done by agencies**. Therefore, when an agency maps in-app events for postbacks to a network, although it's active for the agency, the ad network sees this section as inactive.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Yuval is the marketer of the **com.fused** app, which is a client app of the **Sonnet** ad network. Yuval maps the **af\_purchase** event to be sent as a postback to Sonnet when an attributed user to Sonnet performs a purchase.
 > **Sava**, an agency permitted to work with **com.fused**, also configures **Sonnet** and maps the **af\_completeregistration** event to be sent as postback.
@@ -319,7 +320,7 @@ Ad networks get visibility to their setup done by advertisers, **but not when it
 
 <Accordion title="Click data is missing">
 
-If click data is missing from postbacks, make sure that the AppsFlyer link has all the data you want to return to you in the postbacks. See our [attribution link guide](/marketers/docs/about-link-structure-and-parameters) for more information.
+If click data is missing from postbacks, make sure that the AppsFlyer link has all the data you want to return to you in the postbacks. See our <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution link guide</Anchor> for more information.
 
 If the advertiser configured the ad network to receive all postbacks, postbacks for events not attributed to the ad network don't contain click data.
 
@@ -372,7 +373,7 @@ your *af\_prt* + underscore (\_) + your actual campaign name that follows your a
 
 For example, if your *af\_prt* is *greatagency*, your campaign name may look like this: *greatagency\_StreamKarxxxxxx.*
 
-[More information on SKAN campaigns.](/docs/getting-started-agency-onboarding#skadnetwork-agency-campaigns)
+<Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#skadnetwork-agency-campaigns">More information on SKAN campaigns.</Anchor>
 
 </Accordion>
 
@@ -384,14 +385,14 @@ For example, if your *af\_prt* is *greatagency*, your campaign name may look lik
 
 You can check blocked data only if the advertiser gives you access to Protect360 and Raw Data reports.
 
-1. Once the advertiser gives you the P360 access, you can download the blocked install/in-app events reports from the Export Data page of the dashboard. [More about report types](/marketers/docs/protect360-raw-data-reports#report-types).
+1. Once the advertiser gives you the P360 access, you can download the blocked install/in-app events reports from the Export Data page of the dashboard. <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#report-types">More about report types</Anchor>.
 2. In Raw Data reports you can:
    * check the blocking reasons/sub-reasons
    * filter down by Site to see which SiteIDs deliver high numbers of fraud results
 
 You can further investigate this with the publishers that deliver fraudulent traffic and make educated decisions about working with such publishers.
 
-Learn more about [fraud](/marketers/docs/protect360-anti-fraud-guide).
+Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">fraud</Anchor>.
 
 </Accordion>
 
@@ -407,8 +408,8 @@ To avoid reaching the capping threshold, ad networks should pause campaigns or p
 
 For more information, see:
 
-* [Impression and Click Capping](/docs/protect360-for-integrated-partners#impression-capping)
-* [Capping FAQ](/docs/protect360-for-integrated-partners#faq)
+* <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#impression-capping">Impression and Click Capping</Anchor>
+* <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#faq">Capping FAQ</Anchor>
 
 </Accordion>
 
@@ -422,7 +423,7 @@ Each cluster is evaluated as a whole. If a cluster is identified as fraudulent w
 
 By default, all incoming installs are treated as live traffic. To prevent test installs from being evaluated by Protect360 anti-fraud algorithms, you must register your device as a test device before performing the test install.
 
-For instructions, see [Registering test devices](/marketers/docs/registering-test-devices).
+For instructions, see <Anchor target="_blank" href="/marketers/docs/registering-test-devices">Registering test devices</Anchor>.
 
 </Accordion>
 
@@ -432,7 +433,7 @@ For instructions, see [Registering test devices](/marketers/docs/registering-tes
 
 Review the fraud sub-reason associated with the rejection to better understand why the event was blocked. This information is also available in Protect360 reports and on the Protect360 dashboard, subject to the advertiser’s access permissions.
 
-For more details, see [Protect360 blocked reasons](/marketers/docs/protect360-raw-data-reports#blocked-reasons).
+For more details, see <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons">Protect360 blocked reasons</Anchor>.
 
 </Accordion>
 

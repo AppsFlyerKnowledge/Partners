@@ -1,9 +1,5 @@
 ---
 title: Enriched Engagement Types guide for ad networks
-excerpt: >-
-  Learn how to create Enriched Engagement Types (EET) attribution links to
-  reflect users’ full spectrum of engagement and achieve accurate and effective
-  campaign optimization.
 metadata:
   keywords:
     - Advertisers
@@ -26,11 +22,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/29221265052433-Enriched-Engagement-Types-guide-for-ad-networks
 ---
+**At a glance:** Learn how to create Enriched Engagement Types (EET) attribution links to reflect users’ full spectrum of engagement and achieve accurate and effective campaign optimization.
+
 Enriched Engagement Types (EET) reflect users' full spectrum of engagement and intentionality when viewing or interacting with an ad, from momentary exposure to direct response. This article details how partners should report engagement types in AppsFlyer attribution links based on how users interact with their ads.
 
-> 📘 **Disclaimer**
+> ❗️ **Disclaimer**
 >
-> This article focuses on the aspects of EET relevant to partners. To learn what EET is and to get comprehensive information on it, see the [Enriched Engagement Types](/marketers/docs/about-enriched-engagement-types#which-ad-networks-report-enriched-engagement-types) article.
+> This article focuses on the aspects of EET relevant to partners. To learn what EET is and to get comprehensive information on it, see the <Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#which-ad-networks-report-enriched-engagement-types">Enriched Engagement Types</Anchor> article.
 
 ## Which networks can report EET to AppsFlyer?
 
@@ -42,7 +40,7 @@ Enriched Engagement support will be available for networks that meet the Premier
 
 See [the list of networks eligible to report EET](#01JCAT81K2EJNH91YS6NJGMXMB-data-title)
 
-> 📘 **Warning**
+> ❗️ **Warning**
 >
 > Clicks and impressions from non-allowed networks that include the `af_engagement_type` parameter will be rejected and won’t be used for attribution.
 
@@ -67,22 +65,22 @@ The following steps outline the flow from the initial ad display to the final at
 
 Networks can report engagement types by including the following parameters in the attribution links
 
-* `af_engagement_type`: The type of engagement for example, `engaged_click`, `click_to_app` or `engaged_view`. See a [comprehensive list of the different engagement types and their descriptions](/marketers/docs/about-enriched-engagement-types#what-are-enriched-engagement-types).
-* `af_ad_type`: The ad type. For example, `rewarded_video`, `interstitial` or `banner`. See [a comprehensive list of the different ad types and their descriptions](/marketers/docs/about-link-structure-and-parameters#af_ad_type).
-* `af_ad_format`: The ad format, for example, `text`, `image`, `video`, `playable`. See [a comprehensive list of the different ad formats and their descriptions.](/marketers/docs/about-link-structure-and-parameters#af_ad_format)
-* `viewability`: (optional) Additional info about the engagement, for example, `af_video_total_length`, `af_ad_time_viewed`, `af_audio_played_length`. See [a comprehensive list of the different viewability options and their descriptions.](/marketers/docs/about-link-structure-and-parameters#viewability-parameters)
+* `af_engagement_type`: The type of engagement for example, `engaged_click`, `click_to_app` or `engaged_view`. See a <Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#what-are-enriched-engagement-types">comprehensive list of the different engagement types and their descriptions</Anchor>.
+* `af_ad_type`: The ad type. For example, `rewarded_video`, `interstitial` or `banner`. See <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_type">a comprehensive list of the different ad types and their descriptions</Anchor>.
+* `af_ad_format`: The ad format, for example, `text`, `image`, `video`, `playable`. See <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_format">a comprehensive list of the different ad formats and their descriptions.</Anchor>
+* `viewability`: (optional) Additional info about the engagement, for example, `af_video_total_length`, `af_ad_time_viewed`, `af_audio_played_length`. See <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#viewability-parameters">a comprehensive list of the different viewability options and their descriptions.</Anchor>
 * `af_ad_tran_id`: A transaction ID allowing AppsFlyer to verify an engaged click or engaged view by matching it to a preceding impression.
 * `is_skoverlay=true` or `is_autostore=true` : Identify engaged views triggered by [SKOverlay](https://developer.apple.com/documentation/storekit/skoverlay) or Android Auto Inline Installs
 
 **An Example for an engaged click**
 
-```
+```http
 https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&c=GreatCampaign&af_siteid=A1b1&af_engagement_type=engagegd_click&af_ad_type=interstitial&af_ad_format=playable&af_ad_tran_id=50b175dd-d804-4715-b415-0206f6c891e0
 ```
 
 **An Example for an engaged view**
 
-```
+```http
 https://impression.appsflyer.com/com.greatapp?pid=greatnetwork_int&c=GreatCampaign&af_siteid=A1b1&af_engagement_type=engagegd_view&af_ad_type=interstitial&af_ad_format=video&af_ad_tran_id=50b175dd-d804-4715-b415-0206f6c891e0&af_video_total_length=20&af_video_played_length=15
 ```
 
@@ -149,9 +147,9 @@ Below is a use case of user engagement that ad networks should **not** report wi
 
 <Accordion title="Networks eligible to report EET">
 
-The allowed network list includes partners whose enriched engagement-type events can be processed by AppsFlyer, with the exclusion of engaged clicks and views. Networks from this list that would like AppsFlyer to process their engaged clicks and views should contact AppsFlyer support. To learn which networks already have their engaged clicks and views processed by AppsFlyer, see the [EET advertisers article](/marketers/docs/about-enriched-engagement-types#which-networks-can-report-engaged-views-and-engaged-clicks).
+The allowed network list includes partners whose enriched engagement-type events can be processed by AppsFlyer, with the exclusion of engaged clicks and views. Networks from this list that would like AppsFlyer to process their engaged clicks and views should contact AppsFlyer support. To learn which networks already have their engaged clicks and views processed by AppsFlyer, see the <Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#which-networks-can-report-engaged-views-and-engaged-clicks">EET advertisers article</Anchor>.
 
-> 📘 **Warning**
+> ❗️ **Warning**
 >
 > Clicks and impressions from non-allowed networks that include the `af_engagement_type` parameter will be rejected and won’t be used for attribution.
 

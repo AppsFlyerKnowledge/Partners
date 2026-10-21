@@ -1,8 +1,5 @@
 ---
 title: Affise integration with AppsFlyer
-excerpt: >-
-  Ad networks that use Affise can utilize the AppsFlyer probabilistic modeling
-  solution to receive attribution data about installs and in-app events.
 metadata:
   keywords:
     - Integration
@@ -29,13 +26,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208537116-Affise-integration-with-AppsFlyer
 ---
+**At a glance:** Ad networks that use Affise can utilize the AppsFlyer probabilistic modeling solution to receive attribution data about installs and in-app events.
+
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
 
 ## Base attribution link
 
 Below you can find the base attribution link with a detailed explanation per each parameter:
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}&af_c_id={offerid}
 ```
 
@@ -47,11 +46,11 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 | af\_siteid | `{pid}` | ID of the affiliate promoting the offer |
 | af\_c\_id | `{offer_id}` | ID of the offer |
 
-For a complete AppsFlyer parameter list [click here](/marketers/docs/about-link-structure-and-parameters).
+For a complete AppsFlyer parameter list <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">click here</Anchor>.
 
 ## Complete attribution link template
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}
 ```
 
@@ -61,25 +60,25 @@ The following are examples of Install and In-App Event Postbacks:
 
 ### Global install postback iOS
 
-```
+```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}
 ```
 
 ### Global install postback Android
 
-```
+```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
 
 ### Global in-app event postback iOS
 
-```
+```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}&goal={event-name}
 ```
 
 ### Global in-app event postback Android
 
-```
+```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}&goal={event-name}
 ```
 
@@ -91,7 +90,7 @@ Additional attribution information can be added to the postback by request such 
 
 ## Finalizing your registration
 
-* If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
 
 <div data-zendesk-anchors="01JFT0RZG0F67JFBC7W5KK54BM=base-attribution-link 01JFT0RZG2QTT3Z9S6SVNV5VE7=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT0RZG3C7MBBYFKA6W813PF=install-and-in-app-event-postbacks 01JFT0RZG3HM9P81XYGKHZXHFK=global-install-postback-ios 01JFT0RZG4JCDP8D4CWQW02AY7=global-install-postback-android global-inapp-event-postback-ios=global-in-app-event-postback-ios 01JFT0RZG40N0VNNVMDBFYNT9E=global-in-app-event-postback-ios global-inapp-event-postback-android=global-in-app-event-postback-android 01JFT0RZG4PA9WTP212AX52QWZ=global-in-app-event-postback-android 01JFT0RZG52JW6C5GR0KA4CZF6=finalizing-your-registration" />

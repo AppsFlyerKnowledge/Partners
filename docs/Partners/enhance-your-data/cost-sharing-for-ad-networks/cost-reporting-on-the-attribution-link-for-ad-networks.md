@@ -1,6 +1,5 @@
 ---
 title: Cost reporting on the attribution link for ad networks
-excerpt: Ad networks can report cost every time an ad is clicked.
 metadata:
   keywords:
     - cost sharing
@@ -27,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000748446-Cost-reporting-on-the-attribution-link-for-ad-networks
 ---
+**At a glance:** Ad networks can report cost every time an ad is clicked.
+
 Advertisers use the AppsFlyer dashboard as their source of truth for all budget allocation decisions, making it easy to see where to invest. For networks wanting to be visible in that process, sharing cost data with AppsFlyer is an absolute must.
 
 Advertisers often check their top-performing partners using sort by ROI. Those that have no cost data always appear at the bottom of the list.
@@ -59,7 +60,7 @@ If you prefer not to reveal the actual cost value in the attribution URL, you ca
 
 Steps for encryption:
 
-1. Request your **network encryption key** from your PSE team using the [partner assistant widget](https://files.readme.io/fdc0cc0d6ff35e06535dc5cc94b4aed0901a94031a4306fa29f744d4521086d7-34951742603025.gif).
+1. Request your **network encryption key** from your PSE team using the <Anchor target="_blank" href="https://files.readme.io/fdc0cc0d6ff35e06535dc5cc94b4aed0901a94031a4306fa29f744d4521086d7-34951742603025.gif">partner assistant widget</Anchor>.
 2. Use the AES encryption method (shown below) to encrypt the required 4 values (**network key, cost value, cost model, and cost currency**)
 3. Append the generated encryption value to your AppsFlyer attribution URL in the **af\_enc\_data=** parameter.
 
@@ -71,7 +72,7 @@ https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=AB
 
 ## AES encryption process
 
-To accomplish the encryption, partners must use the [**AES algorithm**](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), with an [**ECB block mode**](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29), using [**PKCS5 padding**](https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS7). Then they must [**Base-64 encode**](https://en.wikipedia.org/wiki/Base64) the encrypted data, and finally, [**URL-encode**](https://en.wikipedia.org/wiki/Percent-encoding) the result.
+To accomplish the encryption, partners must use the <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">**AES algorithm**</Anchor>, with an <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29">**ECB block mode**</Anchor>, using <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS7">**PKCS5 padding**</Anchor>. Then they must <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Base64">**Base-64 encode**</Anchor> the encrypted data, and finally, <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Percent-encoding">**URL-encode**</Anchor> the result.
 
 Networks can use any tech stack to accomplish this. See examples below for PHP, Java, and Python:
 
@@ -111,7 +112,7 @@ fclose( $f );
 
 Java
 
-```
+```java
 private static final String CIPHER_ALGORITHM = "AES/ECB/PKCS5Padding";
 private static final String encryptionKey = "XXXXXXXXXXXXXXXX"; // secret key provided by appsflyer
 private static final SecretKeySpec key = new SecretKeySpec(encryptionKey.getBytes(), "AES");
@@ -132,7 +133,7 @@ public static String encrypt(String str) throws Exception {
 
 Python
 
-```
+```python
 import sys
 import base64
 import urllib
@@ -177,8 +178,8 @@ print(urllib.quote_plus(base64.b64encode(enc)))
 
 ## Which networks support cost reporting?
 
-To see a full list of the networks that support cost reporting on the attribution link, click [here](/marketers/docs/view-aggregated-cost-data-for-attribution-links#ad-networks-providing-cost-by-click-data).
+To see a full list of the networks that support cost reporting on the attribution link, click <Anchor target="_blank" href="/marketers/docs/view-aggregated-cost-data-for-attribution-links#ad-networks-providing-cost-by-click-data">here</Anchor>.
 
-To see a full list of the networks that support cost reporting via API, click [here](/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).
+To see a full list of the networks that support cost reporting via API, click <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">here</Anchor>.
 
 <div data-zendesk-anchors="h_01J292SNHC1B88FBJJW1PY5YT2=how-to-share-cost h_01J292SNHCFG8QP8KK058EVEVQ=aes-encryption-process h_01J292SNHCVFR5GW4ECBYM63S6=which-networks-support-cost-reporting" />

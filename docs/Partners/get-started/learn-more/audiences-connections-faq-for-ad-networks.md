@@ -1,8 +1,5 @@
 ---
 title: Audiences—Connections FAQ for ad networks
-excerpt: >-
-  Are you an ad network? Find answers to frequently asked questions about
-  Audiences partner connections.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/20459388348305-Audiences-Connections-FAQ-for-ad-networks
 ---
+**At a glance:** Are you an ad network? Find answers to frequently asked questions about Audiences partner connections.
+
 ## API key and Partner pull key
 
 <div id="what-are-the-api-key-and-testing-api-key-used-for" />

@@ -1,9 +1,5 @@
 ---
 title: Protect360 for integrated partners
-excerpt: >-
-  Integrated partners (ad networks and agencies) can view fraud related to their
-  traffic identified and blocked by the ProtectLITE and Protect360 engines, as
-  well as the customer’s manually-defined validation rules.
 metadata:
   keywords:
     - Protect360
@@ -25,24 +21,26 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004745523-Protect360-for-integrated-partners
 ---
+**At a glance:** Integrated partners (ad networks and agencies) can view fraud related to their traffic identified and blocked by the ProtectLITE and Protect360 engines, as well as the customer’s manually-defined validation rules.
+
 ## Overview
 
 AppsFlyer identifies and blocks fraud via: 
 
-* [ProtectLITE](/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting): Basic fraud protection for all customers.
-* [Protect360](/marketers/docs/protect360-anti-fraud-guide): Advanced fraud protection for advertisers with a premium subscription plan.
+* <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>: Basic fraud protection for all customers.
+* <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Advanced fraud protection for advertisers with a premium subscription plan.
 
 Advertisers must give:
 
-* Ad networks [permissions](/marketers/docs/set-up-an-integrated-partner#permissions-tab) to **Access Protect360 dashboard and raw data** reports (that includes ProtectLITE), and **Access aggregate in-app events data** (for in-app event fraud).
-* Agencies [permissions](/marketers/docs/set-up-an-integrated-partner#permissions-tab) to **Access Protect360 dashboard and raw data.**
+* Ad networks <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> to **Access Protect360 dashboard and raw data** reports (that includes ProtectLITE), and **Access aggregate in-app events data** (for in-app event fraud).
+* Agencies <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> to **Access Protect360 dashboard and raw data.**
 
 With the correct permissions, integrated partners can:
 
 * View data related to the traffic they generated.
-* Download related [raw data reports](/marketers/docs/protect360-anti-fraud-guide#raw-data).
+* Download related <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#raw-data">raw data reports</Anchor>.
 
-There are also [raw data reports](/docs/protect360-reports-for-ad-networks) available to ad networks about impression capping, as well as failed click signatures, for which no advertiser permissions are required.
+There are also <Anchor target="_blank" href="/partners/docs/protect360-reports-for-ad-networks">raw data reports</Anchor> available to ad networks about impression capping, as well as failed click signatures, for which no advertiser permissions are required.
 
 > 📘 **Note**
 >
@@ -56,7 +54,7 @@ There are also [raw data reports](/docs/protect360-reports-for-ad-networks) avai
 
 Integrated partners can view the dashboard and charts; see the screenshot that follows.
 
-Learn more about what data is available in the [ProtectLITE](/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting#dashboard) and [Protect360](/marketers/docs/protect360-anti-fraud-guide#dashboard) dashboards.   
+Learn more about what data is available in the <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting#dashboard">ProtectLITE</Anchor> and <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#dashboard">Protect360</Anchor> dashboards.   
 
 Limitations:
 
@@ -64,11 +62,11 @@ Limitations:
 
 [![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
 
-* Ad networks and Agencies cannot access the fraud protection studio, or the raw data level of tagged data. They can, however, see it aggregated in the Protect360 dashboard under tagged attribution and tagged in-app events. As well as identify fraud by tag type (new release etc) . To learn more about FPS see [this article](/marketers/docs/beta-fraud-protection-studio).
+* Ad networks and Agencies cannot access the fraud protection studio, or the raw data level of tagged data. They can, however, see it aggregated in the Protect360 dashboard under tagged attribution and tagged in-app events. As well as identify fraud by tag type (new release etc) . To learn more about FPS see <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio">this article</Anchor>.
 
-  ![](https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png)
+  <Image alt="" src="https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png" width="624px" />
 
-  ![](https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png)
+  <Image alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
 
 ### Raw-data reports
 
@@ -81,7 +79,7 @@ Reports are available via:
 * Export data: In AppsFlyer, from the side menu, select **Report** > **Raw Data Export**
 * API: See the [ad network reporting API](/docs/protect360-for-integrated-partners#protect360-ad-network-reporting-api) section that follows.
 
-Learn more about [Protect360 raw data reports](/marketers/docs/protect360-raw-data-reports).
+Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">Protect360 raw data reports</Anchor>.
 
 ## Protect360 ad network reporting API
 
@@ -91,9 +89,9 @@ Learn more about [Protect360 raw data reports](/marketers/docs/protect360-raw-da
 
 **Prerequisites**
 
-* To access advertiser data by API, the advertiser grants the ad network [permissions](/marketers/docs/set-up-an-integrated-partner#permissions-tab) to access their Protect360 dashboard and data by API. Ad networks having access to the dashboard are permitted to use the API. No action is required by the advertiser.
-* For a list of apps for which you have Protect360 permissions use [get app list API.](/docs/app-list-api-for-ad-networks)
-* The admin needs to get an AppsFlyer [V2.0 authentication token](/marketers/docs/managing-appsflyer-tokens) available in the dashboard.
+* To access advertiser data by API, the advertiser grants the ad network <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> to access their Protect360 dashboard and data by API. Ad networks having access to the dashboard are permitted to use the API. No action is required by the advertiser.
+* For a list of apps for which you have Protect360 permissions use <Anchor target="_blank" href="/partners/docs/app-list-api-for-ad-networks">get app list API.</Anchor>
+* The admin needs to get an AppsFlyer <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">V2.0 authentication token</Anchor> available in the dashboard.
 
 #### Protect360 API reports
 
@@ -115,7 +113,7 @@ Learn more about [Protect360 raw data reports](/marketers/docs/protect360-raw-da
    1. App ID
    2. From date
    3. To date
-   4. Bearer token  (AppsFlyer [V2.0 authentication token](/marketers/docs/managing-appsflyer-tokens))
+   4. Bearer token  (AppsFlyer <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">V2.0 authentication token</Anchor>)
 4. Some calls have [optional parameters](/docs/protect360-for-integrated-partners#api-parameters), as described in this article.
 
 ### Curl examples
@@ -198,8 +196,8 @@ Protect360 ad network API basics:
 | Method | GET |
 | Path parameters (mandatory) | <ul><li>`app_id`:<ul><li>The app identifier, as found in the AppsFlyer dashboard. Insert it precisely as it displays in the dashboard.</li><li>Make sure to prefix iOS apps with **id.**</li></ul></li><li>`report_topic`:</li></ul> |
 | Accepted content types | `application/json` |
-| Authorization | <ul><li>Bearer token in the request header.</li><li>![AppsFlyerAdmin_us-en.png](https://files.readme.io/5708713f5adc7560748b16d2df4a439163e1310fc7d32f2e5ca786d176cbc8d3-44928678665617.png)Ask the admin to get the V2.0 token from the [tokens](/marketers/docs/managing-appsflyer-tokens) page. This token is about 700 characters in length.</li></ul> |
-| Rate limitation | [Rate limitations](/marketers/docs/report-generation-quotas-rate-limitations) |
+| Authorization | <ul><li>Bearer token in the request header.</li><li>![AppsFlyerAdmin_us-en.png](https://files.readme.io/5708713f5adc7560748b16d2df4a439163e1310fc7d32f2e5ca786d176cbc8d3-44928678665617.png)Ask the admin to get the V2.0 token from the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">tokens</Anchor> page. This token is about 700 characters in length.</li></ul> |
+| Rate limitation | <Anchor target="_blank" href="/marketers/docs/report-generation-quotas-rate-limitations">Rate limitations</Anchor> |
 | Date range limitation | <ul><li>Earliest date supported: 90 days before the current data</li><li>31 days out of the previous 90 days</li></ul> |
 | Row limitations | 200K rows |
 | Report characteristics | <ul><li>Timezone: UTC</li><li>Currency: USD</li></ul> |
@@ -276,7 +274,7 @@ Impressions capping FAQ:
 
 ### Click signing
 
-Ad networks can add HMAC-SHA256 [signatures to their clicks](/docs/click-signing-for-ad-networks).
+Ad networks can add HMAC-SHA256 <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">signatures to their clicks</Anchor>.
 
 The signatures enable AppsFlyer to validate the clicks and make sure that the click information hasn't been manipulated by fraudsters.
 

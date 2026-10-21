@@ -1,8 +1,5 @@
 ---
 title: "Redirecting users\_to the app store"
-excerpt: >-
-  Learn about the options for redirecting users to the app store after an ad is
-  served, and how to send engagement data to AppsFlyer.
 metadata:
   keywords:
     - clicks
@@ -25,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000807629-Redirecting-users-to-the-app-store
 ---
+**At a glance:** Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer.
+
 ## Overview
 
 AppsFlyer receives engagement data (clicks and impressions) for attribution in a number of ways:
@@ -32,7 +31,7 @@ AppsFlyer receives engagement data (clicks and impressions) for attribution in a
 * The user **clicks** the ad and gets [redirected to AppsFlyer](#users-redirected-via-appsflyer), and then to the app store.
 * The user **clicks or views** the ad and is [directly sent to the app store](#users-sent-directly-by-the-ad-network), while the **attribution link is sent to AppsFlyer from the server**.
 
-In both cases, the regular [attribution link structure and parameters](/marketers/docs/about-link-structure-and-parameters) are used.
+In both cases, the regular <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution link structure and parameters</Anchor> are used.
 
 > 📘 **Note**
 >

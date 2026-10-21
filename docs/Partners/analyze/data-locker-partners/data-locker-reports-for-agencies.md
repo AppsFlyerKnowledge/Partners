@@ -1,9 +1,5 @@
 ---
 title: Data Locker reports for agencies
-excerpt: >-
-  Reports listed in this article are available to you (agencies) in your Data
-  Locker. Before we can share the data with you, the advertiser (app owner) must
-  grant you data access as detailed in this article.
 metadata:
   keywords:
     - Agencies
@@ -25,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4543231254417-Data-Locker-reports-for-agencies
 ---
+**At a glance**: Reports listed in this article are available to you (agencies) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article.
+
 ## Data Locker reports for agencies
 
 The following data-sharing principles apply:
@@ -48,6 +46,6 @@ The permissions required per report are listed in the table that follows. You, t
 
 #### Reports available to agencies
 
-<table><thead><tr><th><span>Report type (topic)</span></th><th>Permissions required (granted by the advertiser)</th><th><span>Data freshness\*</span></th></tr></thead><tbody><tr><td><a href="/marketers/docs/cohort-analytics-via-data-locker">Cohort unified</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily </td></tr><tr><td><a href="/marketers/docs/cohort-analytics-via-data-locker">Cohort user acquisition</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily</td></tr><tr><td><a href="/marketers/docs/cohort-analytics-via-data-locker">Cohort retargeting</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily </td></tr><tr><td colspan="3"><p><strong><span>Key to abbreviations</span></strong></p><p><strong><span>Daily</span></strong><span>:</span></p><ul><li><span>Reports are streamed to the h=23 folder.</span></li><li><span>These reports are typically available by 09:00-12:00 UTC in the h=23 folder of the preceding day.</span></li><li><span>For example, the report for data generated on Monday is in the Monday h=23 folder.</span></li><li><span>The data is available on Tuesday:</span><ul><li><span>For aggregated campaign performance: After 10:00 UTC.</span></li><li><span>For ad revenue signals: After 21:00 UTC.</span></li><li><span>For blocked clicks &amp; impressions, and failed click signatures: After 07:00 UTC.</span></li></ul></li></ul></td></tr></tbody></table>
+<table><thead><tr><th><span>Report type (topic)</span></th><th>Permissions required (granted by the advertiser)</th><th><span>Data freshness\*</span></th></tr></thead><tbody><tr><td><a href="/marketers/docs/cohort-analytics-via-data-locker" target="_blank">Cohort unified</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily </td></tr><tr><td><a href="/marketers/docs/cohort-analytics-via-data-locker" target="_blank">Cohort user acquisition</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily</td></tr><tr><td><a href="/marketers/docs/cohort-analytics-via-data-locker" target="_blank">Cohort retargeting</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily </td></tr><tr><td colspan="3"><p><strong><span>Key to abbreviations</span></strong></p><p><strong><span>Daily</span></strong><span>:</span></p><ul><li><span>Reports are streamed to the h=23 folder.</span></li><li><span>These reports are typically available by 09:00-12:00 UTC in the h=23 folder of the preceding day.</span></li><li><span>For example, the report for data generated on Monday is in the Monday h=23 folder.</span></li><li><span>The data is available on Tuesday:</span><ul><li><span>For aggregated campaign performance: After 10:00 UTC.</span></li><li><span>For ad revenue signals: After 21:00 UTC.</span></li><li><span>For blocked clicks &amp; impressions, and failed click signatures: After 07:00 UTC.</span></li></ul></li></ul></td></tr></tbody></table>
 
 <div data-zendesk-anchors="h_01HE7RC367DWWDQHAVFSKV6VEK=data-locker-reports-for-agencies h_01HE7RC367NTSVESAYE69Q7NJY=permissions-required-per-report-granted-by-the-advertiser h_01HE7RC368VVM3SMDN7S8YV6DY=reports-available-to-agencies" />

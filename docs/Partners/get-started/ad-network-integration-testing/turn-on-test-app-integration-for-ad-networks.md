@@ -1,8 +1,5 @@
 ---
 title: Turn on test app integration for ad networks
-excerpt: >-
-  Ad networks performing integration testing must turn on app integration
-  (activation).
 metadata:
   keywords:
     - Ad Networks
@@ -24,15 +21,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360020713538-Turn-on-test-app-integration-for-ad-networks
 ---
+> **At a glance:** Ad networks performing integration testing must turn on app integration (activation).
+
 ## Test apps for ad networks (iOS and Android)
 
 Ad networks after setting up integration and postbacks must test integration using AppsFlyer test apps. Before testing, the ad network must activate the app integration and enable additional ad network permissions as needed. The activation is performed once per app.
 
 | Test app type | App name or ID |
 | --- | --- |
-| [Android](/docs/getting-started-onboarding-guide-for-ad-networks#part-2-test-using-advertiser-apps) | com.appsflyer.adNetworkTest |
-| [iOS](/docs/ios-integration-testing-for-ad-networks) | id1543229303 |
-| [SKAdNetwork](/docs/skan-integration-guide-for-ad-networks) | <ul><li>id888707085</li><li>id888707086</li><li>id888707087</li></ul> |
+| <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks#part-2-test-using-advertiser-apps">Android</Anchor> | com.appsflyer.adNetworkTest |
+| <Anchor target="_blank" href="/partners/docs/ios-integration-testing-for-ad-networks">iOS</Anchor> | id1543229303 |
+| <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> | <ul><li>id888707085</li><li>id888707086</li><li>id888707087</li></ul> |
 
 ### Activation procedure
 

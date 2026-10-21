@@ -1,9 +1,5 @@
 ---
 title: ROI360 for UA partners
-excerpt: >-
-  AppsFlyer provides UA partners with complete and accurate ad, in-app
-  purchases, and auto-renewable subscription data via reports and postbacks.
-  Partners can ingest the information to optimize UA campaigns.
 metadata:
   keywords:
     - Ad Networks
@@ -25,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/17735150011921-ROI360-for-UA-partners
 ---
+**At a glance:** AppsFlyer provides UA partners with complete and accurate ad, in-app purchases, and auto-renewable subscription data via reports and postbacks. Partners can ingest the information to optimize UA campaigns.
+
 ## Introduction
 
 AppsFlyer receives revenue information from both its partners and the app stores (Apple App Store and Google Play Store). Once received, the data undergoes a series of steps including validation, normalization, attribution, and enrichment with additional properties and dimensions.  AppsFlyer can send the information to the UA partner. Following this process, AppsFlyer transmits the enriched and attributed data to the UA partner. The UA partner can then utilize this information to optimize their user acquisition campaigns and enhance the service they offer to advertisers.
@@ -63,9 +61,9 @@ What actions do partners need to take to receive the UA signals report and the a
 To enable the partner to get the report via Data Locker:
 
 * The partner has to perform the following steps in Data Locker:
-  1. [Set up Data Locker](/docs/data-locker-for-partners#set-up-data-locker) in the partner account including the connection to the cloud service provider, and the reports’ format and contents.
-  2. [Enable the ROI360 UA Signals report](/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report).
-* The advertiser has to [grant the partner permission for the report](/marketers/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data).
+  1. <Anchor target="_blank" href="/partners/docs/data-locker-for-partners#set-up-data-locker">Set up Data Locker</Anchor> in the partner account including the connection to the cloud service provider, and the reports’ format and contents.
+  2. <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report">Enable the ROI360 UA Signals report</Anchor>.
+* The advertiser has to <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">grant the partner permission for the report</Anchor>.
 
 </Accordion>
 
@@ -93,7 +91,7 @@ The UA Signals report does not provide real-time data as ad revenue postbacks do
 
 Depending on the advertiser integration type, the report data can originate from either:
 
-1. [AdRevenue SDK](/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api) integrations: customers can share impression-level revenue data loaded by the partner to client devices, and then reported to AppsFlyer in near real-time.
+1. <Anchor target="_blank" href="/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api">AdRevenue SDK</Anchor> integrations: customers can share impression-level revenue data loaded by the partner to client devices, and then reported to AppsFlyer in near real-time.
 2. S2S API-based device-level integrations: customers can configure their partner credentials within the AppsFlyer UI under integrated partners and allow ROI360 ad revenue to collect device-level ad revenue data on their behalf.
 3. A combination of the two (Freshness to Accuracy). **Note:** The transfer of data from the advertiser to AppsFlyer is contingent upon advertiser permissions and whether the advertiser is a ROI360 advanced customer.
 
@@ -124,7 +122,7 @@ Device-level data is written daily to the report in Data Locker
 
 <Accordion title="What is the report data freshness?">
 
-Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 [UTC time](/marketers/docs/about-data-freshness-and-timezone-support#daily-processing).
+Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">UTC time</Anchor>.
 
 </Accordion>
 
@@ -142,7 +140,7 @@ Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 [U
 | platform | Device platform: iOS, Android, or Windows Mobile |
 | country | Country code using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) Example: US, CN |
 | original\_url | • For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display. • Only populated if UA is attributed to the partner receiving the data. |
-| mediation\_network | The mediation network associated with the impression or impressions. [See list of possible networks](/marketers/docs/roi360-guide-ad-revenue-attribution#[closed-beta]-ua-signals-for-ad-networks) |
+| mediation\_network | The mediation network associated with the impression or impressions. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#[closed-beta]-ua-signals-for-ad-networks">See list of possible networks</Anchor> |
 | ad\_unit | Coming Q3 2023: The monetization ad\_unit associated with the impression or impressions |
 | placement | Coming Q3 2023: The monetization placement associated with the impression or impressions |
 

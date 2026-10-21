@@ -1,8 +1,5 @@
 ---
 title: Click signing for ad networks
-excerpt: >-
-  Add signature validation to clicks to avoid fraud liabilities and so
-  fraudulent clicks aren't attributed to your ad network.
 metadata:
   keywords:
     - Ad Network
@@ -29,11 +26,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017831497-Click-signing-for-ad-networks
 ---
+**At a glance:** Add signature validation to clicks to avoid fraud liabilities and so fraudulent clicks aren't attributed to your ad network.
+
 ## About click signing
 
 With minimal tech, fraudsters can send clicks on behalf of an ad network and create thousands, or even millions, of fake clicks that get sent to AppsFlyer. Sometimes, the ad networks themselves aren't aware of the issue.
 
-In order for an ad network to ensure that clicks attributed to it by AppsFlyer actually originated from the ad network, and not from a fraudster creating fake clicks, ad networks should sign their clicks with [HMAC-SHA256](https://en.wikipedia.org/wiki/HMAC) signatures.
+In order for an ad network to ensure that clicks attributed to it by AppsFlyer actually originated from the ad network, and not from a fraudster creating fake clicks, ad networks should sign their clicks with <Anchor target="_blank" href="https://en.wikipedia.org/wiki/HMAC">HMAC-SHA256</Anchor> signatures.
 
 Click signing also prevents the ad network’s traffic from being blocked due to click flooding. Meaning, that if an ad network reaches the click-blocking threshold due to an extreme level of click flooding, AppsFlyer stops recording and attributing their clicks for the rest of the day.
 
@@ -41,7 +40,7 @@ The signatures enable AppsFlyer to validate the clicks and make sure that the cl
 
 * Validated clicks are recorded, and attributed to the ad network
 * Invalidated clicks are rejected and:
-  * Are made available in Protect360 reports for ad networks (not advertisers). [Learn more](/docs/protect360-reports-for-ad-networks#failed-click-signatures)
+  * Are made available in Protect360 reports for ad networks (not advertisers). <Anchor target="_blank" href="/partners/docs/protect360-reports-for-ad-networks#failed-click-signatures">Learn more</Anchor>
   * Do not impact the conversion rate or click-blocking threshold of the ad network
 
 ## Click signature integration
@@ -54,7 +53,7 @@ The following chart outlines the flow from initial development and basic tests t
 
 ### Procedure
 
-**Prerequisite:** [API V2.0 token](/marketers/docs/managing-appsflyer-tokens) from the admin to authorize the click signing API.
+**Prerequisite:** <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API V2.0 token</Anchor> from the admin to authorize the click signing API.
 
 **To sign your clicks**:
 
@@ -67,7 +66,7 @@ The following chart outlines the flow from initial development and basic tests t
    * The HMAC-SHA256 signature.  
      Example:
 
-     ```
+     ```http
      https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_siteid=12345&expires=1597657118&signature_v2=8fnDVzZP_WRZnv3KNJaREOEfvB5p9oRc_XlKEvUo8gk
      ```
 
@@ -127,7 +126,7 @@ The following list of attributes is supported for click and engagement signing.
 
 #### Attribute value escaping
 
-* The values in the JSON must be written in **lowercase strings** as defined in the [JSON standard](https://www.w3docs.com/snippets/java/how-should-i-escape-strings-in-json.html).
+* The values in the JSON must be written in **lowercase strings** as defined in the <Anchor target="_blank" href="https://www.w3docs.com/snippets/java/how-should-i-escape-strings-in-json.html">JSON standard</Anchor>.
 
 #### JSON spaces
 
@@ -139,7 +138,7 @@ The following list of attributes is supported for click and engagement signing.
 * Encode the signature with Base64 **without** padding
 * Add the signature to the click URL with a parameter signature\_v2
 
-```
+```json
 //generate a signature from the click url and encode it with base64 without padding String generatedSignature = Base64.getUrlEncoder().withoutPadding().encodeToString(mac.doFinal(jsonString.getBytes()));
 ```
 
@@ -151,7 +150,7 @@ The following list of attributes is supported for click and engagement signing.
 
 Example OneLink (multi-platform) click URL:
 
-```
+```http
 https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-1234-1234-1234-123456789012  
 &af_ad_type=video&af_adset=MMP&clickid=sdkfjasksjskdfj9845weh&af_siteid=my_site&af_viewthrough_lookback=2h&c=my_campaign  
 &expires=1689695615
@@ -178,7 +177,7 @@ Example json object for signature (after removing blank spaces)
 
 Final click URL with the signature:
 
-```
+```http
 https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-1234-1234-1234-123456789012  
 &af_ad_type=video&af_adset=MMP&af_siteid=my_site&af_viewthrough_lookback=2h&c=my_campaign  
 &expires=1689695615  
@@ -220,7 +219,7 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 
 <Accordion title="signature-example.go">
 
-```
+```json
 package main
 
 import (
@@ -375,15 +374,15 @@ AppsFlyer provides APIs that allow ad networks to manage and test the click sign
 
 | API method | Remarks |
 | --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode:<ul><li>**disabled** (default): No click signature validation is done.</li><li>**report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **Report API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.</li><li>**enabled:** AppsFlyer blocks clicks with invalid or missing signatures.</li></ul> |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<ul><li>**enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<ul><li>Configure mode API changes to report-only.</li><li>And email alert is sent to the ad network to verify the click signing API is correctly set up.</li></ul></li><li>**disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high.</li></ul> |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-secret-post">Generate secret key</Anchor> | Generate secret keys to be used in the signature. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-secret-delete">Revoke secret key</Anchor> | Cancel compromised secret keys. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-test-post">Test</Anchor> | Send single clicks for testing the signature. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-update-put">Configure mode</Anchor> | Configure mode of click signing mode:<ul><li>**disabled** (default): No click signature validation is done.</li><li>**report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **Report API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.</li><li>**enabled:** AppsFlyer blocks clicks with invalid or missing signatures.</li></ul> |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put">Configure circuit breaker</Anchor> | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<ul><li>**enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<ul><li>Configure mode API changes to report-only.</li><li>And email alert is sent to the ad network to verify the click signing API is correctly set up.</li></ul></li><li>**disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high.</li></ul> |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-get">Get configuration</Anchor> | Get the mode and IDs of active secret keys. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-report-get">Report</Anchor> | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">Exclude app</Anchor> | Configure app IDs to be excluded from click signing. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete">Remove excluded app</Anchor> | Configure app IDs to be included in click signing after being excluded. |
 
 ## Legacy versions
 
@@ -399,7 +398,7 @@ These versions should not be used and are listed for reference only
 
 <Accordion title="Generate secret key basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span><code>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span><code>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
 
 </Accordion>
 
@@ -409,7 +408,7 @@ These versions should not be used and are listed for reference only
 
 **Method**
 
-```
+```json
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
 
@@ -439,7 +438,7 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 
 **Curl request**
 
-```bash
+```json
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=36' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -475,7 +474,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Revoke secrete key basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span><code>https://hq1.appsflyer.com/api/p360-click-signing/secret/&lt;secret-id&gt;</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span><code>https://hq1.appsflyer.com/api/p360-click-signing/secret/&lt;secret-id&gt;</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
 
 </Accordion>
 
@@ -483,7 +482,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 **Method**
 
-```
+```json
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
 
@@ -501,7 +500,7 @@ DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 
 **Curl request**
 
-```bash
+```json
 curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signing/secret/59ad6547-affc-45eb-a6c9-9805f88ee755' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -527,17 +526,15 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <Accordion title="Test basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/test</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/test</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
 
 </Accordion>
-
-<div id="api-request::b2432cce" />
 
 <Accordion title="API request">
 
 **Method**
 
-```
+```json
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
 
@@ -566,7 +563,7 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/test
 
 **Curl request**
 
-```bash
+```json
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/test' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}' \
 --header 'Content-Type: application/json' \
@@ -605,15 +602,17 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Configure mode basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>mode/&lt;mode&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>mode/&lt;mode&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="api-request::b2432cce" />
 
 <Accordion title="API request">
 
 **Method**
 
-```
+```json
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
 
@@ -631,7 +630,7 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 
 **Curl request**
 
-```bash
+```json
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/mode/report-only' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -656,9 +655,11 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Configure circuit breaker basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td><span>HTTP status</span></td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td><span>HTTP status</span></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="api-request::1ede8b9c" />
 
 <div id="api-request::ef73eae0" />
 
@@ -666,7 +667,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 **Method**
 
-```
+```json
 POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
 
@@ -684,7 +685,7 @@ POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 
 **Curl request**
 
-```bash
+```json
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/circuit-breaker' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 --data-raw '{
@@ -716,17 +717,15 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Get configuration basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
 
 </Accordion>
-
-<div id="api-request::a2a93b39" />
 
 <Accordion title="API request">
 
 **Method**
 
-```
+```json
 GET https://hq1.appsflyer.com/api/p360-click-signing/config
 ```
 
@@ -751,7 +750,7 @@ GET https://hq1.appsflyer.com/api/p360-click-signing/config
 
 **Curl request**
 
-```bash
+```json
 curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/config' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -793,9 +792,11 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="Report basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/report</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a CSV</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/report</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a CSV</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="api-request::a2a93b39" />
 
 <div id="api-request::b28cedb0" />
 
@@ -803,7 +804,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 **Method**
 
-```
+```json
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
 
@@ -835,7 +836,7 @@ GET https://hq1.appsflyer.com/api/p360-click-signing/report
 
 **Curl request**
 
-```bash
+```json
 curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/report?start-date=2021-01-07T07&end-date=2021-01-17T12' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}' \
 ```
@@ -870,11 +871,9 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="Exclude app method basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>excluded-app/&lt;app-id&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>excluded-app/&lt;app-id&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
 
 </Accordion>
-
-<div id="api-request::1ede8b9c" />
 
 <div id="api-request::1054abca" />
 
@@ -882,7 +881,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 **Method**
 
-```
+```json
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
 
@@ -900,7 +899,7 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-i
 
 **Curl request**
 
-```bash
+```json
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/appname.com' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -926,7 +925,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Remove excluded app method basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>excluded-app/&lt;app-id&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>excluded-app/&lt;app-id&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
 
 </Accordion>
 
@@ -938,7 +937,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 **Method**
 
-```
+```json
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
 
@@ -956,7 +955,7 @@ DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app
 
 **Curl request**
 
-```bash
+```json
 curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/appname.com' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -984,7 +983,7 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <Accordion title="Code sample">
 
-```
+```java
 package sign;
 
 import javax.crypto.Mac;
@@ -1050,7 +1049,7 @@ This is to protect your business from a potential technical issue and allows you
 
 | **Q: How can we test click signing without impacting production?**<br /><br />**A**: There are two ways to test click signing:<ol><li>Use the [test API](/docs/click-signing-for-ad-networks#test-method). This method is useful during the development phase, to test the signatures of single clicks.</li><li>Use report-only mode. Report-only mode verifies the signatures on the production clicks and shows you what would be blocked, but doesn't block invalid clicks. Therefore, you can test that click signing works without impacting real traffic.</li></ol> |
 | --- |
-| **Q: What is the difference between an API token and a secret-key?**<br /><br />**A**: **API token**: Is used to authorize and run the click signing API. There is only one per ad network. The [AppsFlyer API V2.0 token](/marketers/docs/managing-appsflyer-tokens) must be obtained from the admin<br /><br />**Secret key**: Is used to generate the signature. Use the [generate secret key method](/docs/click-signing-for-ad-networks#generate-secret-key-method) to create secret keys. The ad network is responsible for generating new secret keys. See the [traits section](/docs/click-signing-for-ad-networks#traits) for more information. |
+| **Q: What is the difference between an API token and a secret-key?**<br /><br />**A**: **API token**: Is used to authorize and run the click signing API. There is only one per ad network. The <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">AppsFlyer API V2.0 token</Anchor> must be obtained from the admin<br /><br />**Secret key**: Is used to generate the signature. Use the [generate secret key method](/docs/click-signing-for-ad-networks#generate-secret-key-method) to create secret keys. The ad network is responsible for generating new secret keys. See the [traits section](/docs/click-signing-for-ad-networks#traits) for more information. |
 | **Q: Can we apply click signing to only certain campaigns?**<br /><br />**A**: No. Click signing is applied to all clicks from an ad network. You can exclude certain apps from click signing, but you can’t exclude only certain campaigns. |
 
 </Accordion>

@@ -1,8 +1,5 @@
 ---
 title: About probabilistic modeling
-excerpt: >-
-  Learn how to set up your ad engagement data so AppsFlyer can apply
-  probabilistic modelling when deterministic signals aren’t available.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/40188089592209-About-probabilistic-modeling
 ---
+**At a glance:** Learn how to set up your ad engagement data so AppsFlyer can apply probabilistic modelling when deterministic signals aren’t available.
+
 ## About probabilistic modeling
 
 AppsFlyer uses probabilistic modeling as a privacy-preserving statistical method to report on how app developers’ marketing campaigns are performing. It produces aggregate campaign-level performance reports for app developers.

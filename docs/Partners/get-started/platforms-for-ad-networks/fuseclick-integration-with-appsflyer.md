@@ -1,9 +1,5 @@
 ---
 title: Fuseclick integration with AppsFlyer
-excerpt: >-
-  Ad networks that use FuseClick can utilize the AppsFlyer Probabilistic
-  modeling solution to receive attribution data about installs and in-app
-  events.
 metadata:
   keywords:
     - Advertisers
@@ -28,11 +24,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207583573-Fuseclick-integration-with-AppsFlyer
 ---
+**At a glance:** Ad networks that use FuseClick can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
+
 ## Basic attribution link
 
 Below you can find the base attribution link with a detailed explanation per each parameter:
 
-```
+```http
 https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}
 ```
 
@@ -50,13 +48,13 @@ https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}
 | clickid | `{TID}` | Request ID of each user session - **Required** |
 | af\_siteid | `{SC}` | ID of the affiliate promoting the offer - **Optional** |
 
-For the complete AppsFlyer parameter list [click here](/docs/postback-macros-for-ad-networks)
+For the complete AppsFlyer parameter list <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">click here</Anchor>
 
-For complete FuseClick macro list [click here](https://support.fuseclick.com/documentation/open/iwf/2016/0805/199.html)
+For complete FuseClick macro list <Anchor target="_blank" href="https://support.fuseclick.com/documentation/open/iwf/2016/0805/199.html">click here</Anchor>
 
 Complete Attribution Link Template:
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_siteid={ADV_SID}
 ```
 
@@ -64,7 +62,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_sitei
 
 Global Install Postback:
 
-```
+```html
 https://tracking.zadsmobile.com/pb?tid={TID}
 ```
 
@@ -72,7 +70,7 @@ Additional attribution information can be added to the postback by request such 
 
 ## Finalizing your registration
 
-* If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
 
 <div data-zendesk-anchors="01JFT0DX287AWQND2BYFSV50HW=basic-attribution-link install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT0DX2B6FFE3K7VTXG1YVJ1=install-and-in-app-event-postbacks 01JFT0DX2BD8A19BY9197X11QW=finalizing-your-registration" />

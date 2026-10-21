@@ -1,10 +1,5 @@
 ---
 title: Validation Rules for ad networks and agencies
-excerpt: >-
-  Advertisers use Validation Rules to manually define conditions to block
-  installs, attribution, and in-app events of non-compliant installs/IAEs.
-  Integrated partners (ad networks and agencies) can view the rules and get
-  reports of blocked installs, attribution, and IAEs.
 metadata:
   keywords:
     - Agency
@@ -31,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004751486-Validation-Rules-for-ad-networks-and-agencies
 ---
+**At a glance:** Advertisers use Validation Rules to manually define conditions to block installs, attribution, and in-app events of non-compliant installs/IAEs. Integrated partners (ad networks and agencies) can view the rules and get reports of blocked installs, attribution, and IAEs.
+
 ## About Validation Rules
 
 Validation rules:
@@ -43,8 +40,8 @@ Validation rules:
   * Fake installs or in-app events sent from bots, emulators, or device farms.
 * Defined for in-app events only take effect on IAEs associated with installs that were not previously blocked.
 * That include an ad network are visible to that ad network's personnel (but they cannot see other ad networks included in the rule).
-* Run in real-time and take immediate action. A rejection postback is sent to partners who have rejected postbacks set up. [Learn more](/docs/rejected-attribution-postbacks-to-integrated-partners).
-* Have additional options available to [Protect360](/marketers/docs/protect360-anti-fraud-guide) customers, on top of the automatic Protect360 fraud blocking and detection. These conditions are known to help in the detection of various install-hijacking, fake install, and fake in-app event fraud types.
+* Run in real-time and take immediate action. A rejection postback is sent to partners who have rejected postbacks set up. <Anchor target="_blank" href="/partners/docs/rejected-attribution-postbacks-to-integrated-partners">Learn more</Anchor>.
+* Have additional options available to <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> customers, on top of the automatic Protect360 fraud blocking and detection. These conditions are known to help in the detection of various install-hijacking, fake install, and fake in-app event fraud types.
 
 ## Availability to ad networks and agencies
 
@@ -74,13 +71,13 @@ The rules governing additional validation rule access to agencies are as follows
 1. In AppsFlyer, from the side menu, select **Settings** > **Validation Rules**.
 2. To view the validation rule, select an **app owner Account**.
    * The list of rules defined by the app owner account for traffic that could come from you is displayed.
-   * For an explanation of how rulesets work see [Validation Rules for app owners](/marketers/docs/implement-validation-rules-to-prevent-fraud).
+   * For an explanation of how rulesets work see <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Validation Rules for app owners</Anchor>.
 
 ## Reports
 
 ### Protect360 fraud: export data
 
-Advertisers can give partners (ad networks and agencies) [permission](/marketers/docs/raw-data-reporting-overview#protect360-fraud-and-validation-rules) to download the following reports from **Reports** > **Export data**:
+Advertisers can give partners (ad networks and agencies) <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#protect360-fraud-and-validation-rules">permission</Anchor> to download the following reports from **Reports** > **Export data**:
 
 * Installs: Blocked installs or installs with blocked attribution.
 * Blocked in-app events: Rejected in-app events (requires the advertiser to have a Protect360 subscription).
@@ -90,7 +87,7 @@ The **Blocked Reason** and **Blocked Reason Value** fields are populated in the 
 
 ## Validation Rules rejected installation postbacks
 
-Integrated partners who integrate with AppsFlyer can [receive blocked install postbacks](/docs/rejected-attribution-postbacks-to-integrated-partners) in real-time each time an install is rejected due to enforcement of the rules.
+Integrated partners who integrate with AppsFlyer can <Anchor target="_blank" href="/partners/docs/rejected-attribution-postbacks-to-integrated-partners">receive blocked install postbacks</Anchor> in real-time each time an install is rejected due to enforcement of the rules.
 
 Contact your Partner Development representative for further details.
 

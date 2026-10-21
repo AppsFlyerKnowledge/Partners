@@ -1,10 +1,5 @@
 ---
 title: Advanced Privacy guide & postback macros for ad networks
-excerpt: >-
-  Data sharing with partners when Advanced Privacy is enabled. Instructions for
-  ad networks on setting up Advanced Privacy postbacks. Note! This article is
-  not related to either SKAdNetwork postbacks nor is it intended for use by
-  advertisers.
 metadata:
   keywords:
     - Ad Networks
@@ -29,7 +24,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011316197-Advanced-Privacy-guide-postback-macros-for-ad-networks
 ---
-> 📘 **Advanced Privacy for Ad Networks news**
+**At a glance:** Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks. Note! This article is not related to either SKAdNetwork postbacks nor is it intended for use by advertisers.
+
+> 📄 **Advanced Privacy for Ad Networks news**
 >
 > The Advanced Privacy postback mechanism described in this article works when all of the following are true:
 >
@@ -47,7 +44,7 @@ This article discusses:
 
 ## Ad network Advanced Privacy data-sharing principles
 
-Starting iOS 14.5+ the AppsFlyer [Aggregated Advanced Privacy Framework](/marketers/docs/apply-aggregated-advanced-privacy-framework) (AAP) provides advertisers with the ability to control the availability of user-level attribution data provided via the AppsFlyer platform.
+Starting iOS 14.5+ the AppsFlyer <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy Framework</Anchor> (AAP) provides advertisers with the ability to control the availability of user-level attribution data provided via the AppsFlyer platform.
 
 In the context of ad networks, the AAP framework is implemented using Advanced Privacy (AP). For ease of understanding, the terms Advanced Privacy and AP are used interchangeably in this article.
 
@@ -59,7 +56,7 @@ When AP is on, the data customers may make available via postbacks or other repo
 
 In the context of postbacks, different postback types are used depending on whether an advertiser ID is available and other factors.
 
-You can view the current AP setting, per app: In AppsFlyer, from the side menu, select **Collaborate**> **Active Integrations** > select your ad network > **Integration tab.** The default setting is on.
+You can view the current AP setting, per app: In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations** > select your ad network > **Integration tab.** The default setting is on.
 
 ![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
 
@@ -83,7 +80,7 @@ The following table describes postback types based on Advertiser ID availability
 
 #### Postback type for iOS 14.5+
 
-<table><thead><tr><th rowspan="2">AP status</th><th colspan="2">Advertiser ID Availability</th><th rowspan="2">Postback template type to attributed partner\* supporting AP </th><th rowspan="2">Postback template type to attributed partner\* not-supporting AP </th><th rowspan="2">Unattributed postback partner\*</th></tr><tr><th>Publisher app</th><th>Advertiser app</th></tr></thead><tbody><tr><td>On</td><td>Available</td><td>Unavailable</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">AP template</a> (aggregated data)</td><td>No postback</td><td>None</td></tr><tr><td>On</td><td>Unavailable</td><td>Available</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">AP template</a> (aggregated data)</td><td>No postback</td><td><p><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a></p><p><a href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields">Attribution fields</a> aren't available.\*</p></td></tr><tr><td>On</td><td>Available</td><td>Available</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a>. This includes available IDs like: IDFA, IDFV, CUID, Click ID and attribution fields. </td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a>. This includes available IDs like: IDFA, IDFV, CUID, Click ID and attribution fields. </td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a> including available IDs. <a href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields">Attribution fields</a> aren't available.\*</td></tr><tr><td>On</td><td>Unavailable</td><td>Unavailable</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#type-of-postback-used">AP template</a> (aggregated data)</td><td>No postback</td><td>None</td></tr><tr><td>Off</td><td>Not considered</td><td>Not considered</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a></td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a></td><td><p><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a>.</p><p><a href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields">Attribution fields</a> aren't available.\*</p></td></tr></tbody></table>
+<table><thead><tr><th rowspan="2">AP status</th><th colspan="2">Advertiser ID Availability</th><th rowspan="2">Postback template type to attributed partner\* supporting AP </th><th rowspan="2">Postback template type to attributed partner\* not-supporting AP </th><th rowspan="2">Unattributed postback partner\*</th></tr><tr><th>Publisher app</th><th>Advertiser app</th></tr></thead><tbody><tr><td>On</td><td>Available</td><td>Unavailable</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">AP template</a> (aggregated data)</td><td>No postback</td><td>None</td></tr><tr><td>On</td><td>Unavailable</td><td>Available</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">AP template</a> (aggregated data)</td><td>No postback</td><td><p><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a></p><p><a href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields" target="_blank">Attribution fields</a> aren't available.\*</p></td></tr><tr><td>On</td><td>Available</td><td>Available</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a>. This includes available IDs like: IDFA, IDFV, CUID, Click ID and attribution fields. </td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a>. This includes available IDs like: IDFA, IDFV, CUID, Click ID and attribution fields. </td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a> including available IDs. <a href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields" target="_blank">Attribution fields</a> aren't available.\*</td></tr><tr><td>On</td><td>Unavailable</td><td>Unavailable</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#type-of-postback-used">AP template</a> (aggregated data)</td><td>No postback</td><td>None</td></tr><tr><td>Off</td><td>Not considered</td><td>Not considered</td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a></td><td><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a></td><td><p><a href="./advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Regular template</a>.</p><p><a href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields" target="_blank">Attribution fields</a> aren't available.\*</p></td></tr></tbody></table>
 
 **(*) Principles for data sharing with partners**
 
@@ -114,7 +111,7 @@ Update your click URLs and complete Advanced Privacy integration.
 
 <Accordion title="Click URL requirements">
 
-In many cases, an Advertiser ID may not be available in the publisher app, the advertiser app, or both. In these instances, attribution is performed using the [Aggregated Advanced Privacy](/marketers/docs/appsflyer-attribution-model#aggregated-advanced-privacy-aap) framework or other privacy-preserving campaign measurement methods.
+In many cases, an Advertiser ID may not be available in the publisher app, the advertiser app, or both. In these instances, attribution is performed using the <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#aggregated-advanced-privacy-aap">Aggregated Advanced Privacy</Anchor> framework or other privacy-preserving campaign measurement methods.
 
 **[Best practice]** To maximize your attributions, send all parameters listed.
 
@@ -131,9 +128,10 @@ In many cases, an Advertiser ID may not be available in the publisher app, the a
 
 2. Add the following mandatory parameters to click URLs*:
 
-   > ⚠️ **Caution**
+   > ❗️ **Caution**
    >
    > If your click URL does not pass the mandatory parameters, you will not be credited with the majority of installs you drive.
+
 
    * IP
    * User-agent
@@ -147,11 +145,76 @@ In many cases, an Advertiser ID may not be available in the publisher app, the a
 
    #### Parameters for Advanced Privacy attribution
 
-| Parameter | Mandatory | Extraction method |
-| --- | --- | --- |
-| **Device language and locale**<br /><br />af\_lang | No | NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];<br /><br />[Recommended] Provide the language and locale; for example, en-US. |
-| **User-agent**<br /><br />af\_ua | Yes | Extract the user-agent with the format:<br /><br />```<br />Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+13_3_1<br />+like+Mac+OS+X%29 AppleWebKit%2F605.1.15+%28KHTML%2C<br />+like+Gecko%29+Mobile%2F15E148<br />```<ul><li>**Do not** extract the CFNetwork *user-agent,* extract the other one.</li><li>The user-agent should be URL encoded.</li></ul> |
-| **Device IP address**<br /><br />af\_ip | Yes | Best option: If available, provide the device IP under the af\_ip parameter.<br /><br />Next option: If available, AppsFlyer will use the IP in X-Forwarded-For. |
+   <Table>
+     <thead>
+       <tr>
+         <th>
+           Parameter
+         </th>
+         <th>
+           Mandatory
+         </th>
+         <th>
+           Extraction method
+         </th>
+       </tr>
+     </thead>
+
+     <tbody>
+       <tr>
+         <td>
+           \*\*Device language and locale\*\*
+
+           af\_lang
+         </td>
+         <td>
+           No
+         </td>
+         <td>
+           NSString \*language = [[NSLocale preferredLanguages] objectAtIndex:0];
+
+           [Recommended] Provide the language and locale; for example, en-US.
+         </td>
+       </tr>
+       <tr>
+         <td>
+           \*\*User-agent\*\*
+
+           af\_ua
+         </td>
+         <td>
+           Yes
+         </td>
+         <td>
+           Extract the user-agent with the format:
+
+           ```
+           Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+13_3_1
+           +like+Mac+OS+X%29 AppleWebKit%2F605.1.15+%28KHTML%2C
+           +like+Gecko%29+Mobile%2F15E148
+           ```
+
+           \* \*\*Do not\*\* extract the CFNetwork \*user-agent,\* extract the other one.
+           \* The user-agent should be URL encoded.
+         </td>
+       </tr>
+       <tr>
+         <td>
+           \*\*Device IP address\*\*
+
+           af\_ip
+         </td>
+         <td>
+           Yes
+         </td>
+         <td>
+           Best option: If available, provide the device IP under the af\_ip parameter.
+
+           Next option: If available, AppsFlyer will use the IP in X-Forwarded-For.
+         </td>
+       </tr>
+     </tbody>
+   </Table>
 
    **Append parameters to the click URL**
 
@@ -193,12 +256,12 @@ To receive Advanced Privacy postbacks, you must set up an Advanced Privacy integ
 **Action required by the ad network to integrate:**
 
 1. [Set up your Advanced Privacy postback in the AppsFlyer dashboard.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback)
-2. [Test Advanced Privacy integration.](/docs/ios-integration-testing-for-ad-networks)
+2. <Anchor target="_blank" href="/partners/docs/ios-integration-testing-for-ad-networks">Test Advanced Privacy integration.</Anchor>
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * In order to be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the rejected postback macros.
-> * To enable rejected installs/events postback, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+> * To enable rejected installs/events postback, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 
 #### Advanced Privacy postback endpoint [complete as required]
 
@@ -221,7 +284,7 @@ Set up your AP postback using the Postback management option in the AppsFlyer da
 
 **Prerequisites**:
 
-* You must have an active integration with AppsFlyer to manage your Advanced Privacy postback. Contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) to [create an integration](/docs/getting-started-onboarding-guide-for-ad-networks).
+* You must have an active integration with AppsFlyer to manage your Advanced Privacy postback. Contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> to <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">create an integration</Anchor>.
 * ![AppsFlyerAdmin_us-en.png](https://files.readme.io/7a7e18d7e1a5cc9d27c45900651ca4b57377567ac3e8360c52417ead634680c3-360018153137.png) Postback management is performed by the account admin; team members do not have access.
 
 **To set up the postback:**
@@ -251,7 +314,7 @@ Set up your AP postback using the Postback management option in the AppsFlyer da
    ![postback-management-template_en-us.png](https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png)
 8. Click **Save**. Note that when you save the postback, the changes take effect immediately.
 
-In the case of any issues, reach out to us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+In the case of any issues, reach out to us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 
 </Accordion>
 
@@ -276,7 +339,7 @@ Postbacks are sent to analytics partners as follows:
 
 <Accordion title="AP vs. SKAdNetwork">
 
-[SKAdNetwork](/docs/skan-integration-guide-for-ad-networks) is an Apple-provided attribution technology for iOS devices. Advanced Privacy is part of the [AppsFlyer Aggregated Advanced Privacy](/marketers/docs/apply-aggregated-advanced-privacy-framework) (AAP) framework and pertains to AppsFlyer's attribution. AAP enables advertisers to control which attribution data they make available via the AppsFlyer platform. Typically, ad networks support both AP and SKAdNetwork integration.
+<Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> is an Apple-provided attribution technology for iOS devices. Advanced Privacy is part of the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">AppsFlyer Aggregated Advanced Privacy</Anchor> (AAP) framework and pertains to AppsFlyer's attribution. AAP enables advertisers to control which attribution data they make available via the AppsFlyer platform. Typically, ad networks support both AP and SKAdNetwork integration.
 
 </Accordion>
 

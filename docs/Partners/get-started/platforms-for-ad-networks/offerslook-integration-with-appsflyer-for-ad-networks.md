@@ -1,8 +1,5 @@
 ---
 title: Offerslook integration with AppsFlyer for ad networks
-excerpt: >-
-  Learn how ad networks that use Offerslook can integrate with AppsFlyer and
-  receive install attribution data.
 metadata:
   keywords:
     - Offerslook
@@ -28,16 +25,18 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209074606-Offerslook-integration-with-AppsFlyer-for-ad-networks
 ---
+**At a glance:** Learn how ad networks that use Offerslook can integrate with AppsFlyer and receive install attribution data.
+
 To initiate integration, send to AppsFlyer:
 
 1. Your Attribution Link
 
-   ```
+   ```http
    https://networkname.offerstrack.net/index.php?offer_id={offer_id}&aff_id={aff_id}
    ```
 2. Your Postback (for installs)  
 
-   ```
+   ```http
    https://networkname.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}
    ```
 
@@ -56,7 +55,7 @@ See below AppsFlyer’s base attribution link with a detailed explanation per ma
 
 See below for an example of an attribution Link once you have added additional Offerslook macros:
 
-```
+```http
   https://app.appsflyer.com/com.
   
   appsflyer?pid=mediaName_int&
@@ -68,7 +67,7 @@ See below for an example of an attribution Link once you have added additional O
   &idfa={idfa}
 ```
 
-For a complete list of AppsFlyer parameters, click [here](/marketers/docs/about-link-structure-and-parameters).
+For a complete list of AppsFlyer parameters, click <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">here</Anchor>.
 
 Available Macros on AppsFlyer Attribution Links
 
@@ -136,7 +135,7 @@ http://`{networkname}.offerstrack.net/advBack.php?click_id={click_id}&adv_id={ad
 
 **Finalizing your Registration**
 
-* If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
 
 <div data-zendesk-anchors="01JFT1JFND230EFDBRTWNKXKSH=creating-your-attribution-link 01JFT1JFP8T3HF5GQBR19YHQW5=new-macros 01JFT1JFP9BMZM99TKDR58FNZP=creating-your-install-postbacks" />

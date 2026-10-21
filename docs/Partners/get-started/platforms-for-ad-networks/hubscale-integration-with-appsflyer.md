@@ -1,6 +1,5 @@
 ---
 title: Hubscale integration with AppsFlyer
-excerpt: Learn how ad networks using Hubscale can integrate with AppsFlyer.
 metadata:
   keywords:
     - Advertisers
@@ -26,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005874869-Hubscale-integration-with-AppsFlyer
 ---
+**At a glance:** Learn how ad networks using Hubscale can integrate with AppsFlyer.
+
 **To initiate the integration you need to send AppsFlyer**:
 
 1. Your attribution link
@@ -46,7 +47,7 @@ See below AppsFlyers base attribution link with a detailed explanation per macro
 
 See below what the complete attribution link should look like after you have added additional Hubscale macros:
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 {transaction_id}&af_siteid={affiliate_id}&af_sub5={offer_id}af_ad_id=
 {offer_file_id}&advertising_id={google_aid}&idfa={ios_ifa}" target="
@@ -59,7 +60,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 {google_id}&idfa={ios_ifa}
 ```
 
-[AppsFlyer complete list of parameters](/marketers/docs/about-link-structure-and-parameters)
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer complete list of parameters</Anchor>
 
 ## Global postbacks for installs and in-app events:
 
@@ -67,7 +68,7 @@ Hubscale has global postbacks for installs and in-app events:
 
 For installs:
 
-```
+```http
 https://companyname.156th.com/conv?transaction_id={publisher_ref_id}&ios_ifa={ios_ifa}
 &google_id={google_aid}&app_version={app_version}&language={language}&ext_country_code={country_code}
 &ext_city={city}&user_agent={user_agent}&user_ip={device_ip}&adv_revenue={revenue_usd}
@@ -75,13 +76,79 @@ https://companyname.156th.com/conv?transaction_id={publisher_ref_id}&ios_ifa={io
 
 For post-install events, Hubscale can record up to nine post-install events for the same Transaction ID. Nine global postbacks should be created as templates as shown below:
 
-| Event number | URL template |
-| --- | --- |
-| Event 2 (event 1 is the install) | ```<br />https://companyname.156th.com/conv?transaction_id={publisher_ref_id}<br />&ios_ifa={ios_ifa}&google_id={google_aid}&app_version={app_version}<br />&language={language}&ext_country_code={country_code}&ext_city={city}<br />&user_agent={user_agent}&user_ip={device_ip}<br />&adv_revenue={revenue_usd}&level=2<br />``` |
-| Event 3 | ```<br />https://companyname.156th.com/conv?transaction_id={publisher_ref_id}<br />&ios_ifa={ios_ifa}&google_id={google_aid}&app_version={app_version}<br />&language={language}&ext_country_code={country_code}&ext_city={city}<br />&user_agent={user_agent}&user_ip={device_ip}<br />&adv_revenue={revenue_usd}&level=3<br />``` |
-| Event 4 | ... |
-| ... | ... |
-| Event 10 | ```<br />https://companyname.156th.com/conv?transaction_id={publisher_ref_id}<br />&ios_ifa={ios_ifa}&google_id={google_aid}&app_version={app_version}<br />&language={language}&ext_country_code={country_code}&ext_city={city}<br />&user_agent={user_agent}&user_ip={device_ip}<br />&adv_revenue={revenue_usd}&level=10<br />``` |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Event number
+      </th>
+      <th>
+        URL template
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Event 2 (event 1 is the install)
+      </td>
+      <td>
+        ```http
+        https://companyname.156th.com/conv?transaction_id={publisher_ref_id}
+        &ios_ifa={ios_ifa}&google_id={google_aid}&app_version={app_version}
+        &language={language}&ext_country_code={country_code}&ext_city={city}
+        &user_agent={user_agent}&user_ip={device_ip}
+        &adv_revenue={revenue_usd}&level=2
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Event 3
+      </td>
+      <td>
+        ```http
+        https://companyname.156th.com/conv?transaction_id={publisher_ref_id}
+        &ios_ifa={ios_ifa}&google_id={google_aid}&app_version={app_version}
+        &language={language}&ext_country_code={country_code}&ext_city={city}
+        &user_agent={user_agent}&user_ip={device_ip}
+        &adv_revenue={revenue_usd}&level=3
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Event 4
+      </td>
+      <td>
+        ...
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ...
+      </td>
+      <td>
+        ...
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Event 10
+      </td>
+      <td>
+        ```http
+        https://companyname.156th.com/conv?transaction_id={publisher_ref_id}
+        &ios_ifa={ios_ifa}&google_id={google_aid}&app_version={app_version}
+        &language={language}&ext_country_code={country_code}&ext_city={city}
+        &user_agent={user_agent}&user_ip={device_ip}
+        &adv_revenue={revenue_usd}&level=10
+        ```
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 The Event tag is what is entered by the advertiser when mapping the events.
 
@@ -91,27 +158,27 @@ If the name of the partner using Hubscale is PARTNER, then the domain is normall
 
 Generic attribution link:
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction_id}&af_siteid={pub_id}-{sub_pub_id}&advertising_id={google_id}&idfa={ios_ifa}
 ```
 
 ## Finalizing your registration
 
-* If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
 
 ## Mapping of AppsFlyer parameters and hubscale macros
 
 | AppsFlyer Parameters | Hubscale Macros | Description |
 | --- | --- | --- |
-| pid | pub\_id | Media source name - for integrated partners  <br />and should not be changed. [More details](/marketers/docs/about-link-structure-and-parameters#partner-id-pid-parameter). |
+| pid | pub\_id | Media source name - for integrated partners  <br />and should not be changed. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#partner-id-pid-parameter">More details</Anchor>. |
 | c | campaign\_name | Campaign name - provided by the advertiser. |
 | clickid | transaction\_id | The Ad network unique click identifier |
 | af\_siteid | pub\_id | Ad Network publisher ID |
 | af\_sub\_siteid | sub\_pub\_id | Ad Sub-Network/Publisher ID |
 | af\_c\_id | campaign\_id | Campaign ID - provided by the advertiser |
-| af\_adset |  | Adset Name - provided by the advertiser. Adset  <br />is an intermediate level in the hierarchy between  <br />Campaign and Ad. [See more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity) |
-| af\_ad | adv\_name | Ad Name ([see more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)) |
+| af\_adset |  | Adset Name - provided by the advertiser. Adset  <br />is an intermediate level in the hierarchy between  <br />Campaign and Ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">See more</Anchor> |
+| af\_ad | adv\_name | Ad Name (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">see more</Anchor>) |
 | af\_ad\_id | adv\_id | Ad ID |
 | af\_cost\_model | adv\_payout\_model | Cost model - CPI is currently the only supported  <br />model |
 | af\_cost\_currency | adv\_payout\_currency | Currency code (example: USD) |

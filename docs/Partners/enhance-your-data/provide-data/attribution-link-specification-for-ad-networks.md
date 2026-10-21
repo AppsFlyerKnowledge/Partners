@@ -1,8 +1,5 @@
 ---
 title: Attribution link specification for ad networks
-excerpt: >-
-  Ad networks integrating with AppsFlyer specify their attribution link
-  according to this article.
 metadata:
   keywords:
     - Ad Networks
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4412938154513-Attribution-link-specification-for-ad-networks
 ---
+**At a glance:** Ad networks integrating with AppsFlyer specify their attribution link according to this article.
+
 ## Attribution links for ad networks
 
 Attribution links are used to notify AppsFlyer that a user engaged with an ad by clicking it. In its simplest form, the attribution link is placed behind an ad so that when a user clicks on an ad they are clicking on an attribution link.
@@ -43,9 +42,9 @@ What happens on the journey from a first click or impression to the attribution 
      This attribution method is unique to Android devices. When a user clicks on a link and gets redirected to Google Play, Google Play gives it a unique Referrer ID. When the install takes place, we collect this ID from the device. Then we match it with Google Play records.
    * **Device ID matching**  
      We match the Device ID (IDFA for the iOS or GAID for the Android device) collected upon the click to the ID of the device that performs the install.
-   * [**Probabilistic modeling**](/marketers/docs/appsflyer-attribution-model#probabilistic-modeling)
+   * <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">**Probabilistic modeling**</Anchor>
 
-   More about [attribution methods](/marketers/docs/appsflyer-attribution-model).
+   More about <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">attribution methods</Anchor>.
 
    We look for the referrer, device ID, and probabilistic modeling data points (in that order) in our click database. If we find a match, we attribute the install to the click. If not, we attribute the install to an organic download.
 6. Once the install is attributed, we send a postback with the conversion details to the ad network.
@@ -54,13 +53,13 @@ As it follows from this flow, we use attribution links to get information from y
 
 > 📘 **Note**
 >
-> If you use third-party performance marketing tools such as TUNE, CAKE, or Affise, see [platform-specific instructions](/docs/platforms-for-ad-networks).
+> If you use third-party performance marketing tools such as TUNE, CAKE, or Affise, see <Anchor target="_blank" href="/partners/docs/platforms-for-ad-networks">platform-specific instructions</Anchor>.
 
 ### Attribution link template
 
 The attribution link (the link behind the banner/offer) can look like this:
 
-```
+```http
 https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={clickid}&advertising_id={gaid}&af_siteid={affiliate_id}&af_cost_model=CPI&af_cost_value={cost_value}&af_cost_currency={currency}&c={Campaign}&af_ad_type={AdType}&af_adset={Adset}&af_ad={Ad}&is_incentivized={true\false}&expires={timestamp}&signature={signature}
 ```
 
@@ -74,7 +73,7 @@ Link structure explanation:
 * Macro naming has no significance provided that your system replaces them with the actual and correct values. The parameters before the ‘=’ sign are placeholders used by AppsFlyer so we know which values you are sending us.
 * To integrate with AppsFlyer, send us the attribution link template by email with your macro names.
 
-Regard the parameters listed in the table that follows as the recommended minimum. We support a larger set of parameters. You should share with us as much information on the click as you collect. See the [list of attribution link parameters](/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters).
+Regard the parameters listed in the table that follows as the recommended minimum. We support a larger set of parameters. You should share with us as much information on the click as you collect. See the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">list of attribution link parameters</Anchor>.
 
 #### Recommended minimum attribution link parameters
 
@@ -85,12 +84,12 @@ Regard the parameters listed in the table that follows as the recommended minimu
 | `&c={campaign}` | The campaign name, as defined by the advertiser. |
 | `&af_siteid={publisher_id}` | Publisher or affiliate ID of the publisher or affiliate that drove the click. If IDFV is used to identify the event (IDFV can be used<br />for this purpose only in cross-promotion campaigns) use the app store<br />ID as the parameter value (without hashing). Failing to do so, will<br />cause the event not to be attributed. |
 | `&af_ad_type={search_text}` | Ad Type. You can use one of the following name conventions:  <br />search\_text  <br />banner  <br />interstitial  <br />video  <br />rewarded\_video  <br />playable  <br />sponsored\_content  <br />audio |
-| `&af_adset={adsetid}` | Adset Name - provided by the advertiser/publisher. Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity) |
-| `&af_ad={ad_id}` | Ad Name ([see more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)) - provided by the advertiser/publisher |
+| `&af_adset={adsetid}` | Adset Name - provided by the advertiser/publisher. Adset is an intermediate level in the hierarchy between Campaign and Ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">See more</Anchor> |
+| `&af_ad={ad_id}` | Ad Name (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">see more</Anchor>) - provided by the advertiser/publisher |
 | `&is_incentivized={true}` | Incentivized or non-incentivized campaigns (can be true/false) |
 | `&af_cost_value={cost_value}` | Conversion Cost Value - supports up to 4 digits after the decimal point.  <br />Make sure to use ONLY numerical digits (use the decimal point if needed), e.g., "56", "2.85" etc. |
-| `&af_cost_currency={currency}` | Cost Currency — currency code (e.g. USD, EUR). The default value is USD.  <br />[List of currency codes](https://en.wikipedia.org/wiki/ISO_4217). |
-| `&expires={timestamp}` | Unix timestamp after which the ad network doesn't claim the click. Used for click signing to prevent click fraud. [Learn more](/docs/click-signing-for-ad-networks) |
-| `&signature={signature}` | HMAC-SHA256 signature used to validate the click and prevent fraud. [Learn more](/docs/click-signing-for-ad-networks) |
+| `&af_cost_currency={currency}` | Cost Currency — currency code (e.g. USD, EUR). The default value is USD.  <br /><Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">List of currency codes</Anchor>. |
+| `&expires={timestamp}` | Unix timestamp after which the ad network doesn't claim the click. Used for click signing to prevent click fraud. <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">Learn more</Anchor> |
+| `&signature={signature}` | HMAC-SHA256 signature used to validate the click and prevent fraud. <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">Learn more</Anchor> |
 
 <div data-zendesk-anchors="01H8GPNM9XTR602BWRBQ5JV8DT=attribution-links-for-ad-networks 01H8GPNM9XSKS66F02GZQKK8E8=attribution-model 01H8GPNM9XBCVVXZ5HFKQZQ79D=note 01H8GPNM9XS4JE8B1F6TJGKSBR=attribution-link-template 01H8GPNM9XD0GASJ93PNDGMDE8=recommended-minimum-attribution-link-parameters" />

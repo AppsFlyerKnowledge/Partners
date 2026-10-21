@@ -1,8 +1,5 @@
 ---
 title: Rejected attribution postbacks to integrated partners
-excerpt: >-
-  Integrated partners get postbacks of rejected installs and in-app events due
-  to fraud or non-compliance with validation rules.
 metadata:
   keywords:
     - fraud
@@ -25,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004744123-Rejected-attribution-postbacks-to-integrated-partners
 ---
+**At a glance:** Integrated partners get postbacks of rejected installs and in-app events due to fraud or non-compliance with validation rules.
+
 ## Rejected attribution postbacks relating to fraud and validation rules
 
 **Terminology**:
@@ -63,16 +62,16 @@ The following table lists the reject reason, reject reason value, and an explana
 
 | Reject reason | Reject reason value | Explanation |
 | --- | --- | --- |
-| Inherits from install | Inherits from install | Initial install identified as fake based on [install](/marketers/docs/protect360-raw-data-reports#blocked-reasons) or [denylisted](/marketers/docs/protect360-raw-data-reports#blocked-reasons) level reason |
+| Inherits from install | Inherits from install | Initial install identified as fake based on <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons">install</Anchor> or<Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons"> denylisted</Anchor> level reason |
 | inapps\_bots | fake\_device\_parameters | AppsFlyer algorithm detects fraud |
 | validation\_inapps | invalid\_event\_name | Based on requested or manually defined validation rule |
 | validation\_inapps | invalid\_event\_value | Based on requested or manually defined validation rule |
 | validation\_inapps | Rule name/s | Based on manually-defined rules |
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * To be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the [rejected postback macros](/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events).
-> * To enable rejected postbacks for Advance Privacy you must first append the following parameters to the [Default postback](/docs/self-serve-integration-management-for-ad-networks#default-postback):
+> * To be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events">rejected postback macros</Anchor>.
+> * To enable rejected postbacks for Advance Privacy you must first append the following parameters to the <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks#default-postback">Default postback</Anchor>:
 >   * `is-rejected`
 >   * `blocked-reason`
 >   * `blocked-sub-reason`

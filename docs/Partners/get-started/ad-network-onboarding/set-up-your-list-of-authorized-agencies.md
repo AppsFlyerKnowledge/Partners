@@ -1,8 +1,5 @@
 ---
 title: Set up your list of authorized agencies
-excerpt: >-
-  Manage which agencies you authorize to run campaigns through your network
-  integration.
 metadata:
   keywords:
     - Partners
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/25774607860113-Set-up-your-list-of-authorized-agencies
 ---
+**At a glance:** Manage which agencies you authorize to run campaigns through your network integration.
+
 ## Overview
 
 To prevent unauthorized use of your network, all agencies running campaigns through your network integration must be pre-approved. This is done by adding their agency ID (`af_prt`) to your list of authorized agencies. Agencies that don't appear in the list are unable to configure the integration, as the partner configuration window is grayed out. This prevents them from managing campaigns. After they're added to the list, the approval applies account-wide, allowing them to run campaigns with all apps on your network.
@@ -32,7 +31,7 @@ As of July 31, 2024, only traffic from agencies authorized by the ad networks wi
 
 > 📘 **Note**
 >
-> * This doesn't apply to agencies working with [SRNs](/marketers/docs/self-reporting-networks-srns)
+> * This doesn't apply to agencies working with <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>
 > * Only admins have access to this page
 > * The list of authorized agencies can include up to 200 agencies
 

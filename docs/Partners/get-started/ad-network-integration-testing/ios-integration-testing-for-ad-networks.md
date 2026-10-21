@@ -1,8 +1,5 @@
 ---
 title: iOS integration testing for ad networks
-excerpt: >-
-  Test your AppsFlyer iOS integration using the AppsFlyer Partner Integrations
-  app to trigger regular and Advanced Privacy postbacks.
 metadata:
   keywords:
     - Ad Networks
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016588278-iOS-integration-testing-for-ad-networks
 ---
+**At a glance:** Test your AppsFlyer iOS integration using the AppsFlyer Partner Integrations app to trigger regular and Advanced Privacy postbacks.
+
 ## iOS integration testing
 
 Testing consists of the following elements:
@@ -33,9 +32,9 @@ Testing consists of the following elements:
 
 ### Testing scope
 
-Advertisers control the data shared with ad networks via the Advanced Privacy setting. This setting, in conjunction with the app user [ATT](/marketers/docs/att-implications-ios-14-and-deprecation-of-lat) setting, impacts the postback type and the data shared with ad networks, as described in the [Advanced Privacy postback guide](/docs/advanced-privacy-guide-postback-macros-for-ad-networks). The following table lists test scenarios according to the setting combinations available.
+Advertisers control the data shared with ad networks via the Advanced Privacy setting. This setting, in conjunction with the app user <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat">ATT</Anchor> setting, impacts the postback type and the data shared with ad networks, as described in the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy postback guide</Anchor>. The following table lists test scenarios according to the setting combinations available.
 
-For each scenario, you can test installs and in-app events. In regards to in-app events, you can use [in-app event mapping](/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events) to map advertiser events to your events.
+For each scenario, you can test installs and in-app events. In regards to in-app events, you can use <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">in-app event mapping</Anchor> to map advertiser events to your events.
 
 #### Test scenario combinations
 
@@ -56,11 +55,11 @@ Complete the prerequisites before beginning to execute the test procedure.
 
 | Prerequisites |
 | --- |
-| [Complete standard integration with AppsFlyer.](/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing) If necessary, contact AppsFlyer using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif). |
-| [Complete Advanced Privacy integration with AppsFlyer.](/docs/self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks) If necessary, contact AppsFlyer using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif). |
-| [Integrate the iOS test app into your account.](/docs/turn-on-test-app-integration-for-ad-networks) |
+| <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing">Complete standard integration with AppsFlyer.</Anchor> If necessary, contact AppsFlyer using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>. |
+| <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks">Complete Advanced Privacy integration with AppsFlyer.</Anchor> If necessary, contact AppsFlyer using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>. |
+| <Anchor target="_blank" href="/partners/docs/turn-on-test-app-integration-for-ad-networks">Integrate the iOS test app into your account.</Anchor> |
 | [Verify that the test app is integrated into your account](/docs/ios-integration-testing-for-ad-networks#test-app-integrated-in-your-account) |
-| [Map in-app events to your event names](/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events). Event names to be mapped: `purchase`, `login`, `registration` |
+| <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">Map in-app events to your event names</Anchor>. Event names to be mapped: `purchase`, `login`, `registration` |
 | [Prepare attribution link](/docs/ios-integration-testing-for-ad-networks#attribution-link) |
 | Test using a device running iOS 14.5+ |
 
@@ -75,9 +74,9 @@ Complete the prerequisites before beginning to execute the test procedure.
 1. On the AppsFlyer dashboard, set [Enable Advanced Privacy](/docs/ios-integration-testing-for-ad-networks#set-advanced-privacy) to off.
 2. On the device:
    1. Verify that the test app is not installed. Delete it if necessary.
-   2. In Privacy settings, verify that **Allow Apps to Request to Track**is on.  
+   2. In Privacy settings, verify that **Allow Apps to Request to Track** is on.  
 
-      ![PartnerIntegrationAllow.png](https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png)
+      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. Send the attribution link to the test device.
 4. Open the attribution link in the device browser.  
    You are redirected to the App Store.
@@ -124,9 +123,9 @@ Complete the prerequisites before beginning to execute the test procedure.
 1. On the AppsFlyer dashboard, set [Enable Advanced Privacy](/docs/ios-integration-testing-for-ad-networks#set-advanced-privacy) to on.
 2. On the device:
    1. Verify that the test app is not installed. Delete it if necessary.
-   2. In Privacy settings, verify that **Allow Apps to Request to Track**is on.
+   2. In Privacy settings, verify that **Allow Apps to Request to Track** is on.
 
-      ![PartnerIntegrationAllow.png](https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png)
+      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. Send the attribution link to the test device.
 4. Open the attribution link in the device browser.  
    You are redirected to the App Store.
@@ -205,7 +204,7 @@ Prepare an attribution link in the AppsFlyer dashboard, using one of the followi
 
 **Example attribution link:**
 
-```
+```http
 https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 ```
 
@@ -215,7 +214,7 @@ https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 
 <Accordion title="Set Advanced Privacy">
 
-![AdvancedPrivacyOff.png](https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png)
+<Image alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
 
 **To change the Enable Advanced Privacy setting:**
 

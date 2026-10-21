@@ -1,8 +1,5 @@
 ---
 title: Postback macros for analytics partners
-excerpt: >-
-  Use macros as part of the postbacks sent to analytics partners to get relevant
-  attribution data.
 metadata:
   keywords:
     - Advertisers
@@ -27,11 +24,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016751637-Postback-macros-for-analytics-partners
 ---
+> **At a glance:** Use macros as part of the postbacks sent to analytics partners to get relevant attribution data.
+
 ## Postbacks for analytics partners
 
 Analytics partners can define the content and endpoints of postbacks sent to them, as part of their integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on.
 
-* **Postback configuration:** To request changes to your postback settings, use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) to open a ticket, or contact your AppsFlyer partner development manager.
+* **Postback configuration:** To request changes to your postback settings, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> to open a ticket, or contact your AppsFlyer partner development manager.
 * **Postback types**: Postbacks are available for install and in-app events.
 
 ## Postback macros
@@ -79,13 +78,13 @@ When included in a postback, macros are replaced with user-relevant data. For ex
 | platform | SDK | Device platform: iOS, Android, or Windows Mobile | Yes |  |
 | retargeting\_conversion\_type | SDK | A flag marking if this is a re-attribution or re-engagement | Yes |  |
 | pid | AF | Ad network that the install or in-app event is attributed to | Yes |  |
-| af\_ad | Link | Ad Name ([see more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)) provided by the advertiser/publisher | Yes | Yes |
+| af\_ad | Link | Ad Name (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">see more</Anchor>) provided by the advertiser/publisher | Yes | Yes |
 | af\_ad\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| af\_adset | Link | <ul><li>Provided by the advertiser/publisher.</li><li>Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity)</li></ul> | Yes | Yes |
+| af\_adset | Link | <ul><li>Provided by the advertiser/publisher.</li><li>Adset is an intermediate level in the hierarchy between Campaign and Ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">See more</Anchor></li></ul> | Yes | Yes |
 | af\_adset\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
 | c | Link | Provided by the advertiser/publisher. Campaign names that exceed 100 characters in length are displayed on the dashboard as "c\_name\_exceeded\_max\_length" | Yes | Yes |
 | af\_c\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| af\_siteid | Link | <ul><li>Unique ID that identifies the publisher that displays the ad. [Learn more](/marketers/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | Yes | Yes |
+| af\_siteid | Link | <ul><li>Unique ID that identifies the publisher that displays the ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#site-id-parameter">Learn more</Anchor></li></ul> | Yes | Yes |
 | af\_subsite\_id | Link | <ul><li>Ad sub-network/Publisher ID.</li><li>If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567</li></ul> | Yes | Yes |
 | af\_ad\_type | Link | Use the following naming convention:<ul><li>**text:** an ad unit containing only text, for example a search result</li><li>**banner:** a basic format that appears at the top or bottom of the device screen</li><li>**interstitial:** a full-page ad that appears during breaks in the current experience</li><li>**video:** a standard video, that is non-rewarded</li><li>**rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video</li><li>**playable:** an ad unit containing an interactive preview of the app experience</li><li>**sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article</li><li>**audio:** an audio ad</li></ul> | Yes | Yes |
 
@@ -93,16 +92,18 @@ When included in a postback, macros are replaced with user-relevant data. For ex
 
 The examples that follow relate to in-app event postbacks available to partners.
 
-**Example**
-
-Event postback template `&event=(event)&json=(encode)` was translated to the following postback for a specific af\_purchase event:
-
-```
-&event=af_purchase&json=%7B%22af_quantity%22%3A1%2C%22
-af_revenue%22%3A%2212000%22%2C%22af_currency%22%3A%22USD%22%2C%22af_content_id%22%3A%221107%22%2C%22af_content_type%22%3A%22default_type%22%7D%0A
-```
-
-The decoded JSON value of this postback is `{"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
+> 📘 **Note**
+>
+> **Example**
+>
+> Event postback template `&event=(event)&json=(encode)` was translated to the following postback for a specific af\_purchase event:
+>
+> ```http
+> &event=af_purchase&json=%7B%22af_quantity%22%3A1%2C%22
+> af_revenue%22%3A%2212000%22%2C%22af_currency%22%3A%22USD%22%2C%22af_content_id%22%3A%221107%22%2C%22af_content_type%22%3A%22default_type%22%7D%0A
+> ```
+>
+> The decoded JSON value of this postback is `{"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
 
 ### Encoded values
 
@@ -113,39 +114,43 @@ To decode or encode a postback use [an encoding web service](https://www.urldeco
 
 ### General install postback examples
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
-```
+```http
 http://YourCompanyDomain.com?pid=(media_source)&advertising_id=(advertiserId)&android_id=(android-id)&install_time=(install-unix-ts)
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
-```
+```http
 http://YourCompanyDomain.com?pid=(media source)&device_ip=(ip)&idfa=(idfa)&install_time=(install-unix-ts)
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ### General in-app event postback examples
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
-```
+```http
 http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&advertising_id=(advertiserId)&android_id=(android-id)&install_time=(install-unix-ts)&event_name=(event-name)&currency=(currency)&json=(event-value)
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
-```
+```http
 http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&install_time=(install-unix-ts)&event_name=(event-name)&currency=(currency)&json=(event-value)
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ## In-app event postback example
 
@@ -158,7 +163,7 @@ http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&insta
 
 **Postback:**
 
-```
+```http
 http://YourCompanyDomain.com?pid=(media_source)&device_ip=38.166.144.142&advertising_id=121sxxxx-xxxx-xxxx-xxxx-52454bd7500b&android_id=9aaeecc4455xxxxx&install_time=1451923560&event_name=af_purchase&currency=USD&revenue=120.00&json=%7B%22af_quantity%22%3A1%2C%22 />af_revenue%22%3A%22120.10%22%2C%22af_currency%22%3A%22USD%22%2C%22af_content_id%22%3A%221107%22%2C%22af_content_type%22%3A%22default_type%22%7D%0A
 ```
 
