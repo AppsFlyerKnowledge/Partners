@@ -12,7 +12,7 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551515305873-Analyze
 ---
-- <Anchor target="_blank" href="/partners/docs/aggregate-data">Aggregate data</Anchor>
-- <Anchor target="_blank" href="/partners/docs/apis-for-ad-networks">APIs for ad networks</Anchor>
-- <Anchor target="_blank" href="/partners/docs/rejected-traffic">Rejected traffic</Anchor>
-- <Anchor target="_blank" href="/partners/docs/data-locker-partners">Data Locker</Anchor>
+- [Aggregate data](/docs/aggregate-data)
+- [APIs for ad networks](/docs/apis-for-ad-networks)
+- [Rejected traffic](/docs/rejected-traffic)
+- [Data Locker](/docs/data-locker-partners)

@@ -14,8 +14,8 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551121200017-Learn-more
 ---
-- <Anchor target="_blank" href="/partners/docs/integrated-partners-faq">Integrated partners—FAQ</Anchor>
-- <Anchor target="_blank" href="/partners/docs/protect360-faq-for-partners">Protect360—FAQ for partners</Anchor>
-- <Anchor target="_blank" href="/partners/docs/audiences-connections-faq-for-ad-networks">Audiences—Connections FAQ for ad networks</Anchor>
-- <Anchor target="_blank" href="/partners/docs/agency-account-vs-ad-network">Agency account vs. ad network</Anchor>
-- <Anchor target="_blank" href="/partners/docs/data-richness-score-for-ad-networks">Data richness score for ad networks</Anchor>
+- [Integrated partners—FAQ](/docs/integrated-partners-faq)
+- [Protect360—FAQ for partners](/docs/protect360-faq-for-partners)
+- [Audiences—Connections FAQ for ad networks](/docs/audiences-connections-faq-for-ad-networks)
+- [Agency account vs. ad network](/docs/agency-account-vs-ad-network)
+- [Data richness score for ad networks](/docs/data-richness-score-for-ad-networks)

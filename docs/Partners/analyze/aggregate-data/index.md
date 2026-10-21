@@ -12,6 +12,6 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551715006353-Aggregate-data
 ---
-- <Anchor target="_blank" href="/partners/docs/integrated-partners-dashboard">Integrated partners dashboard</Anchor>
-- <Anchor target="_blank" href="/partners/docs/access-to-aggregated-analytics-tools-for-api-partners">Access to aggregated analytics tools for API partners</Anchor>
-- <Anchor target="_blank" href="/partners/docs/aggregated-campaign-performance-report-for-ad-networks">Aggregated campaign performance report for ad networks</Anchor>
+- [Integrated partners dashboard](/docs/integrated-partners-dashboard)
+- [Access to aggregated analytics tools for API partners](/docs/access-to-aggregated-analytics-tools-for-api-partners)
+- [Aggregated campaign performance report for ad networks](/docs/aggregated-campaign-performance-report-for-ad-networks)

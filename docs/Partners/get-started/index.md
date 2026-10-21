@@ -12,10 +12,10 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6550863656977-Get-started
 ---
-- <Anchor target="_blank" href="/partners/docs/analytics-partner-onboarding">Analytics partner onboarding</Anchor>
-- <Anchor target="_blank" href="/partners/docs/ad-network-onboarding">Ad network onboarding</Anchor>
-- <Anchor target="_blank" href="/partners/docs/ad-network-integration-testing">Ad network integration testing</Anchor>
-- <Anchor target="_blank" href="/partners/docs/platforms-for-ad-networks">Platforms for ad networks</Anchor>
-- <Anchor target="_blank" href="/partners/docs/agency-onboarding">Agency onboarding</Anchor>
-- <Anchor target="_blank" href="/partners/docs/marketing-partner-onboarding">Marketing partner onboarding</Anchor>
-- <Anchor target="_blank" href="/partners/docs/learn-more">Learn more</Anchor>
+- [Analytics partner onboarding](/docs/analytics-partner-onboarding)
+- [Ad network onboarding](/docs/ad-network-onboarding)
+- [Ad network integration testing](/docs/ad-network-integration-testing)
+- [Platforms for ad networks](/docs/platforms-for-ad-networks)
+- [Agency onboarding](/docs/agency-onboarding)
+- [Marketing partner onboarding](/docs/marketing-partner-onboarding)
+- [Learn more](/docs/learn-more)

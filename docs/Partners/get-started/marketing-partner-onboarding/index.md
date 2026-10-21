@@ -13,4 +13,4 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551118224657-Marketing-partner-onboarding
 ---
-- <Anchor target="_blank" href="/partners/docs/integrating-meta-campaign-management-partners-with-appsflyer">Integrating Meta campaign management partners with AppsFlyer</Anchor>
+- [Integrating Meta campaign management partners with AppsFlyer](/docs/integrating-meta-campaign-management-partners-with-appsflyer)

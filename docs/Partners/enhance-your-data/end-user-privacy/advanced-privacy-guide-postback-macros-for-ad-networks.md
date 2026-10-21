@@ -163,7 +163,7 @@ In many cases, an Advertiser ID may not be available in the publisher app, the a
      <tbody>
        <tr>
          <td>
-           \*\*Device language and locale\*\*
+           **Device language and locale**
 
            af\_lang
          </td>
@@ -171,14 +171,14 @@ In many cases, an Advertiser ID may not be available in the publisher app, the a
            No
          </td>
          <td>
-           NSString \*language = [[NSLocale preferredLanguages] objectAtIndex:0];
+           NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
 
            [Recommended] Provide the language and locale; for example, en-US.
          </td>
        </tr>
        <tr>
          <td>
-           \*\*User-agent\*\*
+           **User-agent**
 
            af\_ua
          </td>
@@ -194,13 +194,13 @@ In many cases, an Advertiser ID may not be available in the publisher app, the a
            +like+Gecko%29+Mobile%2F15E148
            ```
 
-           \* \*\*Do not\*\* extract the CFNetwork \*user-agent,\* extract the other one.
-           \* The user-agent should be URL encoded.
+           * **Do not** extract the CFNetwork *user-agent,* extract the other one.
+           * The user-agent should be URL encoded.
          </td>
        </tr>
        <tr>
          <td>
-           \*\*Device IP address\*\*
+           **Device IP address**
 
            af\_ip
          </td>
