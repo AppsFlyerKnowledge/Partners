@@ -408,7 +408,7 @@ These versions should not be used and are listed for reference only
 
 **Method**
 
-```json
+```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
 
@@ -438,7 +438,7 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 
 **Curl request**
 
-```json
+```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=36' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -482,7 +482,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 **Method**
 
-```json
+```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
 
@@ -500,7 +500,7 @@ DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 
 **Curl request**
 
-```json
+```bash
 curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signing/secret/59ad6547-affc-45eb-a6c9-9805f88ee755' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -534,7 +534,7 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 **Method**
 
-```json
+```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
 
@@ -563,7 +563,7 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/test
 
 **Curl request**
 
-```json
+```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/test' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}' \
 --header 'Content-Type: application/json' \
@@ -612,7 +612,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 **Method**
 
-```json
+```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
 
@@ -630,7 +630,7 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 
 **Curl request**
 
-```json
+```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/mode/report-only' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -667,7 +667,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 **Method**
 
-```json
+```http
 POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
 
@@ -685,7 +685,7 @@ POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 
 **Curl request**
 
-```json
+```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/circuit-breaker' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 --data-raw '{
@@ -725,7 +725,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 **Method**
 
-```json
+```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/config
 ```
 
@@ -750,7 +750,7 @@ GET https://hq1.appsflyer.com/api/p360-click-signing/config
 
 **Curl request**
 
-```json
+```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/config' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -804,7 +804,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 **Method**
 
-```json
+```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
 
@@ -836,7 +836,7 @@ GET https://hq1.appsflyer.com/api/p360-click-signing/report
 
 **Curl request**
 
-```json
+```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/report?start-date=2021-01-07T07&end-date=2021-01-17T12' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}' \
 ```
@@ -881,7 +881,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 **Method**
 
-```json
+```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
 
@@ -899,7 +899,7 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-i
 
 **Curl request**
 
-```json
+```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/appname.com' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
@@ -937,7 +937,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 **Method**
 
-```json
+```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
 
@@ -955,7 +955,7 @@ DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app
 
 **Curl request**
 
-```json
+```bash
 curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/appname.com' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```

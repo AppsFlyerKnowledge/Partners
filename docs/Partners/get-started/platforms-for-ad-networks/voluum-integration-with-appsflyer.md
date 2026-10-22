@@ -54,7 +54,7 @@ Below you can find the base attribution link with a detailed explanation per eac
 
 ### Complete attribution link template
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
 
@@ -62,13 +62,13 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 Global Install Postback:
 
-```
+```http
 https://{Company-Domain}.voluumtrk.com/postback?cid={clickid}
 ```
 
 Global In-App Event Postback:
 
-```
+```http
 https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary}&txid={event-name}
 ```
 

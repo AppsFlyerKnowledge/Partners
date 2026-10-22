@@ -231,7 +231,7 @@ The redirect method has the following advantages:
 
 **Example redirect URL**
 
-```
+```http
 https://skadredirect.appsflyer.com/api/redirects?
   &ad-network-campaign-id=243232&ad-network-campaign-name=yarg_campaign_name
   &ad-network-adset-name=dsdsa&creative=examplecreative&channel=channelexample
@@ -289,7 +289,7 @@ Prior to receiving your first postback, take into consideration the following:
 
 **Example of an install SKAN postback sent by AppsFlyer**
 
-```
+```http
 http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestamp)
   &skan_ad_network_time=(timestamp)
   &skan_af_received_time=(timestamp)
@@ -302,7 +302,7 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 **Example of an in-app SKAN postback sent by AppsFlyer**
 
-```
+```http
 http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestamp)
   &skan_ad_network_time=(timestamp)
   &skan_af_received_time=(timestamp)&revenue=(value)

@@ -49,7 +49,7 @@ There are two ways to pass user-level cost data through AppsFlyer attribution UR
 
 An example of an attribution Link with an unencrypted cost pass:
 
-```
+```http
 https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD- 
 A12345678910&af_siteid=12345&af_cost_model=CPI&af_cost_value=1.00&af_cost_currency=USD
 ```
@@ -78,7 +78,7 @@ Networks can use any tech stack to accomplish this. See examples below for PHP, 
 
 PHP
 
-```
+```php
 <?php
 $f = fopen( 'php://stdin', 'r' );
 echo "Enter private key: ";

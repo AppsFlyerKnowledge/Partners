@@ -49,7 +49,7 @@ x-zendesk:
    Note that the pid parameter is filled by the Appsflyer team.  
    Example:
 
-   ```
+   ```http
    https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#ydrid#&af_siteid=#ydr_pid#&advertising_id=advertising_id&idfa=#iosidfa#">https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#ydrid#&af_siteid=#ydr_pid#&advertising_id=advertising_id&idfa=#iosidfa#
    ```
 

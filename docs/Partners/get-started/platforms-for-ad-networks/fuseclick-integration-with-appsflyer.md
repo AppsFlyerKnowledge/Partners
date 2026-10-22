@@ -62,7 +62,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_sitei
 
 Global Install Postback:
 
-```html
+```
 https://tracking.zadsmobile.com/pb?tid={TID}
 ```
 

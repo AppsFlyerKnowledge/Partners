@@ -45,7 +45,7 @@ The API request consists of the method, path, mandatory capabilities parameter, 
 
 **Method**
 
-```
+```http
 GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
 ```
 

@@ -40,7 +40,7 @@ x-zendesk:
 
 ### Attribution URL template
 
-```
+```http
 https://app.appsflyer.com/{app_id}?pid=mediaName_int&clickid={transaction_id}&af_siteid={affiliate_id}
 &af_sub_siteid={affiliate_source_id}&idfa={idfa}&sha1_idfa={idfa_sha1}&advertising_id={google_aid}
 &af_cost_value={amount}&af_cost_currency={offer_currency}&af_cost_model=CPI
@@ -64,7 +64,7 @@ See below the AppsFlyer base attribution link with a detailed explanation per ma
 
 Set out below is a complete attribution link once you have added the additional Everflow macros:
 
-```
+```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_id}&af_siteid={affiliate_id}
 &af_sub_siteid={affiliate_source_id}&idfa={idfa}&sha1_idfa={idfa_sha1}&advertising_id={google_aid}
 &af_cost_value={amount}&af_cost_currency={offer_currency}&af_cost_model=CPI
