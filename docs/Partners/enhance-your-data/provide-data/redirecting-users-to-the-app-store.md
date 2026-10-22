@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000807629-Redirecting-users-to-the-app-store
 ---
-**At a glance:** Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer.
+> **At a glance:** Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer.
 
 ## Overview
 

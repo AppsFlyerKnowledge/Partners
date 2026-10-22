@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/17735150011921-ROI360-for-UA-partners
 ---
-**At a glance:** AppsFlyer provides UA partners with complete and accurate ad, in-app purchases, and auto-renewable subscription data via reports and postbacks. Partners can ingest the information to optimize UA campaigns.
+> **At a glance:** AppsFlyer provides UA partners with complete and accurate ad, in-app purchases, and auto-renewable subscription data via reports and postbacks. Partners can ingest the information to optimize UA campaigns.
 
 ## Introduction
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360009443338-Data-richness-score-for-ad-networks
 ---
-**At a glance:** Improve the quality of the data you provide to advertisers using the AppsFlyer data richness score.
+> **At a glance:** Improve the quality of the data you provide to advertisers using the AppsFlyer data richness score.
 
 The quality of the data that advertisers receive from ad networks on which they run their campaigns can play an important role in marketing decisions.
 

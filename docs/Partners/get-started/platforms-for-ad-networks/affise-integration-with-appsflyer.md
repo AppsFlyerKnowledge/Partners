@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208537116-Affise-integration-with-AppsFlyer
 ---
-**At a glance:** Ad networks that use Affise can utilize the AppsFlyer probabilistic modeling solution to receive attribution data about installs and in-app events.
+> **At a glance:** Ad networks that use Affise can utilize the AppsFlyer probabilistic modeling solution to receive attribution data about installs and in-app events.
 
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360020818517-Data-Locker-for-partners
 ---
-**At a glance:** Data Locker for partners (ad networks and agencies) delivers app data to the partner's storage in AWS, GCS, or BigQuery.
+> **At a glance:** Data Locker for partners (ad networks and agencies) delivers app data to the partner's storage in AWS, GCS, or BigQuery.
 
 ![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
 

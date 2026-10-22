@@ -31,7 +31,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034146-Integrating-Meta-campaign-management-partners-with-AppsFlyer
 ---
-**At a glance:** Learn what data types Meta campaign management partners can receive from AppsFlyer.
+> **At a glance:** Learn what data types Meta campaign management partners can receive from AppsFlyer.
 
 ## Install postbacks
 

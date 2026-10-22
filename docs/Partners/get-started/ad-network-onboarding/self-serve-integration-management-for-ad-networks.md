@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018512658-Self-serve-integration-management-for-ad-networks
 ---
-**At a glance**: Set up and manage your integration from the AppsFlyer dashboard.
+> **At a glance**: Set up and manage your integration from the AppsFlyer dashboard.
 
 <Embed title="Self-serve integration management for ad networks" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
 

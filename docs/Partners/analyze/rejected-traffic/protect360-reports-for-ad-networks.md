@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4420246395793-Protect360-reports-for-ad-networks
 ---
-**At a glance:** Ad networks responsible for user acquisition and retargeting can receive data regarding blocked clicks and impressions.
+> **At a glance:** Ad networks responsible for user acquisition and retargeting can receive data regarding blocked clicks and impressions.
 
 ## Protect360 reports for ad networks
 

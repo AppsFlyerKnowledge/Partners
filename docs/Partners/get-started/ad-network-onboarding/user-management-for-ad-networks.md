@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4414238502289-User-management-for-ad-networks
 ---
-**At a glance:** Create and manage your ad network account's AppsFlyer users, and assign them a role defining which features they can access.
+> **At a glance:** Create and manage your ad network account's AppsFlyer users, and assign them a role defining which features they can access.
 
 ## Background
 

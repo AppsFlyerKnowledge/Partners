@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/11705009866001-SKAN-CV-schema-API-for-ad-networks
 ---
-**At a glance**: See the SKAN CV schema as mapped by the advertiser.
+> **At a glance**: See the SKAN CV schema as mapped by the advertiser.
 
 ## SKAN CV schema API for ad networks
 

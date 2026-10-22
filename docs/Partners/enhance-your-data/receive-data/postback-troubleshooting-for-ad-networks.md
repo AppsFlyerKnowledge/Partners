@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/7466104144145-Postback-troubleshooting-for-ad-networks
 ---
-**At a glance:** If you have problems receiving postbacks, review the following solutions.
+> **At a glance:** If you have problems receiving postbacks, review the following solutions.
 
 | **Problem** | **Solution** |
 | --- | --- |

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004744123-Rejected-attribution-postbacks-to-integrated-partners
 ---
-**At a glance:** Integrated partners get postbacks of rejected installs and in-app events due to fraud or non-compliance with validation rules.
+> **At a glance:** Integrated partners get postbacks of rejected installs and in-app events due to fraud or non-compliance with validation rules.
 
 ## Rejected attribution postbacks relating to fraud and validation rules
 

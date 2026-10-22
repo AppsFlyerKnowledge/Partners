@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000748446-Cost-reporting-on-the-attribution-link-for-ad-networks
 ---
-**At a glance:** Ad networks can report cost every time an ad is clicked.
+> **At a glance:** Ad networks can report cost every time an ad is clicked.
 
 Advertisers use the AppsFlyer dashboard as their source of truth for all budget allocation decisions, making it easy to see where to invest. For networks wanting to be visible in that process, sharing cost data with AppsFlyer is an absolute must.
 

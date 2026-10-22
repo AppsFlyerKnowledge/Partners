@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005709185-Everflow-integration-with-AppsFlyer
 ---
-**At a glance:** Everflow is an AppsFlyer integrated partner. AppsFlyer sends attribution data to Everflow for installs and in-app events.
+> **At a glance:** Everflow is an AppsFlyer integrated partner. AppsFlyer sends attribution data to Everflow for installs and in-app events.
 
 ## Initiating the integration with AppsFlyer
 

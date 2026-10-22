@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209074606-Offerslook-integration-with-AppsFlyer-for-ad-networks
 ---
-**At a glance:** Learn how ad networks that use Offerslook can integrate with AppsFlyer and receive install attribution data.
+> **At a glance:** Learn how ad networks that use Offerslook can integrate with AppsFlyer and receive install attribution data.
 
 To initiate integration, send to AppsFlyer:
 

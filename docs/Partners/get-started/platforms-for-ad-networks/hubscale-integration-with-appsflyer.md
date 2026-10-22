@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005874869-Hubscale-integration-with-AppsFlyer
 ---
-**At a glance:** Learn how ad networks using Hubscale can integrate with AppsFlyer.
+> **At a glance:** Learn how ad networks using Hubscale can integrate with AppsFlyer.
 
 **To initiate the integration you need to send AppsFlyer**:
 

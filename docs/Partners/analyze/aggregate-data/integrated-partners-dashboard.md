@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/212955423-Integrated-partners-dashboard
 ---
-**At a glance:** Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
+> **At a glance:** Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
 
 ## Using the AppsFlyer dashboard
 

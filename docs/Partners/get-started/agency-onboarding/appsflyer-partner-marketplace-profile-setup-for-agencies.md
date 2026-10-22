@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/21231679419793-AppsFlyer-Partner-Marketplace-profile-setup-for-agencies
 ---
-**At a glance**: Create your agency profile page in the Partner Marketplace with information about your company, its services, and solutions.
+> **At a glance**: Create your agency profile page in the Partner Marketplace with information about your company, its services, and solutions.
 
 ## Overview
 

@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207273986-Cake-integration-with-AppsFlyer
 ---
-**At a glance:** Ad networks that use CAKE can receive attribution data from AppsFlyer about installs and in-app events.
+> **At a glance:** Ad networks that use CAKE can receive attribution data from AppsFlyer about installs and in-app events.
 
 ## Base attribution link
 

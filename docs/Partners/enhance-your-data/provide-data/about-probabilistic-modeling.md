@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/40188089592209-About-probabilistic-modeling
 ---
-**At a glance:** Learn how to set up your ad engagement data so AppsFlyer can apply probabilistic modelling when deterministic signals aren’t available.
+> **At a glance:** Learn how to set up your ad engagement data so AppsFlyer can apply probabilistic modelling when deterministic signals aren’t available.
 
 ## About probabilistic modeling
 

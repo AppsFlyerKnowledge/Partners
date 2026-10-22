@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4413093220113-Test-marketer-campaign-integration-with-the-ad-network
 ---
-**At a glance**: Test ad network integration using marketer apps.
+> **At a glance**: Test ad network integration using marketer apps.
 
 ## Prerequisites
 

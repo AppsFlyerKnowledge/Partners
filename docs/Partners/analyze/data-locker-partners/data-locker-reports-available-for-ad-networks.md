@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4542778150545-Data-Locker-reports-available-for-ad-networks
 ---
-**At a glance**: Reports listed are available to ad networks via Data Locker. Advertisers must give the ad network explicit permission.
+> **At a glance**: Reports listed are available to ad networks via Data Locker. Advertisers must give the ad network explicit permission.
 
 ## Reports available for ad networks
 

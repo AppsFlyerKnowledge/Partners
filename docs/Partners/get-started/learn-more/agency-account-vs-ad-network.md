@@ -27,7 +27,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034116-Agency-account-vs-ad-network
 ---
-**At a glance:** Learn the differences between an Agency account and an Ad Network integration, and the advantages of each.
+> **At a glance:** Learn the differences between an Agency account and an Ad Network integration, and the advantages of each.
 
 ## Agency account
 

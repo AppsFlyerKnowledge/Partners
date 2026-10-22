@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4414231896337-User-management-for-agencies
 ---
-**At a glance:** Create and manage your agency account's AppsFlyer users, and assign them permissions to access features and apps.
+> **At a glance:** Create and manage your agency account's AppsFlyer users, and assign them permissions to access features and apps.
 
 ## User roles and access permissions
 

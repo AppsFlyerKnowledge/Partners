@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011700857-App-list-API-for-ad-networks
 ---
-**At a glance:** Ad networks can retrieve metadata of apps associated with their integrated partner account.
+> **At a glance:** Ad networks can retrieve metadata of apps associated with their integrated partner account.
 
 ## Get app list API
 

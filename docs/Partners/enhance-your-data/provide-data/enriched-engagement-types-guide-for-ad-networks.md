@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/29221265052433-Enriched-Engagement-Types-guide-for-ad-networks
 ---
-**At a glance:** Learn how to create Enriched Engagement Types (EET) attribution links to reflect users’ full spectrum of engagement and achieve accurate and effective campaign optimization.
+> **At a glance:** Learn how to create Enriched Engagement Types (EET) attribution links to reflect users’ full spectrum of engagement and achieve accurate and effective campaign optimization.
 
 Enriched Engagement Types (EET) reflect users' full spectrum of engagement and intentionality when viewing or interacting with an ad, from momentary exposure to direct response. This article details how partners should report engagement types in AppsFlyer attribution links based on how users interact with their ads.
 

@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001376085-Postback-retries
 ---
-**At a glance:** Learn how postback retries work in AppsFlyer and how integrated partners can configure their postback mechanisms.
+> **At a glance:** Learn how postback retries work in AppsFlyer and how integrated partners can configure their postback mechanisms.
 
 ## Introduction
 

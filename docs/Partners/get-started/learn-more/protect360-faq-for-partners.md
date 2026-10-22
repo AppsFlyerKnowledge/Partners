@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16091549732497-Protect360-FAQ-for-partners
 ---
-**At a glance:** Find answers to questions frequently asked by partners about Protect360.
+> **At a glance:** Find answers to questions frequently asked by partners about Protect360.
 
 ## Impression level anomalies
 

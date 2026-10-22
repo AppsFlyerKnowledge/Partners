@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001300998-Getting-started-onboarding-guide-for-ad-networks
 ---
-**At a glance:** Complete integration with AppsFlyer by setting up and testing your attribution link and postback integrations. Understand the steps, timelines, and dependencies of the process.
+> **At a glance:** Complete integration with AppsFlyer by setting up and testing your attribution link and postback integrations. Understand the steps, timelines, and dependencies of the process.
 
 ![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
 

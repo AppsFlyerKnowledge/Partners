@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/26191324656145-Using-the-Partner-Assistant-Chatbot
 ---
-**At a glance:** Contact AppsFlyer support for partners through the Partner Assistant Chatbot for troubleshooting issues, opening a support ticket, or product guidance.
+> **At a glance:** Contact AppsFlyer support for partners through the Partner Assistant Chatbot for troubleshooting issues, opening a support ticket, or product guidance.
 
 ## Overview
 

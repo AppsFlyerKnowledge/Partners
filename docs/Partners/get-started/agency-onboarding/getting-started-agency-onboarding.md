@@ -27,7 +27,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002381617-Getting-started-agency-onboarding
 ---
-**At a glance:** Start measuring the campaigns of your clients by setting up an Agency account.
+> **At a glance:** Start measuring the campaigns of your clients by setting up an Agency account.
 
 <Embed title="Getting started—agency onboarding" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 

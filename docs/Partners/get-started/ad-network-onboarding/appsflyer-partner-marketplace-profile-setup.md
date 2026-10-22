@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/5688918701073-AppsFlyer-Partner-Marketplace-profile-setup
 ---
-**At a glance**: Create a robust Partner Marketplace profile page with information about your company and its services and solutions.
+> **At a glance**: Create a robust Partner Marketplace profile page with information about your company and its services and solutions.
 
 ## Overview
 

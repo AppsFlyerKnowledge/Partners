@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360012893658-Cost-sharing-options-for-ad-networks
 ---
-**At a glance:** Compare cost-sharing methods available to AppsFlyer ad network partners.
+> **At a glance:** Compare cost-sharing methods available to AppsFlyer ad network partners.
 
 ## Sharing cost with AppsFlyer and advertisers
 

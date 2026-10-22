@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4412938154513-Attribution-link-specification-for-ad-networks
 ---
-**At a glance:** Ad networks integrating with AppsFlyer specify their attribution link according to this article.
+> **At a glance:** Ad networks integrating with AppsFlyer specify their attribution link according to this article.
 
 ## Attribution links for ad networks
 

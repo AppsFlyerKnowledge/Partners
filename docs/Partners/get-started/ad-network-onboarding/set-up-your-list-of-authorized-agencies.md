@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/25774607860113-Set-up-your-list-of-authorized-agencies
 ---
-**At a glance:** Manage which agencies you authorize to run campaigns through your network integration.
+> **At a glance:** Manage which agencies you authorize to run campaigns through your network integration.
 
 ## Overview
 

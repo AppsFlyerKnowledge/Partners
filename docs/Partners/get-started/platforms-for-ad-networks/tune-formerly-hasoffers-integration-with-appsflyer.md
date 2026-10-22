@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034806-TUNE-formerly-HasOffers-integration-with-AppsFlyer
 ---
-**At a glance:** Learn how ad networks that use TUNE (formerly HasOffers) to manage affiliate marketing campaigns can integrate with AppsFlyer and receive attribution data about installs and in-app events.
+> **At a glance:** Learn how ad networks that use TUNE (formerly HasOffers) to manage affiliate marketing campaigns can integrate with AppsFlyer and receive attribution data about installs and in-app events.
 
 **To initiate the integration, prepare, and send the following information to AppsFlyer:**
 

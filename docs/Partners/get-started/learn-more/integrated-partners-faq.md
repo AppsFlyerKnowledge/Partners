@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4406549295249-Integrated-partners-FAQ
 ---
-**At a glance**: FAQ and integration troubleshooting for integrated partners.
+> **At a glance**: FAQ and integration troubleshooting for integrated partners.
 
 ## Account and dashboard
 

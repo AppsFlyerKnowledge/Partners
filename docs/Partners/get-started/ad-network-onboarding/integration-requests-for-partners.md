@@ -30,7 +30,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017189177-Integration-requests-for-partners
 ---
-**At a glance**: Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and much more.
+> **At a glance**: Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and much more.
 
 > 🚧 **Important!**
 >

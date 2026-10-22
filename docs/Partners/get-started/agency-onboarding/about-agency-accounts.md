@@ -33,7 +33,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034106-About-agency-accounts
 ---
-**At a glance:** Make the most of your AppsFlyer Agency account with advanced configuration.
+> **At a glance:** Make the most of your AppsFlyer Agency account with advanced configuration.
 
 ## About agency accounts
 
