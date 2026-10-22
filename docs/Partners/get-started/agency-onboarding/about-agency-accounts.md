@@ -166,11 +166,9 @@ When `af_prt` with your agency name is part of the attribution link, new install
 
 Some non-SRNs require (or allow) marketers to send them postbacks **for devices that aren't attributed to them**.
 
-All-installs network
-:   The network accepts a postback for every new app install, from any source
+All-installs network The network accepts a postback for every new app install, from any source
 
-All-launches network
-:   The network accepts a postback for every new app launch, from any source
+All-launches network The network accepts a postback for every new app launch, from any source
 
 Some examples for all-installs networks are Vungle, Wechat, Startapp, Unity Ads, and more.
 

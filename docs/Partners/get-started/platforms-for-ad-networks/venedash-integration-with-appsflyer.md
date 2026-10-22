@@ -42,7 +42,7 @@ x-zendesk:
 | AppsFlyer parameter | venedash parameter | Description |
 | --- | --- | --- |
 | &clickid= | `{#ydrid#}` | Request ID of each user session |
-| ⁡\_siteid= | `{#ydr_pid#}` | ID of the affiliate who promotes the offer |
+| &af\_siteid= | `{#ydr_pid#}` | ID of the affiliate who promotes the offer |
 | &advertising\_id | `{#android_adv#}` | Android device ID |
 | &idfa= | `{#iosidfa#}` | ​iOS device ID |
 

@@ -97,13 +97,11 @@ Marketers <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-par
 When you get permission from a marketer:
 
 * The app appears in your account.
-* You can set up integrations with ad networks for the app (with the exception
-  of some networks that require configuration by the app owner).
+* You can set up integrations with ad networks for the app (with the exception of some networks that require configuration by the app owner).
 * You can create attribution links to use in your campaigns.
 * You can set up cost integrations with partners (that allow it).
 * You can see the app data.
-* You can grant permission for ad networks and their team members to view
-  basic information about the app.  
+* You can grant permission for ad networks and their team members to view basic information about the app.
 
   > 📘 **Note**
   >

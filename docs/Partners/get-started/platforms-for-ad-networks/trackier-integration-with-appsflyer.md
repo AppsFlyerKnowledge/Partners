@@ -63,8 +63,8 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 | AppsFlyer parameter | Trackier macro | Description |
 | --- | --- | --- |
 | &clickid= | `{click_id}` | Request the ID for each user session |
-| ⁡\_siteid= | `{publisher_id}` | ID of the affiliate promoting an offer |
-| ⁡\_c\_id= | `{camp_id}` | Offer ID |
+| &af\_siteid= | `{publisher_id}` | ID of the affiliate promoting an offer |
+| &af\_c\_id= | `{camp_id}` | Offer ID |
 
 ## Postback URLs for install and in-app events
 

@@ -309,8 +309,7 @@ Ad networks get visibility to their setup done by advertisers, **but not when it
 
 > 📄 **Example**
 >
-> Yuval is the marketer of the **com.fused** app, which is a client app of the **Sonnet** ad network. Yuval maps the **af\_purchase** event to be sent as a postback to Sonnet when an attributed user to Sonnet performs a purchase.
-> **Sava**, an agency permitted to work with **com.fused**, also configures **Sonnet** and maps the **af\_completeregistration** event to be sent as postback.
+> Yuval is the marketer of the **com.fused** app, which is a client app of the **Sonnet** ad network. Yuval maps the **af\_purchase** event to be sent as a postback to Sonnet when an attributed user to Sonnet performs a purchase. **Sava**, an agency permitted to work with **com.fused**, also configures **Sonnet** and maps the **af\_completeregistration** event to be sent as postback.
 >
 > When **Sonnet** logs into the dashboard of **com.fused**, they see only the **af\_purchase** event mapped with them, but not the **af\_completeregistration** event. However, when users attributed to **Sava** perform registrations, the **af\_completeregistration** event is sent to **Sonnet.**
 

@@ -55,34 +55,224 @@ Metrics are provided with the best granularity possible using the dimensions rep
 
 #### Dimensions
 
-| Field name | Remarks |
-| --- | --- |
-| app\_id |  |
-| media\_source |  |
-| conversion\_type | <ul><li>Possible values: install, re-engagement, re-attribution</li><li>Equivalent postback macro: is\_retargeting</li></ul> |
-| attributed\_touch\_type | Possible values: click, impressions, pre-install, unknown, tv, null |
-| days\_post\_attribution | The number of days elapsed since the attribution event.  <br />The maximum number of days is 180.<br /><br />Tip! Use this to calculate retention and KPI days. |
-| event\_date | The date the event occurred.<br /><br />Format: yyyy-mm-dd |
-| conversion\_date | Format: yyyy-mm-dd |
-| event\_name | Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.<table><thead><tr><th>event\_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af\_conversion</td><td>User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.</td></tr><tr><td>af\_sessions</td><td>Opened the app</td></tr><tr><td>af\_uninstall</td><td>Uninstalled the app</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app. In-app event names aren't mapped to partner event names.</td></tr></tbody></table> |
-| event\_name | What did the user do |
-| af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution. |
-| af\_sessions | Opened the app |
-| af\_uninstall | Uninstalled the app |
-| Advertiser defined in-app event | Performed an in-app event in the app. In-app event names aren't mapped to partner event names. |
-| campaign | Campaign hierarchy |
-| campaign\_id | Campaign hierarchy |
-| adset | Campaign hierarchy |
-| adset\_id | Campaign hierarchy |
-| ad | Campaign hierarchy |
-| ad\_id | Campaign hierarchy |
-| channel | Campaign hierarchy |
-| site\_id | Campaign hierarchy |
-| is\_primary\_ attribution | Use to identify and deduplicate retargeting data |
-| country\_code | Derived from the user IP address |
-| agency | If blank, there is no agency associated |
-| Keywords | [Available starting April 27, 2022] Word(s) used in the user's online search. As reported by the ad network |
-| Keyword ID | [Available starting April 27, 2022] Keyword ID returned by the ad network. |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Field name
+      </th>
+      <th>
+        Remarks
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        app\_id
+      </td>
+      <td />
+    </tr>
+    <tr>
+      <td>
+        media\_source
+      </td>
+      <td />
+    </tr>
+    <tr>
+      <td>
+        conversion\_type
+      </td>
+      <td>
+        <ul><li>Possible values: install, re-engagement, re-attribution</li><li>Equivalent postback macro: is\_retargeting</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        attributed\_touch\_type
+      </td>
+      <td>
+        Possible values: click, impressions, pre-install, unknown, tv, null
+      </td>
+    </tr>
+    <tr>
+      <td>
+        days\_post\_attribution
+      </td>
+      <td>
+        The number of days elapsed since the attribution event.  <br />The maximum number of days is 180.<br /><br />Tip! Use this to calculate retention and KPI days.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        event\_date
+      </td>
+      <td>
+        The date the event occurred.<br /><br />Format: yyyy-mm-dd
+      </td>
+    </tr>
+    <tr>
+      <td>
+        conversion\_date
+      </td>
+      <td>
+        Format: yyyy-mm-dd
+      </td>
+    </tr>
+    <tr>
+      <td>
+        event\_name
+      </td>
+      <td>
+        Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.<table><thead><tr><th>event\_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af\_conversion</td><td>User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.</td></tr><tr><td>af\_sessions</td><td>Opened the app</td></tr><tr><td>af\_uninstall</td><td>Uninstalled the app</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app. In-app event names aren't mapped to partner event names.</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        event\_name
+      </td>
+      <td>
+        What did the user do
+      </td>
+    </tr>
+    <tr>
+      <td>
+        af\_conversion
+      </td>
+      <td>
+        User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        af\_sessions
+      </td>
+      <td>
+        Opened the app
+      </td>
+    </tr>
+    <tr>
+      <td>
+        af\_uninstall
+      </td>
+      <td>
+        Uninstalled the app
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Advertiser defined in-app event
+      </td>
+      <td>
+        Performed an in-app event in the app. In-app event names aren't mapped to partner event names.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        campaign
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        campaign\_id
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        adset
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        adset\_id
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ad
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ad\_id
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        channel
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        site\_id
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        is\_primary\_ attribution
+      </td>
+      <td>
+        Use to identify and deduplicate retargeting data
+      </td>
+    </tr>
+    <tr>
+      <td>
+        country\_code
+      </td>
+      <td>
+        Derived from the user IP address
+      </td>
+    </tr>
+    <tr>
+      <td>
+        agency
+      </td>
+      <td>
+        If blank, there is no agency associated
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Keywords
+      </td>
+      <td>
+        [Available starting April 27, 2022] Word(s) used in the user's online search. As reported by the ad network
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Keyword ID
+      </td>
+      <td>
+        [Available starting April 27, 2022] Keyword ID returned by the ad network.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 #### Metrics
 
