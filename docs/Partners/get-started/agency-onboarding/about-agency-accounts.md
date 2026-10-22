@@ -48,7 +48,7 @@ Agency accounts are used by agency teams to measure app marketing campaigns run 
 
 ### Agency access to marketer data
 
-Agencies always have access to data of traffic attributed to the agency. Marketers can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">grant agencies access t</Anchor> o additional data, for example, organic aggregate data. See <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">access to data by different types of users.</Anchor>
+Agencies always have access to data of traffic attributed to the agency. Marketers can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">grant agencies access to</Anchor> additional data, for example, organic aggregate data. See <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">access to data by different types of users.</Anchor>
 
 ### Agency access to ad network integrations
 
