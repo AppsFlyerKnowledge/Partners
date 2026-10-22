@@ -74,7 +74,7 @@ Networks can report engagement types by including the following parameters in th
 
 **An Example for an engaged click**
 
-```http
+```http HTTPS
 https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&c=GreatCampaign&af_siteid=A1b1&af_engagement_type=engagegd_click&af_ad_type=interstitial&af_ad_format=playable&af_ad_tran_id=50b175dd-d804-4715-b415-0206f6c891e0
 ```
 
