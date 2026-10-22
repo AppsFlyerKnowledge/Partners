@@ -124,7 +124,14 @@ Metrics are provided with the best granularity possible using the dimensions rep
         event\_name
       </td>
       <td>
-        Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.<table><thead><tr><th>event\_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af\_conversion</td><td>User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.</td></tr><tr><td>af\_sessions</td><td>Opened the app</td></tr><tr><td>af\_uninstall</td><td>Uninstalled the app</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app. In-app event names aren't mapped to partner event names.</td></tr></tbody></table>
+        Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.
+
+        | event\_name | What did the user do |
+        | --- | --- |
+        | af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution. |
+        | af\_sessions | Opened the app |
+        | af\_uninstall | Uninstalled the app |
+        | Advertiser defined in-app event | Performed an in-app event in the app. In-app event names aren't mapped to partner event names. |
       </td>
     </tr>
     <tr>
