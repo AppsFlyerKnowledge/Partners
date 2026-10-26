@@ -200,7 +200,7 @@ Metrics are provided with the best granularity possible using the dimensions rep
     </tr>
     <tr>
       <td>
-        is\_primary\_ attribution
+        {"is_primary_"} attribution
       </td>
       <td>
         Use to identify and deduplicate retargeting data
