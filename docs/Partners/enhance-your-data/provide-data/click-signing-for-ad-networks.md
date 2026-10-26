@@ -398,7 +398,7 @@ These versions should not be used and are listed for reference only
 
 <Accordion title="Generate secret key basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span><code>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours={"<ttlHours>"}</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span><code>{"https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>"}</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
 
 </Accordion>
 
@@ -474,7 +474,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Revoke secrete key basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span><code>https://hq1.appsflyer.com/api/p360-click-signing/secret/{"<secret-id>"}</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span><code>{"https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>"}</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
 
 </Accordion>
 
