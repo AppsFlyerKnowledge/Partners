@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance**: Set up and manage your integration from the AppsFlyer dashboard.
 
-<Embed title="Self-serve integration management for ad networks" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
+<Embed title="Self-serve integration management for ad networks" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
 
 ## **Prerequisites:**
 

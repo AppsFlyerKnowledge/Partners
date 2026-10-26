@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **At a glance:** Start measuring the campaigns of your clients by setting up an Agency account.
 
-<Embed title="Getting started—agency onboarding" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
+<Embed title="Getting started—agency onboarding" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
 
 ## AppsFlyer attribution model
@@ -199,7 +199,7 @@ Agencies can <Anchor target="_blank" href="/marketers/docs/skan-conversion-studi
 
 #### SKAdNetwork Dashboard
 
-<Embed title="Getting started—agency onboarding" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/jkm7se0jym" providerUrl="https://fast.wistia.com" />
+<Embed title="Getting started—agency onboarding" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/jkm7se0jym" providerUrl="https://fast.wistia.com" />
 
 **Further reading:**
 
