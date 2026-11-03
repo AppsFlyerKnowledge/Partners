@@ -121,10 +121,10 @@ x广告平台应在以下场景中使用参数`af_engagement_type=engaged_click`
 
 在以下场景中，广告平台应使用参数`af_engagement_type=engaged_view`进行上报：
 
-* **可跳过广告：用户在“跳过”按钮出现后，观看广告至少5秒。若平台无法衡量观看时长，则可采用以下逻辑：
+* 可跳过广告：用户在“跳过”按钮出现后，观看广告至少5秒。若平台无法衡量观看时长，则可采用以下逻辑：
   * 当视频长度超过20秒时，在观看到2/4时（50%）发送`engaged_view`。
   * 当视频短于20秒时，在视频完成（100%）时发送`engaged_view`。
-  * `af_ad_format`参数值必须是`video`或`playable`。**
+  * `af_ad_format`参数值必须是`video`或`playable`。
 * **激励视频：** 用户完整观看奖励视频。`af_ad_type`参数值必须是`rewarded_video`。
 * **自动StoreKit广告：*** 渲染型广告（[`SKOverlay`](https://developer.apple.com/documentation/storekit/skoverlay)和[`SKStore`](https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller)）的点击不会由发布方记录，而是由Apple用于SKAdNetwork（SKAN）归因。Android自动內联式激活广告（autostore）也遵循类似机制。
 
