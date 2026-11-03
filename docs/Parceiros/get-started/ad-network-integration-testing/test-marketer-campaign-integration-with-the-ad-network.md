@@ -171,7 +171,7 @@ Cada instalação atribuída à sua ad network gera um postback de instalação.
 Abra a <Anchor target="_blank" href="/marketers/pt/docs/raw-data-export-page">página de exportação de dados brutos</Anchor> e gere 2 relatórios de postback:
 
 1. **de instalações**
-2. https://support.appsflyer.com/hc/article_attachments/19284078965009
+2. https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
 Ambos os relatórios contêm uma coluna com o título **URL de postback**. Essa coluna lista URLs de postback para instalações ou eventos in-app (dependendo do tipo de relatório).
 

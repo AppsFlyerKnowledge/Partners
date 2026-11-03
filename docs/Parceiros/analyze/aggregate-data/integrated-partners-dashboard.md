@@ -101,7 +101,7 @@ Seu cliente pode conceder permissão adicional para que a ad network e os membro
 * Configuração do evento in-app
 * Relatório de retenção
 * Usuário fidelizados
-* https://support.appsflyer.com/hc/article_attachments/19284078965009
+* https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 * Resultados
 * Protect360 dashboard - available only to Protect360 customers
 

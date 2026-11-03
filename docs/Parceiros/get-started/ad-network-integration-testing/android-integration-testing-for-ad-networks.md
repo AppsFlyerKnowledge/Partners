@@ -226,7 +226,7 @@ Os dados relacionados a aplicativos cuja instalação é atribuída à sua ad ne
 Os dados incluem o seguinte:
 
 * de instalações
-* https://support.appsflyer.com/hc/article_attachments/19284078965009
+* https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 * Instalações de retargeting
 * Eventos in-app de aplicativos instalados a partir de campanhas de retargeting
 
