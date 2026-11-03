@@ -222,7 +222,7 @@ En muchos casos, según el consentimiento de ATT de usuario, el identificador de
 | `https://app.appsflyer.com/id123456789?pid=YOUR_NETWORK_ID&c={CampaignName}&af_c_id={CampaignID}&af_adset={adset name}&af_adset_id={adset ID}&af_ad={ad name}&af_ad_id={ad ID}&af_ad_type={Ad-type}&af_siteid={PublisherId}&af_ua={USER-AGENT}&af_lang={LANGUAGE}&af_ip={IP}` |
 | --- |
 
-   Ejemplo****
+   Ejemplo
 
 | GET `https://app.appsflyer.com/id123456789?pid=YOUR_NETWORK_ID&c={CampaignName}&af_c_id={CampaignID}&af_adset={adset` name\}&af\_adset\_id=`{adset ID}&af_ad={ad name}&af_ad_id={ad ID}&af_ad_type={Ad type}&af_siteid={PublisherId}`<br /><br />&af\_ua=Mozilla%2F5.0%20%28iPhone%3B%20CPU%20iPhone%20OS%2012\_1\_4%20  <br />like%20Mac%20OS%20X%29%20AppleWebKit%<br /><br />`2F605.1.15%20%28KHTML%2C%20like%20Gecko%29%20Mobile%2F16D57&af_lang=en-US&af_ip=11.11.1.11` |
 | --- |
