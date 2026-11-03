@@ -29,7 +29,7 @@ Le Marketplace des partenaires AppsFlyer est l'endroit où les annonceurs peuven
 
 | Profil complet du partenaire | Profil du partenaire avec infos partielles |
 | --- | --- |
-| [![](https://support.appsflyer.com/hc/article_attachments/5730602721681)](https://support.appsflyer.com/hc/article_attachments/5730602721681) | [![](https://support.appsflyer.com/hc/article_attachments/5730612397969)](https://support.appsflyer.com/hc/article_attachments/5730612397969) |
+| [![](https://files.readme.io/8fd56611c3d169df98376539c34942b1dc7ca4c8d53125819a508a283bc2df9d-5730602721681.png)](https://files.readme.io/8fd56611c3d169df98376539c34942b1dc7ca4c8d53125819a508a283bc2df9d-5730602721681.png) | [![](https://files.readme.io/89b4608816f902c6179441785399d3e2eaec77970d7a2a274b3c89d2e0e4546b-5730612397969.png)](https://files.readme.io/89b4608816f902c6179441785399d3e2eaec77970d7a2a274b3c89d2e0e4546b-5730612397969.png) |
 
 Pour modifier la page de votre Marketplace des partenaires : dans le tableau de bord AppsFlyer, cliquez sur le menu déroulant en haut à droite, puis sur **Configurer le partenaire**.
 
