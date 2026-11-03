@@ -185,7 +185,7 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
   }'
 ```
 
-#### Пример Curl — обогащенный постбэк SKAN 4 с приблизительными значениями конверсии****
+#### Пример Curl — обогащенный постбэк SKAN 4 с приблизительными значениями конверсии
 
 ```bash
 curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postbacks?app_id=id888707074' \
