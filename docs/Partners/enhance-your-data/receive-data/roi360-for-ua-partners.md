@@ -1,5 +1,5 @@
 ---
-title: ROI360 for UA partners
+title: ROI360 para partners de UA
 metadata:
   keywords:
     - Ad Networks
@@ -13,248 +13,247 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2023-08-12T17:09:08Z'
-  edited_at: '2024-10-27T14:32:39Z'
+  edited_at: '2026-08-12T12:28:42Z'
   id: 17735150011921
-  locale: en-us
+  locale: es
   section: Receive data
   section_id: 6551235995281
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/17735150011921-ROI360-for-UA-partners
+  url: https://support.appsflyer.com/hc/es/articles/17735150011921
 ---
-> **At a glance:** AppsFlyer provides UA partners with complete and accurate ad, in-app purchases, and auto-renewable subscription data via reports and postbacks. Partners can ingest the information to optimize UA campaigns.
+> **De un vistazo:** AppsFlyer proporciona a los partners de UA datos completos y precisos sobre anuncios, compras in-app y suscripciones autorrenovables a través de reportes y postbacks. Los partners pueden procesar la información para optimizar las campañas de UA.
 
-## Introduction
+## Introducción
 
-AppsFlyer receives revenue information from both its partners and the app stores (Apple App Store and Google Play Store). Once received, the data undergoes a series of steps including validation, normalization, attribution, and enrichment with additional properties and dimensions.  AppsFlyer can send the information to the UA partner. Following this process, AppsFlyer transmits the enriched and attributed data to the UA partner. The UA partner can then utilize this information to optimize their user acquisition campaigns and enhance the service they offer to advertisers.
+AppsFlyer recibe información de ingresos tanto de sus partners como de las tiendas de aplicaciones (Apple App Store y Google Play Store). Una vez recibidos, los datos se someten a una serie de pasos que incluyen validación, normalización, atribución y enriquecimiento con propiedades y dimensiones adicionales.  AppsFlyer puede enviar la información al partner de UA. Siguiendo este proceso, AppsFlyer transmite los datos enriquecidos y atribuidos al partner de UA. El partner de UA puede entonces utilizar esta información para optimizar sus campañas de adquisición de usuarios y mejorar el servicio que ofrece a los anunciantes.
 
 <div id="what-revenue-types-are-reported-to-the-partners" />
 
-<Accordion title="What revenue types are reported to the partners?">
+<Accordion title="¿Qué tipos de ingresos se reportan a los partners?">
 
-Apps create two revenue types:
+Las aplicaciones crean dos tipos de ingresos:
 
-* **Ad revenue:** Ad revenue is generated whenever an ad is displayed in the app, like in banners, interstitial ads, and other formats. It can be calculated regardless of the campaign method by which an advertiser is billed.
-* **In-app purchase and auto-renewal subscription:** Store revenue is generated whenever an in-app purchase or subscription-related transaction is performed.
+* **Ingresos por publicidad:** los ingresos por publicidad se generan cada vez que se muestra un anuncio dentro de la aplicación, incluidos banners, anuncios intersticiales y otros formatos. Se puede calcular independientemente del método de campaña mediante el cual se factura a un anunciante.
+* **Compra in-app y suscripción de renovación automática:** los ingresos de la tienda se generan cada vez que se realiza una compra in-app o una transacción relacionada con la suscripción.
 
 </Accordion>
 
 <div id="how-does-appsflyer-provide-revenue-signals-to-ua-partners" />
 
-<Accordion title="How does AppsFlyer provide revenue signals to UA partners?">
+<Accordion title="¿Cómo proporciona AppsFlyer las señales de ingresos a los partners de UA?">
 
-AppsFlyer provides partners with information on in-app ads, in-app purchases, and subscription revenue through the following means:
+AppsFlyer proporciona a los partners información sobre anuncios in-app, compras in-app e ingresos por suscripción a través de los siguientes medios:
 
-* **Ad Revenue UA Signals report**: The report lists ad revenue events aggregated to the device level. The report is available daily in Data Locker and contains the data of the previous day.
-* **Ad Revenue postbacks**: Every time an ad impression occurs on a client device a postback is sent from AppsFlyer to the partner containing the details of the ad revenue event.
-* **Store Revenue postbacks**: Every time a purchase or subscription event occurs a postback is sent from AppsFlyer to the partner containing the details of the revenue event.
+* **Reporte de señales de UA de ingresos por publicidad**: el reporte enumera los eventos de ingresos por publicidad agregados al nivel de dispositivo. El reporte está disponible diariamente en Data Locker y contiene los datos del día anterior.
+* **Postbacks de ingresos por publicidad**: cada vez que se produce una impresión de anuncio en un dispositivo cliente, se envía un postback de AppsFlyer al partner que contiene los detalles del evento de ingresos por publicidad.
+* **Postbacks de ingresos de la tienda**: cada vez que ocurre un evento de compra o suscripción, se envía un postback desde AppsFlyer al partner que contiene los detalles del evento generador de ingresos.
 
 </Accordion>
 
-## Set up ROI360 for partners
+## Configurar el ROI360 para partners
 
-What actions do partners need to take to receive the UA signals report and the ad revenue and store revenue postbacks?
+¿Qué acciones deben tomar los partners para recibir el reporte de señales de UA y los postbacks de ingresos por publicidad e ingresos de la tienda?
 
 <div id="how-to-subscribe-to-the-roi360-ua-signals-report" />
 
-<Accordion title="How to subscribe to the ROI360 UA Signals report">
+<Accordion title="Cómo suscribirse al reporte de señales de UA de ROI360">
 
-To enable the partner to get the report via Data Locker:
+Para permitir que el partner obtenga el reporte a través de Data Locker:
 
-* The partner has to perform the following steps in Data Locker:
-  1. <Anchor target="_blank" href="/partners/docs/data-locker-for-partners#set-up-data-locker">Set up Data Locker</Anchor> in the partner account including the connection to the cloud service provider, and the reports’ format and contents.
-  2. <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report">Enable the ROI360 UA Signals report</Anchor>.
-* The advertiser has to <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">grant the partner permission for the report</Anchor>.
+* El partner tiene que realizar los siguientes pasos en Data Locker:
+  1. <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners#set-up-data-locker">Configurar Data Locker</Anchor> en la cuenta del partner, incluida la conexión con el proveedor de servicios en la nube y el formato y contenido de los reportes.
+  2. <Anchor target="_blank" href="/partners/es/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report">Habilitar el reporte de señales UA de ROI360</Anchor>.
+* El anunciante tiene que <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">otorgar permiso al partner para el reporte</Anchor>.
 
 </Accordion>
 
 <div id="how-to-receive-roi360-postbacks-from-appsflyer" />
 
-<Accordion title="How to receive ROI360 postbacks from AppsFlyer">
+<Accordion title="Cómo recibir postbacks de ROI360 de AppsFlyer">
 
-To receive postbacks from AppsFlyer, partners must initiate a conversation with the AppsFlyer partner integration team. Subsequently, the team will configure the ROI in-app revenue postback values within the AppsFlyer platform.
+Para recibir postbacks de AppsFlyer, los partners deben iniciar una conversación con el equipo de integración de partners de AppsFlyer. Posteriormente, el equipo configurará los valores de postback de ingresos in-app del ROI dentro de la plataforma AppsFlyer.
 
-To contact AppsFlyer partner support, open the **Help** menu in your dashboard and select **Contact our team**.
+Para ponerte en contacto con el soporte técnico de AppsFlyer, abre el menú **Ayuda** en tu panel de control y selecciona **Contactar con nuestro equipo**.
 
 [![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
 
 </Accordion>
 
-## ROI360 UA Signals Report for UA Networks
+## Reporte de señales de UA de ROI360 para redes de UA
 
-The report provides complete and accurate day x+1 CSV/parquet revenue records to the UA partner's S3 bucket on a daily basis. Each record is an aggregation of ad revenue events on the device level.
+El reporte proporciona registros de ingresos completos y precisos del día x+1 CSV/parquet al bucket S3 del partner de UA diariamente. Cada registro es una agregación de eventos de ingresos por publicidad a nivel de dispositivo.
 
-The UA Signals report does not provide real-time data as ad revenue postbacks do. However, it is both more accurate and complete. This is because the value of an impression can change over time. This is especially true when the impression-level revenue data is for an ad impression that was sold through standard CPM bidding rather than real-time bidding.
+El reporte se señales de UA no proporciona datos en tiempo real como lo hacen los postbacks de ingresos por publicidad. Sin embargo, es a la vez más preciso y completo. Esto se debe a que el valor de una impresión puede cambiar con el tiempo. Esto es especialmente cierto cuando los datos de ingresos a nivel de impresión son para una impresión publicitaria que se vendió a través de una oferta estándar de CPM en lugar de una oferta en tiempo real.
 
 <div id="what-are-the-report-data-sources" />
 
-<Accordion title="What are the report data sources?">
+<Accordion title="¿Cuáles son las fuentes de datos del reporte?">
 
-Depending on the advertiser integration type, the report data can originate from either:
+Dependiendo del tipo de integración del anunciante, los datos del reporte pueden originarse de:
 
-1. <Anchor target="_blank" href="/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api">AdRevenue SDK</Anchor> integrations: customers can share impression-level revenue data loaded by the partner to client devices, and then reported to AppsFlyer in near real-time.
-2. S2S API-based device-level integrations: customers can configure their partner credentials within the AppsFlyer UI under integrated partners and allow ROI360 ad revenue to collect device-level ad revenue data on their behalf.
-3. A combination of the two (Freshness to Accuracy). **Note:** The transfer of data from the advertiser to AppsFlyer is contingent upon advertiser permissions and whether the advertiser is a ROI360 advanced customer.
+1. Integraciones de <Anchor target="_blank" href="/marketers/es/docs/integrate-the-roi360-ad-revenue-sdk-api">conectores AdRevenue SDK</Anchor>: los clientes pueden compartir los datos de ingresos a nivel de impresiones cargados por el partner a los dispositivos del cliente y luego reportarlos a AppsFlyer casi en tiempo real.
+2. Integraciones a nivel de dispositivo basadas en la API S2S: los clientes pueden configurar sus credenciales de partner dentro de la interfaz de usuario de AppsFlyer bajo partners integrados y permitir que los ingresos por publicidad de ROI360 recopilen datos de ingresos por publicidad a nivel de dispositivo en su nombre.
+3. Una combinación de los dos (Actualización a Precisión). **Nota:** La transferencia de datos del anunciante a AppsFlyer depende de los permisos del anunciante y de si el anunciante es un cliente avanzado de ROI360.
 
 </Accordion>
 
 <div id="what-data-processing-is-performed-on-the-report-data" />
 
-<Accordion title="What data processing is performed on the report data?">
+<Accordion title="¿Qué procesamiento de datos se realiza en los datos del reporte?">
 
-AppsFlyer ROI360 Ad Revenue performs the following:
+Los ingresos por publicidad de ROI360 de AppsFlyer realizan lo siguiente:
 
-1. Data normalization
-2. Attribution to the install media source and data enrichment
-3. Ad revenue events generation
-4. Events are aggregated to the device level
+1. Normalización de datos
+2. Atribución a la fuente de medios de instalación y enriquecimiento de datos
+3. Generación de eventos de ingresos por publicidad
+4. Los eventos se agregan a nivel de dispositivo
 
 </Accordion>
 
 <div id="how-is-the-report-data-delivered" />
 
-<Accordion title="How is the report data delivered?">
+<Accordion title="¿Cómo se entregan los datos del reporte?">
 
-Device-level data is written daily to the report in Data Locker
+Los datos a nivel de dispositivo se escriben diariamente en el reporte en Data Locker.
 
 </Accordion>
 
 <div id="what-is-the-report-data-freshness" />
 
-<Accordion title="What is the report data freshness?">
+<Accordion title="¿Qué es la actualización de los datos del reporte?">
 
-Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">UTC time</Anchor>.
+Los datos se escriben diariamente en la carpeta h=23 de tu bucket de Data Locker a las 21:00, <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#daily">hora UTC</Anchor>.
 
 </Accordion>
 
 <div id="what-are-the-report-fields" />
 
-<Accordion title="What are the report fields?">
+<Accordion title="¿Cuáles son los campos del reporte?">
 
-| **Field** | **Remarks** |
+| **Campo** | **Observaciones** |
 | --- | --- |
-| Version | Unix timestamp in second. Example: 1661315124 |
-| app\_id | App ID in the AppsFlyer platform |
-| install\_time | • Timestamp of install: YYYY-MM-DD HH:MM:SSExample: 2020-08-16 11:22:33 • For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, install time is rounded to the nearest hour. |
-| campaign, campaign\_id, adset\_name, adset\_id, ad\_name, ad\_name, ad\_id, site\_id | Only populated if UA is attributed to the partner receiving the data. |
-| idfa, idfv, advertising\_id | • The same device ID, like IDFA, IDFV, or advertiser\_id could display in multiple rows if there are more than one ad revenue monetization events. • For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display. |
-| platform | Device platform: iOS, Android, or Windows Mobile |
-| country | Country code using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) Example: US, CN |
-| original\_url | • For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display. • Only populated if UA is attributed to the partner receiving the data. |
-| mediation\_network | The mediation network associated with the impression or impressions. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#[closed-beta]-ua-signals-for-ad-networks">See list of possible networks</Anchor> |
-| ad\_unit | Coming Q3 2023: The monetization ad\_unit associated with the impression or impressions |
-| placement | Coming Q3 2023: The monetization placement associated with the impression or impressions |
+| Versión | Marca de tiempo de Unix en segundos. Ejemplo: 1661315124 |
+| id\_aplicación | ID de aplicación en la plataforma AppsFlyer |
+| hora\_de\_instalación | • Marca de tiempo de instalación: AAAA-MM-DD HH: MM:SS Ejemplo: 2020-08-16 11:22:33 • Para dispositivos iOS 14+ y usuarios que no consienten, o si el anunciante tiene la Privacidad avanzada activada, el tiempo de instalación se redondea a la hora más cercana. |
+| campaign, campaign\_id, adset\_name, adset\_id, ad\_name, ad\_name, ad\_id, site\_id | Solo se rellenan si UA se atribuye al partner que recibe los datos. |
+| idfa, idfv, advertising\_id | • El mismo ID de dispositivo, como IDFA, IDFV o advertiser\_id, podría mostrarse en varias filas si hay más de un evento de monetización de ingresos por publicidad. • Para dispositivos iOS 14+ y usuarios que no consienten, o si el anunciante tiene la Privacidad avanzada activada, esto no se muestra. |
+| Identificador de origen | Plataforma del dispositivo: iOS, Android o Windows Mobile |
+| País | Código de país con [ISO 3166 (alfa-2)](https://www.iso.org/iso-3166-country-codes.html) Ejemplo: |
+| original\_url | • Para dispositivos iOS 14+ y usuarios que no consienten, o si el anunciante tiene la Privacidad avanzada activada, esto no se muestra. • Solo se rellena si UA se atribuye al partner que recibe los datos. |
+| mediation\_network | La red de mediación asociada a la impresión o impresiones. <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#%5Bclosed-beta%5D-ua-signals-for-ad-networks">Ver lista de posibles redes</Anchor> |
+| ad\_unit | Próximamente, en el tercer trimestre de 2023: la ad\_unit de monetización asociada a la impresión o impresiones |
+| Suscripción IAP | Próximamente, en el tercer trimestre de 2023: la ubicación de monetización asociada a la impresión o impresiones |
 
 </Accordion>
 
 <div id="download-the-report-data-sample" />
 
-<Accordion title="Download the report data sample">
+<Accordion title="Descargar la muestra de datos del reporte">
 
-[Click to download the report](https://docs.google.com/spreadsheets/d/e/2PACX-1vSiPD52sbLAcl3mGbAFAiqsCZuSpUamrWP8n9BDyvI11DyNlckiKj-Peuo_fbSuIu-XnUxZqwAMEojT/pub?output=csv)
+[Haz clic para descargar el reporte.](https://docs.google.com/spreadsheets/d/e/2PACX-1vSiPD52sbLAcl3mGbAFAiqsCZuSpUamrWP8n9BDyvI11DyNlckiKj-Peuo_fbSuIu-XnUxZqwAMEojT/pub?output=csv)
 
 </Accordion>
 
-## In-app ad revenue (IAA) postbacks
+## Postbacks de ingresos por publicidad in-app (IAA)
 
-IAA postbacks are the second ingestion approach that AppsFlyer uses to send revenue information to partners. Their main advantage over the Ad Revenue UA signals report is their freshness, as postbacks offer near real-time IAA revenue data sharing. This is in contrast to the X+1  freshness (one day after the event occurrence date) offered through the ad revenue UA signals report.
+Los postbacks de IAA son el segundo enfoque de ingestión que AppsFlyer utiliza para enviar información de ingresos a los partners. Su principal ventaja sobre el reporte de señales de ingresos por publicidad de UA es su actualización ya que los postbacks ofrecen un intercambio de datos de ingresos de IAA casi en tiempo real. Esto contrasta con la actualización X+1 (un día después de la fecha de ocurrencia del evento) ofrecida a través del reporte de señales de UA de ingresos por publicidad.
 
-However, real-time freshness is less accurate compared to X+1:
+Sin embargo, la actualización en tiempo real es menos precisa en comparación con X+1:
 
-* Real-time IAA postbacks data is ±5% less accurate on average than the UA signals report X+1 data.
-* Real-time IAA postbacks data is ±7% less complete on average than the UA signals report X+1 data.
+* Los datos de postbacks IAA en tiempo real son ± 5% menos precisos en promedio que los datos del reporte de señales de UA X+1.
+* Los datos de postbacks IAA en tiempo real son ± 7% menos completos en promedio que los datos del reporte de señales de UA X+1.
 
 <div id="what-are-the-iaa-postback-data-sources" />
 
-<Accordion title="What are the IAA postback data sources?">
+<Accordion title="¿Cuáles son las fuentes de datos postback de IAA?">
 
-The data for the IAA postback originates from Impression-level data that partners load onto client devices. This data is then shared with AppsFlyer through the ROI360 Ad Revenue SDK, which is installed on the device by the advertiser. The SDK API allows the app developer to report an impression event including certain parameters like the ILRD, the currency, the mediation platform, and the monetization source.
+Los datos para el postback de IAA se originan a partir de datos a nivel de impresión que los partners cargan en los dispositivos del cliente. Estos datos son luego compartidos con AppsFlyer a través del conector ROI360 Ad Revenue SDK, que es instalado en el dispositivo por el anunciante. El conector permite al desarrollador de la aplicación reportar un evento de impresión que incluye ciertos parámetros como el ILRD, la divisa, la plataforma de mediación y la fuente de monetización.
 
-Data transfer from the advertiser client devices to AppsFlyer is subject to advertiser permissions and whether an advertiser is a ROI360 advanced customer.
+La transferencia de datos desde los dispositivos de cliente del anunciante a AppsFlyer está sujeta a los permisos del anunciante y si un anunciante es un cliente avanzado de ROI360.
 
 </Accordion>
 
 <div id="what-processing-is-performed-on-the-iaa-postback-data" />
 
-<Accordion title="What processing is performed on the IAA postback data?">
+<Accordion title="¿Qué procesamiento se realiza en los datos de postback de IAA?">
 
-AppsFlyer ROI360 performs the following steps for each impression-level data received:
+ROI360 de AppsFlyer realiza los siguientes pasos para cada dato de nivel de impresión:
 
-1. Data normalization.
-2. Attribution to the install media source and data enrichment.
-3. Generation of an **af\_ad\_revenue** event.
+1. Normalización de datos
+2. Atribución a la fuente de medios de instalación y enriquecimiento de datos
+3. Generación de un evento **af\_ad\_revenue**
 
 </Accordion>
 
 <div id="how-is-the-postback-data-delivered" />
 
-<Accordion title="How is the postback data delivered?">
+<Accordion title="¿Cómo se entregan los datos de postback?">
 
-The event is sent to the partner through an existing postback configuration between the partner and AppsFlyer as an additional parameter.
+El evento se envía al partner a través de una configuración de postback existente entre el partner y AppsFlyer como parámetro adicional.
 
 </Accordion>
 
-## In-app purchase (IAP) postbacks
+## Postbacks de compras in-app (IAP)
 
-ROI360 in-app purchase postbacks deliver multiple layers of reporting accuracy by first validating each transaction, deduplicating it, and then deducting store commission and sales tax.
+Los postbacks de compras in-app de ROI360 ofrecen múltiples capas de precisión de reportes al validar primero cada transacción, deduplicarla y luego deducir la comisión de la tienda y el impuesto sobre las ventas.
 
 <div id="what-are-the-iap-postback-data-sources" />
 
-<Accordion title="What are the IAP postback data sources?">
+<Accordion title="¿Cuáles son las fuentes de datos de postbacks de IAP?">
 
-The data for the IAP postback originates from:
+Los datos para el postback IAP se originan a partir de:
 
-1. Transaction-level data read by the ROI360 Purchase SDK whenever an in-app purchase or auto-renewable subscription event occurs on the device.
-2. Any incoming **App Store and Google Play (RTDN) server notifications** are also processed by the AppsFlyer purchase and subscription revenue business logic:
+1. Datos a nivel de transacciones leídos por el conector ROI360 Purchase SDK cada vez que se produce una compra in-app o un evento de suscripción autorrenovable en el dispositivo.
+2. Cualquier **notificación entrante del servidor del App Store y Google Play (RTDN)** también se procesa mediante la lógica de negocio de ingresos de compras y suscripciones de AppsFlyer:
 
-   * Notifications regarding transactions previously reported via the SDK are validated and processed.
-   * Notifications regarding unknown transactions are not reported into AppsFlyer
+   * Las notificaciones relativas a transacciones previamente reportadas a través del conector SDK son validadas y procesadas.
+   * Las notificaciones sobre transacciones desconocidas no se reportan a AppsFlyer.
 
-   **Note:** The transfer of data from the advertiser to AppsFlyer is contingent upon advertiser permissions and whether the advertiser is a ROI360 advanced customer.
+   **Nota:** La transferencia de datos del anunciante a AppsFlyer depende de los permisos del anunciante y de si el anunciante es un cliente avanzado de ROI360.
 
 </Accordion>
 
 <div id="what-data-processing-is-performed-on-the-iap-postback-data" />
 
-<Accordion title="What data processing is performed on the IAP postback data?">
+<Accordion title="¿Qué procesamiento de datos se realiza en los datos de postback de IAP?">
 
-AppsFlyer ROI360 performs the following steps for each transaction-level data received:
+ROI360 de AppsFlyer realiza los siguientes pasos para cada dato de nivel de transacción recibido:
 
-1. AppsFlyer **validates the purchase or subscription with the relevant store** to ensure it's not fraudulent.
-   * Upon successful validation, AppsFlyer logs the purchase or subscription.
-   * If receipt validation fails, the event displays in the blocked in-app events raw data report (available to Protect360 subscribers).
-2. AppsFlyer ensures that transactions are not duplicated, including those related to family sharing on iOS.
-3. AppsFlyer calculates net revenue data taking into account store commission and taxes (**True Revenue**).
-4. AppsFlyer generates an internal purchase or lifecycle event for the validated and processed transaction.
+1. AppsFlyer **valida la compra o suscripción con la tienda correspondiente** para asegurarse de que no sea fraudulenta.
+   * Tras la validación exitosa, AppsFlyer registra la compra o suscripción.
+   * Si la validación de recibo falla, el evento se muestra en el reporte de raw data de eventos in-app bloqueados (disponible para suscriptores de Protect360).
+2. AppsFlyer garantiza que las transacciones no se dupliquen, incluidas las relacionadas con el uso compartido en familia en iOS.
+3. AppsFlyer calcula los datos de ingresos netos teniendo en cuenta la comisión de la tienda y los impuestos (**Ingresos reales**).
+4. AppsFlyer genera un evento interno de compra o ciclo de vida para la transacción validada y procesada.
 
 </Accordion>
 
 <div id="how-is-the-postback-delivered" />
 
-<Accordion title="How is the postback delivered?">
+<Accordion title="¿Cómo se entrega el postback?">
 
-The IAP event is sent to the partner through an existing postbacks integration between the partner and AppsFlyer.
+El evento de IAP se envía al partner a través de una integración de postbacks existente entre el partner y AppsFlyer.
 
 </Accordion>
 
 <div id="what-are-the-iap-events" />
 
-<Accordion title="What are the IAP events?">
+<Accordion title="¿Cuáles son los eventos de IAP?">
 
-ROI360 customers may share the following revenue-bearing event names:
+Los clientes de ROI360 pueden compartir los siguientes nombres de eventos con ingresos:
 
-**Event names**
+**Nombres de los eventos**
 
-| **Event name** | **Description** |
+| **Nombre del evento** | **Descripción** |
 | --- | --- |
-| af\_purchase | Recorded when a user makes a purchase |
-| af\_purchase\_refund | Recorded when a purchase is refunded |
-| af\_ars\_trial\_converted | Recorded when a fully priced renewal starts, following a trial period |
-| af\_ars\_subscription\_started | Recorded when a discounted or a fully priced subscription starts |
-| af\_ars\_subscription\_resumed | Recorded when a fully priced subscription is resumed following a churned or refunded subscription |
-| af\_ars\_subscription\_refunded | Recorded when a subscriber is issued a refund |
-| af\_ars\_subscription\_renewed | Recorded when an auto-renewal subscription takes place |
-| af\_ars\_subscription\_xgraded | Recorded when a subscriber upgrades, downgrades, or cross-grades to a different product |
+| af\_compra | Se registra cuando un usuario realiza una compra. |
+| af\_purchase\_refund | Se registra cuando se reembolsa una compra. |
+| af\_ars\_trial\_converted | Se registra cuando comienza una renovación a precio completo, después de un período de prueba. |
+| af\_ars\_subscription\_started | Se registra cuando se inicia una suscripción con descuento o a precio completo. |
+| af\_ars\_subscription\_resumed | Se registra cuando se reanuda una suscripción de precio completo después de una suscripción abandonada o reembolsada. |
+| af\_ars\_subscription\_refunded | Se registra cuando se emite un reembolso al suscriptor. |
+| af\_ars\_subscription\_renewed | Se registra cuando tiene lugar una suscripción con renovación automática. |
+| af\_ars\_subscription\_xgraded | Se registra cuando un suscriptor actualiza, baja de categoría o cambia de producto. |
 
 </Accordion>
 
-<div data-zendesk-anchors="01H7T1DS6SNC7X8GX4DGXT4GC0=introduction 01H7T1DS6TYHE3A4XWBDNHCFCZ=what-revenue-types-are-reported-to-the-partners 01H7T1DS6T82RWQ4BBWNPQ6BT2=how-does-appsflyer-provide-revenue-signals-to-ua-partners 01H7T1DS6TDA8CX1ZF3GGE4EHB=set-up-roi360-for-partners 01H7T1DS6T0QFB6K6R78PMVVB2=how-to-subscribe-to-the-roi360-ua-signals-report 01H7T1DS6TBNJBBR6M98RTVMFF=how-to-receive-roi360-postbacks-from-appsflyer 01H7T1DS6T93844DMZY744ECQE=roi360-ua-signals-report-for-ua-networks 01H7T1DS6T4AF6GTETE6HZMYF7=what-are-the-report-data-sources 01H7T1DS6TDNTYDY4JF70F40SV=what-data-processing-is-performed-on-the-report-data 01H7T1DS6T94V4674AMNVCD4T6=how-is-the-report-data-delivered 01H7T1DS6T4F0QV5VE8XZVV1RY=what-is-the-report-data-freshness 01H7T1DS6TYER08FGK9GDKHFEG=what-are-the-report-fields 01H7T1DS6TH98NT4KGKPR7DRDM=download-the-report-data-sample inapp-ad-revenue-iaa-postbacks=in-app-ad-revenue-iaa-postbacks 01H7T1DS6T0CN30EC97VARN80D=in-app-ad-revenue-iaa-postbacks 01H7T1DS6TCA8338NAD9Q8CJWW=what-are-the-iaa-postback-data-sources 01H7T1DS6TQ2G43HSQMH8Y6Q4H=what-processing-is-performed-on-the-iaa-postback-data 01H7T1DS6TQZA3W9KE3783G9G1=how-is-the-postback-data-delivered inapp-purchase-iap-postbacks=in-app-purchase-iap-postbacks 01H7T1DS6TH8AV2ZTY3M8ZXPYA=in-app-purchase-iap-postbacks 01H7T1DS6TGF4XEMD4CRBD8QS2=what-are-the-iap-postback-data-sources 01H7T1DS6T9W85F40QQ2497RNW=what-data-processing-is-performed-on-the-iap-postback-data 01H7T1DS6VAPRMCGZ9YCPTA9EQ=how-is-the-postback-delivered 01H7T1DS6VKE2G6XR02VF4TWH4=what-are-the-iap-events" />
+<div data-zendesk-anchors="introduction=introducci%C3%B3n 01H7T1DS6SNC7X8GX4DGXT4GC0=introducci%C3%B3n 01H7T1DS6TYHE3A4XWBDNHCFCZ=what-revenue-types-are-reported-to-the-partners 01H7T1DS6T82RWQ4BBWNPQ6BT2=how-does-appsflyer-provide-revenue-signals-to-ua-partners set-up-roi360-for-partners=configurar-el-roi360-para-partners 01H7T1DS6TDA8CX1ZF3GGE4EHB=configurar-el-roi360-para-partners 01H7T1DS6T0QFB6K6R78PMVVB2=how-to-subscribe-to-the-roi360-ua-signals-report 01H7T1DS6TBNJBBR6M98RTVMFF=how-to-receive-roi360-postbacks-from-appsflyer roi360-ua-signals-report-for-ua-networks=reporte-de-se%C3%B1ales-de-ua-de-roi360-para-redes-de-ua 01H7T1DS6T93844DMZY744ECQE=reporte-de-se%C3%B1ales-de-ua-de-roi360-para-redes-de-ua 01H7T1DS6T4AF6GTETE6HZMYF7=what-are-the-report-data-sources 01H7T1DS6TDNTYDY4JF70F40SV=what-data-processing-is-performed-on-the-report-data 01H7T1DS6T94V4674AMNVCD4T6=how-is-the-report-data-delivered 01H7T1DS6T4F0QV5VE8XZVV1RY=what-is-the-report-data-freshness 01H7T1DS6TYER08FGK9GDKHFEG=what-are-the-report-fields 01H7T1DS6TH98NT4KGKPR7DRDM=download-the-report-data-sample inapp-ad-revenue-iaa-postbacks=postbacks-de-ingresos-por-publicidad-in-app-iaa 01H7T1DS6T0CN30EC97VARN80D=postbacks-de-ingresos-por-publicidad-in-app-iaa 01H7T1DS6TCA8338NAD9Q8CJWW=what-are-the-iaa-postback-data-sources 01H7T1DS6TQ2G43HSQMH8Y6Q4H=what-processing-is-performed-on-the-iaa-postback-data 01H7T1DS6TQZA3W9KE3783G9G1=how-is-the-postback-data-delivered inapp-purchase-iap-postbacks=postbacks-de-compras-in-app-iap 01H7T1DS6TH8AV2ZTY3M8ZXPYA=postbacks-de-compras-in-app-iap 01H7T1DS6TGF4XEMD4CRBD8QS2=what-are-the-iap-postback-data-sources 01H7T1DS6T9W85F40QQ2497RNW=what-data-processing-is-performed-on-the-iap-postback-data 01H7T1DS6VAPRMCGZ9YCPTA9EQ=how-is-the-postback-delivered 01H7T1DS6VKE2G6XR02VF4TWH4=what-are-the-iap-events" />

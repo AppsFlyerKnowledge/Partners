@@ -1,5 +1,5 @@
 ---
-title: Rejected attribution postbacks to integrated partners
+title: Publicación de atribución rechazada a socios integrados
 metadata:
   keywords:
     - fraud
@@ -14,68 +14,67 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2017-09-19T07:03:47Z'
-  edited_at: '2024-08-13T10:50:27Z'
+  edited_at: '2026-08-12T12:28:39Z'
   id: 115004744123
-  locale: en-us
+  locale: es
   section: Receive data
   section_id: 6551235995281
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115004744123-Rejected-attribution-postbacks-to-integrated-partners
+  url: https://support.appsflyer.com/hc/es/articles/115004744123
 ---
-> **At a glance:** Integrated partners get postbacks of rejected installs and in-app events due to fraud or non-compliance with validation rules.
+> **A simple vista:** Los socios integrados reciben notificaciones de instalaciones y eventos dentro de la aplicación rechazados debido a fraude o incumplimiento de las reglas de validación.
 
-## Rejected attribution postbacks relating to fraud and validation rules
+## Publicaciones de atribución rechazadas relacionadas con el fraude y las reglas de validación
 
-**Terminology**:
+**Terminología**:
 
-* **Fraud events:** install and in-app events blocked by Protect360
-* **Non-compliant events**: installs and in-app events that don't comply with validation rules
-* **Rejected events**: Fraud events and non-compliant validation rule events
-* **Attribution corrected install:** A hijacked install identified and blocked, whose attribution is subsequently corrected and attributed to the genuine media source.
+* **Eventos de fraude:** instalaciones y eventos dentro de la aplicación bloqueados por Protect360
+* **Eventos no conformes**: instalaciones y eventos dentro de la aplicación que no cumplen con las reglas de validación
+* **Eventos rechazados**: Eventos de fraude y eventos de reglas de validación no cumplidos
+* **Instalación corregida por atribución:** Una instalación secuestrada identificada y bloqueada, cuya atribución se corrige posteriormente y se asigna a la fuente de medios genuina.
 
-**Postbacks**
+**Devoluciones de mensajes**
 
-* Integrated partners get rejected event postbacks in real-time.
-* There are no fraud event postbacks for in-app events of attribution corrected installs.
-* Rejected event postbacks are sent to the endpoint specified by the partner for both install and rejected event postbacks, with additional parameters being:  
-  * Block reason
-  * Reject sub-reason
-  * Is-rejected
-  * Reject reason value (when available). For example: `reject_reason=site_blacklist&reject_reason_value="1123456"&is_rejected=1`
+* Los socios integrados reciben notificaciones de eventos rechazados en tiempo real.
+* No hay notificaciones de eventos de fraude para eventos dentro de la aplicación de instalaciones con atribución corregida.
+* Las notificaciones de eventos rechazados se envían al endpoint especificado por el socio tanto para instalaciones como para eventos rechazados, con parámetros adicionales como:  
+  * Razón del bloqueo
+  * Sub-razón del rechazo
+  * Es-rechazado
+  * Valor de la razón del rechazo (cuando esté disponible). Por ejemplo: `reject_reason=site_blacklist&reject_reason_value="1123456"&is_rejected=1`
 
-The following table lists the reject reason, reject reason value, and an explanation of the reject reason:
+La siguiente tabla enumera la razón del rechazo, el valor de la razón del rechazo y una explicación de la razón del rechazo:
 
-| Reject reason | Reject reason value | User can configure | Explanation |
+| Razón del rechazo | Valor de la razón del rechazo | El usuario puede configurar | Explicación |
 | --- | --- | --- | --- |
-| ctit\_anomalies | The measured click-to-install time in seconds | **x** | CTIT anomalies are attributed clicks that have been blocked based on unreasonable CTIT (click to install time). |
-| store\_install\_validation | N/A | **x** | Installs that failed validation from the App Store |
-| site\_blacklist | Site ID | **x** | Installs coming from Site IDs that AppsFlyer blocked due to a high density of fraudulent activity. Determined by our internal algorithms. |
-| bots | N/A | **x** | Blocked install attempts made by Bots |
-| click\_flood | Site ID or empty | **x** | Installs coming from clusters blocked by AppsFlyer due to a large number of installs with a high CTIT and low conversion rate. |
-| behavioral\_anomalies | N/A | **x** | Behavioral anomalies being install fraud blocked due to inconsistent and abnormal post-install behavior. |
-| install\_hijacking | N/A | **x** | Install hijacking being attributed clicks blocked based on unreasonable click and install time, based on Google Play Server-Side API. |
-| validation\_bots | Rule names or empty | ✓ | Customer-defined rule. |
-| validation\_hijacking | Rule names | ✓ | Customer-defined rule. |
-| ai\_layer | N/A | **x** | AI models are utilized to analyze vast amounts of data points, enhancing detection capabilities for identifying fraudulent device and installation activities. |
+| anomalías en ctit | El tiempo medido de clic a instalación en segundos | . | Las anomalías de CTIT son clics atribuidos que han sido bloqueados debido a CTIT irrazonable (tiempo de clic a instalación). |
+| store\_install\_validation | N/D | . | Instalaciones que fallaron la validación en el App Store |
+| lista negra de sitios | ID del sitio | . | Instalaciones procedentes de IDs de sitios que AppsFlyer bloqueó debido a una alta densidad de actividad fraudulenta. Determinado por nuestros algoritmos internos. |
+| Bots | N/D | . | Intentos de instalación bloqueados realizados por Bots |
+| inundación de clics | ID del sitio o vacío | . | Instalaciones provenientes de clusters bloqueados por AppsFlyer debido a un gran número de instalaciones con un alto CTIT y una baja tasa de conversión. |
+| anomalías en el comportamiento | N/D | . | Anomalías de comportamiento siendo fraude de instalación bloqueadas debido a un comportamiento posterior a la instalación inconsistente y anormal. |
+| secuestro de instalación | N/D | . | La instalación de secuestro se atribuye a clics bloqueados en función de un tiempo de clic y de instalación irrazonable, basado en la API del lado del servidor de Google Play. |
+| validación\_bots | Nombres de reglas u vacío | ✓ | Regla definida por el cliente. |
+| validación\_secuestro | Nombres de reglas | ✓ | Regla definida por el cliente. |
+| capa\_ai | N/D | . | Se utilizan modelos de AI para analizar grandes cantidades de puntos de datos, mejorando las capacidades de detección para identificar actividades fraudulentas en dispositivos e instalaciones. |
 
-#### Reject reasons for in-app events
+#### Razones para rechazar eventos en la app
 
-| Reject reason | Reject reason value | Explanation |
+| Razón del rechazo | Valor de la razón del rechazo | Explicación |
 | --- | --- | --- |
-| Inherits from install | Inherits from install | Initial install identified as fake based on <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons">install</Anchor> or<Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons"> denylisted</Anchor> level reason |
-| inapps\_bots | fake\_device\_parameters | AppsFlyer algorithm detects fraud |
-| validation\_inapps | invalid\_event\_name | Based on requested or manually defined validation rule |
-| validation\_inapps | invalid\_event\_value | Based on requested or manually defined validation rule |
-| validation\_inapps | Rule name/s | Based on manually-defined rules |
+| Hereda de la instalación | Hereda de la instalación | Instalación inicial identificada como falsa basada en<Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#motivos-de-bloqueo">instalación</Anchor> o<Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#motivos-de-bloqueo"> motivo de lista denegada</Anchor> |
+| inapps\_bots | parámetros\_de\_dispositivo\_falso | el algoritmo de AppsFlyer detecta fraude |
+| validación\_inapps | nombre\_de\_evento\_inválido | Basado en la regla de validación solicitada o definida manualmente |
+| validación\_inapps | valor\_de\_evento\_inválido | Basado en la regla de validación solicitada o definida manualmente |
+| validación\_inapps | Nombre/s\_de\_la\_regla | Basado en reglas definidas manualmente |
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> * To be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events">rejected postback macros</Anchor>.
-> * To enable rejected postbacks for Advance Privacy you must first append the following parameters to the <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks#default-postback">Default postback</Anchor>:
+> * Para poder distinguir entre las devoluciones de eventos legítimos y las devoluciones rechazadas, debes configurar los <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks#macros-instalaciones-eventos-in-app-y-eventos-rechazados">macros de devoluciones rechazadas</Anchor>.
+> * Para habilitar las devoluciones rechazadas por Privacidad Avanzada, primero debes añadir los siguientes parámetros a la <Anchor target="_blank" href="/partners/es/docs/self-serve-integration-management-for-ad-networks#postback-predeterminado">Devolución predeterminada</Anchor>:
 >   * `is-rejected`
 >   * `blocked-reason`
 >   * `blocked-sub-reason`
 >   * `blocked-reason-value`
-> * When the parameters above are added to both the Default postback and the Advanced Privacy postback, rejected install/in-app event postbacks are enabled.
+> * Cuando se agregan los parámetros anteriores tanto a la devolución predeterminada como a la devolución de privacidad avanzada, se habilitan las devoluciones rechazadas de instalación/eventos en la app.
 
-<div data-zendesk-anchors="h_01J5597AMDVWR2KTANSF7Y7T4P=rejected-attribution-postbacks-relating-to-fraud-and-validation-rules reject-reasons-for-inapp-events=reject-reasons-for-in-app-events h_01J5597AMDHT5GJQN7QJZKV41F=reject-reasons-for-in-app-events h_01J5597AMD29TAZSKZS9WTFSM5=important" />
+<div data-zendesk-anchors="rejected-attribution-postbacks-relating-to-fraud-and-validation-rules=publicaciones-de-atribuci%C3%B3n-rechazadas-relacionadas-con-el-fraude-y-las-reglas-de-validaci%C3%B3n h_01J5597AMDVWR2KTANSF7Y7T4P=publicaciones-de-atribuci%C3%B3n-rechazadas-relacionadas-con-el-fraude-y-las-reglas-de-validaci%C3%B3n reject-reasons-for-inapp-events=razones-para-rechazar-eventos-en-la-app h_01J5597AMDHT5GJQN7QJZKV41F=razones-para-rechazar-eventos-en-la-app h_01J5597AMD29TAZSKZS9WTFSM5=importante" />

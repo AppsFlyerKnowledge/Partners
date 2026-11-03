@@ -1,5 +1,5 @@
 ---
-title: PeerClick integration with AppsFlyer
+title: Integración de PeerClick con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -16,67 +16,66 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2024-01-07T08:27:18Z'
-  edited_at: '2024-12-23T14:57:46Z'
+  edited_at: '2026-08-12T12:30:37Z'
   id: 21479841979793
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/21479841979793-PeerClick-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/21479841979793
 ---
-> **At a glance:** Ad networks that use PeerClick can benefit from the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
+> **De un vistazo:** Las redes de publicidad que utilizan PeerClick pueden beneficiarse de la solución de modelado probabilístico de AppsFlyer para recibir datos de atribución sobre instalaciones y eventos in-app.
 
-## Starting the integration
+## Comenzar la integración
 
-To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
+Para comenzar la integración, debes enviar a AppsFlyer tanto el enlace de atribución como el postback para fines de generación de reportes.
 
-Below you can find the base attribution link with a detailed explanation per each parameter:
+A continuación tienes el enlace de atribución base con una explicación detallada de cada parámetro:
 
 `https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}`
 
-| AppsFlyer Base URL | Description |
+| URL base de AppsFlyer | Descripción |
 | --- | --- |
-| https://app.appsflyer.com | AppsFlyer End-Point |
-| app\_id | Application Unique ID - Dynamic value changed per app promoted |
-| pid= | Media source name include **\_int** to identify<br />**integrated** network at AppsFlyer servers |
-| c= | Campaign name |
+| https://app.appsflyer.com | Punto de conexión de AppsFlyer |
+| id\_aplicación | ID único de la aplicación: el valor dinámico cambiado por cada aplicación promocionada |
+| pid= | El nombre de la fuente de medios incluye **\_int** para identificar la red **integrada** en los servidores de AppsFlyer |
+| c= | Nombre de la campaña |
 
-**Recommended Attribution Link Parameters:**
+**Parámetros recomendados de los enlaces de atribución:**
 
-| AppsFlyer Parameter | Voluum Macros | Description |
+| Parámetro de AppsFlyer | Macros de volumen | Descripción |
 | --- | --- | --- |
-| &clickid= | `{clickid}` | Unique transaction ID of the user session - **Required** |
-| &af\_siteid= | `{trafficsource.id}` | ID of the traffic source - **Optional** |
+| &clickid= | `{clickid}` | ID de transacción único de la sesión del usuario: **obligatorio** |
+| &af\_siteid= | `{trafficsource.id}` | ID de la fuente de tráfico: **opcional** |
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * For the complete AppsFlyer parameter list, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">click here</Anchor>
-> * For the complete PeerClick list, <Anchor target="_blank" href="https://help-center.peerclick.com/en/">click here</Anchor>
+> * Para obtener la lista completa de parámetros de AppsFlyer, <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">haz clic aquí</Anchor>.
+> * Para obtener la lista completa de PeerClick, <Anchor target="_blank" href="https://help-center.peerclick.com/en/">haz clic aquí</Anchor>.
 
-### Complete attribution link template
+### Plantilla de enlace de atribución completa
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
 
-### Install and in-app event postbacks
+### Postbacks de instalaciones y eventos in-app
 
-**Global Install Postback:**
+**Postback de instalación global:**
 
 ```http
 https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 ```
 
-**Global In-App Event Postback:**
+**Postback de evento in-app global:**
 
 `https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}&payout={monetary}&txid={event-name}`
 
-* **userid:** The user ID provided by PeerClick
-* **txid:** The actual in-app event name from the application, set as **Event Tag** in the AppsFlyer dashboard for each App by the advertiser
+* **userid:** ID de usuario proporcionado por PeerClick.
+* **txid:** nombre real del evento in-app, establecido como **etiqueta de evento** en el panel de control de AppsFlyer para cada aplicación por parte del anunciante.
 
-### AppsFlyer's in-app event dashboard
+### Panel de control de eventos in-app de AppsFlyer
 
 ![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
-Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, etc.
+Se puede agregar información de atribución adicional al postback mediante solicitud, como el código de país, ID de publicidad, IDFA, etc.
 
-<div data-zendesk-anchors="h_01HKHFT3RFWF5H349GP7MHDAYX=starting-the-integration h_01HM8M27S5WFJVKBG0JAFW548H=note h_01HKHFT3RFDW6GZM3E72SYPJSD=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks h_01HKHFT3RF1PTSJ4SF9RTQ93N8=install-and-in-app-event-postbacks appsflyers-inapp-event-dashboard=appsflyers-in-app-event-dashboard h_01HKHFT3RFDVPCSKJGZPRFB55V=appsflyers-in-app-event-dashboard" />
+<div data-zendesk-anchors="starting-the-integration=comenzar-la-integraci%C3%B3n h_01HKHFT3RFWF5H349GP7MHDAYX=comenzar-la-integraci%C3%B3n h_01HM8M27S5WFJVKBG0JAFW548H=nota complete-attribution-link-template=plantilla-de-enlace-de-atribuci%C3%B3n-completa h_01HKHFT3RFDW6GZM3E72SYPJSD=plantilla-de-enlace-de-atribuci%C3%B3n-completa install-and-inapp-event-postbacks=postbacks-de-instalaciones-y-eventos-in-app h_01HKHFT3RF1PTSJ4SF9RTQ93N8=postbacks-de-instalaciones-y-eventos-in-app appsflyers-inapp-event-dashboard=panel-de-control-de-eventos-in-app-de-appsflyer h_01HKHFT3RFDVPCSKJGZPRFB55V=panel-de-control-de-eventos-in-app-de-appsflyer" />

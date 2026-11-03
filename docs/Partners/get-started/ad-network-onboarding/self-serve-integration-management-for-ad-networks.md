@@ -1,5 +1,5 @@
 ---
-title: Self-serve integration management for ad networks
+title: Gestión de la integración de autoservicio para redes de publicidad
 metadata:
   keywords:
     - postbacks
@@ -14,136 +14,135 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2021-03-15T10:03:41Z'
-  edited_at: '2026-08-13T00:01:05Z'
+  edited_at: '2026-08-22T00:38:06Z'
   id: 360018512658
-  locale: en-us
+  locale: es
   section: Ad network onboarding
   section_id: 6551058566033
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360018512658-Self-serve-integration-management-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/360018512658
 ---
-> **At a glance**: Set up and manage your integration from the AppsFlyer dashboard.
+> **En resumen:** Configura y administra tu integración desde el panel de control de AppsFlyer.
 
-<Embed title="Self-serve integration management for ad networks" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
+<Embed title="Gestión de la integración de autoservicio para redes de publicidad" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
 
-## **Prerequisites:**
+## **Pré-requisitos:**
 
-* You have to have login credentials (username and password) for AppsFlyer before you can manage attribution links and postbacks. To <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">create a partner</Anchor> account, ask an AppsFlyer customer (advertiser) to <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer">invite you</Anchor>.
-* Management of attribution links and default postbacks is available only to partners who joined after February 1, 2022.
-* Verify that your servers are ready to receive postbacks by complying with the following:
-  * Allowlist AppsFlyer server <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">IP addresses</Anchor> in your firewalls and security systems to ensure communication with your endpoints
-  * TLS versions: TLS 1.1, TLS 1.2+ with the <Anchor target="_blank" href="/marketers/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client">ciphers listed.</Anchor>
-  * Ports: 80, 443
-* ![AppsFlyerAdmin_us-en.png](https://files.readme.io/047d2ffa8bd5258c09f60c6f560162b285c4e9742d98b1158952a26d988ce763-18271759619089.png) Only Admin users can access and manage this section.
+* Debes disponer de credenciales de inicio de sesión (nombre de usuario y contraseña) para AppsFlyer antes de poder administrar enlaces de atribución y postbacks. Para <Anchor target="_blank" href="/partners/es/docs/getting-started-onboarding-guide-for-ad-networks">crear una cuenta de partner</Anchor>, pídele a un cliente de AppsFlyer (anunciante) que <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#invita-a-nuevos-partners-a-appsflyer">te invite</Anchor>.
+* La gestión de enlaces de atribución y postbacks predeterminadas está disponible solo para los partners que se unieron después del 1 de febrero de 2022.
+* Verifica que tus servidores estén listos para recibir postbacks cumpliendo con lo siguiente:
+  * Agrega a la lista de permitidos las <Anchor target="_blank" href="/marketers/es/docs/appsflyer-server-ip-address-ranges-allowlisting">direcciones IP</Anchor> de los servidores de AppsFlyer en tus firewalls y sistemas de seguridad para garantizar la comunicación con tus puntos de conexión.
+  * Versiones de TLS: TLS 1.1, TLS 1.2+ con los <Anchor target="_blank" href="/marketers/es/docs/appsflyer-https-ssl-encryption-policy-support#mensajes-salientes-appsflyer-como-cliente">cifrados enumerados.</Anchor>
+  * Puertos: 80, 443
+* ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Solo los usuarios administradores pueden acceder y administrar esta sección.
 
-## Accessing Integration management
+## Acceso a la gestión de integraciones
 
-1. Log into your AppsFlyer partner account.
-2. Click the top-right drop-down menu > **Postback Management**.
+1. Inicia sesión en tu cuenta de partner de AppsFlyer.
+2. Haz clic en el menú desplegable de la parte superior derecha > **Administración de postbacks**.
 
-## Attribution link
+## Enlace de atribución
 
-The attribution link is the most important part of your integration. Attribution links are used to notify AppsFlyer about user engagement with an ad. Attribution links are placed behind ads, so that when a user clicks on an ad they are clicking on an attribution link.
+El enlace de atribución es la parte más importante de tu integración. Los enlaces de atribución se utilizan para notificar a AppsFlyer sobre el engagement del usuario con un anuncio. Los enlaces de atribución se colocan detrás de los anuncios, de modo que cuando un usuario hace clic en un anuncio, hace clic en un enlace de atribución.
 
-Completion of attribution link configuration is mandatory
+Es obligatorio completar la configuración del enlace de atribución.
 
-**To configure attribution link:**
+**Para configurar el enlace de atribución:**
 
-1. In the **Attribution link** tab, add the parameters to be included in your attribution link:
+1. En la pestaña **Enlace de atribución**, agrega los parámetros que se incluirán en tu enlace de atribución:
 
-   * **Parameter name**: AppsFlyer parameter screen name.
-   * **Your macro**: add the macro that populates the parameters with values.
-   * **Include**: check the box to include the parameter in the link
+   * **Nombre de parámetro**: nombre de pantalla del parámetro AppsFlyer.
+   * **Tu macro**: agrega la macro que completa los parámetros con valores.
+   * **Incluir**: marca la casilla para incluir el parámetro en el enlace.
 
-   > 🚧 **Important!**
+   > 🚧 **¡Importante!**
    >
-   > * Add campaign and ad-related parameters to provide more robust data about campaign performance.
-   > * **Site ID** is a mandatory parameter
-   > * Advertisers use this link as a basis for the integration of a specific app and can add additional parameters to it.
-   > * App ID, Lookback window duration, and your Partner ID are added to the link automatically and you don't need to add them to this template.
+   > * Agrega parámetros relacionados con la campaña y los anuncios para proporcionar datos más sólidos sobre el rendimiento de la campaña.
+   > * El **ID del sitio** es un parámetro obligatorio.
+   > * Los anunciantes utilizan este enlace como base para la integración de una aplicación específica y pueden agregarle parámetros adicionales.
+   > * El ID de aplicación, la duración de la ventana retrospectiva y tu ID de partner se agregan al enlace automáticamente y no es necesario agregarlos a esta plantilla.
 
-2. **[Optional]** Add custom parameters that are not provided by AppsFlyer.
-3. Use the link preview to verify that everything is correct.
-4. Click **Save**.
+2. **[Opcional]** Agrega parámetros personalizados que no proporcione AppsFlyer.
+3. Usa la vista previa del enlace para verificar que todo esté correcto.
+4. Haz clic en **Guardar**.
 
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">More about attribution links and available parameters</Anchor>.
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Más información sobre enlaces de atribución y parámetros disponibles</Anchor>.
 
-In the case of any issues, reach out using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+Si tienes algún problema, ponte en contacto con nosotros a través del <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
 
-## Default postback
+## Postback predeterminado
 
-Postbacks are URLs containing macros populated by AppsFlyer and sent to your servers in real-time after each conversion (either on your network, or other networks too — depending on your configuration).
+Los postbacks son URL que contienen macros completadas por AppsFlyer y enviadas a tus servidores en tiempo real después de cada conversión (ya sea en tu red o también en otras redes, dependiendo de tu configuración).
 
-**To configure the default postback:**
+**Para configurar el postback predeterminado:**
 
-1. Enter the **endpoint addresses.** These are the endpoints to which postbacks are sent. Enter the relevant URLs for installs, in-app events, or both. To be able to activate the integration, at least the install postback URL is required.
-2. Add parameters to the postback:
+1. Introduce las **direcciones de los puntos de conexión.** Estos son los puntos de conexión a los que se envían los postbacks. Introduce las URL relevantes para instalaciones, eventos in-app o ambos. Para poder activar la integración, se requiere al menos la URL de postback de instalación.
+2. Agrega parámetros al postback:
 
-   * **Parameter name**: AppsFlyer parameter screen name.
-   * **Your receiving parameter**: the respective receiving parameter on your side.
-   * **Parameter value** (available for some parameters): choose the value format. For example, for boolean values, choose whether to receive them as "true"/"false", or 1/0.
-   * **Install**: check the box to include the parameter in the install postback.
-   * **In-app event**: check the box to include the parameter in the in-app event postback.
+   * **Nombre de parámetro**: nombre de pantalla del parámetro AppsFlyer.
+   * **Tu parámetro de recepción**: el parámetro de recepción respectivo de tu lado.
+   * **Valor de parámetro** (disponible para algunos parámetros): elige el formato del valor. Por ejemplo, para los valores booleanos, elige si deseas recibirlos como "true"/"false" o 1/0.
+   * **Instalación**: marca la casilla para incluir el parámetro en el postback de instalación.
+   * **Evento in-app**: marca la casilla para incluir el parámetro en el postback de evento in-app.
 
-   <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">Full list of postback macros</Anchor>
+   <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks">Lista completa de macros de postback</Anchor>
 
-   > 🚧 **Important!**
+   > 🚧 **¡Importante!**
    >
-   > * To be able to distinguish between postbacks for legitimate events and rejected postbacks,  configure the <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events">rejected postback macros</Anchor>.
-   > * To enable rejected install/in-app event postbacks, append the following parameters to your default postback template:
+   > * Para poder distinguir entre postbacks de eventos legítimos y postbacks rechazados, configura las <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks#macros-instalaciones-eventos-in-app-y-eventos-rechazados">macros de los postbacks rechazados</Anchor>.
+   > * Para habilitar los postbacks de eventos de instalación/in-app rechazados, agrega los siguientes parámetros a tu plantilla de postback predeterminada:
    >   * `is-rejected`
    >   * `blocked-reason`
    >   * `blocked-sub-reason`
    >   * `blocked-reason-value`  
-   >     **Note:** If the Advanced Privacy postback is enabled, append the parameters above to the Advanced Privacy template as well.
+   >     **Nota:** Si el postback de Privacidad avanzada está habilitado, agrega también los parámetros anteriores a la plantilla de Privacidad avanzada.
 
-3. [Optional] **Custom parameters:** Configure your own parameters to include in the postback.
-4. Use the postback template preview to verify that everything is correct.
-5. Click **Save**.
+3. [Opcional] **Parámetros personalizados:** configura tus propios parámetros para incluir en el postback.
+4. Usa la vista previa de la plantilla de postback para verificar que todo esté correcto.
+5. Haz clic en **Guardar**.
 
-<Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">More postback info and examples.</Anchor>
+<Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration">Más información sobre los postbacks y ejemplos.</Anchor>
 
-In the case of any issues, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+Si tienes algún problema, usa el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente de partners</Anchor>.
 
-## Advanced Privacy and SKAN postbacks
+## Postbacks de Privacidad avanzada y SKAN
 
-Advanced Privacy and SKAN postbacks can be configured only after the attribution link and default postback are created.
+Los postbacks de Privacidad avanzada y SKAN se pueden configurar solo después de crear el enlace de atribución y el postback predeterminado.
 
-**To manage the postbacks:**
+**Para gestionar los postbacks:**
 
-1. Select a postback type:
-   * <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced privacy</Anchor> postback.
-   * <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> postback.
-2. Activate the builder.
-3. **[For SKAdNetwork postback configuration only]** Enter your SKAdNetwork ID. This field is mandatory and the configuration can't be saved without a valid ID.
-4. Enter the **endpoint addresses.** These are the endpoints to which postbacks are sent. Enter the relevant URLs for installs, in-app events, or both.
-5. Add postback parameters:
+1. Selecciona un tipo de postback:
+   * Postback de <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Privacidad avanzada</Anchor>.
+   * Postback de <Anchor target="_blank" href="/partners/es/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor>.
+2. Activa el creador.
+3. **[Solo para la configuración de postbacks de SKAdNetwork]** Introduce tu ID de SKAdNetwork. Este campo es obligatorio y la configuración no se puede guardar sin un ID válido.
+4. Introduce las **direcciones de los puntos de conexión.** Estos son los puntos de conexión a los que se envían los postbacks. Introduce las URL relevantes para instalaciones, eventos in-app o ambos.
+5. Agrega los parámetros del postback:
 
-   * **Parameter name**: AppsFlyer parameter screen name.
-   * **Your receiving parameter**: The respective receiving parameter on your side.
-   * **Parameter value** (available for some parameters): Choose the value format. For example, for boolean values, choose whether to receive them as "true"/"false", or 1/0.
-   * **Install**: Check the box to include the parameter in the install postback.
-   * **In-app event**: Check the box to include the parameter in the in-app event postback.
+   * **Nombre de parámetro**: nombre de pantalla del parámetro AppsFlyer.
+   * **Tu parámetro de recepción**: el parámetro de recepción respectivo de tu lado.
+   * **Valor del parámetro** (disponible para algunos parámetros): elija el formato del valor. Por ejemplo, para los valores booleanos, elige si deseas recibirlos como "true"/"false" o 1/0.
+   * **Instalación**: marca la casilla para incluir el parámetro en el postback de instalación.
+   * **Evento in-app**: marca la casilla para incluir el parámetro en el postback del evento in-app.
 
-   List of <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks#receive-data-from-appsflyer">SKAdNetwork postback macros</Anchor>
+   Lista de <Anchor target="_blank" href="/partners/es/docs/skan-integration-guide-for-ad-networks#recibir-datos-de-appsflyer">macros de postbacks de SKAdNetwork</Anchor>
 
-   List of <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">Advanced Privacy postback macros</Anchor>
+   Lista de <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">macros de postbacks de Privacidad avanzada.</Anchor>
 
-   > 🚧 **Important!**
+   > 🚧 **¡Importante!**
    >
-   > * To enable rejected install/in-app event postbacks, append the following parameters to your default postback template:
+   > * Para habilitar los postbacks de eventos de instalación/in-app rechazados, agrega los siguientes parámetros a tu plantilla de postback predeterminada:
    >   * `is-rejected`
    >   * `blocked-reason`
    >   * `blocked-sub-reason`
    >   * `blocked-reason-value`
-   > * To enable rejected postbacks for Advance Privacy you must first append the parameters above to the [Default postback](/docs/self-serve-integration-management-for-ad-networks#default-postback)
-   > * When the parameters above are added to both the Default postback and the Advanced Privacy postback (if enabled), rejected install/in-app event postbacks are enabled.
+   > * Para habilitar los postbacks rechazados para Privacidad avanzada, primero debes agregar los parámetros anteriores al [postback predeterminado](/docs/self-serve-integration-management-for-ad-networks#postback-predeterminado).
+   > * Cuando los parámetros anteriores se agregan tanto al postback predeterminado como al postback de Privacidad avanzada (si está habilitado), se habilitan los postbacks de eventos de instalación o in-app rechazados.
 
-6. [Optional] **Custom parameters:** Configure your own parameters to include in the postback.
-7. Use the postback template preview to verify that everything is correct.
-8. Click **Save**.  
-   Note, that when you save the postback, the changes take place immediately.
+6. [Opcional] **Parámetros personalizados:** configura tus propios parámetros para incluir en el postback.
+7. Usa la vista previa de la plantilla de postback para verificar que todo esté correcto.
+8. Haz clic en **Guardar**.  
+   Ten en cuenta que cuando guardas el postback, los cambios entran en vigor inmediatamente.
 
-In the case of any issues, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+Si tienes algún problema, contáctanos utilizando el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente de partners</Anchor>.
 
-<div data-zendesk-anchors="h_01KZTVV00EB224GJD5F7VBP071=prerequisites h_01H9FCSTYR157CCJWTYSNE9JQ0=accessing-integration-management h_01H9FCSTYR6HRSF9F8KCR4B3X7=attribution-link h_01H9FCSTYR4Q1985DTHNE1M1CC=important h_01H9FCSTYR2WX0M0ZW3B22EKBM=default-postback h_01H9FCSTYSEP367WAAKCFHZT58=important-1 h_01H9FCSTYSRKBMYR2BYNQJJKVM=advanced-privacy-and-skan-postbacks h_01H9FCSTYSEJD59AWCFNXDZMYW=important-2" />
+<div data-zendesk-anchors="prerequisites=pr%C3%A9-requisitos h_01KZTVV00EB224GJD5F7VBP071=pr%C3%A9-requisitos accessing-integration-management=acceso-a-la-gesti%C3%B3n-de-integraciones h_01H9FCSTYR157CCJWTYSNE9JQ0=acceso-a-la-gesti%C3%B3n-de-integraciones attribution-link=enlace-de-atribuci%C3%B3n h_01H9FCSTYR6HRSF9F8KCR4B3X7=enlace-de-atribuci%C3%B3n h_01H9FCSTYR4Q1985DTHNE1M1CC=importante default-postback=postback-predeterminado h_01H9FCSTYR2WX0M0ZW3B22EKBM=postback-predeterminado h_01H9FCSTYSEP367WAAKCFHZT58=importante-1 advanced-privacy-and-skan-postbacks=postbacks-de-privacidad-avanzada-y-skan h_01H9FCSTYSRKBMYR2BYNQJJKVM=postbacks-de-privacidad-avanzada-y-skan h_01H9FCSTYSEJD59AWCFNXDZMYW=importante-2" />

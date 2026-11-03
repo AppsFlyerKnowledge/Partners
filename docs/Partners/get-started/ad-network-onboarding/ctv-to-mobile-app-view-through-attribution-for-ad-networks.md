@@ -1,5 +1,5 @@
 ---
-title: CTV-to-mobile app view-through attribution for ad networks
+title: Atribución view-through de CTV-to-Mobile para ad networks
 metadata:
   keywords:
     - Attribution
@@ -15,95 +15,94 @@ x-zendesk:
     - CTV Attribution
     - Ad Networks
   created_at: '2022-08-21T06:49:24Z'
-  edited_at: '2026-08-26T10:59:04Z'
+  edited_at: '2026-08-28T00:37:41Z'
   id: 8528418936977
-  locale: en-us
+  locale: es
   section: Ad network onboarding
   section_id: 6551058566033
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/8528418936977-CTV-to-mobile-app-view-through-attribution-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/8528418936977
 ---
-> **At a glance:** Attribute mobile app installs to ads viewed on Connected TV (CTV) devices.
+> **At a glance:** Atribuye instalaciones de apps móviles a anuncios vistos en dispositivos de TV conectada (CTV).
 
-## CTV-to-mobile app attribution for ad networks
+## Atribución de CTV-to-Mobile para ad networks
 
-With AppsFlyer cross-platform impression URLs, you can attribute mobile app installs to ads displayed on CTV. Multiple installs within the same household can be attributed to the same CTV ad impression.
+Con las URL de impresiones multiplataforma de AppsFlyer, puedes atribuir instalaciones de aplicaciones móviles a anuncios mostrados en CTV. Varias instalaciones dentro del mismo hogar pueden atribuirse a la misma impresión de anuncio en CTV.
 
-![Diagram of the CTV-to-mobile app attribution flow](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
+![Diagrama del flujo de atribución de CTV a app móvil](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
 
-CTV-to-mobile app view-through attribution uses a <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup">OneLink impression URL</Anchor> based on a cross-platform OneLink template (with a template ID) created by the advertisers. This lets advertisers group multiple apps from different platforms (for example, both Android and iOS apps) using a single URL.
+La atribución view-through de CTV a aplicación móvil usa una <Anchor target="_blank" href="/marketers/es/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup">URL de impresión OneLink</Anchor> basada en una plantilla OneLink multiplataforma (con un ID de plantilla) creada por los anunciantes. Esto permite a los anunciantes agrupar varias apps de diferentes plataformas (por ejemplo, apps para Android e iOS) utilizando una única URL.
 
-When users view the ad on CTV, you send AppsFlyer the impression URL in real time. 
+Cuando los usuarios ven el anuncio en CTV, envías a AppsFlyer la URL de impresión en tiempo real. 
 
-Example URL:
+URL de ejemplo:
 
 ```
 https://impressions.onelink.me/{template_id}?pid=__media_source__&af_xplatform=true&af_xplatform_vt_lookback=24h&af_siteid=__CSITE__&c=__CAMPAIGN_NAME__&af_channel=__PLACEMENT__&af_c_id=__CAMPAIGN_ID__&af_adset=__AID_NAME__&af_adset_id=__AID__&af_ad=__CID_NAME__&af_ad_id=__CID__&af_source_platform=__source_platform__&af_source_device_category=__device_category__&af_ad_type=__CTYPE__&af_ip=__IP__&af_ua=__UA__&redirect=false
 ```
 
-AppsFlyer sends postbacks to you after each conversion.
+AppsFlyer te envía postbacks después de cada conversión.
 
 > 📘 **Note**
 >
-> This feature is available only for designated partners. Contact your Partner Development Manager (PDM) if you’re interested.
+> Esta función solo está disponible para partners designados. Ponte en contacto con tu Partner Development Manager (PDM) si te interesa.
 
-<Accordion title="Set up CTV-to-mobile attribution">
+<Accordion title="Configurar la atribución de CTV a móvil">
 
-**To set up CTV-to-mobile app view-through attribution with an advertiser**:
+**Para configurar la atribución view-through de CTV-to-Mobile con un anunciante**:
 
-1. Make sure you're an <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">AppsFlyer integrated partner</Anchor>, that you have postbacks properly set up, and that you've [tested your CTV-to-mobile app integration](/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks#test-partner-integration) with AppsFlyer.
-2. Make sure the URL has the [mandatory parameters](/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks#parameters), as well as any other parameters you want.
-3. Send AppsFlyer the user IP address and user agent. These are required for CTV-to-mobile app view-through attribution. They can be sent either:
-   1. As the `af_ip` and `af_ua` parameters on the impression URL.
-   2. As `<X-Forwarded-For>` and `<User-Agent>` parameters in the headers of the request.
-
-</Accordion>
-
-<Accordion title="Test partner integration">
-
-**To test CTV-to-mobile app view-through attribution**:
-
-1. Use the following test apps: com.appsflyer.android.deviceid and id1192323960
-2. Contact the AppsFlyer Partner Solutions Team to receive a test URL. To do so, log in to your <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">partner dashboard</Anchor>, and from the top menu, click **Help** > **Contact our team**.
-   * Sample URL: `https://impressions.onelink.me/dfHa?pid=partner_int&c=test_1&af_xplatform=true&af_xplatform_vt_lookback=24h&af_ip=MACRO&af_ua=MACRO&redirect=false`
-3. Confirm that your partner ID in the `pid` parameter is correct.
-4. Enter your IP address for the `af_ip` parameter.
-5. Enter your user agent for the `af_ua` parameter.
-6. Enter the URL into a desktop browser.
-7. On your mobile device, go to the app store, and download, install, and launch the app.
-8. A new install appears in AppsFlyer, along with a corresponding postback. If you don’t see the install or get the postback, contact the Partner Solutions Team.
+1. Asegúrate de ser un <Anchor target="_blank" href="/partners/es/docs/getting-started-onboarding-guide-for-ad-networks">partner integrado de AppsFlyer</Anchor>, de tener los postbacks correctamente configurados y de haber [probado tu integración de CTV a aplicación móvil](/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks#test-partner-integration) con AppsFlyer.
+2. Asegúrate de que la URL tenga los [parámetros obligatorios](/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks#parameters), además de cualquier otro parámetro que quieras.
+3. Envía a AppsFlyer la dirección IP y el agente de usuario. Estos son necesarios para la atribución de visualización de CTV a aplicación móvil. Se pueden enviar de cualquiera de estas formas:
+   1. Como los parámetros `af_ip` y `af_ua` en la URL de impresión.
+   2. Como `<X-Forwarded-For>` y `<User-Agent>` parámetros en los encabezados de la solicitud.
 
 </Accordion>
 
-<Accordion title="Parameters">
+<Accordion title="Probar la integración del partner">
 
-The following parameters are used to provide attribution data and measurement to advertisers.
+**Para probar la atribución view-through de CTV-to-Mobile**:
 
-| Parameter | Mandatory | Description |
+1. Usa las siguientes aplicaciones de prueba: com.appsflyer.android.deviceid y id1192323960
+2. Ponte en contacto con el equipo de Partner Solutions de AppsFlyer para recibir una URL de prueba. Para hacerlo, inicia sesión en tu <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">dashboard de Partners</Anchor> y, en el menú superior, haz clic en **ayuda** > **Contact our team**.
+   * URL de ejemplo: `https://impressions.onelink.me/dfHa?pid=partner_int&c=test_1&af_xplatform=true&af_xplatform_vt_lookback=24h&af_ip=MACRO&af_ua=MACRO&redirect=false`
+3. Confirma que tu ID de partner en el parámetro `pid` es correcto.
+4. Introduce tu dirección IP en el parámetro `af_ip`.
+5. Introduce tu agente de usuario en el parámetro `af_ua`.
+6. Introduce la URL en un navegador de desktop.
+7. En tu dispositivo móvil, ve a la tienda de aplicaciones y descarga, instala y abre la app.
+8. Aparece una nueva instalación en AppsFlyer junto con el postback correspondiente. Si no ves la instalación o no recibes el postback, ponte en contacto con el equipo de Partner Solutions.
+
+</Accordion>
+
+<Accordion title="Parámetros">
+
+Los siguientes parámetros se utilizan para proporcionar datos de atribución y medición a los anunciantes.
+
+| Parámetro | Obligatorio | Descripción |
 | --- | --- | --- |
-| template\_id | ✓ | The ID of the <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink template</Anchor>. The template contains basic prediction settings for the advertiser apps and is the basis for creating other links. Note: Never encode the `template_id` value. |
-| pid | ✓ | The partner identifier, allocated by AppsFlyer to the media source (ad network) placing the ad. |
-| af\_xplatform | ✓ | <ul><li>Set by the advertiser to indicate whether the link supports cross-platform attribution.</li><li>Values: true/false</li></ul> |
-| af\_xplatform\_vt\_lookback | - | Configurable window that indicates the number of hours following the impression during which the app install can be attributed to the impression. Available parameter values: 1h - 72h (hours). The default is 24h. |
-| af\_ip | ✓ | <ul><li>The IP address of the CTV device that displays the ad.</li><li>If the IP address isn't sent in the URL, it must be sent in the headers of the request so AppsFlyer can perform CTV-to-mobile app attribution.</li></ul> |
-| af\_ua | ✓ | <ul><li>The user agent of the CTV device that displays the ad.</li><li>If the user agent isn't sent in the URL, it must be sent in the headers of the request so AppsFlyer can perform CTV-to-mobile app attribution.</li></ul> |
-| af\_source\_platform | - | <ul><li>A set list of values to represent the operating system where the impression occurs.</li><li>Values:<ul><li>android</li><li>ios</li><li>tizen</li><li>webos</li><li>smartcast</li><li>roku</li><li>windowsphone</li><li>vidaa</li><li>PlayStation</li><li>website</li></ul></li></ul> |
-| af\_source\_device\_category | - | <ul><li>A set list of values to represent the device type where the impression occurs.<ul><li>tv</li><li>mobile\_phone</li><li>desktop</li><li>tablet</li><li>set\_top\_box</li><li>games\_console</li><li>unknown\_device\_category</li><li>media\_player</li></ul></li></ul> |
+| template\_id | ✓ | El ID de la <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">plantilla OneLink</Anchor>. La plantilla contiene configuraciones básicas de predicción para las aplicaciones del anunciante y es la base para crear otros enlaces. Nota: No codifiques nunca el valor de `template_id`. |
+| pid | ✓ | El identificador del partner, asignado por AppsFlyer a la fuente de medios (ad network) que publica el anuncio. |
+| af\_xplatform | ✓ | <ul><li>Lo establece el anunciante para indicar si el enlace admite la atribución multiplataforma.</li><li>Valores: true/false</li></ul> |
+| af\_xplatform\_vt\_lookback | - | Ventana configurable que indica el número de horas tras la impresión durante las cuales la instalación de la app puede atribuirse a la impresión. Valores de parámetros disponibles: 1h - 72h (horas). El valor predeterminado es 24 h. |
+| af\_ip | ✓ | <ul><li>La dirección IP del dispositivo CTV que muestra el anuncio.</li><li>Si la dirección IP no se envía en la URL, debe enviarse en los encabezados de la solicitud para que AppsFlyer pueda realizar la atribución de CTV a aplicación móvil.</li></ul> |
+| af\_ua | ✓ | <ul><li>El agente de usuario del dispositivo CTV que muestra el anuncio.</li><li>Si el agente de usuario no se envía en la URL, debe enviarse en los encabezados de la solicitud para que AppsFlyer pueda realizar la atribución de CTV a aplicación móvil.</li></ul> |
+| af\_source\_platform | - | <ul><li>Una lista fija de valores para representar el sistema operativo donde ocurre la impresión.</li><li>Valores:<ul><li>Android</li><li>ios</li><li>tizen</li><li>webos</li><li>smartcast</li><li>roku</li><li>Windows Phone</li><li>vidaa</li><li>PlayStation</li><li>sitio web</li></ul></li></ul> |
+| af\_source\_device\_category | - | <ul><li>Lista predefinida de valores para representar el tipo de dispositivo donde se produce la impresión.<ul><li>tv</li><li>mobile\_phone</li><li>Escritorio</li><li>tablet</li><li>set\_top\_box</li><li>games\_console</li><li>unknown\_device\_category</li><li>media\_player</li></ul></li></ul> |
 
-Other parameters that can be added to the URL can be found in the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution link structure and parameters article</Anchor>.
+Otros parámetros que se pueden añadir a la URL se encuentran en el <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">artículo sobre la estructura y los parámetros del enlace de atribución</Anchor>.
 
 </Accordion>
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Description |
+| Caducado | Description |
 | --- | --- |
-| Attribution window | Between 1-72 hours, depending on the lookback window parameter `af_xplatform_vt_lookback`. |
-| Retargeting | <ul><li>Re-attribution: Supported for cross-platform-to-mobile. Not for other platforms.</li><li>Re-engagement: Not supported</li></ul> |
-| Attribution method | View-through attribution using probabilistic modeling (IP address) |
-| Household attribution | Supported. Meaning multiple installs within the same household can be attributed to the same CTV ad impression. |
-| Test partner integration | Not available for ad networks that have been flagged for high rates of mobile app-to-mobile app fraud or are affiliated with different flagged media sources. |
+| Ventana de atribución | Entre 1 y 72 horas, según el parámetro de ventana de lookback `af_xplatform_vt_lookback`. |
+| Reorientación | <ul><li>Reatribución: Compatible con multiplataforma a dispositivos móviles. No es compatible con otras plataformas.</li><li>Re-engagement: No compatible</li></ul> |
+| Método de atribución | Atribución por visualización mediante modelado probabilístico (dirección IP) |
+| Atribución por hogar | Compatible. Es decir, se pueden atribuir múltiples instalaciones dentro del mismo hogar a la misma impresión de anuncio de CTV. |
+| Probar la integración del partner | No disponible para redes publicitarias que han sido señaladas por altas tasas de fraude de app móvil a app móvil o están afiliadas a diferentes fuentes de medios señaladas. |
 
 </Accordion>
 
-<div data-zendesk-anchors="ctvtomobile-app-attribution-for-ad-networks=ctv-to-mobile-app-attribution-for-ad-networks h_01HE2X91GTDTPKKFBRRYYFMHDW=ctv-to-mobile-app-attribution-for-ad-networks" />
+<div data-zendesk-anchors="ctvtomobile-app-attribution-for-ad-networks=atribuci%C3%B3n-de-ctv-to-mobile-para-ad-networks h_01HE2X91GTDTPKKFBRRYYFMHDW=atribuci%C3%B3n-de-ctv-to-mobile-para-ad-networks" />

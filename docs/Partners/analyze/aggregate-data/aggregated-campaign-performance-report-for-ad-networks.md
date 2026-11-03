@@ -1,5 +1,5 @@
 ---
-title: Aggregated campaign performance report for ad networks
+title: Reporte agregado de rendimiento de la campaña para redes publicitarias
 metadata:
   keywords:
     - Ad Networks
@@ -13,314 +13,324 @@ x-zendesk:
     - Marketing Analytics
     - Ad Networks
   created_at: '2021-05-30T12:34:03Z'
-  edited_at: '2026-02-04T10:24:58Z'
+  edited_at: '2026-08-12T12:27:11Z'
   id: 360020834237
-  locale: en-us
+  locale: es
   section: Aggregate data
   section_id: 6551715006353
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360020834237-Aggregated-campaign-performance-report-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/360020834237
 ---
-> **At a glance**: Ad networks load the aggregated performance report (AKA Cohort report) into their BI systems to calculate campaign performance metrics like the 7-day retention KPI.
+> **De un vistazo**: De un vistazo: Las redes de publicidad cargan el reporte de estadísticas agregadas de rendimiento (también conocido como reporte de cohorte) en sus sistemas de Business Intelligence para calcular las métricas de rendimiento de la campaña, como el KPI de retención de 7 días.
 
-## Aggregated campaign performance report
+## Reporte agregado de rendimiento de la campaña
 
-This report provides campaign performance data, including the number of unique users performing a given event. You (the ad network), use the data in your BI systems to calculate campaign performance metrics in the context of advertiser KPIs. The report is available daily via <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">Data Locker for Partners</Anchor>
+Este reporte proporciona datos de rendimiento de la campaña, incluso la cantidad de usuarios únicos que realizan un evento determinado. Tú (la red publicitaria) usas los datos en tus sistemas de BI para calcular las métricas del rendimiento de la campaña en el contexto de los KPI de los anunciantes. El reporte está disponible diariamente a través de <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners">Data Locker para Socios</Anchor>
 
-**Why do you need the report?**
+**¿Por qué necesitas el reporte?**
 
-Before iOS 14.5, the postbacks AppsFlyer sent you, contained sufficient data to calculate unique user event metrics.
+Antes de iOS 14.5, los postbacks que AppsFlyer enviaba contenían datos suficientes para calcular métricas únicas de eventos de usuarios.
 
-Starting iOS 14.5, and advertiser adoption of Aggregated Advanced Privacy (AAP), postbacks of non-consenting users don't include user identifiers. The lack of identifiers prevents calculating unique user metrics, for example, 7-day retention. The lack of unique user metrics hurts your ability to optimize campaigns and the ability to set common retention goals with advertisers.
+A partir de iOS 14.5, y de la adopción por parte del anunciante de la Privacidad Avanzada Agregada (AAP), los postbacks de usuarios no autorizados no incluyen identificadores de usuario. La falta de identificadores impide calcular métricas de usuario únicas, por ejemplo, la retención de 7 días. La falta de métricas de usuario únicas perjudica tu capacidad de optimizar las campañas y la capacidad de establecer objetivos de retención comunes con los anunciantes.
 
-**What does the report contain?**
+**¿Qué contiene el reporte?**
 
-Metrics are provided with the best granularity possible using the dimensions reported and have the following performance metrics:
+Las métricas se proporcionan con la mejor granularidad posible usando las dimensiones reportadas y tienen las siguientes métricas de rendimiento:
 
-* Revenue
-* Number of times a given event is performed
-* Number of unique users performing an event
-* <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS89RlkFIss7uARroJcOcX1rU6gUmZ2ySYwfTprg9GaA2BYnvDPVqWmOicea1wrBnNuGgEuLPwzL_ac/pub?gid=0&single=true&output=csv">Example report</Anchor>
+* Ingresos
+* Cantidad de veces que se realizó un evento
+* Cantidad de usuarios únicos que realizan un evento
+* <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS89RlkFIss7uARroJcOcX1rU6gUmZ2ySYwfTprg9GaA2BYnvDPVqWmOicea1wrBnNuGgEuLPwzL_ac/pub?gid=0&single=true&output=csv">Ejemplo de informe</Anchor>
 
-**How do you get the report?**
+**¿Cómo se obtiene el reporte?**
 
-* Provided via Data Locker for Partners. The report updates <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">Daily UTC time</Anchor>.
-* Before we start sharing the data with you, the advertisers must [grant permissions](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) in the dashboard.
+* Proporcionado a través de Data Locker para Socios. El reporte actualiza la <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#daily">hora UTC diaria</Anchor>.
+* Antes de empezar a compartir los datos contigo, los anunciantes deben [otorgar permisos](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) en el dashboard.
 
-## About the report
+## Sobre el reporte
 
 <div id="report-structure" />
 
-<Accordion title="Report structure">
+<Accordion title="Estructura del informe">
 
-#### Dimensions
+#### Dimensiones
 
 <Table>
   <thead>
     <tr>
       <th>
-        Field name
+        Nombre del campo
       </th>
       <th>
-        Remarks
+        Observaciones
       </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>
-        app\_id
-      </td>
-      <td />
-    </tr>
-    <tr>
-      <td>
-        media\_source
-      </td>
-      <td />
-    </tr>
-    <tr>
-      <td>
-        conversion\_type
+        id\_aplicación
       </td>
       <td>
-        <ul><li>Possible values: install, re-engagement, re-attribution</li><li>Equivalent postback macro: is\_retargeting</li></ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        attributed\_touch\_type
-      </td>
-      <td>
-        Possible values: click, impressions, pre-install, unknown, tv, null
-      </td>
-    </tr>
-    <tr>
-      <td>
-        days\_post\_attribution
-      </td>
-      <td>
-        The number of days elapsed since the attribution event.  <br />The maximum number of days is 180.<br /><br />Tip! Use this to calculate retention and KPI days.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        event\_date
-      </td>
-      <td>
-        The date the event occurred.<br /><br />Format: yyyy-mm-dd
-      </td>
-    </tr>
-    <tr>
-      <td>
-        conversion\_date
-      </td>
-      <td>
-        Format: yyyy-mm-dd
-      </td>
-    </tr>
-    <tr>
-      <td>
-        event\_name
-      </td>
-      <td>
-        Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.
 
-        | event\_name | What did the user do |
+      </td>
+    </tr>
+    <tr>
+      <td>
+        fuente\_medios
+      </td>
+      <td>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        tipo\_de\_conversión
+      </td>
+      <td>
+        * Valores posibles: instalación, re-engagement, reatribución
+        * Macro de postback equivalente: is\_retargeting
+      </td>
+    </tr>
+    <tr>
+      <td>
+        tipo\_táctil\_atribuido
+      </td>
+      <td>
+        Valores posibles: click, impressions, pre-install, unknown, tv, null
+      </td>
+    </tr>
+    <tr>
+      <td>
+        días\_post\_atribución
+      </td>
+      <td>
+        La cantidad de días transcurridos desde el evento de atribución.  
+        La cantidad máxima de días es de 180.
+
+        Consejo: Consejo! Utiliza esto para calcular los días de retención y KPI
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cadena
+      </td>
+      <td>
+        La fecha en que ocurrió el evento.
+
+        Formato: aaaa-mm-dd
+      </td>
+    </tr>
+    <tr>
+      <td>
+        fecha\_de\_conversión
+      </td>
+      <td>
+        Formato: aaaa-mm-dd
+      </td>
+    </tr>
+    <tr>
+      <td>
+        nombre\_del\_evento
+      </td>
+      <td>
+        Identifica el evento. Algunos nombres de eventos tienen un significado específico, mientras que otros se relacionan con eventos in-app establecidos por el anunciante en la aplicación.
+
+        | nombre\_del\_evento | ¿Qué hizo el usuario? |
         | --- | --- |
-        | af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution. |
-        | af\_sessions | Opened the app |
-        | af\_uninstall | Uninstalled the app |
-        | Advertiser defined in-app event | Performed an in-app event in the app. In-app event names aren't mapped to partner event names. |
+        | af\_conversion | Usuario convertido. Utiliza conversion\_type para identificar si se trata de una instalación, un reengagement o una reatribución. |
+        | af\_sessions | Abrió la aplicación. |
+        | af\_uninstall | Desinstaló la aplicación. |
+        | Evento dentro de la aplicación definido por el anunciante. | Realizó un evento in-app en la aplicación. Los nombres de eventos in-app no se asignan a los nombres de eventos del socio. |
       </td>
     </tr>
     <tr>
       <td>
-        campaign
+        campaña
       </td>
       <td>
-        Campaign hierarchy
-      </td>
-    </tr>
-    <tr>
-      <td>
-        campaign\_id
-      </td>
-      <td>
-        Campaign hierarchy
+        Jerarquía de campaña.
       </td>
     </tr>
     <tr>
       <td>
-        adset
+        id\_campaña
       </td>
       <td>
-        Campaign hierarchy
-      </td>
-    </tr>
-    <tr>
-      <td>
-        adset\_id
-      </td>
-      <td>
-        Campaign hierarchy
+        Jerarquía de campaña.
       </td>
     </tr>
     <tr>
       <td>
-        ad
+        conjunto de anuncios
       </td>
       <td>
-        Campaign hierarchy
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ad\_id
-      </td>
-      <td>
-        Campaign hierarchy
+        Jerarquía de campaña.
       </td>
     </tr>
     <tr>
       <td>
-        channel
+        id\_anuncio
       </td>
       <td>
-        Campaign hierarchy
-      </td>
-    </tr>
-    <tr>
-      <td>
-        site\_id
-      </td>
-      <td>
-        Campaign hierarchy
+        Jerarquía de campaña.
       </td>
     </tr>
     <tr>
       <td>
-        {"is_primary_"} attribution
+        anuncio
       </td>
       <td>
-        Use to identify and deduplicate retargeting data
-      </td>
-    </tr>
-    <tr>
-      <td>
-        country\_code
-      </td>
-      <td>
-        Derived from the user IP address
+        Jerarquía de campaña.
       </td>
     </tr>
     <tr>
       <td>
-        agency
+        id\_adset
       </td>
       <td>
-        If blank, there is no agency associated
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Keywords
-      </td>
-      <td>
-        [Available starting April 27, 2022] Word(s) used in the user's online search. As reported by the ad network
+        Jerarquía de campaña.
       </td>
     </tr>
     <tr>
       <td>
-        Keyword ID
+        canal
       </td>
       <td>
-        [Available starting April 27, 2022] Keyword ID returned by the ad network.
+        Jerarquía de campaña.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        id\_sitio
+      </td>
+      <td>
+        Jerarquía de campaña.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        is\_primary\_attribution
+      </td>
+      <td>
+        Úsalo para identificar y deduplicar datos de retargeting
+      </td>
+    </tr>
+    <tr>
+      <td>
+        código\_de\_país
+      </td>
+      <td>
+        Derivado de la dirección IP del usuario
+      </td>
+    </tr>
+    <tr>
+      <td>
+        agencia
+      </td>
+      <td>
+        Si está en blanco, no hay ninguna agencia asociada
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Palabras clave
+      </td>
+      <td>
+        [Disponible a partir del 27 de abril de 2022] Palabra(s) utilizada(s) en la búsqueda en línea del usuario. Según lo reportado por la red de publicidad.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ID de palabra clave
+      </td>
+      <td>
+        [Disponible a partir del 27 de abril de 2022] ID de palabra clave devuelto por la red de publicidad.
       </td>
     </tr>
   </tbody>
 </Table>
 
-#### Metrics
+#### Métricas
 
-| Name | Field | Unique users performing the event |
+| Nombre | Campo | Usuarios únicos que realizan el evento |
 | --- | --- | --- |
-| Unique users | unique\_users | Number of unique users performing the event |
-| Revenue | revenue\_usd | Cumulative revenue in USD. For example, $100.00 is reflected as 100. |
-| event\_count | event\_count | Number of event occurrences |
+| Usuarios únicos | usuarios\_únicos | Cantidad de usuarios únicos que realizan el evento |
+| Ingresos | ingresos\_usd | Ingresos acumulados en USD. Por ejemplo, $100.00 se refleja como 100. |
+| recuento\_eventos | recuento\_eventos | Cantidad de ocurrencias de eventos |
 
 </Accordion>
 
 <div id="bi-developer-considerations" />
 
-<Accordion title="BI developer considerations">
+<Accordion title="Consideraciones para desarrolladores de BI">
 
-**Scope of data in the report**
+**Alcance de los datos en el informe**
 
-The report contains user attributions, installs, re-attributions, and re-engagements, and their related in-app events.
+El reporte contiene atribuciones, instalaciones, reatribuciones y re-engagements, y sus eventos in-app relacionados.
 
-In your data consumption process, you must use logic to split the data between campaign types. Meaning, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type and is\_primary\_attribution field. See <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">Double attribution of retargeting events.</Anchor>
+En tu proceso de consumo de datos, debes utilizar la lógica para dividir los datos entre los tipos de campaña. Es decir, atribución del usuario (instalaciones) y retargeting (re-engagements). Para hacerlo, usa el campo conversion\_type e is\_primary\_attribution. Consulta <Anchor target="_blank" href="/marketers/es/docs/resolve-retargeting-double-attribution">Doble atribución de eventos de retargeting.</Anchor>
 
-**Field-level considerations**
+**Consideraciones a nivel de campo**
 
-* Use post-attribution days to enable easy calculation of retention metrics.
-* Calculating unique users using campaign name and campaign ID dimensions: If you can disregard campaign name granularity, you can sum unique count on campaign ID and the metrics are correct.
-* You can aggregate the data using the campaign hierarchy fields.
-* In-app events use the advertiser event name and aren't mapped to your event names. Ask the advertiser to provide you with the mappings or view them in the dashboard. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">Partner in-app event mapping</Anchor>.
-* Revenue is in USD is calculated using the exchange rate on the event day.
-* Ad revenue events are included where available but update with a lag of up to 5 days.
+* Usa los días post-atribución para facilitar el cálculo de métricas de retención.
+* Cálculo de usuarios únicos usando las dimensiones de nombre de campaña y ID de campaña: Si puedes ignorar la precisión del nombre de la campaña, puedes sumar el recuento único por ID de campaña y las métricas serán correctas.
+* Puedes agregar los datos usando los campos de jerarquía de la campaña.
+* Los eventos in-app usan el nombre del evento del anunciante y no se asignan a los nombres de tus eventos. Pide al anunciante que te proporcione las asignaciones o que las vea en el dashboard. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">Asignación de eventos in-app para socios</Anchor>.
+* Los ingresos en USD se calculan usando el tipo de cambio del día del evento.
+* Los eventos de ingresos por publicidad se incluyen cuando están disponibles, pero se actualizan con un retraso de hasta 5 días.
 
-**General considerations**
+**Consideraciones generales**
 
-* Data freshness: Daily, starting 08:00 UTC. Data is written to the Data Locker h=23 folder.
-* Data available is user journey attribution data attributed by AppsFlyer. Meaning, SKAdNetwork reported by iOS postbacks isn't included in this data set.
-* Data is contained in files that contain multiple apps. Use the app\_id field to identify the app.
-* If you don't get data for a given app, verify that the advertiser has granted you the necessary permissions.
+* Actualización de datos: Los datos se escriben en la carpeta Data Locker h=23.
+* Los datos disponibles son datos de atribución de trayectoria del usuario atribuidos por AppsFlyer. Es decir, SKAdNetwork reportado por los postbacks de iOS no se incluye en este conjunto de datos.
+* Los datos están contenidos en archivos que contienen varias aplicaciones. Usa el campo app\_id para identificar la aplicación.
+* Si no obtienes datos para una aplicación determinada, verifica que el anunciante te haya otorgado los permisos necesarios.
 
 </Accordion>
 
 <div id="retention-report-considerations" />
 
-<Accordion title="Retention report considerations">
+<Accordion title="Consideraciones del reporte de retención">
 
-To create retention metrics, for example, retention day-7, do so by setting filters on the following fields:
+Para crear métricas de retención, por ejemplo, el día 7 de retención, hazlo configurando filtros en los siguientes campos:
 
 * days\_post\_install=7
 * event\_name=af\_session
-* conversion\_type as required
-* To prevent the inclusion of <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">duplicate retargeting events</Anchor>, select is\_primary\_attribution=true or use conversion\_type to limit the data set to installs.
-* Group by: campaign and other dimensions as needed.
-* Sum: unique\_users\_count
+* conversion\_type según sea necesario
+* Para evitar la inclusión de <Anchor target="_blank" href="/marketers/es/docs/resolve-retargeting-double-attribution">eventos de retargeting duplicados</Anchor>, selecciona is\_primary\_attribution=true o usa conversion\_type para limitar el conjunto de datos a las instalaciones.
+* Agrupar por: campaña y otras dimensiones según sea necesario.
+* Suma: unique\_users\_count
 
-By adding or removing dimensions you can get metrics with different granularity.
+Al agregar o eliminar dimensiones, puedes obtener métricas con diferente granularidad.
 
 </Accordion>
 
-## Permissions
+## Permisos
 
-You (the ad network), must ask the advertiser to grant you the permissions listed here. The advertiser must perform this procedure once per app.
+Tú (la red publicitaria) debes pedirle al anunciante que te conceda los permisos que se enumeran aquí. El anunciante debe realizar este procedimiento una vez por aplicación.
 
 <div id="permission-to-get-aggregated-performance-data" />
 
-<Accordion title="Permission to get aggregated performance data">
+<Accordion title="Permiso para obtener datos de rendimiento agregados">
 
-Ad networks appointed (activated) by agencies: The agency can't grant permission. The agency must ask the advertiser to grant the permissions for them.
+Redes de publicidad designadas (activadas) por las agencias: La agencia no puede conceder el permiso. La agencia debe pedirle al anunciante que le otorgue los permisos.
 
-**To allow the ad network to get aggregated performance data:**
+**Para permitir que la red publicitaria obtenga datos de rendimiento agregados:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners**.
-2. Search for the partner and select it.
-3. Click **Set up integration**. You’re directed to the integration setup page.
-4. Verify that **Activate partner** is on. If not, data isn't shared.
-5. Go to the **Permissions** tab.
-6. Turn on the following ad network permissions:
-   * **Access aggregate conversions data**.
-   * **Access aggregate in-app events data**.
-   * **Access aggregate revenue data**.
-7. Click **Save Permissions**.
-8. Notify the ad network that you have granted the permissions.
-9. If you have multiple apps, repeat the procedure for each app integrated with the partner.
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > Partners integrados.
+2. Busque al socio y selecciónelo.
+3. Haz clic en **Configurar integración**. Se te dirigirá a la página de configuración de la integración.
+4. Verifica que **Activar Partner** esté encendido. De lo contrario, los datos no se comparten.
+5. Ve a la pestaña **Permissions** (Permisos).
+6. Activa los siguientes permisos de red de publicidad:
+   * **Acceder a datos agregados de conversiones**.
+   * **Acceder a datos agregados de eventos in-app**.
+   * **Acceder a datos agregados de ingresos**.
+7. Haz clic en Guardar permisos.
+8. Notifica a la red publicitaria que has concedido los permisos.
+9. Si tienes varias aplicaciones, repite el procedimiento para cada aplicación integrada con el partner.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HM8SQ5RE1FGQDY6V1A8MMEQX=aggregated-campaign-performance-report h_01HM8SQ5REM6MW5GBRSXTF0N73=about-the-report h_01HM8SQ5RETK7HCPZGGX8KX9VG=report-structure h_01HM8SQ5RE11PW6HGTWGC2AGR5=dimensions h_01HM8SQ5RGQEH6G6W75FVWJKSP=metrics h_01HM8SQ5RGCGTWTSRHB8B4FSY2=bi-developer-considerations h_01HM8SQ5RG4JEE75F6CBTFCBB5=retention-report-considerations h_01HM8SQ5RGNXENZ89GD74KJWH2=permissions h_01HM8SQ5RGQADHTEP5ED3W87VZ=permission-to-get-aggregated-performance-data" />
+<div data-zendesk-anchors="aggregated-campaign-performance-report=reporte-agregado-de-rendimiento-de-la-campa%C3%B1a h_01HM8SQ5RE1FGQDY6V1A8MMEQX=reporte-agregado-de-rendimiento-de-la-campa%C3%B1a about-the-report=sobre-el-reporte h_01HM8SQ5REM6MW5GBRSXTF0N73=sobre-el-reporte h_01HM8SQ5RETK7HCPZGGX8KX9VG=report-structure dimensions=dimensiones h_01HM8SQ5RE11PW6HGTWGC2AGR5=dimensiones metrics=m%C3%A9tricas h_01HM8SQ5RGQEH6G6W75FVWJKSP=m%C3%A9tricas h_01HM8SQ5RGCGTWTSRHB8B4FSY2=bi-developer-considerations h_01HM8SQ5RG4JEE75F6CBTFCBB5=retention-report-considerations permissions=permisos h_01HM8SQ5RGNXENZ89GD74KJWH2=permisos h_01HM8SQ5RGQADHTEP5ED3W87VZ=permission-to-get-aggregated-performance-data" />

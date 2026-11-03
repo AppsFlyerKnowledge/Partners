@@ -1,5 +1,5 @@
 ---
-title: Hubscale integration with AppsFlyer
+title: Integración de Hubscale con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -17,35 +17,34 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2017-12-19T12:25:07Z'
-  edited_at: '2024-12-23T15:18:26Z'
+  edited_at: '2026-08-12T12:30:29Z'
   id: 115005874869
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115005874869-Hubscale-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/115005874869
 ---
-> **At a glance:** Learn how ad networks using Hubscale can integrate with AppsFlyer.
+> **Resumen:** Descubre cómo las ad network que usan Hubscale pueden integrarse con AppsFlyer.
 
-**To initiate the integration you need to send AppsFlyer**:
+**Para iniciar la integración, debes enviar a AppsFlyer**:
 
-1. Your attribution link
-2. Your postback (for installs and in-app events)
+1. Tu enlace de atribución
+2. Tu postback (para instalaciones y eventos in-app)
 
-## Creating the attribution link
+## Cómo crear el enlace de atribución
 
-the attribution link consists of the below AppsFlyer base attribution link and additional macros added by the ad network.
+el enlace de atribución consta del enlace de atribución base de AppsFlyer que aparece a continuación y de macros adicionales añadidas por la ad network.
 
-See below AppsFlyers base attribution link with a detailed explanation per macro:
+A continuación tienes el enlace de atribución base de AppsFlyer con una explicación detallada de cada macro:
 
-| AppsFlyer Base URL | Description |
+| URL base de AppsFlyer | Nota |
 | --- | --- |
-| https://app.appsflyer.com | AppsFlyer endpoint |
-| app\_id | Application unique ID – dynamic value changed per app promoted |
-| pid | Media source name concatenated with \_int to identify integrated<br />networks |
-| c | Campaign name |
+| https://app.appsflyer.com | Punto de conexión de AppsFlyer |
+| id\_aplicación | ID único de la aplicación: valor dinámico que cambia según la app promocionada |
+| PID | Nombre de la fuente de medios concatenado con \_int para identificar redes integradas |
+| C | Nombre de la campaña |
 
-See below what the complete attribution link should look like after you have added additional Hubscale macros:
+A continuación puedes ver cómo debe ser el enlace de atribución completo después de añadir las macros adicionales de Hubscale:
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
@@ -60,13 +59,13 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 {google_id}&idfa={ios_ifa}
 ```
 
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer complete list of parameters</Anchor>
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Lista completa de parámetros de AppsFlyer</Anchor>
 
-## Global postbacks for installs and in-app events:
+## Postbacks globales para instalaciones y eventos in-app:
 
-Hubscale has global postbacks for installs and in-app events:
+Hubscale tiene postbacks globales para instalaciones y eventos in-app:
 
-For installs:
+Para instalaciones:
 
 ```http
 https://companyname.156th.com/conv?transaction_id={publisher_ref_id}&ios_ifa={ios_ifa}
@@ -74,16 +73,16 @@ https://companyname.156th.com/conv?transaction_id={publisher_ref_id}&ios_ifa={io
 &ext_city={city}&user_agent={user_agent}&user_ip={device_ip}&adv_revenue={revenue_usd}
 ```
 
-For post-install events, Hubscale can record up to nine post-install events for the same Transaction ID. Nine global postbacks should be created as templates as shown below:
+Para los eventos posteriores a la instalación, Hubscale puede registrar hasta nueve eventos posteriores a la instalación para el mismo ID de transacción. Se deben crear nueve postbacks globales como plantillas, como se muestra a continuación:
 
 <Table>
   <thead>
     <tr>
       <th>
-        Event number
+        Número de evento
       </th>
       <th>
-        URL template
+        Plantilla de URL
       </th>
     </tr>
   </thead>
@@ -91,7 +90,7 @@ For post-install events, Hubscale can record up to nine post-install events for
   <tbody>
     <tr>
       <td>
-        Event 2 (event 1 is the install)
+        Evento 2 (el evento 1 es la instalación)
       </td>
       <td>
         ```http
@@ -105,7 +104,7 @@ For post-install events, Hubscale can record up to nine post-install events for
     </tr>
     <tr>
       <td>
-        Event 3
+        Evento 3
       </td>
       <td>
         ```http
@@ -119,7 +118,7 @@ For post-install events, Hubscale can record up to nine post-install events for
     </tr>
     <tr>
       <td>
-        Event 4
+        Evento 4
       </td>
       <td>
         ...
@@ -135,7 +134,7 @@ For post-install events, Hubscale can record up to nine post-install events for
     </tr>
     <tr>
       <td>
-        Event 10
+        Evento 10
       </td>
       <td>
         ```http
@@ -150,38 +149,38 @@ For post-install events, Hubscale can record up to nine post-install events for
   </tbody>
 </Table>
 
-The Event tag is what is entered by the advertiser when mapping the events.
+La etiqueta de evento es la que introduce el anunciante al asignar los eventos.
 
 ![In-App_Events.png](https://files.readme.io/5fa9ea3c2428e0dce7ce6a8062ebdf9aca5b2f873cc4e3d76d815d83b3a72b64-360002301369.png)
 
-If the name of the partner using Hubscale is PARTNER, then the domain is normally: partner.156th.com.
+Si el nombre del partner que usa Hubscale es PARTNER, entonces el dominio suele ser: partner.156th.com.
 
-Generic attribution link:
+Enlace de atribución genérico:
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction_id}&af_siteid={pub_id}-{sub_pub_id}&advertising_id={google_id}&idfa={ios_ifa}
 ```
 
-## Finalizing your registration
+## Finalización del registro
 
-* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
+* Si tienes una integración con AppsFlyer, ponte en contacto con nosotros mediante el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
+* Si no tienes una integración con AppsFlyer, completa la solicitud de registro de Partners de anuncios <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">aquí</Anchor>.
 
-## Mapping of AppsFlyer parameters and hubscale macros
+## Asignación de parámetros de AppsFlyer y macros de Hubscale
 
-| AppsFlyer Parameters | Hubscale Macros | Description |
+| Parámetros de AppsFlyer | Macros de Hubscale | Nota |
 | --- | --- | --- |
-| pid | pub\_id | Media source name - for integrated partners  <br />and should not be changed. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#partner-id-pid-parameter">More details</Anchor>. |
-| c | campaign\_name | Campaign name - provided by the advertiser. |
-| clickid | transaction\_id | The Ad network unique click identifier |
-| af\_siteid | pub\_id | Ad Network publisher ID |
-| af\_sub\_siteid | sub\_pub\_id | Ad Sub-Network/Publisher ID |
-| af\_c\_id | campaign\_id | Campaign ID - provided by the advertiser |
-| af\_adset |  | Adset Name - provided by the advertiser. Adset  <br />is an intermediate level in the hierarchy between  <br />Campaign and Ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">See more</Anchor> |
-| af\_ad | adv\_name | Ad Name (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">see more</Anchor>) |
-| af\_ad\_id | adv\_id | Ad ID |
-| af\_cost\_model | adv\_payout\_model | Cost model - CPI is currently the only supported  <br />model |
-| af\_cost\_currency | adv\_payout\_currency | Currency code (example: USD) |
-| af\_cost\_value | adv\_payout\_amount | Cost value |
+| PID | pub\_id | Nombre de la fuente de medios: para partners integrados  <br />y no debe cambiarse. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#partner-id-pid-parameter">Más detalles</Anchor>. |
+| C | campaign\_name | Nombre de la campaña: proporcionado por el anunciante. |
+| clickid | transaction\_id | El identificador de clics exclusivo de la red de publicidad |
+| af\_siteid | pub\_id | ID de publisher de red de publicidad |
+| af\_sub\_siteid | sub\_pub\_id | ID de publisher/subred de publicidad |
+| af\_c\_id | id\_campaña | ID de campaña: proporcionado por el anunciante |
+| af\_conjunto de anuncios |  | Nombre del conjunto de anuncios: proporcionado por el anunciante. El conjunto de anuncios  <br />es un nivel intermedio en la jerarquía entre  <br />campaña y anuncio. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#niveles-de-granularidad-de-datos">Ver más</Anchor> |
+| af\_anuncio | adv\_name | Nombre del anuncio (<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#niveles-de-granularidad-de-datos">ver más</Anchor>) |
+| id\_del\_anuncio\_af | adv\_id | Retargeting: Primer inicio después del re-engagement o la reatribución. |
+| af\_modelo\_de\_coste | adv\_payout\_model | Modelo de costo: CPI es actualmente el único  <br />modelo admitido |
+| af\_cost\_currency | adv\_payout\_currency | Código de divisa (por ejemplo: USD) |
+| af\_valor\_de\_coste | adv\_payout\_amount | Valor del coste |
 
-<div data-zendesk-anchors="01JFT1EB6KZE1D6C9HMXQ5A841=creating-the-attribution-link global-postbacks-for-installs-and-inapp-events=global-postbacks-for-installs-and-in-app-events 01JFT1EB6PH56T619J1197TAK2=global-postbacks-for-installs-and-in-app-events 01JFT1EB70G5V9EBMD4XMAR3GF=finalizing-your-registration 01JFT1EB71F36JD4QNB8KHKZRX=mapping-of-appsflyer-parameters-and-hubscale-macros" />
+<div data-zendesk-anchors="creating-the-attribution-link=c%C3%B3mo-crear-el-enlace-de-atribuci%C3%B3n 01JFT1EB6KZE1D6C9HMXQ5A841=c%C3%B3mo-crear-el-enlace-de-atribuci%C3%B3n global-postbacks-for-installs-and-inapp-events=postbacks-globales-para-instalaciones-y-eventos-in-app 01JFT1EB6PH56T619J1197TAK2=postbacks-globales-para-instalaciones-y-eventos-in-app finalizing-your-registration=finalizaci%C3%B3n-del-registro 01JFT1EB70G5V9EBMD4XMAR3GF=finalizaci%C3%B3n-del-registro mapping-of-appsflyer-parameters-and-hubscale-macros=asignaci%C3%B3n-de-par%C3%A1metros-de-appsflyer-y-macros-de-hubscale 01JFT1EB71F36JD4QNB8KHKZRX=asignaci%C3%B3n-de-par%C3%A1metros-de-appsflyer-y-macros-de-hubscale" />

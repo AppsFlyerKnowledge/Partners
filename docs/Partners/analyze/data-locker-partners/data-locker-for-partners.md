@@ -1,5 +1,5 @@
 ---
-title: Data Locker for partners
+title: Data Locker para partners
 metadata:
   keywords:
     - Agencies
@@ -15,197 +15,196 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2021-05-28T15:37:04Z'
-  edited_at: '2025-06-05T13:56:06Z'
+  edited_at: '2026-08-12T12:27:22Z'
   id: 360020818517
-  locale: en-us
+  locale: es
   section: Data Locker
   section_id: 6551591547409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360020818517-Data-Locker-for-partners
+  url: https://support.appsflyer.com/hc/es/articles/360020818517
 ---
-> **At a glance:** Data Locker for partners (ad networks and agencies) delivers app data to the partner's storage in AWS, GCS, or BigQuery.
+> **En resumen:** Data Locker para partners (ad networks y agencias) entrega los datos de la aplicación al almacenamiento del partner en AWS, GCS o BigQuery.
 
 ![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
 
-## Data Locker for partners
+## Data Locker para partners
 
-Data Locker for partners delivers app data to cloud storage. Advertisers set permissions that allow AppsFlyer to share selected data with a given partner.
+Data Locker para partners entrega los datos de la aplicación al almacenamiento en la nube. Los anunciantes establecen los permisos que permiten que AppsFlyer comparta los datos seleccionados con un partner determinado.
 
 <div id="data-locker-features" />
 
-<Accordion title="Data Locker features">
+<Accordion title="Características de Data Locker">
 
-| Feature | Description |
+| Característica | Descripción |
 | --- | --- |
-| Storage options (cloud) | Storage (bucket) owned by you on:<ul><li>AWS</li><li>GCS</li><li>Yandex</li><li>BigQuery</li></ul><Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#storage-options">About storage options</Anchor> |
-| Multi app support | Supports data of apps that are integrated with you. The advertiser must give permission per report for you to get the data. |
-| Data format options | <ul><li>For bucket cloud storage:<ul><li>CSV</li><li>Parquet</li><li>Adobe</li></ul></li><li>Data warehouse</li></ul> |
-| Data freshness | Freshness depends per report type:<ul><li>**Hourly:** Data generated continuously</li><li>**Daily:** Some reports are prepared on a daily basis and are ready on the following day</li></ul> |
+| Opciones de almacenamiento (nube) | Almacenamiento (bucket) de tu propiedad en:<ul><li>AWS</li><li>GCS</li><li>Yandex</li><li>BigQuery</li></ul><Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#storage-options">Sobre las opciones de almacenamiento</Anchor> |
+| Soporte de múltiples aplicaciones | Soporta los datos de las aplicaciones que tengas integradas. El anunciante debe dar permiso por cada reporte para que puedas obtener los datos. |
+| Opciones de formato de datos | <ul><li>Para el almacenamiento en un bucket en la nube:<ul><li>CSV</li><li>PARQUET</li><li>Adobe</li></ul></li><li>Almacén de datos</li></ul> |
+| Actualización de los datos | La actualización depende del tipo de reporte:<ul><li>**Por hora:** Datos generados continuamente</li><li>**A diario:** Algunos reportes se preparan diariamente y están listos al día siguiente</li></ul> |
 
 </Accordion>
 
 <div id="reports-available-for-partners" />
 
-<Accordion title="Reports available for partners">
+<Accordion title="Reportes disponibles para partners">
 
-The reports available and the permissions required to get the reports differ per partner type. However, the Data Locker mechanism, storage options, and settings required are the same irrespective of the partner type. See the articles per partner type as follows:
+Los reportes disponibles y los permisos necesarios para obtener los reportes varían según el tipo de partner. Sin embargo, el mecanismo de Data Locker, las opciones de almacenamiento y los ajustes necesarios son los mismos independientemente del tipo de partner. Consulta los artículos por tipo de partner que se indican a continuación:
 
-* <Anchor target="_blank" href="/partners/docs/data-locker-reports-available-for-ad-networks">Ad networks</Anchor>
-* <Anchor target="_blank" href="/partners/docs/data-locker-reports-for-agencies">Agencies</Anchor>
-* <Anchor target="_blank" href="/partners/docs/data-locker-reports-for-api-partners">Marketing partners</Anchor>
+* <Anchor target="_blank" href="/partners/es/docs/data-locker-reports-available-for-ad-networks">Redes publicitarias</Anchor>
+* <Anchor target="_blank" href="/partners/es/docs/data-locker-reports-for-agencies">Agencias</Anchor>
+* <Anchor target="_blank" href="/partners/es/docs/data-locker-reports-for-api-partners">Partners de marketing</Anchor>
 
 </Accordion>
 
-## Data storage architecture
+## Arquitectura de almacenamiento de datos
 
 <div id="overview" />
 
-<Accordion title="Overview">
+<Accordion title="Descripción general">
 
-Data is written to your selected storage option. You can switch from one option to another at any time. The change occurs within hours.
+Los datos se escriben en la opción de almacenamiento seleccionada. Puedes alternar entre las opciones en cualquier momento. El cambio entrará en vigor en el transcurso de unas horas.
 
-Data in the cloud bucket storage is organized in a hierarchical folder structure, according to report type, date, and time. The following figure contains an example of this structure:
+Los datos del almacenamiento en el bucket en la nube están organizados en una estructura jerárquica de carpetas, según el tipo de reporte, la fecha y la hora. La siguiente figura contiene un ejemplo de esta estructura:
 
 ![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
 
-Data of a given report is contained in the hour (h) folders associated with that report.
+Los datos de un reporte determinado están incluidos en las carpetas de horas (h) asociadas con ese reporte.
 
-* The number of hour folders depends on if the report streams hourly or daily.
-* Data is provided in Snappy or GZIP compressed files, or uncompressed files, having Parquet or CSV format.
-* Data files consist of columns (fields).
-* The column structure is defined per report type.
+* La cantidad de carpetas de horas depende de si el reporte se transmite por hora o por día.
+* Los datos se proporcionan en archivos comprimidos Snappy o GZIP, o en archivos sin comprimir, que tienen formato Parquet o CSV.
+* Los archivos de datos constan de columnas (fields).
+* La estructura de columnas se define por tipo de reporte.
 
 </Accordion>
 
 <div id="folder-structure" />
 
-<Accordion title="Folder structure">
+<Accordion title="Estructura de carpetas">
 
-| Folder | Description |
+| Carpeta | Descripción |
 | --- | --- |
-| data-locker-hourly | ![DLHourly.png](https://files.readme.io/c257b82d22622d97808a6c23603ac4eee9f2ab091bcb68a33637ac4fb749fdff-18107874510353.png)<ul><li>The top-level folder in the bucket depends on the storage provider.</li><li>The *data-locker-hourly* folder contains the report topics.</li></ul>**Examples of folder structure based on bucket owner and cloud provider**:<ul><li>**Your AWS bucket**: *&lt;af-datalocker-your bucket prefix>/&lt;generated-home-folder>&lt;subscription-id>*</li><li>**Your GCS bucket:** &lt;your bucket name>/&lt;generated-home-folder>/&lt;subscription-id></li></ul> |
-| t (topic) | Report type relates to the subject matter of the report. |
-| dt (date) | This is the related data date. In most cases, this means the date the event occurred. |
-| h (hour) | The h folders relate to the time AppsFlyer received the data. For example, install events received between 14:00-15:00 UTC are streamed to the h=14 file. Note! There is a lag, of about 6 hours, between the time the data arrives in AppsFlyer until the h folder is streamed to Data Locker. For example, the h=14 folder is streamed six hours later at 23:00 UTC.<br /><br />**Folder characteristics**:<ul><li>There are 24 h folders numbered 0-23. For example, h=0, h=1, and so on.</li><li>In addition, a late folder contains events from the preceding day arriving after midnight (in other words, events that arrive between 00:00–02:00 UTC of the following day). For example, if a user installs an app on Monday at 08:00 and the event arrives on Tuesday at 01:00, the event is recorded in Monday's late folder.</li><li>Data arriving after 02:00 is recorded in the folder of the actual arrival date and time.</li><li>You must use the data in the late folder. It isn't contained in any other folder.</li><li>\_temporary folder: In some cases, we generate a temporary folder within an h folder. Disregard temporary folders and subfolders. Example: /t=impressions/dt=2021-04-11/h=18/**\_temporary**.</li></ul> |
-| Unified data | Data for all apps is provided in unified data files. When you load the data, use the row-level app\_id field to distinguish between apps.<br /><br />**Example of data files are in the h=2 folder**<br /><br />![UnifiedByApp.png](https://files.readme.io/dbc39c2ce99c1ff607fd553b9c9034e55728c102f31fd18a501cc00910267b28-18107874522513.png)<ul><li>In your data loading process ensure that:<ul><li>You begin to consume data only after the \_SUCCESS flag is set.</li><li>You load all files having a *.gz extension.*</li></ul></li></ul> |
-| Completion flag | The last file (completion) flag is set when all of the data for a given h folder has been written.<ul><li>Don't read data in a folder before verifying that the \_SUCCESS flag exists.</li><li>The \_SUCCESS flag is set even in cases where no data is written to the folder. Meaning the folder is empty.</li></ul> |
-| Zipping | Files are zipped using gz. After unzipping:<ul><li>The files have no extension.</li><li>Each file has a header row containing the column (field) names.</li></ul> |
-| Column sequence | The sequence of fields in reports is always the same. New fields are added to the right of existing fields.<br /><br />Column (field) definitions are defined per report. Check the relevant report article for the description. |
-| Field population considerations | **Blank or empty fields**: Some fields are populated with *null* or are empty. This means that in the context of a given report there is no data to report. Typically *null* means this field is not populated in the context of a given report and app type. Blank "" means the field is relevant in its context but no data was found to populate it with.<br /><br />**Time zone and currency**:<br /><br />App-specific time zone and currency settings are disregarded for data provided by Data Locker. As such:<ul><li>**Time zone**: Date and hour data are in UTC</li><li>**Currency**: The field event\_revenue\_usd is in USD</li></ul>**Values with commas**: These comas are contained between double quotes `"`, for example, `` `"iPhone6,1"` ``. |
+| data-locker-hourly | ![DLHourly.png](https://files.readme.io/c257b82d22622d97808a6c23603ac4eee9f2ab091bcb68a33637ac4fb749fdff-18107874510353.png)<ul><li>La carpeta de nivel superior del bucket depende del proveedor del almacenamiento.</li><li>La carpeta *data-locker-hourly* contiene los temas de los reportes.</li></ul>**Ejemplos de estructura de carpetas en función del propietario del bucket y el proveedor de la nube**:<ul><li>**Tu bucket de AWS**: *&lt;af-datalocker-your bucket prefix>/&lt;generated-home-folder>&lt;subscription-id>*</li><li>**Tu bucket de GCS:** &lt;your bucket name>/&lt;generated-home-folder>/&lt;subscription-id></li></ul> |
+| t (topic) | El tipo de reporte se relaciona con el asunto del reporte. |
+| dt (date) | Esta es la fecha de los datos. En la mayoría de los casos, esto significa la fecha en que ocurrió el evento. |
+| h (hour) | Las carpetas h se refieren al momento en que AppsFlyer recibió los datos. Por ejemplo, los eventos de instalación recibidos entre las 14:00 y 15:00 UTC se transmiten al archivo h=14. ¡Atención! ¡Nota! Hay una demora, de aproximadamente 6 horas, entre el momento en que los datos llegan a AppsFlyer hasta que la carpeta h se transmite a Data Locker. Por ejemplo, la carpeta h=14 se transmite seis horas más tarde a las 23:00 UTC.<br /><br />**Características de la carpeta**:<ul><li>Hay carpetas de 24 h numeradas del 0 al 23. Por ejemplo, h=0, h=1, etc.</li><li>Además, la carpeta “late” (tarde) contiene eventos del día anterior que llegaron después de la medianoche (es decir que llegaron entre las 00:00–02:00 UTC del día siguiente). Por ejemplo, un usuario instala una aplicación el lunes a las 08:00 y el evento llega el martes a la 01:00, el evento se registra en la carpeta “late” del lunes.</li><li>Los datos que llegan después de las 02:00 se registran en la carpeta de la fecha y hora de llegada real.</li><li>Debes utilizar los datos de la carpeta “late”. Estos datos no se encuentran en ninguna otra carpeta.</li><li>\_temporary folder: En algunos casos, generamos una carpeta temporal dentro de una carpeta h. Desestimar carpetas y subcarpetas temporales. Ejemplo: /t=impressions/dt=2021-04-11/h=18/**\_temporary**.</li></ul> |
+| Datos unificados | Los datos de todas las aplicaciones se proporcionan en archivos de datos unificados. Al cargar los datos, utiliza el campo app\_id a nivel de fila para distinguir entre aplicaciones.<br /><br />**Ejemplos de archivos de datos que están en la carpeta h=2**<br /><br />![UnifiedByApp.png](https://files.readme.io/dbc39c2ce99c1ff607fd553b9c9034e55728c102f31fd18a501cc00910267b28-18107874522513.png)<ul><li>En tu proceso de carga de datos, asegúrate de que:<ul><li>Los datos se procesan solo después de que se configura el indicador \_SUCCESS.</li><li>Cargas todos los archivos que tienen una *extensión .gz.*</li></ul></li></ul> |
+| Indicador de finalización | El indicador de último archivo (finalización) se establece cuando se han escrito todos los datos de una carpeta h determinada.<ul><li>No leas datos en una carpeta antes de verificar que tiene el indicador \_SUCCESS.</li><li>El indicador \_SUCCESS se establece incluso en los casos en los que no se escriben datos en la carpeta. Significa que la carpeta está vacía.</li></ul> |
+| Compresión | Los archivos se comprimen con gz. Después de descomprimirlos:<ul><li>Los archivos no tienen extensión.</li><li>Cada archivo tiene una fila de encabezado que contiene los nombres de las columnas (campo).</li></ul> |
+| Secuencia de columnas | La secuencia de campos en los reportes es siempre la misma. Los nuevos campos se agregan a la derecha de los campos existentes.<br /><br />Las definiciones de las columnas (campos) se definen por reporte. Consulta el artículo del reporte correspondiente para obtener la descripción. |
+| Consideraciones del relleno de campos | **Campos en blanco o vacíos:** Algunos campos se completan con *null* o están vacíos. Esto significa que en el contexto de un reporte determinado no hay datos para reportar. Normalmente, *null* (nulo) significa que este campo no se completa en el contexto de un reporte y tipo de aplicación determinados. Blank "" (en blanco) significa que el campo es relevante en su contexto, pero no se encontraron datos para completarlo.<br /><br />**Zona horaria y divisa**:<br /><br />Los ajustes de zona horaria y divisa específicos de la aplicación no se tienen en cuenta para los datos proporcionados por Data Locker. Así pues:<ul><li>**Zona horaria**: La fecha y la hora están en UTC.</li><li>**Moneda**: El campo event\_revenue\_usd está en USD.</li></ul>**Valores con comas**: Estas comas están contenidas entre comillas dobles "", por ejemplo, `` `"iPhone6,1"` ``. |
 
 </Accordion>
 
 <div id="data-files" />
 
-<Accordion title="Data files">
+<Accordion title="Archivos de datos">
 
-Data files depend on segregation type.
+Los archivos de datos dependen del tipo de segregación.
 
-<table><thead><tr><th>Content</th><th colspan="2">Details</th></tr></thead><tbody><tr><td>Completion flag</td><td colspan="2"><p>The last file (completion) flag is set when all the data for a given h folder has been written. </p><ul><li><p>Don't read data in a folder before verifying that the _SUCCESS flag exists.</p></li><li><p>The _SUCCESS flag is set even in cases where there is no data to write to a given folder and the folder is empty. </p></li><li>Note! In the segregation by app option, the flag is set in the h folder and not the individual app folders. See the figures in the previous section. </li></ul></td></tr><tr><td>File types</td><td colspan="2"><ul><li>Data is provided in Snappy or GZIP compressed files, or uncompressed files, having Parquet or CSV format.</li><li>After unzipping, the data files are in Parquet or CSV format according to your settings.</li></ul></td></tr><tr><td>Column sequence (CSV files) </td><td colspan="2"><p>In the case of CSV files, the sequence of fields in reports is always the same. When we add new fields these are added to the right of the existing fields. </p><p>In this regard: </p><ul><li>The column structure of user journey reports is identical. This means you can have similar data loading procedures for different report types. You select the fields contained in the reports. The field meaning is detailed in the <a href="/marketers/docs/raw-data-field-dictionary" target="_blank">raw data dictionary</a>. </li><li>Reports having an FF notation in the report availability section don't adhere to the common column structure. </li></ul></td></tr><tr><td>Field population considerations</td><td colspan="2"><p><strong>Blank or empty fields:</strong> Some fields are populated with <em>null</em> or are empty. This means that in the context of a given report there is no data to report. Typically <em>null</em> means this field is not populated in the context of a given report and app type. Blank "" means the field is relevant in its context but no data was found to populate it with. </p><p>In the case of the restricted media source, the content of restricted fields is set to null. </p><p>Overall regard null and blank as one and the same thing; there is no data available. </p><p><strong>Time zone and currency</strong></p><p>App-specific time zone and currency settings have no effect on data written to Data Locker. The following apply: </p><ul><li><strong>Time zone</strong>: Date and hour data are in UTC.</li><li><strong>Currency</strong>: The field event_revenue_usd is in USD.</li></ul><p><strong>Values with commas</strong>: These commas are contained between double quotes `"`, for example, <code>`"iPhone6,1"`</code>.</p></td></tr></tbody></table>
+<table><thead><tr><th>Contenido</th><th colspan="2">Detalles</th></tr></thead><tbody><tr><td>Indicador de finalización</td><td colspan="2"><p>El indicador de último archivo (finalización) se establece cuando se han escrito todos los datos de una carpeta h determinada. </p><ul><li><p>No leas datos en una carpeta antes de verificar que tiene el indicador _SUCCESS.</p></li><li><p>El indicador _SUCCESS se configura incluso en los casos en que no hay datos para escribir en una carpeta determinada y la carpeta está vacía. </p></li><li>¡Atención! ¡Nota! En la opción de segregación por aplicación, el indicador se configura en la carpeta h y no en las carpetas individuales de las aplicaciones. Consulta las figuras de la sección anterior. </li></ul></td></tr><tr><td>Tipos de archivo</td><td colspan="2"><ul><li>Los datos se proporcionan en archivos comprimidos Snappy o GZIP, o en archivos sin comprimir, que tienen formato Parquet o CSV.</li><li>Después de descomprimir, los archivos de datos están en formato Parquet o CSV de acuerdo con tu configuración.</li></ul></td></tr><tr><td>Secuencia de columnas (archivos CSV) </td><td colspan="2"><p>En el caso de los archivos CSV, la secuencia de campos en los reportes es siempre la misma. Cuando agregamos campos nuevos, estos se agregan a la derecha de los campos existentes. </p><p>En este sentido: </p><ul><li>La estructura de columnas de los reportes del viaje del usuario es idéntica. Esto significa que puedes tener procedimientos de carga de datos similares para diferentes tipos de reportes. Selecciona los campos contenidos en los reportes. El significado del campo se detalla en el <a href="/marketers/es/docs/raw-data-field-dictionary" target="_blank">diccionario de raw data</a>. </li><li>Los reportes que tienen una notación FF en la sección de disponibilidad del reporte no se adhieren a la estructura de columnas común. </li></ul></td></tr><tr><td>Consideraciones del relleno de campos</td><td colspan="2"><p><strong>Campos en blanco o vacíos:</strong> Algunos campos se completan con <em>null</em> o están vacíos. Esto significa que en el contexto de un reporte determinado no hay datos para reportar. Normalmente, <em>null</em> (nulo) significa que este campo no se completa en el contexto de un reporte y tipo de aplicación determinados. Blank "" (en blanco) significa que el campo es relevante en su contexto, pero no se encontraron datos para completarlo. </p><p>Si la fuente de medios está restringida, el contenido de los campos restringidos se establece en null. </p><p>En general, se considera null y blank como un único producto; no hay datos disponibles. </p><p><strong>Zona horaria y moneda</strong></p><p>La configuración de la zona horaria y divisa específicas de la aplicación no afecta los datos en Data Locker. Aplican las siguientes condiciones: </p><ul><li> <strong>Zona horaria</strong>: La fecha y la hora están en UTC.</li><li> <strong>Moneda</strong>: El campo event_revenue_usd está en USD.</li></ul><p><strong>Valores con comas</strong>: Estas comas están contenidas entre comillas dobles "", por ejemplo, <code>`"iPhone6,1"`</code>.</p></td></tr></tbody></table>
 
 </Accordion>
 
 <div id="storage-options" />
 
-<Accordion title="Storage options">
+<Accordion title="Opciones de almacenamiento">
 
-* Data is written to a storage owner of your choice as follows: AWS, GCS, and BigQuery.
-* You can change the storage selection at any time.
-* If you change the storage, the following happens:
-  * We start writing to the newly selected storage within one hour.
-  * We continue writing to the existing storage during a transition period of 7 days. The transition period expiry time displays in the user interface. Use the transition period to update your data loading processes.
-  * **Changing buckets**: If you change storage, data is sent to both for a transition period of 7 days, allowing you to align your data consumption process.
+* Los datos se escriben en un propietario de almacenamiento de tu elección de la siguiente manera: AWS, GCS y BigQuery.
+* Puedes cambiar la selección del almacenamiento en cualquier momento.
+* Si cambias el almacenamiento, ocurre lo siguiente:
+  * Comenzamos a escribir en el almacenamiento recién seleccionado en una hora.
+  * Seguimos escribiendo en el almacenamiento existente durante un período de transición de 7 días. El tiempo de vencimiento del período de transición se muestra en la interfaz de usuario. Usa el período de transición para actualizar tus procesos de carga de datos.
+  * **Cambiando buckets**: Si cambias el almacenamiento, los datos se envían a ambos durante un período de transición de 7 días, lo que te permite alinear tu proceso de consumo de datos.
 
-|  | Partner-owned storage (GCS, AWS, BigQuery) |
+|  | Almacenamiento propio del partner (GCS, AWS, BigQuery) |
 | --- | --- |
-| Bucket name | <ul><li>GCS: No restriction</li><li>AWS: Set by you. Must have the prefix af-.</li></ul>Example: `af-datalocker-your-bucket-name` |
-| Storage owner | Partner |
-| Storage platform | AWS, GCS, Yandex, BigQuery |
-| Credentials to access data by you | Not known to AppsFlyer. Use credentials provided by the storage provider. |
-| Data retention | Controlled by you |
-| Security | You control the storage.<ul><li>**AWS**: AppsFlyer requires GetObject, ListBucket, DeleteObject, PutObject permission to the bucket. The bucket should be dedicated to AppsFlyer use. Don't use it for other purposes.</li><li><Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor></li></ul> |
+| Nombre del bucket | <ul><li>GCS: Sin restricción</li><li>AWS: Configurado por ti. Debe tener el prefijo af-.</li></ul>Ejemplo: `af-datalocker-your-bucket-name` |
+| Propietario de almacenamiento | Fuente de medios |
+| Plataforma del almacenamiento | AWS, GCS, Yandex, BigQuery |
+| Credenciales para que accedas a los datos | AppsFlyer no las conoce. Usa las credenciales proporcionadas por el proveedor de almacenamiento. |
+| Retención de datos | Controlada por ti |
+| Seguridad | Tú controlas el almacenamiento.<ul><li>**AWS**: AppsFlyer requiere permiso de GetObject, ListBucket, DeleteObject, PutObject para el bucket. El uso del bucket debe ser exclusivo de AppsFlyer. No lo uses para otros fines.</li><li><Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor></li></ul> |
 
-#### **Notice to security officers**
+#### **Aviso a los responsables de seguridad**
 
-Consider:
+Consideración:
 
-* The bucket or destination is for the sole use of AppsFlyer. There should be no other entity writing to the bucket.
-* You can delete data in the bucket 25 hours after we write the data.
-* Data we write to the destination is a copy of data already in our servers. The data continues to be in our servers in accordance with our retention policy.
-* For technical reasons, we sometimes need to delete and rewrite the data. For this reason, we require delete and list permissions. Neither list nor delete are a security risk for you. In the case of list, we are the sole entity writing to the bucket. In the case of delete, we can regenerate the data.
+* El bucket o destino es para uso exclusivo de AppsFlyer. No debe haber ninguna otra entidad que escriba en el bucket.
+* Puedes eliminar datos del bucket 25 horas después de que escribamos los datos.
+* Los datos escritos en el destino son una copia de los datos que ya están en nuestros servidores. Los datos continúan estando en nuestros servidores de acuerdo con nuestra política de retención.
+* Por razones técnicas, a veces eliminamos y reescribimos los datos. Por esta razón, requerimos permisos de eliminación y listado. Ni listar ni eliminar son un riesgo de seguridad para ti. En el caso de la lista, somos la única entidad que escribe en el bucket. En el caso de eliminar, podemos regenerar los datos.
 
 </Accordion>
 
 <div id="multipleconnection-principles-more-than-one-destination" />
 
-<Accordion title="Multiple-connection principles (more than one destination)">
+<Accordion title="Principios de conexión múltiple (más de un destino)">
 
-In Data Locker you can send some or all of your data to more than one destination (defined in the connection settings). For example, you can send App A data to AWS, and App B data to GCS.
+En Data Locker puedes enviar algunos o todos tus datos a más de un destino (definido en la configuración de la conexión). Por ejemplo, puedes enviar los datos de la aplicación A a AWS y los de la aplicación B a GCS.
 
-Each connection consists of a complete set of Data Locker settings, including a destination. Connection settings are independent of one another.
+Cada conexión consiste en un conjunto completo de configuraciones de Data Locker, incluido un destino. Las configuraciones de las conexiones son independientes entre sí.
 
-In managing your connections, consider:
+Al administrar tus conexiones, ten en cuenta lo siguiente:
 
-* In Data Locker settings, connections are shown in tabs. Each connection has its own settings tab from which you can manage the connection. The default tab is “Data Locker.”
-* To create a new connection:
-  1. Click **Add connection**.
-  2. Provide a name for the connection and choose the storage type.
-  3. Click **Save**.  
-     Once saved, the connection displays next to the default “Data Locker” tab. The icon of each tab represents the storage type.
-* To see connection details, duplicate a connection, or delete a connection, click ⋮ (options).
+* En la configuración de Data Locker, las conexiones se muestran en pestañas. Cada conexión tiene su propia pestaña de configuración desde la que puedes administrar la conexión. La pestaña predeterminada es "Data Locker".
+* Para agregar una conexión nueva:
+  1. Haz clic en **Agregar conexión**.
+  2. Proporciona un nombre para la conexión y elige el tipo de almacenamiento.
+  3. Haz clic en **Guardar**.  
+     Una vez guardada, la conexión se muestra junto a la pestaña predeterminada "Data Locker". El icono de cada pestaña representa el tipo de almacenamiento.
+* Para ver los detalles de la conexión, duplicar una conexión o eliminar una conexión, haz clic en : (opciones).
 
 </Accordion>
 
-## Procedures
+## Procedimientos
 
 <div id="set-up-data-locker" />
 
-<Accordion title="Set up Data Locker">
+<Accordion title="Configurar Data Locker">
 
-Use this procedure to set up Data Locker. Changes to settings take effect within 3 hours.
+Usa este procedimiento para configurar Data Locker. Los cambios en la configuración tienen efecto en 3 horas.
 
-**Prerequisite:**
+**Requisito previo:**
 
-Complete one or more of the following storage procedures:
+Completa uno o más de los siguientes procedimientos de almacenamiento:
 
-* <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor> bucket
-* <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor> bucket
-* [Beta] <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#yandex">Yandex</Anchor> bucket
-* <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#bigquery">BigQuery</Anchor> data warehouse
+* Bucket de <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor>
+* Bucket de <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor>
+* [Beta] Bucket de <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#yandex">Yandex</Anchor>
+* Almacén de datos de <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#bigquery">BigQuery</Anchor>
 
-**![AppsFlyerAdmin_us-en.png](https://files.readme.io/771bf2946e0e5bde4126a710540eda14172a849d58185b9c5dbd240481c2efe2-18107874528145.png) To set up Data Locker:**
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Para configurar Data Locker:**
 
-1. Log in to your <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">AppsFlyer partner dashboard.</Anchor>
-2. Go to:
-   * **Advertisers**: In AppsFlyer, from the sidebar, open **Export** > **Data Locker**.
-   * **Marketing partners**: Click the **account menu** > **Data Locker**.
-3. Follow the <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">Data Locker setup instructions</Anchor> steps 3-16.
+1. Inicia sesión en tu <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">dashboard de partner de AppsFlyer.</Anchor>
+2. Ve a:
+   * **Anunciantes**: En AppsFlyer, desde la barra lateral, abre **Exportar** > **Data Locker**.
+   * **Partners de marketing**: Haz clic en el **menú de la cuenta** > **Data Locker**.
+3. Sigue los pasos 3-16 de las <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">Instrucciones de configuración de Data Locker</Anchor>.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and Limitations">
+<Accordion title="Características y limitaciones">
 
-| **Trait** | Remarks |
+| **Caducado** | Observaciones |
 | --- | --- |
-| App-specific time zone | Not Applicable |
-| App-specific currency | Not supported |
-| Size limitations | Not applicable |
-| Data freshness | Data is updated according to the specific report data freshness detailed in this article. |
-| Historical data | Not supported |
-| Team member access | Team members cannot set up Data Locker. |
+| Zona horaria específica de la aplicación | No corresponde |
+| Moneda específica de la aplicación | No compatible |
+| Limitaciones de tamaño | No aplicable |
+| Actualización de los datos | Los datos se actualizan de acuerdo con la actualización específica de los datos del reporte que se detalla en este artículo. |
+| Datos históricos | No compatible |
+| Acceso de miembros del equipo | Los miembros del equipo no pueden configurar Data Locker. |
 
 </Accordion>
 
 <div id="troubleshooting" />
 
-<Accordion title="Troubleshooting">
+<Accordion title="Resolución de problemas">
 
-<Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#troubleshooting">Use this troubleshooting guide</Anchor>.
+<Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#troubleshooting">Usa esta guía de resolución de problemas</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H8Y0DGS4Y2N99YNYEEJA6RSF=data-locker-for-partners h_01H8Y0DGS4EM06PYNS1DRMZM6Y=data-locker-features h_01H8Y0DGS4A0MYGVZ9XQ49EBT2=reports-available-for-partners h_01H8Y0DGS4WTAJV7QE2DX3VGBP=data-storage-architecture h_01H8Y0DGS4BQHBKNHZ4CD9ZMT4=overview h_01H8Y0DGS43JAREX23YX1F125K=folder-structure h_01H8Y0DGS524WNXY63351XGJKA=data-files h_01H8Y0DGS5MV6J1MMJJS8G4HC4=storage-options h_01H8Y0DGS5R4QX01WBK2S33QP5=notice-to-security-officers h_01H8Y0DGS56GN6TVTSEV713DWQ=multipleconnection-principles-more-than-one-destination h_01H8Y0DGS5588GQPZT7MQ686T3=procedures h_01H8Y0DGS57YK2PZ9ENZ80EWRJ=set-up-data-locker h_01H8Y0DGS5SYZRWFAXDSKE3YHX=additional-information h_01H8Y0DGS540HK8MSCFYT9Q1RM=traits-and-limitations h_01H8Y0DGS55PJ7HV1PQ72XDDAB=troubleshooting" />
+<div data-zendesk-anchors="data-locker-for-partners=data-locker-para-partners h_01H8Y0DGS4Y2N99YNYEEJA6RSF=data-locker-para-partners h_01H8Y0DGS4EM06PYNS1DRMZM6Y=data-locker-features h_01H8Y0DGS4A0MYGVZ9XQ49EBT2=reports-available-for-partners data-storage-architecture=arquitectura-de-almacenamiento-de-datos h_01H8Y0DGS4WTAJV7QE2DX3VGBP=arquitectura-de-almacenamiento-de-datos h_01H8Y0DGS4BQHBKNHZ4CD9ZMT4=overview h_01H8Y0DGS43JAREX23YX1F125K=folder-structure h_01H8Y0DGS524WNXY63351XGJKA=data-files h_01H8Y0DGS5MV6J1MMJJS8G4HC4=storage-options notice-to-security-officers=aviso-a-los-responsables-de-seguridad h_01H8Y0DGS5R4QX01WBK2S33QP5=aviso-a-los-responsables-de-seguridad h_01H8Y0DGS56GN6TVTSEV713DWQ=multipleconnection-principles-more-than-one-destination procedures=procedimientos h_01H8Y0DGS5588GQPZT7MQ686T3=procedimientos h_01H8Y0DGS57YK2PZ9ENZ80EWRJ=set-up-data-locker additional-information=informaci%C3%B3n-adicional h_01H8Y0DGS5SYZRWFAXDSKE3YHX=informaci%C3%B3n-adicional h_01H8Y0DGS540HK8MSCFYT9Q1RM=traits-and-limitations h_01H8Y0DGS55PJ7HV1PQ72XDDAB=troubleshooting" />

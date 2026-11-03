@@ -1,5 +1,5 @@
 ---
-title: Cost-sharing options for ad networks
+title: Opciones de costos compartidos para redes publicitarias
 metadata:
   keywords:
     - clicks
@@ -17,42 +17,41 @@ x-zendesk:
     - ROI360
     - Ad Networks
   created_at: '2020-09-07T13:50:24Z'
-  edited_at: '2024-05-22T12:07:38Z'
+  edited_at: '2026-08-12T12:27:58Z'
   id: 360012893658
-  locale: en-us
+  locale: es
   section: Cost sharing for ad networks
   section_id: 6551141756177
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360012893658-Cost-sharing-options-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/360012893658
 ---
-> **At a glance:** Compare cost-sharing methods available to AppsFlyer ad network partners.
+> **En resumen:** Compara los métodos de costos compartidos disponibles para los partners de la red publicitaria de AppsFlyer.
 
-## Sharing cost with AppsFlyer and advertisers
+## Costo compartido con AppsFlyer y anunciantes
 
-Advertisers use AppsFlyer as their source of truth for ROI, billing, and to make marketing budget allocation decisions. For networks to be visible, sharing cost data with AppsFlyer is a must. Networks with no cost data appear at the bottom of the AppsFlyer dashboard list.
+Los anunciantes utilizan AppsFlyer como fuente de confianza para el ROI, la facturación y para tomar decisiones de asignación del presupuesto de marketing. Para que las redes sean visibles, es imprescindible compartir datos de costos con AppsFlyer. Las redes sin datos de costo aparecen en la parte inferior de la lista del dashboard de AppsFlyer.
 
-Ad networks share cost with AppsFlyer using any of the following: 
+Las redes publicitarias comparten costos con AppsFlyer utilizando cualquiera de los siguientes: 
 
-* **InCost API**: Push data to AppsFlyer
-* **Cost API**: AppsFlyer pulls data
-* **Cost Import**: Cost data files are uploaded/sent to AppsFlyer
-* **Cost by click:** Networks report cost each time an attribution link is clicked
+* **InCost API**: Envía datos a AppsFlyer
+* **Cost API**: AppsFlyer extrae datos
+* **Importación de costos**: Los archivos de datos de costos se cargan/envían a AppsFlyer
+* **Costo por clic:** Las redes reportan el costo cada vez que se hace clic en un enlace de atribución
 
-### Cost badge for ad networks
+### Indicador de costo para redes publicitarias
 
 ![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
 
-* A cost badge displays in the <Anchor target="_blank" href="/marketers/docs/partner-integrations#partner-details-and-performance">partner details page</Anchor> highlighting partners using the InCost or Cost API.
-* The badge certifies that the partner as a cost-capable partner.
-* Internal analytics and extensive user surveys show that advertisers are always on the lookout for new partners. Those with a cost badge are more likely to stand out, as advertisers want to understand their marketing performance based on ROI analysis.
+* Se muestra un indicador de costo en la <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#partner-details-and-performance">página de detalles del partner</Anchor> que destaca a los partners que utilizan InCost o Cost API.
+* Esto certifica que es un partner con capacidad de costos.
+* Los análisis internos y las extensas encuestas a los usuarios muestran que los anunciantes siempre están buscando nuevos partners. Aquellos con un indicador de costo tienen más probabilidades de destacarse, ya que los anunciantes quieren comprender su desempeño de marketing basándose en el análisis del ROI.
 
-### Reporting cost options available to ad networks
+### Opciones de reporte de costos disponibles para las redes publicitarias
 
-| Option | Qualify for a cost badge | Option characteristics |
+| Opción | Calificar para un indicador de costo | Características de la opción |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/partners/docs/incost-api-for-ad-networks">InCost API</Anchor> | ✓ | The ad network has full ownership of when to set up InCost reporting.<br /><br />InCost has the following features:<ul><li>Supports all cost models</li><li>Accurate and reliable</li><li>Fully automated</li><li>Ad network partner controls:<ul><li>Data upload scheme</li><li>When to upload (data freshness rate)</li></ul></li><li>The advertiser grants permission in the AppsFlyer dashboard to the partner to upload cost data</li></ul>**Limitation**:<br /><br />AppsFlyer agency accounts aren't supported. |
-| Cost API | ✓ | <ul><li>Supports all cost models</li><li>Accurate</li><li>Partner retains some control over their cost data in AppsFlyer</li><li>Supports cost for agency accounts in AppsFlyer</li><li>Advertisers provide their partner credentials in the AppsFlyer dashboard</li><li>Data refresh rate: 6 times a day, every four hours</li></ul>**Limitation**:<br /><br />Integration is subject to AppsFlyer priorities. |
-| <Anchor target="_blank" href="/partners/docs/cost-import-for-ad-networks">Cost Import</Anchor><br /><br />(file upload) | No | <ul><li>The ad network partner:<ul><li>Uploads data manually if it does not have engineering resources to automate</li><li>Controls when to upload data</li><li>Retains some control over their cost data in AppsFlyer</li><li>Integration is per app. The advertiser grants permission in the AppsFlyer dashboard to the partner to upload cost data.</li><li>Matching to attribution data is based on campaign name (not campaign ID)</li></ul></li></ul>**Limitation**:<ul><li>AppsFlyer agency accounts aren't supported</li><li>Risk of failure if the upload is automated via email</li></ul> |
-| <Anchor target="_blank" href="/partners/docs/cost-reporting-on-the-attribution-link-for-ad-networks">Cost by click</Anchor><br /><br />(on the attribution link) | No | <ul><li>Quick solution for CPI campaigns</li><li>Near real-time</li><li>Cost by click can be less accurate if the advertiser uses SKAdNetwork</li></ul>**Limitation**:<ul><li>Limited to CPI cost model</li><li>If the wrong data is sent on the link, it can't be changed retroactively</li><li>Retargeting not supported</li><li>Cost reported by click is displayed in the SKAdNework dashboard when available</li></ul> |
+| <Anchor target="_blank" href="/partners/es/docs/incost-api-for-ad-networks">API InCost</Anchor> | ✓ | La red publicitaria tiene plena propiedad sobre cuándo configurar los reportes InCost.<br /><br />InCost tiene las siguientes características:<ul><li>Soporta todos los modelos de costos</li><li>Preciso y confiable</li><li>Completamente automatizado</li><li>Controles de partners de la red publicitaria:<ul><li>Esquema de upload de datos</li><li>Tasa de cuándo se hace el upload (actualización de los datos)</li></ul></li><li>El anunciante concede permiso en el dashboard de AppsFlyer al partner para cargar datos de costos</li></ul>**Limitación**:<br /><br />Las cuentas de agencia de AppsFlyer no son compatibles. |
+| Cost API | ✓ | <ul><li>Soporta todos los modelos de costos</li><li>Preciso</li><li>El partner conserva cierto control sobre sus datos de costos en AppsFlyer</li><li>Admite costos para cuentas de agencia en AppsFlyer</li><li>Los anunciantes proporcionan sus credenciales de partner en el dashboard de AppsFlyer</li><li>Frecuencia de actualización de datos: 6 veces al día, cada cuatro horas.</li></ul>**Limitación**:<br /><br />La integración está sujeta a las prioridades de AppsFlyer. |
+| <Anchor target="_blank" href="/partners/es/docs/cost-import-for-ad-networks">Importación de costos</Anchor><br /><br />(Subir archivo) | No | <ul><li>El partner de la red publicitaria:<ul><li>Carga datos manualmente si no tiene recursos de ingeniería para automatizar</li><li>Controla cuándo cargar datos</li><li>Mantiene cierto control sobre sus datos de costos en AppsFlyer</li><li>La integración es por aplicación. El anunciante proporciona permiso en el dashboard de AppsFlyer al partner para cargar datos de costos.</li><li>La coincidencia con los datos de atribución se basa en el nombre de la campaña (no en el ID de la campaña).</li></ul></li></ul>**Limitación**:<ul><li>Las cuentas de agencia de AppsFlyer no son compatibles</li><li>Riesgo de fallo si la carga se automatiza por correo electrónico</li></ul> |
+| <Anchor target="_blank" href="/partners/es/docs/cost-reporting-on-the-attribution-link-for-ad-networks">Costo por clic</Anchor><br /><br />(en el enlace de atribución) | No | <ul><li>Solución rápida para campañas de CPI</li><li>Casi en tiempo real</li><li>El costo por clic puede ser menos preciso si el anunciante utiliza SKAdNetwork</li></ul>**Limitación**:<ul><li>Limitado al modelo de costos CPI</li><li>Si se envían datos incorrectos en el enlace, no se pueden cambiar retroactivamente</li><li>Retargeting no compatible</li><li>El costo reportado por clic se muestra en el dashboard de SKAdNework cuando esté disponible</li></ul> |
 
-<div data-zendesk-anchors="h_01HN0A1ER3MNZM508ZCG9KP26P=sharing-cost-with-appsflyer-and-advertisers h_01HN0A1ER4K1V4479W5SXCEC30=cost-badge-for-ad-networks h_01HN0A1ER4Y128ZHJERXS6A8ET=reporting-cost-options-available-to-ad-networks" />
+<div data-zendesk-anchors="sharing-cost-with-appsflyer-and-advertisers=costo-compartido-con-appsflyer-y-anunciantes h_01HN0A1ER3MNZM508ZCG9KP26P=costo-compartido-con-appsflyer-y-anunciantes cost-badge-for-ad-networks=indicador-de-costo-para-redes-publicitarias h_01HN0A1ER4K1V4479W5SXCEC30=indicador-de-costo-para-redes-publicitarias reporting-cost-options-available-to-ad-networks=opciones-de-reporte-de-costos-disponibles-para-las-redes-publicitarias h_01HN0A1ER4Y128ZHJERXS6A8ET=opciones-de-reporte-de-costos-disponibles-para-las-redes-publicitarias" />

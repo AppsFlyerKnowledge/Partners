@@ -1,5 +1,5 @@
 ---
-title: Attribution link specification for ad networks
+title: Especificación de enlaces de atribución para redes de publicidad
 metadata:
   keywords:
     - Ad Networks
@@ -13,83 +13,82 @@ x-zendesk:
     - Ad Networks
     - Data Management
   created_at: '2021-12-06T10:31:00Z'
-  edited_at: '2024-09-22T11:01:40Z'
+  edited_at: '2026-08-12T12:28:17Z'
   id: 4412938154513
-  locale: en-us
+  locale: es
   section: Provide data
   section_id: 6551209900817
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4412938154513-Attribution-link-specification-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/4412938154513
 ---
-> **At a glance:** Ad networks integrating with AppsFlyer specify their attribution link according to this article.
+> **En resumen:** Las redes de publicidad que se integran con AppsFlyer especifican su enlace de atribución como se describe en este artículo.
 
-## Attribution links for ad networks
+## Enlaces de atribución para redes de publicidad
 
-Attribution links are used to notify AppsFlyer that a user engaged with an ad by clicking it. In its simplest form, the attribution link is placed behind an ad so that when a user clicks on an ad they are clicking on an attribution link.
+Los enlaces de atribución se utilizan para notificar a AppsFlyer que un usuario interactuó con un anuncio al hacer clic en él. En su forma más simple, el enlace de atribución se coloca detrás de un anuncio, de modo que cuando un usuario hace clic en un anuncio, hace clic en un enlace de atribución.
 
-### Attribution model
+### Modelo de atribución
 
-What happens on the journey from a first click or impression to the attribution of an install or an event—and beyond.
+Qué sucede en la trayectoria desde un primer clic o impresión hasta la atribución de una instalación o un evento, y más allá.
 
 [![appsflyer-attribution-model-for-partners.png](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)
 
-1. A user clicks on a banner or an offer link.
-2. The banner or link redirects the user to an AppsFlyer attribution link. The AppsFlyer attribution link is then populated with information that is collected during the click.
-3. We gather the information from the attribution link and store it in our database.
-4. An install occurs and the app is opened for the first time. The AppsFlyer SDK inside the app calls our servers with the information about the device that the app is installed on.
-5. We match this data to our click database using our **Attribution methods**:
-   * **Referrer matching**  
-     This attribution method is unique to Android devices. When a user clicks on a link and gets redirected to Google Play, Google Play gives it a unique Referrer ID. When the install takes place, we collect this ID from the device. Then we match it with Google Play records.
-   * **Device ID matching**  
-     We match the Device ID (IDFA for the iOS or GAID for the Android device) collected upon the click to the ID of the device that performs the install.
-   * <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">**Probabilistic modeling**</Anchor>
+1. Un usuario hace clic en un banner o en un enlace de oferta.
+2. El banner o enlace redirige al usuario a un enlace de atribución de AppsFlyer. El enlace de atribución de AppsFlyer se completa con la información que se recopila durante el clic.
+3. Recopilamos la información del enlace de atribución y la almacenamos en nuestra base de datos.
+4. Se produce una instalación y la aplicación se abre por primera vez. El SDK de AppsFlyer dentro de la aplicación llama a nuestros servidores con la información sobre el dispositivo en el que está instalada la aplicación.
+5. Emparejamos estos datos con nuestra base de datos de clics usando nuestros **métodos de atribución**:
+   * **Coincidencia de referente**  
+     Este método de atribución es exclusivo de los dispositivos Android. Cuando un usuario hace clic en un enlace y es redirigido a Google Play, Google Play le otorga un ID de referente único. Cuando se realiza la instalación, recopilamos este ID del dispositivo. Luego lo emparejamos con los registros de Google Play.
+   * **Coincidencia de ID de dispositivo**  
+     Emparejamos el ID del dispositivo (IDFA para dispositivos iOS o GAID para dispositivos Android) recopilado al hacer clic con el ID del dispositivo que realiza la instalación.
+   * <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#probabilistic-modeling">**Modelado probabilístico**</Anchor>
 
-   More about <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">attribution methods</Anchor>.
+   Más información sobre los <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">métodos de atribución</Anchor>.
 
-   We look for the referrer, device ID, and probabilistic modeling data points (in that order) in our click database. If we find a match, we attribute the install to the click. If not, we attribute the install to an organic download.
-6. Once the install is attributed, we send a postback with the conversion details to the ad network.
+   Buscamos el referente, el ID del dispositivo y los puntos de datos de modelado probabilístico (en ese orden) en nuestra base de datos de clics. Si encontramos una coincidencia, atribuimos la instalación al clic. Si no, atribuimos la instalación a una descarga orgánica.
+6. Una vez que se atribuye la instalación, enviamos un postback con los detalles de la conversión a la red de publicidad.
 
-As it follows from this flow, we use attribution links to get information from you, and postbacks to send the information back to you.
+Como se desprende de este flujo, utilizamos enlaces de atribución para obtener información sobre ti y postbacks para enviarte la información de vuelta.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> If you use third-party performance marketing tools such as TUNE, CAKE, or Affise, see <Anchor target="_blank" href="/partners/docs/platforms-for-ad-networks">platform-specific instructions</Anchor>.
+> Si utilizas herramientas de marketing de rendimiento de terceros, como TUNE, CAKE o Affise, consulta las <Anchor target="_blank" href="/partners/es/docs/platforms-for-ad-networks">instrucciones específicas de la plataforma</Anchor>.
 
-### Attribution link template
+### Plantilla de enlace de atribución
 
-The attribution link (the link behind the banner/offer) can look like this:
+El enlace de atribución (el enlace detrás del banner/oferta) puede tener este aspecto:
 
 ```http
 https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={clickid}&advertising_id={gaid}&af_siteid={affiliate_id}&af_cost_model=CPI&af_cost_value={cost_value}&af_cost_currency={currency}&c={Campaign}&af_ad_type={AdType}&af_adset={Adset}&af_ad={Ad}&is_incentivized={true\false}&expires={timestamp}&signature={signature}
 ```
 
-`https://app.appsflyer.com/` is the AppsFlyer endpoint, `com.yourapp` is App ID, and `pid=mediaName_int` is a unique media source name that we assign to your Ad Network.
+`https://app.appsflyer.com/` es el punto de conexión de AppsFlyer, `com.yourapp` es el ID de la aplicación y `pid=mediaName_int` es un nombre de fuente de medios único que asignamos a tu red de publicidad.
 
-This part of the link is static and doesn’t require anything from you.
+Esta parte del enlace es estática y no requiere nada de tu parte.
 
-Link structure explanation:
+Explicación de la estructura del enlace:
 
-* The values after ‘=’ inside `{} are macros populated by you when the click takes place and gets sent to AppsFlyer. When you prepare your template, replace the value in brackets {}` with your parameter names.
-* Macro naming has no significance provided that your system replaces them with the actual and correct values. The parameters before the ‘=’ sign are placeholders used by AppsFlyer so we know which values you are sending us.
-* To integrate with AppsFlyer, send us the attribution link template by email with your macro names.
+* Los valores después de '=' dentro de `{} son macros que completas cuando se realiza el clic y se envía a AppsFlyer. Cuando prepares tu plantilla, reemplaza el valor entre corchetes {}` con los nombres de tus parámetros.
+* Los nombres de las macros no tienen importancia siempre que tu sistema los reemplace con los valores reales y correctos. Los parámetros antes del signo '=' son marcadores de posición utilizados por AppsFlyer para que sepamos qué valores nos envías.
+* Para integrar con AppsFlyer, envíanos la plantilla de enlace de atribución por correo electrónico con los nombres de tus macros.
 
-Regard the parameters listed in the table that follows as the recommended minimum. We support a larger set of parameters. You should share with us as much information on the click as you collect. See the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">list of attribution link parameters</Anchor>.
+Considera los parámetros enumerados en la tabla siguiente como el mínimo recomendado. Admitimos un conjunto más amplio de parámetros. Deberías compartir con nosotros tanta información sobre el clic como recopiles. Consulta la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-del-enlace-de-atribución">lista de parámetros de enlaces de atribución</Anchor>.
 
-#### Recommended minimum attribution link parameters
+#### Parámetros mínimos recomendados del enlace de atribución
 
-| Parameter | Description |
+| Parámetro | Descripción |
 | --- | --- |
-| `&clickid={clickid}` | Click ID is a unique click identifier for each click that happens on your ad network. |
-| `&advertising_id={gaid}` or  <br />`&idfa={IDFA}` | The device ID of the device on which the click takes place (GAID for Android and IDFA for Apple). |
-| `&c={campaign}` | The campaign name, as defined by the advertiser. |
-| `&af_siteid={publisher_id}` | Publisher or affiliate ID of the publisher or affiliate that drove the click. If IDFV is used to identify the event (IDFV can be used<br />for this purpose only in cross-promotion campaigns) use the app store<br />ID as the parameter value (without hashing). Failing to do so, will<br />cause the event not to be attributed. |
-| `&af_ad_type={search_text}` | Ad Type. You can use one of the following name conventions:  <br />search\_text  <br />banner  <br />interstitial  <br />video  <br />rewarded\_video  <br />playable  <br />sponsored\_content  <br />audio |
-| `&af_adset={adsetid}` | Adset Name - provided by the advertiser/publisher. Adset is an intermediate level in the hierarchy between Campaign and Ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">See more</Anchor> |
-| `&af_ad={ad_id}` | Ad Name (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">see more</Anchor>) - provided by the advertiser/publisher |
-| `&is_incentivized={true}` | Incentivized or non-incentivized campaigns (can be true/false) |
-| `&af_cost_value={cost_value}` | Conversion Cost Value - supports up to 4 digits after the decimal point.  <br />Make sure to use ONLY numerical digits (use the decimal point if needed), e.g., "56", "2.85" etc. |
-| `&af_cost_currency={currency}` | Cost Currency — currency code (e.g. USD, EUR). The default value is USD.  <br /><Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">List of currency codes</Anchor>. |
-| `&expires={timestamp}` | Unix timestamp after which the ad network doesn't claim the click. Used for click signing to prevent click fraud. <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">Learn more</Anchor> |
-| `&signature={signature}` | HMAC-SHA256 signature used to validate the click and prevent fraud. <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">Learn more</Anchor> |
+| `&clickid={clickid}` | El ID de clic es un identificador de clic único para cada clic que ocurre en tu red de publicidad. |
+| `&advertising_id={gaid}` o  <br />`&idfa={IDFA}` | El ID del dispositivo en el que se realiza el clic (GAID para Android e IDFA para Apple). |
+| `&c={campaign}` | El nombre de la campaña, tal como lo define el anunciante. |
+| `&af_siteid={publisher_id}` | ID del publisher o afiliado que realizó el clic. |
+| `&af_ad_type={search_text}` | Tipo de anuncio. Puedes utilizar una de las siguientes convenciones de nombres:  <br />search\_text  <br />banner  <br />interstitial  <br />video  <br />rewarded\_video  <br />playable  <br />sponsored\_content  <br />audio |
+| `&af_adset={adsetid}` | Nombre del anuncio: proporcionado por el anunciante/publisher. El conjunto de anuncios representa un nivel intermedio en la jerarquía entre campaña y anuncio. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#niveles-de-granularidad-de-datos">Ver más</Anchor> |
+| `&af_ad={ad_id}` | Nombre de anuncio (<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#niveles-de-granularidad-de-datos">ver más</Anchor>): provisto por el anunciante/publisher. |
+| `&is_incentivized={true}` | Campañas incentivadas o no incentivadas (pueden ser true/false) |
+| `&af_cost_value={cost_value}` | Valor de costo de conversión: admite hasta 4 dígitos después del punto decimal.  <br />Asegúrate de utilizar ÚNICAMENTE dígitos numéricos (utiliza el punto decimal si es necesario), por ejemplo, "56", "2.85", etc. |
+| `&af_cost_currency={currency}` | Divisa de costo: código de divisa (por ejemplo, USD, EUR). El valor predeterminado es USD.  <br /><Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">Lista de códigos de divisa</Anchor>. |
+| `&expires={timestamp}` | Marca de tiempo de Unix después de la cual la red de publicidad no reclama el clic. Se utiliza para firmar los clics para evitar el fraude de clics. <Anchor target="_blank" href="/partners/es/docs/click-signing-for-ad-networks">Saber más</Anchor> |
+| `&signature={signature}` | Firma HMAC-SHA256 utilizada para validar el clic y evitar fraudes. <Anchor target="_blank" href="/partners/es/docs/click-signing-for-ad-networks">Saber más</Anchor> |
 
-<div data-zendesk-anchors="01H8GPNM9XTR602BWRBQ5JV8DT=attribution-links-for-ad-networks 01H8GPNM9XSKS66F02GZQKK8E8=attribution-model 01H8GPNM9XBCVVXZ5HFKQZQ79D=note 01H8GPNM9XS4JE8B1F6TJGKSBR=attribution-link-template 01H8GPNM9XD0GASJ93PNDGMDE8=recommended-minimum-attribution-link-parameters" />
+<div data-zendesk-anchors="attribution-links-for-ad-networks=enlaces-de-atribuci%C3%B3n-para-redes-de-publicidad 01H8GPNM9XTR602BWRBQ5JV8DT=enlaces-de-atribuci%C3%B3n-para-redes-de-publicidad attribution-model=modelo-de-atribuci%C3%B3n 01H8GPNM9XSKS66F02GZQKK8E8=modelo-de-atribuci%C3%B3n 01H8GPNM9XBCVVXZ5HFKQZQ79D=nota attribution-link-template=plantilla-de-enlace-de-atribuci%C3%B3n 01H8GPNM9XS4JE8B1F6TJGKSBR=plantilla-de-enlace-de-atribuci%C3%B3n recommended-minimum-attribution-link-parameters=par%C3%A1metros-m%C3%ADnimos-recomendados-del-enlace-de-atribuci%C3%B3n 01H8GPNM9XD0GASJ93PNDGMDE8=par%C3%A1metros-m%C3%ADnimos-recomendados-del-enlace-de-atribuci%C3%B3n" />

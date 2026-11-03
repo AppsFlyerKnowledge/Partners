@@ -1,5 +1,5 @@
 ---
-title: Voluum integration with AppsFlyer
+title: Integración de Voluum con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -16,73 +16,72 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2016-01-11T14:46:09Z'
-  edited_at: '2026-05-04T09:31:48Z'
+  edited_at: '2026-08-12T12:30:48Z'
   id: 207274016
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207274016-Voluum-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207274016
 ---
-> **At a glance:** Ad networks that use Voluum can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
+> **De un vistazo:** Las ad networks que usan Voluum pueden utilizar la solución de Modelado probabilístico de AppsFlyer para recibir Datos de atribución sobre instalaciones y eventos in-app.
 
-## Starting the integration
+## Comenzar la integración
 
-To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
+Para comenzar la integración, debes enviar a AppsFlyer tanto el enlace de atribución como el postback para fines de generación de reportes.
 
-Below you can find the base attribution link with a detailed explanation per each parameter:
+A continuación tienes el enlace de atribución base con una explicación detallada de cada parámetro:
 
 `https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}`
 
-| AppsFlyer Base URL | Description |
+| URL base de AppsFlyer | Descripción |
 | --- | --- |
-| https://app.appsflyer.com | AppsFlyer End-Point |
-| app\_id | Application Unique ID - Dynamic value changed per app promoted |
-| pid= | Media source name include **\_int** to identify **integrated** network at AppsFlyer servers |
-| c= | Campaign name |
+| https://app.appsflyer.com | Punto de conexión de AppsFlyer |
+| id\_aplicación | ID único de la aplicación: el valor dinámico cambiado por cada aplicación promocionada |
+| pid= | El nombre de la fuente de medios incluye **\_int** para identificar la red **integrada** en los servidores de AppsFlyer |
+| c= | Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. |
 
-**Recommended Attribution Link Parameters:**
+**Parámetros recomendados de los enlaces de atribución:**
 
-| AppsFlyer Parameter | Voluum Macros | Description |
+| Parámetro de AppsFlyer | Macros de volumen | Nota |
 | --- | --- | --- |
-| &clickid= | `{clickid}` | Unique transaction ID of the user session - **Required** |
-| &af\_siteid= | `{trafficsource.id}` | ID of the traffic source - **Optional** |
+| &clickid= | `{clickid}` | ID de transacción único de la sesión del usuario: **obligatorio** |
+| &af\_siteid= | `{trafficsource.id}` | ID de la fuente de tráfico: **opcional** |
 
-** For complete AppsFlyer parameter list, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">click here</Anchor>
+** Para obtener la lista completa de parámetros de AppsFlyer, <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">haz clic aquí</Anchor>
 
-** For complete Voluum macro list, <Anchor target="_blank" href="http://feedback.voluum.com/knowledgebase/articles/318681-click-urls">click here</Anchor>
+** Para obtener la lista completa de macros de Voluum, <Anchor target="_blank" href="http://feedback.voluum.com/knowledgebase/articles/318681-click-urls">haz clic aquí</Anchor>
 
-### Complete attribution link template
+### Plantilla de enlace de atribución completa
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
 
-### Install and in-app event postbacks
+### Postbacks de instalaciones y eventos in-app
 
-Global Install Postback:
+Postback de instalación global:
 
 ```http
 https://{Company-Domain}.voluumtrk.com/postback?cid={clickid}
 ```
 
-Global In-App Event Postback:
+Postback de evento in-app global:
 
 ```http
 https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary}&txid={event-name}
 ```
 
-** `{Company-Domain}` the network ID (domain) name provided by Volumm.  
-** txid= Set as **Event Tag** in the AppsFlyer dashboard for each App by the advertiser. This is the actual in-app event name from the application.
+** `{Company-Domain}` es el nombre del ID de red (dominio) proporcionado por Voluum.  
+** txid= Se configura como **Event Tag** en el dashboard de AppsFlyer para cada App por parte del anunciante. Este es el nombre real del evento in-app de la aplicación.
 
-### AppsFlyer's in-app event dashboard
+### Panel de control de eventos in-app de AppsFlyer
 
-![Voluum_msc_new_1.png](https://files.readme.io/bb58ccaabf1eb8d615288d259102b3dc7883c5c79448131c67374ad8fbdaf6c0-360002325069.png)  
-** Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, etc.
+![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
+** Se puede agregar información de atribución adicional al postback mediante solicitud, como el código de país, ID de publicidad, IDFA, etc.
 
-## Finalizing your registration
+## Finalizando tu registro
 
-* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
+* Si tienes una integración con AppsFlyer, ponte en contacto con nosotros usando el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
+* Si no tienes una integración con AppsFlyer, completa la solicitud de registro de anuncios Partners <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">aquí</Anchor>.
 
-<div data-zendesk-anchors="01JFT0VZZ5KVMKYRD222JT55NH=starting-the-integration 01JFT0VZZ7B1RRY82B65GWF4P7=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT0VZZ86KYXSVE1QBD2V0HF=install-and-in-app-event-postbacks appsflyers-inapp-event-dashboard=appsflyers-in-app-event-dashboard 01JFT0VZZ9A4JWG38KPH0CNQ72=appsflyers-in-app-event-dashboard 01JFT0VZZATFYY75QPCPKZF3S6=finalizing-your-registration" />
+<div data-zendesk-anchors="starting-the-integration=comenzar-la-integraci%C3%B3n 01JFT0VZZ5KVMKYRD222JT55NH=comenzar-la-integraci%C3%B3n complete-attribution-link-template=plantilla-de-enlace-de-atribuci%C3%B3n-completa 01JFT0VZZ7B1RRY82B65GWF4P7=plantilla-de-enlace-de-atribuci%C3%B3n-completa install-and-inapp-event-postbacks=postbacks-de-instalaciones-y-eventos-in-app 01JFT0VZZ86KYXSVE1QBD2V0HF=postbacks-de-instalaciones-y-eventos-in-app appsflyers-inapp-event-dashboard=panel-de-control-de-eventos-in-app-de-appsflyer 01JFT0VZZ9A4JWG38KPH0CNQ72=panel-de-control-de-eventos-in-app-de-appsflyer finalizing-your-registration=finalizando-tu-registro 01JFT0VZZATFYY75QPCPKZF3S6=finalizando-tu-registro" />

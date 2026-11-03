@@ -1,5 +1,5 @@
 ---
-title: Data Locker reports for API partners
+title: Reportes de Data Locker para partners de marketing
 metadata:
   keywords:
     - Advertisers
@@ -15,52 +15,51 @@ x-zendesk:
     - Marketers
     - Data Locker
   created_at: '2023-01-08T11:32:00Z'
-  edited_at: '2026-03-10T08:28:05Z'
+  edited_at: '2026-08-12T12:27:27Z'
   id: 12000718524561
-  locale: en-us
+  locale: es
   section: Data Locker
   section_id: 6551591547409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/12000718524561-Data-Locker-reports-for-API-partners
+  url: https://support.appsflyer.com/hc/es/articles/12000718524561
 ---
-> **At a glance**: Reports listed in this article are available to you (API partners) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article.
+> **De un vistazo**: Los reportes enumerados en este artículo están disponibles para ti (partners de marketing) en tu Data Locker. Antes de que podamos compartir los datos contigo, el anunciante (propietario de la aplicación) debe concederte acceso a los datos tal y como se detalla en este artículo.
 
-## Data Locker reports for API partners
+## Reportes de Data Locker para partners de marketing
 
-To get reports you, the API partner must:
+Para obtener reportes, el partner de marketing debe:
 
-* Ensure that the advertiser has provided you with permission to <Anchor target="_blank" href="/partners/docs/access-to-aggregated-analytics-tools-for-api-partners#grant-permission-to-a-partner">access Aggregated analytics reporting</Anchor>.
-* <Anchor target="_blank" href="/partners/docs/data-locker-for-partners#set-up-data-locker">Set up Data Locker</Anchor>. **Note**: Skip steps 3-4.
+* Asegurarse de que el anunciante le haya dado permiso para <Anchor target="_blank" href="/partners/es/docs/access-to-aggregated-analytics-tools-for-api-partners#grant-permission-to-a-partner">acceder a reportes de analíticas agregadas</Anchor>.
+* <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners#set-up-data-locker">Configurar el Data Locker.</Anchor> **Nota**: Omite los pasos 3-4.
 
-The following reports are available to API partners: (daily)
+Los siguientes reportes están disponibles para los partners de marketing:
 
-* <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort unified</Anchor> (daily)
-* <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort user acquisition</Anchor> (daily)
-* <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort retargeting</Anchor> (daily)
-* <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">Advanced aggregated (versioned) reports</Anchor> are also available, with better data freshness.
+* <Anchor target="_blank" href="/marketers/es/docs/cohort-analytics-via-data-locker">Cohorte unificada</Anchor> (diario)
+* <Anchor target="_blank" href="/marketers/es/docs/cohort-analytics-via-data-locker">Adquisición de usuarios de cohorte</Anchor> (diario)
+* <Anchor target="_blank" href="/marketers/es/docs/cohort-analytics-via-data-locker">Retargeting de cohortes</Anchor>
+* También están disponibles los <Anchor target="_blank" href="/marketers/es/docs/advanced-aggregated-reports-in-data-locker">reportes avanzados agregados (versionados)</Anchor>, con una mejor actualización de los datos.
 
-Reports are streamed to the h=23 folder.
+los reportes se transmiten a la carpeta h=23.
 
 <div id="specifications-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Especificaciones y limitaciones">
 
-| Spec | Remarks |
+| Espec | Observaciones |
 | --- | --- |
-| Agency transparency | Not supported |
-| App-specific timezone | Available in advanced aggregated (versioned) reports |
-| App-specific currency | Yes |
-| Organic data | Available |
-| Non-organic data | Available |
-| Cost data | Not available |
-| Data freshness | <ul><li>For daily cohort reports:<ul><li>Reports are typically available by 10:00 UTC in the h=23 folder of the preceding day. For example, the report for data generated on Monday is in the Monday h=23 folder.</li><li>Exception: Ad revenue events have data freshness of Day 0+3. Meaning, ad revenue events in the Monday report occurred on Saturday.</li></ul></li><li>The first versioned reports are typically available by 06:00 UTC.</li></ul> |
+| Transparencia de Agencias | No se admite |
+| Zona horaria específica de la aplicación | Disponible en reportes avanzados agregados (versionados) |
+| Moneda específica de la aplicación | Sí |
+| datos orgánicos | Disponible |
+| Datos no orgánicos | Disponible |
+| Datos de costos | No disponible |
+| Actualización de los datos | <ul><li>Para los reportes diarios de cohortes:<ul><li>Estos reportes suelen estar disponibles a las 10:00 UTC en la carpeta h=23 del día anterior. Por ejemplo, el reporte de los datos generados durante el lunes se encuentra en la carpeta h=23 del lunes.</li><li>Excepción: Los eventos de ingresos por publicidad tienen una actualización de datos del Día 0+3. Es decir, los eventos de ingresos por publicidad en el reporte del lunes ocurrieron el sábado.</li></ul></li><li>[Beta] Los reportes versionados suelen estar disponibles antes de las 06:00 UTC.</li></ul> |
 
-Trait
+Caducado
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/partners/docs/access-to-aggregated-analytics-tools-for-api-partners">Aggregated analytics tools for API partners</Anchor>
+> * <Anchor target="_blank" href="/partners/es/docs/access-to-aggregated-analytics-tools-for-api-partners">Herramientas de analíticas agregadas para partners de marketing</Anchor>
 
-<div data-zendesk-anchors="data-locker-reports-for-marketing-partners=data-locker-reports-for-api-partners h_01HBZZ5BFJC82MW9JQ9MEX991S=data-locker-reports-for-api-partners h_01HBZZ5BFJYFH54X70RJ63CJCV=specifications-and-limitations h_01HE7RFGCZ65YJRX1VCND691CX=see-also" />
+<div data-zendesk-anchors="data-locker-reports-for-marketing-partners=reportes-de-data-locker-para-partners-de-marketing h_01HBZZ5BFJC82MW9JQ9MEX991S=reportes-de-data-locker-para-partners-de-marketing h_01HBZZ5BFJYFH54X70RJ63CJCV=specifications-and-limitations h_01HE7RFGCZ65YJRX1VCND691CX=consulta-tambi%C3%A9n" />

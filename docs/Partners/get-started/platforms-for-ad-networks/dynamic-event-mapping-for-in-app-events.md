@@ -1,5 +1,5 @@
 ---
-title: Dynamic event mapping for in-app events
+title: Asignación dinámica de eventos para eventos in-app
 metadata:
   keywords:
     - In-App
@@ -16,43 +16,44 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2016-05-26T08:48:23Z'
-  edited_at: '2023-05-14T14:09:20Z'
+  edited_at: '2026-08-12T12:30:18Z'
   id: 208996726
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/208996726-Dynamic-event-mapping-for-in-app-events
+  url: https://support.appsflyer.com/hc/es/articles/208996726
 ---
-> **At a glance:** Set up your attribution link so that your partners (such as TUNE or CAKE) can receive different postbacks for a single in-app event, based on Goal IDs.
+> **De un vistazo:** Configura tu enlace de atribución para que tus Partners (como TUNE o CAKE) puedan recibir distintos postbacks para un único evento in-app, en función de los ID de objetivo.
 
-## Introduction
+## Introducción
 
-Different postbacks can be sent for an in-app event depending on the Goal ID.
+Se pueden enviar distintos postbacks para un evento in-app en función del ID de objetivo.
 
-This feature supports networks using HasOffers, CAKE, or other networks that want to receive different in-app event postbacks for a single SDK in-app event.
+Esta función es compatible con redes que usan HasOffers, CAKE u otras redes que quieren recibir distintos postbacks de evento in-app para un único evento in-app del SDK.
 
-On the Active Integrations page in the dashboard, advertisers map each of their SDK events to the preferred dynamic Event Tag for each partner. The event tag includes both in-app events and rejected in-app event postbacks.
+En la página Active Integrations del Dashboard, los anunciantes asignan cada uno de sus eventos del SDK a la etiqueta de evento dinámica preferida para cada Partner. La etiqueta del evento incluye tanto eventos in-app como postbacks de eventos in-app rechazados.
 
-This enables ad networks to open multiple campaigns with a separate dynamic event tag (example: HasOffers calls this goal\_id) for each campaign. The dynamic event tags are then passed to the ad network in the postback based on the value that was placed in the click URL.
+Esto permite a las Ad network abrir varias campañas con una etiqueta de evento dinámica independiente (por ejemplo, HasOffers llama a esto goal\_id) para cada campaña. A continuación, las etiquetas de evento dinámicas se pasan a la Ad network en el postback en función del valor que se colocó en la URL de clic.
 
-## Attribution link
+## Enlace de atribución
 
-> 📄 **Attribution Link Example**
+> 📄 **Ejemplo de enlace de atribución**
 >
-> **Decoded**:
+> **Decodificado**:
 >
 > ```http
 > https://app.appsflyer.com/com.xyz.abc?pid=mediasource_int&clickid={transaction_id}
 > &goalid_1={XXX}&goalid_2={YYY}
 > ```
 
-The advertiser must map all of the goal\_ids in the in-app events section (see below) according to the network's instructions.
+El anunciante debe asignar todos los goal\_id en la sección de eventos in-app (consulta más abajo) según las instrucciones de la red.
 
-In the example below, level20\_finished is mapped as $$click(goalid\_1) and level25\_finished is mapped as $$click(goalid\_2).
+En el ejemplo siguiente, level20\_finished se asigna como $$click(goalid\_1) y level25\_finished se asigna como $$click(goalid\_2).
 
-When the app user completes level 20, AppsFlyer returns to the relevant value (in this case XXX as it appears in the attribution link above) and sends it in the postback.
+Cuando el usuario de la aplicación completa el nivel 20, AppsFlyer recupera el valor correspondiente (en este caso, XXX, tal como aparece en el enlace de atribución anterior) y lo envía en el postback.
 
-If the same or a different user then completes level 25 AppsFlyer again returns to the attribution link and dynamically populates the goal\_id with the relevant value (in this case YYY) and sends it in the postback.
+Si ese mismo usuario u otro completa después el nivel 25, AppsFlyer vuelve a consultar el enlace de atribución, rellena dinámicamente el goal\_id con el valor correspondiente (en este caso, YYY) y lo envía en el postback.
 
 ![Goadid.png](https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png)
+
+<div data-zendesk-anchors="introduction=introducci%C3%B3n attribution-link=enlace-de-atribuci%C3%B3n" />

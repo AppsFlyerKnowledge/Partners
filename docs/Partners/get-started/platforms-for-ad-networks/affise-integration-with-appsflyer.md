@@ -1,5 +1,5 @@
 ---
-title: Affise integration with AppsFlyer
+title: Integración de Affise con AppsFlyer
 metadata:
   keywords:
     - Integration
@@ -18,79 +18,78 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2016-04-19T12:08:58Z'
-  edited_at: '2024-12-23T15:05:34Z'
+  edited_at: '2026-08-12T12:30:10Z'
   id: 208537116
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/208537116-Affise-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/208537116
 ---
-> **At a glance:** Ad networks that use Affise can utilize the AppsFlyer probabilistic modeling solution to receive attribution data about installs and in-app events.
+> **De un vistazo:** Las ad networks que utilizan Affise pueden usar la solución de modelado probabilístico de AppsFlyer para recibir datos de atribución sobre instalaciones y eventos in-app.
 
-To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
+Para comenzar la integración, debes enviar a AppsFlyer tanto el enlace de atribución como el postback para fines de generación de reportes.
 
-## Base attribution link
+## Enlace de atribución de base
 
-Below you can find the base attribution link with a detailed explanation per each parameter:
+A continuación tienes el enlace de atribución base con una explicación detallada de cada parámetro:
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}&af_c_id={offerid}
 ```
 
-**Obligatory Attribution Link Parameters**
+**Parámetros obligatorios del enlace de atribución**
 
-| AppsFlyer Parameter | Affise Macros | Description |
+| Parámetro de AppsFlyer | Macros de Affise | Descripción |
 | --- | --- | --- |
-| clickid | `{clickid}` | Request ID of each user session |
-| af\_siteid | `{pid}` | ID of the affiliate promoting the offer |
-| af\_c\_id | `{offer_id}` | ID of the offer |
+| clickid | `{clickid}` | ID de solicitud de cada sesión de usuario |
+| af\_siteid | `{pid}` | ID del afiliado que promociona la oferta |
+| af\_c\_id | `{offer_id}` | ID de la oferta |
 
-For a complete AppsFlyer parameter list <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">click here</Anchor>.
+Para obtener la lista completa de parámetros de AppsFlyer, <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">haz clic aquí</Anchor>.
 
-## Complete attribution link template
+## Plantilla de enlace de atribución completa
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}
 ```
 
-## Install and in-app event postbacks
+## Postbacks de instalaciones y eventos in-app
 
-The following are examples of Install and In-App Event Postbacks:
+A continuación, se muestran ejemplos de postbacks de instalación y de eventos in-app:
 
-### Global install postback iOS
+### Postback de instalación global iOS
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}
 ```
 
-### Global install postback Android
+### Postback de instalación global Android
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
 
-### Global in-app event postback iOS
+### Postback de evento in-app global iOS
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}&goal={event-name}
 ```
 
-### Global in-app event postback Android
+### Postback de evento in-app global Android
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}&goal={event-name}
 ```
 
-Domain.com is the network ID (domain) name provided by Affise.
+Domain.com es el nombre del ID de red (dominio) proporcionado por Affise.
 
-e= Set as **Event Name** in the AppsFlyer dashboard for each App by the advertiser - This is the actual in-app event name from the application.
+e= Se establece como **Event Name** en el dashboard de AppsFlyer para cada app por parte del anunciante. Este es el nombre real del evento in-app de la aplicación.
 
-Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA etc.
+Se puede agregar información de atribución adicional al postback mediante solicitud, como el código de país, ID de publicidad, IDFA, etc.
 
-## Finalizing your registration
+## Finaliza tu registro
 
-* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
+* Si tienes una integración con AppsFlyer, ponte en contacto con nosotros usando el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
+* Si no tienes una integración con AppsFlyer, completa la solicitud de registro de ad Partners <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">aquí</Anchor>.
 
-<div data-zendesk-anchors="01JFT0RZG0F67JFBC7W5KK54BM=base-attribution-link 01JFT0RZG2QTT3Z9S6SVNV5VE7=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT0RZG3C7MBBYFKA6W813PF=install-and-in-app-event-postbacks 01JFT0RZG3HM9P81XYGKHZXHFK=global-install-postback-ios 01JFT0RZG4JCDP8D4CWQW02AY7=global-install-postback-android global-inapp-event-postback-ios=global-in-app-event-postback-ios 01JFT0RZG40N0VNNVMDBFYNT9E=global-in-app-event-postback-ios global-inapp-event-postback-android=global-in-app-event-postback-android 01JFT0RZG4PA9WTP212AX52QWZ=global-in-app-event-postback-android 01JFT0RZG52JW6C5GR0KA4CZF6=finalizing-your-registration" />
+<div data-zendesk-anchors="base-attribution-link=enlace-de-atribuci%C3%B3n-de-base 01JFT0RZG0F67JFBC7W5KK54BM=enlace-de-atribuci%C3%B3n-de-base complete-attribution-link-template=plantilla-de-enlace-de-atribuci%C3%B3n-completa 01JFT0RZG2QTT3Z9S6SVNV5VE7=plantilla-de-enlace-de-atribuci%C3%B3n-completa install-and-inapp-event-postbacks=postbacks-de-instalaciones-y-eventos-in-app 01JFT0RZG3C7MBBYFKA6W813PF=postbacks-de-instalaciones-y-eventos-in-app global-install-postback-ios=postback-de-instalaci%C3%B3n-global-ios 01JFT0RZG3HM9P81XYGKHZXHFK=postback-de-instalaci%C3%B3n-global-ios global-install-postback-android=postback-de-instalaci%C3%B3n-global-android 01JFT0RZG4JCDP8D4CWQW02AY7=postback-de-instalaci%C3%B3n-global-android global-inapp-event-postback-ios=postback-de-evento-in-app-global-ios 01JFT0RZG40N0VNNVMDBFYNT9E=postback-de-evento-in-app-global-ios global-inapp-event-postback-android=postback-de-evento-in-app-global-android 01JFT0RZG4PA9WTP212AX52QWZ=postback-de-evento-in-app-global-android finalizing-your-registration=finaliza-tu-registro 01JFT0RZG52JW6C5GR0KA4CZF6=finaliza-tu-registro" />

@@ -1,5 +1,5 @@
 ---
-title: Ad revenue signals for UA ad networks
+title: Señales de ingresos publicitarios para ad networks de UA
 metadata:
   keywords:
     - Ad Network
@@ -17,98 +17,97 @@ x-zendesk:
     - ROI360
     - Ad Networks
   created_at: '2021-06-21T13:39:13Z'
-  edited_at: '2026-05-14T15:36:34Z'
+  edited_at: '2026-08-12T12:27:19Z'
   id: 4402898251409
-  locale: en-us
+  locale: es
   section: Data Locker
   section_id: 6551591547409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4402898251409-Ad-revenue-signals-for-UA-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/4402898251409
 ---
-> **At a glance:** Ad networks responsible for user acquisition can receive data regarding ad revenue and use it to optimize their customers' UA campaigns.
+> **En resumen:** Las ad networks responsables por la adquisición de usuarios pueden recibir datos relativos a los ingresos por publicidad y utilizarlos para optimizar las campañas de UA de sus clientes.
 
-Ad networks can receive reports via Data Locker with valuable ad revenue information regarding users. These users may have been acquired from campaigns served through them, or they may be from a different media source.
+Las ad networks pueden recibir reportes a través de Data Locker con valiosa información sobre los ingresos publicitarios de los usuarios. Estos usuarios pueden haber sido adquiridos a partir de campañas servidas a través de ellas, o pueden proceder de una fuente de medios diferente.
 
-Ad networks can then ingest this data to campaign-targeting and optimization algorithms, and use it to improve ROAS campaigns based on a complete view of UA-generated revenue.
+A continuación, las ad networks pueden incorporar estos datos a los algoritmos de targeting y optimización de campañas, y utilizarlos para mejorar las campañas de ROAS basándose en una visión completa de los ingresos generados por UA.
 
-## Set the Ad Revenue report in Data Locker
+## Configuración del reporte de ingresos por publicidad en Data Locker
 
-The following activities need to be completed to access the Ad Revenue report in Data Locker:
+Para acceder al reporte de ingresos publicitarios en Data Locker, es necesario completar las siguientes actividades:
 
-* Ad networks have to <Anchor target="_blank" href="/partners/docs/data-locker-for-partners#set-up-data-locker">onboard to Data Locker for Partners</Anchor>.
-* Ad networks have to [configure the report output settings](#configure-the-report-output-settings) and [enable the Ad revenue report](#enable-the-ad-revenue-report).
-* Advertisers have to permit ad networks to view the report. <Anchor target="_blank" href="/marketers/docs/share-ad-revenue-data-with-partners#ua-signals-for-ad-networks">See advertiser instructions</Anchor>
+* Las ad networks deben realizar el <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners#set-up-data-locker">onboarding de Data Locker para partners</Anchor>.
+* Las ad networks deben [configurar los ajustes de salida del reporte](#configure-the-report-output-settings) y [habilitar el reporte de ingresos por publicidad](#enable-the-ad-revenue-report).
+* Los anunciantes deben permitir que las ad networks puedan ver el reporte. <Anchor target="_blank" href="/marketers/es/docs/share-ad-revenue-data-with-partners#ua-signals-for-ad-networks">Ver instrucciones para anunciantes</Anchor>
 
 <div id="configure-the-report-output-settings" />
 
-<Accordion title="Configure the report output settings">
+<Accordion title="Configuración de la salida de reportes">
 
-To configure the report output setting, follow the steps below:
+Para configurar la salida de reportes, sigue estos pasos:
 
-1. In AppsFlyer, go to **Report** > **Data Locker.**
-2. In the **Report output settings** area turn on **Send reports**.
-3. Set the report file output properties.
-   * The report format (Parqet/CSV).
-   * The report compression method (Snappy/GZIPO/Uncompressed).
-   * The maximum number of rows in a file.
-4. Review the expected path of the report file outputs. The path is set according to your connection settings. To learn how to set up the connection see <Anchor target="_blank" href="/partners/docs/data-locker-for-partners#set-up-data-locker">Set up Data Locker</Anchor>.
+1. En AppsFlyer, ve a **Reporte** > **Data Locker**.
+2. En el área de **Configuración de salida de reportes**, activa **Enviar reportes**.
+3. Establece las propiedades de salida del archivo de reporte.
+   * El formato del reporte (Parqet/CSV).
+   * El método de compresión del reporte (Snappy/GZIPO/Sin comprimir).
+   * Número máximo de filas de un archivo.
+4. Revisa la ruta esperada de las salidas del archivo de reporte. La ruta se establece en función de la configuración de tu conexión. Para saber cómo configurar la conexión, consulta <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners#set-up-data-locker">Configurar Data Locker</Anchor>.
 
 </Accordion>
 
 <div id="enable-the-ad-revenue-report" />
 
-<Accordion title="Enable the Ad revenue report">
+<Accordion title="Activación del reporte de ingresos por publicidad">
 
-1. In the **Data Locker content** section select the **Ad revenue [daily]** report type.
-2. Click **Save connection**.
-3. Make sure that the advertiser permitted the Ad network to view the report.
-4. For instruction, see <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">Permit ad networks to get ad revenue data.</Anchor>
+1. En la sección de **Contenido de Data Locker**, selecciona el tipo de reporte **Ingresos por publicidad [a diario].**
+2. Haz clic en **Guardar conexión**.
+3. Asegúrate de que el anunciante ha permitido a la ad network ver el reporte.
+4. Para obtener instrucciones, consulta <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">Permitir que las ad networks obtengan datos de ingresos por publicidad.</Anchor>
 
 </Accordion>
 
-## Report specification
+## Especificación del reporte
 
 <div id="report-considerations" />
 
-<Accordion title="Report structure and format">
+<Accordion title="Estructura y formato del reporte">
 
-* Format: Data arrives in CSV format to the UA partner's S3 bucket.
-* Level: Contains device-level dimensions and metrics.
-* Data enrichment: Includes ad revenue data from mediation partners, and adds attribution data relevant to the UA ad network (that is cleaned of all dimensions irrelevant to the UA ad network).
-* Data freshness: <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#ad-revenue">Daily, meaning data for Day 0 arrives on Day 1</Anchor>. Data is written daily at 17:00 <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">UTC time</Anchor> to the h=23 of your Data Locker bucket.
-* Apps included: A single report contains the data of all apps for which advertisers have granted permission.
-* The reports include data about all conversion types: Installs, re-attributions, re-engagements, and reinstalls.
-* Currency: In USD. Event revenue is calculated to USD on the day the event occurred.
-* <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSoV1U_pMUoTFhIpyYQmUI1zQWArY19c8gMmsfpRiAaGXVZEG4WqgSC26u5-fv32j8ZQN4uxtNgVkYs/pub?output=csv">See sample report</Anchor>
+* Formato: Los datos llegan en formato CSV al bucket S3 del partner de UA.
+* Nivel: Contiene dimensiones y métricas a nivel de dispositivo.
+* Enriquecimiento de datos: Incluye datos de ingresos publicitarios de partners de mediación y agrega datos de atribución relevantes para la ad network de UA (que se limpian de todas las dimensiones irrelevantes para la ad network de UA).
+* Actualización de datos: <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#ad-revenue">A diario, lo que significa que los datos del Día 0 llegan el Día 1</Anchor>. Los datos se escriben diariamente a las <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#daily">21:00 UTC</Anchor> en la h=23 de tu bucket de Data Locker.
+* Aplicaciones incluidas: Un único reporte contiene los datos de todas las aplicaciones para las que los anunciantes han concedido permiso.
+* Los reportes incluyen datos sobre todos los tipos de conversión: Instalaciones, re-engagements, re-atribuciones y reinstalaciones.
+* Moneda: En USD. Los ingresos por eventos se calculan en USD el día en que se produjo el evento.
+* <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSoV1U_pMUoTFhIpyYQmUI1zQWArY19c8gMmsfpRiAaGXVZEG4WqgSC26u5-fv32j8ZQN4uxtNgVkYs/pub?output=csv">Ver ejemplo de reporte</Anchor>
 
 </Accordion>
 
 <div id="report-structure" />
 
-<Accordion title="Report fields">
+<Accordion title="Campos del reporte">
 
-| **Field** | **Remarks** |
+| **Campo** | **Observaciones** |
 | --- | --- |
-| Version | Unix timestamp in second. Example: 1661315124 |
-| app\_id | App ID in the AppsFlyer platform |
-| install\_time | <ul><li>Timestamp of install: YYYY-MM-DD HH:MM:SS<br />Example: 2020-08-16 11:22:33</li><li>For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, install time is rounded to the nearest hour.</li></ul> |
-| campaign, campaign\_id, adset\_name, adset\_id, ad\_name, ad\_name, ad\_id, site\_id | Only populated if UA is attributed to the partner receiving the data. |
-| idfa, idfv, advertising\_id | <ul><li>The same device ID, like IDFA, IDFV, or advertiser\_id could display in multiple rows if there are more than one ad revenue monetization events.</li><li>For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display.</li></ul> |
-| platform | Device platform: iOS, Android, or Windows Mobile |
-| country | Country code using <Anchor target="_blank" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166 (alpha-2)</Anchor> Example: US, CN |
-| original\_url | <ul><li>For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display.</li><li>Only populated if UA is attributed to the partner receiving the data.</li></ul> |
+| Versión | Marca de tiempo de Unix en segundos. Ejemplo: 1661315124 |
+| id\_aplicación | ID de aplicación en la plataforma AppsFlyer |
+| hora\_de\_instalación | <ul><li>Marca de tiempo de la instalación: AAAA-MM-DD HH: MM:SS<br />Ejemplo: 2020-08-16 11:22:33</li><li>Para dispositivos iOS 14+ y usuarios que no consiente, o si el anunciante tiene activada la Privacidad avanzada, la hora de instalación se redondea a la hora más cercana.</li></ul> |
+| campaign, campaign\_id, adset\_name, adset\_id, ad\_name, ad\_name, ad\_id, site\_id | Solo se rellenan si la UA se atribuye al partner que recibe los datos. |
+| idfa, idfv, advertising\_id | <ul><li>El mismo ID de dispositivo, como el IDFA, IDFV o advertiser\_id, podría mostrarse en varias filas si hay más de un evento de monetización de ingresos por publicidad.</li><li>Para dispositivos iOS 14+ y usuarios que no dan su consentimiento, o si el anunciante tiene la Privacidad Avanzada activada, esto no se muestra.</li></ul> |
+| Identificador de origen | Plataforma del dispositivo: iOS, Android o Windows Mobile |
+| País | Código del país con <Anchor target="_blank" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166 (alpha-2)</Anchor> Por ejemplo: |
+| original\_url | <ul><li>Para dispositivos iOS 14+ y usuarios que no dan su consentimiento, o si el anunciante tiene la Privacidad Avanzada activada, esto no se muestra.</li><li>Solo se rellenan si la UA se atribuye al partner que recibe los datos.</li></ul> |
 | ad\_unit |  |
-| placement |  |
+| Suscripción IAP |  |
 | mediation\_network |  |
-| engagement\_type |  |
+| tipo\_de\_engagement |  |
 
-Metrics:
+Métricas:
 
-| **Field** | **Remarks** |
+| **Campo** | **Observaciones** |
 | --- | --- |
-| impressions | Number of times the user saw the ad |
-| revenue\_usd | Daily revenue (in USD) generated for the device ID. **Note**: When the revenue amount is small, it's represented in scientific notation. For example: 8.00E-05 |
+| Validación de compra de AppsFlyer | Número de veces que el usuario vio el anuncio |
+| ingresos\_usd | Ingresos diarios (en USD) generados para el ID del dispositivo. **Nota**: Cuando el monto de los ingresos es pequeño, se representa en notación científica. Por ejemplo: 8.00E-05 |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H8Y7ABGVR7BNHEYVFKPFM4JN=set-the-ad-revenue-report-in-data-locker h_01H8Y7ABGV2T6GBE9BHJQM6FDF=configure-the-report-output-settings h_01H8Y7ABGVW6Y5RY7CVNM3EJZR=enable-the-ad-revenue-report h_01H8Y7ABGVXJ9ZQCJ8BR0DST6W=report-specification h_01H8Y7ABGV0G4GJBRKKGNBSEC5=report-considerations h_01H8Y7ABGV81X0VFWTRMXGHYSA=report-structure" />
+<div data-zendesk-anchors="set-the-ad-revenue-report-in-data-locker=configuraci%C3%B3n-del-reporte-de-ingresos-por-publicidad-en-data-locker h_01H8Y7ABGVR7BNHEYVFKPFM4JN=configuraci%C3%B3n-del-reporte-de-ingresos-por-publicidad-en-data-locker h_01H8Y7ABGV2T6GBE9BHJQM6FDF=configure-the-report-output-settings h_01H8Y7ABGVW6Y5RY7CVNM3EJZR=enable-the-ad-revenue-report report-specification=especificaci%C3%B3n-del-reporte h_01H8Y7ABGVXJ9ZQCJ8BR0DST6W=especificaci%C3%B3n-del-reporte h_01H8Y7ABGV0G4GJBRKKGNBSEC5=report-considerations h_01H8Y7ABGV81X0VFWTRMXGHYSA=report-structure" />

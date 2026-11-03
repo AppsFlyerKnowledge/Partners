@@ -1,5 +1,5 @@
 ---
-title: Integrated partners dashboard
+title: Panel de control de partners integrados
 metadata:
   keywords:
     - partner login
@@ -15,108 +15,107 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2016-08-08T08:11:38Z'
-  edited_at: '2023-10-11T12:54:23Z'
+  edited_at: '2026-08-12T12:27:13Z'
   id: 212955423
-  locale: en-us
+  locale: es
   section: Aggregate data
   section_id: 6551715006353
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/212955423-Integrated-partners-dashboard
+  url: https://support.appsflyer.com/hc/es/articles/212955423
 ---
-> **At a glance:** Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
+> **De un vistazo:** Los partners integrados utilizan el panel de control y los reportes para ver y analizar el tráfico de campaña que se te atribuye.
 
-## Using the AppsFlyer dashboard
+## Uso del panel de control de AppsFlyer
 
-**To log in to AppsFlyer**:
+**Para iniciar sesión en AppsFlyer**:
 
-1. <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">Log in</Anchor> or navigate to https://hq1.appsflyer.com/auth/login  
-   The list of apps displays.
-2. Select an app or search for it.  
-   Note! If you don't see the required app, ask the advertiser to grant you <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Ad network permissions</Anchor>. The advertiser does this in the AppsFlyer dashboard in the permissions tab.
+1. <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">Inicia sesión</Anchor> o ve a https://hq1.appsflyer.com/auth/login  
+   Se muestra la lista de aplicaciones.
+2. Selecciona una aplicación o búscala.  
+   ¡Atención! Nota: Si no ves la aplicación requerida, pídele al anunciante que te conceda <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions">permisos de red de publicidad</Anchor>. El anunciante hace esto en el panel de control de AppsFlyer en la pestaña de permisos.
 
-## Overview dashboard
+## Panel de vista general
 
-Campaign performance metrics and charts are available in the Overview dashboard. This dashboard contains different view types for UA and retargeting campaigns.
+Las métricas y los gráficos de rendimiento de la campaña están disponibles en el Panel de control general. Este panel de control contiene diferentes tipos de vistas para las campañas UA y de retargeting.
 
-## Report access
+## Acceso a reportes
 
-To view report data:
+Para ver los datos del reporte:
 
-* In the side menu, select one of the following:
-  * <Anchor target="_blank" href="/marketers/docs/raw-data-export-page">Raw Data Export</Anchor>
-  * <Anchor target="_blank" href="/marketers/docs/aggregated-data-export-page">Aggregated Data Export</Anchor>  
-    The Reports window opens.
+* En el menú lateral, selecciona uno de los siguientes:
+  * <Anchor target="_blank" href="/marketers/es/docs/raw-data-export-page">Exportación de raw data</Anchor>
+  * <Anchor target="_blank" href="/marketers/es/docs/aggregated-data-export-page">Exportación de datos agregados</Anchor>  
+    Se abre la ventana Reportes.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * Data shown in raw data reports is limited to raw data in postbacks attributed to the partner only.
-> * For Protect360 subscribers, when the **<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data">Protect360 dashboard & raw data</Anchor>** permission is granted by the advertiser, partners also have access to Protect360 raw data reports.
-> * **Event value** data is not displayed in this report. To get event values, you can do one of the following:
+> * Los datos que se muestran en los reportes de raw data se limitan a los raw data en los postbacks atribuidos solo al partner.
+> * Para los suscriptores de Protect360, cuando el anunciante concede el permiso de **<Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data">dashboard & raw data de Protect360</Anchor>**, los partners también tienen acceso a los reportes de raw data de Protect360.
+> * Los datos del **valor de evento** no se muestran en este reporte. Para obtener valores de eventos, puedes realizar una de las siguientes acciones:
 >
-> * * Request from the advertiser to provide you in-app event raw data reports
->   * Add `(event-value)` <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">macro to the postback URL</Anchor>
+> * * Solicita al anunciante que te proporcione reportes de raw data de eventos in-app
+>   * Add `(event-value)` <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks">macro to the postback URL</Anchor>
 
-### Using Postback reports
+### Uso de reportes de postback
 
-You can use the Installation and In-app event <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#postbacks">postback reports</Anchor> to find 'missing' actions., i.e. when the advertiser's raw data shows user actions that were not recorded in the ad network.
+Puedes utilizar los <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview#postbacks%C2%A0">reportes de postbacks</Anchor> de instalación y de eventos in-app para encontrar acciones "faltantes", es decir, cuando el raw data del anunciante muestra acciones del usuario que no se registraron en la red de publicidad.
 
-Download the relevant Postbacks report and look for the **Postback URL** and **Postback HTTP Response Code** fields:
+Descarga el reporte de Postbacks correspondiente y busca los campos **URL de postback** y **Código de respuesta HTTP de postback**:
 
-* If the response code is 200, AppsFlyer sent the postback and received acknowledgment from the ad network.
-* If the response code is missing, AppsFlyer sent the postback but received no response. The **Postback Error Message** field describes the problem.
+* Si el código de respuesta es 200, AppsFlyer envió el postback y recibió un acuse de recibo de la red de publicidad.
+* Si falta el código de respuesta, AppsFlyer envió el postback pero no recibió respuesta. El campo **Mensaje de error de postback** describe el problema.
 
 [![](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)
 
-## Viewing configuration settings and data
+## Ver la configuración y los datos
 
-Click **Active Integrations** on the left side of the window to view the current configuration settings. Even if you have not been granted permissions, you may be able to view the configuration settings (read-only mode).
+Click **Integrated Partners** on the left side of the window to view the current configuration settings. Incluso si no te han otorgado permisos, es posible que puedas ver los ajustes de configuración (modo de solo lectura).
 
-Ad network can view the configuration on its dashboard only when it is set up by the advertiser. 
+La ad network puede ver la configuración en su dashboard solo cuando la configura el anunciante. 
 
-Agencies can configure ad network setup upon getting relevant permission from the advertiser. Note that **when** **the configuration is made by an agency, the ad network sees it as inactive**.
+Las agencias pueden configurar la configuración de la ad network al recibir el permiso correspondiente del anunciante. Ten en cuenta que **cuando** **la configuración la realiza una agencia, la ad network la ve como inactiva**.
 
-## Permissions
+## Permisos
 
-Using the **Permissions** tab, advertisers can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">grant different types of permissions to the ad networks</Anchor>.
+Con la pestaña **Permisos**, los anunciantes pueden <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions">otorgar diferentes tipos de permisos a las redes de publicidad</Anchor>.
 
-### Enabling Permissions
+### Habilitar permisos
 
-The first step is for your client to enable permissions. Your client must switch **Ad Network Permissions** on. When they do so, the following takes place:
+El primer paso es que tu cliente habilite los permisos. Tu cliente debe activar los **Permisos de Ad network**. Cuando lo haga, ocurre lo siguiente:
 
-1. The app displays in your ad network account.
-2. The admin of your ad network account gets access to view the dashboard of your client's app. At the first stage, only the admin has access. If you want your team member to also view the app's dashboard, your client needs to give them permissions.
-3. Permissions to view the app's dashboard are given only to your ad network.
+1. La aplicación se muestra en tu cuenta de la red de publicidad.
+2. El admin de tu cuenta de ad network obtiene acceso para ver el dashboard de la app de tu cliente. En la primera fase, solo el administrador tiene acceso. Si quieres que un miembro de tu equipo también vea el dashboard de la app, tu cliente tiene que concederle permisos.
+3. Los permisos para ver el dashboard de la app se conceden solo a tu ad network.
 
-### Granting permissions to ad network team members
+### Concesión de permisos a miembros del equipo de la ad network
 
-If you want your team member to also view the app's dashboard, your client needs to give them permissions.
+Si quieres que un miembro de tu equipo también vea el dashboard de la app, tu cliente tiene que concederle permisos.
 
-1. Give your client the emails of the team members that you want the client to give permissions to.
-2. The client should then <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">add them to the integration with your ad network</Anchor>.
+1. Da a tu cliente los correos electrónicos de los miembros del equipo a los que quieres que conceda permisos.
+2. A continuación, el cliente debería <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions">agregarlos a la integración con tu red de publicidad</Anchor>.
 
-### Granting additional permissions
+### Conceder permisos adicionales
 
-Your client can grant additional permission for the ad network and its team members to view the following:
+Tu cliente puede conceder permisos adicionales para que la ad network y los miembros de su equipo vean lo siguiente:
 
-* Integration parameter configuration
-* In-app event postback configuration
-* Retention report
-* Loyal users
-* In-app events
-* Revenue
-* Protect360 dashboard & raw data - available only to Protect360 customers
+* Configuración de parámetros de integración
+* Configuración de eventos in-app
+* Informe de retención
+* Usuarios leales
+* Eventos dentro de la aplicación
+* Ingresos totales
+* Protect360 dashboard - available only to Protect360 customers
 
-To allow this, contact your client to select you from the list of Active Integrations and grant you access to the relevant section within the Permissions tab.
+To allow this, contact your client to select you from the Integrated Partners list and grant you access to the relevant section within the Permissions tab.
 
-When the advertiser gives permission for the ad network to configure their attribution link and map in-app events, they can enter the relevant tabs and make changes accordingly.
+Cuando el anunciante concede permiso a la ad network para configurar su enlace de atribución y mapear eventos in-app, pueden entrar en las pestañas correspondientes y hacer los cambios necesarios.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * Any changes made to the configuration overwrite the current configuration irrespective of whether it is set by the advertiser or the ad network.
-> * Agencies can add ad network team members to the configuration, but only app owners can provide permissions to ad networks.
+> * Any changes made to the configuration overwrites the current configuration irrespective of whether it is set by the advertiser or the ad network.
+> * Las agencias pueden añadir miembros del equipo de la ad network a la configuración, pero solo los propietarios de la aplicación pueden conceder permisos a las ad networks.
 
-Once your client has granted you permission to the integration parameter configurations, you are able to access it from the left side of the main dashboard and select **Active Integrations.**
+Once your client has granted you permission to the integration parameter configurations, you are able to access it from the left side of the main dashboard and select **Integrated Partners.**
 
-If your client has granted you permission to the Retention Report, you are able to access it from the left side of the main dashboard and select **Retention.**
+Si tu cliente te ha concedido permiso para los reportes de retención, puedes acceder a ellos desde el lado izquierdo del dashboard principal y seleccionar **Retention.**
 
-<div data-zendesk-anchors="h_01HCF5VPHN5RRQFXVJJFPFQBSW=using-the-appsflyer-dashboard h_01HCF5VPHNXBQZNF9MNEVCQ243=overview-dashboard h_01HCF5VPHN08CV555KDHB7QP1Z=report-access h_01HCF5VPHN3REJ2FPD8386Z92S=note h_01HCF5VPHN8RV3GBX1NNFX10P0=using-postback-reports h_01HCF5VPHNSW9X7SNQPC17Q45A=viewing-configuration-settings-and-data h_01HCF5VPHN6AJ7SE6MGW57BPW8=permissions h_01HCF5VPHNRCQ5P3MZF9S5RWZW=enabling-permissions h_01HCF5VPHP2EXY705GW2VM5YMA=granting-permissions-to-ad-network-team-members h_01HCF5VPHPHS8QQBMVTGV7B4VJ=granting-additional-permissions h_01HCF5VPHPCD52R9222AFQH176=note-1" />
+<div data-zendesk-anchors="using-the-appsflyer-dashboard=uso-del-panel-de-control-de-appsflyer h_01HCF5VPHN5RRQFXVJJFPFQBSW=uso-del-panel-de-control-de-appsflyer overview-dashboard=panel-de-vista-general h_01HCF5VPHNXBQZNF9MNEVCQ243=panel-de-vista-general report-access=acceso-a-reportes h_01HCF5VPHN08CV555KDHB7QP1Z=acceso-a-reportes h_01HCF5VPHN3REJ2FPD8386Z92S=nota using-postback-reports=uso-de-reportes-de-postback h_01HCF5VPHN8RV3GBX1NNFX10P0=uso-de-reportes-de-postback viewing-configuration-settings-and-data=ver-la-configuraci%C3%B3n-y-los-datos h_01HCF5VPHNSW9X7SNQPC17Q45A=ver-la-configuraci%C3%B3n-y-los-datos permissions=permisos h_01HCF5VPHN6AJ7SE6MGW57BPW8=permisos enabling-permissions=habilitar-permisos h_01HCF5VPHNRCQ5P3MZF9S5RWZW=habilitar-permisos granting-permissions-to-ad-network-team-members=concesi%C3%B3n-de-permisos-a-miembros-del-equipo-de-la-ad-network h_01HCF5VPHP2EXY705GW2VM5YMA=concesi%C3%B3n-de-permisos-a-miembros-del-equipo-de-la-ad-network granting-additional-permissions=conceder-permisos-adicionales h_01HCF5VPHPHS8QQBMVTGV7B4VJ=conceder-permisos-adicionales h_01HCF5VPHPCD52R9222AFQH176=nota-1" />

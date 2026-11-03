@@ -1,5 +1,5 @@
 ---
-title: TUNE (formerly, HasOffers) integration with AppsFlyer
+title: Integración de TUNE (anteriormente, HasOffers) con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -17,35 +17,34 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2015-12-22T14:55:13Z'
-  edited_at: '2024-12-23T15:20:29Z'
+  edited_at: '2026-08-12T12:30:43Z'
   id: 207034806
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207034806-TUNE-formerly-HasOffers-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207034806
 ---
-> **At a glance:** Learn how ad networks that use TUNE (formerly HasOffers) to manage affiliate marketing campaigns can integrate with AppsFlyer and receive attribution data about installs and in-app events.
+> **De un vistazo:** Descubre cómo las ad network que usan TUNE (anteriormente HasOffers) para gestionar campañas de marketing de afiliados pueden integrarse con AppsFlyer y recibir datos de atribución sobre instalaciones y eventos in-app.
 
-**To initiate the integration, prepare, and send the following information to AppsFlyer:**
+**Para iniciar la integración, prepara y envía la siguiente información a AppsFlyer:**
 
-1. Your [attribution link](/docs/tune-formerly-hasoffers-integration-with-appsflyer#create-attribution-link)
-2. Your [postbacks](/docs/tune-formerly-hasoffers-integration-with-appsflyer#create-install-and-in-app-event-postbacks) (for installs and in-app events)
+1. Tu [enlace de atribución](/docs/tune-formerly-hasoffers-integration-with-appsflyer#crea-un-enlace-de-atribución)
+2. Tus [postbacks](/docs/tune-formerly-hasoffers-integration-with-appsflyer#crea-postbacks-de-instalación-y-de-eventos-in-app) (para instalaciones y eventos in-app)
 
-## Create attribution link
+## Crea un enlace de atribución
 
-The attribution link consists of the following AppsFlyer base attribution link and additional macros added by the ad network.
+El enlace de atribución consta del enlace de atribución base de AppsFlyer y de macros adicionales añadidas por la ad network.
 
-See the following AppsFlyers base attribution link with a detailed explanation per macro:
+Consulta el siguiente enlace de atribución base de AppsFlyer con una explicación detallada de cada macro:
 
-| AppsFlyer Base URL | Description |
+| URL base de AppsFlyer | Nota |
 | --- | --- |
-| https://app.appsflyer.com | AppsFlyer endpoint |
-| app\_id | Unique app ID – dynamic value changed per app promoted |
-| pid= | Media source name concatenated with `_int` to identify<br />integrated networks |
-| c= | Campaign name |
+| https://app.appsflyer.com | Punto de conexión de AppsFlyer |
+| id\_aplicación | ID único de la aplicación: valor dinámico que cambia según la aplicación promocionada |
+| pid= | Nombre de la fuente de medios concatenado con `_int` para identificar las redes integradas |
+| c= | Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. |
 
-### Example attribution link after adding TUNE macros
+### Ejemplo de enlace de atribución después de añadir macros de TUNE
 
 ```
  
@@ -57,24 +56,24 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 {ios_ifa}&advertiser_id={google_aid}&af_sub5={offer_id}
 ```
 
-* In the previous link, `af_sub5={offer_id}` has been added for TUNE reporting purposes.
+* En el enlace anterior, se ha añadido `af_sub5={offer_id}` con fines de reportar de TUNE.
 
-Read more about [TUNE macros](https://help.tune.com/hasoffers/parameters-macros-in-hasoffers/).
+Lee más sobre las [macros de TUNE](https://help.tune.com/hasoffers/parameters-macros-in-hasoffers/).
 
-## Create install and in-app event postbacks
+## Crea postbacks de instalación y de eventos in-app
 
-Step-by-step instructions for creating your install and in-app event postbacks:
+Instrucciones paso a paso para crear tus postbacks de instalación y de eventos in-app:
 
-1. Create or select an offer that uses the Postback w/Transaction ID protocol.
-2. In the details section of the offer page, click the link labeled **Tracking**.
-3. Copy the URL from the box labeled **Postback URL**.
-4. Remove the `offer_id` parameter and value from the postback URL to convert it from a specific postback to a global postback.
+1. Crea o selecciona una oferta que use el protocolo Postback w/Transaction ID.
+2. En la sección de detalles de la página de la oferta, haz clic en el enlace con la etiqueta **Tracking**.
+3. Copia la URL del cuadro con la etiqueta **Postback URL**.
+4. Elimina el parámetro `offer_id` y su valor de la URL del postback para convertirlo de un postback específico en un postback global.
 
-Read more about [TUNE global postback URLs](http://help.tune.com/hasoffers/global-postback-urls/).
+Lee más sobre las [URL de postback globales de TUNE](http://help.tune.com/hasoffers/global-postback-urls/).
 
-### Sample postbacks
+### Postbacks de muestra
 
-#### Global install postback:
+#### Postback de instalación global:
 
 ```
  
@@ -84,7 +83,7 @@ Read more about [TUNE global postback URLs](http://help.tune.com/hasoffers/globa
 https://NETWORK_ID.go2cloud.org/aff_lsr?offer_id={af_c_id}&transaction_id={clickid}
 ```
 
-#### In-app event postback:
+#### Postback de eventos in-app:
 
 ```
  
@@ -94,17 +93,17 @@ https://NETWORK_ID.go2cloud.org/aff_lsr?offer_id={af_c_id}&transaction_id={click
 https://NETWORK_ID.go2cloud.org/aff_goal?a=lsr&goal_id={goal_id}&transaction_id={clickid}
 ```
 
-In the above postback URLs:
+En las URL de postback anteriores:
 
-* NETWORK\_ID = domain name (network ID) provided by TUNE
-  * To ensure proper attribution, the NETWORK\_ID should always be the branded domain name provided by TUNE, not a custom tracking domain used for a specific offer (if any).
-* goal\_id = event tag in the AppsFlyer dashboard for each of your apps. This is the actual in-app event name from the app.
+* NETWORK\_ID = nombre de dominio (ID de red) proporcionado por TUNE
+  * Para garantizar una atribución correcta, NETWORK\_ID siempre debe ser el nombre de dominio de marca proporcionado por TUNE, no un dominio de tracking personalizado utilizado para una oferta concreta (si lo hay).
+* goal\_id = etiqueta de evento en el Dashboard de AppsFlyer para cada una de tus aplicaciones. Este es el nombre real del evento in-app de la aplicación.
 
-Learn more about <Anchor target="_blank" href="/partners/docs/dynamic-event-mapping-for-in-app-events">Dynamic Event Mapping for In-App Events</Anchor>.
+Saber más sobre <Anchor target="_blank" href="/partners/es/docs/dynamic-event-mapping-for-in-app-events">la asignación dinámica de eventos para eventos in-app</Anchor>.
 
-## Finalizing your registration
+## Finalizando tu registro
 
-* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
+* Si tienes una integración con AppsFlyer, ponte en contacto con nosotros utilizando el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
+* Si no tienes una integración con AppsFlyer, completa la solicitud de registro de anuncios de Partners <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">aquí</Anchor>.
 
-<div data-zendesk-anchors="h_01ET22GJ5N67DKECBQ41QEPEAT=create-attribution-link 01JFT1MXJJF3C17B3Y9Q8604BM=example-attribution-link-after-adding-tune-macros create-install-and-inapp-event-postbacks=create-install-and-in-app-event-postbacks h_01ET22H0A0MQ3HH30AJ1TMFNTQ=create-install-and-in-app-event-postbacks 01JFT1MXJNSTV7YRVX3BPZ50CY=sample-postbacks 01JFT1MXJNJBY1P51JQ3ES7QYS=global-install-postback inapp-event-postback=in-app-event-postback 01JFT1MXJNMF0FWJ2RFER3E316=in-app-event-postback 01JFT1MXJQAXV53RKACW0VAS6E=finalizing-your-registration" />
+<div data-zendesk-anchors="create-attribution-link=crea-un-enlace-de-atribuci%C3%B3n h_01ET22GJ5N67DKECBQ41QEPEAT=crea-un-enlace-de-atribuci%C3%B3n example-attribution-link-after-adding-tune-macros=ejemplo-de-enlace-de-atribuci%C3%B3n-despu%C3%A9s-de-a%C3%B1adir-macros-de-tune 01JFT1MXJJF3C17B3Y9Q8604BM=ejemplo-de-enlace-de-atribuci%C3%B3n-despu%C3%A9s-de-a%C3%B1adir-macros-de-tune create-install-and-inapp-event-postbacks=crea-postbacks-de-instalaci%C3%B3n-y-de-eventos-in-app h_01ET22H0A0MQ3HH30AJ1TMFNTQ=crea-postbacks-de-instalaci%C3%B3n-y-de-eventos-in-app sample-postbacks=postbacks-de-muestra 01JFT1MXJNSTV7YRVX3BPZ50CY=postbacks-de-muestra global-install-postback=postback-de-instalaci%C3%B3n-global 01JFT1MXJNJBY1P51JQ3ES7QYS=postback-de-instalaci%C3%B3n-global inapp-event-postback=postback-de-eventos-in-app 01JFT1MXJNMF0FWJ2RFER3E316=postback-de-eventos-in-app finalizing-your-registration=finalizando-tu-registro 01JFT1MXJQAXV53RKACW0VAS6E=finalizando-tu-registro" />

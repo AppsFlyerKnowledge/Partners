@@ -1,5 +1,5 @@
 ---
-title: Postback retries
+title: Reintentos de postback
 metadata:
   keywords:
     - Advertisers
@@ -16,66 +16,67 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2018-08-06T04:59:54Z'
-  edited_at: '2023-02-15T13:15:04Z'
+  edited_at: '2026-08-12T12:28:34Z'
   id: 360001376085
-  locale: en-us
+  locale: es
   section: Receive data
   section_id: 6551235995281
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001376085-Postback-retries
+  url: https://support.appsflyer.com/hc/es/articles/360001376085
 ---
-> **At a glance:** Learn how postback retries work in AppsFlyer and how integrated partners can configure their postback mechanisms.
+> **De un vistazo:** Aprende cómo funcionan los reintentos de postback en AppsFlyer y cómo los Partners integrados pueden configurar sus mecanismos de postback.
 
-## Introduction
+## Introducción
 
-Postbacks to partners are a critical part of the integration between AppsFlyer and our partners. Since any system can experience momentary issues in its responsiveness, AppsFlyer is able to retry failed postbacks.
+Los postbacks a partners son una parte esencial de la integración entre AppsFlyer y nuestros partners. Como cualquier sistema puede experimentar problemas momentáneos de respuesta, AppsFlyer puede reintentar los postbacks fallidos.
 
-## Important information
+## Información importante
 
 <div id="when-does-appsflyer-retry-a-failed-postback" />
 
-<Accordion title="When does AppsFlyer retry a failed postback?">
+<Accordion title="¿Cuándo reintenta AppsFlyer un postback fallido?">
 
-A postback is retried when the response indicates an error on the receiving server-side 5XX errors.
+Se reintenta un postback cuando la respuesta indica un error del lado del servidor receptor: errores 5XX.
 
 </Accordion>
 
 <div id="how-often-does-appsflyer-retry-a-failed-postback" />
 
-<Accordion title="How often does AppsFlyer retry a failed postback?">
+<Accordion title="¿Con qué frecuencia reintenta AppsFlyer un postback fallido?">
 
-The first failed postback is retried up to four additional times in 15-minute intervals. In total, a single postback can be sent up to five times.
+El primer postback fallido se reintenta hasta cuatro veces más, en intervalos de 15 minutos. En total, un solo postback se puede enviar hasta cinco veces.
 
 </Accordion>
 
 <div id="can-retried-postbacks-be-identified-in-postback-reports" />
 
-<Accordion title="Can retried postbacks be identified in postback reports?">
+<Accordion title="¿Se pueden identificar los postbacks reintentados en los reportes de postback?">
 
-The raw data Postback report: "Postback Retry". The first postback sent has a blank value in this column. Any retried postback contains the value TRUE in this column.
+El reporte de postback de raw data: «Postback Retry». El primer postback enviado tiene un valor en blanco en esta columna. Cualquier postback reintentado contiene el valor TRUE en esta columna.
 
 </Accordion>
 
 <div id="how-can-a-partner-identify-the-total-eventual-failed-postbacks-in-the-postback-report" />
 
-<Accordion title="How can a partner identify the total eventual failed postbacks in the Postback report?">
+<Accordion title="¿Cómo puede un partner identificar en el reporte de Postback el total de postbacks que finalmente han fallado?">
 
-A postback that has four TRUE values listed in the "Postback Retry" column and also contains error codes in the Postback HTTP Response Code is a postback that has entirely failed to have been sent to the partner.
+Un postback que tiene cuatro valores TRUE en la columna «Postback Retry» y que además contiene códigos de error en la columna Postback HTTP Response Code es un postback cuyo envío al partner ha fallado por completo.
 
 </Accordion>
 
 <div id="is-there-anything-special-a-partner-should-consider-about-retried-postbacks" />
 
-<Accordion title="Is there anything special a partner should consider about retried postbacks?">
+<Accordion title="¿Hay algo especial que un partner deba tener en cuenta sobre los postbacks reintentados?">
 
-If the postback has reached your system and has been processed successfully, but there was an error or delay in sending a response—this is considered a failed postback, and retries are sent after 15 minutes. This can cause duplication on the partner's end. The partner must implement a deduplication mechanism on their end.
+Si el postback ha llegado a tu sistema y se ha procesado correctamente, pero se ha producido un error o un retraso al enviar una respuesta, se considera un postback fallido y se envían reintentos al cabo de 15 minutos. Esto puede causar duplicación del lado del partner. El partner debe implementar un mecanismo de deduplicación de su lado.
 
 </Accordion>
 
 <div id="are-postback-retries-automatically-enabled-for-all-partners" />
 
-<Accordion title="Are postback retries automatically enabled for all partners?">
+<Accordion title="¿Los reintentos de postback están habilitados automáticamente para todos los partners?">
 
-No. If a partner wants to retry failed postbacks, they should reach out to their PDM to enable this feature.
+N.º Si un partner quiere reintentar postbacks fallidos, debe ponerse en contacto con su PDM para habilitar esta función.
 
 </Accordion>
+
+<div data-zendesk-anchors="introduction=introducci%C3%B3n important-information=informaci%C3%B3n-importante" />

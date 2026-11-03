@@ -1,5 +1,5 @@
 ---
-title: Getting started—agency onboarding
+title: 'Introducción: onboarding de agencias'
 metadata:
   keywords:
     - Agency Account
@@ -19,219 +19,219 @@ x-zendesk:
     - Platform essentials
     - Agencies
   created_at: '2019-09-02T12:50:49Z'
-  edited_at: '2026-08-12T11:37:20Z'
+  edited_at: '2026-08-18T00:39:05Z'
   id: 360002381617
-  locale: en-us
+  locale: es
   section: Agency onboarding
   section_id: 6551110223889
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360002381617-Getting-started-agency-onboarding
+  url: https://support.appsflyer.com/hc/es/articles/360002381617
 ---
-> **At a glance:** Start measuring the campaigns of your clients by setting up an Agency account.
+> **De un vistazo:** Comienza a medir las campañas de tus clientes configurando una cuenta de agencia.
 
-<Embed title="Getting started—agency onboarding" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
+<Embed title="Introducción: onboarding de agencias" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
 
-## AppsFlyer attribution model
+## Modelo de atribución de AppsFlyer
 
-Before you proceed, it’s essential to understand how AppsFlyer’s attribution works. This section explains what happens along the way from the first click or impression to the attribution of an install or an event — and beyond.
+Antes de continuar, es esencial comprender cómo funciona la atribución de AppsFlyer. En esta sección se explica lo que sucede en todo el proceso, desde el primer clic o impresión hasta la atribución de una instalación o un evento, y posterior a ello.
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+[![ua-flujo-agencia.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
 
-1. A marketer or an agency on behalf of the marketer configures a campaign with a certain ad network, using AppsFlyer attribution links.
-2. A user clicks on one of their ads – for example, a banner or an offer link.
-3. AppsFlyer attribution link behind the ad is then populated with information collected during the click. We gather the information from the attribution link and store it in our database.
-4. The user is redirected to an app store.
-5. The user installs the app and opens it for the first time. The AppsFlyer SDK inside the app calls our servers with the information about the device that the app is installed on.
-6. We match this data to our click database using our <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">Attribution methods</Anchor>.
-7. If we find a match, we attribute the install to the click. If not, we attribute the install to an organic download.
-8. Once the install is attributed, we show it on marketer and agency dashboards and reports (<Anchor target="_blank" href="/partners/docs/about-agency-accounts#self-reporting-ad-networks">except Meta ads and X Ads</Anchor>).
-9. Then, we send a postback with the conversion details to the ad network, who can use this information for further optimization.
+1. Un marketer o una agencia en nombre del marketer configura una campaña con una determinada red de publicidad, utilizando los enlaces de atribución de AppsFlyer.
+2. Un usuario hace clic en uno de sus anuncios, por ejemplo, un banner o un enlace de oferta.
+3. El enlace de atribución de AppsFlyer detrás del anuncio se llena con la información recopilada durante el clic. Recopilamos la información del enlace de atribución y la almacenamos en nuestra base de datos.
+4. Se redirige al usuario a una tienda de aplicaciones.
+5. El usuario instala la aplicación y la abre por primera vez. El SDK de AppsFlyer dentro de la aplicación llama a nuestros servidores con la información sobre el dispositivo en el que está instalada la aplicación.
+6. Emparejamos estos datos con nuestra base de datos de clics usando nuestros <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">métodos de atribución</Anchor>.
+7. Si encontramos una coincidencia, atribuimos la instalación al clic. Si no, atribuimos la instalación a una descarga orgánica.
+8. Una vez que se atribuye la instalación, la mostramos en los paneles de control y reportes del marketer y la agencia (<Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#redes-publicitarias-de-autoinforme">excepto Anuncios de Meta y X Ads</Anchor>).
+9. Luego, enviamos un postback con los detalles de conversión a la red de publicidad, que puede usar esta información para una mayor optimización.
 
-## Agency role in mobile attribution chain
+## Rol de la agencia en la cadena de atribución móvil
 
-A marketer, who owns the app, integrates AppsFlyer SDK inside it in order to quantify their marketing effort.
+Un marketer que es propietario de la aplicación integra el SDK de AppsFlyer dentro de ella para cuantificar sus esfuerzos de marketing.
 
-Some app owners choose to hire marketing agencies to run advertising campaigns on their behalf. To do so, the agency should have an AppsFlyer account, and marketers should give the agency <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">access to their apps</Anchor>.
+Algunos propietarios de aplicaciones optan por contratar agencias de marketing para ejecutar campañas publicitarias en su nombre. Para hacerlo, la agencia debe tener una cuenta de AppsFlyer y los marketers deben darle a la agencia <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">acceso a sus aplicaciones</Anchor>.
 
-Agency, therefore, doesn’t technically own the apps but only promotes them on the marketing channels it works with, without the technical involvement, such an SDK integration. Depending on the set of permissions given by a marketer, an agency can have control over a range of functions.
+Por lo tanto, la agencia no posee técnicamente las aplicaciones, solo las promociona en los canales de marketing con los que trabaja, sin la participación técnica, como una integración de SDK. Según el conjunto de permisos otorgados por un marketer, una agencia puede tener control sobre una variedad de funciones.
 
-When an install is attributed to an ad placed by an agency, it is displayed on agency's dashboard. The app owner will see it too, and will know that it's attributed to the agency.
+Cuando se atribuye una instalación a un anuncio colocado por una agencia, se muestra en el panel de control de la agencia. El propietario de la aplicación también lo verá y sabrá que se atribuye a la agencia.
 
-Note: if your organization owns the app, or handles its development as well as marketing, you should open a marketer account.
+Nota: Si tu organización es propietaria de la aplicación o gestiona su desarrollo y marketing, debes abrir una cuenta de marketer.
 
-## Pricing
+## Precios
 
-The scope of an agency account functionality depends on the permissions provided by the app owner for each app. Therefore, agency accounts are offered **for free**, and only app owners are charged for attribution. App owners and agencies can use AppsFlyer attribution data for compensation purposes.
+El alcance de la funcionalidad de una cuenta de agencia depende de los permisos proporcionados por el propietario de la aplicación para cada aplicación. Por lo tanto, las cuentas de agencia se ofrecen **de forma gratuita** y solo los propietarios de aplicaciones pagan por la atribución. Las agencias y los propietarios de aplicaciones pueden usar los datos de atribución de AppsFlyer con fines de compensación.
 
-## Getting started
+## Primeros pasos
 
-To set up a new agency account:
+Para configurar una nueva cuenta de agencia:
 
-1. Complete the <Anchor target="_blank" href="https://www.appsflyer.com/start/agencies/">registration form</Anchor>.
-   * Use your company email domain for registration.
-   * Use an email address that is not associated with an existing AppsFlyer account.
-2. A member of the AppsFlyer agency team may contact you with further information required to complete the registration.
-3. Once your account is activated, you get notified and can start using AppsFlyer.
+1. Completa el <Anchor target="_blank" href="https://www.appsflyer.com/start/agencies/">formulario de registro</Anchor>.
+   * Utiliza el dominio de correo electrónico de tu empresa para el registro.
+   * Usa una dirección de correo electrónico que no esté asociada con una cuenta de AppsFlyer existente.
+2. Un miembro del equipo de la agencia de AppsFlyer puede contactarte con más información necesaria para completar el registro.
+3. Una vez que se active tu cuenta, recibirás una notificación y podrás comenzar a usar AppsFlyer.
 
-## Adding team members
+## Agregar miembros al equipo
 
-When your account is up and running, the account admin (the person who opened the account) can add more team members, who can get access to some or all of the apps managed by the agency. For the details of how to add new team members, click here.
+Cuando tu cuenta esté en funcionamiento, el administrador de la cuenta (la persona que abrió la cuenta) puede agregar más miembros del equipo, quienes pueden tener acceso a algunas o todas las aplicaciones administradas por la agencia. Para saber cómo agregar nuevos miembros al equipo, haz clic aquí.
 
-## Adding apps to your account
+## Agregar aplicaciones a tu cuenta
 
-When you first create your account, it has no apps associated with it:
+Cuando creas tu cuenta por primera vez, esta no tiene aplicaciones asociadas:
 
-![agency-start.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+![inicio-agencia.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
 
-Any agency individual or team requires permission from the app owner to:
+Cualquier individuo o equipo de la agencia requiere permiso del propietario de la aplicación para:
 
-* gain access to the app dashboard
-* make configuration changes
-* run campaigns
+* Obtener acceso al panel de control de la aplicación
+* Hacer cambios en la configuración
+* Ejecutar campañas
 
-Marketers <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">provide access to any agency</Anchor> directly through the platform. Once your account is set up and you've received access to the apps, you can start running campaigns using AppsFlyer features.
+Los marketers <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">proporcionan acceso a cualquier agencia</Anchor> directamente a través de la plataforma. Una vez que tu cuenta esté configurada y hayas obtenido acceso a las aplicaciones, puedes comenzar a ejecutar campañas utilizando las funciones de AppsFlyer.
 
-### What does it mean to get permission from a marketer
+### Qué significa obtener el permiso de un marketer
 
-When you get permission from a marketer:
+Cuando obtienes permiso de un marketer:
 
-* The app appears in your account.
-* You can set up integrations with ad networks for the app (with the exception of some networks that require configuration by the app owner).
-* You can create attribution links to use in your campaigns.
-* You can set up cost integrations with partners (that allow it).
-* You can see the app data.
-* You can grant permission for ad networks and their team members to view basic information about the app.
+* La aplicación aparece en tu cuenta.
+* Puedes configurar integraciones con redes de publicidad para la aplicación (con la excepción de algunas redes que requieren configuración por parte del propietario de la aplicación).
+* Puedes crear enlaces de atribución para usarlos en tus campañas.
+* Puedes configurar integraciones de costos con los partners (que lo permitan).
+* Puedes ver los datos de la aplicación.
+* Puedes conceder permiso a las redes de publicidad y a los miembros de sus equipos para ver información básica sobre la aplicación.  
+    
 
-  > 📘 **Note**
+  > 📘 **Nota**
   >
-  > The agency gains control over the main toggle for ad network permissions and the individual permissions nested under it. Both the agency and the advertiser can change these settings, and the most recent change by either party determines the current state.
+  > La agencia obtiene el control del interruptor principal de permisos de ad network y de los permisos individuales anidados en él. Tanto la agencia como el anunciante pueden cambiar estos ajustes, y el cambio más reciente de cualquiera de las dos partes determina el estado actual.
 
 
-Additional permissions include access to the Cohort report, the Protect360 dashboard, and aggregate organic data. See a <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">description of the different ad network permissions</Anchor>.
+Los permisos adicionales incluyen acceso al reporte de cohortes, al panel de control de Protect360 y a datos orgánicos agregados. Consulta una <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">descripción de los distintos permisos de la red publicitaria</Anchor>.
 
-### App list
+### Lista de aplicaciones
 
-Once you got permission from the marketer, the app appears on the app's page.
+Una vez que hayas obtenido el permiso del marketer, la aplicación aparecerá en la página de la aplicación.
 
-The apps page in your account lists up to 1000 apps. If the list of apps you have permissions for exceeds 1000, some apps are not shown on the list. You can still find them using the search.
+La página de aplicaciones de tu cuenta enumera hasta 1000 aplicaciones. Si la lista de aplicaciones para las que tienes permisos supera las 1000, algunas aplicaciones no se muestran en la lista. Aún puedes encontrarlas usando la búsqueda.
 
-![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+![aplicaciones-agencia.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
 
-#### Searching for apps
+#### Búsqueda de aplicaciones
 
-1. In your account, from the top menu, select **My Apps.**
-2. In the search field, enter the search term, for example:
-   * App Name
-   * App ID
-   * App Owner Email
+1. En tu cuenta, en el menú superior, selecciona **Mis apps**.
+2. En el campo de búsqueda, ingresa el término de búsqueda, por ejemplo:
+   * Nombre de aplicación
+   * ID de aplicación
+   * Correo electrónico del propietario de la aplicación
 
-## Agency dashboard
+## Panel de control de agencia
 
-Click any app in the list of apps to access its <Anchor target="_blank" href="/marketers/docs/getting-started-with-appsflyer-dashboards">dashboard</Anchor>. When you start running campaigns, the aggregate data attributed to you is displayed here.
+Haz clic en cualquier aplicación de la lista de aplicaciones para acceder a su <Anchor target="_blank" href="/marketers/es/docs/getting-started-with-appsflyer-dashboards">panel de control</Anchor>. Cuando comienzas a ejecutar campañas, los datos agregados que se te atribuyen se muestran aquí.
 
 ![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
 
-The Agency account dashboard includes default access to:
+El panel de control de la cuenta de agencia incluye acceso predeterminado a:
 
-* Lifetime value overview dashboard
-* In-app events dashboard
-* Retargeting dashboard
+* Panel de Control con Información General sobre el Valor de Vida Útil
+* Panel de Control de Eventos In-App
+* Panel de Control de Retargeting
 
-## Running campaigns
+## Campañas en ejecución
 
-### Self-reporting networks (SRNs)
+### Redes de autorreporte (SRN)
 
-SRNs, also knows as Self-attributing networks (SANs), are networks that don’t require AppsFlyer’s attribution link in order to report clicks and other data, and use direct integration with AppsFlyer instead. Among these networks are <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#attributing-agencies-with-facebook">Meta ads</Anchor>, <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#any-special-instructions-for-agencies">X Ads</Anchor>, <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">Google Ads</Anchor>, <Anchor target="_blank" href="/marketers/docs/snapchat-advanced-srn-integration-setup">Snapchat</Anchor>, DoubleClick, <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup">Apple Ads Search</Anchor>, <Anchor target="_blank" href="/marketers/docs/yahoo-integration-setup">Yahoo</Anchor>, and <Anchor target="_blank" href="/marketers/docs/yahoo-japan-search-ads-campaign-configuration#agency-integration">Yahoo! JAPAN</Anchor>.
+Las SRN, también conocidas como redes de autoatribución (SAN), son redes que no requieren el enlace de atribución de AppsFlyer para reportar clics y otros datos, y usan la integración directa con AppsFlyer en su lugar. Algunas de estas redes son <Anchor target="_blank" href="/marketers/es/docs/meta-ads-faq#attributing-agencies-with-facebook">Anuncios de Meta</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#any-special-instructions-for-agencies">X Ads</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-agencies">Google Ads</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/snapchat-advanced-srn-integration-setup">Snapchat</Anchor>, DoubleClick, <Anchor target="_blank" href="/marketers/es/docs/apple-ads-integration-setup">Apple Ads Search</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/yahoo-integration-setup">Yahoo</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/yahoo-japan-search-ads-campaign-configuration#agency-integration">Yahoo! JAPAN</Anchor>. JAPÓN.
 
-A majority of these networks require special setup for agencies. For example, since Meta ads and X Ads integration can only be configured by an app owner, the agency campaign names MUST begin with the agency's name to make sure that the installs are eventually correctly attributed to the agency.
+La mayoría de estas redes requieren una configuración especial para las agencias. Por ejemplo, dado que la integración de Anuncios de Meta y X Ads solo puede configurarla el propietario de una aplicación, los nombres de las campañas de la agencia DEBEN comenzar con el nombre de la agencia para asegurarse de que las instalaciones se atribuyan correctamente a la agencia.
 
-Click the links above to read network guides and specific instructions for agency settings.
+Haz clic en los enlaces anteriores para leer las guías de la red y las instrucciones específicas para la configuración de la agencia.
 
-### Non-SRNs
+### No SRN
 
-Most ad networks need attribution links that are placed behind an ad. Read more about running campaigns with them <Anchor target="_blank" href="/partners/docs/about-agency-accounts#non-srns">here</Anchor>.
+La mayoría de las redes de publicidad necesitan enlaces de atribución que se colocan detrás de un anuncio. Lee más sobre cómo ejecutar campañas con ellos <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#no-srn">aquí</Anchor>.
 
-### Sandbox attribution agency campaigns
+### Campañas de agencia en la atribución de Sandbox
 
-Sandbox attribution infrastructure, part of Android by Google, lets marketers measure campaign success without advertising ID. Although Google doesn't include agencies as part of the Sandbox attribution process, and AppsFlyer can't attribute agencies directly, AppsFlyer still has the ability to provide attribution data for agency campaigns running on Sandbox.
+La infraestructura SKAdNetwork, parte de iOS de Apple, permite a los marketers medir el éxito de la campaña sin el identificador de anunciante (IDFA) o el ID de publicidad. Aunque Apple no incluye las agencias como parte del proceso de atribución de SKAdNetwork, y AppsFlyer no puede atribuir las agencias directamente, AppsFlyer todavía tiene la capacidad de proporcionar datos de atribución para las campañas de agencias que se ejecutan en SKAdNetworks.
 
-#### Campaign naming
+#### Introducción: onboarding de agencias
 
-To view your campaigns in the AppsFlyer Sandbox dashboard, the names of campaigns that you configure, should include your partner identifier and be structured as follows:
+En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la App**.
 
-* your af\_prt (<Anchor target="_blank" href="/partners/docs/about-agency-accounts#af_prt-parameter">What's your af\_prt and where to find it</Anchor>),
-* underscore,
-* your actual campaign name that follows your agency’s naming convention.
+* tu af\_prt (<Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#parámetro-af_prt">Cuál es tu af\_prt y dónde encontrarlo</Anchor>),
+* guion bajo,
+* el nombre de tu campaña que sigue la convención de denominación de tu agencia.
 
-For example, if your af\_prt is AgencyX, your campaign name may look like this:
+Si ejecutas campañas en medios que no sean redes de publicidad (redes sociales, correos electrónicos, blogs, SMS), puedes usar <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">enlaces personalizados</Anchor> para ellas.
 
-`AgencyX_SummerSale`
+`Comenzar`
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * Agency campaigns in Sandbox attribution are also transparent and the identity of the ad network running the campaign is not masked from the marketer.
+> * Las campañas de agencia en la atribución de Sandbox también son transparentes, y la identidad de la ad network que ejecuta la campaña no queda enmascarada para el profesional de marketing.
 
-### SKAdNetwork agency campaigns
+### Campañas de agencias de SKAdNetwork
 
-SKAdNetwork infrastructure, part of iOS by Apple, lets marketers measure campaign success without IDFA or advertising ID. Although Apple doesn't include agencies as part of the SKAdNetwork attribution process, and AppsFlyer can't attribute agencies directly, AppsFlyer still has the ability to provide attribution data for agency campaigns running on SKAdNetworks.
+La infraestructura SKAdNetwork, parte de iOS de Apple, permite a los marketers medir el éxito de la campaña sin el identificador de anunciante (IDFA) o el ID de publicidad. Aunque Apple no incluye las agencias como parte del proceso de atribución de SKAdNetwork, y AppsFlyer no puede atribuir las agencias directamente, AppsFlyer todavía tiene la capacidad de proporcionar datos de atribución para las campañas de agencias que se ejecutan en SKAdNetworks.
 
-#### Campaign naming
+#### Nombres de las campañas
 
-To view your campaigns in the AppsFlyer SKAdNetwork dashboard, the names of campaigns that you configure with the SKAdNetwork, should include your partner identifier and be structured as follows:
+Para ver tus campañas en el panel de control de AppsFlyer SKAdNetwork, los nombres de las campañas que configures con SKAdNetwork deben incluir tu identificador de partner y estar estructurados de la siguiente manera:
 
-* your af\_prt (<Anchor target="_blank" href="/partners/docs/about-agency-accounts#af_prt-parameter">What's your af\_prt and where to find it</Anchor>),
-* underscore,
-* your actual campaign name that follows your agency’s naming convention.
+* tu af\_prt (<Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#parámetro-af_prt">Cuál es tu af\_prt y dónde encontrarlo</Anchor>),
+* guion bajo,
+* el nombre de tu campaña que sigue la convención de denominación de tu agencia.
 
-For example, if your af\_prt is AgencyX, your campaign name may look like this:
+Si ejecutas campañas en medios que no sean redes de publicidad (redes sociales, correos electrónicos, blogs, SMS), puedes usar <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">enlaces personalizados</Anchor> para ellas.
 
-`AgencyX_SummerSale`
+`Comenzar`
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * Agency campaigns in SKAdNetwork are also transparent and the identity of the ad network running the campaign is not masked from the marketer. Consider that starting iOS 15, the marketer (app owner) can <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">opt-in to directly receive a copy of the postback.</Anchor>
-> * Make sure the marketer activates the ad network **Partner activation** setting in the Integration tab. Failure to do so will prevent AppsFlyer from sharing decoded postback data with networks, impacting their ability to use it for reporting and optimization. This is in addition to the Partner activation setting that you can access in the user interface.
+> * Las campañas de agencias en SKAdNetwork siempre son transparentes y la identidad de la red de publicidad que ejecuta la campaña no está enmascarada del marketer. Ten en cuenta que a partir de iOS 15, el marketer (propietario de la aplicación) puede <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">optar por recibir directamente una copia del postback.</Anchor>
+> * Debes pedirle al marketer que habilite la configuración de **activación de partners** de la red de publicidad en la pestaña de integración. Si no lo haces, la red de publicidad no recibirá los postbacks relacionados con las campañas de SKAN. Nota: Esto es una adición a la configuración de activación de partners a la que puedes acceder en la interfaz de usuario.
 
-#### Access to SKAN Conversion Studio
+#### Acceso a SKAN Conversion Studio
 
-Agencies can <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#view-cv-mapping">view and download</Anchor> a marketer's SKAN CV mapping configuration in <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#skan-conversion-studio-basics">Conversion Studio</Anchor>, but they can't configure or edit the settings.
+Las agencias pueden <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#view-cv-mapping">ver y descargar</Anchor> la configuración de asignación de CV de SKAN de un marketer en <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#aspectos-básicos-del-skan-conversion-studio">Conversion Studio</Anchor>, pero no pueden configurar o editar los ajustes.
 
-#### SKAdNetwork Dashboard
+#### Panel de control de SKAdNetwork
 
-<Embed title="Getting started—agency onboarding" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/jkm7se0jym" providerUrl="https://fast.wistia.com" />
+<Embed title="Introducción: onboarding de agencias" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/jkm7se0jym" providerUrl="https://fast.wistia.com" />
 
-**Further reading:**
+**Lectura adicional:**
 
-* <Anchor target="_blank" href="/marketers/docs/about-att-and-skan">SKAdNetwork Quickstart guide</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork Dashboard</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAdNetwork Solution</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/about-att-and-skan">Guía de inicio rápido de SKAdNetwork</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">Panel de control de SKAdNetwork</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">Solución SKAdNetwork</Anchor>
 
-### Single Source of Truth (SSOT) for agencies
+### Fuente única de verdad (SSOT) para agencias
 
-SSOT unifies all attribution methods by combining attribution data from different models and removing duplicate installs and the associated cost and revenue-related metrics. This way, eCPI, ROI, and ROAS, for example, are calculated correctly.
+La SSOT unifica todos los métodos de atribución combinando datos de atribución de diferentes modelos y eliminando las instalaciones duplicadas y las métricas asociadas a costos e ingresos. De esta manera, el eCPI, ROI y ROAS, por ejemplo, se calculan correctamente.
 
-Agencies can access SSOT data in the Overview dashboard, but not via API.
+Las agencias pueden acceder a los datos de SSOT en el panel de control general, pero no a través de la API.
 
-To include the SSOT flag in your overview dashboard, the marketer must turn on SSOT in the Conversion Studio.
+Para incluir el indicador SSOT en tu panel de control, el marketer debe activar SSOT en el Conversion Studio.
 
-**Further reading:**
+**Lectura adicional:**
 
-* <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Single Source of Truth (SSOT) guide for iOS attribution</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Guía de la Única fuente de verdad (SSOT) para la atribución de iOS</Anchor>
 
-## What else you can do
+## Qué más puedes hacer
 
-* Measure user retention
-* Use in-app events to optimize your campaigns
-* Run <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor> campaigns
-* Export your <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">data</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/registering-test-devices">Register your test device</Anchor>
-* and more.
+* Medir la retención de usuarios
+* Usar eventos in-app para optimizar tus campañas
+* Ejecutar campañas de <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">retargeting</Anchor>
+* Exportar tus <Anchor target="_blank" href="/marketers/es/docs/manage-data-access-permissions">datos</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">Registrar tu dispositivo de prueba</Anchor>
+* y más.
 
-You can find more information about advanced Agency account use <Anchor target="_blank" href="/partners/docs/about-agency-accounts#agency-setting-up-campaigns">here</Anchor>.
+Puedes encontrar más información sobre el uso avanzado de la cuenta de agencia <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#agency-setting-up-campaigns">aquí</Anchor>.
 
-Stumbled upon an unfamiliar term? Find it in our <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary">Glossary</Anchor>.
+¿Te topaste con un término desconocido? Encuéntralo en nuestro <Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary">Glosario</Anchor>.
 
-Got an urgent technical question? Search our Help Center: we probably have an answer. If we don't, contact our support team via the bottom right corner of your dashboard.
+¿Tienes una pregunta técnica urgente? Busca en nuestro Centro de ayuda: probablemente tengamos una respuesta. Si no es así, ponte en contacto con nuestro equipo de soporte en la esquina inferior derecha de tu panel de control.
 
-<div data-zendesk-anchors="h_01HFXXKCMW7EREMC7KEYTF3ERH=appsflyer-attribution-model h_01KZTW5D6QWFP2Z3J31M9B6QKR=appsflyer-attribution-model h_01HFXXKCMW987FV2PB4EPXH92Z=agency-role-in-mobile-attribution-chain h_01HFXXKCMWPN6AN98A5RD5YXW7=pricing h_01HFXXKCMWRXVBYTW9RYEX7X8F=getting-started h_01HFXXKCMWB6ZG3PSHDSETC4XC=adding-team-members h_01HFXXKCMWBZVTHAEKED1Q27M3=adding-apps-to-your-account h_01HFXXKCMWYNNZWTKP9KEQ4VCD=what-does-it-mean-to-get-permission-from-a-marketer h_01JV9KR17EEHA6F2F8J13AEZEV=note h_01HFXXKCMWKW78TMC76F40PY2C=app-list h_01HFXXKCMW8S93N577393QZTYX=searching-for-apps h_01HFXXKCMWPZVADY15DKATJ7Z4=agency-dashboard h_01HFXXKCMWFB9RXY7AVBX5CGB9=running-campaigns selfreporting-networks-srns=self-reporting-networks-srns h_01HFXXKCMW1Z7FWHDJ3Y6G0NYD=self-reporting-networks-srns nonsrns=non-srns h_01HFXXKCMWPAMZ373D5AVD5EJF=non-srns h_01J6PCDYM2W1X6EMMEE7SFB3VE=sandbox-attribution-agency-campaigns h_01HFXXKCMWMW1AHXMS19CYD4VC=campaign-naming h_01HFXXKCMWEQ41A7TZ2K6DE424=note-1 h_01HFXXKCMWZ19E0QR1VE977BTS=skadnetwork-agency-campaigns 01J6PCG6JGY2R8T5DDCR8APM66=campaign-naming-1 01J6PCG6JHK9TGX93SD4DRP393=note-2 h_01HFXXKCMWX53HMRG2ZTD9FYQE=access-to-skan-conversion-studio h_01HFXXKCMW1HHMSS3XAXJKME29=skadnetwork-dashboard h_01HFXXKCMX1E8GZKHJG7EEJ5Y1=single-source-of-truth-ssot-for-agencies h_01HFXXKCMXQ2JT63GBMC74PWBA=what-else-you-can-do" />
+<div data-zendesk-anchors="appsflyer-attribution-model=modelo-de-atribuci%C3%B3n-de-appsflyer h_01HFXXKCMW7EREMC7KEYTF3ERH=modelo-de-atribuci%C3%B3n-de-appsflyer h_01KZTW5D6QWFP2Z3J31M9B6QKR=modelo-de-atribuci%C3%B3n-de-appsflyer agency-role-in-mobile-attribution-chain=rol-de-la-agencia-en-la-cadena-de-atribuci%C3%B3n-m%C3%B3vil h_01HFXXKCMW987FV2PB4EPXH92Z=rol-de-la-agencia-en-la-cadena-de-atribuci%C3%B3n-m%C3%B3vil pricing=precios h_01HFXXKCMWPN6AN98A5RD5YXW7=precios getting-started=primeros-pasos h_01HFXXKCMWRXVBYTW9RYEX7X8F=primeros-pasos adding-team-members=agregar-miembros-al-equipo h_01HFXXKCMWB6ZG3PSHDSETC4XC=agregar-miembros-al-equipo adding-apps-to-your-account=agregar-aplicaciones-a-tu-cuenta h_01HFXXKCMWBZVTHAEKED1Q27M3=agregar-aplicaciones-a-tu-cuenta what-does-it-mean-to-get-permission-from-a-marketer=qu%C3%A9-significa-obtener-el-permiso-de-un-marketer h_01HFXXKCMWYNNZWTKP9KEQ4VCD=qu%C3%A9-significa-obtener-el-permiso-de-un-marketer h_01JV9KR17EEHA6F2F8J13AEZEV=nota app-list=lista-de-aplicaciones h_01HFXXKCMWKW78TMC76F40PY2C=lista-de-aplicaciones searching-for-apps=b%C3%BAsqueda-de-aplicaciones h_01HFXXKCMW8S93N577393QZTYX=b%C3%BAsqueda-de-aplicaciones agency-dashboard=panel-de-control-de-agencia h_01HFXXKCMWPZVADY15DKATJ7Z4=panel-de-control-de-agencia running-campaigns=campa%C3%B1as-en-ejecuci%C3%B3n h_01HFXXKCMWFB9RXY7AVBX5CGB9=campa%C3%B1as-en-ejecuci%C3%B3n selfreporting-networks-srns=redes-de-autorreporte-srn h_01HFXXKCMW1Z7FWHDJ3Y6G0NYD=redes-de-autorreporte-srn nonsrns=no-srn h_01HFXXKCMWPAMZ373D5AVD5EJF=no-srn sandbox-attribution-agency-campaigns=campa%C3%B1as-de-agencia-en-la-atribuci%C3%B3n-de-sandbox h_01J6PCDYM2W1X6EMMEE7SFB3VE=campa%C3%B1as-de-agencia-en-la-atribuci%C3%B3n-de-sandbox campaign-naming=introducci%C3%B3n-onboarding-de-agencias h_01HFXXKCMWMW1AHXMS19CYD4VC=introducci%C3%B3n-onboarding-de-agencias h_01HFXXKCMWEQ41A7TZ2K6DE424=nota-1 skadnetwork-agency-campaigns=campa%C3%B1as-de-agencias-de-skadnetwork h_01HFXXKCMWZ19E0QR1VE977BTS=campa%C3%B1as-de-agencias-de-skadnetwork 01J6PCG6JGY2R8T5DDCR8APM66=nombres-de-las-campa%C3%B1as 01J6PCG6JHK9TGX93SD4DRP393=nota-2 access-to-skan-conversion-studio=acceso-a-skan-conversion-studio h_01HFXXKCMWX53HMRG2ZTD9FYQE=acceso-a-skan-conversion-studio skadnetwork-dashboard=panel-de-control-de-skadnetwork h_01HFXXKCMW1HHMSS3XAXJKME29=panel-de-control-de-skadnetwork single-source-of-truth-ssot-for-agencies=fuente-%C3%BAnica-de-verdad-ssot-para-agencias h_01HFXXKCMX1E8GZKHJG7EEJ5Y1=fuente-%C3%BAnica-de-verdad-ssot-para-agencias what-else-you-can-do=qu%C3%A9-m%C3%A1s-puedes-hacer h_01HFXXKCMXQ2JT63GBMC74PWBA=qu%C3%A9-m%C3%A1s-puedes-hacer" />

@@ -1,5 +1,5 @@
 ---
-title: "Redirecting users\_to the app store"
+title: Redirigir a los usuarios a la tienda de aplicaciones
 metadata:
   keywords:
     - clicks
@@ -14,59 +14,58 @@ x-zendesk:
     - Ad Networks
     - Data Management
   created_at: '2018-04-30T08:08:25Z'
-  edited_at: '2026-04-06T09:23:23Z'
+  edited_at: '2026-08-12T12:28:26Z'
   id: 360000807629
-  locale: en-us
+  locale: es
   section: Provide data
   section_id: 6551209900817
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000807629-Redirecting-users-to-the-app-store
+  url: https://support.appsflyer.com/hc/es/articles/360000807629
 ---
-> **At a glance:** Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer.
+> **En resumen:** Obtén información sobre las opciones para redirigir a los usuarios a la tienda de aplicaciones después de publicar un anuncio y cómo enviar los datos de engagement a AppsFlyer.
 
-## Overview
+## Descripción general
 
-AppsFlyer receives engagement data (clicks and impressions) for attribution in a number of ways:
+AppsFlyer recibe los datos de engagement (clics e impresiones) para su atribución de varias maneras:
 
-* The user **clicks** the ad and gets [redirected to AppsFlyer](#users-redirected-via-appsflyer), and then to the app store.
-* The user **clicks or views** the ad and is [directly sent to the app store](#users-sent-directly-by-the-ad-network), while the **attribution link is sent to AppsFlyer from the server**.
+* El usuario **hace clic** en el anuncio y se le [redirige a AppsFlyer](#usuarios-redirigidos-a-través-de-appsflyer) y, después, a la tienda de aplicaciones.
+* El usuario hace **clic o visualiza** el anuncio y es [redirigido directamente a la tienda de aplicaciones](#usuarios-enviados-directamente-por-la-red-publicitaria), mientras que el **enlace de atribución se envía a AppsFlyer desde el servidor**.
 
-In both cases, the regular <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution link structure and parameters</Anchor> are used.
+En ambos casos, se utilizan la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">estructura y los parámetros habituales de los enlaces de atribución</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> For SRNs, data is received via specialized APIs
+> En el caso de las SRN, los datos se reciben a través de API especializadas.
 
-## Users redirected via AppsFlyer
+## Usuarios redirigidos a través de AppsFlyer
 
-When an ad is clicked, the user is directed to AppsFlyer, which then redirects them to the app store by the following flow:
+Cuando se hace clic en un anuncio, se dirige al usuario a AppsFlyer, que luego lo redirige a la tienda de aplicaciones mediante el siguiente flujo:
 
-1. The user is redirected to AppsFlyer
-2. AppsFlyer logs the click
-3. AppsFlyer redirects the user to the app store
-4. The user installs the app
-5. AppsFlyer attributes the install
+1. El usuario es redirigido a AppsFlyer.
+2. AppsFlyer registra el clic.
+3. AppsFlyer redirige al usuario a la tienda de aplicaciones.
+4. El usuario instala la aplicación.
+5. AppsFlyer atribuye la instalación.
 
-## Users sent directly by the ad network
+## Usuarios enviados directamente por la red publicitaria
 
-When an ad is clicked, the user is directed to the app store by the ad network, minimizing the number of redirects:
+Cuando se hace clic en un anuncio, la red publicitaria dirige al usuario a la tienda de aplicaciones, lo que minimiza la cantidad de redireccionamientos:
 
-1. The user is sent to the app store
-2. The ad network reports the engagement data to AppsFlyer from the device
-3. The user installs the app
-4. AppsFlyer attributes the install
+1. El usuario es enviado a la tienda de aplicaciones.
+2. La red publicitaria reporta los datos de engagement a AppsFlyer desde el dispositivo.
+3. El usuario instala la aplicación.
+4. AppsFlyer atribuye la instalación.
 
-### Sending engagement data to AppsFlyer
+### Envío de los datos de engagement a AppsFlyer
 
-Sending user directly to the app store improves their experience by reducing the number of redirections. It also ensures accurate attribution of installs and enables high-quality traffic.
+Enviar al usuario directamente a la tienda de aplicaciones mejora su experiencia al reducir la cantidad de redirecciones. También garantiza una atribución precisa de las instalaciones y permite un tráfico de alta calidad.
 
-Ad networks can only report clicks and impressions to AppsFlyer **directly from the user's device**.
+Las redes publicitarias solo pueden reportar los clics y las impresiones a AppsFlyer **directamente desde el dispositivo del usuario**.
 
-#### Timing of sending redirects
+#### Tiempo de envío de redireccionamientos
 
-To prevent loss of attributions and revenue for the ad network, clicks and impressions must be sent to AppsFlyer in real-time:
+Para evitar la pérdida de atribuciones e ingresos para la red publicitaria, los clics y las impresiones deben enviarse a AppsFlyer en tiempo real:
 
-* **Impression URLs** must be reported once an ad is served
-* **Click URLs** must be reported once a user clicks the ad
+* Las **URL de impresiones** deben reportarse una vez que se publica un anuncio.
+* Las **URL de clics** deben reportarse cuando un usuario hace clic en el anuncio.
 
-<div data-zendesk-anchors="h_01HDY3CARC0A9504XGMJHYHGY4=overview h_01HDY3CARCZK06C5XHEQFQYA8W=note redirect-users-via-appsflyer=users-redirected-via-appsflyer 01HDYFGYW3FDR64C54KKPXRHDF=users-redirected-via-appsflyer send-users-directly-by-the-ad-network=users-sent-directly-by-the-ad-network 01HDYFH8ZCSP2SN4ZYQQVG7EED=users-sent-directly-by-the-ad-network send-engagement-data-to-appsflyer=sending-engagement-data-to-appsflyer h_01HDYGSEFHVF8ZD43XCVNGYT9N=sending-engagement-data-to-appsflyer h_01HDXXDDXDEP43YHE3GF81BSKV=timing-of-sending-redirects" />
+<div data-zendesk-anchors="overview=descripci%C3%B3n-general h_01HDY3CARC0A9504XGMJHYHGY4=descripci%C3%B3n-general h_01HDY3CARCZK06C5XHEQFQYA8W=nota redirect-users-via-appsflyer=usuarios-redirigidos-a-trav%C3%A9s-de-appsflyer 01HDYFGYW3FDR64C54KKPXRHDF=usuarios-redirigidos-a-trav%C3%A9s-de-appsflyer send-users-directly-by-the-ad-network=usuarios-enviados-directamente-por-la-red-publicitaria 01HDYFH8ZCSP2SN4ZYQQVG7EED=usuarios-enviados-directamente-por-la-red-publicitaria send-engagement-data-to-appsflyer=env%C3%ADo-de-los-datos-de-engagement-a-appsflyer h_01HDYGSEFHVF8ZD43XCVNGYT9N=env%C3%ADo-de-los-datos-de-engagement-a-appsflyer timing-of-sending-redirects=tiempo-de-env%C3%ADo-de-redireccionamientos h_01HDXXDDXDEP43YHE3GF81BSKV=tiempo-de-env%C3%ADo-de-redireccionamientos" />

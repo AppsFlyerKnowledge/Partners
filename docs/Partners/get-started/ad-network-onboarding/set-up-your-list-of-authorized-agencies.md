@@ -1,5 +1,5 @@
 ---
-title: Set up your list of authorized agencies
+title: Configura tu lista de agencias autorizadas
 metadata:
   keywords:
     - Partners
@@ -13,59 +13,58 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2024-06-09T19:29:56Z'
-  edited_at: '2024-08-12T13:37:50Z'
+  edited_at: '2026-08-12T12:29:27Z'
   id: 25774607860113
-  locale: en-us
+  locale: es
   section: Ad network onboarding
   section_id: 6551058566033
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/25774607860113-Set-up-your-list-of-authorized-agencies
+  url: https://support.appsflyer.com/hc/es/articles/25774607860113
 ---
-> **At a glance:** Manage which agencies you authorize to run campaigns through your network integration.
+> **En resumen:** Administra qué agencias autorizas a ejecutar campañas a través de la integración de tu red.
 
-## Overview
+## Visión general
 
-To prevent unauthorized use of your network, all agencies running campaigns through your network integration must be pre-approved. This is done by adding their agency ID (`af_prt`) to your list of authorized agencies. Agencies that don't appear in the list are unable to configure the integration, as the partner configuration window is grayed out. This prevents them from managing campaigns. After they're added to the list, the approval applies account-wide, allowing them to run campaigns with all apps on your network.
+Para evitar el uso no autorizado de tu red, todas las agencias que ejecuten campañas a través de la integración de tu red deben contar con una aprobación previa. Esto se hace agregando su ID de agencia (`af_prt`) a tu lista de agencias autorizadas. Las agencias que no aparecen en la lista no pueden configurar la integración, ya que la ventana de configuración de Partners aparece atenuada. Esto impide que gestionen campañas. La aprobación se realiza a nivel de cuenta, lo que significa que una vez que se aprueba una agencia, tiene acceso a todas las aplicaciones que ejecutan campañas en tu red.
 
-As of July 31, 2024, only traffic from agencies authorized by the ad networks will be recorded and measured in AppsFlyer. Unauthorized traffic will result in a 403 (Forbidden) response from AppsFlyer.
+A partir del 31 de julio de 2024, solo el tráfico de las agencias autorizadas por las redes de publicidad se registrará y medirá en AppsFlyer. El tráfico no autorizado dará lugar a una respuesta 403 (Prohibido) de AppsFlyer.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * This doesn't apply to agencies working with <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>
-> * Only admins have access to this page
-> * The list of authorized agencies can include up to 200 agencies
+> * Esto no se aplica a las agencias que trabajan con <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">SRN</Anchor>.
+> * Solo los administradores tienen acceso a esta página.
+> * La lista de agencias autorizadas puede incluir hasta 200 agencias.
 
 [![authorized-agencies-5.jpg](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)
 
-## Manage authorized agencies
+## Gestión de las agencias autorizadas
 
-From the **Authorized agencies** page, you can add agencies, view the existing list of agencies you've approved to run campaigns on your network, and delete agencies you don't approve. The page includes two sections:
+Desde la página **Agencias autorizadas**, puedes agregar agencias, ver la lista existente de agencias que aprobaste para ejecutar campañas en tu red y eliminar las agencias que no apruebas. La página incluye dos secciones:
 
-* Left pane: Add new agencies
-* Right pane:
-  * View the list of approved agencies
-  * Delete agencies
+* Panel izquierdo: Agregar nuevas agencias
+* Panel derecho:
+  * Ver la lista de agencias autorizadas
+  * Eliminar agencias
 
-**To access the Authorized agencies page:**
+**Para acceder a la página de agencias autorizadas:**
 
-1. From the top bar, open the account menu (email address dropdown) > **Security center.**
-2. In the **Authorized agencies** section, click **Manage authorized agencies**.
+1. En la barra superior, abre el menú de la cuenta (menú desplegable de direcciones de correo electrónico) > **Centro de seguridad**.
+2. En la sección **Agencias autorizadas**, haz clic en **Administrar agencias autorizadas**.
 
-### Add an agency to the list
+### Agregar una agencia a la lista
 
-1. From the left pane of the **Authorized agencies** page, enter the agency ID.
-2. Click **Add to list**. The agency now appears on the right pane.
-3. [Optional] Repeat steps 1-2 for adding more agencies.
-4. Click **Save list**.
+1. En el panel izquierdo de la página **Agencias autorizadas**, introduce el ID de la agencia.
+2. Haz clic en **Agregar a la lista**. La agencia ahora aparece en el panel derecho.
+3. [Opcional] Repite los pasos 1 y 2 para agregar más agencias.
+4. Haz clic en **Guardar lista**.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Make sure to enter a valid agency ID. For example (af\_prt=) `my_agency_123`
+> Asegúrate de introducir un ID de agencia válido. Por ejemplo, (af\_prt=) `my_agency_123`
 
-### Delete an agency from the list
+### Eliminar una agencia de la lista
 
-1. From the right pane of the **Authorized agencies** page, hover over the agency you want to delete and click the dustbin icon.
-2. Confirm the deletion. An indication confirms the successful deletion of the agency.
-3. [Optional] Repeat steps 1-2 for deleting more agencies.
+1. En el panel derecho de la página **Agencias autorizadas**, coloca el cursor sobre la agencia que deseas eliminar y haz clic en el ícono de la papelera.
+2. Confirma la eliminación. La eliminación correcta de la agencia se confirma con una indicación.
+3. [Opcional] Repite los pasos 1 y 2 para eliminar más agencias.
 
-<div data-zendesk-anchors="h_01HJR00RGQ2PK3T8BB2ZG3PFQN=overview h_01HJR00RGQX0CQEHDS9BHBGJD4=note accessing-the-allowlists=manage-authorized-agencies h_01HZZ5FP1560HJYDVDNSJ8WAAP=manage-authorized-agencies h_01HZZ691KMKTYVAETT4RM3AD97=add-an-agency-to-the-list h_01HZZ7QGY0VTS0FY0HJJAZ2AXV=note-1 h_01HJR00RGQ4ZEGE0RDK01S5SQQ=delete-an-agency-from-the-list" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01HJR00RGQ2PK3T8BB2ZG3PFQN=visi%C3%B3n-general h_01HJR00RGQX0CQEHDS9BHBGJD4=nota accessing-the-allowlists=gesti%C3%B3n-de-las-agencias-autorizadas h_01HZZ5FP1560HJYDVDNSJ8WAAP=gesti%C3%B3n-de-las-agencias-autorizadas add-an-agency-to-the-list=agregar-una-agencia-a-la-lista h_01HZZ691KMKTYVAETT4RM3AD97=agregar-una-agencia-a-la-lista h_01HZZ7QGY0VTS0FY0HJJAZ2AXV=nota-1 h_01HJR00RGQ4ZEGE0RDK01S5SQQ=eliminar-una-agencia-de-la-lista" />

@@ -1,5 +1,5 @@
 ---
-title: Protect360 reports for ad networks
+title: Reportes de Protect360 para redes de publicidad
 metadata:
   keywords:
     - Ad Networks
@@ -13,78 +13,77 @@ x-zendesk:
     - Protect360
     - Ad Networks
   created_at: '2022-02-08T14:53:48Z'
-  edited_at: '2023-03-12T12:50:25Z'
+  edited_at: '2026-08-12T12:27:38Z'
   id: 4420246395793
-  locale: en-us
+  locale: es
   section: Rejected traffic
   section_id: 6551666000273
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4420246395793-Protect360-reports-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/4420246395793
 ---
-> **At a glance:** Ad networks responsible for user acquisition and retargeting can receive data regarding blocked clicks and impressions.
+> **A primera vista:** Las ad networks responsables de la adquisición de usuarios y del retargeting pueden recibir datos sobre clics e impresiones bloqueados.
 
-## Protect360 reports for ad networks
+## Reportes de Protect360 para redes de publicidad
 
-**Disclaimer**: This article provides information on Protect360 reports available only to ad networks. For data that is also available to advertisers, see <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners">Protect360 for integrated partners</Anchor>.
+**Aviso**: Este artículo proporciona información sobre los reportes de Protect360 disponibles solo para ad networks. Para los datos que también están disponibles para los anunciantes, consulta <Anchor target="_blank" href="/partners/es/docs/protect360-for-integrated-partners">Protect360 para Partners integrados</Anchor>.
 
-Ad networks can receive reports via <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">Data Locker for Partners</Anchor> with valuable information regarding clicks and impressions that are blocked either because of:
+Las ad networks pueden recibir reportes a través de <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners">Data Locker for Partners</Anchor> con información valiosa sobre clics e impresiones que se bloquean por alguno de los siguientes motivos:
 
-* Blocked clicks and impressions that occur when ad networks cross their fraud limit. The report includes total blocks, as well as blocks due to click and impression capping. <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#impression-capping">Learn more about capping</Anchor>
-* Failed click signatures that occur when a click with the network's PID parameter networks and a click signature to validate clicks can't be validated. <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">Learn more about click signing</Anchor>
+* Clics e impresiones bloqueados que se producen cuando las ad networks superan su límite de fraude. El reporte incluye el total de bloqueos, así como los bloqueos debidos al capping de clics e impresiones. <Anchor target="_blank" href="/partners/es/docs/protect360-for-integrated-partners#umbral-de-impresiones">Saber más sobre el capping</Anchor>
+* Firmas de clic fallidas que se producen cuando no se puede validar un clic con el parámetro PID de la red y una firma de clic para validar los clics. <Anchor target="_blank" href="/partners/es/docs/click-signing-for-ad-networks">Saber más sobre la firma de clics</Anchor>
 
-Ad networks can then ingest this network-level data with cross-customer visibility of their blocked clicks and impressions and use it to protect against fraud.
+A continuación, las ad networks pueden ingerir estos datos a nivel de red con visibilidad entre clientes de sus clics e impresiones bloqueados y usarlos para protegerse contra el fraude.
 
-### Report considerations
+### Consideraciones sobre el reporte
 
-* Data arrives in CSV format to the UA/retargeting partner's bucket.
-* Contains dimensions and metrics relevant to the ad network (that is cleaned of all dimensions irrelevant to the ad network).
-* Available via <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">Data Locker for Partners</Anchor>.
-* Data freshness: <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#ad-revenue">Daily, meaning data for Day 0 arrives on Day 1</Anchor>. Data is written daily at 07:00 <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">UTC time</Anchor> to the h=23 of your Data Locker bucket.
-* Apps included: A single report contains the data of all apps.
+* Los datos llegan en formato CSV al bucket del partner de UA/retargeting.
+* Contiene dimensiones y métricas relevantes para la ad network (es decir, depuradas de todas las dimensiones irrelevantes para la ad network).
+* Disponible a través de <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners">Data Locker for Partners</Anchor>.
+* Actualización de datos: <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#ad-revenue">A diario, lo que significa que los datos del Día 0 llegan el Día 1</Anchor>. Los datos se escriben diariamente a las 07:00 <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#daily">hora UTC</Anchor> en la h=23 de tu bucket de Data Locker.
+* Aplicaciones incluidas: Un único reporte contiene los datos de todas las aplicaciones.
 
-## Report types
+## Tipos de informes
 
 <div id="blocked-clicks-and-impressions" />
 
-<Accordion title="Blocked clicks and impressions">
+<Accordion title="Clics e impresiones bloqueados">
 
-This report contains aggregate level data about clicks and impressions that are blocked due to capping or any other reason. 
+Este reporte contiene datos de nivel agregado sobre clics e impresiones que se bloquean debido al capping o por cualquier otro motivo. 
 
-#### Report structure: Fields/Dimensions
+#### Estructura del reporte: Campos/Dimensiones
 
-| **Field** | **Remarks** |
+| **Campo** | **Nota** |
 | --- | --- |
-| app\_id | App ID in the AppsFlyer platform. |
-| site\_id | ID that identifies the publisher that displays the ad. |
-| date | Blocked date |
-| agency | <ul><li>Agency that brought the traffic via this ad network.</li><li>Returns as null if there is no agency involved.</li></ul> |
+| id\_aplicación | ID de aplicación en la plataforma AppsFlyer. |
+| id\_sitio | ID que identifica al publisher que muestra el anuncio. |
+| fecha | Fecha de bloqueo |
+| agencia | <ul><li>Agencia que trajo el tráfico a través de esta ad network.</li><li>Devuelve null si no hay ninguna agencia implicada.</li></ul> |
 
-#### Report structure: Metrics
+#### Estructura del reporte: Métricas
 
-| **Field** | **Remarks** |
+| **Campo** | **Nota** |
 | --- | --- |
-| number\_of\_blocked\_clicks | Total number of the network’s blocked clicks |
-| number\_of\_blocked\_impressions | Total number of the network’s blocked impressions |
-| number\_of\_capped\_clicks | The number of the network’s capped clicks (out of the total blocked clicks) |
-| number\_of\_capped\_impressions | The number of the network’s capped impressions (out of the total blocked impressions) |
+| numero\_de\_clics\_bloqueados | Cantidad total de clics bloqueados de la red |
+| numero\_de\_impresiones\_bloqueadas | Cantidad total de impresiones bloqueadas de la red |
+| numero\_de\_clics\_limitados | El número de clics limitados de la red (de los clics bloqueados totales) |
+| numero\_de\_impresiones\_limitadas | El número de impresiones limitadas de la red (de las impresiones totales bloqueadas) |
 
 </Accordion>
 
 <div id="failed-click-signatures" />
 
-<Accordion title="Failed click signatures">
+<Accordion title="Firmas de clic fallidas">
 
-This report contains user-level about failed click signatures. Meaning, when ad networks use the <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">AppsFlyer click signing method</Anchor>, the report contains clicks of URLs with the network’s PID that don't have validated click signatures, either because the signature is invalid or expired, or the click is not signed at all. Click signing failures could occur when there are technical errors in the implementation of click signatures by the ad network, or when clicks are sent on behalf of the network (with its PID) by another party.
+Este reporte contiene datos a nivel de usuario sobre firmas de clic fallidas. Es decir, cuando las ad network usan el <Anchor target="_blank" href="/partners/es/docs/click-signing-for-ad-networks">método de firma de clics de AppsFlyer</Anchor>, el reporte contiene clics de URL con el PID de la red que no tienen firmas de clic validadas, ya sea porque la firma no es válida o ha caducado, o porque el clic no está firmado en absoluto. Los fallos en la firma de clics pueden producirse cuando hay errores técnicos en la implementación de las firmas de clic por parte de la ad network, o cuando otra party envía clics en nombre de la red (con su PID).
 
-#### Report structure: Fields/Dimensions
+#### Estructura del reporte: Campos/Dimensiones
 
-| **Field** | **Remarks** |
+| **Campo** | **Nota** |
 | --- | --- |
 | event\_time |  |
 | original\_url |  |
-| failed\_signing\_reason | For example:<ul><li>Invalid signature</li><li>Missing signature</li><li>Expired signature</li><li>Expired secret key</li></ul> |
-| is\_blocking\_enabled | Refers to the configuration mode of the <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">click signature API</Anchor>:<ul><li>TRUE for enabled.</li><li>FALSE for report-only.</li><li>Not included in the report for disabled.</li></ul> |
+| motivo\_del\_error\_de\_firma | Por ejemplo,<ul><li>Firma inválida</li><li>Ausencia de firma</li><li>Firma caducada</li><li>Clave secreta caducada</li></ul> |
+| el\_bloqueo\_esta\_habilitado | Hace referencia al modo de configuración de la <Anchor target="_blank" href="/partners/es/docs/click-signing-for-ad-networks">API de firma de clics</Anchor>:<ul><li>TRUE para habilitado.</li><li>FALSE para solo reporte.</li><li>No se incluye en el reporte si está deshabilitado.</li></ul> |
 
 </Accordion>
 
-<div data-zendesk-anchors="report-structure-fieldsdimensions::44afb679=report-structure-fieldsdimensions-1" />
+<div data-zendesk-anchors="protect360-reports-for-ad-networks=reportes-de-protect360-para-redes-de-publicidad report-considerations=consideraciones-sobre-el-reporte report-types=tipos-de-informes report-structure-fieldsdimensions=estructura-del-reporte-camposdimensiones report-structure-metrics=estructura-del-reporte-m%C3%A9tricas report-structure-fieldsdimensions::44afb679=estructura-del-reporte-camposdimensiones-1" />

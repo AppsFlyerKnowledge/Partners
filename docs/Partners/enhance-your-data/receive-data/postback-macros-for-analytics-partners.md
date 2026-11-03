@@ -1,5 +1,5 @@
 ---
-title: Postback macros for analytics partners
+title: Macros de postback para Partners de analítica
 metadata:
   keywords:
     - Advertisers
@@ -16,103 +16,102 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2021-01-04T04:44:40Z'
-  edited_at: '2026-08-14T16:22:42Z'
+  edited_at: '2026-08-22T00:37:15Z'
   id: 360016751637
-  locale: en-us
+  locale: es
   section: Receive data
   section_id: 6551235995281
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360016751637-Postback-macros-for-analytics-partners
+  url: https://support.appsflyer.com/hc/es/articles/360016751637
 ---
-> **At a glance:** Use macros as part of the postbacks sent to analytics partners to get relevant attribution data.
+> **At a glance:** Usa macros como parte de los postbacks enviados a partners de analítica para obtener datos de atribución relevantes.
 
-## Postbacks for analytics partners
+## Postbacks para Partners de analítica
 
-Analytics partners can define the content and endpoints of postbacks sent to them, as part of their integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on.
+Los Partners de analítica pueden definir el contenido y los endpoints de los postbacks que se les envían como parte de su integración con AppsFlyer. Los postbacks se relacionan con el engagement del usuario de la aplicación, como instalaciones, eventos in-app, re-engagements, etc.
 
-* **Postback configuration:** To request changes to your postback settings, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> to open a ticket, or contact your AppsFlyer partner development manager.
-* **Postback types**: Postbacks are available for install and in-app events.
+* **Configuración de postback:** Para solicitar cambios en la configuración de postback, usa el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para Partners</Anchor> para abrir un ticket o contacta con tu gerente de desarrollo de Partners de AppsFlyer.
+* **Tipos de postback**: Hay postbacks disponibles para instalación y eventos in-app.
 
-## Postback macros
+## Macros de postbacks
 
-When included in a postback, macros are replaced with user-relevant data. For example, to get the IP address of the user installing the app, include country\_code=(ip) in the postback structure. Supported macros are listed in the following table:
+Cuando se incluyen en un postback, las macros se sustituyen por datos relevantes para el usuario. Por ejemplo, para obtener la dirección IP del usuario que instala la aplicación, incluye country\_code=(ip) en la estructura del postback. Las macros admitidas se enumeran en la siguiente tabla:
 
-* Source: Where the data originates from:
-  * SDK: AppsFlyer SDK embedded in the app or server-to-server API
-  * AF: After processing by AppsFlyer
-* **[Base]** **Macros for all postbacks**: Macros relevant to install and in-app event.
-* **[Optional]** for in-app events as indicated in the column.
+* Fuente: De dónde proceden los datos:
+  * SDK: El SDK de AppsFlyer incorporado en la aplicación o la API de servidor a servidor
+  * AF: Tras el procesamiento por parte de AppsFlyer.
+* **[Base]** **Macros para todos los postbacks**: Macros relevantes para la instalación y el evento in-app.
+* **[Opcional]** para eventos in-app, como se indica en la columna.
 
-#### Macros—installs and in-app events
+#### Macros: instalaciones y eventos in-app
 
-| Postback macro (name) | Source | Description | [Base] Macros for all postbacks | [Optional] In-app events |
+| Macro de postback (nombre) | Fuente | Nota | [Base] Macros para todos los postbacks | [Opcional] Eventos in-app |
 | --- | --- | --- | --- | --- |
-| advertising\_id | SDK | User-resettable device ID, AKA GAID. Also available as: (sha1-advertiserId) | Yes |  |
-| event\_name | SDK | Name allocated to an event |  | Yes |
-| event\_revenue\_USD | AF | Event value in USD |  | Yes |
-| event\_revenue | SDK | Event value reported by SDK using event\_revenue\_currency or currency selected by you. |  | Yes |
-| event\_revenue\_currency | SDK | The event revenue currency code reported in the event or the currency selected by you. |  | Yes |
-| event\_time | SDK | Event time |  | Yes |
-| event\_value | SDK | in-app event includes attributes with values, which can be sent entirely on the postback in JSON format. URL encoded using the (encode) macro. |  | Yes |
-| partner\_event\_id | AF | Name/ID of the corresponding event in the partner's platform |  | Yes |
-| app\_name | SDK | App name set by the advertiser | Yes |  |
-| appsflyer\_id | SDK | AppsFlyer unique identifier recorded on conversion | Yes |  |
-| attributed\_touch\_type | AF | A flag marking if the attribution occurred due to a view-through (1 = impression, 0 = click) | Yes |  |
-| country\_code | AF | Country Code using ISO 3166 (alpha-2) Example: US, CN. | Yes |  |
-| idfa | SDK | User resettable advertising ID found on iOS devices Also available as: (sha1-idfa) | Yes |  |
-| idfv | SDK | Unique identifier per user per vendor on IOS devices | Yes |  |
-| install\_time | SDK | Install timestamp | Yes |  |
-| install\_unix\_ts | SDK | Install timestamp in unix format | Yes |  |
-| is\_lat | SDK | Limit ad tracking (LAT): iOS: Starting iOS 14 LAT is deprecated by Apple. Determine user privacy status using ATT. In this case disregard is\_lat. Before iOS 14, if true, IDFA is not available and is set to 0. Android: When true, the user has opted-out of interest-based ads. This does not prevent the collection of GAID. | Yes |  |
-| language | SDK | Language (locale) reported by the device and set by the device OS. | Yes |  |
-| app\_id | SDK | Unique app identifier in Appsflyer | Yes |  |
-| app-version-name | SDK | App version set by the app developer in the app code | Yes |  |
-| attributed\_touch time | AF | Time of the touch AppsFlyer attributed to | Yes |  |
-| device\_type | SDK | The commercial model name of the device. Example: SM-GM284 or iPhone7 | Yes |  |
-| ip | AF | IP of the user device reporting the event | Yes |  |
-| match\_type | AF | Attribution method type. For example, srn, id\_matching, probabilistic | Yes |  |
-| os\_version | SDK | Device operating system version | Yes |  |
-| user\_agent | SDK | The URL user agent | Yes |  |
-| wifi | SDK | If true, the connection was a wifi connection at the conversion time | Yes |  |
-| oaid | SDK | User-resettable ID on some Android devices usually as an alternative to GAID | Yes |  |
-| platform | SDK | Device platform: iOS, Android, or Windows Mobile | Yes |  |
-| retargeting\_conversion\_type | SDK | A flag marking if this is a re-attribution or re-engagement | Yes |  |
-| pid | AF | Ad network that the install or in-app event is attributed to | Yes |  |
-| af\_ad | Link | Ad Name (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">see more</Anchor>) provided by the advertiser/publisher | Yes | Yes |
-| af\_ad\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| af\_adset | Link | <ul><li>Provided by the advertiser/publisher.</li><li>Adset is an intermediate level in the hierarchy between Campaign and Ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#levels-of-data-granularity">See more</Anchor></li></ul> | Yes | Yes |
-| af\_adset\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| c | Link | Provided by the advertiser/publisher. Campaign names that exceed 100 characters in length are displayed on the dashboard as "c\_name\_exceeded\_max\_length" | Yes | Yes |
-| af\_c\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| af\_siteid | Link | <ul><li>Unique ID that identifies the publisher that displays the ad. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#site-id-parameter">Learn more</Anchor></li></ul> | Yes | Yes |
-| af\_subsite\_id | Link | <ul><li>Ad sub-network/Publisher ID.</li><li>If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567</li></ul> | Yes | Yes |
-| af\_ad\_type | Link | Use the following naming convention:<ul><li>**text:** an ad unit containing only text, for example a search result</li><li>**banner:** a basic format that appears at the top or bottom of the device screen</li><li>**interstitial:** a full-page ad that appears during breaks in the current experience</li><li>**video:** a standard video, that is non-rewarded</li><li>**rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video</li><li>**playable:** an ad unit containing an interactive preview of the app experience</li><li>**sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article</li><li>**audio:** an audio ad</li></ul> | Yes | Yes |
+| advertising\_id | SDK | ID del dispositivo que puede ser restablecido por el usuario, también conocido como GAID. También disponible como: (sha1-advertiserId) | Sí |  |
+| nombre\_del\_evento | SDK | Nombre asignado a un evento |  | Sí |
+| event\_revenue\_USD | AF | Valor del evento en USD |  | Sí |
+| ingresos\_evento | SDK | Valor de evento reportado por SDK usando event\_revenue\_currency o la divisa que has seleccionado. |  | Sí |
+| moneda\_ingresos\_evento | SDK | El código de divisa de los ingresos del evento reportado en el evento o la divisa que has seleccionado. |  | Sí |
+| event\_time | SDK | gp\_referrer (Google Play Referrer string) |  | Sí |
+| event\_value | SDK | El evento in-app incluye atributos con valores, que se pueden enviar por completo en el postback en formato JSON. URL codificada mediante la macro (encode). |  | Sí |
+| partner\_event\_id | AF | Nombre/ID del evento correspondiente en la plataforma del partner |  | Sí |
+| nombre\_aplicación | SDK | Nombre de la aplicación configurado por el anunciante | Sí |  |
+| appsflyer\_id | SDK | Identificador único de AppsFlyer, registrado en la conversión | Sí |  |
+| tipo\_táctil\_atribuido | AF | Indicador que marca si la atribución se produjo debido a una impresión (1 = impresión, 0 = clic) | Sí |  |
+| código\_de\_país | AF | Código de país con ISO 3166 (alfa-2) Ejemplo: US, CN. | Sí |  |
+| idfa | SDK | ID de publicidad que el usuario puede restablecer y que se encuentra en dispositivos iOS. También disponible como: (sha1-idfa) | Sí |  |
+| idfv | SDK | Identificador único por usuario y por proveedor en los dispositivos iOS | Sí |  |
+| hora\_de\_instalación | SDK | Marca de tiempo de instalación | Sí |  |
+| install\_unix\_ts | SDK | Marca de tiempo de instalación en formato unix | Sí |  |
+| es\_lat | SDK | Limit ad tracking (LAT): iOS: Desde iOS 14, Apple retiró LAT. Determina el estado de privacidad del usuario usando ATT. En este caso, ignora is\_lat. Antes de iOS 14, si es verdadero, el IDFA no está disponible y se establece en 0. Android: Cuando es verdadero, el usuario ha optado por no participar en anuncios basados en intereses. Esto no impide que se recopile el ID de publicidad de Google (GAID). | Sí |  |
+| Indicador de atribución AF | SDK | Idioma (configuración regional) reportado por el dispositivo y establecido por el sistema operativo del dispositivo. | Sí |  |
+| id\_aplicación | SDK | Identificador único de aplicación en Appsflyer. | Sí |  |
+| app-version-name | SDK | Versión de la aplicación establecida por el desarrollador de la aplicación en el código de la aplicación | Sí |  |
+| tiempo\_de\_toque\_atribuido | AF | Hora del toque al que AppsFlyer atribuyó | Sí |  |
+| tipo\_de\_dispositivo | SDK | Nombre del modelo comercial del dispositivo. Ejemplo: SM-GM284 o iPhone7 | Sí |  |
+| ip | AF | IP del dispositivo del usuario que reporta el evento | Sí |  |
+| match\_type | AF | Tipo de método de atribución. Por ejemplo, srn, id\_matching, probabilistic | Sí |  |
+| versión\_sistema\_operativo | SDK | Versión del sistema operativo del dispositivo | Sí |  |
+| agente\_usuario | SDK | El agente de usuario de la URL | Sí |  |
+| wifi | SDK | Si es true, la conexión era wifi en el momento de la conversión | Sí |  |
+| oaid | SDK | ID que el usuario puede restablecer en algunos dispositivos Android, generalmente como alternativa a GAID | Sí |  |
+| Identificador de origen | SDK | Plataforma del dispositivo: iOS, Android o Windows Mobile | Sí |  |
+| tipo\_conversion\_retargeting | SDK | Un indicador que marca si se trata de una reatribución o un re-engagement | Sí |  |
+| PID | AF | Ad network a la que se atribuye la instalación o el evento in-app | Sí |  |
+| af\_anuncio | Atribución | Nombre del anuncio (<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#niveles-de-granularidad-de-datos">ver más</Anchor>) proporcionado por el anunciante/publisher | Sí | Sí |
+| id\_del\_anuncio\_af | Atribución | Proporcionado por el anunciante/publisher | Sí | Sí |
+| af\_conjunto de anuncios | Atribución | <ul><li>Proporcionado por el anunciante/publisher.</li><li>El conjunto de anuncios representa un nivel intermedio en la jerarquía entre campaña y anuncio. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#niveles-de-granularidad-de-datos">Ver más</Anchor></li></ul> | Sí | Sí |
+| af\_adset\_id | Atribución | Proporcionado por el anunciante/publisher | Sí | Sí |
+| C | Atribución | Proporcionado por el anunciante/publisher. Los nombres de campaña que superan los 100 caracteres de longitud se muestran en el dashboard como “c\_name\_exceeded\_max\_length” | Sí | Sí |
+| af\_c\_id | Atribución | Proporcionado por el anunciante/publisher | Sí | Sí |
+| af\_siteid | Atribución | <ul><li>ID único que identifica al publisher que muestra el anuncio. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#site-id-parameter">Saber más</Anchor></li></ul> | Sí | Sí |
+| af\_subsite\_id | Atribución | <ul><li>ID de subred publicitaria/ID del publisher.</li><li>Si, además del editor principal (ID del sitio), hay un subeditor o deseas incluir información adicional, como tipo de anuncio/ubicación dentro de la aplicación, como banner, intersticial, vídeo, etc., utiliza af\_sub\_siteid. Por ejemplo: af\_sub\_siteid =ABCD\_4567</li></ul> | Sí | Sí |
+| af\_ad\_type | Atribución | Usa la siguiente convención de nomenclatura:<ul><li>**text:** una unidad de anuncio que contiene solo texto, por ejemplo, un resultado de búsqueda</li><li>**banner:** un formato básico que aparece en la parte superior o inferior de la pantalla del dispositivo</li><li>**interstitial:** un anuncio de página completa que aparece durante las pausas de la experiencia actual</li><li>**video:** un video estándar, es decir, no recompensado</li><li>**rewarded\_video:** una unidad de anuncio que ofrece recompensas in-app a cambio de ver un video</li><li>**playable:** una unidad de anuncio que contiene una vista previa interactiva de la experiencia de la aplicación</li><li>**sponsored\_content:** un enlace incluido en una pieza de contenido patrocinado, como un artículo publicitario</li><li>**audio:** un anuncio de audio</li></ul> | Sí | Sí |
 
-## In-app event only macros
+## Macros solo para eventos in-app
 
-The examples that follow relate to in-app event postbacks available to partners.
+Los ejemplos a continuación se relacionan con los postbacks de eventos in-app disponibles para los partners.
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> Event postback template `&event=(event)&json=(encode)` was translated to the following postback for a specific af\_purchase event:
+> La plantilla de postback de evento `&event=(event)&json=(encode)` se tradujo al siguiente postback para un evento af\_purchase específico:
 >
 > ```http
 > &event=af_purchase&json=%7B%22af_quantity%22%3A1%2C%22
 > af_revenue%22%3A%2212000%22%2C%22af_currency%22%3A%22USD%22%2C%22af_content_id%22%3A%221107%22%2C%22af_content_type%22%3A%22default_type%22%7D%0A
 > ```
 >
-> The decoded JSON value of this postback is `{"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
+> El valor JSON decodificado de este postback es `{"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
 
-### Encoded values
+### Valores codificados
 
-Postbacks may contain irregular characters, which are not alpha-numerical. To transfer these values correctly via postbacks, AppsFlyer URL-encodes non-alpha-numerical values.  
-To decode or encode a postback use [an encoding web service](https://www.urldecoder.org/).
+Es posible que los postbacks incluyan caracteres irregulares no alfanuméricos. Para transferir estos valores correctamente a través de postbacks, AppsFlyer codifica en URL los valores no alfanuméricos.  
+Para decodificar o codificar un postback, usa [un servicio web de codificación](https://www.urldecoder.org/).
 
-## Sample postbacks
+## Postbacks de muestra
 
-### General install postback examples
+### Ejemplos de postbacks de instalación generales
 
 <Tabs>
 <Tab title="Android">
@@ -123,7 +122,7 @@ http://YourCompanyDomain.com?pid=(media_source)&advertising_id=(advertiserId)&an
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
 ```http
 http://YourCompanyDomain.com?pid=(media source)&device_ip=(ip)&idfa=(idfa)&install_time=(install-unix-ts)
@@ -132,7 +131,7 @@ http://YourCompanyDomain.com?pid=(media source)&device_ip=(ip)&idfa=(idfa)&insta
 </Tab>
 </Tabs>
 
-### General in-app event postback examples
+### Ejemplos de postbacks de eventos in-app generales
 
 <Tabs>
 <Tab title="Android">
@@ -143,7 +142,7 @@ http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&advertising_id=(a
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
 ```http
 http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&install_time=(install-unix-ts)&event_name=(event-name)&currency=(currency)&json=(event-value)
@@ -152,14 +151,14 @@ http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&insta
 </Tab>
 </Tabs>
 
-## In-app event postback example
+## Ejemplo de postbacks de eventos in-app
 
-**Event Parameters:**
+**Parámetros de evento:**
 
-* Event Name: af\_revenue
-* Event Revenue: 120.00
-* Event Currency: USD
-* Event Value: `{"af_quantity":1,"af_revenue":"120","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
+* Nombre del evento: af\_revenue
+* Ingresos por evento: 120.00
+* Moneda del evento: USD
+* Valor del evento: `{"af_quantity":1,"af_revenue":"120","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
 
 **Postback:**
 
@@ -167,4 +166,4 @@ http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&insta
 http://YourCompanyDomain.com?pid=(media_source)&device_ip=38.166.144.142&advertising_id=121sxxxx-xxxx-xxxx-xxxx-52454bd7500b&android_id=9aaeecc4455xxxxx&install_time=1451923560&event_name=af_purchase&currency=USD&revenue=120.00&json=%7B%22af_quantity%22%3A1%2C%22 />af_revenue%22%3A%22120.10%22%2C%22af_currency%22%3A%22USD%22%2C%22af_content_id%22%3A%221107%22%2C%22af_content_type%22%3A%22default_type%22%7D%0A
 ```
 
-<div data-zendesk-anchors="01JH2HWTN05T8S3P4W6CKVA7K4=postbacks-for-analytics-partners 01JH2HWTN52E8CVVGTQWK3QXW6=postback-macros macros%E2%80%94installs-and-inapp-events=macrosinstalls-and-in-app-events 01JH2HWTN7XY6B55TED4NT2KRR=macrosinstalls-and-in-app-events inapp-event-only-macros=in-app-event-only-macros 01JH2HWTVN8880HZSF6V6XZ7EF=in-app-event-only-macros 01JH2HWTVNARNYV0M9AKHQ0NDA=encoded-values 01JH2HWTVNQT0NPJ7SG9424MTQ=sample-postbacks 01JH2HWTVN4DDQ6F70WP3XE19D=general-install-postback-examples general-inapp-event-postback-examples=general-in-app-event-postback-examples 01JH2HWTVN2MH2SB6W34DH2MF7=general-in-app-event-postback-examples inapp-event-postback-example=in-app-event-postback-example 01JH2HWTVP50J5WV11DZR3RSTM=in-app-event-postback-example" />
+<div data-zendesk-anchors="postbacks-for-analytics-partners=postbacks-para-partners-de-anal%C3%ADtica 01JH2HWTN05T8S3P4W6CKVA7K4=postbacks-para-partners-de-anal%C3%ADtica postback-macros=macros-de-postbacks 01JH2HWTN52E8CVVGTQWK3QXW6=macros-de-postbacks macros%E2%80%94installs-and-inapp-events=macros-instalaciones-y-eventos-in-app 01JH2HWTN7XY6B55TED4NT2KRR=macros-instalaciones-y-eventos-in-app inapp-event-only-macros=macros-solo-para-eventos-in-app 01JH2HWTVN8880HZSF6V6XZ7EF=macros-solo-para-eventos-in-app encoded-values=valores-codificados 01JH2HWTVNARNYV0M9AKHQ0NDA=valores-codificados sample-postbacks=postbacks-de-muestra 01JH2HWTVNQT0NPJ7SG9424MTQ=postbacks-de-muestra general-install-postback-examples=ejemplos-de-postbacks-de-instalaci%C3%B3n-generales 01JH2HWTVN4DDQ6F70WP3XE19D=ejemplos-de-postbacks-de-instalaci%C3%B3n-generales general-inapp-event-postback-examples=ejemplos-de-postbacks-de-eventos-in-app-generales 01JH2HWTVN2MH2SB6W34DH2MF7=ejemplos-de-postbacks-de-eventos-in-app-generales inapp-event-postback-example=ejemplo-de-postbacks-de-eventos-in-app 01JH2HWTVP50J5WV11DZR3RSTM=ejemplo-de-postbacks-de-eventos-in-app" />

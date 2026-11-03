@@ -1,5 +1,5 @@
 ---
-title: Click signing for ad networks
+title: Firma de clics para redes de publicidad
 metadata:
   keywords:
     - Ad Network
@@ -18,87 +18,87 @@ x-zendesk:
     - Ad Networks
     - Data Management
   created_at: '2021-02-22T09:33:52Z'
-  edited_at: '2024-11-17T09:37:22Z'
+  edited_at: '2026-08-12T12:28:21Z'
   id: 360017831497
-  locale: en-us
+  locale: es
   section: Provide data
   section_id: 6551209900817
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360017831497-Click-signing-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/360017831497
 ---
-> **At a glance:** Add signature validation to clicks to avoid fraud liabilities and so fraudulent clicks aren't attributed to your ad network.
+> **De un vistazo:** Agrega la validación de firma a los clics para evitar responsabilidades por fraude y para que los clics fraudulentos no se atribuyan a tu red de publicidad.
 
-## About click signing
+## Acerca de la firma de clics
 
-With minimal tech, fraudsters can send clicks on behalf of an ad network and create thousands, or even millions, of fake clicks that get sent to AppsFlyer. Sometimes, the ad networks themselves aren't aware of the issue.
+Con un mínimo de tecnología, los estafadores pueden enviar clics en nombre de una red de publicidad y crear miles, o incluso millones, de clics falsos que se envían a AppsFlyer. A veces, las propias redes de publicidad no son conscientes del problema.
 
-In order for an ad network to ensure that clicks attributed to it by AppsFlyer actually originated from the ad network, and not from a fraudster creating fake clicks, ad networks should sign their clicks with <Anchor target="_blank" href="https://en.wikipedia.org/wiki/HMAC">HMAC-SHA256</Anchor> signatures.
+Para que una red de publicidad se asegure de que los clics que AppsFlyer le atribuye proceden realmente de la red de publicidad y no de un estafador que crea clics falsos, las redes de publicidad deben firmar sus clics con firmas <Anchor target="_blank" href="https://en.wikipedia.org/wiki/HMAC">HMAC-SHA256</Anchor>.
 
-Click signing also prevents the ad network’s traffic from being blocked due to click flooding. Meaning, that if an ad network reaches the click-blocking threshold due to an extreme level of click flooding, AppsFlyer stops recording and attributing their clicks for the rest of the day.
+La firma de clics también evita que el tráfico de la red de publicidad se bloquee debido a inundaciones de clics. Esto significa que si una red publicidad alcanza el umbral de bloqueo de clics debido a un nivel extremo de inundación de clics, AppsFlyer deja de registrar y atribuir sus clics durante el resto del día .
 
-The signatures enable AppsFlyer to validate the clicks and make sure that the click information hasn't been manipulated by fraudsters.
+Las firmas permiten que AppsFlyer valide los clics y asegurarse de que la información de clics no haya sido manipulada por estafadores.
 
-* Validated clicks are recorded, and attributed to the ad network
-* Invalidated clicks are rejected and:
-  * Are made available in Protect360 reports for ad networks (not advertisers). <Anchor target="_blank" href="/partners/docs/protect360-reports-for-ad-networks#failed-click-signatures">Learn more</Anchor>
-  * Do not impact the conversion rate or click-blocking threshold of the ad network
+* Los clics validados se registran y se atribuyen a la red de publicidad
+* Los clics invalidados se rechazan y:
+  * Están disponibles en los reportes de Protect360 para las redes de publicidad (no para los anunciantes). <Anchor target="_blank" href="/partners/es/docs/protect360-reports-for-ad-networks#failed-click-signatures">Saber más</Anchor>
+  * No afectan la tasa de conversión ni el umbral de bloqueo de clics de la red de publicidad
 
-## Click signature integration
+## Integración de la firma clic
 
-### Flow
+### Flujo
 
-The following chart outlines the flow from initial development and basic tests to production tests, and finally, to production.
+El siguiente gráfico describe el flujo desde el desarrollo inicial y las pruebas básicas hasta las pruebas de producción y, por último, hasta la producción.
 
 ![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
 
-### Procedure
+### Procedimiento
 
-**Prerequisite:** <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API V2.0 token</Anchor> from the admin to authorize the click signing API.
+curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/report?start-date=2021-01-07T07&end-date=2021-01-17T12' \ -H 'Authorization: Bearer `{API V2.0 token available to the admin in the dashboard.}`' \
 
-**To sign your clicks**:
+**Para firmar tus clics**:
 
-1. Generate a secret key with the Generate secret key API.  
-   Best practice: Generate and use a new secret key every 24 hours, with an expiration of 36 hours.
-2. Develop code in your servers that calls the Generate secret key API, takes the secret key and generates an HMAC-SHA256 signature. See code sample.  
-   You can use the other APIs as described in the table that follows.
-3. The code adds the following to your click URLs:
-   * An **expires** parameter that contains a Unix timestamp (in UTC) after which the ad network doesn't claim the click.
-   * The HMAC-SHA256 signature.  
-     Example:
+1. Genera una clave secreta con la API Generar clave secreta.  
+   ¡Práctica recomendada!/span> Genera y utiliza una nueva clave secreta cada 24 horas, con una caducidad de 36 horas.
+2. Desarrolla el código en tus servidores que llame a la API Generar clave secreta, tome la clave secreta y genere una firma HMAC-SHA256. Ver ejemplo de código.  
+    Ver ejemplo de código.  
+   Puedes usar las otras API como se describe en la siguiente tabla.
+3. El código añade lo siguiente a las URL de tus clics:
+   * Un parámetro de **caducidad** que contiene una marca de tiempo Unix (en UTC) después de la cual la red de publicidad no reclama el clic.
+   * La firma HMAC-SHA256.  
+     Ejemplo:
 
      ```http
      https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_siteid=12345&expires=1597657118&signature_v2=8fnDVzZP_WRZnv3KNJaREOEfvB5p9oRc_XlKEvUo8gk
      ```
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Make sure any URL encoding of special characters or spaces in your link occurs before the click signature is generated. Generating the signature first results in verification failure.
+> Asegúrate de que cualquier codificación URL de caracteres especiales o espacios en tu enlace se produce antes de que se genere la firma de clic. Generar primero la firma provoca un fallo en la verificación.
 
-## Creating a click signature
+## Crear una firma de clic
 
-To create a click signature you must:
+Para crear una firma de clic debes:
 
-1. Build a JSON using the list of attributes and JSON rules below
-2. Create the signature from this JSON using HMAC56
+1. Construir un JSON utilizando la lista de atributos y reglas JSON que se indican a continuación
+2. Crear la firma a partir de este JSON utilizando HMAC56
 
-### List of attributes
+### Lista de atributos
 
-The following list of attributes is supported for click and engagement signing.
+La siguiente lista de atributos es compatible con la firma por clic y engagement.
 
-| Order | Parameter | Mandatory | Notes |
+| Orden | Parámetro | Obligatorio | Notas |
 | --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<ul><li>app.appsflyer.com</li><li>myapp.onelink.me</li><li>click.mycustomdomain.com</li></ul> |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
+| 1 | link\_domain | Sí | El dominio de la URL de clic Por ejemplo:<ul><li>app.appsflyer.com</li><li>myapp.onelink.me</li><li>click.mycustomdomain.com</li></ul> |
+| 2 | link\_path | Sí | La ruta de la URL del clic sin incluir una barra invertida inicial.  <br />**app-id** para enlaces de plataforma única o **template-id** para OneLink |
+| 3 | PID | Sí |  |
 | 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
+| 5 | af\_siteid | Sí |  |
+| 6 | clickid | Sí | Un identificador único de un solo uso del clic |
+| 7 | desactivado | Sí | pulsa en caducidad |
 | 8 | af\_engagement\_type | No |  |
 | 9 | af\_click\_lookback | No |  |
 | 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
+| 11 | af\_ventana\_de\_reengagement | No |  |
+| 12 | es\_retargeting | No |  |
 | 13 | af\_ip | No |  |
 | 14 | advertising\_id | No |  |
 | 15 | oaid | No |  |
@@ -106,49 +106,49 @@ The following list of attributes is supported for click and engagement signing.
 | 17 | idfa | No |  |
 | 18 | idfv | No |  |
 
-### Attribute and JSON rules
+### Reglas de atributos y JSON
 
-#### Order and appearance of attributes
+#### Orden y apariencia de los atributos
 
-* Supported parameters in the engagement URL with a value must be in the JSON
-* Attributes must be listed in the JSON in the order listed in the table above
+* Los parámetros admitidos en la URL de engagement con un valor deben estar en el JSON
+* Los atributos deben figurar en el JSON en el orden indicado en la tabla anterior
 
-#### Empty attributes
+#### Atributos vacíos
 
-* Attributes listed in the JSON cannot be empty values or contain only spaces
+* Los atributos listados en el JSON no pueden ser valores vacíos o contener sólo espacios
 
-#### JSON Data structure
+#### Estructura de datos JSON
 
-* The JSON data structure must be an array of attributes
-  * Each attribute will be in the format ["key", "value"]  
-    Example:   
+* La estructura de datos JSON debe ser una matriz de atributos
+  * Cada atributo tendrá el formato ["key", "value"].  
+     Ejemplo:   
     `[["key-1","value-1"],["key-2","value-2"]...["key-n","value-n"]]`
 
-#### Attribute value escaping
+#### Escape de valores de atributos
 
-* The values in the JSON must be written in **lowercase strings** as defined in the <Anchor target="_blank" href="https://www.w3docs.com/snippets/java/how-should-i-escape-strings-in-json.html">JSON standard</Anchor>.
+* Los valores del JSON deben escribirse en **minúsculas**, tal y como se define en el <Anchor target="_blank" href="https://www.w3docs.com/snippets/java/how-should-i-escape-strings-in-json.html">estándar JSON</Anchor>.
 
-#### JSON spaces
+#### Espacios JSON
 
-* The JSON must be compacted. It should not contain any blanks, tabs, or newline characters between the values.
+* El JSON debe estar compactado. No debe contener espacios en blanco, tabuladores ni caracteres de nueva línea entre los valores.
 
-#### Signature algorithm
+#### Algoritmo de firma
 
-* Use HmacSHA256 with the secret key to create the signature for the JSON
-* Encode the signature with Base64 **without** padding
-* Add the signature to the click URL with a parameter signature\_v2
+* Utiliza HmacSHA256 con la clave secreta para crear la firma para el JSON
+* Codificar la firma con Base64 **sin** relleno
+* Añadir la firma a la URL de clic con un parámetro signature\_v2
 
 ```json
-//generate a signature from the click url and encode it with base64 without padding String generatedSignature = Base64.getUrlEncoder().withoutPadding().encodeToString(mac.doFinal(jsonString.getBytes()));
+//genera una firma a partir de la URL de clic y la codifica con base64 sin relleno String generatedSignature = Base64.getUrlEncoder().withoutPadding().encodeToString(mac.doFinal(jsonString.getBytes()));
 ```
 
-### Signature example
+### Ejemplo de firma
 
 <div id="building-a-signature-example" />
 
-<Accordion title="Building a signature example">
+<Accordion title="Construir un ejemplo de firma">
 
-Example OneLink (multi-platform) click URL:
+Ejemplo de URL de clic en OneLink (multiplataforma):
 
 ```http
 https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-1234-1234-1234-123456789012  
@@ -156,7 +156,7 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 &expires=1689695615
 ```
 
-Example json object for signature (before removing blank spaces):
+Ejemplo de objeto json para la firma (antes de eliminar los espacios en blanco):
 
 ```json
 [
@@ -169,13 +169,13 @@ Example json object for signature (before removing blank spaces):
 ]
 ```
 
-Example json object for signature (after removing blank spaces)
+Ejemplo de objeto json para la firma (tras eliminar los espacios en blanco)
 
 ```json
 [["link_domain","yourbrand.onelink.me"],["link_path","qswl"],["pid","mediasource_int"],["template-id","qswl"],["af_siteid","my_site"],["clickid","12345"],["expires","1689695615"]]
 ```
 
-Final click URL with the signature:
+URL del clic final con la firma:
 
 ```http
 https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-1234-1234-1234-123456789012  
@@ -186,7 +186,7 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 
 </Accordion>
 
-### Code examples
+### Ejemplos de código
 
 <div id="signingsupportedparamsjson" />
 
@@ -243,14 +243,14 @@ type Param struct {
 
 func LoadSupportedParams() ([]Param, error) {
 	path := "./signing-supported-params.json"
-	jsonFile, _ := os.Open(path)
-	defer jsonFile.Close()
-	byteValue, err := io.ReadAll(jsonFile)
+	jsonFile, _ := os. Open(path)
+	defer jsonFile. Close()
+	byteValue, err := io. ReadAll(jsonFile)
 	if err != nil {
-		return nil, errors.New("failed loading " + path)
+		return nil, errors. New("failed loading " + path)
 	}
 	var params []Param
-	_ = json.Unmarshal(byteValue, &params)
+	_ = json. Unmarshal(byteValue, &params)
 	return params, nil
 }
 
@@ -258,34 +258,34 @@ func computeHmac256(message, secret string) (res string, errResult error) {
 	defer func() {
 		if r := recover(); r != nil {
 			errResult = r.(error)
-			fmt.Println("failed to invoke ComputeHmac256. err: %+v", errResult)
+			fmt. Println("failed to invoke ComputeHmac256. err: %+v", errResult)
 			res = ""
 			return
 		}
 	}()
 
 	key := []byte(secret)
-	h := hmac.New(sha256.New, key)
-	h.Write([]byte(message))
+	h := hmac. New(sha256.New, key)
+	h. Write([]byte(message))
 	return base64.URLEncoding.WithPadding(base64.NoPadding).EncodeToString(h.Sum(nil)), nil
 }
 
 // this function accepts a click url, a ttl for the click in seconds, and the list of supported params
 // the function:
-// 1. adds the expiration to the click based on the provided ttl
-// 2. builds a json for the signature
-// 3. create an HMAC256 signature
+// 1. añade la caducidad al clic en función del ttl proporcionado
+// 2. crea un json para la firma
+// 3. crea una firma HMAC256
 // 4. adds the signature to the click url
 func signURLV2(originalURL string, secret string, clickTtlSeconds int64, supportedParams []Param) (signedURL string, err error) {
 
 	//add an expiration to the click
-	expires := time.Now().UTC().Unix() + clickTtlSeconds
-	urlWithExpired := fmt.Sprintf("%s%s%d", originalURL, "&expires=", expires)
+	expires := time. Now().UTC().Unix() + clickTtlSeconds
+	urlWithExpired := fmt. Sprintf("%s%s%d", originalURL, "&expires=", expires)
 
 	//parse the url
-	parsedURL, err := url.Parse(urlWithExpired)
+	parsedURL, err := url. Parse(urlWithExpired)
 	if err != nil {
-		return "", errors.New("failed parsing URL")
+		return "", errors. New("failed parsing URL")
 	}
 
 	//build a json from the url
@@ -297,19 +297,19 @@ func signURLV2(originalURL string, secret string, clickTtlSeconds int64, support
 	//create a signature
 	signatureV2, err := computeHmac256(jsonStr, secret)
 	if err != nil {
-		fmt.Println("Failed to computeHMAC256 for url %s. err: %+v", jsonStr, err)
-		return "", errors.New("fail to computeHMAC256 for url")
+		fmt. Println("Failed to computeHMAC256 for url %s. err: %+v", jsonStr, err)
+		return "", errors. New("fail to computeHMAC256 for url")
 	}
 
 	//add the signature to the url
-	signedURL = fmt.Sprintf("%s%s%s", urlWithExpired, "&signature_v2=", signatureV2)
+	signedURL = fmt. Sprintf("%s%s%s", urlWithExpired, "&signature_v2=", signatureV2)
 
 	return signedURL, nil
 
 }
 
 // this function builds a json from a given click url.
-// It returns a string representation of the json ready to be signed.
+// Devuelve una representación en cadena del json lista para firmarse.
 func buildJSONFromURLV2(parsedURL *url.URL, supportedParams []Param) (string, error) {
 	//initiate an empty json in the structure [[key-1,val-1],[key-2,val-2]...[key-n,val-n]]
 	var jsonData [][2]string
@@ -331,119 +331,110 @@ func buildJSONFromURLV2(parsedURL *url.URL, supportedParams []Param) (string, er
 			param := [2]string{name, val}
 			jsonData = append(jsonData, param)
 		} else if supportedParams[i].Mandatory {
-			return "", errors.New("missing mandatory param: " + name)
+			return "", errors. New("missing mandatory param: " + name)
 		}
 	}
 
 	//generate string representation of the json object
-	jsonObj, _ := json.Marshal(jsonData)
-	return strings.ToLower(string(jsonObj)), nil
+	jsonObj, _ := json. Marshal(jsonData)
+	return strings. ToLower(string(jsonObj)), nil
 }
 
 func main() {
 
 	supportedParams, err := LoadSupportedParams()
 	if err != nil {
-		fmt.Println("Error: ", err)
-		os.Exit(1)
+		fmt. Println("Error: ", err)
+		os. Exit(1)
 	}
 
 	var secretKey = "tqJU4Qd/eFTEWfqW7KCG9asDO0bmZoFzv8GY3VPSPAM="
 	var clickTtlSeconds int64 = 60
 	var originalUrl = "https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-1234-1234-1234-123456789012&clickid=1234&af_ad_type=video&af_adset=MMP&af_siteid=my_site&af_viewthrough_lookback=2h&c=my_campaign"
 
-	fmt.Println("Original URL: ", originalUrl)
-
-	signedUrl, err := signURLV2(originalUrl, secretKey, clickTtlSeconds, supportedParams)
-	if err != nil {
-		fmt.Println("Error: ", err)
-		os.Exit(1)
-	} else {
-		fmt.Println("Signed URL: ", signedUrl)
-	}
-}
+	fmt.
 ```
 
 </Accordion>
 
-## Click signature APIs
+## API de firma por clic
 
-AppsFlyer provides APIs that allow ad networks to manage and test the click signing process. See the list of APIs in the table below, and the sections that follow with information necessary for using the API. 
+AppsFlyer proporciona API que permiten a las redes de publicidad gestionar y probar el proceso de firma de clics. Consulta la lista de API en la tabla siguiente y las secciones que siguen con la información necesaria para utilizar la API. 
 
-#### Click signature APIs
+#### API de firma por clic
 
-| API method | Remarks |
+| Método API | Observaciones |
 | --- | --- |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-secret-post">Generate secret key</Anchor> | Generate secret keys to be used in the signature. |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-secret-delete">Revoke secret key</Anchor> | Cancel compromised secret keys. |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-test-post">Test</Anchor> | Send single clicks for testing the signature. |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-update-put">Configure mode</Anchor> | Configure mode of click signing mode:<ul><li>**disabled** (default): No click signature validation is done.</li><li>**report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **Report API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.</li><li>**enabled:** AppsFlyer blocks clicks with invalid or missing signatures.</li></ul> |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put">Configure circuit breaker</Anchor> | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<ul><li>**enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<ul><li>Configure mode API changes to report-only.</li><li>And email alert is sent to the ad network to verify the click signing API is correctly set up.</li></ul></li><li>**disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high.</li></ul> |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-get">Get configuration</Anchor> | Get the mode and IDs of active secret keys. |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-report-get">Report</Anchor> | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">Exclude app</Anchor> | Configure app IDs to be excluded from click signing. |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete">Remove excluded app</Anchor> | Configure app IDs to be included in click signing after being excluded. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-secret-post">Generar clave secreta</Anchor> | Generar las claves secretas que se utilizarán en la firma. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-secret-delete">Revocar la clave secreta</Anchor> | Anular las claves secretas comprometidas. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-test-post">Prueba</Anchor> | Enviar clics individuales para probar la firma. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-update-put">Configurar modo</Anchor> | Configurar el modo de firma de clic:<ul><li>**Requisito previo:** <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">Token de la API V2.0</Anchor> del administrador para autorizar la API de firma de clics.</li><li>**sólo reporte** (modo de prueba): AppsFlyer valida las firmas de los clics, pero no bloquea los clics con firmas no válidas. La red de publicidad puede utilizar la **API de reportes** para obtener estadísticas sobre clics acertados/fallidos. Utilízalo para probar la firma de clics sin afectar a la producción ni al tráfico real.</li><li>**habilitado:** AppsFlyer bloquea los clics con firmas no válidas o ausentes.</li></ul> |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put">Configurar disyuntor</Anchor> | Configura el modo del disyuntor que protege la red de publicidad de tener demasiados clics bloqueados:<ul><li>habilitada<br />**Nota:** establece el modo "activado sólo después de ejecutar el modo de sólo reportes durante unas horas y comprueba tus reportes para asegurarte de que la configuración es correcta y de que todos los clics han pasado la validación de firmas.<ul><li>La API de modo de configuración cambia a sólo reporte.</li><li>Y se envía una alerta por correo electrónico a la red de publicidad para verificar que la API de firma de clics está correctamente configurada.</li></ul></li><li>**desactivado**: Protect360 sigue bloqueando todos los clics marcados como no válidos, incluso cuando el porcentaje de bloqueo es inusualmente alto.</li></ul> |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-get">Obtener configuración</Anchor> | Obtén el modo y los ID de las claves secretas activas. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-report-get">Reporte</Anchor> | Obtén las estadísticas sobre clics correctos y fallidos cuando el sistema esté en modo de **sólo reporte** o **activado**. Utilízalo para probar la firma de clics sin afectar a la producción ni al tráfico real. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">Excluir aplicación</Anchor> | Configura los ID de aplicación que se excluirán de la firma por clic. |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete">Eliminar la aplicación excluida</Anchor> | Configura los ID de aplicación para que se incluyan en la firma por clic después de haber sido excluidos. |
 
-## Legacy versions
+## Versiones heredadas
 
-These versions should not be used and are listed for reference only
+Estas versiones no deben utilizarse y se enumeran únicamente a título de referencia
 
 <div id="v1-legacy" />
 
-<Accordion title="V1 - Legacy">
+<Accordion title="V1: heredado">
 
-### Generate secret key method
+### Método de generación de clave secreta
 
 <div id="generate-secret-key-basics" />
 
-<Accordion title="Generate secret key basics">
+<Accordion title="Generar clave secreta básica">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span><code>{"https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>"}</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>POST</code></td></tr><tr><td>Ruta</td><td><span><code>{"https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>"}</code></span></td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td>La clave secreta se devuelve en un JSON</td></tr><tr><td> </td><td>Límite de solicitud</td><td>Máximo de 2 claves secretas activas a la vez</td></tr></tbody></table>
 
 </Accordion>
 
 <div id="api-request" />
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
 
-#### Parameters
+#### Parámetros
 
-| Parameter | Description |
+| Parámetro | Descripción |
 | --- | --- |
-| ttlHours | <ul><li>Time to live for the secret key, in hours, from 1-1440 hours.</li><li>Default is 36 hours.</li></ul> |
+| ttlHours | <ul><li>Tiempo de vida para la clave secreta, en horas, de 1-1440 horas.</li><li>El valor predeterminado es de 36 horas.</li></ul> |
 
 </Accordion>
 
 <div id="json-response" />
 
-<Accordion title="JSON response">
+<Accordion title="Respuesta JSON">
 
-| **Key** | **Description** |
+| **Clave** | **Descripción** |
 | --- | --- |
-| secret-key-id | An ID for the secret key |
-| secret key | The secret key for the click signature |
-| expiration | Epoch time in milliseconds |
+| secret-key-id | Un ID para la clave secreta |
+| Clave secreta | La clave secreta para la firma clic |
+| caducidad | Tiempo en milisegundos |
 
 </Accordion>
 
 <div id="generate-secret-key-curl-example-and-response" />
 
-<Accordion title="Generate secret key curl example and response">
+<Accordion title="Generar clave secreta curl ejemplo y respuesta">
 
-**Curl request**
+**Solicitud de curl**
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=36' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
 
-**JSON response**
+**Respuesta JSON**
 
 ```json
 {
@@ -457,48 +448,48 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <div id="http-response-codes" />
 
-<Accordion title="HTTP response codes">
+<Accordion title="Códigos de respuesta HTTP">
 
-#### Response codes
+#### Códigos de respuesta
 
-| Code | Message | Remarks |
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
-### Revoke secret key method
+### Método de revocación de la clave secreta
 
 <div id="revoke-secrete-key-basics" />
 
-<Accordion title="Revoke secrete key basics">
+<Accordion title="Revocar clave secreta básica">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span><code>{"https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>"}</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>ELIMINAR</code></td></tr><tr><td>Ruta</td><td><span><code>{"https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>"}</code></span></td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td>Vacío</td></tr></tbody></table>
 
 </Accordion>
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
 
-#### Parameters
+#### Parámetros
 
-| Parameter | Description |
+| Parámetro | Descripción |
 | --- | --- |
-| secret-id | The ID of the secret key to be revoked |
+| secret-id | ID de la clave secreta que se va a revocar |
 
 </Accordion>
 
 <div id="generate-secret-key-curl-example-and-response::5a4174fc" />
 
-<Accordion title="Generate secret key curl example and response">
+<Accordion title="Generar clave secreta curl ejemplo y respuesta">
 
-**Curl request**
+**Solicitud de curl**
 
 ```bash
 curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signing/secret/59ad6547-affc-45eb-a6c9-9805f88ee755' \
@@ -509,59 +500,59 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <div id="http-response-codes::7dc4ee64" />
 
-<Accordion title="HTTP response codes">
+<Accordion title="Códigos de respuesta HTTP">
 
-#### Response codes
+#### Códigos de respuesta
 
-| Code | Message | Remarks |
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
-### Test method
+### Método de prueba
 
 <div id="test-basics" />
 
-<Accordion title="Test basics">
+<Accordion title="Conceptos básicos">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/test</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>POST</code></td></tr><tr><td>Ruta</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/test</span></td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td>Devuelve en un JSON</td></tr></tbody></table>
 
 </Accordion>
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
 
-#### Parameters
+#### Parámetros
 
-| Parameter | Description |
+| Parámetro | Descripción |
 | --- | --- |
-| url | The click URL (including signature) to test |
+| URL | La URL del clic (incluida la firma) que se va a probar |
 
 </Accordion>
 
 <div id="json-response::cd966b82" />
 
-<Accordion title="JSON response">
+<Accordion title="Respuesta JSON">
 
-| **Key** | **Description** |
+| **Clave** | **Descripción** |
 | --- | --- |
-| test-status | Either Passed or Failed |
-| message | Reason for the test failure. For example:<ul><li>Missing signature</li><li>Invalid signature</li><li>Expired</li></ul> |
+| test-status | Aprobado o fallido |
+| mensaje | Motivo del fallo de la prueba. Por ejemplo,<ul><li>Ausencia de firma</li><li>Firma inválida</li><li>Caducado</li></ul> |
 
 </Accordion>
 
 <div id="test-curl-example-and-response" />
 
-<Accordion title="Test curl example and response">
+<Accordion title="Ejemplo de curl de prueba y respuesta">
 
-**Curl request**
+**Solicitud de curl**
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/test' \
@@ -572,12 +563,12 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 }'
 ```
 
-**JSON response**
+**Respuesta JSON**
 
 ```json
 {
 	"test-status":"Passed / Failed",
-	"message": "Invalid signature"
+	"message": "Firma no válida"
 }
 ```
 
@@ -585,50 +576,50 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <div id="http-response-codes::22d1011c" />
 
-<Accordion title="HTTP response codes">
+<Accordion title="Códigos de respuesta HTTP">
 
-#### Response codes
+#### Códigos de respuesta
 
-| Code | Message | Remarks |
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
-### Configure mode method
+### Configurar método de modo
 
 <div id="configure-mode-basics" />
 
-<Accordion title="Configure mode basics">
+<Accordion title="Configuración básica del modo">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>mode/{"<mode>"}</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>POST</code></td></tr><tr><td>Ruta</td><td> https://hq1.appsflyer<span>.com/api/p360-</span>click-signing/config/<strong><span>mode/&lt;mode&gt;</span></strong> </td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td>Devuelve en un JSON</td></tr></tbody></table>
 
 </Accordion>
 
 <div id="api-request::b2432cce" />
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
 
-#### Parameters
+#### Parámetros
 
-| Parameter | Description |
+| Parámetro | Descripción |
 | --- | --- |
-| mode | Options:<ul><li>enabled<br />**Note!** Only set the mode to "enabled" after you run in report-only mode for few hours and check your reports to ensure the configuration is correct and that all clicks passed signature validation.</li><li>disabled</li><li>report-only</li></ul> |
+| Modo | Opciones:<ul><li>**activado** (por defecto): establece el modo "activado sólo después de ejecutar el modo de sólo reportes durante unas horas y comprueba tus reportes para asegurarte de que la configuración es correcta y de que todos los clics han pasado la validación de firmas.</li><li>deshabilitada</li><li>sólo reporte</li></ul> |
 
 </Accordion>
 
 <div id="configure-mode-curl-example" />
 
-<Accordion title="Configure mode curl example">
+<Accordion title="Ejemplo de configuración del modo curl">
 
-**Curl request**
+**Solicitud de curl**
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/mode/report-only' \
@@ -637,25 +628,27 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 </Accordion>
 
-<Accordion title="HTTP response codes">
+<div id="http-response-codes::b3328f8b" />
 
-#### Response codes
+<Accordion title="Códigos de respuesta HTTP">
 
-| Code | Message | Remarks |
+#### Códigos de respuesta
+
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 400 | Bad request | Invalid mode |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 400 | Solicitud incorrecta | Modo no válido |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
-### Configure circuit breaker method
+### Configurar el método del disyuntor
 
 <div id="configure-circuit-breaker-basics" />
 
-<Accordion title="Configure circuit breaker basics">
+<Accordion title="Configuración básica de disyuntores">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td><span>HTTP status</span></td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>POST</code></td></tr><tr><td>Ruta</td><td><span>https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker</span></td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td><span>Estado HTTP</span></td></tr></tbody></table>
 
 </Accordion>
 
@@ -663,27 +656,27 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <div id="api-request::ef73eae0" />
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
 
-#### Request body JSON
+#### Cuerpo de la solicitud JSON
 
-| Parameter | Description |
+| Parámetro | Descripción |
 | --- | --- |
-| status | <ul><li>enabled</li><li>disabled</li></ul> |
+| Estado | <ul><li>habilitada</li><li>deshabilitada</li></ul> |
 
 </Accordion>
 
 <div id="configure-circuit-breaker-curl-example-and-response" />
 
-<Accordion title="Configure circuit breaker curl example and response">
+<Accordion title="Configurar disyuntor curl ejemplo y respuesta">
 
-**Curl request**
+**Solicitud de curl**
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/circuit-breaker' \
@@ -695,35 +688,33 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 </Accordion>
 
-<div id="http-response-codes::b3328f8b" />
-
 <div id="http-response-codes::d35e3a62" />
 
-<Accordion title="HTTP response codes">
+<Accordion title="Códigos de respuesta HTTP">
 
-#### Response codes
+#### Códigos de respuesta
 
-| Code | Message | Remarks |
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 400 | Bad request | Invalid status |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 400 | Solicitud incorrecta | Estado no válido |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
-### Get configuration method
+### Obtener método de configuración
 
 <div id="get-configuration-basics" />
 
-<Accordion title="Get configuration basics">
+<Accordion title="Obtener la configuración básica">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>GET</code></td></tr><tr><td>Ruta</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config</span></td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td>Devuelve en un JSON</td></tr></tbody></table>
 
 </Accordion>
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/config
@@ -733,29 +724,29 @@ GET https://hq1.appsflyer.com/api/p360-click-signing/config
 
 <div id="json-response::fee92c" />
 
-<Accordion title="JSON response">
+<Accordion title="Respuesta JSON">
 
-| **Key** | **Description** |
+| **Clave** | **Descripción** |
 | --- | --- |
-| mode | One of:<ul><li>enabled</li><li>disabled</li><li>report-only</li></ul> |
-| circuit-breaker-config | A JSON object containing **status**, one of:<ul><li>enabled</li><li>disabled</li></ul> |
-| active-key-ids | A JSON array holding active keys:<ul><li>**secret-key-id**: Randomly-generated ID of the secret key</li><li>**expiration**: Epoch time in milliseconds of the secret key</li></ul> |
-| excluded-app-ids | A JSON array with excluded app-ids |
+| Modo | Uno de:<ul><li>habilitada</li><li>deshabilitada</li><li>sólo reporte</li></ul> |
+| circuit-breaker-config | Un objeto JSON que contiene el **estado**, uno de:<ul><li>habilitada</li><li>**desactivado** (por defecto):</li></ul> |
+| active-key-ids | Una matriz JSON que contiene las claves activas:<ul><li>**secret-key-id**: ID generado aleatoriamente de la clave secreta</li><li>**caducidad**: tiempo en milisegundos de la clave secreta</li></ul> |
+| excluded-app-ids | Una matriz JSON con ID de aplicaciones excluidas |
 
 </Accordion>
 
 <div id="get-configuration-curl-example-and-response" />
 
-<Accordion title="Get configuration curl example and response">
+<Accordion title="Obtener configuración curl ejemplo y respuesta">
 
-**Curl request**
+**Solicitud de curl**
 
 ```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/config' \
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
 
-**JSON response**
+**Respuesta JSON**
 
 ```json
 {
@@ -775,24 +766,26 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 </Accordion>
 
-<Accordion title="HTTP response codes">
+<div id="http-response-codes::90a409c" />
 
-#### Response codes
+<Accordion title="Códigos de respuesta HTTP">
 
-| Code | Message | Remarks |
+#### Códigos de respuesta
+
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
-### Report method
+### Método de reporte
 
 <div id="report-basics" />
 
-<Accordion title="Report basics">
+<Accordion title="Informe básico">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/report</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a CSV</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>GET</code></td></tr><tr><td>Ruta</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/report</span></td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td>Devuelve en un CSV</td></tr></tbody></table>
 
 </Accordion>
 
@@ -800,50 +793,49 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <div id="api-request::b28cedb0" />
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
 
-#### Parameters
+#### Parámetros
 
-<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>start-date</td><td>Start date and time for the report. Format: yyyy-mm-ddThh</td></tr><tr><td>end-date</td><td><span>End date and time for the report. Format: yyyy-mm-ddThh</span></td></tr><tr><td colspan="2"><span>The API requires either <strong>both</strong> start-date and end-date or <strong>neither</strong> of them. If start/end date are not provided, the report shows results for the past 24 hours.</span></td></tr></tbody></table>
+<table><thead><tr><th>Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>start_date</td><td>Fecha y hora de inicio del reporte. Formato: aaaa-mm-dd</td></tr><tr><td>Fecha de finalización</td><td><span>Fecha y hora de finalización del reporte. Formato: aaaa-mm-dd</span></td></tr><tr><td colspan="2"><span>La API requiere <strong>tanto</strong> start-date como end-date o <strong>ninguna</strong> de las dos. Si no se indican las fechas de inicio y fin, el reporte mostrará los resultados de las últimas 24 horas.</span></td></tr></tbody></table>
 
 </Accordion>
 
 <div id="csv-response" />
 
-<Accordion title="CSV response">
+<Accordion title="Respuesta CSV">
 
-| **Column** | **Description** |
+| **Columna** | **Descripción** |
 | --- | --- |
-| time | Date and time of the clicks. Format yyyy-mm-ddThh |
-| total\_clicks | Total number of clicks during the reporting period |
-| valid\_clicks | Number of valid clicks during the reporting period |
-| missing\_signature | Number of clicks missing signatures during the reporting period |
-| expired\_clicks | Number of expired clicks during the reporting period |
-| invalid\_signature | Number of clicks with invalid signatured during the reporting period |
-| no\_active\_secrets | Number of clicks rejected because there are no active secret keys in the system (usually when the system is in report-only mode) |
+| intervalo de tiempo | Fecha y hora de los clics. Formato aaaa-mm-dd |
+| Total de clics | Número total de clics durante el periodo del reporte |
+| clics válidos | Número de clics válidos durante el periodo del reporte |
+| missing\_signature | Número de clics sin firma durante el periodo del reporte |
+| clics caducados | Número de clics caducados durante el periodo del reporte |
+| invalid\_signature | Número de clics con firma no validada durante el periodo del reporte |
+| sin secretos activos | Número de clics rechazados porque no hay claves secretas activas en el sistema (normalmente cuando el sistema está en modo de sólo reporte). |
 
 </Accordion>
 
 <div id="test-curl-example-and-response::66e922" />
 
-<Accordion title="Test curl example and response">
+<Accordion title="Ejemplo de curl de prueba y respuesta">
 
-**Curl request**
+**Solicitud de curl**
 
-```bash
-curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/report?start-date=2021-01-07T07&end-date=2021-01-17T12' \
--H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}' \
+```json
+Asegúrate de que tienes una clave secreta válida comprobando la configuración de firma de clics mediante el método obtener configuración.
 ```
 
-**CSV response**
+**Respuesta CSV**
 
-| **time** | **total\_clicks** | **valid\_clicks** | **missing\_signature** | **expired\_clicks** | **invalid\_signature** | **no\_active\_signatures** |
+| **intervalo de tiempo** | **Total de clics** | **clics válidos** | **missing\_signature** | **clics caducados** | **invalid\_signature** | **sin firmas activas** |
 | --- | --- | --- | --- | --- | --- | --- |
 | 2021-01-17T07 | 928082156 | 928082156 | 0 | 0 | 0 | 0 |
 | 2021-01-17T08 | 923796132 | 923796132 | 0 | 0 | 0 | 0 |
@@ -854,50 +846,52 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 </Accordion>
 
-<Accordion title="HTTP response codes">
+<div id="http-response-codes::8454f45d" />
 
-#### Response codes
+<Accordion title="Códigos de respuesta HTTP">
 
-| Code | Message | Remarks |
+#### Códigos de respuesta
+
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
-### Exclude app method
+### Excluir método de aplicación
 
 <div id="exclude-app-method-basics" />
 
-<Accordion title="Exclude app method basics">
+<Accordion title="Conceptos básicos del método de exclusión de aplicaciones">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>excluded-app/{"<app-id>"}</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>POST</code></td></tr><tr><td>Ruta</td><td> https://hq1.appsflyer<span>.com/api/p360-</span>click-signing/config/<strong><span>excluded-app/&lt;app-id&gt;</span></strong> </td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td>Vacío</td></tr></tbody></table>
 
 </Accordion>
 
 <div id="api-request::1054abca" />
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
 
-#### Parameters
+#### Parámetros
 
-| Parameter | Description |
+| Parámetro | Descripción |
 | --- | --- |
-| app-id | Application ID to be excluded from click signing validation |
+| app-id | ID de aplicación que debe excluirse de la validación de firma de clics |
 
 </Accordion>
 
 <div id="exclude-app-curl-example" />
 
-<Accordion title="Exclude app curl example">
+<Accordion title="Ejemplo de exclusión de aplicación curl">
 
-**Curl request**
+**Solicitud de curl**
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/appname.com' \
@@ -906,26 +900,26 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 </Accordion>
 
-<div id="http-response-codes::90a409c" />
+<div id="http-response-codes::7991b66" />
 
-<Accordion title="HTTP response codes">
+<Accordion title="Códigos de respuesta HTTP">
 
-#### Response codes
+#### Códigos de respuesta
 
-| Code | Message | Remarks |
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
-### Remove excluded app method
+### Eliminar el método de aplicaciones excluidas
 
 <div id="remove-excluded-app-method-basics" />
 
-<Accordion title="Remove excluded app method basics">
+<Accordion title="Eliminar método básico para aplicaciones excluidas">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>excluded-app/{"<app-id>"}</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="/marketers/docs/managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a>  </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>Elemento</th><th><span>Descripción</span></th></tr></thead><tbody><tr><td rowspan="3">Solicitud</td><td>Método HTTP</td><td><code>ELIMINAR</code></td></tr><tr><td>Ruta</td><td> https://hq1.appsflyer<span>.com/api/p360-</span>click-signing/config/<strong><span>excluded-app/&lt;app-id&gt;</span></strong> </td></tr><tr><td>Encabezado de autorización </td><td><ul><li>El encabezado de autorización obligatorio contiene un token de portador. </li><li>El administrador obtiene el token en el panel de control de la siguiente manera:  <a href="/marketers/es/docs/managing-appsflyer-tokens" target="_blank">El administrador va a la lista desplegable de correo electrónico &gt; tokens de API para obtener el token V2.0</a>  </li></ul></td></tr><tr><td>Respuesta</td><td>Resultados</td><td>Vacío</td></tr></tbody></table>
 
 </Accordion>
 
@@ -933,27 +927,27 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <div id="api-request::9504d16f" />
 
-<Accordion title="API request">
+<Accordion title="Solicitud API">
 
-**Method**
+**Método**
 
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
 
-#### Parameters
+#### Parámetros
 
-| Parameter | Description |
+| Parámetro | Descripción |
 | --- | --- |
-| app-id | Application ID to be removed from the list of apps excluded from click signing validation |
+| app-id | ID de aplicación que debe eliminarse de la lista de aplicaciones excluidas de la validación de firma por clic |
 
 </Accordion>
 
 <div id="remove-excluded-app-curl-example" />
 
-<Accordion title="Remove excluded app curl example">
+<Accordion title="Ejemplo de eliminación de curl de aplicación excluida">
 
-**Curl request**
+**Solicitud de curl**
 
 ```bash
 curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/appname.com' \
@@ -962,26 +956,22 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 </Accordion>
 
-<div id="http-response-codes::8454f45d" />
-
-<div id="http-response-codes::7991b66" />
-
 <div id="http-response-codes::b5e059da" />
 
-<Accordion title="HTTP response codes">
+<Accordion title="Códigos de respuesta HTTP">
 
-#### Response codes
+#### Códigos de respuesta
 
-| Code | Message | Remarks |
+| Código | Mensaje | Observaciones |
 | --- | --- | --- |
-| 200 | OK |  |
-| 401 | Not authorized | Invalid or missing authorization header |
+| 200 | Correcto |  |
+| 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
 
 <div id="code-sample" />
 
-<Accordion title="Code sample">
+<Accordion title="Ejemplo de código">
 
 ```java
 package sign;
@@ -997,24 +987,23 @@ import java.util.Base64;
 .
 
 String clickUrl = "https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_site_id=12345";
-String secretKey = "secret_key";
+String secretKey = "secret_key"; 
 int ttlMinutes = 5;
 
-
-//add expiration to the click URL
+//añade la caducidad a la URL del clic
 long expiration = System.currentTimeMillis() + (60000L * ttlMinutes);
 clickUrl += "&expires="+expiration;
 
-//create a SecretKey object from the given key string
+//crea un objeto SecretKey a partir de la cadena de clave proporcionada
 SecretKeySpec signingKey = new SecretKeySpec(secretKey.getBytes(), "HmacSHA256");
 Mac mac = Mac.getInstance("HmacSHA256");
 mac.init(signingKey);
 
-//generate a signature from the click url and encode it with base64 without padding
-String generatedSignature =
+//genera una firma a partir de la URL del clic y la codifica en base64 sin relleno
+String generatedSignature =     
 Base64.getUrlEncoder().withoutPadding().encodeToString(mac.doFinal(clickUrl.getBytes()));
 
-//add the signature to the click URL
+//añade la firma a la URL del clic
 String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 ```
 
@@ -1022,49 +1011,49 @@ String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="troubleshooting" />
 
-<Accordion title="Troubleshooting">
+<Accordion title="Resolución de problemas">
 
-AppsFlyer stops click signature validation and reverts to the report-only mode when more than 90% of clicks in an hour fail signature validation.
+AppsFlyer detiene la validación de firmas de clics y vuelve al modo de sólo reporte cuandomás del 90% de los clics en una hora no superan la validación de firmas.
 
-This is to protect your business from a potential technical issue and allows you to find the cause of the anomaly:
+Esto sirve para proteger a tu empresa de un posible problema técnico y te permite encontrar la causa de la anomalía:
 
-* If you find that the signature is working as expected and the clicks are being correctly blocked, disable the circuit-breaker using the [configure circuit breaker method.](/docs/click-signing-for-ad-networks#configure-circuit-breaker-method)
-* If you find that clicks are being incorrectly blocked:
-  1. Make sure that you have a valid secret key by checking the click signing configuration using the [get configuration method.](/docs/click-signing-for-ad-networks#get-configuration-method)
-  2. Use the [click signing report](/docs/click-signing-for-ad-networks#report-method) to get more information about the blocked clicks and investigate the sources (agency/app- iDs) and reasons for invalid clicks.
-* If you find a problem with a specific app because of a non-standard integration, exclude this app from click signing validation using the [exclude app API.](/docs/click-signing-for-ad-networks#exclude-app-method)
-* If you find a problem with your configuration:
-  1. Continue running in report-only mode.
-  2. Fix the click signing process on your side.
-  3. Check the results in the [click signing report](/docs/click-signing-for-ad-networks#report-method) and re-enable click-signing validation when you see that clicks are being validated as expected.
+* Las redes de publicidad pueden tener un máximo de dos claves secretas activas simultáneamente.
+* Si observas que los clics se bloquean incorrectamente:
+  1. Si compruebas que la firma funciona como se espera y los clics se bloquean correctamente, desactiva el [disyuntor mediante el método de configuración del disyuntor.](/docs/click-signing-for-ad-networks#configurar-el-método-del-disyuntor)
+  2. Utiliza el [reporte de firma de clics](/docs/click-signing-for-ad-networks#método-de-reporte) para obtener más información sobre los clics bloqueados e investigar las fuentes (agencia/app-iDs) y los motivos de los clics no válidos.
+* Si encuentras un problema con una aplicación específica debido a una integración no estándar, excluye esta aplicación de la validación de firma de clics utilizando la API de [excluir aplicación API.](/docs/click-signing-for-ad-networks#excluir-método-de-aplicación)
+* Si encuentras un problema con tu configuración:
+  1. Continúa funcionando en modo sólo reporte.
+  2. Arregla el proceso de firma de clics por tu parte.
+  3. Comprueba los resultados en el [reporte de firma de clics](/docs/click-signing-for-ad-networks#método-de-reporte) yvuelve a activar la validación de firma de clics cuando veas que los clics se están validando como se esperaba.
 
 </Accordion>
 
 <div id="faq" />
 
-<Accordion title="FAQ">
+<Accordion title="Preguntas frecuentes">
 
-| **Q: How can we test click signing without impacting production?**<br /><br />**A**: There are two ways to test click signing:<ol><li>Use the [test API](/docs/click-signing-for-ad-networks#test-method). This method is useful during the development phase, to test the signatures of single clicks.</li><li>Use report-only mode. Report-only mode verifies the signatures on the production clicks and shows you what would be blocked, but doesn't block invalid clicks. Therefore, you can test that click signing works without impacting real traffic.</li></ol> |
+| **Pregunta: ¿Cómo podemos probar la firma clic sin afectar a la producción?**<br /><br />**Respuesta**: Hay dos formas de probar la firma por clic:<ol><li>Utiliza la [API de prueba](/docs/click-signing-for-ad-networks#método-de-prueba). Este método es útil durante la fase de desarrollo, para probar las firmas de clics individuales.</li><li>Utiliza el modo de sólo reporte. El modo de sólo reporte verifica las firmas de los clics de producción y te muestra lo que se bloquearía, pero no bloquea los clics no válidos. Por lo tanto, puedes probar que la firma de clics funciona sin afectar al tráfico real.</li></ol> |
 | --- |
-| **Q: What is the difference between an API token and a secret-key?**<br /><br />**A**: **API token**: Is used to authorize and run the click signing API. There is only one per ad network. The <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">AppsFlyer API V2.0 token</Anchor> must be obtained from the admin<br /><br />**Secret key**: Is used to generate the signature. Use the [generate secret key method](/docs/click-signing-for-ad-networks#generate-secret-key-method) to create secret keys. The ad network is responsible for generating new secret keys. See the [traits section](/docs/click-signing-for-ad-networks#traits) for more information. |
-| **Q: Can we apply click signing to only certain campaigns?**<br /><br />**A**: No. Click signing is applied to all clicks from an ad network. You can exclude certain apps from click signing, but you can’t exclude only certain campaigns. |
+| **Pregunta: ¿Cuál es la diferencia entre un token de API y una clave secreta?**<br /><br />**Respuesta**: **Token de API**: se utiliza para autorizar y ejecutar la API de firma de clics. Sólo hay uno por red de publicidad. El <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">token API V2.0 token de AppsFlyer</Anchor> debe obtenerse del administrador.<br /><br />**Clave secreta**: Se utiliza para generar la firma. Utiliza el [método de generación de claves secretas](/docs/click-signing-for-ad-networks#método-de-generación-de-clave-secreta) para crear claves secretas. La red de publicidad se encarga de generar nuevas claves secretas. Consulta la [sección de rasgos](/docs/click-signing-for-ad-networks#traits) para más información. |
+| **Pregunta: ¿Podemos aplicar la firma por clic sólo a determinadas campañas?**<br /><br />**Respuesta**: No. La firma de clics se aplica a todos los clics procedentes de una red de publicidad. Puedes excluir determinadas aplicaciones de la firma de clics, pero no puedes excluir sólo determinadas campañas. |
 
 </Accordion>
 
 <div id="traits" />
 
-<Accordion title="Traits">
+<Accordion title="Características">
 
-| Trait | Description |
+| Caducado | Descripción |
 | --- | --- |
-| Click signature | The signature must occur on the ad network servers. |
-| Secret key | <ul><li>Ad networks can have a maximum of two secret keys active simultaneously.</li><li>Each secret key has an expiration.</li><li>Clicks signed with expired secret keys are rejected.</li></ul> |
-| Report API | Updated statistics of click validity are aggregated on an hourly basis. |
+| Haz clic en la firma | La firma debe producirse en los servidores de la red de publicidad. |
+| Clave secreta | <ul><li>curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing/config/circuit-breaker' \ -H 'Authorization: Bearer `{API V2.0 token available to the admin in the dashboard.}' --data-raw '{ "status":"enabled" }`'</li><li>Cada clave secreta tiene una caducidad.</li><li>Los clics firmados con claves secretas caducadas son rechazados.</li></ul> |
+| Reporte de API | Las estadísticas actualizadas de la validez de los clics se agregan cada hora. |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HNWC70BPGDJAG3X8M5Z2RHQ4=about-click-signing h_01HNWC70BPFYMZ56GTPV3W6DXA=click-signature-integration h_01HNWC70BPMXTKF9NZBYGCB874=flow h_01HNWC70BPHCAGD1ECA56CC1Q6=procedure h_01HNWC70BPAR4QNTNSFE1JZM2J=note list-of-attributes=creating-a-click-signature h_01HP4A42YYFFF6M4VEH84KRTTK=creating-a-click-signature h_01HNWD3XYWFRY262HZZVAVWACR=list-of-attributes attribute-rules=attribute-and-json-rules h_01HNWE3A19RM7757B707TWZ6G0=attribute-and-json-rules h_01HNWE3A1920YQGZX2VG4X3M4B=order-and-appearance-of-attributes h_01HNYRZ1DPDDQ5H8RFYKAQWVKP=empty-attributes h_01HNYS6R7F0MNPBN08TXKQS5DV=json-data-structure h_01HNYSEBGD1DBSV2MHS7DZ75HS=attribute-value-escaping h_01HNYSY42HS1RXFG7T7QS9B0TK=json-spaces h_01HNYSJDFWAM9RREYH4M8DZQJA=signature-algorithm h_01HP3YAN03BWVA30JP1JAFZYAG=signature-example h_01HP3Y2Z65BN0SZ56XSHD52MSY=building-a-signature-example code-example=code-examples h_01HNYT8Z33M69JAS72MQ03YX0M=code-examples h_01HP3XVEJTBBVKZYEBZT62PR20=signingsupportedparamsjson h_01HP3XVEJTWWJVDBK5PGQH7DJY=signatureexamplego h_01HNWC70BPNEVT00S040TQ9KVD=click-signature-apis click-signature-apis::58bf03c7=click-signature-apis-1 h_01HNWC70BPR8XXC3TQCAZSGFZS=click-signature-apis-1 h_01HNZ3YMFRWFDY751EBA58V6Q0=legacy-versions h_01HNWCYB2YXCVGCP38GRBAJYQ4=v1-legacy h_01HNWC70BPBPSX1WKJJC2W6H69=generate-secret-key-method h_01HNWC70BPPBK2S38KA6RQSTCN=generate-secret-key-basics h_01HNWC70BP40D5XN8DZQHSDZ5K=api-request h_01HNWC70BPS83JD78JWQYK1NX9=parameters h_01HNWC70BPQC37602GV8GQPSEQ=json-response h_01HNWC70BP7V8KRW4861PXC2PX=generate-secret-key-curl-example-and-response h_01HNWC70BPKTPZEKFD37B6YQMH=http-response-codes h_01HNWC70BPMQ8Q94JD5CBT5RHZ=response-codes h_01HNWC70BP8V05Q04J6EVGAS9T=revoke-secret-key-method h_01HNWC70BP69ZJERY1Z03A5V4C=revoke-secrete-key-basics h_01HNWC70BPN01BNKKC7T9QMF44=api-request::3f5b6d35 parameters::f8e4d5cf=parameters-1 h_01HNWC70BPQ5S06E210RTE7E6R=parameters-1 h_01HNWC70BPBQA0ME8D6TZEM2EB=generate-secret-key-curl-example-and-response::5a4174fc h_01HNWC70BP9AV6PPEZNPQWJN85=http-response-codes::7dc4ee64 response-codes::d802debd=response-codes-1 h_01HNWC70BPN18MB98KWND886QN=response-codes-1 h_01HNWC70BPKEVRDMT8N4HMC98W=test-method h_01HNWC70BPX4TH2MNE4GJBGHRG=test-basics h_01HNWC70BP5X2MZ3AC8BF69XYK=api-request::b2432cce parameters::7d3f0c33=parameters-2 h_01HNWC70BPKQFVEGWR9QT566YX=parameters-2 h_01HNWC70BPM50T2JEGJF41GGX4=json-response::cd966b82 h_01HNWC70BPSQYQ5R7PJE4CAKYG=test-curl-example-and-response h_01HNWC70BP8SSK2E5DFAD2Q6NP=http-response-codes::22d1011c response-codes::a79c47f4=response-codes-2 h_01HNWC70BPC43F5H85F56DDSQR=response-codes-2 h_01HNWC70BP6NPF7NSF0MGA4BJ3=configure-mode-method h_01HNWC70BPKNAVCD57D2E7FX8F=configure-mode-basics h_01HNWC70BQFCJCHHVQHKWB57GF=api-request::1ede8b9c parameters::2fff2a1b=parameters-3 h_01HNWC70BQSQ7YWZVQB9A4DZQW=parameters-3 h_01HNWC70BQF0J2TZF181BW0MKT=configure-mode-curl-example h_01HNWC70BQ9HNQV7HA45ZXA2Z3=http-response-codes::b3328f8b response-codes::fe5a5b10=response-codes-3 h_01HNWC70BQZ657X25N8JGM57A1=response-codes-3 h_01HNWC70BQVSFS7G330NF4XHEP=configure-circuit-breaker-method h_01HNWC70BQ097J2VXW0XKSH3M9=configure-circuit-breaker-basics h_01HNWC70BQJWZYZEDJJ5J7JX6X=api-request::ef73eae0 h_01HNWC70BQ6R955776Y6H4EZRG=request-body-json h_01HNWC70BQRZEZ4PTV59FGYS4Z=configure-circuit-breaker-curl-example-and-response h_01HNWC70BQPP5X9JH1HJ1K58H4=http-response-codes::d35e3a62 response-codes::b056f2a3=response-codes-4 h_01HNWC70BQWQ5KWZX8BM0A7BC5=response-codes-4 h_01HNWC70BQZY6TYSQBWZ17S0W5=get-configuration-method h_01HNWC70BQY6CPZA5A56J3TET0=get-configuration-basics h_01HNWC70BQ444XNRRCZZH2GFJH=api-request::a2a93b39 h_01HNWC70BQJ8J2WGXE2QF144FK=json-response::fee92c h_01HNWC70BQ701HZR6PYC0CW88T=get-configuration-curl-example-and-response h_01HNWC70BQ8R5GR906Y9W79E81=http-response-codes::90a409c response-codes::ebf1292a=response-codes-7 h_01HNWC70BQDGVBZ94F0N49FF40=response-codes-7 h_01HNWC70BQTBMNKHV4RH4ZQ0AE=report-method h_01HNWC70BQ4K7T3FXZWV5KW3FM=report-basics h_01HNWC70BQMBD2WNVQH69FMSPR=api-request::b28cedb0 parameters::e6795217=parameters-4 h_01HNWC70BQ0FDT4T2RAJEPAHNC=parameters-4 h_01HNWC70BQRZTXMKD30V7QQPE4=csv-response h_01HNWC70BQV61TVE65TQ3WWGCP=test-curl-example-and-response::66e922 h_01HNWC70BQQ3MP256QK0JT2K78=http-response-codes::8454f45d response-codes::a8a9822d=response-codes-8 h_01HNWC70BQTPPWA4SNG25E8FFB=response-codes-8 h_01HNWC70BQ9SK2XCBGGHXVMRDV=exclude-app-method h_01HNWC70BQ8GGRTQ1RW1KCY0SQ=exclude-app-method-basics h_01HNWC70BQ4D62SZCHKGEP6RMJ=api-request::1054abca parameters::f5e3c6ce=parameters-5 h_01HNWC70BREG4XQJV3X9518FC5=parameters-5 h_01HNWC70BR2PVDHTG64WZ36KPV=exclude-app-curl-example h_01HNWC70BR7XCTW6N69GEB4ARF=http-response-codes::7991b66 response-codes::addfcfd8=response-codes-8 h_01HNWC70BRN8BHWF6WGY2RH45X=response-codes-8 h_01HNWC70BR18P0H96VN64RS05G=remove-excluded-app-method h_01HNWC70BRAWBGC5EE0Q8XBTW1=remove-excluded-app-method-basics h_01HNWC70BRD885KN6YDXQ9GXS2=api-request::9504d16f parameters::34936c8f=parameters-6 h_01HNWC70BR4ADH7T3AFG58FZH6=parameters-6 h_01HNWC70BRK7DM7MW150AFVKG2=remove-excluded-app-curl-example h_01HNWC70BRMFN4RM65YV2NWR29=http-response-codes::b5e059da response-codes::e8de940a=response-codes-8 h_01HNWC70BRHA8AA7ZV1R4EBYJH=response-codes-8 h_01HNWC70BRTZZWME7QCP8HV9AY=code-sample h_01HNWC70BRN0NGTQVWED6VG81Y=additional-information h_01HNWC70BRS884G8RCMAPFPV1N=troubleshooting h_01HNWC70BRP3BVJSHSD1CPCB9S=faq h_01HNWC70BRDN37MBTEKT0DH8CT=traits" />
+<div data-zendesk-anchors="about-click-signing=acerca-de-la-firma-de-clics h_01HNWC70BPGDJAG3X8M5Z2RHQ4=acerca-de-la-firma-de-clics click-signature-integration=integraci%C3%B3n-de-la-firma-clic h_01HNWC70BPFYMZ56GTPV3W6DXA=integraci%C3%B3n-de-la-firma-clic flow=flujo h_01HNWC70BPMXTKF9NZBYGCB874=flujo procedure=procedimiento h_01HNWC70BPHCAGD1ECA56CC1Q6=procedimiento h_01HNWC70BPAR4QNTNSFE1JZM2J=nota list-of-attributes=crear-una-firma-de-clic h_01HP4A42YYFFF6M4VEH84KRTTK=crear-una-firma-de-clic h_01HNWD3XYWFRY262HZZVAVWACR=lista-de-atributos attribute-rules=reglas-de-atributos-y-json h_01HNWE3A19RM7757B707TWZ6G0=reglas-de-atributos-y-json order-and-appearance-of-attributes=orden-y-apariencia-de-los-atributos h_01HNWE3A1920YQGZX2VG4X3M4B=orden-y-apariencia-de-los-atributos empty-attributes=atributos-vac%C3%ADos h_01HNYRZ1DPDDQ5H8RFYKAQWVKP=atributos-vac%C3%ADos json-data-structure=estructura-de-datos-json h_01HNYS6R7F0MNPBN08TXKQS5DV=estructura-de-datos-json attribute-value-escaping=escape-de-valores-de-atributos h_01HNYSEBGD1DBSV2MHS7DZ75HS=escape-de-valores-de-atributos json-spaces=espacios-json h_01HNYSY42HS1RXFG7T7QS9B0TK=espacios-json signature-algorithm=algoritmo-de-firma h_01HNYSJDFWAM9RREYH4M8DZQJA=algoritmo-de-firma signature-example=ejemplo-de-firma h_01HP3YAN03BWVA30JP1JAFZYAG=ejemplo-de-firma h_01HP3Y2Z65BN0SZ56XSHD52MSY=building-a-signature-example code-example=ejemplos-de-c%C3%B3digo h_01HNYT8Z33M69JAS72MQ03YX0M=ejemplos-de-c%C3%B3digo h_01HP3XVEJTBBVKZYEBZT62PR20=signingsupportedparamsjson h_01HP3XVEJTWWJVDBK5PGQH7DJY=signatureexamplego click-signature-apis=api-de-firma-por-clic h_01HNWC70BPNEVT00S040TQ9KVD=api-de-firma-por-clic click-signature-apis::58bf03c7=api-de-firma-por-clic-1 h_01HNWC70BPR8XXC3TQCAZSGFZS=api-de-firma-por-clic-1 legacy-versions=versiones-heredadas h_01HNZ3YMFRWFDY751EBA58V6Q0=versiones-heredadas h_01HNWCYB2YXCVGCP38GRBAJYQ4=v1-legacy generate-secret-key-method=m%C3%A9todo-de-generaci%C3%B3n-de-clave-secreta h_01HNWC70BPBPSX1WKJJC2W6H69=m%C3%A9todo-de-generaci%C3%B3n-de-clave-secreta h_01HNWC70BPPBK2S38KA6RQSTCN=generate-secret-key-basics h_01HNWC70BP40D5XN8DZQHSDZ5K=api-request parameters=par%C3%A1metros h_01HNWC70BPS83JD78JWQYK1NX9=par%C3%A1metros h_01HNWC70BPQC37602GV8GQPSEQ=json-response h_01HNWC70BP7V8KRW4861PXC2PX=generate-secret-key-curl-example-and-response h_01HNWC70BPKTPZEKFD37B6YQMH=http-response-codes response-codes=c%C3%B3digos-de-respuesta h_01HNWC70BPMQ8Q94JD5CBT5RHZ=c%C3%B3digos-de-respuesta revoke-secret-key-method=m%C3%A9todo-de-revocaci%C3%B3n-de-la-clave-secreta h_01HNWC70BP8V05Q04J6EVGAS9T=m%C3%A9todo-de-revocaci%C3%B3n-de-la-clave-secreta h_01HNWC70BP69ZJERY1Z03A5V4C=revoke-secrete-key-basics h_01HNWC70BPN01BNKKC7T9QMF44=api-request::3f5b6d35 parameters::f8e4d5cf=par%C3%A1metros-1 h_01HNWC70BPQ5S06E210RTE7E6R=par%C3%A1metros-1 h_01HNWC70BPBQA0ME8D6TZEM2EB=generate-secret-key-curl-example-and-response::5a4174fc h_01HNWC70BP9AV6PPEZNPQWJN85=http-response-codes::7dc4ee64 response-codes::d802debd=c%C3%B3digos-de-respuesta-1 h_01HNWC70BPN18MB98KWND886QN=c%C3%B3digos-de-respuesta-1 test-method=m%C3%A9todo-de-prueba h_01HNWC70BPKEVRDMT8N4HMC98W=m%C3%A9todo-de-prueba h_01HNWC70BPX4TH2MNE4GJBGHRG=test-basics h_01HNWC70BP5X2MZ3AC8BF69XYK=api-request::b2432cce parameters::7d3f0c33=par%C3%A1metros-2 h_01HNWC70BPKQFVEGWR9QT566YX=par%C3%A1metros-2 h_01HNWC70BPM50T2JEGJF41GGX4=json-response::cd966b82 h_01HNWC70BPSQYQ5R7PJE4CAKYG=test-curl-example-and-response h_01HNWC70BP8SSK2E5DFAD2Q6NP=http-response-codes::22d1011c response-codes::a79c47f4=c%C3%B3digos-de-respuesta-2 h_01HNWC70BPC43F5H85F56DDSQR=c%C3%B3digos-de-respuesta-2 configure-mode-method=configurar-m%C3%A9todo-de-modo h_01HNWC70BP6NPF7NSF0MGA4BJ3=configurar-m%C3%A9todo-de-modo h_01HNWC70BPKNAVCD57D2E7FX8F=configure-mode-basics h_01HNWC70BQFCJCHHVQHKWB57GF=api-request::1ede8b9c parameters::2fff2a1b=par%C3%A1metros-3 h_01HNWC70BQSQ7YWZVQB9A4DZQW=par%C3%A1metros-3 h_01HNWC70BQF0J2TZF181BW0MKT=configure-mode-curl-example h_01HNWC70BQ9HNQV7HA45ZXA2Z3=http-response-codes::b3328f8b response-codes::fe5a5b10=c%C3%B3digos-de-respuesta-3 h_01HNWC70BQZ657X25N8JGM57A1=c%C3%B3digos-de-respuesta-3 configure-circuit-breaker-method=configurar-el-m%C3%A9todo-del-disyuntor h_01HNWC70BQVSFS7G330NF4XHEP=configurar-el-m%C3%A9todo-del-disyuntor h_01HNWC70BQ097J2VXW0XKSH3M9=configure-circuit-breaker-basics h_01HNWC70BQJWZYZEDJJ5J7JX6X=api-request::ef73eae0 request-body-json=cuerpo-de-la-solicitud-json h_01HNWC70BQ6R955776Y6H4EZRG=cuerpo-de-la-solicitud-json h_01HNWC70BQRZEZ4PTV59FGYS4Z=configure-circuit-breaker-curl-example-and-response h_01HNWC70BQPP5X9JH1HJ1K58H4=http-response-codes::d35e3a62 response-codes::b056f2a3=c%C3%B3digos-de-respuesta-4 h_01HNWC70BQWQ5KWZX8BM0A7BC5=c%C3%B3digos-de-respuesta-4 get-configuration-method=obtener-m%C3%A9todo-de-configuraci%C3%B3n h_01HNWC70BQZY6TYSQBWZ17S0W5=obtener-m%C3%A9todo-de-configuraci%C3%B3n h_01HNWC70BQY6CPZA5A56J3TET0=get-configuration-basics h_01HNWC70BQ444XNRRCZZH2GFJH=api-request::a2a93b39 h_01HNWC70BQJ8J2WGXE2QF144FK=json-response::fee92c h_01HNWC70BQ701HZR6PYC0CW88T=get-configuration-curl-example-and-response h_01HNWC70BQ8R5GR906Y9W79E81=http-response-codes::90a409c response-codes::ebf1292a=c%C3%B3digos-de-respuesta-7 h_01HNWC70BQDGVBZ94F0N49FF40=c%C3%B3digos-de-respuesta-7 report-method=m%C3%A9todo-de-reporte h_01HNWC70BQTBMNKHV4RH4ZQ0AE=m%C3%A9todo-de-reporte h_01HNWC70BQ4K7T3FXZWV5KW3FM=report-basics h_01HNWC70BQMBD2WNVQH69FMSPR=api-request::b28cedb0 parameters::e6795217=par%C3%A1metros-4 h_01HNWC70BQ0FDT4T2RAJEPAHNC=par%C3%A1metros-4 h_01HNWC70BQRZTXMKD30V7QQPE4=csv-response h_01HNWC70BQV61TVE65TQ3WWGCP=test-curl-example-and-response::66e922 h_01HNWC70BQQ3MP256QK0JT2K78=http-response-codes::8454f45d response-codes::a8a9822d=c%C3%B3digos-de-respuesta-8 h_01HNWC70BQTPPWA4SNG25E8FFB=c%C3%B3digos-de-respuesta-8 exclude-app-method=excluir-m%C3%A9todo-de-aplicaci%C3%B3n h_01HNWC70BQ9SK2XCBGGHXVMRDV=excluir-m%C3%A9todo-de-aplicaci%C3%B3n h_01HNWC70BQ8GGRTQ1RW1KCY0SQ=exclude-app-method-basics h_01HNWC70BQ4D62SZCHKGEP6RMJ=api-request::1054abca parameters::f5e3c6ce=par%C3%A1metros-5 h_01HNWC70BREG4XQJV3X9518FC5=par%C3%A1metros-5 h_01HNWC70BR2PVDHTG64WZ36KPV=exclude-app-curl-example h_01HNWC70BR7XCTW6N69GEB4ARF=http-response-codes::7991b66 response-codes::addfcfd8=c%C3%B3digos-de-respuesta-8 h_01HNWC70BRN8BHWF6WGY2RH45X=c%C3%B3digos-de-respuesta-8 remove-excluded-app-method=eliminar-el-m%C3%A9todo-de-aplicaciones-excluidas h_01HNWC70BR18P0H96VN64RS05G=eliminar-el-m%C3%A9todo-de-aplicaciones-excluidas h_01HNWC70BRAWBGC5EE0Q8XBTW1=remove-excluded-app-method-basics h_01HNWC70BRD885KN6YDXQ9GXS2=api-request::9504d16f parameters::34936c8f=par%C3%A1metros-6 h_01HNWC70BR4ADH7T3AFG58FZH6=par%C3%A1metros-6 h_01HNWC70BRK7DM7MW150AFVKG2=remove-excluded-app-curl-example h_01HNWC70BRMFN4RM65YV2NWR29=http-response-codes::b5e059da response-codes::e8de940a=c%C3%B3digos-de-respuesta-8 h_01HNWC70BRHA8AA7ZV1R4EBYJH=c%C3%B3digos-de-respuesta-8 h_01HNWC70BRTZZWME7QCP8HV9AY=code-sample additional-information=informaci%C3%B3n-adicional h_01HNWC70BRN0NGTQVWED6VG81Y=informaci%C3%B3n-adicional h_01HNWC70BRS884G8RCMAPFPV1N=troubleshooting h_01HNWC70BRP3BVJSHSD1CPCB9S=faq h_01HNWC70BRDN37MBTEKT0DH8CT=traits" />

@@ -1,5 +1,5 @@
 ---
-title: Protect360 for integrated partners
+title: Protect360 para socios integrados
 metadata:
   keywords:
     - Protect360
@@ -13,274 +13,273 @@ x-zendesk:
     - Protect360
     - Ad Networks
   created_at: '2017-09-19T08:27:29Z'
-  edited_at: '2026-05-25T07:54:54Z'
+  edited_at: '2026-08-12T12:27:36Z'
   id: 115004745523
-  locale: en-us
+  locale: es
   section: Rejected traffic
   section_id: 6551666000273
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115004745523-Protect360-for-integrated-partners
+  url: https://support.appsflyer.com/hc/es/articles/115004745523
 ---
-> **At a glance:** Integrated partners (ad networks and agencies) can view fraud related to their traffic identified and blocked by the ProtectLITE and Protect360 engines, as well as the customer’s manually-defined validation rules.
+> **Resumen:** Los socios integrados, como redes publicitarias y agencias, pueden visualizar el fraude relacionado con el tráfico que ha sido identificado y bloqueado por los motores ProtectLITE y Protect360, así como también por las reglas de validación definidas manualmente por el cliente.
 
-## Overview
+## Visión general
 
-AppsFlyer identifies and blocks fraud via: 
+AppsFlyer detecta y bloquea el fraude a través de: 
 
-* <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>: Basic fraud protection for all customers.
-* <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Advanced fraud protection for advertisers with a premium subscription plan.
+* <Anchor target="_blank" href="/marketers/es/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor><Anchor target="_blank" href="/marketers/es/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">: Protección básica contra fraudes para todos los clientes.</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide">Protect360</Anchor><Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide">: Protección avanzada contra fraudes para anunciantes con un plan de suscripción premium.</Anchor>
 
-Advertisers must give:
+Los anunciantes deben otorgar:
 
-* Ad networks <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> to **Access Protect360 dashboard and raw data** reports (that includes ProtectLITE), and **Access aggregate in-app events data** (for in-app event fraud).
-* Agencies <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> to **Access Protect360 dashboard and raw data.**
+* Permisos de ad networks <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos</Anchor> para **acceder al dashboard de Protect360 y a los reportes de raw data** (incluido ProtectLITE) y **acceder a datos agregados de eventos in-app** (para fraude en eventos in-app).
+* Permisos <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">a las agencias</Anchor> para **acceder al panel de control y a los datos sin procesar de Protect360.**
 
-With the correct permissions, integrated partners can:
+Con los permisos adecuados, los socios integrados pueden:
 
-* View data related to the traffic they generated.
-* Download related <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#raw-data">raw data reports</Anchor>.
+* Visualizar datos relacionados con el tráfico que generan.
+* Descargar <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide#raw-data">informes de datos en bruto</Anchor> relacionados.
 
-There are also <Anchor target="_blank" href="/partners/docs/protect360-reports-for-ad-networks">raw data reports</Anchor> available to ad networks about impression capping, as well as failed click signatures, for which no advertiser permissions are required.
+Además, hay <Anchor target="_blank" href="/partners/es/docs/protect360-reports-for-ad-networks">informes de datos sin procesar</Anchor> accesibles para redes publicitarias sobre límites de clics e impresiones, así como firmas de clics fallidos, que no requieren permisos de los anunciantes.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> For advertisers that work with ad networks through an agency, in order for both the ad network and agency to access data, the advertiser must integrate both the agency and ad network in AppsFlyer, and grant them both permission to access data.
+> Para anunciantes que trabajan con redes publicitarias a través de una agencia, es necesario que tanto la red publicitaria como la agencia tengan acceso a los datos. Por lo tanto, el anunciante debe integrar a ambos en AppsFlyer y concederles permiso para acceder a los datos.
 >
-> If only the agency is integrated and granted permissions, the ad network does not have access to the data.
+> Si solo la agencia está integrada y tiene permisos, la red publicitaria no podrá acceder a los datos.
 
-### Dashboard view
+### Vista del panel de control
 
-**Prerequisites**: Permission from the advertiser to access ProtectLITE and Protect360. 
+**Requisitos previos**: Permiso del anunciante para acceder a ProtectLITE y Protect360. 
 
-Integrated partners can view the dashboard and charts; see the screenshot that follows.
+Los socios integrados pueden ver el panel y los gráficos; consulte la captura de pantalla que se muestra a continuación.
 
-Learn more about what data is available in the <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting#dashboard">ProtectLITE</Anchor> and <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#dashboard">Protect360</Anchor> dashboards.   
+Obtenga más información acerca de los datos disponibles en los paneles de control <Anchor target="_blank" href="/marketers/es/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting#panel-de-control">ProtectLITE</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide#dashboard">Protect360</Anchor> .   
 
-Limitations:
+Limitaciones:
 
-* Ad networks cannot access the Anomalies dashboard.
+* Las redes publicitarias no tienen acceso al panel de anomalías.
 
 [![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
 
-* Ad networks and Agencies cannot access the fraud protection studio, or the raw data level of tagged data. They can, however, see it aggregated in the Protect360 dashboard under tagged attribution and tagged in-app events. As well as identify fraud by tag type (new release etc) . To learn more about FPS see <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio">this article</Anchor>.
+* Las ad networks y las agencias no pueden acceder al estudio de protección contra el fraude ni al nivel de raw data de los datos etiquetados. Sin embargo, pueden verlo de forma agregada en el dashboard de Protect360, en la atribución etiquetada y en los eventos in-app etiquetados. Además de identificar el fraude por tipo de etiqueta (nueva versión, etc.). Para saber más sobre FPS, consulta <Anchor target="_blank" href="/marketers/es/docs/beta-fraud-protection-studio">este artículo</Anchor>.
 
   <Image alt="" src="https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png" width="624px" />
 
   <Image alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
 
-### Raw-data reports
+### Informes de datos sin procesar
 
-**Prerequisites**: Permission from the advertiser to access ProtectLITE and Protect360. 
+**Requisitos previos: Permiso del anunciante para acceder a ProtectLITE y Protect360.**
 
-Protect360 raw-data reports show identified and blocked fraud via ProtectLITE, Protect360, and Validation Rules.
+Los informes de datos brutos de Protect360 muestran el fraude identificado y bloqueado a través de ProtectLITE, Protect360 y las reglas de validación.
 
-Reports are available via:
+Los informes están disponibles a través de:
 
-* Export data: In AppsFlyer, from the side menu, select **Report** > **Raw Data Export**
-* API: See the [ad network reporting API](/docs/protect360-for-integrated-partners#protect360-ad-network-reporting-api) section that follows.
+* Exportar datos: En AppsFlyer, desde el menú lateral, seleccione **Informes** > **Exportación de Datos Brutos**
+* Permisos a las redes publicitarias <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">para</Anchor> **acceder al panel de Protect360 y a los informes de datos sin procesar** (incluyendo ProtectLITE) y **acceder a datos agregados de eventos in-app** (para fraudes en eventos in-app).
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">Protect360 raw data reports</Anchor>.
+Obtenga más información sobre los <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports">informes de datos brutos de Protect360</Anchor>.
 
-## Protect360 ad network reporting API
+## API de informes de redes publicitarias de Protect360
 
-* The raw-data reports listed in this section are available to ad networks via API.
-* Equivalent reports are available from the dashboard on the Export Data page.
-* If the advertiser does not have a Protect360 subscription, only the Installs report is available.
+* Los informes de datos brutos que se describen en esta sección están disponibles para las redes publicitarias a través de API.
+* Informes equivalentes están accesibles desde el panel de control en la página de Exportar Datos.
+* Si el anunciante no posee una suscripción a Protect360, solo estará disponible el informe de Instalaciones.
 
-**Prerequisites**
+**Requisitos previos**
 
-* To access advertiser data by API, the advertiser grants the ad network <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> to access their Protect360 dashboard and data by API. Ad networks having access to the dashboard are permitted to use the API. No action is required by the advertiser.
-* For a list of apps for which you have Protect360 permissions use <Anchor target="_blank" href="/partners/docs/app-list-api-for-ad-networks">get app list API.</Anchor>
-* The admin needs to get an AppsFlyer <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">V2.0 authentication token</Anchor> available in the dashboard.
+* Para acceder a los datos del anunciante mediante API, el anunciante concede a la red publicitaria <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos</Anchor> para acceder a su panel de control y a los datos de Protect360 mediante API. Las redes publicitarias con acceso al panel de control están autorizadas a usar la API. No se requiere ninguna acción por parte del anunciante.
+* Para obtener una lista de aplicaciones para las que tiene permisos de Protect360, utilice la <Anchor target="_blank" href="/partners/es/docs/app-list-api-for-ad-networks">API de lista de aplicaciones.</Anchor>
+* El administrador debe obtener un token de autenticación de AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">V2.0</Anchor> disponible en el panel.
 
-#### Protect360 API reports
+#### Informes de la API de Protect360
 
-| Report | Data freshness | Description |
+| Informe | Actualización de datos | Descripción |
 | --- | --- | --- |
-| Post-attribution in-app events fraud | Daily 10:00 UTC | <ul><li>In-app events performed by installs identified as fraudulent.</li><li>Any other in-app event judged as fraudulent irrespective of the install.</li></ul>The report can be optionally filtered by in-app event type as described in the parameters table that follows.<br /><br />Report topic: `fraud-post-inapps` |
-| Post-attribution installs | Daily 10:00 UTC | <ul><li>Installs identified as fraudulent post-attribution.</li><li>The report can be optionally filtered by the detection date as described in the section that follows.</li></ul>Report topic: detection |
-| Installs | Real-time | Blocked installs with the block reason<br /><br />Report topic: blocked\_installs\_report |
-| In-app event | Real-time | In-app events performed by blocked users<br /><br />Report topic: `blocked_in-app_events_report` |
-| Clicks | Real-time | Clicks performed by blocked users<br /><br />Report topic: `blocked_clicks_report` |
+| Fraude en eventos dentro de la aplicación posteriores a la atribución | Diariamente a las 10:00 UTC | <ul><li>Eventos dentro de la aplicación llevados a cabo por instalaciones identificadas como fraudulentas.</li><li>Cualquier otro evento dentro de la aplicación que se considere fraudulento independientemente de la instalación.</li></ul>El informe puede filtrarse opcionalmente por tipo de evento en la aplicación, como se describe en la tabla de parámetros que se presenta a continuación.<br /><br />Tema del informe: `fraud-post-inapps` |
+| Instalaciones posteriores a la atribución | Diariamente a las 10:00 UTC | <ul><li>Instalaciones identificadas como fraudulentas después de la atribución.</li><li>El informe puede filtrarse opcionalmente por la fecha de detección, como se describe en la sección siguiente.</li></ul>Tema del informe:  detección |
+| Instalaciones | En tiempo real | Instalaciones bloqueadas con motivo del bloqueo<br /><br />Tema del informe:  blocked\_installs\_report |
+| Evento en la aplicación | En tiempo real | Eventos dentro de la aplicación realizados por usuarios bloqueados<br /><br />Tema del informe: `blocked_in-app_events_report` |
+| Clics | En tiempo real | Clics realizados por usuarios bloqueados<br /><br />Tema del informe: `blocked_clicks_report` |
 
-#### **Procedure for ad networks to get Protect360 reports by download**
+#### **Procedimiento para que las redes publicitarias obtengan informes de Protect360 a través de descarga**
 
-**To get a report using the API:**
+**Para obtener un informe mediante la API:**
 
-1. Identify the required report from the preceding list.
-2. Use the relevant curl example (in the following section) to prepare your script.
-3. Ensure that you replace the following placeholders:
-   1. App ID
-   2. From date
-   3. To date
-   4. Bearer token  (AppsFlyer <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">V2.0 authentication token</Anchor>)
-4. Some calls have [optional parameters](/docs/protect360-for-integrated-partners#api-parameters), as described in this article.
+1. Identifique el informe necesario de la lista anterior.
+2. Utilice el ejemplo relevante de curl (en la siguiente sección) para preparar su script.
+3. Asegúrese de reemplazar los siguientes marcadores de posición:
+   1. ID de la aplicación
+   2. Desde la fecha
+   3. Hasta la fecha
+   4. Token de portador (token de autenticación de AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">V2.0</Anchor>)
+4. Algunas llamadas tienen [parámetros opcionales](/docs/protect360-for-integrated-partners#api-parameters), como se describe en este artículo.
 
-### Curl examples
+### Ejemplos de curl
 
 <div id="installs-blocked_installs_report" />
 
-<Accordion title="Installs (blocked_installs_report)">
+<Accordion title="Instalaciones (blocked_installs_report)">
 
-Replace the app\_id, from, to, and token placeholders.
+Sustituya los marcadores de posición app\_id, desde, hasta y token.
 
 ```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/blocked_installs_report/app/{app_id}?from={2020-07-10}&to={2020-07-20}&additional_fields=keyword_id,store_reinstall,deeplink_url,oaid,blocked_reason,blocked_reason_value,blocked_reason_rule,blocked_sub_reason,match_type,device_category,gp_referrer,gp_click_time,gp_install_begin,amazon_aid,keyword_match_type' \
--H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
+-H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \ \
 ```
 
 </Accordion>
 
 <div id="postattribution-installs-detection" />
 
-<Accordion title="Post-attribution installs (detection)">
+<Accordion title="Instalaciones tras la atribución (detección)">
 
-Replace the app id, from, to, and token placeholders.
+Sustituya los marcadores de posición para el ID de la aplicación, desde, hasta y token.
 
 ```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/detection/app/{app-id}?from={2020-06-10}&to={2020-07-20}&additonal-fields=fraud_reason,fraud_sub_reason,match_type,device_category,gp_referrer,gp_click_time,gp_install_begin,detection_date' \
--H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
+-H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \ \
 ```
 
 </Accordion>
 
 <div id="inapp-event-blocked_in_app_events_report" />
 
-<Accordion title="In-app event (blocked_in_app_events_report)">
+<Accordion title="Evento dentro de la aplicación (blocked_in_app_events_report)">
 
-Replace the app id, from, to, and token placeholders.
+Sustituya los marcadores de posición para el ID de la aplicación, desde, hasta y token.
 
 ```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/blocked_in_app_events_report/app/?from=YYYY-MM-DD&to=YYYY-MM-DD&additional_fields=keyword_id,store_reinstall,deeplink_url,oaid,blocked_reason,blocked_reason_value,blocked_reason_rule,blocked_sub_reason,match_type,device_category,gp_referrer,gp_click_time,gp_install_begin,amazon_aid,keyword_match_type' \
--H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
+-H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \ \
 ```
 
 </Accordion>
 
 <div id="postattribution-inapp-events-fraud-fraud_post_inapps" />
 
-<Accordion title="Post-attribution in-app events fraud (fraud_post_inapps)">
+<Accordion title="Fraude en eventos dentro de la aplicación tras la atribución (fraud_post_inapps)">
 
-Replace the app id, from, to, and token placeholders.
+Sustituya los marcadores de posición para el ID de la aplicación, desde, hasta y token.
 
 ```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/fraud-post-inapps/app/{app-id}?from={2020-06-10}&to={2020-07-20}&additional_fields=match_type,device_category,gp_referrer,gp_click_time,gp_install_begin,fraud_reason,fraud_sub_reason,detection_date' \
--H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
+-H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \ \
 ```
 
 </Accordion>
 
 <div id="clicks-blockedclicks_report" />
 
-<Accordion title="Clicks (blocked-clicks_report)">
+<Accordion title="Clics (blocked-clicks_report)">
 
-Replace the app id, from, to, and token placeholders.
+Sustituya los marcadores de posición para el ID de la aplicación, desde, hasta y token.
 
 ```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/blocked_clicks_report/app/{app-id}?from={2020-06-10}&to={2020-07-20}&additional_fields=keyword_id,store_reinstall,deeplink_url,oaid,blocked_reason,blocked_reason_value,blocked_reason_rule,blocked_sub_reason,gp_referrer,gp_click_time,gp_install_begin,amazon_aid,keyword_match_type' \
--H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
+-H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \ \
 ```
 
 </Accordion>
 
-### Protect360 ad network API reference guide
+### Guía de referencia de la API de la red publicitaria Protect360
 
 <div id="api-basics" />
 
-<Accordion title="API basics">
+<Accordion title="Conceptos básicos de la API">
 
-Protect360 ad network API basics:
+Conceptos básicos de la API de la red publicitaria Protect360:
 
-| Path | `https://hq1.appsflyer.com/api/adnets-data/v1/export/report_topic/app/app_id` |
+| Ruta | `https://hq1.appsflyer.com/api/adnets-data/v1/export/report_topic/app/app_id` |
 | --- | --- |
-| Method | GET |
-| Path parameters (mandatory) | <ul><li>`app_id`:<ul><li>The app identifier, as found in the AppsFlyer dashboard. Insert it precisely as it displays in the dashboard.</li><li>Make sure to prefix iOS apps with **id.**</li></ul></li><li>`report_topic`:</li></ul> |
-| Accepted content types | `application/json` |
-| Authorization | <ul><li>Bearer token in the request header.</li><li>![AppsFlyerAdmin_us-en.png](https://files.readme.io/5708713f5adc7560748b16d2df4a439163e1310fc7d32f2e5ca786d176cbc8d3-44928678665617.png)Ask the admin to get the V2.0 token from the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">tokens</Anchor> page. This token is about 700 characters in length.</li></ul> |
-| Rate limitation | <Anchor target="_blank" href="/marketers/docs/report-generation-quotas-rate-limitations">Rate limitations</Anchor> |
-| Date range limitation | <ul><li>Earliest date supported: 90 days before the current data</li><li>31 days out of the previous 90 days</li></ul> |
-| Row limitations | 200K rows |
-| Report characteristics | <ul><li>Timezone: UTC</li><li>Currency: USD</li></ul> |
+| Método | GET |
+| Parámetros de ruta (obligatorios) | <ul><li>`app_id`:<ul><li>El identificador de la aplicación, tal como aparece en el panel de AppsFlyer. Insértelo tal cual se muestra en el tablero.</li><li>Asegúrese de usar el prefijo **id.** para las aplicaciones iOS.</li></ul></li><li>P: ¿Las redes reciben correos electrónicos de notificación sobre la limitación de clics?</li></ul> |
+| Tipos de contenido aceptados | `application/json` |
+| Autorización | <ul><li>Token portador en el encabezado de la solicitud.</li><li>![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)Solicite al administrador el token V2.0 de la página de <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">tokens</Anchor>. Este token tiene aproximadamente 700 caracteres.</li></ul> |
+| Limitación de velocidad | <Anchor target="_blank" href="/marketers/es/docs/report-generation-quotas-rate-limitations">Limitaciones de velocidad</Anchor> |
+| Limitación del rango de fechas | <ul><li>La fecha más antigua admitida: 90 días antes de los datos actuales</li><li>31 días de los 90 días anteriores</li></ul> |
+| Limitaciones de filas | 200K filas |
+| Características del informe | <ul><li>Cadena</li><li>Moneda: USD</li></ul> |
 
 </Accordion>
 
 <div id="api-parameters" />
 
-<Accordion title="API parameters">
+<Accordion title="Parámetros de la API">
 
-Protect360 API parameters:
+Parámetros de la API de Protect360:
 
-| Parameter | Description | Format | Mandatory |
+| Parámetro | Descripción | Formato | Obligatorio |
 | --- | --- | --- | --- |
-| app\_id | App ID as it displays in AppsFlyer | String | Yes |
-| from | Start of the date range:<ul><li>For installs, this is the install date.</li><li>For in-app events, this is the date of the event.</li></ul> | YYYY-MM-DD | Yes |
-| to | End of the date range:<ul><li>For installs, this is the install date.</li><li>For in-app events, this is the date of the event.</li></ul> | YYYY-MM-DD | Yes |
-| event\_name | [Optional for Post-attribution in-app events fraud]<br /><br />Filter events by in-app event. Limit the report to specific events. One or more events can be included.<br /><br />Example usage: `&event_name=af_purchase,af_login` | String | No |
-| detect-from | [Optional for Post-attribution installs]<br /><br />Start of the fraud detection date range. (Default is from.) | YYYY-MM-DD | No |
-| detect-to | [Optional for Post-attribution installs]<br /><br />End of the fraud detection date range. (Default is to.) | YYYY-MM-DD | No |
+| id\_aplicación | ID de la aplicación tal como aparece en AppsFlyer | Cadena | Sí |
+| desde | Inicio del rango de fechas:<ul><li>Para las instalaciones, es la fecha de instalación.</li><li>Para eventos dentro de la aplicación, es la fecha del evento.</li></ul> | AAAA-MM-DD | Sí |
+| hasta | Fin del rango de fechas:<ul><li>Para las instalaciones, es la fecha de instalación.</li><li>Para eventos dentro de la aplicación, es la fecha del evento.</li></ul> | AAAA-MM-DD | Sí |
+| nombre\_del\_evento | [Opcional para fraudes en eventos dentro de la aplicación tras la atribución]<br /><br />Filtrar eventos por evento en la aplicación. Limite el informe a eventos específicos. Se pueden incluir uno o más eventos.<br /><br />Ejemplo de uso: `&event_name=af_purchase,af_login` | Cadena | No |
+| detectar desde | [Opcional para instalaciones posteriores a la atribución]<br /><br />Inicio del rango de fechas para la detección de fraude. (Por defecto es 'desde'). | AAAA-MM-DD | No |
+| detectar-hasta | [Opcional para instalaciones posteriores a la atribución]<br /><br />Fin del rango de fechas para la detección de fraude. (Por defecto es 'hasta'.) | AAAA-MM-DD | No |
 
 </Accordion>
 
 <div id="protect360-api-http-return-codes" />
 
-<Accordion title="Protect360 API HTTP return codes">
+<Accordion title="Códigos de retorno HTTP de Protect360 API">
 
-Error codes and solutions:
+Códigos de error y soluciones:
 
-| Status | Code | Symptom/message | Solution |
+| Estado | Código | Síntoma/mensaje | Solución |
 | --- | --- | --- | --- |
-| OK | 200 | Empty CSV file | `addtional_fields`used more than once in the URI |
-| OK | 200 | Empty CSV file | Ensure that both from and to dates have the format yyyy-mm-dd |
-| OK | 200 | AppsFlyer HTML login page returns | There is no token in the Bearer token header |
-| Bad request | 400 | Bad request | <ul><li>Date range limitation.<ul><li>The earliest date allowed is 90 days prior to the current day</li><li>Period can't exceed 60 days for installs and 90 days for in-app reports</li></ul></li></ul> |
-| Unauthorized | 401 | Unauthorized | A token was found, but it is not valid. Check that you have the current V2.0 token for your account. Ask the admin to retrieve the current token from the dashboard. |
-| Not found | 404 |  | <ul><li>The endpoint specified is incorrect</li><li>Ensure that the app ID is correct</li><li>You are not authorized to access the app</li></ul> |
+| Correcto | 200 | Archivo CSV vacío | `addtional_fields`Se ha utilizado más de una vez en la URI |
+| Correcto | 200 | Archivo CSV vacío | Asegúrese de que las fechas de inicio y fin estén en el formato aaaa-mm-dd |
+| Correcto | 200 | La página de inicio de sesión en HTML de AppsFlyer devuelve | Falta el token en el encabezado de Bearer token |
+| Solicitud incorrecta | 400 | Solicitud incorrecta | <ul><li>Limitación del rango de fechas.<ul><li>La fecha más antigua permitida es 90 días antes del día actual.</li><li>El período no puede exceder los 60 días para instalaciones y los 90 días para informes dentro de la aplicación.</li></ul></li></ul> |
+| No autorizado | 401 | No autorizado | Se encontró un token, pero no es válido. Verifique que dispone del token actual V2.0 para su cuenta. Solicite al administrador que recupere el token actual desde el panel de control. |
+| No encontrado | 404 |  | <ul><li>El endpoint especificado es incorrecto</li><li>Asegúrese de que el ID de la aplicación sea correcto</li><li>No está autorizado para acceder a la aplicación.</li></ul> |
 
 </Accordion>
 
-## Impression capping
+## Umbral de impresiones
 
-If an ad network has extremely high rates of impression fraud, Protect360 blocks the ad network’s impressions for a 24-hour cycle. This means that any impressions that occur after the threshold is reached are not recorded by AppsFlyer, nor are they eligible for attribution. The blocked impressions do appear in the Protect360 dashboard and reports.
+Si una red de anuncios presenta tasas extremadamente altas de fraude en impresiones o clics, Protect360 bloquea estas acciones de la red durante un ciclo de 24 horas. Esto significa que cualquier impresión o clic que ocurra después de alcanzar el umbral no se registra en AppsFlyer ni es elegible para atribución. Las impresiones/clics bloqueados aparecen en el panel de control y en los informes de Protect360.
 
-The AppsFlyer fraud protection algorithm takes into account various parameters when detecting this fraud, including volume of impressions, CVR, detected fraud rate, normal fluctuations in activity, industry and geographic benchmarks, and proprietary parameters. The algorithm is dynamic and updated on an hourly basis, to take into consideration changing trends.
+El algoritmo de protección contra el fraude de AppsFlyer considera diversos parámetros al detectar este fraude, como el volumen de impresiones/clics, CVR, tasa de fraude detectada, fluctuaciones normales en la actividad, puntos de referencia industriales y geográficos, y parámetros propios. El algoritmo es dinámico y se actualiza cada hora para considerar las tendencias cambiantes.
 
-**Repeatedly triggering impression flooding thresholds may result in the permanent removal of the partner integration from the AppsFlyer platform.**
+**Activar repetidamente los umbrales de inundación de impresiones o clics puede conllevar la eliminación definitiva de la integración del socio en la plataforma de AppsFlyer.**
 
-Impression capping thresholds:
+Umbrales de umbral de impresiones:
 
-* Apply to all ad networks equally. Meaning, there is no ad network for which extremely high rates of impression fraud would not lead to capping.
-* Are at the app/ad network level. Meaning, the analysis of fraud takes into account all the ad network’s campaigns on an app, And the block affects reporting and attribution for all the ad network’s campaigns on an app (whether or not the account has Protect360).
-* Are reset after a 24-hour cycle and blocks apply until the end of the cycle. Details on when the cycle starts and ends are kept private by AppsFlyer.
-* Cannot be changed or stopped. Protect360 is finely tuned and accurate in its fraud detection and the algorithm can’t be manually adjusted or turned off.
-* Can be avoided by stopping campaigns and publishers with anomalous activity.
+* Se aplican equitativamente a todas las redes publicitarias. Es decir, ninguna red publicitaria se salva de una limitación si exhibe tasas extremadamente altas de fraude en impresiones o clics.
+* Operan a nivel de aplicación/red publicitaria. Es decir, el análisis del fraude considera todas las campañas de una red publicitaria en una aplicación, y el bloqueo afecta los reportes y la atribución de todas ellas (independientemente de si la cuenta tiene Protect360 o no).
+* Se restablecen tras un ciclo de 24 horas y los bloqueos permanecen hasta que finaliza dicho ciclo. AppsFlyer no revela detalles sobre cuándo comienzan o terminan los ciclos.
+* No se pueden modificar ni detener. Protect360 está meticulosamente calibrado y es exacto en la detección de fraude, y el algoritmo no se puede ajustar ni desactivar manualmente.
+* Se pueden evitar deteniendo campañas y editores con actividad anómala.
 
 <div id="faq" />
 
-<Accordion title="FAQ">
+<Accordion title="Preguntas frecuentes">
 
-Impressions capping FAQ:
+Preguntas frecuentes sobre umbrales de impresiones y clics:
 
-| **Q: What is the network threshold?**<br /><br />**A**: Details of the capping mechanism are protected to prevent attempts at circumvention. That said, the threshold is only reached if there is an extreme volume of impressions fired, beyond the possibility of human behavior. Looking at the day’s impression, install volumes will give you a clear idea of whether there is a flood issue stemming from one or more publishers. |
+| **P: ¿Cuál es el umbral de la red?**<br /><br />**R**: Los detalles del mecanismo de limitación de clics están protegidos para evitar intentos de elusión.  Dicho esto, el umbral solo se alcanza si hay un volumen extremo de impresiones o clics, completamente alejado de un comportamiento humano normal. Revisar los volúmenes diarios de impresiones, clics e instalaciones le proporcionará una idea clara de si existe un problema de inundación provocado por uno o más editores. |
 | --- |
-| **Q: How can a network get unblocked?**<br /><br />**A**: A network can avoid the threshold by stopping campaigns and publishers with anomalous activity. Once blocked, the network needs to wait until the end of the 24-hour cycle to resume being recorded. |
-| **Q: Does the block affect AppsFlyer customers without Protect360?**<br /><br />**A**: Yes, capping will affect regardless of whether or not a customer has Protect360. The capping mechanism protects all customers from impression abuse. |
-| **Q: This is not fraud. The network is working with cheap sources and sometimes their quality is low.**<br /><br />**A**: Poor performance at a normal scale from non-suspicious sources does not trigger capping. The algorithm identifies performance that cannot possibly be human. |
-| **Q: This stops us from scaling campaigns and we don't want these impressions to be blocked.**<br /><br />**A**: The AppsFlyer fraud protection algorithm protects customers from extreme and blatant instances of flooding. It doesn't impact scaling ability, as it addresses non-human generated impressions, where the vast majority of blocks only cause liabilities. If you have concerns, please contact AppsFlyer to address your issues. |
-| **Q: This is not fraud. Maybe AppsFlyer has issues dealing with the volume of impressions?**<br /><br />**A**: We don't have any issues handling volume. We support some of the world’s largest-scale advertisers and process billions of real-time data points each day, including enormous numbers of legitimate impressions. As part of our commitment to support high-scale growth with rich and accurate data, we act in our customers’ best interests and block clear instances of impression flooding. |
-| **Q: What can we do if we expect a significant increase in traffic and impression volume (for example, due to new campaigns)? What can be done to avoid being blocked?**<br /><br />**A: The algorithm is dynamic and updated on an hourly basis, to take into consideration different trends. It is sophisticated enough to handle spikes and is not triggered by normal activity fluctuations, including sudden and significant increases in volume. That said, partners can use their impression data and reports to identify suspicious sources and stop those campaigns.** |
-| **Q: How can we check for problematic traffic and improve campaign performance?**<br /><br />**A: Partners can use their impression data and reports to identify suspicious sources and stop those campaigns. Partners can also see blocked impression data in the Protect360/ProtectLITE dashboard under the dedicated columns, as long as they have received the required permission from the advertiser to view fraud data in the dashboard.** |
+| **P: ¿Cómo puede una red desbloquearse?**<br /><br />**R**: Una red puede evitar alcanzar el umbral si detiene las campañas y los editores que muestran actividad anómala. Una vez que se bloquea, la red debe esperar hasta que termine el ciclo de 24 horas para que los registros de clics puedan reanudarse. |
+| **P: ¿El bloqueo afecta a los clientes de AppsFlyer que no tienen Protect360?**<br /><br />**R**: Sí, la limitación afectará independientemente de si el cliente posee Protect360. El mecanismo de limitación protege a todos los clientes del abuso de clics e impresiones. |
+| **Q**: Esto no es fraude. La red trabaja con fuentes económicas y a veces su calidad es baja.<br /><br />**R**: El bajo rendimiento a una escala normal de fuentes no sospechosas no desencadena la limitación de clics. El algoritmo detecta un rendimiento que no podría ser humano. |
+| **Q**: Esto nos impide escalar campañas y no queremos que se bloqueen estas impresiones o clics.<br /><br />**R**: El algoritmo de protección contra fraudes de AppsFlyer protege a los clientes de casos extremos y claros de inundación. No afecta la capacidad de crecimiento, ya que se dirige a impresiones o clics no humanos, donde la mayoría de los bloqueos solo causan problemas. Si tiene preocupaciones, por favor comuníquese con AppsFlyer para tratar sus problemas. |
+| **Q**: Esto no es fraude. ¿Podría ser que AppsFlyer tenga dificultades para manejar el volumen de impresiones o clics?<br /><br />**R**: No tenemos problemas para gestionar el volumen. Damos soporte a algunos de los anunciantes de mayor escala del mundo y procesamos miles de millones de puntos de datos en tiempo real diariamente, incluyendo una gran cantidad de clics legítimos. Como parte de nuestro compromiso de apoyar un crecimiento a gran escala con datos ricos y precisos, actuamos en el mejor interés de nuestros clientes y bloqueamos casos claros de inundación de clics. |
+| P: ¿Qué podemos hacer si prevemos un aumento considerable en el tráfico y el volumen de impresiones/clics, por ejemplo, debido a nuevas campañas? ¿Cómo podemos prevenir el bloqueo? ¿Qué se puede hacer para evitar que te bloqueen?<br /><br />R:**El algoritmo es dinámico y se actualiza de forma horaria para considerar las diferentes tendencias. Es suficientemente sofisticado para gestionar picos y no se activa con fluctuaciones normales de actividad, incluso con incrementos súbitos y significativos en el volumen. Dicho esto, los colaboradores pueden utilizar sus datos e informes de impresiones/clicks para identificar fuentes sospechosas y detener esas campañas.** |
+| P: ¿Cómo podemos detectar tráfico problemático y mejorar el rendimiento de las campañas?<br /><br />R:**Los socios pueden utilizar sus datos e informes de impresiones y clics para identificar fuentes sospechosas y detener esas campañas. Adicionalmente, pueden ver datos de clics e impresiones bloqueados en el panel de control de Protect360/ProtectLITE en las columnas dedicadas, siempre que el anunciante les haya concedido el permiso necesario para ver los datos de fraude en el panel.** |
 
 </Accordion>
 
-### Click signing
+### Firma de clics
 
-Ad networks can add HMAC-SHA256 <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">signatures to their clicks</Anchor>.
+Las redes publicitarias pueden agregar firmas HMAC-SHA256 <Anchor target="_blank" href="/partners/es/docs/click-signing-for-ad-networks">a sus clics</Anchor>.
 
-The signatures enable AppsFlyer to validate the clicks and make sure that the click information hasn't been manipulated by fraudsters.
+Estas firmas permiten a AppsFlyer validar los clics, asegurándose de que la información no haya sido manipulada por estafadores.
 
-* Validated clicks are recorded, and attributed to the ad network
-* Invalidated clicks are rejected and:
-  * Are aggregated in Protect360 reports made available to the ad network (not advertisers).
-  * Do not impact the conversion rate of the ad network
+* Los clics validados se registran y se atribuyen a la red publicitaria.
+* Los clics inválidos se rechazan y:
+  * Se incluyen en los informes de Protect360 que están disponibles para la red publicitaria (excluyendo a los anunciantes).
+  * No afectan la tasa de conversión ni el umbral de limitación de clics de la red publicitaria
 
-<div data-zendesk-anchors="h_01HGSXTKYQB4Q1QQX4ZQS60AAJ=overview h_01HGSXTKYQN42EEMPSZMWVAMWD=note h_01HGSXTKYQPQP72R2VJB68ZDRZ=dashboard-view rawdata-reports=raw-data-reports h_01HGSXTKYQWRZECN905RGSEQ42=raw-data-reports h_01HGSXTKYQ9388SCQTT2MX59Q9=protect360-ad-network-reporting-api h_01HGSXTKYQXZN2DMNZ09HE7355=protect360-api-reports h_01HGSXTKYQ913MF0G38B23NYBG=procedure-for-ad-networks-to-get-protect360-reports-by-download h_01HGSXTKYQX3VN5NRMNQWW4AE4=curl-examples h_01HGSXTKYQQBJTM4ZMMQZ0VZNH=installs-blocked_installs_report h_01HGSXTKYQ5KTCD7K63DSVS6E2=postattribution-installs-detection h_01HGSXTKYQ6MA96W8E6R2SXBS5=inapp-event-blocked_in_app_events_report h_01HGSXTKYQMMC0WNWP56Q9J0ZS=postattribution-inapp-events-fraud-fraud_post_inapps h_01HGSXTKYQEG0JXJHS7QBAEBCA=clicks-blockedclicks_report h_01HGSXTKYQJRE1Y9C5RSCANWT2=protect360-ad-network-api-reference-guide h_01HGSXTKYQE24FAPYHHMFP0B3X=api-basics h_01HGSXTKYRFSZRPHNPDHNREDH2=api-parameters h_01HGSXTKYRGSQ230NVN06SP6DG=protect360-api-http-return-codes impression-and-click-capping=impression-capping h_01HGSXTKYRN6TP3KDYX5YZJV7N=impression-capping h_01HGSXTKYR8BK5A2J6TJECMKZA=faq h_01HGSXTKYR915V6E4NWGWR61PG=click-signing" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01HGSXTKYQB4Q1QQX4ZQS60AAJ=visi%C3%B3n-general h_01HGSXTKYQN42EEMPSZMWVAMWD=nota dashboard-view=vista-del-panel-de-control h_01HGSXTKYQPQP72R2VJB68ZDRZ=vista-del-panel-de-control rawdata-reports=informes-de-datos-sin-procesar h_01HGSXTKYQWRZECN905RGSEQ42=informes-de-datos-sin-procesar protect360-ad-network-reporting-api=api-de-informes-de-redes-publicitarias-de-protect360 h_01HGSXTKYQ9388SCQTT2MX59Q9=api-de-informes-de-redes-publicitarias-de-protect360 protect360-api-reports=informes-de-la-api-de-protect360 h_01HGSXTKYQXZN2DMNZ09HE7355=informes-de-la-api-de-protect360 procedure-for-ad-networks-to-get-protect360-reports-by-download=procedimiento-para-que-las-redes-publicitarias-obtengan-informes-de-protect360-a-trav%C3%A9s-de-descarga h_01HGSXTKYQ913MF0G38B23NYBG=procedimiento-para-que-las-redes-publicitarias-obtengan-informes-de-protect360-a-trav%C3%A9s-de-descarga curl-examples=ejemplos-de-curl h_01HGSXTKYQX3VN5NRMNQWW4AE4=ejemplos-de-curl h_01HGSXTKYQQBJTM4ZMMQZ0VZNH=installs-blocked_installs_report h_01HGSXTKYQ5KTCD7K63DSVS6E2=postattribution-installs-detection h_01HGSXTKYQ6MA96W8E6R2SXBS5=inapp-event-blocked_in_app_events_report h_01HGSXTKYQMMC0WNWP56Q9J0ZS=postattribution-inapp-events-fraud-fraud_post_inapps h_01HGSXTKYQEG0JXJHS7QBAEBCA=clicks-blockedclicks_report protect360-ad-network-api-reference-guide=gu%C3%ADa-de-referencia-de-la-api-de-la-red-publicitaria-protect360 h_01HGSXTKYQJRE1Y9C5RSCANWT2=gu%C3%ADa-de-referencia-de-la-api-de-la-red-publicitaria-protect360 h_01HGSXTKYQE24FAPYHHMFP0B3X=api-basics h_01HGSXTKYRFSZRPHNPDHNREDH2=api-parameters h_01HGSXTKYRGSQ230NVN06SP6DG=protect360-api-http-return-codes impression-and-click-capping=umbral-de-impresiones h_01HGSXTKYRN6TP3KDYX5YZJV7N=umbral-de-impresiones h_01HGSXTKYR8BK5A2J6TJECMKZA=faq click-signing=firma-de-clics h_01HGSXTKYR915V6E4NWGWR61PG=firma-de-clics" />

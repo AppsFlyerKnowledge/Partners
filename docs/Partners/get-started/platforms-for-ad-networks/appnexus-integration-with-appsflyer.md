@@ -1,5 +1,5 @@
 ---
-title: Appnexus integration with AppsFlyer
+title: Integración de AppNexus con AppsFlyer
 metadata:
   keywords:
     - Integration
@@ -18,74 +18,73 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2016-01-11T14:45:34Z'
-  edited_at: '2024-12-23T15:08:44Z'
+  edited_at: '2026-08-12T12:30:12Z'
   id: 207583523
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207583523-Appnexus-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207583523
 ---
-> **At a glance:** Ad networks that use Affise can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
+> **De un vistazo:** Las ad networks que usan Affise pueden utilizar la solución de modelado probabilístico de AppsFlyer para recibir datos de atribución sobre instalaciones y eventos in-app.
 
-## Starting the integration
+## Comenzar la integración
 
-To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
+Para comenzar la integración, debes enviar a AppsFlyer tanto el enlace de atribución como el postback para fines de generación de reportes.
 
-Below you can find the base attribution link with a detailed explanation per each parameter:
+A continuación tienes el enlace de atribución base con una explicación detallada de cada parámetro:
 
 `https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}`
 
-| AppsFlyer Base URL | Description |
+| URL base de AppsFlyer | Nota |
 | --- | --- |
-| https://app.appsflyer.com | AppsFlyer end-Point |
-| app\_id | Application Unique ID - Dynamic value changed per app promoted |
-| pid | Media source name include **\_int** to identify<br />**integrated** network at AppsFlyer servers |
-| c | Campaign name |
+| https://app.appsflyer.com | Punto de conexión de AppsFlyer |
+| id\_aplicación | ID único de la aplicación: el valor dinámico cambiado por cada aplicación promocionada |
+| PID | El nombre de la fuente de medios incluye **\_int** para identificar la red **integrada** en los servidores de AppsFlyer |
+| C | Nombre de la campaña |
 
-**AppNexus Advertising ID Macros**
+**Macros de ID de publicidad de AppNexus**
 
-| Operating System | Macro |
+| Sistema operativo | Macro |
 | --- | --- |
 | Android | &advertising\_id=$`{DEVICE_AAID}` |
-| iOS | idfa=$`{DEVICE_APPLE_IDA}` |
+| apps de iOS, | idfa=$`{DEVICE_APPLE_IDA}` |
 
-**Recommended Attribution Link Parameters**
+**Parámetros recomendados de los enlaces de atribución**
 
-| AppsFlyer Parameter | AppNexus Macros | Description |
+| Parámetro de AppsFlyer | Macros de AppNexus | Nota |
 | --- | --- | --- |
-| clickid | $`{SSP_DATA}` | Request ID of each user session - **Required** |
-| af\_siteid | $`{PUBLISHER_ID}` | ID of the affiliate promoting the offer - **Optional** |
+| clickid | $`{SSP_DATA}` | ID de solicitud de cada sesión de usuario - **obligatorio** |
+| af\_siteid | $`{PUBLISHER_ID}` | ID del afiliado que promociona la oferta: **opcional** |
 
-For the complete AppsFlyer parameter list <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">click here</Anchor>.
+Para obtener la lista completa de parámetros de AppsFlyer, <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">haz clic aquí</Anchor>.
 
-For the complete AppNexus macro list <Anchor target="_blank" href="https://wiki.appnexus.com/display/sdk/Welcome">click here</Anchor>.
+Para obtener la lista completa de macros de AppNexus, <Anchor target="_blank" href="https://wiki.appnexus.com/display/sdk/Welcome">haz clic aquí</Anchor>.
 
-### Complete attribution link template:
+### Plantilla de enlace de atribución completa:
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=${SSP_DATA}&af_siteid=${PUBLISHER_ID}
 ```
 
-### Install and in-app event postbacks
+### Postbacks de instalaciones y eventos in-app
 
-Global Install Postback:
+Postback de instalación global:
 
 ```http
 https://sspx-router.adnxs.net/sspx?id={ID}&sspdata={clickid}
 ```
 
-`{ID}` the Network ID provided by AppNexus, inserted in AppsFlyer dashboard per app.
+`{ID}` el ID de la red proporcionado por AppNexus, insertado en el Dashboard de AppsFlyer por app.
 
-### AppsFlyer install dashboard
+### Dashboard de instalaciones de AppsFlyer
 
-[![appnexus-pixelid.png](https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png)](https://files.readme.io/29832948c523c79327b1592dbf30ab4a1227cf5f7281cf7f09cee7450aff0170-360002326469.png)
+[![appnexus-pixelid.png](https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png)](https://support.appsflyer.com/hc/article_attachments/49754744756625)
 
-Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, and so on.
+Se puede agregar información de atribución adicional al postback mediante solicitud, como el código de país, ID de publicidad, IDFA, etc.
 
-## Finalizing your registration
+## Finalizar tu registro
 
-* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
+* Si tienes una integración con AppsFlyer, ponte en contacto con nosotros usando el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
+* Si no tienes una integración con AppsFlyer, completa la solicitud de registro de ad partners <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">aquí</Anchor>.
 
-<div data-zendesk-anchors="01JFT0Z4H4N0SFK6CAKQGW41Q4=starting-the-integration 01JFT0Z4H7MA1B9FMNWKESF170=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT0Z4H7TZPQCFGZCASNWHD7=install-and-in-app-event-postbacks 01JFT0Z4H89BP3YWFRSJ69RK6D=appsflyer-install-dashboard 01JFT0Z4H9TF582WHB69MT9VP2=finalizing-your-registration" />
+<div data-zendesk-anchors="starting-the-integration=comenzar-la-integraci%C3%B3n 01JFT0Z4H4N0SFK6CAKQGW41Q4=comenzar-la-integraci%C3%B3n complete-attribution-link-template=plantilla-de-enlace-de-atribuci%C3%B3n-completa 01JFT0Z4H7MA1B9FMNWKESF170=plantilla-de-enlace-de-atribuci%C3%B3n-completa install-and-inapp-event-postbacks=postbacks-de-instalaciones-y-eventos-in-app 01JFT0Z4H7TZPQCFGZCASNWHD7=postbacks-de-instalaciones-y-eventos-in-app appsflyer-install-dashboard=dashboard-de-instalaciones-de-appsflyer 01JFT0Z4H89BP3YWFRSJ69RK6D=dashboard-de-instalaciones-de-appsflyer finalizing-your-registration=finalizar-tu-registro 01JFT0Z4H9TF582WHB69MT9VP2=finalizar-tu-registro" />

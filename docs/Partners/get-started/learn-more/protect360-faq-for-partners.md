@@ -1,5 +1,5 @@
 ---
-title: Protect360—FAQ for partners
+title: 'Protect360: preguntas frecuentes para partners'
 metadata:
   keywords:
     - Agencies
@@ -15,104 +15,103 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2023-06-12T12:43:34Z'
-  edited_at: '2026-01-25T06:59:41Z'
+  edited_at: '2026-08-12T12:29:59Z'
   id: 16091549732497
-  locale: en-us
+  locale: es
   section: Learn more
   section_id: 6551121200017
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/16091549732497-Protect360-FAQ-for-partners
+  url: https://support.appsflyer.com/hc/es/articles/16091549732497
 ---
-> **At a glance:** Find answers to questions frequently asked by partners about Protect360.
+> **En resumen:** Encuentra respuestas a las preguntas más frecuentes de los partners sobre Protect360.
 
-## Impression level anomalies
+## Anomalías a nivel de clics/impresiones
 
 <div id="why-are-impressionsclicks-being-capped" />
 
-<Accordion title="Why are impressions being capped?">
+<Accordion title="¿Por qué se están limitando las impresiones?">
 
-The AppsFlyer Protect360 system takes into account various parameters when making decisions on capping ad engagements, including but not limited to the volume of impressions, CVR, detected anomaly rate, normal fluctuations in activity, as well as industry and geographic benchmarks. The algorithm is dynamic and updated on an hourly basis, to take into consideration changing trends.
+El sistema Protect360 de AppsFlyer tiene en cuenta varios parámetros a la hora de tomar decisiones sobre la limitación de los engagements en anuncios, incluidos, entre otros, el volumen de impresiones/clics, el CVR, la tasa de anomalías detectadas, las fluctuaciones normales de la actividad, así como los puntos de referencia geográficos y de la industria. El algoritmo es dinámico y se actualiza cada hora, para tener en cuenta las tendencias cambiantes.
 
-Once the capping mechanism is triggered, Protect360 blocks the ad network’s impressions for the related app within the current 24-hour cycle. This means that any impressions that occur after the threshold is reached are not recorded by AppsFlyer, nor are they eligible for attribution.
+Una vez que se activa el mecanismo de limitación, Protect360 bloquea las impresiones o los clics de la red de publicidad para la aplicación relacionada dentro del ciclo actual de 24 horas. Esto significa que AppsFlyer no registra las impresiones/clics que ocurran después del umbral, ni son elegibles para la atribución.
 
-A network can avoid surpassing the threshold by stopping campaigns and publishers with unusually high volumes of ad engagements that do not show any impact on performance results.
+Una red puede evitar superar el umbral deteniendo las campañas y los publishers con volúmenes inusualmente altos de engagements de anuncios que no muestran ningún impacto en los resultados de rendimiento.
 
-We recommend taking a look at these articles:  
-<Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#impression-capping">Impression capping</Anchor>  
-<Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#faq">Capping FAQ</Anchor>
+Te recomendamos que eches un vistazo a estos artículos:  
+<Anchor target="_blank" href="/partners/es/docs/protect360-for-integrated-partners#umbral-de-impresiones">Limitación de clics e impresiones</Anchor>  
+<Anchor target="_blank" href="/partners/es/docs/protect360-for-integrated-partners#faq">Preguntas frecuentes sobre la limitación</Anchor>
 
 </Accordion>
 
 <div id="the-attribution-of-installs-is-being-blocked-due-to-click-flooding-click-spamming-but-i-see-a-good-conversion-rate" />
 
-<Accordion title="Why are installs blocked due to click flooding, yet the conversion rate is high?">
+<Accordion title="¿Por qué se bloquean las instalaciones debido a la inundación de clics, pero la tasa de conversión es alta?">
 
-Our click-flood algorithms run at various intervals over the course of the day, and whenever the threshold is crossed, based on internal parameters and logic, the publisher’s ad engagements will be ineligible for attribution.
+Nuestros algoritmos de inundación de clics se ejecutan en varios intervalos a lo largo del día y, cada vez que se supera el umbral, en función de los parámetros internos y la lógica, los engagements de anuncios del publisher no serán aptos para la atribución.
 
-**Please note:** Some of our click flood algorithms work across apps, implying that anomalies originating from identical fraudulent sources would be recognized for other advertised apps as well.
+**Ten en cuenta:** Algunos de nuestros algoritmos de inundación de clics funcionan en todas las aplicaciones, lo que implica que las anomalías que se originan en fuentes fraudulentas idénticas también se reconocerán para otras aplicaciones anunciadas.
 
-We recommend reading: <Anchor target="_blank" href="https://www.appsflyer.com/glossary/click-flooding/">What is click flooding?</Anchor>
+Te recomendamos leer: <Anchor target="_blank" href="https://www.appsflyer.com/glossary/click-flooding/">¿Qué es la inundación de clics?</Anchor>
 
 </Accordion>
 
-## Install/in-app event level anomalies
+## Anomalías a nivel de instalación/evento in-app
 
 <div id="why-was-my-test-install-rejected-from-attribution" />
 
-<Accordion title="Why was my test install rejected from attribution?">
+<Accordion title="¿Por qué se rechazó mi instalación de prueba de la atribución?">
 
-AppsFlyer’s anti-fraud detection applies different methodologies across various protection layers, such as single installs and install clusters. Clusters are being reviewed in various aggregations: by publisher, media source, app, and so on. The fraudulent activity is examined using various statistical algorithms and machine learning algorithms that consider each cluster as a whole. Thus, if a cluster is found fraudulent with high statistical significance, all installs in that cluster are considered fraudulent. It's a well-known fraudster tactic to mix some legitimate installs into high volumes of fraudulent activity in the hope that the fraud will be “diluted” enough to avoid triggering blocking mechanisms.
+La detección antifraude de AppsFlyer aplica diferentes metodologías en varias capas de protección, como instalaciones individuales y clústeres de instalación. Los clústeres se revisan en varias agregaciones: por publisher, fuente de medios, aplicación, etc. La actividad fraudulenta se examina utilizando varios algoritmos estadísticos y algoritmos de aprendizaje automático que consideran cada clúster como un todo. Por lo tanto, si se determina que un clúster es fraudulento con una alta significación estadística, todas las instalaciones de ese clúster se consideran fraudulentas. Es una táctica bien conocida de los estafadores mezclar algunas instalaciones legítimas con grandes volúmenes de actividad fraudulenta con la esperanza de que el fraude se "diluya" lo suficiente como para evitar desencadenar mecanismos de bloqueo.
 
-By default, all incoming installs are considered as LIVE traffic - hence to ensure your test install isn't categorized under the Protect360 algorithms, you would need to follow the steps mentioned in <Anchor target="_blank" href="/marketers/docs/registering-test-devices">this article</Anchor> to register your device as a test device before performing a test.
+De forma predeterminada, todas las instalaciones entrantes se consideran tráfico EN VIVO, por lo tanto, para asegurarte de que tu instalación de prueba no se clasifique en los algoritmos de Protect360, debes seguir los pasos mencionados en <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">este artículo</Anchor> para registrar tu dispositivo como dispositivo de prueba antes de realizar una prueba.
 
 </Accordion>
 
 <div id="What-detection-methods-are-used-to-detect-install-rejections" />
 
-<Accordion title="What detection methods are used to detect install rejections?">
+<Accordion title="¿Qué métodos de detección se utilizan para detectar rechazos de instalaciones?">
 
-Please review the "fraud sub reason" associated with the rejection for better clarity. This data is also available in Protect360 reports and on the Protect360 dashboard, subject to access granted by the respective advertiser.
+Revisa el "submotivo del fraude" asociado con el rechazo para mayor claridad. Estos datos también están disponibles en los reportes de Protect360 y en el panel de control de Protect360, sujeto al acceso otorgado por el anunciante respectivo.
 
-We recommend reading about <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons">Protect360 blocked reasons</Anchor>.
+Te recomendamos leer sobre los <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#motivos-de-bloqueo">Motivos de bloqueo de Protect360</Anchor>.
 
 </Accordion>
 
-## Protect360 data visibility and comprehension
+## Visibilidad y comprensión de datos de Protect360
 
 <div id="how-do-i-gain-visibility-into-the-protect360-results" />
 
-<Accordion title="How do I gain visibility into the Protect360 results?">
+<Accordion title="¿Cómo puedo obtener visibilidad de los resultados de Protect360?">
 
-You can view the results of our detection efforts using the Protect360 dashboard and raw data reports, subject to access granted by the respective advertiser.
+Puedes ver los resultados de nuestros esfuerzos de detección utilizando el panel de control de Protect360 y los reportes de raw data, sujeto al acceso otorgado por el anunciante respectivo.
 
-We recommend taking a look at these articles:  
-<Anchor target="_blank" href="/marketers/docs/protect360-dashboard">Protect360 Dashboard</Anchor>  
-<Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#getting-raw-data-reports">Protect360 Raw Data</Anchor>
+Te recomendamos que eches un vistazo a estos artículos:  
+<Anchor target="_blank" href="/marketers/es/docs/protect360-dashboard">Panel de control de Protect360</Anchor>  
+<Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#obteniendo-informes-de-datos-sin-procesar">Raw data de Protect360</Anchor>
 
 </Accordion>
 
 <div id="how-can-i-get-notified-in-realtime-about-blocked-traffic" />
 
-<Accordion title="How can I get notified in real time about blocked traffic?">
+<Accordion title="¿Cómo puedo recibir notificaciones en tiempo real sobre el tráfico bloqueado?">
 
-AppsFlyer provides rejected attribution postbacks to ad networks for every install Protect360 rejects from attribution.
+AppsFlyer proporciona postbacks de atribución rechazados a las redes de publicidad por cada instalación que Protect360 rechaza de la atribución.
 
-You can enable “rejected postback” by appending “rejected postback” parameters to your postback template by using <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks">Integration Management</Anchor>.
+Puedes habilitar los "postbacks rechazados" anexando los parámetros de "postback rechazado" a la plantilla de postback mediante la <Anchor target="_blank" href="/partners/es/docs/self-serve-integration-management-for-ad-networks">Gestión de la integración</Anchor>.
 
 </Accordion>
 
 <div id="why-do-i-see-spikes-in-postattribution-detections" />
 
-<Accordion title="Why do I see spikes in post-attribution detections?">
+<Accordion title="¿Por qué veo picos en las detecciones posteriores a la atribución?">
 
-Real-time detection before attribution and post-attribution detection both belong to AppsFlyer’s Protect360 anomaly detection mechanism that applies in different time dimensions.
+La detección en tiempo real antes de la atribución y la detección posterior a la atribución pertenecen al mecanismo de detección de anomalías Protect360 de AppsFlyer que se aplica en diferentes dimensiones de tiempo.
 
-Compared to real-time detection, post-attribution detection relies more on data pointers collected after the install, during which, if anomalies are observed, Protect360 will record anomalous activities and display them under the post-attribution category.
+En comparación con la detección en tiempo real, la detección posterior a la atribución se basa más en los indicadores de datos recopilados después de la instalación, durante los cuales, si se observan anomalías, Protect360 registrará las actividades anómalas y las mostrará en la categoría posterior a la atribución.
 
-Considering the above, certain detection methods (timestamp\_anomalies, behavioral\_anomalies, etc.) are more likely to be detected in the post-attribution stage rather than in real time, since the data is inconclusive on the level of an individual install but gains significance when examined for its distribution in statistical analysis.
+Teniendo en cuenta lo anterior, es más probable que ciertos métodos de detección (timestamp\_anomalies, behavioral\_anomalies, etc.) se detecten en la etapa posterior a la atribución que en tiempo real, ya que los datos no son concluyentes a nivel de una instalación individual, pero adquieren importancia cuando se examinan para su distribución en el análisis estadístico.
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#postattribution-detection">post-attribution detection</Anchor>.
+Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide#postattribution-detection">detección posterior a la atribución</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="click-impression-level-anomalies=impression-level-anomalies 01H8GKS08Y22PX2SBTW5ME02C4=impression-level-anomalies 01H8GKS08YXVK4CPNW9TX9XBYN=why-are-impressionsclicks-being-capped 01H8GKS08ZGNTMNZ5JH846T9Q9=the-attribution-of-installs-is-being-blocked-due-to-click-flooding-click-spamming-but-i-see-a-good-conversion-rate install-inapp-event-level-anomalies=installin-app-event-level-anomalies 01H8GKS08ZRA7YT9FWJNBBSV4Q=installin-app-event-level-anomalies 01H8GKS08Z2M0RTMR4GM1BJE7G=why-was-my-test-install-rejected-from-attribution What-detection-methods-are-used-to-detect-install-rejections%3F=What-detection-methods-are-used-to-detect-install-rejections 01H8H30KARRPAPT9XRREDYKHVT=What-detection-methods-are-used-to-detect-install-rejections protect360-data-visibility-and-understanding=protect360-data-visibility-and-comprehension 01H8GKS08ZX2W1G0K165H96N4Z=protect360-data-visibility-and-comprehension 01H8GKS08ZGEEK0HQVCRD546MW=how-do-i-gain-visibility-into-the-protect360-results 01H8GKS08ZC6SB4PT53JG5QKHG=how-can-i-get-notified-in-realtime-about-blocked-traffic 01H8GKS08Z673WG6C6JGW31F42=why-do-i-see-spikes-in-postattribution-detections" />
+<div data-zendesk-anchors="click-impression-level-anomalies=anomal%C3%ADas-a-nivel-de-clicsimpresiones 01H8GKS08Y22PX2SBTW5ME02C4=anomal%C3%ADas-a-nivel-de-clicsimpresiones 01H8GKS08YXVK4CPNW9TX9XBYN=why-are-impressionsclicks-being-capped 01H8GKS08ZGNTMNZ5JH846T9Q9=the-attribution-of-installs-is-being-blocked-due-to-click-flooding-click-spamming-but-i-see-a-good-conversion-rate install-inapp-event-level-anomalies=anomal%C3%ADas-a-nivel-de-instalaci%C3%B3nevento-in-app 01H8GKS08ZRA7YT9FWJNBBSV4Q=anomal%C3%ADas-a-nivel-de-instalaci%C3%B3nevento-in-app 01H8GKS08Z2M0RTMR4GM1BJE7G=why-was-my-test-install-rejected-from-attribution What-detection-methods-are-used-to-detect-install-rejections%3F=What-detection-methods-are-used-to-detect-install-rejections 01H8H30KARRPAPT9XRREDYKHVT=What-detection-methods-are-used-to-detect-install-rejections protect360-data-visibility-and-understanding=visibilidad-y-comprensi%C3%B3n-de-datos-de-protect360 01H8GKS08ZX2W1G0K165H96N4Z=visibilidad-y-comprensi%C3%B3n-de-datos-de-protect360 01H8GKS08ZGEEK0HQVCRD546MW=how-do-i-gain-visibility-into-the-protect360-results 01H8GKS08ZC6SB4PT53JG5QKHG=how-can-i-get-notified-in-realtime-about-blocked-traffic 01H8GKS08Z673WG6C6JGW31F42=why-do-i-see-spikes-in-postattribution-detections" />

@@ -1,5 +1,5 @@
 ---
-title: Data Locker—reports available for ad networks
+title: 'Data Locker: reportes disponibles para ad networks'
 metadata:
   keywords:
     - Advertisers
@@ -16,18 +16,17 @@ x-zendesk:
     - Data Locker
     - Ad Networks
   created_at: '2022-03-02T08:51:14Z'
-  edited_at: '2025-03-25T11:15:41Z'
+  edited_at: '2026-08-12T12:27:29Z'
   id: 4542778150545
-  locale: en-us
+  locale: es
   section: Data Locker
   section_id: 6551591547409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4542778150545-Data-Locker-reports-available-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/4542778150545
 ---
-> **At a glance**: Reports listed are available to ad networks via Data Locker. Advertisers must give the ad network explicit permission.
+> **En resumen:** Los reportes enumerados están disponibles para las ad networks a través de Data Locker. Los anunciantes deben otorgar permiso explícito a la ad network.
 
-## Reports available for ad networks
+## Reportes disponibles para ad networks
 
-<table><thead><tr><th><span>Report type (topic)</span></th><th><span>Which data access permissions are required?</span></th><th><span>Data freshness\*</span></th><th><span>Available to</span></th></tr></thead><tbody><tr><td><a href="./aggregated-campaign-performance-report-for-ad-networks" target="_blank"><span>Aggregated campaign performance </span></a></td><td><ul><li><span>Aggregated conversions</span></li><li><span>Aggregated in-app events</span></li><li><span>Aggregated revenue</span></li></ul></td><td><span>Daily</span></td><td><span>Ad networks</span></td></tr><tr><td><a href="./ad-revenue-signals-for-ua-ad-networks" target="_blank"><span>Ad revenue signals for UA ad networks</span></a></td><td><ul><li><span>Access ad revenue raw data</span></li></ul></td><td><span>Daily</span></td><td><span>Ad networks</span></td></tr><tr><td><a href="./protect360-reports-for-ad-networks" target="_blank"><span>Blocked clicks &amp; impressions</span></a></td><td><ul><li><span>No advertiser permissions required</span></li></ul></td><td><span>Daily</span></td><td><span>Ad networks</span></td></tr><tr><td><a href="./protect360-reports-for-ad-networks" target="_blank"><span>Failed click signatures</span></a></td><td><ul><li><span>No advertiser permissions required</span></li></ul></td><td><span>Daily</span></td><td><span>Ad networks</span></td></tr><tr><td><a href="./single-source-of-truth-ssot-data-locker-report-for-ad-networks" target="_blank">Single Source of Truth (SSOT)</a></td><td><ul><li><span>Aggregated conversions</span></li><li><span>Aggregated in-app events</span></li><li><span>Aggregated revenue</span></li></ul></td><td><span>Daily</span></td><td><span>Ad networks</span></td></tr><tr><td colspan="4"><p><strong><span>\* Key to abbreviations</span></strong></p><p><strong><span>Daily</span></strong><span>:</span></p><ul><li><span>Reports are streamed to the h=23 folder.</span></li><li><span>These reports are typically available by 07:00-12:00 UTC in the h=23 folder of the preceding day.</span></li><li><span>For example, the report for data generated on Monday is in the Monday h=23 folder.</span></li><li><span>The data is available on Tuesday:</span><ul><li><span>For aggregated campaign performance: After 10:00 UTC.</span></li><li><span>For ad revenue signals: After 21:00 UTC.</span></li><li><span>For blocked clicks &amp; impressions, and failed click signatures: After 07:00 UTC.</span></li></ul></li></ul></td></tr></tbody></table>
+<table><thead><tr><th><span>Tipo de reporte (tema)</span></th><th><span>¿Qué permisos de acceso a datos se requieren?</span></th><th><span>Actualización de los datos\*</span></th><th><span>Disponible para</span></th></tr></thead><tbody><tr><td><a href="./aggregated-campaign-performance-report-for-ad-networks" target="_blank"><span>Rendimiento agregado de campañas </span></a></td><td><ul><li><span>Conversiones agregadas</span></li><li><span>Eventos in-app agregados</span></li><li><span>Ingresos agregados</span></li></ul></td><td><span>A diario</span></td><td><span>Redes publicitarias</span></td></tr><tr><td><a href="./ad-revenue-signals-for-ua-ad-networks" target="_blank"><span>Señales de ingresos publicitarios para ad networks de UA</span></a></td><td><ul><li><span>Acceder a los datos de raw data de los ingresos publicitarios</span></li></ul></td><td><span>A diario</span></td><td><span>Redes publicitarias</span></td></tr><tr><td><a href="./protect360-reports-for-ad-networks" target="_blank"><span>Clics e impresiones bloqueados</span></a></td><td><ul><li><span>No se requieren permisos de anunciante</span></li></ul></td><td><span>A diario</span></td><td><span>Redes publicitarias</span></td></tr><tr><td><a href="./protect360-reports-for-ad-networks" target="_blank"><span>Firmas de clic fallidas</span></a></td><td><ul><li><span>No se requieren permisos de anunciante</span></li></ul></td><td><span>A diario</span></td><td><span>Redes publicitarias</span></td></tr><tr><td><a href="./single-source-of-truth-ssot-data-locker-report-for-ad-networks" target="_blank">Single Source of Truth (SSOT)</a></td><td><ul><li><span>Conversiones agregadas</span></li><li><span>Eventos in-app agregados</span></li><li><span>Ingresos agregados</span></li></ul></td><td><span>A diario</span></td><td><span>Redes publicitarias</span></td></tr><tr><td colspan="4"><p><strong><span>Claves de abreviaturas</span></strong></p><p><strong><span>A diario</span></strong><span>:</span></p><ul><li><span>Los reportes se transmiten a la carpeta h=23.</span></li><li><span>Estos reportes suelen estar disponibles entre las 07:00-12:00 UTC en la carpeta h=23 del día anterior.</span></li><li><span>Por ejemplo, el reporte de los datos generados el lunes se encuentra en la carpeta h=23 del lunes.</span></li><li> <span>Los datos están disponibles el martes:</span><ul><li><span>Reporte agregado de rendimiento de la campaña: Después de las 10:00 UTC.</span></li><li><span>Para las señales de ingresos publicitarios: Después de las 21:00 UTC.</span></li><li><span>Para clics e impresiones bloqueados, y firmas de clics fallidas: Después de las 07:00 UTC.</span></li></ul></li></ul></td></tr></tbody></table>
 
-<div data-zendesk-anchors="h_01HE7RPCD0P5NH0XAD598YWWNM=reports-available-for-ad-networks" />
+<div data-zendesk-anchors="reports-available-for-ad-networks=reportes-disponibles-para-ad-networks h_01HE7RPCD0P5NH0XAD598YWWNM=reportes-disponibles-para-ad-networks" />

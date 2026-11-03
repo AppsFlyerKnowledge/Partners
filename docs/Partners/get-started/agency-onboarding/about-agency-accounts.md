@@ -1,5 +1,5 @@
 ---
-title: About agency accounts
+title: Acerca de las cuentas de agencia
 metadata:
   keywords:
     - In-App Events
@@ -25,158 +25,161 @@ x-zendesk:
     - Platform essentials
     - Agencies
   created_at: '2013-12-08T10:02:42Z'
-  edited_at: '2026-05-26T11:24:00Z'
+  edited_at: '2026-08-12T12:29:35Z'
   id: 207034106
-  locale: en-us
+  locale: es
   section: Agency onboarding
   section_id: 6551110223889
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207034106-About-agency-accounts
+  url: https://support.appsflyer.com/hc/es/articles/207034106
 ---
-> **At a glance:** Make the most of your AppsFlyer Agency account with advanced configuration.
+> **De un vistazo:** Aprovecha al máximo tu cuenta de AppsFlyer Agency con una configuración avanzada.
 
-## About agency accounts
+## Acerca de las cuentas de agencia
 
-Agency accounts are used by agency teams to measure app marketing campaigns run by the agency on behalf of marketer clients (app owners).
+Los equipos de agencias utilizan las cuentas de agencia para medir las campañas de marketing de aplicaciones que realiza la agencia en nombre de los clientes comercializadores (propietarios de aplicaciones).
 
-* Key pre-install and post-install metrics are available to ensure that agencies are delivering optimal performance across their client portfolio.
-* Agency account dashboards provide similar capabilities and content to that of marketer dashboards. This includes the following dashboards:
-  * Lifetime value overview
-  * In-app events
-  * Retargeting
-* KPIs available include impressions, clicks, installs, user loyalty, cost, and ROI. About the <Anchor target="_blank" href="/marketers/docs/getting-started-with-appsflyer-dashboards">dashboard.</Anchor>
+* Se encuentran disponibles métricas clave previas y posteriores a la instalación para asegurar que las agencias ofrezcan un rendimiento óptimo a lo largo de su cartera de clientes.
+* Los paneles de cuentas de agencia ofrecen capacidades y contenido similar a los de los paneles de marketing. Esto incluye los siguientes paneles:
+  * Visión general del valor del ciclo de vida
+  * Eventos dentro de la aplicación
+  * Redireccionamiento
+* Los KPI disponibles incluyen impresiones, clics, instalaciones, fidelidad del usuario, costo y ROI. Acerca del <Anchor target="_blank" href="/marketers/es/docs/getting-started-with-appsflyer-dashboards">panel de control.</Anchor>
 
-### Agency access to marketer data
+### Acceso de la agencia a los datos de los comercializadores
 
-Agencies always have access to data of traffic attributed to the agency. Marketers can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">grant agencies access to</Anchor> additional data, for example, organic aggregate data. See <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">access to data by different types of users.</Anchor>
+Las agencias siempre tienen acceso a los datos de tráfico atribuidos a la agencia. Los vendedores pueden <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">dar a las agencias acceso a</Anchor> datos adicionales, como datos agregados orgánicos. Consulta <Anchor target="_blank" href="/marketers/es/docs/manage-data-access-permissions">el acceso a los datos por diferentes tipos de usuarios.</Anchor>
 
-### Agency access to ad network integrations
+### Acceso de la agencia a las integraciones de redes publicitarias
 
-To enable access to ad network integrations and have your campaigns measured, your agency must be pre-approved by the ad network. This is done by having your agency ID (af\_prt) included in the ad network's list of authorized agencies. Contact the partner to ensure your agency is included. [See here](/docs/about-agency-accounts#af_prt-parameter) how to find your agency ID.
+Para habilitar el acceso a las integraciones de redes publicitarias y que se midan tus campañas, tu agencia debe ser previamente aprobada por la red publicitaria. Esto se logra al incluir tu ID de agencia (af\_prt) en la lista de agencias autorizadas de la red publicitaria. Contacta al socio para asegurarte de que tu agencia esté incluida. [Consulta aquí](/docs/about-agency-accounts#parámetro-af_prt) cómo encontrar el ID de tu agencia.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * Applies also to empty af\_prt parameters on attribution links
-> * Doesn't apply to agencies working with <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>
+> * Se aplica también a parámetros af\_prt vacíos en enlaces de atribución
+> * No se aplica a agencias que trabajan con <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">SRNs</Anchor>
 
-### Agency transparency
+### Transparencia de la agencia
 
-Agency traffic is set by default to be transparent. <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#transparency">Learn more</Anchor>
+El tráfico de la agencia está configurado por defecto para ser transparente. <Anchor target="_blank" href="/partners/es/docs/getting-started-agency-onboarding#transparency">Más información</Anchor>
 
-## Comparing different types of accounts
+## Comparación de diferentes tipos de cuentas
 
 <div id="agency-versus-marketer-accounts" />
 
-<Accordion title="Agency versus marketer accounts">
+<Accordion title="Cuentas de agencias versus cuentas de comercializadores">
 
-* **Marketer accounts** are geared towards serving the app and data-owner. Marketers add apps to their accounts and determine the data-access permissions.
-* **Agency accounts** are purpose-built for agency teams. They include tools for efficient measurement and analysis of marketing campaigns across their client portfolio.
+* **Las cuentas de mercadotecnia** están orientadas a servir a la aplicación y al propietario de los datos. Los vendedores añaden aplicaciones a sus cuentas y establecen los permisos de acceso a los datos.
+* **Las cuentas de agencia** están diseñadas específicamente para equipos de agencias. Incluyen herramientas para una eficiente medición y análisis de campañas de marketing en toda su cartera de clientes.
 
-Account structures permit knowledge-sharing between global agency teams and enable group-level ROI measurement, calculations, reporting, and optimization.
+Las estructuras de cuentas permiten compartir conocimientos entre equipos de agencias globales y facilitan la medición del ROI a nivel de grupo, cálculos, reportes y optimización.
 
-#### Differences between Marketer and Agency accounts
+#### Diferencias entre cuentas de comercializadores y de agencias
 
-|  | Marketer | **Agency** |
+|  | Comercializador | **Agencia** |
 | --- | --- | --- |
-| Code-level implementation | Yes | No; only promotion of the app |
-| Account-level settings | Team members, team member permissions, settings, payment preferences | Agency team members and their permissions. |
-| App-level settings | Reattribution window, OneLink configuration, time zone, currency | Settings are according to those set by the marketer |
-| Integrated-partner-level configuration | <ul><li>Agency permissions</li><li>All non-SRN (attribution-link-based ad networks) configurations</li><li>SRN configurations</li><li>Link management</li></ul> | <ul><li>All non-SRN configurations</li><li>Some SRN configurations that require minimum intervention from the marketer's side:</li></ul><ul><li>Google Doubleclick<ul><li>Snapchat</li><li>Tencent</li></ul></li></ul>Other SRNs must be configured by the marketer in order for the agency to use them.<ul><li>Link management (using templates defined by Marketers)</li></ul> |
-| Additional features | Yes (some, if part of the subscription plan) | As per marketer subscription and <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">permissions</Anchor> given to the agency (see the table below) |
+| Implementación a nivel de código | Sí | No; solo promoción de la aplicación |
+| Configuraciones a nivel de cuenta | Miembros del equipo, permisos de los miembros del equipo, configuraciones, preferencias de pago | Miembros del equipo de la agencia y sus permisos |
+| Configuraciones a nivel de aplicación | Ventana de reatribución, configuración de OneLink, zona horaria, moneda | Todos los demás ajustes siguen los establecidos por el comercializador |
+| Configuración a nivel de socio integrado | <ul><li>Permisos de la agencia</li><li>Todas las configuraciones basadas en redes publicitarias, excepto SRN</li><li>Configuraciones de SRN</li><li>Gestión de enlaces</li></ul> | <ul><li>Todas las configuraciones excepto SRN</li><li>Algunas configuraciones de SRN que requieren mínima intervención del comercializador:</li></ul><ul><li>Google Doubleclick<ul><li>Snapchat</li><li>Tencent</li></ul></li></ul>Otros SRN deben ser configurados por el comercializador para que la agencia pueda utilizarlos<ul><li>Gestión de enlaces (utilizando plantillas definidas por los marketers)</li></ul> |
+| Funcionalidades adicionales | Sí (algunos, si están en el plan de suscripción) | Según la suscripción del comercializador y los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">permisos</Anchor> otorgados a la agencia (ver tabla abajo) |
 
-### Features available to agencies
+### Funciones disponibles para las agencias
 
-| Available by default | Not available | Requires marketer permission |
+| Disponible por defecto | No disponible | Requiere permiso del comercializador |
 | --- | --- | --- |
-| <ul><li>Lifetime value overview dashboard</li><li>In-app events dashboard</li><li>Retargeting dashboard</li><li>Active integrations</li><li><Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#single-source-of-truth-ssot-for-agencies">SSOT dashboard</Anchor>\*\*</li></ul>\*\* Available only after the marketer has enabled this option. | <ul><li>Activity dashboard</li><li>Custom dashboard</li><li>People-based analytics</li><li>Audiences</li><li>Pivot report</li><li>Push API</li><li>Data locker</li></ul>*Only cohort reports are available upon marketer permission | <ul><li>Retention report</li><li>Cohort dashboard report</li><li><Anchor target="_blank" href="/partners/docs/data-locker-reports-for-agencies">Cohort report from Data Locker</Anchor></li><li>Protect360</li><li>Raw-data export</li><li>Aggregate organic data</li><li>Pull API</li></ul> |
+| <ul><li>Panel de vista general del valor de vida útil</li><li>Panel de eventos in-app</li><li>Panel de retargeting</li><li>Integraciones activas</li><li><Anchor target="_blank" href="/partners/es/docs/getting-started-agency-onboarding#fuente-única-de-verdad-ssot-para-agencias">Panel SSOT</Anchor>\*\*</li></ul>\*\* Disponible solo después de que el comercializador haya habilitado esta opción | <ul><li>Panel de actividades</li><li>Panel personalizado</li><li>Analítica basada en personas</li><li>Audiencias</li><li>Informe de pivote</li><li>API push</li><li>Casillero de datos</li></ul>*Solo los informes de cohorte están disponibles con permiso del comercializador | <ul><li>Informe de retención</li><li>Informe del panel de cohorte</li><li><Anchor target="_blank" href="/partners/es/docs/data-locker-reports-for-agencies">Informe de cohorte del Casillero de Datos</Anchor></li><li>Las alertas de Protect360 se actualizan a la hora UTC diaria.</li><li>Exportación de datos en bruto</li><li>Datos orgánicos agregados</li><li>API de extracción</li></ul> |
 
 </Accordion>
 
 <div id="agency-vs-ad-network-account" />
 
-<Accordion title="Agency vs. ad network account">
+<Accordion title="Cuenta de agencia vs. cuenta de red publicitaria">
 
-#### Differences between Ad network and Agency accounts
+#### Diferencias entre cuentas de red publicitaria y de agencia
 
-<table><thead><tr><th>Ad network</th><th>Agency</th></tr></thead><tbody><tr><td>Attribution link parameter for identification: <code>pid</code></td><td>Attribution link parameter for identification: <code>af_prt</code></td></tr><tr><td>Places app ads on its own platform</td><td>Promotes the app via multiple media sources</td></tr><tr><td>Sees only traffic from ads placed on its platform</td><td>Sees only traffic from media sources it advertises on</td></tr><tr><td>Can receive real-time information about installs and in-app events via postbacks</td><td>Cannot receive real-time information about installs and in-app events via postbacks</td></tr><tr><td>Can configure in-app event postbacks for any traffic from itself\*</td><td>Can configure in-app event postbacks to some of the partners it brings traffic from\*</td></tr><tr><td colspan="2">\* Requires marketer permission</td></tr></tbody></table>
+<table><thead><tr><th>Red publicitaria</th><th>Agencia</th></tr></thead><tbody><tr><td>Parámetro de enlace de atribución para identificación: <code>pid</code> </td><td>Parámetro de enlace de atribución para identificación: <code>af_prt</code> </td></tr><tr><td>Coloca anuncios de aplicaciones en su propia plataforma</td><td>Promociona la aplicación a través de múltiples fuentes de medios</td></tr><tr><td>Solo observa el tráfico de los anuncios en su plataforma</td><td>Solo observa el tráfico de las fuentes de medios en las que se anuncia</td></tr><tr><td>Puede recibir información en tiempo real sobre instalaciones y eventos dentro de la aplicación a través de postbacks</td><td>No puede recibir información en tiempo real sobre instalaciones y eventos dentro de la aplicación a través de postbacks</td></tr><tr><td>Puede configurar devoluciones de eventos dentro de la aplicación para cualquier tráfico que provenga de sí mismo\*</td><td>Puede configurar devoluciones de eventos en la aplicación para algunos de los socios de los que obtiene tráfico\*</td></tr><tr><td colspan="2">\* Requiere permiso del especialista en marketing</td></tr></tbody></table>
 
 </Accordion>
 
-## Agency accounts—campaigns and reporting
+## Cuentas de agencias: campañas y reportes
 
 <div id="agency-setting-up-campaigns" />
 
-<Accordion title="Agency: setting up campaigns">
+<Accordion title="Agencia: configuración de campañas">
 
-Agencies can measure the following main traffic types:
+Las agencias pueden medir los siguientes tipos principales de tráfico:
 
-* [Self-reporting ad networks (SRNs)](/docs/about-agency-accounts#self-reporting-ad-networks)
-* [Non-SRNs (ad networks using attribution links)](/docs/about-agency-accounts#non-srns)
+* [Redes publicitarias de autoinforme (SRN)](/docs/about-agency-accounts#redes-publicitarias-de-autoinforme)
+* [No SRN (redes publicitarias que utilizan enlaces de atribución)](/docs/about-agency-accounts#no-srn)
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> When working with agencies, turning off an integrated partner does not automatically disable certain attribution capabilities for the agencies linked to that partner:
+> Al trabajar con agencias, desactivar un partner integrado no desactiva automáticamente ciertas capacidades de atribución para las agencias vinculadas a ese partner:
 >
-> To fully deactivate these capabilities for agencies, the advertiser must manually turn off the following settings before deactivating the partner:
+> Para desactivar completamente estas funcionalidades para las agencias, el anunciante debe desactivar manualmente las siguientes configuraciones antes de desactivar al partner:
 >
-> 1. Install view-through attribution
-> 2. Cross-platform equal attribution priority
+> 1. Atribución view-through en la instalación
+> 2. Igual prioridad de atribución multiplataforma
 >
-> Only after disabling these toggles should the advertiser proceed to deactivate the partner.
+> Solo después de desactivar estas opciones, el anunciante deberá proceder a desactivar al partner.
 >
-> **Note:** If the advertiser deactivates the partner without first turning off these settings, the agencies may continue to use these attribution capabilities.
+> **Nota:** Si el anunciante desactiva al partner sin antes desactivar estas configuraciones, las agencias podrán seguir utilizando estas capacidades de atribución.
 
-### Self-reporting ad networks
+### Redes publicitarias de autoinforme
 
-Self-reporting networks, such as Meta ads, Google Ads, or X Ads don't use external attribution links. Instead, each network has its own methods and APIs that AppsFlyer uses to communicate new installs, in-app events, etc.
+Las redes de autorreporte, como Meta Ads, Google Ads o X Ads, no emplean enlaces de atribución externos. En su lugar, cada red dispone de sus métodos y API propios que AppsFlyer utiliza para comunicar nuevas instalaciones, eventos dentro de la app, entre otros.
 
-#### SRN configurations
+#### Configuraciones de SRN
 
-| SRN | Marketer to perform initial SRN setup | Details |
+| nombres de SRN reservados | El especialista en marketing debe realizar la configuración inicial del SRN | Detalles |
 | --- | --- | --- |
-| Apple Search Ads | Yes | For details of agency configuration for Apple Search Ads campaigns, click <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#configuring-agencies-and-marketing-partners">here</Anchor>. |
-| Google Ads | Yes | For details of agency configuration for Google Ads campaigns, click <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">here</Anchor>. |
-| Google Marketing Platform (GMP) | No | GMP has two different APIs. Learn more about the <Anchor target="_blank" href="/marketers/docs/google-marketing-platform-display-video-360-dv360-integration#comparing-the-legacy-and-new-integrations">differences between the two</Anchor>, and choose the one relevant to you. |
-| Meta ads  <br />and  <br />X Ads | Yes | **Note:** This section refers to Meta ads. For attribution of Facebook Social (posts), read about [Owned Media](/docs/about-agency-accounts#owned-media%E2%80%94onelink-and-custom-links).<br /><br />**All Meta ads and X Ads campaigns must start with the Agency account name followed by "\_".** The name is defined in the AppsFlyer platform.<br />Campaigns that aren't named correctly are visible to the marketer but remain invisible to the agency account.<br /><br />**Note:**<ul><li>The agency name is CASE SENSITIVE.</li><li>See more details about <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#attributing-agencies-with-facebook">Meta ads</Anchor> and <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#any-special-instructions-for-agencies">X Ads</Anchor> setup for agencies.</li><li>Contact [agency@appsflyer.com](mailto:agency@appsflyer.com) if you have any questions about this.</li></ul>**Example**<br />agencyx runs a Meta ads campaign called agencyx\_brilliantcampaign, which is visible to it.<br /><br />agencyz runs an X Ads campaign called AgencyZ\_whathaveidonewrong, but doesn't see any results. This happens because the agency name part of the campaign is different to the defined agency name (capital A and Z). |
-| Snapchat | No | For details of agency configuration for Snapchat campaigns, click <Anchor target="_blank" href="/marketers/docs/snapchat-advanced-srn-integration-setup">here</Anchor>. |
-| TikTok for Business | Yes | For details of agency configuration for TikTok for Business campaigns, click <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup#setting-up-tiktok-for-business-for-agencies">here</Anchor>. |
-| Yahoo (Oath: Ad Platforms / Yahoo Gemini) | Yes | For details of agency configuration for Yahoo campaigns, <Anchor target="_blank" href="/marketers/docs/yahoo-integration-setup#agency-configuration">click here</Anchor>. |
+| Anuncios en la búsqueda de Apple | Sí | Para obtener más información sobre la configuración de agencia para campañas de Apple Search Ads, haga clic <Anchor target="_blank" href="/marketers/es/docs/apple-ads-integration-setup#configuración-de-agencias-y-partners-de-marketing">aquí</Anchor>. |
+| Anuncios de Google | Sí | Para obtener más información sobre la configuración de agencia para campañas de Google Ads, haga clic <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-agencies">aquí</Anchor>. |
+| Plataforma de Marketing de Google (GMP) | No | GMP cuenta con dos API diferentes. Conozca más sobre las <Anchor target="_blank" href="/marketers/es/docs/google-marketing-platform-display-video-360-dv360-integration#comparing-the-legacy-and-new-integrations">diferencias entre ambas</Anchor> y elija la que sea relevante para usted. |
+| Anuncios Meta  <br />y  <br />Anuncios X | Sí | **Nota:** Esta sección se refiere a los anuncios de Meta. Para la atribución de Facebook Social (publicaciones), consulte [Medios propios](/docs/about-agency-accounts#owned-media%E2%80%94onelink-and-custom-links).<br /><br />**Todos los anuncios de Meta y las campañas de X Ads deben comenzar con el nombre de la cuenta de la agencia seguido de "\_".** El nombre se define en la plataforma AppsFlyer.<br />Las campañas que no estén correctamente nombradas son visibles para el especialista en marketing, pero no para la cuenta de la agencia.<br /><br />**Nota:**<ul><li>El nombre de la agencia DISTINGUE ENTRE MAYÚSCULAS Y MINÚSCULAS.</li><li>Vea más detalles sobre la configuración de <Anchor target="_blank" href="/marketers/es/docs/meta-ads-faq#attributing-agencies-with-facebook">Meta ads</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#any-special-instructions-for-agencies">X ads</Anchor> para agencias.</li><li>Contacte a [agency@appsflyer.com](mailto:agency@appsflyer.com) si tiene alguna pregunta sobre esto.</li></ul>**Ejemplo**<br />Agencyx lleva a cabo una campaña de anuncios Meta llamada agencyx\_brilliantcampaign, que es visible para dicha agencia.<br /><br />Agencyz ejecuta una campaña de X Ads llamada AgencyZ\_whathaveidonewrong, pero no ve los resultados. Esto sucede porque la parte del nombre de la agencia en la campaña difiere del nombre de la agencia definido (con A y Z en mayúsculas). |
+| Snapchat | No | Para más detalles sobre cómo configurar agencias para campañas en Snapchat, haga clic <Anchor target="_blank" href="/marketers/es/docs/snapchat-advanced-srn-integration-setup">aquí</Anchor>. |
+| TikTok para empresas | Sí | Para más detalles sobre cómo configurar agencias para campañas en TikTok for Business, haga clic <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup#setting-up-tiktok-for-business-for-agencies">aquí</Anchor>. |
+| Yahoo (Oath: Plataformas de anuncios / Yahoo Gemini) | Sí | Para más detalles sobre la configuración de la agencia para campañas en Yahoo, <Anchor target="_blank" href="/marketers/es/docs/yahoo-integration-setup#configuración-de-agencia">haga clic aquí</Anchor>. |
 
-### Non-SRNs
+### No SRN
 
-Unlike SRNs, the vast majority of ad networks use attribution links for attribution purposes. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">These attribution links are already provided</Anchor> in each network's settings on AppsFlyer and can be simply copied from there directly.
+A diferencia de las SRN, la mayoría de las redes de anuncios utilizan enlaces de atribución para sus propósitos. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">Estos enlaces de atribución ya están disponibles</Anchor> en la configuración de cada red en AppsFlyer y se pueden copiar directamente desde allí.
 
-For agencies, the process is almost identical to that of the marketers. Upon going to the setup window of any regular ad networks the attribution link is already there. The only difference is the automatic addition of the `af_prt` parameter to the attribution link.
+Para las agencias, el proceso es casi idéntico al que siguen los comercializadores. Al acceder a la ventana de configuración de cualquier red de anuncios regular, el enlace de atribución ya está presente. La única diferencia es la adición automática del parámetro `af_prt` al enlace de atribución.
 
-#### Ad network configuration visibility
+#### Visibilidad de la configuración de la red de anuncios
 
-Ad network setup is visible to ad networks themselves only when the marketer (app owner) configures it. When an agency activates and configures ad network integration, the network sees this section as inactive.
+La configuración de la red de anuncios solo es visible para las redes mismas cuando el comercializador (propietario de la app) la configura. Cuando una agencia activa y configura la integración de la red de anuncios, esta ve la sección como inactiva.
 
-#### af\_prt parameter
+#### Parámetro af\_prt
 
-The value of the `af_prt` parameter is the agency name. When the agency name is passed in the `af_prt` parameter, it's converted to lowercase letters.
+El valor del parámetro `af_prt` es el nombre de la agencia. Cuando el nombre de la agencia se incluye en el parámetro `af_prt`, se convierte a minúsculas.
 
-When `af_prt` with your agency name is part of the attribution link, new installs can be attributed to your agency account. Otherwise, new installs are attributed directly to the ad network.
+Cuando `af_prt` incluye el nombre de su agencia en el enlace de atribución, las nuevas instalaciones pueden atribuirse a su cuenta de agencia. De lo contrario, las nuevas instalaciones se atribuyen directamente a la red de anuncios.
 
-[![agency-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
+[![agencia-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
 
-**Do not use links received from the marketer**: make sure to use the links from your own account to prevent wrong attribution.
+**No utilice enlaces provinientes del comercializador**: asegúrese de usar los enlaces de su propia cuenta para evitar atribuciones incorrectas.
 
-#### Special case: All-installs and all-launches networks
+#### Caso especial: Redes que registran todas las instalaciones y todos los lanzamientos
 
-Some non-SRNs require (or allow) marketers to send them postbacks **for devices that aren't attributed to them**.
+Algunos no SRN requieren (o permiten) que los comercializadores les envíen postbacks **para dispositivos no atribuidos a ellos**.
 
-All-installs network The network accepts a postback for every new app install, from any source
+Red de todas las instalaciones
 
-All-launches network The network accepts a postback for every new app launch, from any source
+La red acepta un postback por cada nueva instalación de app, independientemente de su origen
 
-Some examples for all-installs networks are Vungle, Wechat, Startapp, Unity Ads, and more.
+Red de todos los lanzamientos
 
-The following table shows the full list of the all-launches networks:
+La red acepta un postback por cada nuevo lanzamiento de app, de cualquier fuente
 
-| Network Name | Network PID (on AF attribution links) |
+Algunos ejemplos de redes que registran todas las instalaciones son Vungle, WeChat, StartApp, Unity Ads, y más.
+
+La siguiente tabla muestra la lista completa de todas las redes de lanzamientos:
+
+| Nombre de la red | PID de red (en enlaces de atribución de AF) |
 | --- | --- |
-| Supersonicads (a legacy network of ironSource) | supersonicads\_int |
+| Supersonicads (una red heredada de ironSource) | supersonicads\_int |
 | Adelphic Remarketing | adelphicremarketing\_int |
 | Grow Mobile | growmobile\_int |
 | ONE by AOL | advertising.com\_int |
@@ -184,109 +187,109 @@ The following table shows the full list of the all-launches networks:
 | Clickky | clickky\_int |
 | Remerge | remerge\_int |
 | MyThings | mythings\_int |
-| TikTok for Business | bytedanceglobal\_int |
+| TikTok para empresas | bytedanceglobal\_int |
 
-#### How to setup agency attribution with all installs/launches networks?
+#### ¿Cómo configurar la atribución de agencia con todas las redes de instalaciones/lanzamientos?
 
-Working with these networks entails sending information from installs that are not brought by the agency. Therefore, these networks require the marketer to configure them BEFORE the **agency**.
+Trabajar con estas redes implica enviar información de instalaciones no gestionadas por la agencia. Por lo tanto, estas redes requieren que el marketer las configure antes que la **agencia**.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Let's use agency attribution setup with Tapjoy as an example:
+> Veamos como ejemplo la configuración de atribución de agencia con Tapjoy:
 >
-> 1. Marketer goes to Tapjoy setup window on the marketer's dashboard.
-> 2. Marketer enters the Tapjoy App ID, given to the **marketer** by Tapjoy, in the **app\_id** text field.
-> 3. Under the **Integration** tab > Default postbacks, the marketer selects **All media sources, including organic**.
-> 4. Agency goes to Tapjoy setup window on the agency's dashboard.
-> 5. Agency enters the Tapjoy App ID, given to the **agency** by Tapjoy, in the **app\_id** text field.
+> 1. El marketer accede a la ventana de configuración de Tapjoy en su panel de control.
+> 2. El marketer introduce el ID de la aplicación de Tapjoy, dado por Tapjoy al **marketer**, en el campo de texto **app\_id**.
+> 3. En la pestaña **Integración** > Postbacks predeterminados, el marketer selecciona **Todas las fuentes de medios, incluidas las orgánicas**.
+> 4. La agencia accede a la ventana de configuración de Tapjoy en su panel.
+> 5. La agencia introduce el ID de la aplicación de Tapjoy, dado a la **agencia** por Tapjoy, en el campo de texto **app\_id**.
 
-### Deep linking
+### Enlaces profundos
 
-Deep linking is the launch of a mobile app when opening personalized content and/or sending the users to specific activities within the app. This can provide your users with superior user experience and enhance their engagement.
+El enlace profundo permite lanzar una aplicación móvil al abrir contenido personalizado y/o dirigir a los usuarios a actividades específicas dentro de la app. Esto puede ofrecer una experiencia superior a sus usuarios y aumentar su participación.
 
-For deep linking to work, the mobile app MUST be developed with deep linking capabilities and infrastructure. Contact the app owner to find out whether the app is suitable for deep linking, before setting up the campaigns.
+Para que el enlace profundo funcione, la app móvil debe estar desarrollada con capacidades e infraestructura adecuadas. Contacte con el propietario de la app para confirmar si es adecuada para enlaces profundos antes de configurar las campañas.
 
-### Retargeting
+### Redireccionamiento
 
-* * <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting attribution</Anchor> allows you to target existing or past users in your campaigns. Retargeting campaigns often require deep linking capabilities to work correctly.
+* * La <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">atribución de retargeting</Anchor> permite dirigirse a usuarios existentes o pasados en sus campañas. Las campañas de retargeting a menudo necesitan capacidades de enlace profundo para funcionar correctamente.
 
-### In-app events
+### Eventos dentro de la aplicación
 
-App owners can have various events in their apps (e.g. purchase, watching a tutorial, passing a level, etc), that they can record and analyze in AppsFlyer. Agencies can see data of events attributed to them on the Events page in their account.
+Los propietarios de apps pueden tener diversos eventos en sus aplicaciones (por ejemplo, compras, ver un tutorial, superar un nivel, etc.) que pueden registrar y analizar en AppsFlyer. Las agencias pueden visualizar los datos de los eventos que se les atribuyen en la página Eventos de su cuenta.
 
-#### In-app event postbacks
+#### Postbacks de eventos in-app
 
-Agencies can be given permission to configure <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">in-app event postbacks</Anchor> (including the <Anchor target="_blank" href="/marketers/docs/measure-sessions">af\_app\_opened event</Anchor>) to ad networks, upon receipt of permission from the Marketer.
+Las agencias pueden recibir permiso para configurar <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration">postbacks de eventos in-app</Anchor> (incluyendo el <Anchor target="_blank" href="/marketers/es/docs/measure-sessions">evento af\_app\_opened</Anchor>) para redes publicitarias, tras recibir la autorización del Marketer.
 
-Agencies can give the ad networks permission to configure in-app postbacks to themselves. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">Permission is granted</Anchor> by marketers in the agency permission tab.
+Las agencias pueden otorgar permiso a las redes publicitarias para configurar postbacks dentro de la aplicación. El <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">permiso se concede</Anchor> por los especialistas en marketing en la pestaña de permisos de la agencia.
 
 </Accordion>
 
 <div id="reporting-for-agencies" />
 
-<Accordion title="Reporting for agencies">
+<Accordion title="Informes para agencias">
 
-* Traffic statistics are viewed and downloaded directly from the AppsFlyer dashboard.
-* Reports are accessed via the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Export Data</Anchor> page in the AppsFlyer dashboard. You can also access Cohort reports via <Anchor target="_blank" href="/partners/docs/data-locker-reports-for-agencies">Data Locker</Anchor>.
-* The following reports types are available:
-  * Aggregate
-  * Raw data
-* Marketers and agencies mostly cannot access the same data in the dashboard, reports, and so on.
-* Agencies are usually responsible for only a part of the marketer's traffic, so the agencies' access to the data is limited in comparison to that of marketers.
-* <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">This article</Anchor> breaks down these differences. The following sections highlight them
+* Las estadísticas de tráfico se visualizan y descargan directamente desde el panel de AppsFlyer.
+* Se accede a los informes a través de la página <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">Exportar datos</Anchor> en el panel de AppsFlyer. También puedes acceder a los informes de cohorte a través de <Anchor target="_blank" href="/partners/es/docs/data-locker-reports-for-agencies">Data Locker</Anchor>.
+* Están disponibles los siguientes tipos de informes:
+  * Agregados
+  * Datos sin procesar
+* Los especialistas en marketing y las agencias generalmente no pueden acceder a los mismos datos en el panel, informes, etc.
+* Las agencias suelen ser responsables solo de una parte del tráfico del comercializador, por lo que su acceso a los datos es limitado en comparación con el de los comercializadores.
+* <Anchor target="_blank" href="/marketers/es/docs/manage-data-access-permissions">Este artículo</Anchor> detalla estas diferencias. Las siguientes secciones las destacan.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Due to Meta ads and X Ads terms of service, **agencies**, who are considered 3rd parties, **do not have access to raw data reports traffic, originating from either Meta ads or X Ads**.
+> Debido a los términos de servicio de Meta Ads y X Ads, las **agencias**, que se consideran terceros, **no tienen acceso a los informes de datos sin procesar sobre tráfico originado en Meta Ads o X Ads**.
 
-### Access to aggregate data
+### Acceso a datos agregados
 
-* Performance reports also referred to as aggregate data reports, are available by default to agency accounts. Related reading: <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">Aggregate performance reports</Anchor>
-* Access to aggregate organic data reports requires marketer <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">permission</Anchor>.
-* Agencies can receive access to Retention and Cohort reports, and Protect360 dashboard. This requires that the marketer enable <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">**Allow access to your retention and cohort reports**</Anchor> or <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">**Allow access to your Protect360 dashboard**</Anchor>, respectively, in the **Permissions** tab of **Active integrations**.
+* Los informes de rendimiento, también conocidos como informes de datos agregados, están disponibles de forma predeterminada para las cuentas de agencia. Lectura relacionada: <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview">Informes de rendimiento agregado</Anchor>
+* El acceso a los informes de datos orgánicos agregados requiere el <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">permiso</Anchor> del comercializador.
+* Las agencias pueden acceder a los informes de retención y cohorte, y al panel de Protect360. Esto requiere que el comercializador active <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">**Permitir acceso a sus informes de retención y cohorte**</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">**Permitir acceso a su panel de Protect360**</Anchor>, respectivamente, en la pestaña **Permisos** de **Integraciones activas**.
 
-### Access to raw data
+### Acceso a datos sin procesar
 
-<Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data reports</Anchor> (user-level data reports) contain attribution information and are divided into topics.
+<Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">Los informes de datos sin procesar</Anchor> (informes a nivel de usuario) contienen información de atribución y están divididos en temas.
 
-### Time zone and currency
+### Zona horaria y moneda
 
-Agencies see apps in the app-defined time zone and currency, but these settings can be changed only by marketers.
+Las agencias ven las aplicaciones en la zona horaria y moneda definidas por la aplicación, pero estos ajustes solo pueden ser modificados por los especialistas en marketing.
 
-### Cost reporting
+### Informe de costos
 
-Agencies can enable **Get cost data** when configuring an integrated partner that <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">supports cost data</Anchor>.
+Las agencias pueden habilitar **Obtener datos de costos** al configurar un socio integrado que <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">admita datos de costos</Anchor>.
 
-**To enable Get cost data:**
+**Para habilitar la obtención de datos de costos:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Active integrations**.
-2. Filter the partners by the Cost: From the top of the **Active integrations** page, select **Supported features** > **Cost**.
-3. Select the partner. You're directed to the **Integration** tab. Select Go to the **Cost** tab.
-4. Turn on **Get cost data.**
-5. Enter the API key for this partner.
-6. Click **Save**.
+1. En AppsFlyer, desde el menú lateral, selecciona **Colaborar** > **Integraciones activas**.
+2. Filtra los socios por Costo: Desde la parte superior de la página **Integraciones activas**, selecciona **Funciones compatibles** >**Costo**.
+3. Selecciona el socio. Serás dirigido a la pestaña **Integración**. Seleccione la pestaña **Costo**.
+4. Activa la opción **Obtener datos de costos**.
+5. Introduce la clave API para este socio.
+6. Haz clic en **Guardar**.
 
-#### Accessing and viewing cost data
+#### Acceso y visualización de datos de costos
 
-Cost data is available to the agency in the following data sources:
+Los datos de costos están disponibles para la agencia en las siguientes fuentes de datos:
 
-* **Overview** page: cost data is visible in the **Aggregated performance report** in the Overview page.
-* **Reports**: cost data is available in exported reports such as **Installations** under **Raw data reports** and **Partners (Media sources)** under **Performance reports**
+* Página de **Descripción general**: los datos de costos se muestran en el **Informe de rendimiento agregado** de esta página.
+* **Informes**: los datos de costos están disponibles en informes exportados como **Instalaciones** en **Informes de datos sin procesar** y **Socios (fuentes de medios)** en **Informes de rendimiento**.
 
-### Hybrid account data access
+### Acceso a datos en cuentas híbridas
 
-Hybrid accounts are agency accounts that manage some of the apps as an Agency (app partner), and some as a Marketer (app owner).
+Las cuentas híbridas son cuentas de agencia que gestionan algunas aplicaciones como una agencia (socio de aplicación) y otras como comercializador (propietario de la aplicación).
 
-The following account-level features have limited availability:
+Las siguientes funciones a nivel de cuenta tienen disponibilidad limitada:
 
-* <Anchor target="_blank" href="/marketers/docs/custom-dashboards">Custom dashboard</Anchor>: not available for agencies and hybrid accounts.
-* Cohort report: available upon marketer's permission.
-* Protect360: available upon marketer's permission.
+* <Anchor target="_blank" href="/marketers/es/docs/custom-dashboards">Panel personalizado</Anchor>: no está disponible para agencias y cuentas híbridas.
+* Informe de cohortes: disponible con autorización del comercializador.
+* Protect360: accesible con permiso del comercializador.
 
-If you have a hybrid account, they may appear on your dashboard, but you will get a 404 error when trying to open them.
+Si posees una cuenta híbrida, pueden aparecer en tu panel de control, pero recibirás un error 404 al intentar abrirlas.
 
-If you would like to use these features, it's recommended to open a new Marketer account and separate your Marketer and Agency apps. The features mentioned above will be available in your Marketer account if you have them enabled.
+Si deseas utilizar estas funciones, se recomienda crear una nueva cuenta de Marketer y separar tus aplicaciones de Marketer y Agencia. Las funciones mencionadas estarán disponibles en tu cuenta de Marketer si las tienes habilitadas.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HDNYNZYR2FTMQ71EV2AY3A3A=about-agency-accounts h_01HDNYNZYRZKK97GZ6R0MB9RQN=agency-access-to-marketer-data h_01J00RYT8J0MBPHTGK5T4WEE43=agency-access-to-ad-network-integrations h_01HJR00RGQX0CQEHDS9BHBGJD4=note h_01HDNYNZYRYHJ98YQWVVENZ07P=agency-transparency h_01HDNYNZYR65409AGM9F2PZRC8=comparing-different-types-of-accounts h_01HDNYNZYS7A2H60EEAJ114VSM=agency-versus-marketer-accounts h_01HDNYNZYSS7WSQ07S7KRADN7Z=differences-between-marketer-and-agency-accounts h_01HDNYNZYSX4WPQKS0H6JN6FCP=features-available-to-agencies h_01HDNYNZYS8KRSPM5CPVJEJ74Y=agency-vs-ad-network-account h_01HDNYNZYS4VPZMY34WA3SG5JT=differences-between-ad-network-and-agency-accounts agency-accounts%E2%80%94campaigns-and-reporting=agency-accountscampaigns-and-reporting h_01HDNYNZYS32SNR5F0WKJ4G9Q1=agency-accountscampaigns-and-reporting h_01HDNYNZYSNF2RQ3E7PM4HK433=agency-setting-up-campaigns h_01KC9MDDRPTB05PV6NCGZVFRMJ=important selfreporting-ad-networks=self-reporting-ad-networks h_01HDNYNZYS8X1VA4T46DQYQZFE=self-reporting-ad-networks h_01HDNYNZYS8AM2MFPRXFA4JXNS=srn-configurations h_01HDNYNZYSFXZXR99T6ME2R43F=example nonsrns=non-srns h_01HDNYNZYSN28VZQKCBRGXAVY0=non-srns h_01HDNYNZYSG5MQDDKV55HF4X9C=ad-network-configuration-visibility h_01HDNYNZYSC7XNJCJ1F27KTM9Z=af_prt-parameter special-case-allinstalls-and-alllaunches-networks=special-case-all-installs-and-all-launches-networks h_01HDNYNZYSB4MKXD47E1VHDN62=special-case-all-installs-and-all-launches-networks h_01HDNYNZYSHNV2B27JQV4EEVFM=how-to-setup-agency-attribution-with-all-installslaunches-networks h_01HDNYNZYS5WYADGW24AVK9RCZ=example h_01HDNYNZYS5W0SMCF1YC6C3G4C=deep-linking h_01HDNYNZYS3Z7RE51M7G7386VZ=retargeting inapp-events=in-app-events h_01HDNYNZYTDFN4MB6QBEQ8P5XW=in-app-events inapp-event-postbacks=in-app-event-postbacks h_01HMDP38S3NPE5R4QZJ5CW404W=in-app-event-postbacks h_01HDNYNZYTA767NGSTNECTBCV2=reporting-for-agencies h_01HDNYNZYTYBWGMY2PP8MPQE2F=note-1 access-to-performance-reports=access-to-aggregate-data h_01HDNYNZYTDH4S38XG3JCZQYJJ=access-to-aggregate-data h_01HDNYNZYT4ZKBNGDR3QR1VTEZ=access-to-raw-data h_01HDNYNZYT97ET1TQHKSRDMWDC=time-zone-and-currency h_01HDNYNZYTYT9NHMHQQ77PK8CQ=cost-reporting h_01HDNYNZYTWB5WVYY8C347G1ME=accessing-and-viewing-cost-data h_01HDNYNZYTKZTCBSBKZEJ7M0JN=hybrid-account-data-access" />
+<div data-zendesk-anchors="about-agency-accounts=acerca-de-las-cuentas-de-agencia h_01HDNYNZYR2FTMQ71EV2AY3A3A=acerca-de-las-cuentas-de-agencia agency-access-to-marketer-data=acceso-de-la-agencia-a-los-datos-de-los-comercializadores h_01HDNYNZYRZKK97GZ6R0MB9RQN=acceso-de-la-agencia-a-los-datos-de-los-comercializadores agency-access-to-ad-network-integrations=acceso-de-la-agencia-a-las-integraciones-de-redes-publicitarias h_01J00RYT8J0MBPHTGK5T4WEE43=acceso-de-la-agencia-a-las-integraciones-de-redes-publicitarias h_01HJR00RGQX0CQEHDS9BHBGJD4=nota agency-transparency=transparencia-de-la-agencia h_01HDNYNZYRYHJ98YQWVVENZ07P=transparencia-de-la-agencia comparing-different-types-of-accounts=comparaci%C3%B3n-de-diferentes-tipos-de-cuentas h_01HDNYNZYR65409AGM9F2PZRC8=comparaci%C3%B3n-de-diferentes-tipos-de-cuentas h_01HDNYNZYS7A2H60EEAJ114VSM=agency-versus-marketer-accounts differences-between-marketer-and-agency-accounts=diferencias-entre-cuentas-de-comercializadores-y-de-agencias h_01HDNYNZYSS7WSQ07S7KRADN7Z=diferencias-entre-cuentas-de-comercializadores-y-de-agencias features-available-to-agencies=funciones-disponibles-para-las-agencias h_01HDNYNZYSX4WPQKS0H6JN6FCP=funciones-disponibles-para-las-agencias h_01HDNYNZYS8KRSPM5CPVJEJ74Y=agency-vs-ad-network-account differences-between-ad-network-and-agency-accounts=diferencias-entre-cuentas-de-red-publicitaria-y-de-agencia h_01HDNYNZYS4VPZMY34WA3SG5JT=diferencias-entre-cuentas-de-red-publicitaria-y-de-agencia agency-accounts%E2%80%94campaigns-and-reporting=cuentas-de-agencias-campa%C3%B1as-y-reportes h_01HDNYNZYS32SNR5F0WKJ4G9Q1=cuentas-de-agencias-campa%C3%B1as-y-reportes h_01HDNYNZYSNF2RQ3E7PM4HK433=agency-setting-up-campaigns h_01KC9MDDRPTB05PV6NCGZVFRMJ=importante selfreporting-ad-networks=redes-publicitarias-de-autoinforme h_01HDNYNZYS8X1VA4T46DQYQZFE=redes-publicitarias-de-autoinforme srn-configurations=configuraciones-de-srn h_01HDNYNZYS8AM2MFPRXFA4JXNS=configuraciones-de-srn h_01HDNYNZYSFXZXR99T6ME2R43F=ejemplo nonsrns=no-srn h_01HDNYNZYSN28VZQKCBRGXAVY0=no-srn ad-network-configuration-visibility=visibilidad-de-la-configuraci%C3%B3n-de-la-red-de-anuncios h_01HDNYNZYSG5MQDDKV55HF4X9C=visibilidad-de-la-configuraci%C3%B3n-de-la-red-de-anuncios af_prt-parameter=par%C3%A1metro-af_prt h_01HDNYNZYSC7XNJCJ1F27KTM9Z=par%C3%A1metro-af_prt special-case-allinstalls-and-alllaunches-networks=caso-especial-redes-que-registran-todas-las-instalaciones-y-todos-los-lanzamientos h_01HDNYNZYSB4MKXD47E1VHDN62=caso-especial-redes-que-registran-todas-las-instalaciones-y-todos-los-lanzamientos how-to-setup-agency-attribution-with-all-installslaunches-networks=c%C3%B3mo-configurar-la-atribuci%C3%B3n-de-agencia-con-todas-las-redes-de-instalacioneslanzamientos h_01HDNYNZYSHNV2B27JQV4EEVFM=c%C3%B3mo-configurar-la-atribuci%C3%B3n-de-agencia-con-todas-las-redes-de-instalacioneslanzamientos h_01HDNYNZYS5WYADGW24AVK9RCZ=ejemplo deep-linking=enlaces-profundos h_01HDNYNZYS5W0SMCF1YC6C3G4C=enlaces-profundos retargeting=redireccionamiento h_01HDNYNZYS3Z7RE51M7G7386VZ=redireccionamiento inapp-events=eventos-dentro-de-la-aplicaci%C3%B3n h_01HDNYNZYTDFN4MB6QBEQ8P5XW=eventos-dentro-de-la-aplicaci%C3%B3n inapp-event-postbacks=postbacks-de-eventos-in-app h_01HMDP38S3NPE5R4QZJ5CW404W=postbacks-de-eventos-in-app h_01HDNYNZYTA767NGSTNECTBCV2=reporting-for-agencies h_01HDNYNZYTYBWGMY2PP8MPQE2F=nota-1 access-to-performance-reports=acceso-a-datos-agregados h_01HDNYNZYTDH4S38XG3JCZQYJJ=acceso-a-datos-agregados access-to-raw-data=acceso-a-datos-sin-procesar h_01HDNYNZYT4ZKBNGDR3QR1VTEZ=acceso-a-datos-sin-procesar time-zone-and-currency=zona-horaria-y-moneda h_01HDNYNZYT97ET1TQHKSRDMWDC=zona-horaria-y-moneda cost-reporting=informe-de-costos h_01HDNYNZYTYT9NHMHQQ77PK8CQ=informe-de-costos accessing-and-viewing-cost-data=acceso-y-visualizaci%C3%B3n-de-datos-de-costos h_01HDNYNZYTWB5WVYY8C347G1ME=acceso-y-visualizaci%C3%B3n-de-datos-de-costos hybrid-account-data-access=acceso-a-datos-en-cuentas-h%C3%ADbridas h_01HDNYNZYTKZTCBSBKZEJ7M0JN=acceso-a-datos-en-cuentas-h%C3%ADbridas" />

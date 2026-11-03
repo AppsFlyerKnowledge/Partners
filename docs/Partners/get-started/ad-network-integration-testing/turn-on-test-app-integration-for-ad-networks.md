@@ -1,5 +1,5 @@
 ---
-title: Turn on test app integration for ad networks
+title: Activa la integración de la app de prueba para ad networks
 metadata:
   keywords:
     - Ad Networks
@@ -13,43 +13,42 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2021-05-22T15:56:20Z'
-  edited_at: '2026-09-09T13:49:26Z'
+  edited_at: '2026-09-11T00:36:50Z'
   id: 360020713538
-  locale: en-us
+  locale: es
   section: Ad network integration testing
   section_id: 6551070667537
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360020713538-Turn-on-test-app-integration-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/360020713538
 ---
-> **At a glance:** Ad networks performing integration testing must turn on app integration (activation).
+> **At a glance:** Las ad network que realizan pruebas de integración deben activar la integración de la aplicación (activación).
 
-## Test apps for ad networks (iOS and Android)
+## Aplicaciones de prueba para ad networks (iOS y Android)
 
-Ad networks after setting up integration and postbacks must test integration using AppsFlyer test apps. Before testing, the ad network must activate the app integration and enable additional ad network permissions as needed. The activation is performed once per app.
+Las ad networks, después de configurar la integración y los postbacks, deben probar la integración con las aplicaciones de prueba de AppsFlyer. Antes de realizar las pruebas, la ad network debe activar la integración de la app y habilitar permisos adicionales de la ad network según sea necesario. La activación se realiza una vez por aplicación.
 
-| Test app type | App name or ID |
+| Tipo de aplicación de prueba | Nombre o ID de la aplicación |
 | --- | --- |
-| <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks#part-2-test-using-advertiser-apps">Android</Anchor> | com.appsflyer.adNetworkTest |
-| <Anchor target="_blank" href="/partners/docs/ios-integration-testing-for-ad-networks">iOS</Anchor> | id1543229303 |
-| <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> | <ul><li>id888707085</li><li>id888707086</li><li>id888707087</li></ul> |
+| <Anchor target="_blank" href="/partners/es/docs/getting-started-onboarding-guide-for-ad-networks#parte-2-prueba-usando-aplicaciones-de-anunciantes">Android</Anchor> | com.appsflyer.adNetworkTest |
+| <Anchor target="_blank" href="/partners/es/docs/ios-integration-testing-for-ad-networks">apps de iOS,</Anchor> | id1543229303 |
+| <Anchor target="_blank" href="/partners/es/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> | <ul><li>id888707085</li><li>id888707086</li><li>id888707087</li></ul> |
 
-### Activation procedure
+### Procedimiento de activación
 
-Use the procedure that follows to activate the integration for a given test app. Perform the procedure once per app.
+Utiliza el siguiente procedimiento para activar la integración de una app de prueba específica. Realiza el procedimiento una vez por aplicación.
 
-**To activate integration and grant permissions to a test app**:
+**Para activar la integración y conceder permisos a una aplicación de prueba**:
 
-1. In AppsFlyer, select a test app from those listed in the previous table.
-2. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations**.
-3. Select your ad network.
-4. **To activate integration with the app**:  
-   1. Go to the **Integration** tab.
-   2. Turn on **Activate Partner**.
-   3. Click **Save integration**.
-5. **To grant permissions**:
-   1. Go to the **Permissions** tab.
-   2. Turn on **Configure integration**.
-   3. Turn on **Configure in-app event postbacks.**
-   4. Click **Save permissions**.
+1. En AppsFlyer, selecciona una aplicación de prueba de las que aparecen en la tabla anterior.
+2. En AppsFlyer, en el menú lateral, selecciona **Collaborate** > **Partner Integrations** > **Active Integrations**.
+3. Selecciona tu ad network.
+4. **Para activar la integración con la aplicación**:  
+   1. Ve a la pestaña **Integración**.
+   2. Activa **Activar partner.**
+   3. Haz clic en **Guardar integración**.
+5. **Para conceder permisos**:
+   1. Ve a la pestaña **Permissions** (Permisos).
+   2. Activa **Configurar integración**.
+   3. Activa **Configurar postbacks de eventos in-app.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
+   4. Haz clic en **Guardar permisos**.
 
-<div data-zendesk-anchors="h_01HKA15VM7FM69X0AZ1V2H5XPJ=test-apps-for-ad-networks-ios-and-android h_01HKA15VM7J47374WMRG5132GN=activation-procedure" />
+<div data-zendesk-anchors="test-apps-for-ad-networks-ios-and-android=aplicaciones-de-prueba-para-ad-networks-ios-y-android h_01HKA15VM7FM69X0AZ1V2H5XPJ=aplicaciones-de-prueba-para-ad-networks-ios-y-android activation-procedure=procedimiento-de-activaci%C3%B3n h_01HKA15VM7J47374WMRG5132GN=procedimiento-de-activaci%C3%B3n" />

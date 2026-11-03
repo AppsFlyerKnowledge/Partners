@@ -1,5 +1,5 @@
 ---
-title: Implementing and using 2FA login
+title: Implementando y usando el inicio de sesión 2FA
 metadata:
   keywords:
     - Marketers
@@ -12,102 +12,101 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2025-12-04T09:21:41Z'
-  edited_at: '2026-08-09T07:02:53Z'
+  edited_at: '2026-08-12T12:29:16Z'
   id: 41585422141585
-  locale: en-us
+  locale: es
   section: Ad network onboarding
   section_id: 6551058566033
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/41585422141585-Implementing-and-using-2FA-login
+  url: https://support.appsflyer.com/hc/es/articles/41585422141585
 ---
-> **At a glance:** Two-factor authentication (2FA) is used to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator.
+> **En resumen:** La autenticación de dos factores (2FA) se utiliza para añadir una capa adicional de seguridad al proceso de inicio de sesión. Las credenciales de login de los usuarios de la cuenta se complementan con Google o Microsoft Authenticator.
 
-## Intro
+## Introducción
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Each person who accesses AppsFlyer must have their own user account. User credentials can’t be shared, and 2FA must be set up individually for every user. If you need to add users to the account, go to User management and create new users as needed. For details, see <Anchor target="_blank" href="/partners/docs/user-management-for-agencies">User management.</Anchor>
+> Cada persona que acceda a AppsFlyer debe tener su propia cuenta de usuario. Las credenciales de usuario no se pueden compartir y la 2FA debe configurarse individualmente para cada usuario. Si necesitas añadir usuarios a la cuenta, ve a Administración de usuarios y crea nuevos usuarios según sea necesario. Para obtener más información, consulta <Anchor target="_blank" href="/partners/es/docs/user-management-for-agencies">Administración de usuarios.</Anchor>
 
-* 2FA is mandatory by AppsFlyer.
-* 2FA must be set up using **Google or Microsoft Authenticator.**
+* AppsFlyer exige el uso de 2FA.
+* La 2FA debe configurarse con **Google o Microsoft Authenticator.**
 
-> 🚧 **Important!**
+> 🚧 **Dos puntos (:)**
 >
-> After you set up 2FA, don’t delete your authenticator app. Doing so breaks the connection to AppsFlyer, and you won’t be able to log in.
+> Después de configurar la 2FA, no elimines tu app de autenticación. Si lo haces, se interrumpirá la conexión con AppsFlyer y no podrás iniciar sesión.
 
 <div id="firsttime-setup" />
 
-<Accordion title="First-time setup">
+<Accordion title="Configuración inicial">
 
-#### **New account user**
+#### **Nuevo usuario de cuenta**
 
-1. Follow email instructions and create a password.
-2. Log in to **AppsFlyer,** and you'll be redirected to the 2FA setup page.
-3. Set up 2FA.
-   * Download **Google or Microsoft Authenticator**.
-   * Scan the QR code.
-   * Enter the **Google or Microsoft Authenticator**-issued verification code.
-   * Click **Verify**, and you'll be redirected to the **My apps** page.
+1. Sigue las instrucciones del correo electrónico y crea una contraseña.
+2. Inicia sesión en **AppsFlyer,** y serás redireccionado a la página de configuración de 2FA.
+3. Configura 2FA.
+   * Descarga **Google Authenticator** y una aplicación de **QR code**.
+   * Escanea el QR code.
+   * Ingresa el código de verificación emitido por **Google Authenticator**.
+   * Haz clic en **Verificar**, y serás redireccionado a la página de **Mis aplicaciones**.
 
-#### **Existing account users**
+#### **Usuarios de cuentas existentes**
 
-1. Log in to **AppsFlyer** (username and password), and you'll be redirected to the 2FA setup page.
-2. Set up 2FA.
-   * Download **Google or Microsoft Authenticator**.
-   * Scan the QR code.
-   * Enter the **Google or Microsoft Authenticator**-issued verification code.
-   * Click **Verify,** and you'll be redirected to the **My apps** page.
+1. Inicia sesión en **AppsFlyer** (nombre de usuario y contraseña), y serás redireccionado a la página de configuración de 2FA.
+2. Configura 2FA.
+   * Descarga **Google Authenticator** y una aplicación de **QR code**.
+   * Escanea el QR code.
+   * Ingresa el código de verificación emitido por **Google Authenticator**.
+   * Haz clic en **Verificar**, y serás redireccionado a la página de **Mis aplicaciones**.
 
 </Accordion>
 
 <div id="ongoing-use" />
 
-<Accordion title="Ongoing use">
+<Accordion title="Uso continuo">
 
-**Follow these steps for ongoing use.**
+**Sigue estos pasos para el uso continuo.**
 
-1. Log in to **AppsFlyer** (username and password), and you'll be redirected to the 2FA login page.
-2. Open **Google or Microsoft Authenticator** on your phone to get the verification code.
-3. Enter the code on the 2FA page.
-4. Click **Verify,** and you'll be redirected to the **My apps** page.
+1. Inicia sesión en **AppsFlyer** (nombre de usuario y contraseña), y serás redireccionado a la página de inicio de sesión de 2FA.
+2. Abre **Google Authenticator** en tu móvil para obtener el código de verificación.
+3. Ingresa el código en la página de 2FA.
+4. Haz clic en **Verificar**, y serás redireccionado a la página de **Mis aplicaciones**.
 
 </Accordion>
 
 <div id="reset-a-users-2fa" />
 
-<Accordion title="Reset a user's 2FA">
+<Accordion title="Restablecer la 2FA de un usuario">
 
-<Embed title="Implementing and using 2FA login" typeOfEmbed="youtube" url="https://www.youtube.com/embed/15sYaqz89ys" providerUrl="https://www.youtube.com" />
+<Embed title="Implementando y usando el inicio de sesión 2FA" typeOfEmbed="youtube" url="https://www.youtube.com/embed/15sYaqz89ys" providerUrl="https://www.youtube.com" />
 
-To reset your 2FA, contact your Admin. The admin should follow these steps:
+Para restablecer tu 2FA, ponte en contacto con tu administrador. El administrador debe seguir estos pasos:
 
-Note: If you are an account owner, you can reset your own 2FA in [the steps that follow](/docs/implementing-and-using-2fa-login-partners#for-an-account-owner-resetting-their-own-2fa).
+Nota: Si eres el propietario de una cuenta, puedes restablecer tu propia 2FA en [los pasos que aparecen a continuación](/docs/implementing-and-using-2fa-login-partners#para-que-el-propietario-de-una-cuenta-restablezca-su-propia-2fa).
 
-#### **For an Admin resetting a user's 2FA**
+#### **Para que un administrador restablezca la 2FA de un usuario**
 
-1. In the menu bar, click the email address dropdown.
-2. Select **User management**.
-3. On the **Users** tab, click the menu options on the far right side of the user’s row.
-4. Select **Reset 2FA** from the menu.
+1. En la barra de menú, haz clic en el menú desplegable de la dirección de correo electrónico.
+2. Selecciona **Administración de usuarios**.
+3. En la pestaña **Usuarios** , haz clic en las opciones del menú en el extremo derecho de la fila del usuario.
+4. Selecciona **Restablecer 2FA** en el menú.
 
-#### **For an Account owner resetting their own 2FA**
+#### **Para que el propietario de una cuenta restablezca su propia 2FA**
 
-1. On the 2FA login page, click **Click here to start the reset process.**
-2. An email will be sent with a code and a link to the new 2FA login page.
-3. Copy the code from the email and click the link in the email.
-4. Enter the code in the 2FA setup page.
-5. Follow the steps for setting up your new 2FA [here](/docs/implementing-and-using-2fa-login-partners#existing-account-users).
+1. En la página de login de 2FA, haz clic en **Click here to start the reset process.**
+2. Se enviará un correo electrónico con un código y un enlace a la nueva página de login de 2FA.
+3. Copia el código del correo electrónico y haz clic en el enlace del correo electrónico.
+4. Ingresa el código en la página de configuración de 2FA.
+5. Sigue los pasos para configurar tu nueva 2FA [aquí](/docs/implementing-and-using-2fa-login-partners#usuarios-de-cuentas-existentes).
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Especificaciones y limitaciones">
 
-| Name | Description |
+| Nombre | Nota |
 | --- | --- |
-| AppsFlyer apps | With 2FA enabled, both the AppsFlyer apps, **My Device ID by AppsFlyer** and **AppsFlyer**, cannot be used. To register test devices, use the method <Anchor target="_blank" href="/marketers/docs/registering-test-devices">here</Anchor>. |
+| Apps de AppsFlyer | Con la 2FA activada, no se pueden usar ambas apps de AppsFlyer, **My Device ID by AppsFlyer** y **AppsFlyer**. Para registrar dispositivos de prueba, usa el método que se describe <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">aquí</Anchor>. |
 
 </Accordion>
 
-<div data-zendesk-anchors="highlights=intro h_01HEHRKE8PY64KWVSSFR6T4F1Z=intro h_01KBVXP9J12428VNPQAG7N2B52=note h_01KBVXHY4VHJG6CJWHFTVK4644=important h_01HEHRKE8QQTX3Y9ZY1HZ6GBAG=firsttime-setup h_01KBMCFPDWRBF5NPKWF3JSHBS4=new-account-user h_01KBMCFSS5ACAB5T6SAJ2ETNGC=existing-account-users h_01HEHRKE8QHWHCMNB5M7S5YVYJ=ongoing-use h_01KBMBVZX1N60YJKTJRAN66DY7=reset-a-users-2fa h_01KBMCSYNWA41JAP498F19JQKZ=for-an-admin-resetting-a-users-2fa h_01KBMCVPFMZAC6Z05SNW3CEHQ4=for-an-account-owner-resetting-their-own-2fa h_01KBVY16MN92WV0TC81QBWCNW4=traits-and-limitations" />
+<div data-zendesk-anchors="highlights=introducci%C3%B3n h_01HEHRKE8PY64KWVSSFR6T4F1Z=introducci%C3%B3n h_01KBVXP9J12428VNPQAG7N2B52=advertencia h_01KBVXHY4VHJG6CJWHFTVK4644=dos-puntos- h_01HEHRKE8QQTX3Y9ZY1HZ6GBAG=firsttime-setup new-account-user=nuevo-usuario-de-cuenta h_01KBMCFPDWRBF5NPKWF3JSHBS4=nuevo-usuario-de-cuenta existing-account-users=usuarios-de-cuentas-existentes h_01KBMCFSS5ACAB5T6SAJ2ETNGC=usuarios-de-cuentas-existentes h_01HEHRKE8QHWHCMNB5M7S5YVYJ=ongoing-use h_01KBMBVZX1N60YJKTJRAN66DY7=reset-a-users-2fa for-an-admin-resetting-a-users-2fa=para-que-un-administrador-restablezca-la-2fa-de-un-usuario h_01KBMCSYNWA41JAP498F19JQKZ=para-que-un-administrador-restablezca-la-2fa-de-un-usuario for-an-account-owner-resetting-their-own-2fa=para-que-el-propietario-de-una-cuenta-restablezca-su-propia-2fa h_01KBMCVPFMZAC6Z05SNW3CEHQ4=para-que-el-propietario-de-una-cuenta-restablezca-su-propia-2fa h_01KBVY16MN92WV0TC81QBWCNW4=traits-and-limitations" />

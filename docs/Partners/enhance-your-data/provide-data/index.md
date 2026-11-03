@@ -1,19 +1,19 @@
 ---
-title: Provide data
-excerpt: Send engagement data to AppsFlyer for attribution
+title: Proporciona datos
+excerpt: Envía los datos de engagement a AppsFlyer para su atribución
 table_of_contents: false
 x-zendesk:
   category: Partners
   category_id: 6550456653457
   created_at: '2022-06-02T11:32:58Z'
   id: 6551209900817
-  locale: en-us
+  locale: es
   parent_section_id: 6551110127761
   type: section
-  url: https://support.appsflyer.com/hc/en-us/sections/6551209900817-Provide-data
+  url: https://support.appsflyer.com/hc/es/sections/6551209900817-Proporciona-datos
 ---
-- [Attribution link specification for ad networks](/docs/attribution-link-specification-for-ad-networks)
-- [About probabilistic modeling](/docs/about-probabilistic-modeling)
-- [Enriched Engagement Types guide for ad networks](/docs/enriched-engagement-types-guide-for-ad-networks)
-- [Redirecting users to the app store](/docs/redirecting-users-to-the-app-store)
-- [Click signing for ad networks](/docs/click-signing-for-ad-networks)
+- [Especificación de enlaces de atribución para redes de publicidad](/docs/attribution-link-specification-for-ad-networks)
+- [Sobre el modelado probabilístico](/docs/about-probabilistic-modeling)
+- [Guía de tipos de engagement enriquecidos para ad networks](/docs/enriched-engagement-types-guide-for-ad-networks)
+- [Redirigir a los usuarios a la tienda de aplicaciones](/docs/redirecting-users-to-the-app-store)
+- [Firma de clics para redes de publicidad](/docs/click-signing-for-ad-networks)

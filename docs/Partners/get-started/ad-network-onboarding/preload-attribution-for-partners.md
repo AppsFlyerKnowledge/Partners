@@ -1,5 +1,5 @@
 ---
-title: Preload attribution for partners
+title: Atribución de precarga para partners
 metadata:
   keywords:
     - Partners
@@ -13,45 +13,44 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-05-15T09:45:55Z'
-  edited_at: '2024-02-25T06:31:03Z'
+  edited_at: '2026-08-12T12:29:22Z'
   id: 15321350340241
-  locale: en-us
+  locale: es
   section: Ad network onboarding
   section_id: 6551058566033
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/15321350340241-Preload-attribution-for-partners
+  url: https://support.appsflyer.com/hc/es/articles/15321350340241
 ---
-> **At a glance:** Attribute mobile app installs to campaigns that preload the app at the Original Equipment Manufacturer (OEM) or when the device is first turned on by the user.
+> **De un vistazo:** Atribuye las instalaciones de aplicaciones móviles a campañas que precargan la app en el fabricante de equipos originales (OEM) o cuando el usuario enciende el dispositivo por primera vez.
 
-## Overview
+## Visión general
 
-By supporting AppsFlyer preload attribution solutions, preload partners can have app installs attributed to preload campaigns. Preload campaigns are for when an app is installed on a device by a preload partner either at the factory or upon device activation (when the device is first turned on).
+Al proporcionar soporte a las soluciones de atribución de precarga de AppsFlyer, los Partners de precarga pueden tener las instalaciones de la app atribuidas a campañas de precarga. Las campañas de precarga son para cuando una app se instala en un dispositivo por un Partner de precarga, ya sea en la fábrica o al activar el dispositivo (cuando el dispositivo se enciende por primera vez).
 
-Preload partners are:
+Los partners de precarga son:
 
 * Original Equipment Manufacturers (OEMs)
-* App discovery platforms
-* Mobile carriers
+* Plataformas de descubrimiento de aplicaciones
+* Operadores móviles
 
-There are 3 ways to attribute preload campaigns:
+Hay 3 formas de atribuir campañas precargadas:
 
-* [Recommended] AppsFlyer referrer
-* Google Play auto-install (PAI)
-* [Legacy] Preload in factory via System Property
+* [Recomendado] Referer de AppsFlyer
+* Instalación automática de Google Play (PAI)
+* [Heredado] Precarga en fábrica mediante la propiedad del sistema
 
-Postbacks are sent to you after each conversion.
+Se te envían postbacks después de cada conversión.
 
-<Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">Learn more about the preload campaign attribution methods</Anchor>
+<Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#preload-campaigns">Saber más sobre los métodos de atribución de campañas de precarga</Anchor>
 
-## Set up preload attribution
+## Configurar la atribución de precarga
 
-To set up preload attribution:
+Para configurar la atribución de precarga:
 
-1. Make sure you're an <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">AppsFlyer integrated partner</Anchor>.
-2. Choose the preload attribution solutions to integrate (based on advertiser needs). **Note**: Each integration needs an independent PID with an AppsFlyer Partner Account. Reach out to your partner solutions team via the support widget.
-   * [Recommended] <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution">AppsFlyer referrer</Anchor>: Contact your PDM for integration instructions.
-   * <Anchor target="_blank" href="/marketers/docs/measure-preload-campaigns-with-google-play-install">Google Play auto-install (PAI)</Anchor>: Configure the media source information in the Google Play Referrer API for PAI campaigns using the following UTM parameters: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=brandnamepai_int`. For example: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=xiaomipai_int`.
-3. Contact the AppsFlyer partner solutions team via the support widget to complete the integration and optionally set up postbacks.  
-   **Note**: See which postback macros are supported for the preload method of <Anchor target="_blank" href="/marketers/docs/measure-preload-campaigns-with-google-play-install#postbacks-for-preload-partners">Google PAI</Anchor> and <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">AppsFlyer referrer/Android manifest file</Anchor>.
+1. Asegúrate de ser un <Anchor target="_blank" href="/partners/es/docs/getting-started-onboarding-guide-for-ad-networks">partner integrado de AppsFlyer</Anchor>.
+2. Elige las soluciones de atribución de precarga que vas a integrar (según las necesidades del anunciante). **Nota**: Cada integración necesita un PID independiente con una cuenta de Partner de AppsFlyer. Ponte en contacto con tu equipo de soluciones para partners a través del widget de soporte.
+   * [Recomendado] <Anchor target="_blank" href="/marketers/es/docs/set-up-appsflyer-preload-referrer-attribution">Referer de AppsFlyer</Anchor>: Ponte en contacto con tu PDM para obtener instrucciones de integración.
+   * <Anchor target="_blank" href="/marketers/es/docs/measure-preload-campaigns-with-google-play-install">Instalación automática de Google Play (PAI)</Anchor>: Configura la información de la fuente de medios en la API de Google Play Referrer para las campañas de PAI con los siguientes parámetros UTM: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=brandnamepai_int`. Por ejemplo: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=xiaomipai_int`.
+3. Ponte en contacto con el equipo de soluciones para partners de AppsFlyer a través del widget de soporte para completar la integración y, si quieres, configurar postbacks.  
+   **Nota**: Consulta qué macros de postback son compatibles con el método de precarga de <Anchor target="_blank" href="/marketers/es/docs/measure-preload-campaigns-with-google-play-install#postbacks-para-partners-de-precarga">Google PAI</Anchor> y <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks">AppsFlyer referrer/archivo de manifiesto de Android</Anchor>.
 
-<div data-zendesk-anchors="organic-search-attribution=overview h_01HQFFB20SKDVW1X3ECMZCZQW0=overview h_01HQFFB20S6KJH3PBF5N2190TJ=set-up-preload-attribution" />
+<div data-zendesk-anchors="organic-search-attribution=visi%C3%B3n-general h_01HQFFB20SKDVW1X3ECMZCZQW0=visi%C3%B3n-general set-up-preload-attribution=configurar-la-atribuci%C3%B3n-de-precarga h_01HQFFB20S6KJH3PBF5N2190TJ=configurar-la-atribuci%C3%B3n-de-precarga" />

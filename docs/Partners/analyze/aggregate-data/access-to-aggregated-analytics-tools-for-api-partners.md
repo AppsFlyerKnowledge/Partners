@@ -1,5 +1,5 @@
 ---
-title: Access to aggregated analytics tools for API partners
+title: Acceso a herramientas de análisis agregados para Partners de API
 metadata:
   keywords:
     - Advertisers
@@ -17,57 +17,56 @@ x-zendesk:
     - Marketing Analytics
     - Ad Networks
   created_at: '2020-02-17T10:50:10Z'
-  edited_at: '2026-08-13T13:36:27Z'
+  edited_at: '2026-08-22T00:35:57Z'
   id: 360005854857
-  locale: en-us
+  locale: es
   section: Aggregate data
   section_id: 6551715006353
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360005854857-Access-to-aggregated-analytics-tools-for-API-partners
+  url: https://support.appsflyer.com/hc/es/articles/360005854857
 ---
-> **At a glance:** API partners can use their API token to access advertisers' data when granted permission by the advertiser, allowing them to extract performance metrics from the platform.
+> **At a glance:** Los partners de API pueden usar su token de API para acceder a los datos de los anunciantes cuando el anunciante les concede permiso, lo que les permite extraer métricas de rendimiento de la plataforma.
 
-## API token permissions
+## Permisos del token de API
 
 <Image alt="api-access-permissions.jpg" src="https://files.readme.io/7961394cb39cf1e6f85d77cd732183edea5fb1408c220ca05b23ae7bbb50138e-23701010316689.jpg" width="439px" />
 
-Advertisers can grant the following app-level permissions:
+Los anunciantes pueden conceder los siguientes permisos a nivel de App:
 
-| Permission type | Reporting tool | Limitations |
+| Tipo de permiso | Herramienta de reportes | Limitaciones |
 | --- | --- | --- |
-| Aggregated analytics reporting | <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort analytics data via DataLocker</Anchor> | X Ads campaign data isn't available to API partners due to their restrictions. |
-| SKAN reporting | <ul><li><Anchor target="_blank" href="/marketers/docs/skan-aggregated-performance-report-api">SKAN performance reporting</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/skan-aggregated-postback-arrival-date-api">SKAN aggregate postback reporting</Anchor></li></ul> | -- |
+| Reportes analíticos agregados | <Anchor target="_blank" href="/marketers/es/docs/cohort-analytics-via-data-locker">Datos de análisis de cohortes a través de DataLocker</Anchor> | Los datos de campañas de X Ads no están disponibles para los partners de API debido a sus restricciones. |
+| Reportes de SKAN | <ul><li><Anchor target="_blank" href="/marketers/es/docs/skan-aggregated-performance-report-api">Reporte de rendimiento de SKAN</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/skan-aggregated-postback-arrival-date-api">Reporte agregado de postbacks de SKAN</Anchor></li></ul> | -- |
 
 
-### Considerations
+### Consideraciones
 
-* **Advertiser perspective**
-  * Advertisers can grant the API partner permissions as listed in the preceding table.
-* **Partner perspective**
-  * Extract data by API. **Note**: Security is implemented via an authentication <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">token</Anchor> available in the AppsFlyer dashboard. The same token is valid for all apps and advertisers.
-  * Get data via Data Locker
-  * Advertisers can revoke permissions to access their app data. This won't impact your partner credentials.
+* **Perspectiva del anunciante**
+  * Los anunciantes pueden conceder al partner de API los permisos indicados en la tabla anterior.
+* **Perspectiva del partner**
+  * Extrae datos a través de la API. **Nota**: la seguridad se implementa mediante un token de autenticación <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">token</Anchor> disponible en el dashboard de AppsFlyer. El mismo token es válido para todas las aplicaciones y todos los anunciantes.
+  * Obtén datos a través de Data Locker
+  * Los anunciantes pueden revocar los permisos de acceso a los datos de su aplicación. Esto no afectará a tus credenciales de partner.
 
-<Accordion title="Granting access to the partner">
+<Accordion title="Conceder acceso al partner">
 
 > 🚧 **Important**
 >
-> **warning**
+> **advertencia**
 >
-> * The permissions type lets the partner access data, including traffic brought by other partners and organic data.
-> * Don't share your token with partners.
+> * El tipo de permiso permite al partner acceder a los datos, incluido el tráfico aportado por otros partners y datos orgánicos.
+> * No compartas tu token con partners.
 
-**To grant API access to the partner:**
+**Para conceder acceso a la API al partner:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners**.
-2. Search for the partner and select it.
-3. Click **Set up integration**. You're directed to the integration setup page.
-4. From the **API access** tab, turn on one or more permissions. Select from:
-   * **Aggregate analytics reporting**
-   * **SKAdNetwork reporting** (for iOS apps, not relevant for Data Locker)
-5. Click **Save API access**.
-6. Notify the partner that you have enabled the necessary API access.
+1. En AppsFlyer, en el menú lateral, selecciona **Collaborate** > **Integrated partners**.
+2. Busque al socio y selecciónelo.
+3. Haz clic en **Set up integration**. Se te dirigirá a la página de configuración de la integración.
+4. En la pestaña **Acceso a la API**, activa uno o varios permisos. Selecciona una opción de:
+   * **Reportes analíticos agregados**
+   * **Reportes de SKAdNetwork** (para aplicaciones iOS, no relevante para Data Locker)
+5. Haz clic en **Guardar acceso a la API**.
+6. Notifica al partner que has habilitado el acceso a la API necesario.
 
 </Accordion>
 
-<div data-zendesk-anchors="api-access-permissions=api-token-permissions h_01HGG3N6KVF9MCQRW8594YG0HV=api-token-permissions h_01HT2J7ZFVDA812R35948XXEM1=considerations h_01KZXND2TWVKK51RH3JWNMFENK=considerations" />
+<div data-zendesk-anchors="api-access-permissions=permisos-del-token-de-api h_01HGG3N6KVF9MCQRW8594YG0HV=permisos-del-token-de-api considerations=consideraciones h_01HT2J7ZFVDA812R35948XXEM1=consideraciones h_01KZXND2TWVKK51RH3JWNMFENK=consideraciones" />

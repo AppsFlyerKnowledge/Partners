@@ -1,5 +1,5 @@
 ---
-title: venedash integration with AppsFlyer
+title: integración de venedash con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -16,46 +16,45 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2020-04-24T21:20:47Z'
-  edited_at: '2026-09-09T13:56:49Z'
+  edited_at: '2026-09-11T00:38:21Z'
   id: 360007705617
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360007705617-venedash-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/360007705617
 ---
-> **At a glance:** Send attribution data from AppsFlyer to venedash. AppsFlyer can send venedash both install and in-app event data.
+> **De un vistazo:** Envía datos de atribución desde AppsFlyer a venedash. AppsFlyer puede enviar a venedash datos de instalación y de eventos in-app.
 
-## venedash integration setup
+## configuración de la integración de venedash
 
-* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
+* Si tienes una integración con AppsFlyer, ponte en contacto con nosotros utilizando el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
+* Si no tienes una integración con AppsFlyer, completa la solicitud de registro de anuncio Partners <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">aquí</Anchor>.
 
-**To enable the integration with AppsFlyer:**
+**Para habilitar la integración con AppsFlyer:**
 
-1. In **AppsFlyer**, go to **Collaborate** > **Partner Integrations > Active Integrations** and select Venedash from the partner list.
-2. In the **Integration** tab, enable **Activate partner**.
-3. Go to the **Attribution Link** tab and generate an attribution link with the following mandatory parameters:
+1. En **AppsFlyer**, ve a **Collaborate** > **Integraciones de Partners > Integraciones activas** y selecciona Venedash en la lista de partners.
+2. En la pestaña **Integración**, habilita **Activate partner**.
+3. Ve a la pestaña **Enlace de atribución** y genera un enlace de atribución con los siguientes parámetros obligatorios:
 
    
 
-| AppsFlyer parameter | venedash parameter | Description |
+| Parámetro de AppsFlyer | parámetro de Venedash | Description |
 | --- | --- | --- |
-| &clickid= | `{#ydrid#}` | Request ID of each user session |
-| &af\_siteid= | `{#ydr_pid#}` | ID of the affiliate who promotes the offer |
-| &advertising\_id | `{#android_adv#}` | Android device ID |
-| &idfa= | `{#iosidfa#}` | ​iOS device ID |
+| &clickid= | `{#ydrid#}` | ID de solicitud de cada sesión de usuario |
+| &af\_siteid= | `{#ydr_pid#}` | ID del afiliado que promociona la oferta |
+| &advertising\_id | `{#android_adv#}` | ID de dispositivo de Android |
+| &idfa= | `{#iosidfa#}` | ​ID del dispositivo iOS |
 
-   Note that the pid parameter is filled by the Appsflyer team.  
-   Example:
+   Ten en cuenta que el parámetro pid lo completa el equipo de AppsFlyer.  
+   Ejemplo:
 
    ```http
    https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#ydrid#&af_siteid=#ydr_pid#&advertising_id=advertising_id&idfa=#iosidfa#">https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#ydrid#&af_siteid=#ydr_pid#&advertising_id=advertising_id&idfa=#iosidfa#
    ```
 
-   Learn more about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution link parameters</Anchor>.
-4. In Venedash, create an offer and paste the AppsFlyer attribution link in the Destination URL field.
+   <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más</Anchor> sobre los parámetros del enlace de atribución.
+4. En Venedash, crea una oferta y pega el enlace de atribución de AppsFlyer en el campo URL de destino.
 
-   ![venedash-destination_url-en_us.png](https://files.readme.io/2a284eab8d25f57f1bfa2981e2d86bf16bce16b64b61858fdb819d5ac14eac20-360016242798.png)
+   ![venedash-destination_url-es_es.png](https://files.readme.io/2a284eab8d25f57f1bfa2981e2d86bf16bce16b64b61858fdb819d5ac14eac20-360016242798.png)
 
-<div data-zendesk-anchors="h_01HKW87R2DGCXHZSVSV9D9203Z=venedash-integration-setup" />
+<div data-zendesk-anchors="venedash-integration-setup=configuraci%C3%B3n-de-la-integraci%C3%B3n-de-venedash h_01HKW87R2DGCXHZSVSV9D9203Z=configuraci%C3%B3n-de-la-integraci%C3%B3n-de-venedash" />

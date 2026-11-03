@@ -1,5 +1,5 @@
 ---
-title: Offerslook integration with AppsFlyer for ad networks
+title: Integración de Offerslook con AppsFlyer para ad networks
 metadata:
   keywords:
     - Offerslook
@@ -17,43 +17,42 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2016-05-31T08:47:36Z'
-  edited_at: '2024-12-23T15:19:45Z'
+  edited_at: '2026-08-12T12:30:32Z'
   id: 209074606
-  locale: en-us
+  locale: es
   section: Platforms for ad networks
   section_id: 6551055575185
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/209074606-Offerslook-integration-with-AppsFlyer-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/209074606
 ---
-> **At a glance:** Learn how ad networks that use Offerslook can integrate with AppsFlyer and receive install attribution data.
+> **De un vistazo:** Descubre cómo las ad networks que usan Offerslook pueden integrarse con AppsFlyer y recibir datos de atribución de instalaciones.
 
-To initiate integration, send to AppsFlyer:
+Para iniciar la integración, envía a AppsFlyer:
 
-1. Your Attribution Link
+1. Tu enlace de atribución
 
    ```http
    https://networkname.offerstrack.net/index.php?offer_id={offer_id}&aff_id={aff_id}
    ```
-2. Your Postback (for installs)  
+2. Tu postback (para instalaciones)  
 
    ```http
    https://networkname.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}
    ```
 
-## Creating your Attribution Link
+## Cómo crear tu enlace de atribución
 
-The attribution link consists of the below AppsFlyer base attribution link and additional macros added by the ad-network.
+El enlace de atribución consta del enlace de atribución base de AppsFlyer que aparece a continuación y de macros adicionales añadidas por la ad network.
 
-See below AppsFlyer’s base attribution link with a detailed explanation per macro:
+A continuación puedes ver el enlace de atribución base de AppsFlyer con una explicación detallada de cada macro:
 
-| AppsFlyer Base URL | Description | Offerslook |
+| URL base de AppsFlyer | Nota | Offerslook |
 | --- | --- | --- |
-| http://app.appsflyer.com | AppsFlyer end point |  |
-| app\_id | Application unique ID – dynamic value changed per app promoted |  |
-| pid= | Media source name concatenated with \_int to identify integrated networks |  |
-| c= | Campaign name | `{offer_id}` |
+| http://app.appsflyer.com | Endpoint de AppsFlyer |  |
+| id\_aplicación | ID único de la aplicación: valor dinámico que cambia según la aplicación promocionada |  |
+| pid= | Nombre de la fuente de medios concatenado con \_int para identificar redes integradas |  |
+| c= | Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. | `{offer_id}` |
 
-See below for an example of an attribution Link once you have added additional Offerslook macros:
+A continuación puedes ver un ejemplo de un enlace de atribución una vez que hayas añadido macros adicionales de Offerslook:
 
 ```http
   https://app.appsflyer.com/com.
@@ -67,75 +66,75 @@ See below for an example of an attribution Link once you have added additional O
   &idfa={idfa}
 ```
 
-For a complete list of AppsFlyer parameters, click <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">here</Anchor>.
+Para obtener una lista completa de los parámetros de AppsFlyer, haz clic <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">aquí</Anchor>.
 
-Available Macros on AppsFlyer Attribution Links
+Macros disponibles en los enlaces de atribución de AppsFlyer
 
-The following macros are available to use within the generated link:
+Las siguientes macros están disponibles para usarlas en el enlace generado:
 
-| **Macro Name** | **Description** | **Offerslook** |
+| **Nombre de la macro** | **Nota** | **Offerslook** |
 | --- | --- | --- |
-| pid | Media source name - provided by AppsFlyer and should not be changed |  |
-| c | Campaign name |  |
-| clickid | The Ad network unique click identifier | `{click_id}` |
-| af\_siteid | Ad network publisher ID | `{aff_id}` |
+| PID | Nombre de la fuente de medios: lo proporciona AppsFlyer y no debe cambiarse |  |
+| C | Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. |  |
+| clickid | El identificador de clics exclusivo de la red de publicidad | `{click_id}` |
+| af\_siteid | ID de publisher de Ad network | `{aff_id}` |
 
-#### New Macros
+#### Nuevas macros
 
-The new set of macros adds a number of additional parameters in a clear, standardized, and structured manner. We strongly recommend using these macros before reverting to the af\_sub1-5 macros.
+El nuevo conjunto de macros añade una serie de parámetros adicionales de forma clara, estandarizada y estructurada. Recomendamos encarecidamente usar estas macros antes de volver a las macros af\_sub1-5.
 
-| **Macro Name** | **Description** | **Offerslook** |
+| **Nombre de la macro** | **Nota** | **Offerslook** |
 | --- | --- | --- |
-| af\_c\_id | Campaign ID - provided by the advertiser | `{adv_sub1}<br /><br />{adv_sub2}<br /><br />{adv_sub3}` |
-| af\_adset | Adset name - provided by the advertiser. Adset is an intermediate level in the hierarchy between **Campaign** and **Ad**. |  |
-| af\_adset\_id | Adset ID |  |
-| af\_ad | Ad name |  |
-| af\_ad\_id | Ad ID |  |
-| af\_ad\_type | Ad type - use anything that "describes" the ad format (examples: video or banner, medium size or big size) |  |
-| af\_channel | The channel through which the ads are distributed (for example: YouTube vs Google Search) |  |
-| af\_keywords | Keywords list for text-targeted campaigns |  |
-| af\_cost\_model | Cost model - CPI is currently supported and the default model. CPC and CPA values are also valid. | `{pricing_type}` |
-| af\_cost\_currency | Currency code (example: USD) | `{currency}` |
-| af\_cost\_value | Cost value | `{revenue}` |
+| af\_c\_id | ID de campaña: proporcionado por el anunciante | `{adv_sub1}<br /><br />{adv_sub2}<br /><br />{adv_sub3}` |
+| af\_conjunto de anuncios | Nombre del conjunto de anuncios: proporcionado por el anunciante. El conjunto de anuncios es un nivel intermedio en la jerarquía entre **Campaña** y **Anuncio**. |  |
+| af\_adset\_id | ID del adset |  |
+| af\_anuncio | Nota |  |
+| id\_del\_anuncio\_af | Retargeting: Primer inicio después del re-engagement o la reatribución. |  |
+| af\_ad\_type | Tipo de anuncio: usa cualquier valor que «describa» el formato del anuncio (por ejemplo: vídeo o banner, tamaño mediano o grande) |  |
+| af\_canal | El canal a través del que se distribuyen los anuncios (por ejemplo: YouTube frente a Google Search) |  |
+| af\_palabras\_clave | Lista de palabras clave para campañas orientadas a texto |  |
+| af\_modelo\_de\_coste | Modelo de costo: actualmente se admite CPI y es el modelo predeterminado. Los valores CPC y CPA también son válidos. | `{pricing_type}` |
+| af\_cost\_currency | Código de moneda (ejemplo: USD) | `{currency}` |
+| af\_valor\_de\_coste | Valor del coste | `{revenue}` |
 
-**Android Specific Macros**
+**Macros específicas de Android**
 
-| **Macro Name** | **Description** | **Offerslook** |
+| **Nombre de la macro** | **Nota** | **Offerslook** |
 | --- | --- | --- |
-| android\_id | Device Android\_id - Requires ad network support | `{android_id}` |
-| sha1\_android\_id | Device Android\_id hashed with SHA1 - Requires ad network support |  |
-| advertising\_id | Google Advertising ID - Requires ad network support | `{ga_id}` |
-| sha1\_advertising\_id | Google Advertising ID hashed with SHA1 - Requires ad network support |  |
-| af\_r | For out of store only - Target redirect URL |  |
-| sha1\_el | Used for desktop to mobile attribution - email hashed with SHA1, requires ad network support |  |
+| android\_id | Dispositivo Android\_id: requiere soporte de ad network | `{android_id}` |
+| sha1\_android\_id | Dispositivo Android\_id encriptado con SHA1: requiere soporte de ad network |  |
+| advertising\_id | ID de publicidad de Google: requiere soporte de ad network | `{ga_id}` |
+| sha1\_advertising\_id | ID de publicidad de Google encriptado con SHA1: requiere soporte de ad network |  |
+| af\_r | Solo para fuera de la tienda: URL de redirección de destino |  |
+| sha1\_el | Se usa para la atribución de escritorio a móvil: correo electrónico con hashing SHA1; requiere soporte de ad network |  |
 
-**iOS Specific Macros**
+**Macros específicas de iOS**
 
-| **Macro Name** | **Description** | **Offerslook** |
+| **Nombre de la macro** | **Nota** | **Offerslook** |
 | --- | --- | --- |
-| idfa | Apple Advertiser ID - should be provided using upper case format, requires ad network support | `{idfa}` |
-| sha1\_idfa | Apple Advertiser ID hashed with SHA1 - Requires ad network support |  |
-| mac | Device mac address - Requires ad network support | `{mac}` |
-| sha1\_mac | Device mac address hashed with SHA1 - Requires ad network support |  |
+| idfa | ID de anunciante de Apple: debe proporcionarse en mayúsculas; requiere soporte de ad network | `{idfa}` |
+| sha1\_idfa | ID de anunciante de Apple con hash SHA1: requiere soporte de ad network |  |
+| mac | Dirección mac del dispositivo - Requiere soporte de ad network | `{mac}` |
+| sha1\_mac | Dirección MAC del dispositivo con hash SHA1: requiere soporte de ad network |  |
 
-## Creating your Install Postbacks
+## Crear tus postbacks de instalación
 
-Following is a step-by-step explanation of how to create your install postbacks using the Offerslook platform:
+A continuación, encontrarás una explicación paso a paso de cómo crear tus postbacks de instalación con la plataforma Offerslook:
 
-1. Create or select an offer that uses the Postback w/Transaction ID protocol
-2. In the details section of the offer page, click the link labeled "tracking"
-3. Copy the postback URL appearing in the field labeled postback URL
-4. Remove the offer\_id parameter and value from the postback url to change the postback from a specific postback into a global postback
+1. Crea o selecciona una oferta que use el protocolo Postback con ID de transacción
+2. En la sección de detalles de la página de la oferta, haz clic en el enlace con la etiqueta «tracking»
+3. Copia la URL del postback que aparece en el campo con la etiqueta postback URL
+4. Elimina el parámetro offer\_id y su valor de la URL del postback para convertir un postback específico en un postback global
 
-Global Install Postback:
+Postback de instalación global:
 
 `http://{networkname}.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}`
 
-`networkname` is the domain name provided by Offerslook.
+`networkname` es el nombre de dominio que proporciona Offerslook.
 
-**Finalizing your Registration**
+**Finalizar tu registro**
 
-* If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
-* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
+* Si tienes una integración con AppsFlyer, ponte en contacto con nosotros usando el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
+* Si no tienes una integración con AppsFlyer, completa la solicitud de registro de ad Partners <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">aquí</Anchor>.
 
-<div data-zendesk-anchors="01JFT1JFND230EFDBRTWNKXKSH=creating-your-attribution-link 01JFT1JFP8T3HF5GQBR19YHQW5=new-macros 01JFT1JFP9BMZM99TKDR58FNZP=creating-your-install-postbacks" />
+<div data-zendesk-anchors="creating-your-attribution-link=c%C3%B3mo-crear-tu-enlace-de-atribuci%C3%B3n 01JFT1JFND230EFDBRTWNKXKSH=c%C3%B3mo-crear-tu-enlace-de-atribuci%C3%B3n new-macros=nuevas-macros 01JFT1JFP8T3HF5GQBR19YHQW5=nuevas-macros creating-your-install-postbacks=crear-tus-postbacks-de-instalaci%C3%B3n 01JFT1JFP9BMZM99TKDR58FNZP=crear-tus-postbacks-de-instalaci%C3%B3n" />

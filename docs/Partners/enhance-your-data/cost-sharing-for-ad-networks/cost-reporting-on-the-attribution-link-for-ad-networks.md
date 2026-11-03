@@ -1,5 +1,5 @@
 ---
-title: Cost reporting on the attribution link for ad networks
+title: Reportes de costo sobre el enlace de atribución para ad networks
 metadata:
   keywords:
     - cost sharing
@@ -18,76 +18,75 @@ x-zendesk:
     - ROI360
     - Ad Networks
   created_at: '2017-02-12T14:54:50Z'
-  edited_at: '2026-06-22T10:03:59Z'
+  edited_at: '2026-08-12T12:27:56Z'
   id: 115000748446
-  locale: en-us
+  locale: es
   section: Cost sharing for ad networks
   section_id: 6551141756177
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115000748446-Cost-reporting-on-the-attribution-link-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/115000748446
 ---
-> **At a glance:** Ad networks can report cost every time an ad is clicked.
+> **En resumen:** Las ad networks pueden reportar el costo cada vez que se hace clic en un anuncio.
 
-Advertisers use the AppsFlyer dashboard as their source of truth for all budget allocation decisions, making it easy to see where to invest. For networks wanting to be visible in that process, sharing cost data with AppsFlyer is an absolute must.
+Los anunciantes utilizan el dashboard de AppsFlyer como fuente fiable para todas las decisiones de asignación presupuestaria, lo que facilita ver dónde invertir. Para las redes que desean ser visibles en ese proceso, compartir los datos de costos con AppsFlyer es una necesidad absoluta.
 
-Advertisers often check their top-performing partners using sort by ROI. Those that have no cost data always appear at the bottom of the list.
+Los anunciantes suelen comprobar a sus partners con mejor rendimiento ordenándolos por el ROI. Los que no tienen datos de costos siempre aparecen al final de la lista.
 
 ![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
 
-## How to share cost
+## Cómo compartir los costos
 
-There are two ways to pass user-level cost data through AppsFlyer attribution URLs: unencrypted and encrypted. Encrypted cost pass allows partners to send cost value in the click attribution URL.
+Hay dos maneras de pasar los datos de costos a nivel de usuario a través de las URL de atribución de AppsFlyer: cifrados y sin cifrar. La transmisión de costos cifrada permite a los partners enviar el valor del costo en la URL de atribución del clic.
 
-**Unencrypted cost** can be passed by hardcoding the following 3 parameters to the click URL:
+**El costo sin cifrar** se puede transferir codificando los siguientes 3 parámetros en la URL del clic:
 
-* af\_cost\_model=CPI (currently CPI is the only model viewable in AppsFlyer reporting)
-* af\_cost\_value=`{insert CPI value, for example: 1.00}`  
-  **Note**: Values less than 1 require a 0 before the decimal, for example: 0.05.
-* af\_cost\_currency=`{insert 3 letter currency code. If blank we will assume USD}`
+* af\_cost\_model=CPI (actualmente, el CPI es el único modelo que se puede ver en los reportes de AppsFlyer)
+* af\_cost\_ value=`{inserta el valor del CPI, por ejemplo: 1.00}`  
+  **Nota**: Los valores inferiores a 1 requieren un 0 antes del decimal, por ejemplo: 0.05.
+* af\_cost\_currency=`{inserta un código de divisa de 3 letras. Si está en blanco, asumiremos que es USD}`
 
-*NOTE*: While any cost model can be sent via the attribution link, only CPI is currently supported for presenting cost data on the dashboard. Other cost models are available in the raw reports.
+*NOTA*: Si bien cualquier modelo de costo se puede enviar a través del enlace de atribución, actualmente solo se admite el CPI para presentar los datos de costos en el panel de control. Otros modelos de costos están disponibles en los reportes de raw data.
 
-An example of an attribution Link with an unencrypted cost pass:
+Un ejemplo de enlace de atribución con transmisión de costo sin cifrar:
 
 ```http
 https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD- 
 A12345678910&af_siteid=12345&af_cost_model=CPI&af_cost_value=1.00&af_cost_currency=USD
 ```
 
-**Encrypted cost**
+**Costo cifrado**
 
-If you prefer not to reveal the actual cost value in the attribution URL, you can encrypt the cost parameters. The encrypted cost can be passed by following an AES-based encryption method. In addition to the cost model, value, and currency, partners will need a network-specific key to generate the encrypted cost value.
+Si prefieres no revelar el valor de costo real en la URL de atribución, puedes cifrar los parámetros de costo. El costo cifrado se puede transmitir siguiendo un método de cifrado basado en AES. Además del modelo de costo, el valor y la divisa, los partners necesitarán una clave específica de la red para generar el valor de costo cifrado.
 
-Steps for encryption:
+Pasos para el cifrado:
 
-1. Request your **network encryption key** from your PSE team using the <Anchor target="_blank" href="https://files.readme.io/fdc0cc0d6ff35e06535dc5cc94b4aed0901a94031a4306fa29f744d4521086d7-34951742603025.gif">partner assistant widget</Anchor>.
-2. Use the AES encryption method (shown below) to encrypt the required 4 values (**network key, cost value, cost model, and cost currency**)
-3. Append the generated encryption value to your AppsFlyer attribution URL in the **af\_enc\_data=** parameter.
+1. Solicita tu **clave de red cifrado** a tu equipo de PSE mediante el <Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/36156242411537">widget partner assistant</Anchor>.
+2. Utiliza el método de cifrado AES (que se muestra a continuación) para cifrar los 4 valores necesarios (**clave de red, valor de costo, modelo de costo y divisa de costo**).
+3. Agrega el valor de cifrado generado a tu URL de atribución de AppsFlyer, en el parámetro **af\_enc\_data=**.
 
-Sample attribution link with encrypted value pass:
+Ejemplo de enlace de atribución con transmisión de valor cifrado:
 
 https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af_siteid=12345 **&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
 
-**Note:** Only ad networks that perform the cost encryption integration with AppsFlyer can actually send encrypted cost data with their clients' attribution links.
+**Nota:** Solo las ad networks que realizan la integración del cifrado de costos con AppsFlyer pueden enviar datos de costos cifrados con los enlaces de atribución de sus clientes.
 
-## AES encryption process
+## Proceso de cifrado AES
 
-To accomplish the encryption, partners must use the <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">**AES algorithm**</Anchor>, with an <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29">**ECB block mode**</Anchor>, using <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS7">**PKCS5 padding**</Anchor>. Then they must <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Base64">**Base-64 encode**</Anchor> the encrypted data, and finally, <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Percent-encoding">**URL-encode**</Anchor> the result.
+Para lograr el cifrado, los partners deben usar el <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">**algoritmo AES**</Anchor>, con un <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29">**modo de bloqueo ECB**</Anchor>, utilizando el relleno <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS7">**PKCS5**</Anchor>.  Luego, deben <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Base64">**codificar en Base-64**</Anchor> los datos cifrados y, por último, <Anchor target="_blank" href="https://en.wikipedia.org/wiki/Percent-encoding">**codificar en URL**</Anchor> el resultado.
 
-Networks can use any tech stack to accomplish this. See examples below for PHP, Java, and Python:
+Las redes pueden usar cualquier pila tecnológica para lograr esto. Consulta los ejemplos siguientes para PHP, Java y Python:
 
 PHP
 
 ```php
 <?php
 $f = fopen( 'php://stdin', 'r' );
-echo "Enter private key: ";
+echo "Introduce la clave privada: ";
 $private_key = trim(fgets($f));
-echo "Enter cost model: ";
+echo "Introduce el modelo de Costo: ";
 $cost_model = trim(fgets($f));
-echo "Enter cost value : ";
+echo "Introduce el valor del Costo : ";
 $cost_value = trim(fgets($f));
-echo "Enter cost currency : ";
+echo "Introduce la moneda del Costo : ";
 $cost_currency = trim(fgets($f));
 $params = array(
 	'af_cost_model' => $cost_model,
@@ -102,10 +101,10 @@ $enc_raw = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $private_key, $padded_query_str, 
 $enc_b64 = base64_encode($enc_raw);
 $enc_url_encoded = urlencode($enc_b64);
 echo "\n\n\r";
-echo "Private key: " . $private_key . "\r\n";
-echo "Query string: " . $query_str . "\r\n";
+echo "Clave privada: " . $private_key . "\r\n";
+echo "Cadena de consulta: " . $query_str . "\r\n";
 echo "\n\r";
-echo "Encrypted query string: " . $enc_url_encoded . "\r\n";
+echo "Cadena de consulta cifrada: " . $enc_url_encoded . "\r\n";
 fclose( $f );
 ?>
 ```
@@ -114,7 +113,7 @@ Java
 
 ```java
 private static final String CIPHER_ALGORITHM = "AES/ECB/PKCS5Padding";
-private static final String encryptionKey = "XXXXXXXXXXXXXXXX"; // secret key provided by appsflyer
+private static final String encryptionKey = "XXXXXXXXXXXXXXXX"; // clave secreta proporcionada por AppsFlyer
 private static final SecretKeySpec key = new SecretKeySpec(encryptionKey.getBytes(), "AES");
 public static void main(String[] args) throws Exception {
   String queryParams = "bid_value=0.01&bid_type=cpc";
@@ -137,7 +136,7 @@ Python
 import sys
 import base64
 import urllib
-from Crypto.Cipher import AES
+from Crypto. Cipher import AES
 def read_number(t):
   try:
     start = input("enter " + t + ": ")
@@ -147,7 +146,7 @@ def read_number(t):
     print("\n\r" + t + " must be a number")
     exit()
 def encrypt (secret_key, msg):
-  cipher = AES.new(secret_key, AES.MODE_ECB)
+  cipher = AES.new(secret_key, AES. MODE_ECB)
   ciphertext = cipher.encrypt(msg)
   return ciphertext
 def padding (data):
@@ -176,10 +175,10 @@ print(msg)
 print(urllib.quote_plus(base64.b64encode(enc)))
 ```
 
-## Which networks support cost reporting?
+## ¿Qué redes admiten los reportes de costos?
 
-To see a full list of the networks that support cost reporting on the attribution link, click <Anchor target="_blank" href="/marketers/docs/view-aggregated-cost-data-for-attribution-links#ad-networks-providing-cost-by-click-data">here</Anchor>.
+Para ver una lista completa de las redes que admiten los reportes de costos en el enlace de atribución, haz clic <Anchor target="_blank" href="/marketers/es/docs/view-aggregated-cost-data-for-attribution-links#ad-networks-providing-cost-by-click-data">aquí</Anchor>.
 
-To see a full list of the networks that support cost reporting via API, click <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">here</Anchor>.
+Para ver una lista completa de las redes que admiten los reportes de costos, haz clic <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">aquí</Anchor>.
 
-<div data-zendesk-anchors="h_01J292SNHC1B88FBJJW1PY5YT2=how-to-share-cost h_01J292SNHCFG8QP8KK058EVEVQ=aes-encryption-process h_01J292SNHCVFR5GW4ECBYM63S6=which-networks-support-cost-reporting" />
+<div data-zendesk-anchors="how-to-share-cost=c%C3%B3mo-compartir-los-costos h_01J292SNHC1B88FBJJW1PY5YT2=c%C3%B3mo-compartir-los-costos aes-encryption-process=proceso-de-cifrado-aes h_01J292SNHCFG8QP8KK058EVEVQ=proceso-de-cifrado-aes which-networks-support-cost-reporting=qu%C3%A9-redes-admiten-los-reportes-de-costos h_01J292SNHCVFR5GW4ECBYM63S6=qu%C3%A9-redes-admiten-los-reportes-de-costos" />

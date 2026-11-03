@@ -13,196 +13,195 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2020-12-16T11:39:36Z'
-  edited_at: '2023-12-28T12:30:40Z'
+  edited_at: '2026-08-12T12:28:57Z'
   id: 360016588278
-  locale: en-us
+  locale: es
   section: Ad network integration testing
   section_id: 6551070667537
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360016588278-iOS-integration-testing-for-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/360016588278
 ---
-> **At a glance:** Test your AppsFlyer iOS integration using the AppsFlyer Partner Integrations app to trigger regular and Advanced Privacy postbacks.
+> **De un vistazo:** Prueba la integración de AppsFlyer para iOS con la aplicación AppsFlyer Partner Integrations para activar postbacks normales y de Advanced Privacy.
 
 ## iOS integration testing
 
-Testing consists of the following elements:
+Las pruebas constan de los siguientes elementos:
 
-* Use the iOS version of the AppsFlyer Partner Integrations app to generate test install and purchase in-app events. These tests, in turn, trigger postbacks sent to your endpoints. You also have the option to test login and registration in-app events.
-* On receipt of the postbacks, verify that you are able to ingest them.
+* Usa la versión para iOS de la aplicación AppsFlyer Partner Integrations para generar eventos in-app de instalación y compra de prueba. Estas pruebas, a su vez, activan postbacks que se envían a tus endpoints. También tienes la opción de probar eventos in-app de login y registro.
+* Cuando recibas los postbacks, verifica que puedas ingerirlos.
 
-### Testing scope
+### Alcance de las pruebas
 
-Advertisers control the data shared with ad networks via the Advanced Privacy setting. This setting, in conjunction with the app user <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat">ATT</Anchor> setting, impacts the postback type and the data shared with ad networks, as described in the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy postback guide</Anchor>. The following table lists test scenarios according to the setting combinations available.
+Los anunciantes controlan los datos que se comparten con ad network mediante la configuración de Advanced Privacy. Esta configuración, junto con la configuración de <Anchor target="_blank" href="/marketers/es/docs/att-implications-ios-14-and-deprecation-of-lat">ATT</Anchor> del usuario de la aplicación, afecta al tipo de postback y a los datos compartidos con ad network, tal como se describe en la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">guía de postback de Advanced Privacy</Anchor>. La siguiente tabla enumera los escenarios de prueba según las combinaciones de configuración disponibles.
 
-For each scenario, you can test installs and in-app events. In regards to in-app events, you can use <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">in-app event mapping</Anchor> to map advertiser events to your events.
+Para cada escenario, puedes probar instalaciones y eventos in-app. En cuanto a los eventos in-app, puedes usar el <Anchor target="_blank" href="/partners/es/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">mapeo de eventos in-app</Anchor> para asignar los eventos del anunciante a tus eventos.
 
-#### Test scenario combinations
+#### Combinaciones de escenarios de prueba
 
-| Scenario | Advanced Privacy setting | ATT setting in the app | Postback type sent |
+| Situación | Configuración de privacidad avanzada | Configuración de ATT en la aplicación | Tipo de postback enviado |
 | --- | --- | --- | --- |
-| A | Off | Allow | Regular |
-| B | On | Ask app not to track | Advanced Privacy |
+| A | Desactivado | Permitir | Regular |
+| B | en | Pedir a la aplicación que no rastree | Privacidad Avanzada |
 
-## Testing
+## Pruebas
 
-Complete the prerequisites and then perform the test procedures in the sections that follow. The test sections each contain a table you can use to record your test results.
+Completa los requisitos previos y luego realiza los procedimientos de prueba de las secciones siguientes. Cada una de las secciones de prueba contiene una tabla que puedes usar para registrar los resultados de las pruebas.
 
 <div id="prerequisites" />
 
-<Accordion title="Prerequisites">
+<Accordion title="Prerrequisitos">
 
-Complete the prerequisites before beginning to execute the test procedure.
+Completa los requisitos previos antes de empezar a ejecutar el procedimiento de prueba.
 
-| Prerequisites |
+| Prerrequisitos |
 | --- |
-| <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing">Complete standard integration with AppsFlyer.</Anchor> If necessary, contact AppsFlyer using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>. |
-| <Anchor target="_blank" href="/partners/docs/self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks">Complete Advanced Privacy integration with AppsFlyer.</Anchor> If necessary, contact AppsFlyer using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>. |
-| <Anchor target="_blank" href="/partners/docs/turn-on-test-app-integration-for-ad-networks">Integrate the iOS test app into your account.</Anchor> |
-| [Verify that the test app is integrated into your account](/docs/ios-integration-testing-for-ad-networks#test-app-integrated-in-your-account) |
-| <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">Map in-app events to your event names</Anchor>. Event names to be mapped: `purchase`, `login`, `registration` |
-| [Prepare attribution link](/docs/ios-integration-testing-for-ad-networks#attribution-link) |
-| Test using a device running iOS 14.5+ |
+| <Anchor target="_blank" href="/partners/es/docs/getting-started-onboarding-guide-for-ad-networks#parte-1-integración-y-pruebas">Completa la integración estándar con AppsFlyer.</Anchor> Si es necesario, ponte en contacto con AppsFlyer mediante el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente de partners</Anchor>. |
+| <Anchor target="_blank" href="/partners/es/docs/self-serve-integration-management-for-ad-networks#postbacks-de-privacidad-avanzada-y-skan">Completa la integración de privacidad avanzada con AppsFlyer.</Anchor> Si es necesario, ponte en contacto con AppsFlyer mediante el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente de Partners</Anchor>. |
+| <Anchor target="_blank" href="/partners/es/docs/turn-on-test-app-integration-for-ad-networks">Integra la aplicación de prueba de iOS en tu cuenta.</Anchor> |
+| [Verifica que la aplicación de prueba esté integrada en tu cuenta](/docs/ios-integration-testing-for-ad-networks#test-app-integrated-in-your-account) |
+| <Anchor target="_blank" href="/partners/es/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">Asigna los eventos in-app a tus nombres de evento</Anchor>. Nombres de eventos que se deben asignar: `purchase`, `login`, `registration` |
+| [Prepara el enlace de atribución](/docs/ios-integration-testing-for-ad-networks#attribution-link) |
+| Haz la prueba con un dispositivo que ejecute iOS 14.5+ |
 
 </Accordion>
 
 <div id="test-advanced-privacy-off" />
 
-<Accordion title="Test—Advanced Privacy off">
+<Accordion title="Prueba: privacidad avanzada desactivada">
 
-**To trigger postbacks:**
+**Para activar los postbacks:**
 
-1. On the AppsFlyer dashboard, set [Enable Advanced Privacy](/docs/ios-integration-testing-for-ad-networks#set-advanced-privacy) to off.
-2. On the device:
-   1. Verify that the test app is not installed. Delete it if necessary.
-   2. In Privacy settings, verify that **Allow Apps to Request to Track** is on.  
+1. En el Dashboard de AppsFlyer, configura [Enable Advanced Privacy](/docs/ios-integration-testing-for-ad-networks#set-advanced-privacy) en desactivado.
+2. En el dispositivo:
+   1. Verifica que la aplicación de prueba no esté instalada. Elimínala si es necesario.
+   2. En los ajustes de privacidad, verifica que **Allow Apps to Request to Track** esté activado.  
 
       <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
-3. Send the attribution link to the test device.
-4. Open the attribution link in the device browser.  
-   You are redirected to the App Store.
-5. Download and open the app.  
-   The ATT consent dialogue displays.
+3. Envía el enlace de atribución al dispositivo de prueba.
+4. Abre el enlace de atribución en el navegador del dispositivo.  
+   Se te redirige a la tienda de aplicaciones.
+5. Descarga y abre la aplicación.  
+   Se muestra el cuadro de diálogo de consentimiento de ATT.
 
    ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
-6. Tap **Allow**.  
-   The **Install Data** page displays.
+6. Toca **Permitir**.  
+   Se muestra la página **Datos de instalación**.
 
    [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
-7. Tap **ATT Status**.  
-   The **Authorized** status displays.
-8. Validate the attribution using the following parameters. If the validation fails, see [Troubleshooting](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
+7. Toca **ATT Status**.  
+   Se muestra el estado **Authorized**.
+8. Valida la atribución con los siguientes parámetros. Si la validación falla, consulta [Solución de problemas](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
 
-   1. `install_time`: near the current time. Time is in UTC.
-   2. `af_status: Non-organic` If this is not the case, the install was not attributed.
-   3. `media_source`: your ad network
-9. Tap **In-App Event Tests.**
+   1. `install_time`: cerca de la hora actual. La hora está en UTC.
+   2. `af_status: Non-organic` Si no es así, la instalación no se atribuyó.
+   3. `media_source`: tu ad network
+9. Toca **In-App Event Tests.**
 
    [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
-10. Tap **Purchase Event.**  
-    The Purchase Event confirmation displays.
-11. Verify that:
-    1. You received install and purchase postbacks.
-    2. The event name is mapped correctly (if you mapped in-app events).
-    3. You are able to ingest the postback.
+10. Toca **Purchase Event.**  
+    Se muestra la confirmación de Purchase Event.
+11. Verifica que:
+    1. Has recibido los postbacks de instalación y compra.
+    2. El nombre del evento está asignado correctamente (si has asignado eventos in-app).
+    3. Puedes procesar el postback.
 
-#### Advanced Privacy off—Test results
+#### Privacidad avanzada desactivada: resultados de la prueba
 
-| Postback | Time you triggered the event | Expected postback type | Actual postback received (pass/fail) | Postback validation (pass/fail) |
+| Postback | Hora a la que activaste el evento | Tipo de postback esperado | Postback real recibido (aprobado/no aprobado) | Validación del postback (aprobado/no aprobado) |
 | --- | --- | --- | --- | --- |
-| Install |  | Regular |  |  |
-| In-app event: Purchase |  | Regular |  |  |
+| Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. |  | Regular |  |  |
+| Evento in-app: Purchase |  | Regular |  |  |
 
 </Accordion>
 
 <div id="test-advanced-privacy-on" />
 
-<Accordion title="Test—Advanced Privacy on">
+<Accordion title="Prueba: Privacidad avanzada activada">
 
-**To trigger postbacks:**
+**Para activar postbacks:**
 
-1. On the AppsFlyer dashboard, set [Enable Advanced Privacy](/docs/ios-integration-testing-for-ad-networks#set-advanced-privacy) to on.
-2. On the device:
-   1. Verify that the test app is not installed. Delete it if necessary.
-   2. In Privacy settings, verify that **Allow Apps to Request to Track** is on.
+1. En el Dashboard de AppsFlyer, configura [Enable Advanced Privacy](/docs/ios-integration-testing-for-ad-networks#set-advanced-privacy) como activado.
+2. En el dispositivo:
+   1. Verifica que la app de prueba no esté instalada. Elimínala si es necesario.
+   2. En los ajustes de privacidad, verifica que **Permitir que las apps soliciten realizar un seguimiento** esté activado.
 
       <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
-3. Send the attribution link to the test device.
-4. Open the attribution link in the device browser.  
-   You are redirected to the App Store.
-5. Download and open the app.  
-   The ATT consent dialogue displays.
+3. Envía el enlace de atribución al dispositivo de prueba.
+4. Abre el enlace de atribución en el navegador del dispositivo.  
+   Se te redirige a la tienda de aplicaciones.
+5. Descarga y abre la aplicación.  
+   Aparece el cuadro de diálogo de consentimiento de ATT.
 
    ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
-6. Tap **Ask App not to Track.** The **Install Data** page displays.
+6. Toca **Pedir a la app que no haga track.** Se muestra la página **datos de instalación**.
 
    [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
-7. Tap **ATT Status**.  
-   The **Denied** status displays.
-8. Validate the attribution using the parameters listed. If validation fails, see [Troubleshooting](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
+7. Toca **ATT Status**.  
+   Se muestra el estado **Denied**.
+8. Valida la atribución mediante los parámetros indicados. Si la validación falla, consulta [Solución de problemas](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
 
-   1. `install_time`: near the current time. Time is in UTC.
-   2. `af_status: Non-organic` If this is not the case, the install was not attributed.
-   3. `media_source`: your ad network
-9. Tap **In-App Event Tests.**
+   1. `install_time`: cerca de la hora actual. La hora está en UTC.
+   2. `af_status: Non-organic` Si no es así, la instalación no se ha atribuido.
+   3. `media_source`: tu Ad network
+9. Toca **Pruebas de eventos in-app.**
 
    [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
-10. Tap **Purchase Event.**
-11. Verify that:
-    1. You received install and purchase postbacks.
-    2. The event name is mapped correctly (if you mapped in-app events).
-    3. You are able to ingest the postback.
+10. Toca **Evento de compra.**
+11. Verifica que:
+    1. Has recibido postbacks de instalación y compra.
+    2. El nombre del evento está asignado correctamente (si has asignado eventos in-app).
+    3. Puedes procesar el postback.
 
-#### Advanced Privacy on—Test results
+#### Privacidad Avanzada activada: resultados de la prueba
 
-| Postback | Time you triggered the event | Expected postback type | Actual postback received (pass/fail) | Postback validation (pass/fail) |
+| Postback | Hora a la que activaste el evento | Tipo de postback esperado | Postback real recibido (correcto/incorrecto) | Validación del postback (correcto/incorrecto) |
 | --- | --- | --- | --- | --- |
-| Install |  | Advanced Privacy |  |  |
-| In-app event: Purchase |  | Advanced Privacy |  |  |
+| Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. |  | Privacidad Avanzada |  |  |
+| Evento in-app: compra |  | Privacidad Avanzada |  |  |
 
 </Accordion>
 
-## Supplementary information and procedures
+## Información y procedimientos complementarios
 
 <div id="about-the-partner-integrations-test-app" />
 
-<Accordion title="About the Partner Integrations test app">
+<Accordion title="Acerca de la aplicación de prueba Partner Integrations">
 
-The Partner Integrations app is available in the App Store. The app sends install and in-app events to the AppsFlyer platform.
+La aplicación Partner Integrations está disponible en la tienda de aplicaciones. La aplicación envía instalaciones y eventos in-app a la plataforma AppsFlyer.
 
-When the app is opened for the first time, the iOS **request to track** dialogue displays, followed by the **Install Data** page displaying the conversion data recorded in the AppsFlyer platform. Test in-app events are triggered in the user interface.
+Cuando se abre la aplicación por primera vez, se muestra el cuadro de diálogo de iOS **request to track** y, a continuación, aparece la página **Install Data**, que muestra los datos de conversión registrados en la plataforma AppsFlyer. Los eventos in-app de prueba se activan en la interfaz de usuario.
 
 [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
 
-The following functions are available:
+Las siguientes funciones están disponibles:
 
-* **In-App Event Tests**Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
-* **ATT Status**Returns the current ATT status reported by iOS as **Authorized** or **Denied**. The ATT status depends on user agreement to track in the ATT consent dialogue and the device **Allow Apps to Request to Track** setting.
+* **Pruebas de eventos in-app**Envía `purchase`, `login` y `registration`, además de eventos in-app. Al asignar los nombres de los eventos in-app de la aplicación a tus nombres de evento, los postbacks se completan con tus nombres de evento.
+* **Estado de ATT**Devuelve el estado actual de ATT que iOS reporta como **Authorized** o **Denied**. El estado de ATT depende del consentimiento del usuario para el track en el cuadro de diálogo de consentimiento de ATT y del ajuste del dispositivo **Allow Apps to Request to Track**.
 
 </Accordion>
 
 <div id="attribution-link" />
 
-<Accordion title="Attribution link">
+<Accordion title="Enlace de atribución">
 
-Prepare an attribution link in the AppsFlyer dashboard, using one of the following methods:
+Prepara un enlace de atribución en el Dashboard de AppsFlyer mediante uno de los siguientes métodos:
 
-* Generate the link in the AppsFlyer dashboard.
-* Edit the example link that follows.
+* Genera el enlace en el Dashboard de AppsFlyer.
+* Edita el enlace de ejemplo que aparece a continuación.
 
-**To generate a link in the dashboard:**
+**Para generar un enlace en el Dashboard:**
 
-1. In AppsFlyer, go to **My Apps**.
-2. Select **id1543229303**.
-3. From the side menu, select **Collaborate** > **Active Integrations** > select your ad network > **Attribution link** tab.
-4. In the Attribution link tab, set the parameters listed. You can add additional parameters if required.
+1. En AppsFlyer, ve a **My Apps**.
+2. Selecciona **id1543229303**.
+3. En el menú lateral, selecciona **Collaborate** > **Active Integrations** > selecciona tu ad network > pestaña **Attribution link**.
+4. En la pestaña Attribution link, configura los parámetros indicados. Puedes añadir parámetros adicionales si es necesario. 
 
-| Parameter | Example value | Remark |
+| Parámetro | Valor de ejemplo | Nota |
 | --- | --- | --- |
-| Campaign | c-test-2020-12-20 | Set a value that is identifiable in your postbacks |
+| Apps asociadas que pertenecen a una plantilla OneLink relacionada para atribución multiplataforma | c-test-2020-12-20 | Establece un valor que puedas identificar en tus postbacks |
 
-5. Copy the resulting link for later use.
+5. Copia el enlace resultante para usarlo más adelante.
 
-**Example attribution link:**
+**Enlace de atribución de ejemplo:**
 
 ```http
 https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
@@ -212,41 +211,41 @@ https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 
 <div id="set-advanced-privacy" />
 
-<Accordion title="Set Advanced Privacy">
+<Accordion title="Configurar privacidad avanzada">
 
 <Image alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
 
-**To change the Enable Advanced Privacy setting:**
+**Para cambiar la configuración de Enable Advanced Privacy:**
 
-1. In AppsFlyer, go to **My Apps**.
-2. Select app id1543229303.
-3. From the side menu, select **Collaborate** > **Active Integrations** > select your ad network > **Integration** tab.
-4. Set **Enable Advanced Privacy** to the appropriate setting for each test scenario.
-5. Click **Save Integration**.
+1. En AppsFlyer, ve a **My Apps**.
+2. Selecciona la aplicación id1543229303.
+3. En el menú lateral, selecciona **Collaborate** > **Active Integrations** > selecciona tu ad network > **Integration** pestaña.
+4. Configura **Enable Advanced Privacy** con la opción adecuada para cada escenario de prueba.
+5. Haz clic en **Guardar integración**.
 
 </Accordion>
 
 <div id="test-app-integrated-in-your-account" />
 
-<Accordion title="Test app integrated in your account">
+<Accordion title="Aplicación de prueba integrada en tu cuenta">
 
-**To verify that the test app is available in your account:**
+**Para verificar que la aplicación de prueba está disponible en tu cuenta:**
 
-1. In AppsFlyer, go to **My Apps**.
-2. Verify that the app **Partner Integrations id1543229303** displays under Available Apps. If this is not the case, contact your Partner Development Manager.
+1. En AppsFlyer, ve a **My Apps**.
+2. Verifica que la aplicación **Partner Integrations id1543229303** aparezca en Available Apps. Si no es el caso, ponte en contacto con tu Partner Development Manager.
 
 </Accordion>
 
 <div id="troubleshooting" />
 
-<Accordion title="Troubleshooting">
+<Accordion title="Solución de problemas">
 
-| Symptom | Cause/corrective action |
+| Síntoma | Causa/acción correctiva |
 | --- | --- |
-| The install time is not the current time | The app wasn't deleted before the install.<br /><br />Delete the app and repeat the procedure. |
-| The media source is not your media source | Verify that you have set the correct **pid** value on the attribution link. Verify that you are using the correct attribution link |
-| af\_status is Organic | Check that the device iOS version is in accordance with that stated in the prerequisites.<br /><br />Check the format of the attribution link, especially the value of **pid**. |
+| La hora de instalación no es la hora actual | La aplicación no se eliminó antes de la instalación.<br /><br />Elimina la aplicación y repite el procedimiento. |
+| La fuente de medios no es tu fuente de medios | Verifica que has establecido el valor correcto de **pid** en el enlace de atribución. Verifica que estás usando el enlace de atribución correcto |
+| af\_status es orgánico | Comprueba que la versión de iOS del dispositivo se ajusta a la indicada en los requisitos previos.<br /><br />Comprueba el formato del enlace de atribución, especialmente el valor de **pid**. |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJR5YDW9ENA1B1AC1DQVX8SF=ios-integration-testing h_01HJR5YDW92MXP9DDBX9C1928V=testing-scope h_01HJR5YDW9Q7B10MXB1V4AKH2D=test-scenario-combinations h_01HJR5YDW9AGY148E1ZD97JFRB=testing h_01HJR5YDW9SGN9KH63CPZ54RM5=prerequisites test%E2%80%94advanced-privacy-off=test-advanced-privacy-off h_01HJR5YDWA20EQT5RE1EJ7QK2X=test-advanced-privacy-off advanced-privacy-off%E2%80%94test-results=advanced-privacy-offtest-results h_01HJR5YDWAEAR22NPXF8ZD5QX6=advanced-privacy-offtest-results test%E2%80%94advanced-privacy-on=test-advanced-privacy-on h_01HJR5YDWAY6B55BFQ1B0WJEHR=test-advanced-privacy-on advanced-privacy-on%E2%80%94test-results=advanced-privacy-ontest-results h_01HJR5YDWAK3DZ1Q0W3TSR7ZKZ=advanced-privacy-ontest-results h_01HJR5YDWA74Q46F6XKY5J375C=supplementary-information-and-procedures h_01HJR5YDWASJWC1NGNABWR1VW5=about-the-partner-integrations-test-app h_01HJR5YDWA0WXWN5B5VNPK40FY=attribution-link h_01HJR5YDWA73BQB478D6N0R8GP=set-advanced-privacy h_01HJR5YDWAGZ5XMQJG1KX3J6CP=test-app-integrated-in-your-account h_01HJR5YDWAXRD7DVHTZPJCFM56=troubleshooting" />
+<div data-zendesk-anchors="h_01HJR5YDW9ENA1B1AC1DQVX8SF=ios-integration-testing testing-scope=alcance-de-las-pruebas h_01HJR5YDW92MXP9DDBX9C1928V=alcance-de-las-pruebas test-scenario-combinations=combinaciones-de-escenarios-de-prueba h_01HJR5YDW9Q7B10MXB1V4AKH2D=combinaciones-de-escenarios-de-prueba testing=pruebas h_01HJR5YDW9AGY148E1ZD97JFRB=pruebas h_01HJR5YDW9SGN9KH63CPZ54RM5=prerequisites test%E2%80%94advanced-privacy-off=test-advanced-privacy-off h_01HJR5YDWA20EQT5RE1EJ7QK2X=test-advanced-privacy-off advanced-privacy-off%E2%80%94test-results=privacidad-avanzada-desactivada-resultados-de-la-prueba h_01HJR5YDWAEAR22NPXF8ZD5QX6=privacidad-avanzada-desactivada-resultados-de-la-prueba test%E2%80%94advanced-privacy-on=test-advanced-privacy-on h_01HJR5YDWAY6B55BFQ1B0WJEHR=test-advanced-privacy-on advanced-privacy-on%E2%80%94test-results=privacidad-avanzada-activada-resultados-de-la-prueba h_01HJR5YDWAK3DZ1Q0W3TSR7ZKZ=privacidad-avanzada-activada-resultados-de-la-prueba supplementary-information-and-procedures=informaci%C3%B3n-y-procedimientos-complementarios h_01HJR5YDWA74Q46F6XKY5J375C=informaci%C3%B3n-y-procedimientos-complementarios h_01HJR5YDWASJWC1NGNABWR1VW5=about-the-partner-integrations-test-app h_01HJR5YDWA0WXWN5B5VNPK40FY=attribution-link h_01HJR5YDWA73BQB478D6N0R8GP=set-advanced-privacy h_01HJR5YDWAGZ5XMQJG1KX3J6CP=test-app-integrated-in-your-account h_01HJR5YDWAXRD7DVHTZPJCFM56=troubleshooting" />
