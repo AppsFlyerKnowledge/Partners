@@ -185,7 +185,7 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
   }'
 ```
 
-#### Curl example—enriched SKAN 4 postback with coarse conversion values****
+#### Curl example—enriched SKAN 4 postback with coarse conversion values
 
 ```bash
 curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postbacks?app_id=id888707074' \
