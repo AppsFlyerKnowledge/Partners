@@ -47,7 +47,7 @@ x-zendesk:
 | Операционная система | Макрос |
 | --- | --- |
 | Android; | &advertising\_id=$`{DEVICE_AAID}` |
-| https://support.appsflyer.com/hc/article_attachments/360016192917 | idfa=$`{DEVICE_APPLE_IDA}` |
+| https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png | idfa=$`{DEVICE_APPLE_IDA}` |
 
 **Рекомендуемые параметры ссылки атрибуции**
 

@@ -55,7 +55,7 @@ x-zendesk:
 >
 > http://mcmp_postbackURL.........&mcmp_ADset_name =`{adset_name}`
 
-## https://support.appsflyer.com/hc/article_attachments/360001712765
+## https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161eb04edab-360001712765.png
 
 При событиях в приложении AppsFlyer может возвращать следующие параметры (в дополнение к указанным выше):
 
