@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** Les partenaires intégrés reçoivent des postbacks pour les installations et les événements in-app rejetés en raison de fraudes ou de non-conformité aux règles de validation.
 
+<div id="rejected-attribution-postbacks-relating-to-fraud-and-validation-rules" />
+
 ## Postbacks d'attribution rejetés liés à la fraude et aux règles de validation
 
 **Terminologie** :
@@ -57,6 +59,8 @@ Le tableau suivant répertorie la raison du rejet, la valeur de la raison du rej
 | validation\_hijacking | Noms des règles | ✓ | Règle définie par le client. |
 | ai\_layer | N/A | **x** | Les modèles d'IA sont utilisés pour analyser de grandes quantités de données, améliorant ainsi les capacités de détection pour identifier les activités frauduleuses sur les appareils et les installations. |
 
+<div id="reject-reasons-for-in-app-events" />
+
 #### Raisons du rejet pour les événements in-app
 
 | Raison du rejet | Valeur de la raison du rejet | Explication |
@@ -66,6 +70,8 @@ Le tableau suivant répertorie la raison du rejet, la valeur de la raison du rej
 | validation\_inapps | nom\_événement\_invalide | Basé sur une règle de validation demandée ou définie manuellement |
 | validation\_inapps | valeur\_événement\_invalide | Basé sur une règle de validation demandée ou définie manuellement |
 | validation\_inapps | Nom(s) de la règle | Basé sur des règles définies manuellement |
+
+<div id="important" />
 
 > 🚧 **Important !**
 >

@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **En bref :** comprendre les différences entre un compte d'agence et une intégration de réseau publicitaire, ainsi que leurs avantages respectifs.
 
+<div id="agency-account" />
+
 ## Compte d'agence
 
 <span id="b6fb9285-2105-489b-8048-548ba5ce0705"></span>AppsFlyer Agency Solution vous permet de gérer l'ensemble des performances de vos annonceurs depuis un même tableau de bord global !

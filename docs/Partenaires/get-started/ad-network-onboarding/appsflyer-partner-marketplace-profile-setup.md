@@ -45,6 +45,8 @@ Pour voir à quoi ressemble votre page dans le marketplace (sans possibilité de
 
 Pour visualiser votre brouillon enregistré, cliquez sur **Aperçu du brouillon**.
 
+<div id="general" />
+
 ### Général
 
 Les informations contenues dans cette section sont dynamiques et reposent sur votre configuration et votre activité dans AppsFlyer :
@@ -54,6 +56,8 @@ Les informations contenues dans cette section sont dynamiques et reposent sur vo
 * Capacités d'intégration
 * Catégories et sous-catégories de secteur
 * Géo de votre trafic
+
+<div id="profile" />
 
 ### Profil
 
@@ -74,10 +78,14 @@ Sélectionnez l'un des moyens suivants pour que les annonceurs puissent <Anchor 
 * **Lien vers votre page d'accueil :** vous pouvez choisir d'envoyer les utilisateurs directement vers une page d'accueil. En sélectionnant cette option, les annonceurs verront le bouton **Contacter le partenaire** au lieu du bouton **Me présenter**, et en cliquant dessus, ils seront dirigés vers votre URL.  
   **Astuce :** ajoutez un paramètre UTM à votre lien pour vos propres actions de suivi.
 
+<div id="offices" />
+
 ### Bureaux
 
 La liste des établissements de votre entreprise.   
 **Remarque :** Cette information ne s'affiche pas dans le marketplace.
+
+<div id="your-offering" />
 
 ## Votre offre
 
@@ -87,12 +95,18 @@ Dans cette section, ajoutez les détails des services que vous proposez. Nous re
 
 Pour ajouter ou modifier les informations sur vos services, cliquez sur le nom du service.
 
+<div id="overview-1" />
+
+<div id="overview" />
+
 ### Présentation
 
 * Sélectionnez jusqu'à 3 services dans la liste.
 * Saisissez les mots-clés de la recherche. Il s'agit des mots-clés que les clients peuvent entrer dans la barre de recherche du marketplace des partenaires.
 * Saisissez les points forts de votre service sous forme de liste à puces.
 * Fournissez une description détaillée de votre offre.
+
+<div id="characteristics" />
 
 ### Caractéristiques
 
@@ -105,12 +119,16 @@ Donnez les informations sur vos services. Sélectionnez toutes les options qui p
 * Plateformes prises en charge
 * Normes de conformité.
 
+<div id="sales" />
+
 ### Ventes
 
 Saisissez les infos tarifaires du service :
 
 * Lien vers les conditions d'utilisation du service
 * Tarif minimum du service
+
+<div id="marketing-collateral" />
 
 ### Matériel marketing
 

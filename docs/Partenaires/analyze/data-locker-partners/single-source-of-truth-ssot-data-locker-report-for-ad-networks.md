@@ -27,17 +27,25 @@ x-zendesk:
 ---
 > **En bref :** Le rapport SSOT (Single Source of Truth) de Data Locker offre une vue d’ensemble détaillée des performances des campagnes d’app en assemblant les données des différentes méthodes d’attribution, comme la correspondance d’ID et SKAN.  Il permet de transférer les données dans vos systèmes BI pour que leur traitement soit le plus précise possible.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Avant de pouvoir partager les données avec vous, les annonceurs doivent accorder leurs [Autorisations](/docs/single-source-of-truth-ssot-data-locker-report-for-ad-networks#permissions) dans le tableau de bord
+
+<div id="what-is-data-locker" />
 
 ## Qu’est-ce que Data Locker ?
 
 Data Locker est une solution sécurisée qui envoie les données directement aux principales plateformes sur le cloud, comme AWS, GCS et Snowflake. Vous pouvez ainsi intégrer et gérer simplement les données dans vos propres systèmes BI pour produire une analyse et des rapports complets. <Anchor target="_blank" href="/partners/fr/docs/data-locker-for-partners">En savoir plus.</Anchor>
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## Qu’est-ce que la Single source of truth (SSOT) ?
 
 La SSOT (Single Source of Truth) permet d’éviter les problèmes de fragmentation des données en offrant une vue d’ensemble détaillée des performances des campagnes d’app grâce à l’assemblage des données des différentes méthodes d’attribution, comme la correspondance d’ID et SKAN. <Anchor target="_blank" href="/marketers/fr/docs/single-source-of-truth-ssot-guide-for-ios-attribution">En savoir plus.</Anchor>
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## Intérêts des rapports SSOT dans Data Locker
 
@@ -108,6 +116,8 @@ Réseaux publicitaires désignés (activés) par les agences : L’agence ne peu
 | Actualisation des données | <ul><li>Quotidiennement.</li><li>Les mesures sont calculées à l’aide des données disponibles à minuit UTC (fin de la journée).</li><li>SLA : les nouveaux rapports sont disponibles dans Data Locker à 16:00 UTC. Une nouvelle version est créée chaque jour pour les 15 derniers jours d’installation. <Anchor target="_blank" href="/marketers/fr/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy">Lire plus</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## Structure du rapport
 
@@ -491,6 +501,8 @@ Exemples (pour une date d’installation au 1er janvier) :
 
 </Accordion>
 
+<div id="directory-structure" />
+
 ## Structure du répertoire
 
 <div id="report-folder-hierarchy" />
@@ -557,6 +569,8 @@ Légende :
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## Remarques pour les développeurs BI
 
 **Portée des données dans le rapport :**
@@ -582,6 +596,8 @@ Vous pouvez charger des rapports unifiés, rapports d’acquisition d’utilisat
 <div id="days-postattribution" />
 
 <Accordion title="Jours post-attribution">
+
+<div id="important" />
 
 > 🚧 **Attention !**
 >

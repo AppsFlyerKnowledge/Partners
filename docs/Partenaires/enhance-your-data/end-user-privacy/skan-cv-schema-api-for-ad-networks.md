@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref** : pour afficher le schéma de la valeur de conversion SKAN tel qu'il est mappé par l'annonceur.
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## API de schéma de la valeur de conversion SKAN pour les réseaux publicitaires
 
 L'attribution SKAdNetwork (SKAN) permet aux annonceurs d'évaluer la qualité de l'utilisateur en fixant des valeurs de conversion (CV) basées sur l'activité de ce dernier après l'installation et pendant des périodes spécifiques (fenêtres). <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide">En savoir plus sur SKAN</Anchor>

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** Comparer les méthodes de partage des coûts disponibles pour les partenaires du réseau publicitaire AppsFlyer.
 
+<div id="sharing-cost-with-appsflyer-and-advertisers" />
+
 ## Partage des coûts avec AppsFlyer et les annonceurs
 
 Les annonceurs utilisent AppsFlyer comme source de référence pour le retour sur investissement (ROI), la facturation et pour prendre des décisions concernant l'allocation du budget marketing. Pour que les réseaux soient visibles, il est indispensable de partager les données relatives aux coûts avec AppsFlyer. Les réseaux sans données sur les coûts apparaissent au bas de la liste du tableau de bord d'AppsFlyer.
@@ -37,6 +39,8 @@ Les réseaux publicitaires partagent les coûts avec AppsFlyer en utilisant l'un
 * **Importation des coûts**: Les fichiers de données de coûts sont téléchargés/envoyés à AppsFlyer
 * **Coût par clic :** Les réseaux publicitaires déclarent le coût chaque fois qu'un lien d'attribution est cliqué
 
+<div id="cost-badge-for-ad-networks" />
+
 ### Badge de coût pour les réseaux publicitaires
 
 ![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
@@ -44,6 +48,8 @@ Les réseaux publicitaires partagent les coûts avec AppsFlyer en utilisant l'un
 * Un badge de coût s'affiche dans la <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations#page-partenaire">page de profil du partenaire</Anchor>, mettant en évidence les partenaires utilisant l'API InCost ou Cost.
 * Le badge certifie que le partenaire en question sait maîtriser ses coûts.
 * Des analyses internes et des enquêtes approfondies auprès des utilisateurs montrent que les annonceurs sont toujours à la recherche de nouveaux partenaires. Ceux qui ont le badge «maîtrise des coûts» sont plus susceptibles de se démarquer, car les annonceurs veulent comprendre leurs performances marketing notamment par l’analyse du retour sur investissement.
+
+<div id="reporting-cost-options-available-to-ad-networks" />
 
 ### Options de reporting des coûts disponibles pour les réseaux publicitaires
 

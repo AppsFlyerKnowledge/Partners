@@ -36,6 +36,8 @@ x-zendesk:
 
 <Embed title="À propos des comptes d'agence" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
+<div id="about-agency-accounts" />
+
 ## À propos des comptes d'agence
 
 Les comptes d'agence sont utilisés par les équipes d'agence pour mesurer les campagnes marketing menées par l'agence au nom d'un client du marketeur (propriétaires d'app).
@@ -47,21 +49,31 @@ Les comptes d'agence sont utilisés par les équipes d'agence pour mesurer les c
   * Retargeting
 * Les KPI disponibles comprennent les impressions, clics, installations, la fidélité des utilisateurs, le coût et le ROI. A propos du <Anchor target="_blank" href="/marketers/fr/docs/getting-started-with-appsflyer-dashboards">tableau de bord</Anchor>.
 
+<div id="agency-access-to-marketer-data" />
+
 ### Accès des agences aux données des marketeurs
 
 Les agences ont toujours accès aux données de trafic attribuées à l'agence. Les marketeurs peuvent <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#autorisations-pour-lagence">donner aux agences l'autorisation</Anchor> d'accéder à certaines données supplémentaires, par exemple les données agrégées organiques. Consulter l'Accès aux données par différents types d'utilisateurs. Consulter l'<Anchor target="_blank" href="/marketers/fr/docs/manage-data-access-permissions">Accès aux données par différents types d'utilisateurs.</Anchor>
+
+<div id="agency-access-to-ad-network-integrations" />
 
 ### Accès de l'agence aux intégrations de réseaux publicitaires
 
 Pour permettre l'accès aux intégrations de réseaux publicitaires et mesurer vos campagnes, votre agence doit être pré-approuvée par le réseau publicitaire. Pour cela, vous devez inclure votre ID d'agence (af\_prt) dans la liste des agences autorisées du réseau publicitaire. Contactez le partenaire pour vous assurer que votre agence est incluse. [Découvrez ici](/docs/about-agency-accounts#paramètre-af_prt) comment trouver votre identifiant d'agence.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Cela ne s'applique pas aux agences travaillant avec <Anchor target="_blank" href="/marketers/fr/docs/self-reporting-networks-srns">des SRN</Anchor>
 
+<div id="agency-transparency" />
+
 ### Transparence de l'agence
 
 Par défaut, le trafic de l'agence est transparent. En savoir plus sur <Anchor target="_blank" href="/partners/fr/docs/getting-started-agency-onboarding#transparence">la transparence de l'agence</Anchor>.
+
+<div id="comparing-different-types-of-accounts" />
 
 ## Comparaison des différents types de comptes
 
@@ -74,6 +86,8 @@ Par défaut, le trafic de l'agence est transparent. En savoir plus sur <Anchor t
 
 Les structures de compte permettent le partage de connaissances entre les équipes d'agences mondiales et la mesure, les calculs, le reporting et l'optimisation du ROI au niveau du groupe.
 
+<div id="differences-between-marketer-and-agency-accounts" />
+
 #### Différences entre compte marketeur et compte d'agence
 
 |  | Marketeur | **agences** |
@@ -83,6 +97,8 @@ Les structures de compte permettent le partage de connaissances entre les équip
 | Paramètres au niveau de l'app | Fenêtre de réattribution, configuration OneLink, fuseau horaire, devise | <ul><li>Transparence de l'agence vis-à-vis du marketeur</li><li>Tous les autres paramètres sont conformes à ceux définis par le marketeur</li></ul> |
 | Configuration des partenaires intégrés | <ul><li>Autorisations pour l'agence</li><li>Toutes les configurations non SRN (réseaux publicitaires basés sur les liens d'attribution)</li><li>Configurations SRN</li><li>Gestion des liens</li></ul> | <ul><li>Toutes les configurations non-SRN</li><li>Certaines configurations SRN qui nécessitent une intervention minimale de la part du marketeur :</li></ul><ul><li>Google Doubleclick</li><li>Snapchat</li><li>Tencent</li></ul>Certains autres SRN doivent être configurés par le marketeur pour que l'agence puisse les utiliser.<ul><li>Gestion des liens (à l'aide de modèles définis par les marketeurs).</li></ul> |
 | Fonctionnalités supplémentaires | Oui (en partie, si inclus dans l'abonnement) | Selon l'abonnement marketeur et les <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#autorisations-pour-lagence">autorisations</Anchor> accordées à l'agence (voir le tableau ci-dessous). |
+
+<div id="features-available-to-agencies" />
 
 ### Fonctionnalités disponibles pour les agences
 
@@ -96,11 +112,15 @@ Les structures de compte permettent le partage de connaissances entre les équip
 
 <Accordion title="Compte agence vs. compte de réseau publicitaire">
 
+<div id="differences-between-ad-network-and-agency-accounts" />
+
 #### Différences entre réseau publicitaire et compte d'agence
 
 <table><thead><tr><th><p>Réseau publicitaire</p></th><th><p>agences</p></th></tr></thead><tbody><tr><td><p>Paramètre de lien d'attribution pour l'identification : <code>pid</code></p></td><td><p>Paramètre de lien d'attribution pour l'identification : <code>af_prt</code></p></td></tr><tr><td><p>Place les publicités de l'app sur sa propre plate-forme.</p></td><td><p>Promeut l'app via plusieurs sources média.</p></td></tr><tr><td><p>Voit uniquement le trafic des annonces placées sur sa plate-forme.</p></td><td><p>Voit uniquement le trafic provenant des sources média sur lesquelles elle fait de la publicité.</p></td></tr><tr><td><p>Peut recevoir des informations en temps réel sur les installations et les événements in app via les postbacks.</p></td><td><p>Ne peut pas recevoir d'informations en temps réel sur les installations et les événements in app via les postbacks.</p></td></tr><tr><td><p>Peut configurer des postbacks d'évènements in app pour tout trafic provenant du réseau lui-même.</p></td><td><p>Peut configurer des postbacks d'évènements in app avec certains des partenaires d'où provient le trafic\*.</p></td></tr><tr><td colspan="2"><p>\* Nécessite l'autorisation du marketeur</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="agency-accountscampaigns-and-reporting" />
 
 ## Comptes d'agence - campagnes et rapports
 
@@ -113,9 +133,13 @@ Les agences peuvent mesurer les principaux types de trafic qui suivent :
 * [Réseaux publicitaires auto-reporting (SRN)](/docs/about-agency-accounts#ad-networks-auto-reporting)
 * [Non SRN (ad networks sans liens d'attribution)](/docs/about-agency-accounts#non-srn)
 
+<div id="self-reporting-ad-networks" />
+
 ### Ad networks auto-reporting
 
 Les réseaux auto-reporting, comme Meta Ads, Google Ads ou X Ads, n'utilisent pas de liens d'attribution provenant d'entreprises externes. Au lieu de cela, chaque réseau possède ses propres méthodes et API qu'AppsFlyer utilise pour communiquer les nouvelles installations, évènements in-app, etc.
+
+<div id="srn-configurations" />
 
 #### Configurations SRN
 
@@ -128,15 +152,21 @@ Les réseaux auto-reporting, comme Meta Ads, Google Ads ou X Ads, n'utilisent pa
 | Snapchat | Non | Pour en savoir plus sur la configuration d'agence pour les campagnes Snapchat, <Anchor target="_blank" href="/marketers/fr/docs/snapchat-advanced-srn-integration-setup">cliquez ici</Anchor>. |
 | Yahoo (Serment : Plateformes publicitaires / Yahoo Gemini) | Oui | Pour en savoir plus sur la configuration des agences dans le cadre ses campagnes Yahoo, veuillez <Anchor target="_blank" href="/marketers/fr/docs/yahoo-integration-setup#agency-configuration">cliquer ici</Anchor>. |
 
+<div id="non-srns" />
+
 ### Non SRN
 
 Contrairement aux SRN, la grande majorité des ad networks utilisent des liens d'attribution pour des besoins d'attribution. <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#attribution-link-tab">Ces liens d'attribution sont déjà fournis</Anchor> dans les paramètres de chaque réseau sur AppsFlyer et peuvent être copiés directement à partir de là.
 
 Pour les agences, le processus est presque identique à celui des marketeurs. Vous trouverez le lien d'attribution dans la fenêtre de configuration de tout réseau publicitaire ordinaire. La seule différence est l'ajout automatique du paramètre `af_prt`af\_prtaf\_prt au lien d'attribution.
 
+<div id="ad-network-configuration-visibility" />
+
 #### Visibilité de la configuration du réseau publicitaire
 
 La configuration du ad network est visible pour les ad networks uniquement lorsque le marketeur (propriétaire de l'app) le configure. Lorsqu'une agence active et configure l'intégration du ad network, le réseau considère cette section comme inactive.
+
+<div id="af_prt-parameter" />
 
 #### paramètre af\_prt
 
@@ -149,6 +179,8 @@ Le fait de disposer de `af_prt` avec le nom de votre agence sur un lien d'attrib
 Sans `af_prt`, une nouvelle installation ne peut pas être attribuée à un compte agence, et par conséquent, elle est attribuée directement au réseau publicitaire.
 
 **N'utilisez pas les liens fournis par le marketeur** : assurez-vous d'utiliser les liens de votre propre compte pour éviter une mauvaise attribution.
+
+<div id="special-case-all-installs-and-all-launches-networks" />
 
 #### Cas particulier: Réseaux tout lancement et toute installation
 
@@ -178,9 +210,13 @@ Le tableau suivant présente la liste complète des réseaux tout lancement :
 | MyThings | mythings\_int |
 | TikTok for Business | bytedanceglobal\_int |
 
+<div id="how-to-setup-agency-attribution-with-all-installslaunches-networks" />
+
 #### Comment configurer l'attribution des agences avec les réseaux tout lancement/toute installation ?
 
 Travailler avec ces réseaux implique d'envoyer des informations à partir d'installations qui ne sont pas fournies par l'agence. Par conséquent, ces réseaux nécessitent que **le marketeur** les configure AVANT l'agence.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -202,9 +238,13 @@ Pour que le deep linking fonctionne, l'app mobile DOIT être développée avec d
 
 * * <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide">L'attribution de retargeting</Anchor> vous permet de cibler des clients existants ou anciens dans votre campagnes. Les campagnes de retargeting nécessitent souvent des fonctionnalités de deep linking pour fonctionner correctement.
 
+<div id="in-app-events" />
+
 ### Événements in-app
 
 Les propriétaires d'applications peuvent avoir divers événements dans leurs applications (par exemple, acheter, regarder un didacticiel, passer un niveau, etc.), qu'ils peuvent enregistrer et analyser dans AppsFlyer. Les agences peuvent voir les données des événements qui leur sont attribués sur la page Événements de leur compte.
+
+<div id="in-app-event-postbacks" />
 
 #### Postback d'évènements in-app
 
@@ -227,14 +267,20 @@ Les agences peuvent autoriser les ad networks à configurer des postbacks in-app
 * Les agences ne sont souvent responsables que d'une partie du trafic du marketeur, l'accès des agences aux données est donc plus restreint que celui des marketeurs.
 * <Anchor target="_blank" href="/marketers/fr/docs/manage-data-access-permissions">Cet article</Anchor> détaille ces différences. Les sections suivantes les abordent plus précisément.
 
+<div id="note-1" />
+
 > 📘 **Remarque**
 >
 > En raison des conditions d'utilisation de Meta Ads et X Ads, **les agences**, qui sont considérées comme des tiers, **n'ont pas accès aux données brutes des rapports sur le trafic, provenant de Meta Ads ou X Ads**.
+
+<div id="access-to-aggregate-data" />
 
 ### Accès aux rapports de performance
 
 * Les rapports de performance, également connus sous le nom de rapports agrégés, sont disponibles par défaut sur les comptes d'agence. Lectures connexes : <Anchor target="_blank" href="/marketers/fr/docs/aggregated-and-analytics-reporting-overview">Rapports de performance agrégés</Anchor>
 * L'accès aux rapports de données organiques agrégées est soumis à <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#autorisations-pour-lagence">l'autorisation du marketeur</Anchor>.
+
+<div id="access-to-raw-data" />
 
 ### Accès aux données brutes
 
@@ -242,9 +288,13 @@ Les <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview
 
 Les agences peuvent bénéficier d'un accès aux rapports de rétention et de cohorte ainsi qu'au tableau de bord Protect360. Pour cela, le marketeur doit activer soit <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#autorisations-pour-lagence">**Autoriser l'accès à vos rapports de rétention et de cohorte**</Anchor> soit <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#autorisations-pour-lagence">**Autoriser l'accès à votre tableau de bord Protect360**</Anchor>, que vous trouverez dans l'onglet **Autorisations** de **Intégrations actives**.
 
+<div id="time-zone-and-currency" />
+
 ### Fuseau horaire et devise
 
 Les agences voient s'afficher les apps dans le fuseau horaire et la devise de l'app. Ces paramètres peuvent être modifiés par les marketeurs exclusivement.
+
+<div id="cost-reporting" />
 
 ### Reporting des coûts
 
@@ -259,12 +309,16 @@ Les agences peuvent activer l'option **Obtenir les données de coûts** lorsqu'e
 5. Saisissez la clé API pour ce partenaire
 6. Cliquez sur **Enregistrer**.
 
+<div id="accessing-and-viewing-cost-data" />
+
 #### Accès et affichage des données de coût
 
 Les données de coûts sont disponibles pour l'agence dans les sources de données suivantes :
 
 * **Page de présentation** : les données de coût sont visibles dans le **Rapport de performances agrégées** de la page de présentation.
 * **Rapports** : les données de coût sont disponibles en rapports exportés, tels que les **Installations,** sous **Rapports de données brutes** et **partenaires (sources média)** sous **Rapports de performance**.
+
+<div id="hybrid-account-data-access" />
 
 ### Accès aux données du compte hybride
 

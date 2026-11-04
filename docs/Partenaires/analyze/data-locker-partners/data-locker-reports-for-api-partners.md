@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref** : les partenaires marketing (vous) peuvent accéder aux rapports listés dans cet article depuis leur Data Locker.Avant que nous puissions partager les données avec vous, l'annonceur (propriétaire de l'app) doit vous accorder l'accès aux données, comme indiqué dans cet article.
 
+<div id="data-locker-reports-for-api-partners" />
+
 ## Rapports Data Locker pour les partenaires marketing
 
 Pour obtenir des rapports, le partenaire marketing doit
@@ -55,6 +57,8 @@ Les rapports sont diffusés dans le dossier h=23.
 | Actualisation des données | <ul><li>Les rapports sont généralement disponibles à 10:00 UTC dans le dossier h=23 du jour précédent. Par exemple, le rapport pour les données générées le lundi se trouve dans le dossier Lundi h=23.</li><li>Exception : les événements liés aux revenus publicitaires ont une actualisation de données J 0+3. En d'autres termes, les événements relatifs aux revenus publicitaires mentionnés dans le rapport du lundi ont eu lieu le samedi.</li><li>[Les rapports versionnés sont généralement disponibles avant 06:00 UTC.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

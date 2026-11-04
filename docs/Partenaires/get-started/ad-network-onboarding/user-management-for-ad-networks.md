@@ -25,15 +25,21 @@ x-zendesk:
 ---
 > **En bref :** créez et gérez les utilisateurs AppsFlyer de votre compte de réseau publicitaire, puis attribuez-leur un rôle pour définir les fonctionnalités auxquelles ils pourront accéder.
 
+<div id="background" />
+
 ## Avant de commencer
 
 Les comptes de réseau publicitaire AppsFlyer autorisent plusieurs utilisateurs, chacun avec un rôle qui définit leur accès aux fonctionnalités et paramètres.
 
 Le rôle d’**Admin** donne accès à l’ensemble des fonctionnalités et paramètres. Le rôle de **Marketing** donne accès à un nombre de fonctionnalités plus limité. La liste complète des capacités accordées à chaque rôle est disponible dans l'onglet [Rôles](/docs/user-management-for-ad-networks#onglet-rôles) de la page **Gestion des utilisateurs**.
 
+<div id="more-about-roles" />
+
 ## À propos des rôles
 
 En règle générale, tous les rôles sont prédéfinis et les possibilités de chaque rôle sont fixes : aucun réarrangement n'est autorisé. Par contre, vous pouvez modifier les capacités d'un utilisateur à tout moment en modifiant son rôle (à l'exception du [propriétaire du compte](/docs/user-management-for-ad-networks#admin---un-rôle-particulier), comme expliqué ci-dessous).
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -43,11 +49,15 @@ En règle générale, tous les rôles sont prédéfinis et les possibilités de 
 >
 > **Réponse** : Non. Tant que Bill conserve le rôle de Marketing, vous ne pouvez pas lui donner la possibilité d'accéder au journal d'audit. Vous ne pouvez pas non plus supprimer sa capacité à gérer les règles de validation. Bien entendu, vous pouvez donner à Bill un autre rôle prédéfini, et ses capacités seront celles qu’autorise ce nouveau rôle.
 
+<div id="temp-rolesan-exception-to-the-rule" />
+
 ### Les rôles provisoire : une exception à la règle
 
 Si votre compte AppsFlyer existait dans notre ancien système de gestion des utilisateurs (lorsque les seuls types de comptes disponibles étaient Admin et Membre d'équipe), tous les utilisateurs ont été envoyés dans le nouveau système avec les mêmes autorisations. Par conséquent, la plupart de ces utilisateurs apparaissent dans le système actuel avec des **rôles provisoire**.
 
 En savoir plus sur la [gestion des rôles provisoires.](/docs/user-management-for-ad-networks#managing-temp-roles)
+
+<div id="admina-special-role" />
 
 ### Admin - un rôle particulier
 
@@ -64,12 +74,16 @@ Un compte AppsFlyer peut avoir **un ou plusieurs** admins, mais il doit forcéme
 * Les admins peuvent <Anchor target="_blank" href="/marketers/fr/docs/managing-appsflyer-tokens">gérer les jetons d’API et S2S</Anchor>.
 * Tout admin autre que le propriétaire du compte **peut** se voir attribuer un autre rôle, ou être supprimé du compte AppsFlyer via la page de gestion des utilisateurs.
 
+<div id="user-management-page" />
+
 ## Page de gestion des utilisateurs
 
 **Pour accéder à la page de gestion des utilisateurs :**
 
 1. Dans la barre de menu (en haut), cliquez sur l'adresse e-mail pour voir le menu déroulant.
 2. Sélectionnez **Gestion des utilisateurs.**
+
+<div id="users-tab" />
 
 ### Onglet Utilisateurs
 
@@ -80,6 +94,8 @@ L'onglet **Utilisateurs** affiche un tableau de tous les utilisateurs existants 
 * Cliquez sur l'icône de filtre <Image alt="filter_icon.png" src="https://files.readme.io/00fa39bef5e51bf9a8a0b2ae2dee4b631b57d423e261883bff1199d7293c0458-17387375698833.png" width="25px" /> dans l'en-tête de la colonne **Rôle** pour filtrer les utilisateurs par rôle (y compris les rôles provisoires).
   * Pour supprimer le filtre, sélectionnez **Aucun** dans la liste déroulante du filtre.
 * Utilisez les cases à cocher pour sélectionner et [modifier plusieurs utilisateurs](/docs/user-management-for-ad-networks#modification-par-groupes) en même temps.
+
+<div id="roles-tab" />
 
 ### Onglet Rôles
 
@@ -94,6 +110,8 @@ Cliquez sur le nom de n’importe quel rôle dans le panneau de gauche pour voir
 * Le nombre d'utilisateurs actuellement affectés à ce rôle (en haut à droite de l'écran)
   * Passez la souris sur l'icône Utilisateur <Image alt="user_icon.png" src="https://files.readme.io/70d626cc0d2888c46c0e080dc76e4f005312fe5dea7e7811336e0324e4a846ad-17387375703569.png" width="21px" /> pour voir la liste des 20 premiers utilisateurs.
 
+<div id="creating-a-user" />
+
 ## Créer un utilisateur
 
 **Pour créer un nouvel utilisateur :**
@@ -106,6 +124,8 @@ Cliquez sur le nom de n’importe quel rôle dans le panneau de gauche pour voir
    * Peut inclure des lettres, des chiffres, des apostrophes ('), des esperluettes (&), des signes du dollar ($), des hashtags (#), des traits d'union (-), des traits de soulignement (\_) et des points (.).
    * Deux points à la suite (..) ou tout autre caractère spécial ne sont pas autorisés.
    * Doit se terminer par un domaine e-mail valide.
+
+   <div id="important" />
 
    > 🚧 **Attention !**
    >
@@ -121,15 +141,21 @@ Cliquez sur le nom de n’importe quel rôle dans le panneau de gauche pour voir
 6. Cliquez sur **Enregistrer** pour créer l'utilisateur.
 7. **Du côté de l'utilisateur :** pour devenir un utilisateur actif (membre d'équipe), l'utilisateur doit [activer son compte](#devenir-un-utilisateur-actif) depuis l’e-mail d’invitation qu'il a reçu.
 
+<div id="becoming-an-active-user" />
+
 #### Devenir un utilisateur actif
 
 Après avoir cliqué **sur Enregistrer** pour terminer la [création de l’utilisateur](/docs/user-management-for-ad-networks#créer-un-utilisateur) (ci-dessus), l'utilisateur reçoit une invitation par e-mail pour activer son compte. Le lien d'activation est valable pendant 48 heures. Si l'utilisateur ne reçoit pas l'invitation ou si le lien expire, vous pouvez [renvoyer l'invitation](/docs/user-management-for-ad-networks#resending-a-user-invitation).
 
 Vous pouvez voir le nouvel utilisateur sur la page de gestion des utilisateurs, à côté de son nom s’affiche une icône en forme d'enveloppe ![pending_invitation_icon.png](https://files.readme.io/1e334edd433f9ac13a175cdd48345adebe02892215896ea967768dc3cabf0349-17387375704209.png) à côté de son nom. L’icône indique qu'une invitation a été envoyée et que le compte est en attente d'activation. Une fois que l'utilisateur aura activé son compte, l'enveloppe disparaîtra.
 
+<div id="editing-users" />
+
 ## Modification des utilisateurs
 
 Les utilisateurs peuvent être modifiés un par un, ou par groupes.
+
+<div id="individual-editing" />
 
 ### Modification individuelle
 
@@ -141,9 +167,13 @@ Les utilisateurs peuvent être modifiés un par un, ou par groupes.
    * Tous les paramètres en dehors de l'adresse e-mail sont modifiables.
 4. Cliquez sur **Enregistrer**.
 
+<div id="multi-user-editing" />
+
 ### Modification par groupes
 
 La modification multi-utilisateur permet de modifier rapidement le rôle de plusieurs utilisateurs à la fois. Cette fonction associée au filtrage dans l'onglet **Utilisateurs** peut s'avérer particulièrement utile pour la gestion d'un grand nombre d'utilisateurs.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -159,12 +189,16 @@ La modification multi-utilisateur permet de modifier rapidement le rôle de plus
 4. Les utilisateurs modifiés s’affichent surlignés dans le tableau, et tels qu'ils seront une fois les modifications enregistrées. Cependant, vous aurez toujours la possibilité de revoir vos modifications et de les confirmer ou les annuler à l'étape suivante.
 5. Vérifiez vos modifications. Cliquez sur **Sauvegarder** ou sur **Annuler**.
 
+<div id="deleting-users" />
+
 ## Supprimer des utilisateurs
 
 **Pour supprimer un utilisateur :**
 
 1. Dans l’onglet **Utilisateurs**, cliquez sur le bouton **Actions** <Image alt="actions_icon.png" src="https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png" width="25px" /> tout à droite de la ligne de l'utilisateur.
 2. Sélectionnez **Supprimer** dans le menu.
+
+<div id="special-situations-and-additional-procedures" />
 
 ## Situations particulières et procédures complémentaires
 
@@ -177,6 +211,8 @@ Si votre compte utilisait précédemment notre ancien système de gestion des ut
 * Les utilisateurs avec les mêmes capacités se sont vu attribuer le même rôle provisoire.
 * Utilisez les fonctionnalités de l'onglet [Rôles](/docs/user-management-for-ad-networks#onglet-rôles) pour consulter les capacités de chaque rôle provisoire, ainsi que la liste des utilisateurs avec un rôle provisoire.
 
+<div id="temp-role-limitations" />
+
 #### Limitations du rôle provisoire
 
 Les rôles provisoires ont été créés uniquement pour permettre un passage en douceur depuis notre ancien système de gestion des utilisateurs. Ils ne sont donc disponibles que dans des situations précises :
@@ -185,6 +221,8 @@ Les rôles provisoires ont été créés uniquement pour permettre un passage en
 * Un utilisateur avec un rôle provisoire ne peut pas se voir attribuer un rôle provisoire différent.
 * Lorsqu'un utilisateur ayant un rôle provisoire passe à un rôle prédéfini, il ne peut pas retrouver le rôle provisoire qui lui avait été attribué précédemment (ni d’ailleurs aucun autre rôle provisoire).
 * Si le dernier utilisateur avec un rôle provisoire quitte ce rôle, le rôle n'apparaîtra plus dans votre compte.
+
+<div id="example-1" />
 
 > 📄 **Exemple**
 >
@@ -201,11 +239,15 @@ Les rôles provisoires ont été créés uniquement pour permettre un passage en
 
 Comme tous les admins disposent des mêmes autorisations que le propriétaire du compte, il n'est généralement pas nécessaire de modifier le propriétaire du compte. Mais si vous devez changer le propriétaire du compte, procédez comme suit.
 
+<div id="important-1" />
+
 > 🚧 **Attention !**
 >
 > Quelques éléments à prendre en compte avant de commencer :
 >
 > Le changement de propriétaire du compte doit être effectué manuellement en suivant ces étapes. Il n'est pas possible de le faire depuis la page **Gestion des utilisateurs**.
+
+<div id="1send-your-request-via-the-chat-widget" />
 
 #### #1–Envoyez votre demande en passant par le widget de Chat
 
@@ -213,6 +255,8 @@ Pour lancer la procédure de changement de propriétaire du compte, ouvrez le wi
 
 * Nom du propriétaire du compte que vous souhaitez remplacer
 * Nom, titre et e-mail du nouveau propriétaire du compte
+
+<div id="2next-steps" />
 
 #### #2-Étapes suivantes
 

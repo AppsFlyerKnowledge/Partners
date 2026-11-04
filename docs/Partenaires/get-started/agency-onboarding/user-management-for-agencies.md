@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** Créez et gérez les utilisateurs AppsFlyer de votre compte agence et attribuez-leur des autorisations d'accès aux fonctionnalités et aux apps.
 
+<div id="user-roles-and-access-permissions" />
+
 ## Rôles des utilisateurs et autorisations d'accès
 
 Les comptes AppsFlyer permettent d'avoir plusieurs utilisateurs, chacun ayant des autorisations gérées individuellement. Les autorisations de chaque utilisateur sont définies en fonction de 2 dimensions principales :
@@ -33,7 +35,11 @@ Les autorisations au sein de chacune de ces dimensions sont attribuées de mani�
 
 La seule exception est le [rôle d'admin](/docs/user-management-for-agencies#admin---un-rôle-particulier), comme indiqué ci-dessous, qui a accès à toutes les capacités et à toutes les apps.
 
+<div id="predefined-roles" />
+
 ### Rôles prédéfinis
+
+<div id="predefined-roles-hash" />
 
 #### hachage pour les rôles prédéfinis
 
@@ -48,6 +54,8 @@ Chacun de ces rôles définit les fonctionnalités spécifiques d'AppsFlyer auxq
 
 En règle générale, tous les rôles sont prédéfinis et les possibilités de chaque rôle sont fixes : aucun réarrangement n'est autorisé. Par contre, vous pouvez modifier les capacités d'un utilisateur à tout moment en modifiant son rôle (à l'exception du [propriétaire du compte](/docs/user-management-for-agencies#hachage-pour-le-propriétaire-du-compte), comme expliqué ci-dessous).
 
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > Vous avez confié à Bill Bates le rôle de **responsable d'équipe.** Ce rôle permet à Bill de gérer les **paramètres d’app** mais ne lui permet pas d’accéder au **journal d’audit.**
@@ -56,11 +64,15 @@ En règle générale, tous les rôles sont prédéfinis et les possibilités de 
 >
 > **Réponse :** Non. Tant que Bill conserve le rôle Marketing, vous ne pouvez pas lui donner la possibilité d'accéder au journal d'audit. Vous ne pouvez pas non plus lui retirer la possibilité de gérer les paramètres de l'app. Bien entendu, vous pouvez donner à Bill un autre rôle prédéfini, et ses capacités seront celles qu’autorise ce nouveau rôle.
 
+<div id="temp-rolesan-exception-to-the-rule" />
+
 ### Les rôles temporaire : une exception à la règle
 
 Si votre compte AppsFlyer existait dans notre ancien système de gestion des utilisateurs (lorsque les seuls types de comptes disponibles étaient Admin et Membre d'équipe), tous les utilisateurs ont été envoyés dans le nouveau système avec les mêmes autorisations. Par conséquent, la plupart de ces utilisateurs apparaissent dans le système actuel avec des **rôles temporaire**.
 
 En savoir plus sur la [gestion des rôles temporaires.](/docs/user-management-for-agencies#managing-temp-roles)
+
+<div id="admina-special-role" />
 
 ### Admin - un rôle particulier
 
@@ -71,6 +83,8 @@ Un compte AppsFlyer peut avoir **un ou plusieurs** admins, mais il doit forcéme
   * Toutes les applications actuelles et futures
   * Toutes les sources média et zones géoCette particularité qui donne un accès illimité au rôle d'admin ne peut être ni modifiée, ni réduite.
 
+  <div id="account-owner-hash" />
+
   #### Hachage pour le propriétaire du compte
 * L'utilisateur créé au moment de l'ouverture du compte (**le propriétaire du compte**) se voit attribuer par défaut le rôle d'admin.
   * Le propriétaire du compte ne peut pas être supprimé, retiré du rôle d'admin ou modifié d'une autre manière à partir de la page [**Gestion des utilisateurs**](/docs/user-management-for-agencies#page-de-gestion-des-utilisateurs). De même, l'e-mail du propriétaire du compte ne peut pas être modifié.
@@ -79,12 +93,16 @@ Un compte AppsFlyer peut avoir **un ou plusieurs** admins, mais il doit forcéme
 * Seul un utilisateur ayant un rôle d'admin peut <Anchor target="_blank" href="/marketers/fr/docs/managing-appsflyer-tokens">gérer les jetons API et S2S.</Anchor>
 * Tout admin autre que le propriétaire du compte **peut** se voir attribuer un autre rôle, ou être supprimé du compte AppsFlyer via la page de gestion des utilisateurs.
 
+<div id="user-management-page" />
+
 ## Page de gestion des utilisateurs
 
 **Pour accéder à la page de gestion des utilisateurs :**
 
 1. Dans la barre de menu supérieure, cliquez, ouvrez le menu du compte (liste déroulante de l'adresse e-mail).
 2. Sélectionnez **Gestion des utilisateurs.**
+
+<div id="users-tab" />
 
 ### Onglet Utilisateurs
 
@@ -95,6 +113,8 @@ L'onglet **Utilisateurs** affiche un tableau de tous les utilisateurs existants 
 * Cliquez sur l'icône de filtre <Image alt="filter_icon.png" src="https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png" width="25px" /> dans l'en-tête de la colonne **Rôle** pour filtrer les utilisateurs par rôle (y compris les rôles temporaires).
   * Pour supprimer le filtre, sélectionnez **Aucun** dans la liste déroulante du filtre.
 * Utilisez les cases à cocher pour sélectionner et [modifier plusieurs utilisateurs](/docs/user-management-for-agencies#modification-par-groupes) en même temps.
+
+<div id="roles-tab" />
 
 ### Onglet Rôles
 
@@ -109,6 +129,8 @@ Cliquez sur le nom de n’importe quel rôle dans le panneau de gauche pour voir
 * Le nombre d'utilisateurs actuellement affectés à ce rôle (en haut à droite de l'écran)
   * Passez la souris sur l'icône Utilisateur <Image alt="user_icon.png" src="https://files.readme.io/afd47a11e82e0cfac3240fe39582bd141639465952f6eef76bcf1f6e7532d6a9-16162513473937.png" width="21px" /> pour voir la liste des 20 premiers utilisateurs.
 
+<div id="creating-a-user" />
+
 ## Créer un utilisateur
 
 **Pour créer un nouvel utilisateur :**
@@ -121,6 +143,8 @@ Cliquez sur le nom de n’importe quel rôle dans le panneau de gauche pour voir
    * Peut inclure des lettres, des chiffres, des apostrophes ('), des esperluettes (&), des signes du dollar ($), des hashtags (#), des traits d'union (-), des traits de soulignement (\_) et des points (.).
    * Deux points à la suite (..) ou tout autre caractère spécial ne sont pas autorisés.
    * Doit se terminer par un domaine e-mail valide.
+
+   <div id="important" />
 
    > 🚧 **Attention !**
    >
@@ -140,14 +164,20 @@ Cliquez sur le nom de n’importe quel rôle dans le panneau de gauche pour voir
 
    * L'utilisateur reçoit un e-mail l'invitant à activer son compte.
 
+   <div id="account-activation-hash" />
+
    #### hachage pour activation du compte
 
    * L'utilisateur s'affiche dans le tableau des utilisateurs. L'icône de l'enveloppe ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png) indique qu'une invitation a été envoyée et que le compte est en attente d'activation. Une fois que l'utilisateur aura activé son compte, l'enveloppe disparaîtra.
    * Le lien d'activation envoyé à l'utilisateur est valable pendant 48 heures. Si l'utilisateur ne reçoit pas l'invitation ou si le lien expire, vous pouvez [renvoyer l'invitation](/docs/user-management-for-agencies#resending-a-user-invitation).
 
+<div id="editing-users" />
+
 ## Modification des utilisateurs
 
 Les utilisateurs peuvent être modifiés un par un, ou par groupes.
+
+<div id="individual-editing" />
 
 ### Modification individuelle
 
@@ -159,9 +189,13 @@ Les utilisateurs peuvent être modifiés un par un, ou par groupes.
 4. Tous les paramètres en dehors de l'adresse e-mail sont modifiables.
 5. Cliquez sur **Enregistrer**.
 
+<div id="multi-user-editing" />
+
 ### Modification par groupes
 
 La modification par groupes est idéale pour modifier les autorisations de compte de plusieurs utilisateurs en même temps. Cette fonction associée au filtrage dans l'onglet **Utilisateurs** peut s'avérer particulièrement utile pour la gestion d'un grand nombre d'utilisateurs.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -179,6 +213,8 @@ La modification par groupes est idéale pour modifier les autorisations de compt
    * N'oubliez pas que vos modifications s'appliquent à tous les utilisateurs sélectionnés !
 5. Les utilisateurs modifiés s’affichent surlignés dans le tableau, et tels qu'ils seront une fois les modifications enregistrées. Cependant, vous aurez toujours la possibilité de revoir vos modifications et de les confirmer ou les annuler à l'étape suivante.
 6. Vérifiez vos modifications. Cliquez sur **Sauvegarder** ou sur **Annuler**.
+
+<div id="example-1" />
 
 > 📄 **Exemple**
 >
@@ -201,12 +237,16 @@ La modification par groupes est idéale pour modifier les autorisations de compt
 >    * Utilisez la boîte de recherche pour trouver Alice, puis modifiez individuellement son utilisateur pour lui donner accès à l'app Astounding.
 >    * Répétez ces étapes pour Bill et Charlie afin de leur donner accès à Beautiful et Charming, respectivement.
 
+<div id="deleting-users" />
+
 ## Supprimer des utilisateurs
 
 **Pour supprimer un utilisateur :**
 
 1. Dans l’onglet **Utilisateurs**, cliquez sur le bouton **Actions** <Image alt="actions_icon.png" src="https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png" width="25px" /> tout à droite de la ligne de l'utilisateur.
 2. Sélectionnez **Supprimer** dans le menu.
+
+<div id="special-situations-and-additional-procedures" />
 
 ## Situations particulières et procédures complémentaires
 
@@ -219,6 +259,8 @@ Si votre compte utilisait précédemment notre ancien système de gestion des ut
 * Les utilisateurs avec les mêmes capacités se sont vu attribuer le même rôle temporaire.
 * Utilisez les fonctionnalités de l'onglet [Rôles](/docs/user-management-for-agencies#onglet-rôles) pour consulter les capacités de chaque rôle temporaire, ainsi que la liste des utilisateurs avec un rôle temporaire.
 
+<div id="temp-role-limitations" />
+
 #### Limitations du rôle temporaire
 
 Les rôles temporaires ont été créés uniquement pour permettre un passage en douceur depuis notre ancien système de gestion des utilisateurs. Ils ne sont donc disponibles que dans des situations précises :
@@ -228,6 +270,8 @@ Les rôles temporaires ont été créés uniquement pour permettre un passage en
   * Notez que l'accès d'un utilisateur aux futures apps **ne peut pas** être modifié lorsque l'utilisateur a un rôle temporaire.
 * Lorsqu'un utilisateur ayant un rôle temporaire passe à un rôle prédéfini, il ne peut pas retrouver le rôle temporaire qui lui avait été attribué précédemment (ni d’ailleurs aucun autre rôle temporaire).
 * Si le dernier utilisateur avec un rôle temporaire quitte ce rôle, le rôle n'apparaîtra plus dans votre compte.
+
+<div id="example-2" />
 
 > 📄 **Exemple**
 >
@@ -246,6 +290,8 @@ Les rôles temporaires ont été créés uniquement pour permettre un passage en
 
 Comme tous les admins disposent des mêmes autorisations que le propriétaire du compte, il n'est généralement pas nécessaire de modifier le propriétaire du compte. Mais si vous devez changer le propriétaire du compte, procédez comme suit.
 
+<div id="important-1" />
+
 > 🚧 **Attention !**
 >
 > Quelques éléments à prendre en compte avant de commencer :
@@ -253,12 +299,16 @@ Comme tous les admins disposent des mêmes autorisations que le propriétaire du
 > * Si vous utilisez encore les API Pull, Master ou GDPR avec le jeton v1, le changement de propriétaire du compte réinitialise automatiquement ces services. Pour éviter toute perte de données, <Anchor target="_blank" href="/marketers/fr/docs/bulletin-api-token-changes">commencez à utiliser ces API avec le jeton v2</Anchor> **avant de changer le propriétaire du compte**.
 > * Le changement de propriétaire du compte doit être effectué manuellement en suivant ces étapes. Il n'est pas possible de le faire depuis la page **Gestion des utilisateurs**.
 
+<div id="1send-your-request-via-the-chat-widget" />
+
 #### #1–Envoyez votre demande en passant par le widget de Chat
 
 Pour commencer la procédure de changement de propriétaire du compte, ouvrez le widget de chat <Anchor target="_blank" href="https://hq1.appsflyer.com/apps/search?openAssistant=true">en utilisant ce lien</Anchor> ou en cliquant sur le bouton Aide dans la barre de menu supérieure. Veuillez donner au Chat les informations suivantes :
 
 * Nom du propriétaire du compte que vous souhaitez remplacer
 * Nom, titre et e-mail du nouveau propriétaire du compte
+
+<div id="2next-steps" />
 
 #### #2-Étapes suivantes
 

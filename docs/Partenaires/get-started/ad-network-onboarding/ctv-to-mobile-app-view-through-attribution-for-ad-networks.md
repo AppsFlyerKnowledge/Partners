@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** Attribuez les installations d'applications mobiles aux publicités visionnées sur des appareils CTV.
 
+<div id="ctv-to-mobile-app-attribution-for-ad-networks" />
+
 ## Attribution des publicités CTV aux applications mobiles pour les réseaux publicitaires
 
 Avec les URLs d'impression multiplateformes d'AppsFlyer, vous pouvez attribuer les installations d'applications mobiles aux publicités affichées sur CTV. Plusieurs installations au sein d’un même foyer peuvent être attribuées à la même impression publicitaire sur CTV.

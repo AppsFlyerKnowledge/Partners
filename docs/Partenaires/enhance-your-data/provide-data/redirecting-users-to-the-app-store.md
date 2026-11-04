@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** Découvrez les options permettant de rediriger les utilisateurs vers l'app store après la diffusion d'une publicité, et comment envoyer les données d'engagement à AppsFlyer.
 
+<div id="overview" />
+
 ## Présentation
 
 AppsFlyer reçoit des données d'engagement (clics et impressions) pour l'attribution de plusieurs façons :
@@ -32,9 +34,13 @@ AppsFlyer reçoit des données d'engagement (clics et impressions) pour l'attrib
 
 Dans les deux cas, la <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters">structure et les paramètres habituels des liens d'attribution</Anchor> sont utilisés.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Pour les SRN, les données sont reçues via des API spécialisées.
+
+<div id="users-redirected-via-appsflyer" />
 
 ## Utilisateurs redirigés via AppsFlyer
 
@@ -46,6 +52,8 @@ Lorsqu'il clique sur une publicité, l'utilisateur est dirigé vers AppsFlyer, q
 4. L'utilisateur installe l'app
 5. AppsFlyer attribue l'installation
 
+<div id="users-sent-directly-by-the-ad-network" />
+
 ## Utilisateurs envoyés directement par le réseau publicitaire
 
 Lorsqu'il clique sur une publicité, l'utilisateur est dirigé vers l’app store par le réseau publicitaire, ce qui minimise le nombre de redirections :
@@ -55,11 +63,15 @@ Lorsqu'il clique sur une publicité, l'utilisateur est dirigé vers l’app stor
 3. L'utilisateur installe l'app
 4. AppsFlyer attribue l'installation
 
+<div id="sending-engagement-data-to-appsflyer" />
+
 ### Envoi des données d'engagement à AppsFlyer
 
 Le fait d'envoyer l'utilisateur directement vers l’app store améliore son expérience grâce au nombre réduit de redirections. Cela garantit également une attribution précise des installations et permet un trafic de haute qualité.
 
 Les réseaux publicitaires ne peuvent rapporter à AppsFlyer que les clics et les impressions **provenant directement de l'appareil de l'utilisateur**.
+
+<div id="timing-of-sending-redirects" />
 
 #### Timing de l'envoi des redirections
 

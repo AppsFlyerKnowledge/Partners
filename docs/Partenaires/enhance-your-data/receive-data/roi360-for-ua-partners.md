@@ -49,6 +49,8 @@ AppsFlyer fournit à ses partenaires des infos sur les publicités in-app, les a
 
 </Accordion>
 
+<div id="set-up-roi360-for-partners" />
+
 ## Mettre en place ROI360 pour les partenaires
 
 Quelles actions doivent effectuer les partenaires pour recevoir le rapport sur les infos UA et les postbacks de revenus du store ?
@@ -77,6 +79,8 @@ Pour contacter l'assistance des partenaires AppsFlyer, ouvrez le menu **Assistan
 [![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
 
 </Accordion>
+
+<div id="roi360-ua-signals-report-for-ua-networks" />
 
 ## Rapport ROI360 UA Signals pour les réseaux UA
 
@@ -155,6 +159,8 @@ Les données sont inscrites quotidiennement dans le dossier h=23 de votre compar
 
 </Accordion>
 
+<div id="in-app-ad-revenue-iaa-postbacks" />
+
 ## Postbacks de revenus publicitaires in-app (IAA)
 
 Les postbacks IAA représentent la deuxième méthode utilisée par AppsFlyer pour envoyer des informations sur les revenus à ses partenaires. Leur principal avantage comparé aux rapports Ad Revenue Signals UA est leur degré d'actualisation, en effet les postbacks offrent un partage des données sur les revenus des AAI en temps quasi réel. Cela contraste avec l'actualisation X+1 (un jour après la date de l'événement) offerte par les rapports ad revenue UA signals.
@@ -193,6 +199,8 @@ AppsFlyer ROI360 suit les étapes ci-dessous pour chaque donnée reçue au nivea
 L'événement est envoyé au partenaire via la configuration de postback définie entre le partenaire et AppsFlyer par le biais d'un paramètre supplémentaire.
 
 </Accordion>
+
+<div id="in-app-purchase-iap-postbacks" />
 
 ## Postbacks des achats in-app (IAP)
 

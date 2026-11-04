@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **En bref :** Découvrez comment les réseaux publicitaires peuvent signaler les coûts de campagne de l'annonceur directement à AppsFlyer via des fichiers CSV.
 
+<div id="cost-import-for-ad-networks" />
+
 ## Importation des coûts pour les réseaux publicitaires
 
 ![AdspendIngestion.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
+
+<div id="overview" />
 
 #### Introduction
 
@@ -43,10 +47,14 @@ x-zendesk:
   * Une fois qu'un fichier est téléchargé, il ne peut plus être annulé.
 * Surveillez et vérifiez qu'aucune erreur n'a été trouvée dans le fichier.
 
+<div id="submitting-ad-spend-files-for-ad-networks" />
+
 ### Envoi de fichiers de dépenses publicitaires pour les réseaux publicitaires
 
 * Utilisez la méthode de téléchargement ou la méthode par e-mail pour ingérer les fichiers de dépenses publicitaires.
 * [Bonne pratique] Utilisez d’abord la méthode de téléchargement car elle est plus facile pour résoudre les problèmes de formatage du CSV.
+
+<div id="submission-by-file-upload" />
 
 #### Envoi par téléchargement (upload) du fichier
 
@@ -64,6 +72,8 @@ x-zendesk:
 6. Procédures supplémentaires :
    * <Anchor target="_blank" href="/marketers/fr/docs/import-cost-data#overwrite-correct-previously-ingested-ad-spend">Écraser l'ingestion précédente</Anchor>
    * <Anchor target="_blank" href="/marketers/fr/docs/import-cost-data#ad-spend-ingestion-actions">Revenir (annuler)</Anchor>
+
+<div id="submission-by-email" />
 
 #### Envoi par email
 

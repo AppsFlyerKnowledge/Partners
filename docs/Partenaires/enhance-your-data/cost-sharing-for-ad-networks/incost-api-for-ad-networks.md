@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **En bref :** l’API InCost, partie intégrante de ROI360 AppsFlyer, permet aux réseaux publicitaires d'envoyer à AppsFlyer de manière programmée des données de coûts publicitaires. Cela permet aux annonceurs de connaître les données de coûts globales et de comprendre l'importance effective de votre réseau.
 
+<div id="about-incost-api" />
+
 ## À propos de l’API InCost
 
 L'API InCost est la meilleure solution pour permettre aux réseaux publicitaires d’envoyer des données de coûts à AppsFlyer. Les partenaires du réseau publicitaire envoient des données de coûts publicitaires détaillées à AppsFlyer via l'API. AppsFlyer ingère et traite les données et les met à la disposition des annonceurs et des partenaires dans des tableaux de bord et rapports.
+
+<div id="benefits" />
 
 #### Les points forts
 
@@ -36,6 +40,8 @@ L'API InCost est la meilleure solution pour permettre aux réseaux publicitaires
 * API inCost est rapide et simple à déployer, et ses résultats sont quasi immédiats. Vous disposez également d'un contrôle total sur comment et quand vous envoyez les données, avec la possibilité d'envoyer les données de coûts datant de 90 jours.
 * L'API InCost prend en charge tous les modèles de tarification des campagnes, et pas seulement le CPI (qui est le seul modèle disponible lors de l'envoi du coût par clic).
 * Démarquez-vous dans le marketplace des partenaires AppsFlyer avec un badge "Coût" qui indique que vous proposez cette fonctionnalité.
+
+<div id="implementing-incost-api" />
 
 ## Mise en œuvre de l'API InCost
 
@@ -57,6 +63,8 @@ L'API InCost est la meilleure solution pour permettre aux réseaux publicitaires
 | 4 | Transmettez le jeton d’API à votre développeur pour qu'il l'utilise dans l'en-tête d'autorisation API, et demandez-lui de suivre <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/incost-overview">ses instructions</Anchor> pour mettre en œuvre les trois méthodes d’API :<ol><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-list-ad-nets-api-get">Obtenir la liste des apps</Anchor>.</li><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/incost-uploader-post">Importer InCost</Anchor> : indiquez au développeur quels champs doivent être utilisés pour renseigner le JSON :<ul><li>Les champs obligatoires doivent être remplis. En d'autres termes : n'envoyez pas de champs vides.</li><li>La source média est limitée aux sources média associées à (enregistrées dans) votre compte de réseau publicitaire. La liste peut être obtenue auprès de votre responsable du développement des partenaires.</li><li>Tenez compte du <Anchor target="_blank" href="/marketers/fr/docs/about-data-freshness-and-timezone-support#fuseau-horaire-spécifique-à-lapp">fuseau horaire de l</Anchor>'app (tel qu'il est indiqué via l'API Get app permission list) pour que les dates des données de coûts s’alignent sur celles de l'application.</li><li>Si certains champs ne font pas partie de la hiérarchie du reporting des coûts de votre campagne, ne les ajoutez pas. Par exemple, l'ID d'adset, le nom d'actif, l'ID publicitaires, le nom de la publicité.</li></ul></li><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/incost-jobstatus-get">Obtenir le statut de l'opération</Anchor>.</li></ol> |
 | 6 | Dans le fil du ticket (cf l'étape 1), informez AppsFlyer que l'implémentation de l'API est terminée, puis attendez la confirmation que votre intégration est opérationnelle. |
 | 7 | Vérifiez que vos annonceurs ont activé les <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#cost-tab">données de coûts</Anchor> dans l'onglet coût de leur page partenaire intégrée à AppsFlyer. Ils commenceront alors à recevoir des données de coûts. |
+
+<div id="fields-for-incost-upload-json" />
 
 ### Champs pour InCost Upload JSON
 

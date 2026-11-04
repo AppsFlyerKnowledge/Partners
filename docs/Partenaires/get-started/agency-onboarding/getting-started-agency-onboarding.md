@@ -30,6 +30,8 @@ x-zendesk:
 
 <Embed title="Bien démarrer — Intégration des agences" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
+<div id="appsflyer-attribution-model" />
+
 ## Modèle d'attribution AppsFlyer
 
 Avant de continuer, vous devez comprendre comment fonctionne l'attribution d'AppsFlyer. Cette section explique ce qui se passe entre le premier clic ou la première impression et l'attribution d'une installation ou d'un événement — et ensuite.
@@ -46,6 +48,8 @@ Avant de continuer, vous devez comprendre comment fonctionne l'attribution d'App
 8. Une fois l'installation attribuée, nous l'affichons sur les tableaux de bord et les rapports du marketeur et de l'agence (<Anchor target="_blank" href="/partners/fr/docs/about-agency-accounts#ad-networks-auto-reporting">sauf Meta ads et X Ads</Anchor>).
 9. Nous envoyons ensuite un postback avec les détails de conversion au réseau publicitaire, qui peut utiliser ces informations pour une meilleure optimisation.
 
+<div id="agency-role-in-mobile-attribution-chain" />
+
 ## Rôle de l'agence dans la chaîne d'attribution mobile
 
 Le marketeur qui possède l'app y intègre le SDK AppsFlyer afin de mesurer son action marketing.
@@ -58,9 +62,13 @@ Lorsqu'une installation est attribuée à une publicité placée par une agence,
 
 Remarque : si votre organisation est propriétaire de l'app, ou si elle est chargée de son développement et de sa commercialisation, vous devez ouvrir un compte de marketeur.
 
+<div id="pricing" />
+
 ## Tarification
 
 L'étendue des fonctionnalités d'un compte d'agence dépend des autorisations accordées par le propriétaire de chaque app. Par conséquent, les comptes d'agence sont **gratuits**, et seuls les propriétaires d'apps sont facturés pour l'attribution. Les propriétaires d'apps et les agences peuvent utiliser les données d'attribution d'AppsFlyer à des fins de rémunération.
+
+<div id="getting-started" />
 
 ## Mise en route
 
@@ -72,9 +80,13 @@ Pour configurer un nouveau compte d'agence :
 2. Un membre de l'équipe de l'agence AppsFlyer peut vous contacter pour vous fournir les informations supplémentaires nécessaires à l'inscription.
 3. Une fois votre compte activé, vous recevez une notification et pouvez commencer à utiliser AppsFlyer.
 
+<div id="adding-team-members" />
+
 ## Ajout de membres d'équipe
 
 Lorsque votre compte est opérationnel, l'admin du compte (la personne qui a ouvert le compte) peut ajouter d'autres membres de l'équipe, qui peuvent avoir accès à tout ou une partie des apps gérées par l'agence. Pour en savoir plus sur la façon d'ajouter de nouveaux membres d'équipe, cliquez ici.
+
+<div id="adding-apps-to-your-account" />
 
 ## Ajouter des apps à votre compte
 
@@ -90,6 +102,8 @@ Tout employé ou équipe d'agence nécessite l'autorisation du propriétaire de 
 
 Les marketeurs peuvent <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#autorisations-pour-lagence">fournir un accès à n'importe quelle agence</Anchor> directement via la plateforme. Une fois votre compte configuré et votre accès aux apps accordé, vous pouvez commencer à lancer des campagnes à l'aide des fonctionnalités AppsFlyer.
 
+<div id="what-does-it-mean-to-get-permission-from-a-marketer" />
+
 ### Que signifie obtenir l'autorisation d'un marketeur ?
 
 Lorsque vous obtenez l'autorisation d'un marketeur :
@@ -104,6 +118,8 @@ Lorsque vous obtenez l'autorisation d'un marketeur :
 
 Les autorisations supplémentaires comprennent l'accès au rapport de cohorte, au tableau de bord Protect360 et aux données organiques agrégées.
 
+<div id="app-list" />
+
 ### Liste des apps
 
 Une fois que vous avez obtenu la permission du marketeur, l'app apparaît sur la page de l'app.
@@ -111,6 +127,8 @@ Une fois que vous avez obtenu la permission du marketeur, l'app apparaît sur la
 La page des apps de votre compte répertorie jusqu'à 1000 apps. Si la liste des apps pour lesquelles vous disposez d'autorisations dépasse 1000 apps, certaines d'entre elles ne s'affichent pas dans la liste. Vous pouvez les trouver à l'aide de la recherche.
 
 ![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+
+<div id="searching-for-apps" />
 
 #### Recherche d'apps
 
@@ -143,6 +161,8 @@ Alors que le secteur favorise un écosystème plus transparent, AppsFlyer soutie
 > * Les données de Meta Ads, de X Ads et de SKAN restent transparentes, que l’option **Autoriser la transparence** soit activée ou non.
 > * Les données des rapports de consommations restent non transparentes, que l’option **[Autoriser la transparence](/docs/getting-started-agency-onboarding#transparence)** soit activée ou non, les rapports affichent donc toujours le nom de l’agence mais pas la source média attribuée.
 
+<div id="agency-dashboard" />
+
 ## Tableau de bord d'agence
 
 Cliquez sur une app dans la liste pour accéder à son <Anchor target="_blank" href="/marketers/fr/docs/getting-started-with-appsflyer-dashboards">tableau de bord</Anchor>. Lorsque vous commencez à mener des campagnes, les données agrégées qui vous sont attribuées s'affichent ici.
@@ -155,7 +175,11 @@ Le tableau de bord du compte de l'Agence comprend un accès par défaut aux él�
 * Tableau de bord des événements in-app
 * Tableau de bord de retargeting
 
+<div id="running-campaigns" />
+
 ## Campagnes en cours
+
+<div id="self-reporting-networks-srns" />
 
 ### Réseaux auto-reporting (SRN)
 
@@ -164,6 +188,8 @@ Les SRN, également connus sous le nom de réseaux auto-attribués (SAN), sont d
 La plupart de ces réseaux requièrent une configuration spéciale pour les agences. Par exemple, étant donné que l'intégration de Meta ads et X Ads peut uniquement être configurée par un propriétaire d'app, les noms de campagne de l'agence DOIVENT commencer par le nom de l'agence pour s'assurer que les installations sont correctement attribuées à cette dernière.
 
 Cliquez sur les liens ci-dessus pour consulter les guides du réseau et les instructions spécifiques aux paramètres de l'agence.
+
+<div id="non-srns" />
 
 ### Non SRN
 
@@ -177,9 +203,13 @@ Vous pouvez utiliser des <Anchor target="_blank" href="/marketers/fr/docs/create
 
 Remarque : les agences ne peuvent pas créer de templates de liens OneLink ou de plateformes uniques, mais elles peuvent utiliser des templates créés par les marketeurs.
 
+<div id="skadnetwork-agency-campaigns" />
+
 ### Campagnes SKAdNetwork des agences
 
 L'infrastructure SKAdNetwork, inhérente à l'iOS d'Apple, permet aux marketeurs de mesurer les performances de leurs campagnes sans IDFA ni ID publicitaire. Même si Apple n'inclut pas les agences dans le processus d'attribution SKAdNetwork et si AppsFlyer ne peut attribuer directement les agences, AppsFlyer peut malgré tout fournir les données d'attribution pour les campagnes d'agence exécutées sous SKAdNetworks.
+
+<div id="campaign-naming" />
 
 #### Nom de la campagne
 
@@ -198,9 +228,13 @@ Par exemple, si votre af\_prt est AgencyX, le nom de votre campagne peut ressemb
 > * Les campagnes d'agence dans SKAdNetwork sont toujours transparentes. L'identité du réseau publicitaire qui gère la campagne n'est pas cachée au marketeur. Notez qu'à partir d'iOS 15, le marketeur (le propriétaire de l'app) peut <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">choisir de recevoir directement une copie du postback.</Anchor>
 > * Dans l'onglet Intégration, vous devez demander au marketeur d'activer le paramètre **Activation du partenaire** de l'ad network. Si ce n'est pas fait, le réseau publicitaire ne recevra pas les postbacks liés aux campagnes SKAN. Important ! Cette opération s'ajoute à l'option Activation du partenaire que vous trouvez dans l'interface utilisateur.
 
+<div id="access-to-skan-conversion-studio" />
+
 #### Accès au SKAN Conversion Studio
 
 Dans <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio#studio-de-conversion-skan--présentation">Conversion Studio</Anchor>, les agences peuvent <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio#view-cv-mapping">consulter et télécharger</Anchor> le mappage des valeurs de conversion SKAN d’un marketeur, mais elles ne peuvent ni configurer ni modifier les paramètres.
+
+<div id="skadnetwork-dashboard" />
 
 #### Tableau de bord SKAdNetwork
 
@@ -211,6 +245,8 @@ Dans <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio#stu
 * <Anchor target="_blank" href="/marketers/fr/docs/about-att-and-skan">Guide de démarrage rapide pour la solution SKAdNetwork</Anchor>
 * <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">Tableau de bord SKAdNetwork</Anchor>
 * <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide">Solution SKAdNetwork</Anchor>
+
+<div id="single-source-of-truth-ssot-for-agencies" />
 
 ### SSOT pour les agences
 
@@ -223,6 +259,8 @@ Pour inclure l’indicateur SSOT dans votre vue d'ensemble du tableau de bord, l
 **Pour aller plus loin :**
 
 * <Anchor target="_blank" href="/marketers/fr/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Guide de l'attribution IOS en SSOT (Single Source Of Truth)</Anchor>
+
+<div id="what-else-you-can-do" />
 
 ## Que pouvez-vous faire d'autre ?
 

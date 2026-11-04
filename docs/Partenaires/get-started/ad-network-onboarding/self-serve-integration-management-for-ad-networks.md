@@ -35,10 +35,14 @@ x-zendesk:
   * Ports : 80, 443
 * ![AppsFlyerAdmin_us-en.png](https://files.readme.io/047d2ffa8bd5258c09f60c6f560162b285c4e9742d98b1158952a26d988ce763-18271759619089.png) Seuls les utilisateurs administrateurs peuvent accéder à cette section et la gérer.
 
+<div id="accessing-integration-management" />
+
 ## Accès à la gestion de l’intégration
 
 1. Connectez-vous à votre compte partenaire AppsFlyer.
 2. Cliquez sur le menu déroulant en haut à droite > **Gestion des postbacks**.
+
+<div id="attribution-link" />
 
 ## Lien d'attribution
 
@@ -52,6 +56,8 @@ La configuration du lien d’attribution est obligatoire.
    * **Nom du paramètre** : Nom de l'écran de paramètres AppsFlyer.
    * **Votre macro** : ajoutez la macro qui remplit les paramètres avec des valeurs.
    * **Inclure** : cochez la case pour inclure le paramètre dans le lien.
+
+   <div id="important" />
 
    > 🚧 **Important !**
    >
@@ -68,6 +74,8 @@ La configuration du lien d’attribution est obligatoire.
 
 En cas de problème, contactez-nous à l’aide du <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget Assistant partenaire</Anchor>.
 
+<div id="default-postback" />
+
 ## Postback par défaut
 
 Les postbacks sont des URL contenant des macros remplies par AppsFlyer et envoyées à vos serveurs en temps réel après chaque conversion (soit sur votre réseau, soit sur d’autres réseaux également, selon votre configuration).
@@ -83,6 +91,8 @@ Les postbacks sont des URL contenant des macros remplies par AppsFlyer et envoy�
    * **Événement in-app** : cochez la case pour inclure le paramètre dans le postback de l’événement in-app.
 
    <Anchor target="_blank" href="/partners/fr/docs/postback-macros-for-ad-networks">Liste complète des macros de postback</Anchor>
+
+   <div id="important-1" />
 
    > 🚧 **Important !**
    >
@@ -101,6 +111,8 @@ Les postbacks sont des URL contenant des macros remplies par AppsFlyer et envoy�
 <Anchor target="_blank" href="/marketers/fr/docs/in-app-event-postback-configuration">Plus d’informations et d’exemples de postbacks.</Anchor>
 
 En cas de problème, utilisez le <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget Assistant partenaire</Anchor>.
+
+<div id="advanced-privacy-and-skan-postbacks" />
 
 ## Confidentialité avancée et postbacks SKAN
 
@@ -124,6 +136,8 @@ La confidentialité avancée et les postbacks SKAN ne peuvent être configurées
    Liste des <Anchor target="_blank" href="/partners/fr/docs/skan-integration-guide-for-ad-networks#receive-data-from-appsflyer">macros de postback SKAdNetwork</Anchor>
 
    Liste des <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">macros de postback Advanced Privacy</Anchor>
+
+   <div id="important-2" />
 
    > 🚧 **Important !**
    >
