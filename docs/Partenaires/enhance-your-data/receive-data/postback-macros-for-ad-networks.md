@@ -109,6 +109,12 @@ Signification des colonnes du tableau suivant :
 
 Les exemples suivant concernent les postbacks d'événement in-app qui sont disponibles pour les partenaires.
 
+<div id="sample-postbacks" />
+
+<div id="encoded-values" />
+
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > Le modèle de postback d'événement "&event=(event)&json=(encode)" a été traduit dans le postback suivant pour un événement af\_purchase spécifique :
@@ -134,6 +140,8 @@ Pour décoder ou encoder un postback, utilisez un <Anchor target="_blank" href="
 
 ### Exemple de postbacks
 
+<div id="general-install-postback-examples" />
+
 ### Exemples de postbacks d'installations
 
 <Tabs>
@@ -156,6 +164,10 @@ device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
+
+<div id="general-in-app-event-postback-examples" />
 
 ### Exemples de postbacks d'événements in-app
 

@@ -120,6 +120,8 @@ Les structures de compte permettent le partage de connaissances entre les équip
 
 </Accordion>
 
+<div id="important" />
+
 <div id="agency-accountscampaigns-and-reporting" />
 
 ## Comptes d'agence - campagnes et rapports

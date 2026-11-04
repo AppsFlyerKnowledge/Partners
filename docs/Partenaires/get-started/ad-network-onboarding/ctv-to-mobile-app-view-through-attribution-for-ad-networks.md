@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** Attribuez les installations d'applications mobiles aux publicités visionnées sur des appareils CTV.
 
+<div id="note" />
+
 <div id="ctv-to-mobile-app-attribution-for-ad-networks" />
 
 ## Attribution des publicités CTV aux applications mobiles pour les réseaux publicitaires

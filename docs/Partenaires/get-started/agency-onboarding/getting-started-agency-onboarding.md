@@ -189,6 +189,8 @@ La plupart de ces réseaux requièrent une configuration spéciale pour les agen
 
 Cliquez sur les liens ci-dessus pour consulter les guides du réseau et les instructions spécifiques aux paramètres de l'agence.
 
+<div id="sandbox-attribution-agency-campaigns" />
+
 <div id="non-srns" />
 
 ### Non SRN
@@ -202,6 +204,8 @@ Vous pouvez utiliser des <Anchor target="_blank" href="/marketers/fr/docs/create
 <Anchor target="_blank" href="/marketers/fr/docs/onelink-guide">OneLink™</Anchor> est un type de lien personnalisé qui vous permet d'utiliser le même lien pour plusieurs plateformes ou d'envoyer les utilisateurs vers un contenu spécifique dans l'app.
 
 Remarque : les agences ne peuvent pas créer de templates de liens OneLink ou de plateformes uniques, mais elles peuvent utiliser des templates créés par les marketeurs.
+
+<div id="campaign-naming-1" />
 
 <div id="skadnetwork-agency-campaigns" />
 

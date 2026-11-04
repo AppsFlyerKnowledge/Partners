@@ -97,6 +97,8 @@ Pour ajouter ou modifier les informations sur vos services, cliquez sur le nom d
 
 <div id="overview-1" />
 
+<div id="note" />
+
 <div id="overview" />
 
 ### Présentation

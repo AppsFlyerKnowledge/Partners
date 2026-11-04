@@ -41,6 +41,8 @@ L'API InCost est la meilleure solution pour permettre aux réseaux publicitaires
 * L'API InCost prend en charge tous les modèles de tarification des campagnes, et pas seulement le CPI (qui est le seul modèle disponible lors de l'envoi du coût par clic).
 * Démarquez-vous dans le marketplace des partenaires AppsFlyer avec un badge "Coût" qui indique que vous proposez cette fonctionnalité.
 
+<div id="note" />
+
 <div id="implementing-incost-api" />
 
 ## Mise en œuvre de l'API InCost
