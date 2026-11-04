@@ -32,6 +32,8 @@ x-zendesk:
 * <span id="report-considerations"></span>데이터 최신성: <Anchor target="_blank" href="/marketers/ko/docs/about-data-freshness-and-timezone-support#ad-revenue">매일, 즉 0일 차 데이터는 1일 차에 도착합니다</Anchor>. 데이터는 매일 21:00(UTC 시간)에 데이터 락커 버킷의 h=23에 기록됩니다./span>
 * 앱 포함 내역:
 
+<div id="blocked-clicks-and-impressions" />
+
 <div id="report-types" />
 
 ## 리포트 유형
@@ -46,6 +48,8 @@ x-zendesk:
 | site\_id | 광고를 게재하는 퍼블리셔를 식별하는 고유 ID입니다. |
 | date |  |
 | agency |  |
+
+<div id="failed-click-signatures" />
 
 <div id="report-structure-metrics" />
 

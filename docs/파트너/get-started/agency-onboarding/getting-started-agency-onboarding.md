@@ -102,6 +102,8 @@ x-zendesk:
 
 마케터는 플랫폼에서 직접 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">에이전시에 액세스 권한을 부여합니다</Anchor>. 계정을 설정하고 앱에 액세스할 수 있게 되면 앱스플라이어 기능을 사용하여 캠페인 실행을 시작할 수 있습니다.
 
+<div id="note" />
+
 <div id="what-does-it-mean-to-get-permission-from-a-marketer" />
 
 ### 이것은 마케터로부터 권한을 부여받는다는 것을 의미합니다.

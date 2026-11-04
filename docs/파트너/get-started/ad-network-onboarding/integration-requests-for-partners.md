@@ -31,6 +31,10 @@ x-zendesk:
 ---
 > **간단히 보기**: 초기 통합 설정 변경 요청에 필요한 모든 정보입니다.
 
+<div id="implement-audience-feature" />
+
+<div id="implement-incost-api" />
+
 <div id="important" />
 
 > 🚧 **중요!**

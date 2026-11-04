@@ -119,6 +119,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="important" />
+
 <div id="agency-accountscampaigns-and-reporting" />
 
 ## 대행사 계정 - 캠페인 및 리포팅

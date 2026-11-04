@@ -26,6 +26,8 @@ x-zendesk:
 > **간단히 보기**: 연동 파트너를 위한 FAQ 및 연동 문제 해결.
 
 
+<div id="why-don-t-i-see-event-data-on-the-dashboard" />
+
 <div id="account-and-dashboard" />
 
 <div id="i-want-to-become-an-integrated-partner" />
@@ -131,6 +133,8 @@ x-zendesk:
 추가 지원이 필요한 에이전시 계정의 경우, <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">Partner Assistant 위젯</Anchor>을 통해 앱스플라이어에 문의하십시오.
 
 </Accordion>
+
+<div id="why-can-t-i-redirect-users-to-a-designated-landing-page" />
 
 <div id="partner-permissions" />
 
@@ -357,6 +361,10 @@ Pull API 및 데이터 내보내기 페이지를 통해 하루에 생성할 수 
 
 광고주가 설정을 완료하면 애드 네트워크가 인앱이벤트 포스트백 설정을 볼 수 있지만, 에이전시가 설정을 했을 때에는 볼 수 없습니다. 따라서 에이전시가 포스트백을 위한 인앱 이벤트를 네트워크에 매핑할 때, 에이전시에 대해 활성화되어 있더라도 애드 네트워크에서 해당 섹션이 비활성된 것으로 간주합니다.
 
+<div id="dashboard-data-is-missing" />
+
+<div id="revenue-data-is-missing" />
+
 <div id="example" />
 
 > 📄 **예시**
@@ -447,6 +455,10 @@ Pull API 및 데이터 내보내기 페이지를 통해 하루에 생성할 수 
 <Anchor target="_blank" href="/partners/ko/docs/getting-started-agency-onboarding#skadnetwork-에이전시-캠페인">SKAN 캠페인에 대한 자세한 정보는 여기서 확인하세요.</Anchor>
 
 </Accordion>
+
+<div id="what-detection-methods-are-used-to-detect-install-rejections" />
+
+<div id="why-was-my-test-install-rejected-from-attribution" />
 
 <div id="anti-fraud-protect360" />
 

@@ -73,6 +73,8 @@ x-zendesk:
      https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_siteid=12345&expires=1597657118&signature_v2=8fnDVzZP_WRZnv3KNJaREOEfvB5p9oRc_XlKEvUo8gk
      ```
 
+<div id="building-a-signature-example" />
+
 <div id="signature-example" />
 
 <div id="signature-algorithm" />
@@ -722,6 +724,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 </Accordion>
 
+<div id="response-codes-5" />
+
 <div id="get-configuration-method" />
 
 ### 설정 메서드 가져오기
@@ -826,6 +830,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="response-codes-6" />
 
 <div id="parameters-4" />
 

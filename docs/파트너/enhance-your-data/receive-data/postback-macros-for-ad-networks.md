@@ -50,7 +50,7 @@ x-zendesk:
 * 모두 전송
 
 
-| <span id="macrosinstalls-in-app-events-and-rejected-events"></span><span id="macros-installs-inapp-events-and-rejected-events"></span>포스트백 매크로(이름) | 소스 | 모두 전송 | 설명 |  |  |
+| <span id="retargeting-conversion-type"></span><span id="is-reinstall"></span><span id="is_contrib"></span><span id="af_validation_type"></span><span id="af_validated"></span><span id="macrosinstalls-in-app-events-and-rejected-events"></span><span id="macros-installs-inapp-events-and-rejected-events"></span>포스트백 매크로(이름) | 소스 | 모두 전송 | 설명 |  |  |
 | --- | --- | --- | --- | --- | --- |
 | <span id="advertising_id"></span>advertising\_id | SDK | 예 | 사용자가 재설정할 수 있는 디바이스 ID, 일명 GAID. (sha1-advertiserId)도 사용 가능 | 예 |  |
 | <span id="app_name"></span>app\_name | SDK | 예 | 광고주가 설정한 앱 이름 | 예 |  |
