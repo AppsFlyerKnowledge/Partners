@@ -230,7 +230,7 @@ Par exemple, si votre af\_prt est AgencyX, le nom de votre campagne peut ressemb
 > 📘 **Note**
 >
 > * Les campagnes d'agence dans SKAdNetwork sont toujours transparentes. L'identité du réseau publicitaire qui gère la campagne n'est pas cachée au marketeur. Notez qu'à partir d'iOS 15, le marketeur (le propriétaire de l'app) peut <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">choisir de recevoir directement une copie du postback.</Anchor>
-> * Dans l'onglet Intégration, vous devez demander au marketeur d'activer le paramètre **Activation du partenaire** de l'ad network. Si ce n'est pas fait, le réseau publicitaire ne recevra pas les postbacks liés aux campagnes SKAN. Important ! Cette opération s'ajoute à l'option Activation du partenaire que vous trouvez dans l'interface utilisateur.
+> * <mark>Dans l'onglet Intégration, vous devez demander au marketeur d'activer le paramètre **Activation du partenaire**</mark> de l'ad network. Si ce n'est pas fait, le réseau publicitaire ne recevra pas les postbacks liés aux campagnes SKAN. Important ! Cette opération s'ajoute à l'option Activation du partenaire que vous trouvez dans l'interface utilisateur.
 
 <div id="access-to-skan-conversion-studio" />
 
