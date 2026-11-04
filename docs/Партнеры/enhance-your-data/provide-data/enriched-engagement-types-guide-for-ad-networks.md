@@ -60,7 +60,7 @@ x-zendesk:
 1. Рекламная сеть отображает рекламу.
 2. Рекламная сеть отправляет показ в AppsFlyer с указанным`af_ad_tran_id`
 3. Пользователь взаимодействует с рекламой.
-4. Рекламная сеть отправляет клик или показ с параметрами `af_engagement_type``af_ad_tran_id``af_ad_format``af_ad_type`и, при необходимости, с параметрами`viewability` .
+4. Рекламная сеть отправляет клик или показ с параметрами `af_engagement_typeaf_ad_tran_idaf_ad_formataf_ad_type`и, при необходимости, с параметрами`viewability` .
 5. AppsFlyer сопоставляет событие установки с вовлеченным кликом или вовлеченным просмотром.
 6. AppsFlyer приписывает событие установки рекламной сети.
 
@@ -72,10 +72,10 @@ x-zendesk:
 
 Сети могут сообщать о типах вовлеченности, включая следующие параметры в ссылки атрибуции
 
-* `af_engagement_type`: Тип взаимодействия, например, `engaged_click``click_to_app`или`engaged_view`. Посмотрите полный список различных типов взаимодействия и их описаний.
-* `af_ad_type`: Тип объявления. Например, `af_ad_type` af\_ad\_type`rewarded_video``interstitial``banner`, banner, или . Посмотрите полный список различных типов объявлений и их описаний.
-* `af_ad_format`: Формат рекламы, например, `text``image``video``playable` Посмотрите <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#af_ad_format">полный список различных форматов объявлений и их описаний.</Anchor> См. <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#af_ad_format">полный список различных форматов рекламы и их описаний.</Anchor>
-* `viewability`(необязательно) Дополнительная информация о взаимодействии, например,`af_video_total_length``af_ad_time_viewed``af_audio_played_length` Посмотрите <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#параметры-видимости">полный список различных вариантов видимости и их описаний.</Anchor> Посмотрите <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#параметры-видимости">полный список различных вариантов видимости и их описаний.</Anchor>
+* `af_engagement_type`: Тип взаимодействия, например, `engaged_clickclick_to_app`или`engaged_view`. Посмотрите полный список различных типов взаимодействия и их описаний.
+* `af_ad_type`: Тип объявления. Например, `af_ad_type` af\_ad\_type`rewarded_videointerstitialbanner`, banner, или . Посмотрите полный список различных типов объявлений и их описаний.
+* `af_ad_format`: Формат рекламы, например, `textimagevideoplayable` Посмотрите <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#af_ad_format">полный список различных форматов объявлений и их описаний.</Anchor> См. <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#af_ad_format">полный список различных форматов рекламы и их описаний.</Anchor>
+* `viewability`(необязательно) Дополнительная информация о взаимодействии, например,`af_video_total_lengthaf_ad_time_viewedaf_audio_played_length` Посмотрите <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#параметры-видимости">полный список различных вариантов видимости и их описаний.</Anchor> Посмотрите <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#параметры-видимости">полный список различных вариантов видимости и их описаний.</Anchor>
 * `af_ad_tran_id`: Идентификатор транзакции, позволяющий AppsFlyer проверить вовлеченный клик или вовлеченный просмотр, сопоставив его с предшествующим показом.
 * `is_skoverlay=true`ИЛИ `is_skoverlay=true` Определите вовлеченные просмотры, вызванные [SKOverlay](https://developer.apple.com/documentation/storekit/skoverlay) или установками Android Auto Inline.
 
