@@ -82,7 +82,7 @@ Ad networks appointed (activated) by agencies: The agency can't grant permission
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners**.
 2. Search for the partner and select it.
 3. Click **Set up integration**. You’re directed to the integration setup page.
-4. Verify that **Activate partner**is on. If not, data isn't shared.
+4. Verify that **Activate partner** is on. If not, data isn't shared.
 5. Go to the **Permissions** tab.
 6. Turn on the following ad network permissions:
    * **Access aggregate conversions data**.

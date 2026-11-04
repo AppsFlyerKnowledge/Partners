@@ -133,7 +133,8 @@ Complete the prerequisites before beginning to execute the test procedure.
    The ATT consent dialogue displays.
 
    ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
-6. Tap **Ask App not to Track.** The **Install Data** page displays.
+6. Tap **Ask App not to Track.**  
+   The **Install Data** page displays.
 
    [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
 7. Tap **ATT Status**.  
@@ -175,8 +176,10 @@ When the app is opened for the first time, the iOS **request to track** dialogue
 
 The following functions are available:
 
-* **In-App Event Tests**Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
-* **ATT Status**Returns the current ATT status reported by iOS as **Authorized** or **Denied**. The ATT status depends on user agreement to track in the ATT consent dialogue and the device **Allow Apps to Request to Track** setting.
+* **In-App Event Tests**  
+  Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
+* **ATT Status**  
+  Returns the current ATT status reported by iOS as **Authorized** or **Denied**. The ATT status depends on user agreement to track in the ATT consent dialogue and the device **Allow Apps to Request to Track** setting.
 
 </Accordion>
 
