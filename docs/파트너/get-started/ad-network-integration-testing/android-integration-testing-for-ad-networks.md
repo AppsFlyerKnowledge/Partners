@@ -93,7 +93,8 @@ When the app is opened for the first time, the **Install Data** page displays t
 
 The following functions are available:
 
-* **In-App Event Tests**Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
+* **In-App Event Tests**  
+  Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
 
 </Accordion>
 

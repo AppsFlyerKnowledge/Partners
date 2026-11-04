@@ -243,7 +243,7 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
    **예**
 
-| `name}&af_adset_id={adset ID}&af_ad={ad name}&af_ad_id={adID}  <br />&af_ad_type={Ad type}&af_siteid={PublisherId}`<br /><br />`&af_ua=Mozilla%2F5.0%20%28iPhone%3B%20CPU%20iPhone%20OS%2012_1_4%20  <br />like%20Mac%20OS%20X%29%20AppleWebKit%`<br /><br />`2F605.1.15%20%``28KHTML%2C%20like%20Gecko%29%20Mobile%2F16D57&af_lang=en-US&af_ip=11.11.1.11` |
+| `name}&af_adset_id={adset ID}&af_ad={ad name}&af_ad_id={adID}  <br />&af_ad_type={Ad type}&af_siteid={PublisherId}`<br /><br />`&af_ua=Mozilla%2F5.0%20%28iPhone%3B%20CPU%20iPhone%20OS%2012_1_4%20  <br />like%20Mac%20OS%20X%29%20AppleWebKit%`<br /><br />`2F605.1.15%20%28KHTML%2C%20like%20Gecko%29%20Mobile%2F16D57&af_lang=en-US&af_ip=11.11.1.11` |
 | --- |
 
    * 쿼리 파라미터는 URL로 인코딩되어야 합니다.

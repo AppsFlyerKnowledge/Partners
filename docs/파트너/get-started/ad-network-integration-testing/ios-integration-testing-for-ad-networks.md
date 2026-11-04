@@ -174,8 +174,10 @@ When the app is opened for the first time, the iOS **request to track** dialogue
 
 The following functions are available:
 
-* **In-App Event Tests**Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
-* **ATT Status**Returns the current ATT status reported by iOS as **Authorized** or **Denied**. The ATT status depends on user agreement to track in the ATT consent dialogue and the device **Allow Apps to Request to Track** setting.
+* **In-App Event Tests**  
+  Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
+* **ATT Status**  
+  Returns the current ATT status reported by iOS as **Authorized** or **Denied**. The ATT status depends on user agreement to track in the ATT consent dialogue and the device **Allow Apps to Request to Track** setting.
 
 </Accordion>
 
