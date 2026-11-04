@@ -32,7 +32,7 @@ x-zendesk:
 
 
 
-| <span id="postbacks-for-ad-networks"></span>소스 | 설명 |
+| <span id="postback-data-sources"></span><span id="postbacks-for-ad-networks"></span>소스 | 설명 |
 | --- | --- |
 | <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">어트리뷰션 링크 파라미터</Anchor> | 예: 어트리뷰션 링크의 클릭 ID 파라미터 - "&click\_id=CLICK\_ID" |
 |  |  |
@@ -50,7 +50,7 @@ x-zendesk:
 * 모두 전송
 
 
-| <span id="macros-installs-inapp-events-and-rejected-events"></span>포스트백 매크로(이름) | 소스 | 모두 전송 | 설명 |  |  |
+| <span id="macrosinstalls-in-app-events-and-rejected-events"></span><span id="macros-installs-inapp-events-and-rejected-events"></span>포스트백 매크로(이름) | 소스 | 모두 전송 | 설명 |  |  |
 | --- | --- | --- | --- | --- | --- |
 | <span id="advertising_id"></span>advertising\_id | SDK | 예 | 사용자가 재설정할 수 있는 디바이스 ID, 일명 GAID. (sha1-advertiserId)도 사용 가능 | 예 |  |
 | <span id="app_name"></span>app\_name | SDK | 예 | 광고주가 설정한 앱 이름 | 예 |  |
@@ -97,6 +97,10 @@ x-zendesk:
 | <span id="is_organic"></span>오가닉 여부 | AF | 예 |  |  |  |
 
 
+<div id="example" />
+
+<div id="in-app-event-only-macros" />
+
 > 📄 **예시**
 >
 > 이벤트 포스트백 템플릿 "&event=(event)&json=(encode)"는 특정 af\_purchase 이벤트에 대해 다음 포스트백으로 해석됩니다.
@@ -114,11 +118,17 @@ x-zendesk:
 > {"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}
 > ```
 
+<div id="encoded-values" />
+
 #### **인코딩된 값**
 
 포스트백은 영문자나 숫자가 아닌 특수 문자를 포함해야할 경우가 있습니다.
 
+<div id="sample-postbacks" />
+
 ### 샘플 포스트백
+
+<div id="general-install-postback-examples" />
 
 ### 일반적인 설치 포스트백 예시
 
@@ -142,6 +152,8 @@ device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="general-in-app-event-postback-examples" />
 
 ### 일반적인 인앱 이벤트 포스트백 예시
 
@@ -167,6 +179,8 @@ device_ip=(ip)&idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ### 리치 인앱 이벤트 포스트백 예시
 

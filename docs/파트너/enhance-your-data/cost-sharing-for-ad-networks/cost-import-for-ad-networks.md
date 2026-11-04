@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 애드 네트워크가 CSV 파일을 통해 광고주의 캠페인 비용을 앱스플라이어에 직접 보고하는 방법을 알아보세요.
 
+<div id="cost-import-for-ad-networks" />
+
 ## 애드 네트워크 비용 가져오기
 
 ![AdspendIngestion.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
+
+<div id="overview" />
 
 #### 개요
 
@@ -43,11 +47,15 @@ x-zendesk:
   * 일단 업로드된 파일은 되돌릴 수 없습니다.
 * 파일에서 오류가 발견되지 않았는지 모니터링하고 확인합니다.
 
+<div id="submitting-ad-spend-files-for-ad-networks" />
+
 ### 애드 네트워크용 광고 지출 파일 제출
 
 * 업로드하거나 이메일을 사용하여 광고 지출 파일을 수집합니다.
 * [모범 사례] 처음에는 업로드 방법을 사용하십시오. 이는 CSV 서식 지정 문제를 더 쉽게 해결할 수 있습니다.
 * 애드 네트워크는 에이전시 비용 데이터를 가져올 수 없습니다. 광고주만이 해당 데이터를 가져올 수 있습니다.
+
+<div id="submission-by-file-upload" />
 
 #### 파일 업로드를 통한 제출
 
@@ -65,6 +73,8 @@ x-zendesk:
 6. 추가 절차:
    * <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data#cost-import-dashboard">이전 수집 내용 덮어쓰기</Anchor>
    * <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data#cost-import-dashboard">되돌리기(취소)</Anchor>
+
+<div id="submission-by-email" />
 
 #### 이메일로 제출
 

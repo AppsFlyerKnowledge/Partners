@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 통합 파트너(애드 네트워크 및 대행사)는 ProtectLITE 및 Protect360 엔진에 의해 식별되고 차단된 트래픽과 관련된 프로드를 볼 수 있으며, 고객이 수동으로 정의한 유효성 검증 규칙도 확인 가능합니다.
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어는 다음을 통해 프로드를 식별하고 차단합니다:
@@ -41,11 +43,15 @@ x-zendesk:
 
 애드 네트워크에서는 <Anchor target="_blank" href="/partners/ko/docs/protect360-reports-for-ad-networks">로데이터 리포트</Anchor>를 통해 클릭 및 노출 제한과 실패한 클릭 서명에 대한 정보를 확인할 수 있으며, 이는 광고주의 권한이 필요하지 않습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 대행사를 통해 애드 네트워크와 협력하는 광고주의 경우, 애드 네트워크와 대행사가 모두 데이터에 액세스하려면 광고주가 앱스플라이어에 대행사와 애드 네트워크를 모두 연동하고, 둘 다에 데이터 액세스 권한을 부여해야 합니다.
 >
 > 대행사만 연동하고 권한이 부여된 경우, 애드 네트워크는 데이터에 액세스할 수 없습니다.
+
+<div id="dashboard-view" />
 
 ### 대시보드 보기
 
@@ -61,6 +67,8 @@ x-zendesk:
 
 [altp360\_dashboard\_1.jpgalt](https://support.appsflyer.com/hc/article_attachments/30445650800913)
 
+<div id="raw-data-reports" />
+
 ### 로데이터 리포트
 
 **전제 조건: 광고주는 ProtectLITE 및 Protect360에 대한 액세스를 허가해야 합니다.**
@@ -74,6 +82,8 @@ Protect360 로데이터 리포트는 ProtectLITE, Protect360, 유효성 검증 �
 
 <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data-reports">Protect360 로데이터 리포트</Anchor>에 대해 더 보기.
 
+<div id="protect360-ad-network-reporting-api" />
+
 ## Protect360 애드 네트워크 리포팅 API
 
 * 이 섹션에 나열된 로데이터 리포트는 API를 통해 애드 네트워크에서 사용할 수 있습니다.
@@ -86,6 +96,8 @@ Protect360 로데이터 리포트는 ProtectLITE, Protect360, 유효성 검증 �
 * Protect360 권한이 있는 앱 목록을 보려면 <Anchor target="_blank" href="/partners/ko/docs/app-list-api-for-ad-networks">앱 목록 API 가져오기</Anchor>를 사용하세요.
 * 관리자는 대시보드에서 사용할 수 있는 앱스플라이어 <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens">V2.0 인증 토큰</Anchor>을 가져와야 합니다.
 
+<div id="protect360-api-reports" />
+
 #### Protect360 API 리포트
 
 | 리포트 | 데이터 최신성 | 설명 |
@@ -95,6 +107,8 @@ Protect360 로데이터 리포트는 ProtectLITE, Protect360, 유효성 검증 �
 | 인스톨 | 실시간 | 차단 사유로 차단된 인스톨<br /><br />리포트 주제:  blocked\_installs\_report |
 | 인앱 이벤트 | 실시간 | 차단된 사용자가 수행한 인앱 이벤트<br /><br />리포트 주제: `blocked_in-app_events_report` |
 | 클릭 | 실시간 | 차단된 사용자가 수행한 클릭<br /><br />리포트 주제: `blocked_clicks_report` |
+
+<div id="procedure-for-ad-networks-to-get-protect360-reports-by-download" />
 
 #### **광고 네트워크가 다운로드로 Protect360 보고서를 받는 절차**
 
@@ -108,6 +122,8 @@ Protect360 로데이터 리포트는 ProtectLITE, Protect360, 유효성 검증 �
    3. 종료 날짜
    4. Bearer 토큰 (앱스플라이어 <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens">V2.0 인증 토큰</Anchor>)
 4. 일부 호출에는 이 문서 에 설명된 대로 [선택적 파라미터](/docs/protect360-for-integrated-partners#api-parameters)가 있습니다.
+
+<div id="curl-examples" />
 
 ### curl 예시
 
@@ -176,6 +192,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 </Accordion>
 
+<div id="protect360-ad-network-api-reference-guide" />
+
 ### Protect360 애드 네트워크 API 참조 가이드
 
 <div id="api-basics" />
@@ -231,6 +249,8 @@ Protect360 API 파라미터:
 
 </Accordion>
 
+<div id="impression-capping" />
+
 ## 노출 및 클릭 제한
 
 애드 네트워크에 노출 또는 클릭 프로드가 매우 높으면 Protect360이 24시간 주기로 해당 애드 네트워크의 노출 또는 클릭을 차단합니다. 즉, 임계값에 도달한 후 발생하는 모든 노출/클릭은 앱스플라이어에 기록되지 않으며 어트리뷰션 대상이 아닙니다. 차단된 노출/클릭은 Protect360 대시보드와 보고서에 표시됩니다.
@@ -266,6 +286,8 @@ Protect360 API 파라미터:
 | **질문: 캡핑과 관련된 알림 이메일이 네트워크에 전송되나요?**<br /><br />답: **클릭 캡핑의 경우, 앱스플라이어는 클릭 캡핑 임계값에 도달할 때마다 애드 네트워크에 이메일 알림을 보냅니다.** |
 
 </Accordion>
+
+<div id="click-signing" />
 
 ### 클릭 서명
 

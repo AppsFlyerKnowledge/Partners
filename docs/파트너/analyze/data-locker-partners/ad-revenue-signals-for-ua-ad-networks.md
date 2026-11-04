@@ -30,6 +30,8 @@ x-zendesk:
 
 다음으로 애드 네트워크는 이 데이터를 캠페인 타겟팅 및 최적화 알고리즘에 수집하고, UA에서 생성된 수익에 대한 전체 보기를 기반으로 ROAS 캠페인을 개선하는 데 사용할 수 있습니다.
 
+<div id="set-the-ad-revenue-report-in-data-locker" />
+
 ## 데이터 락커에서 광고 수익 리포트 설정
 
 데이터 락커에서 광고 수익 리포트에 액세스하려면 다음 활동을 완료해야 합니다.
@@ -64,6 +66,8 @@ x-zendesk:
 4. 지침은 <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">애드 네트워크가 광고 수익 데이터를 가져올 수 있도록 허용</Anchor>을 참조하세요.
 
 </Accordion>
+
+<div id="report-specification" />
 
 ## 리포트 사양
 

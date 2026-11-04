@@ -34,6 +34,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 고급 설정을 통해 귀사의 앱스플라이어 에이전시 계정을 최대한 활용하세요.
 
+<div id="about-agency-accounts" />
+
 ## 에이전시 계정 소개
 
 에이전시 계정은 에이전시 팀이 마케터 고객(앱 소유자)을 대신하여 에이전시에서 앱 마케팅 캠페인을 실행하고 측정하는 데 사용됩니다.
@@ -45,22 +47,32 @@ x-zendesk:
   * 리타겟팅
 * 사용 가능한 KPI에는 노출 수, 클릭 수, 인스톨, 사용자 충성도, 비용, ROI (투자수익률) 등이 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/getting-started-with-appsflyer-dashboards">대시보드 소개</Anchor>
 
+<div id="agency-access-to-marketer-data" />
+
 ### 마케터 데이터에 대한 에이전시 액세스
 
 에이전시는 항상 에이전시에 어트리뷰트된 트래픽 데이터에 액세스할 수 있습니다. 마케터는 에이전시에 추가 데이터(예: 오가닉 통합 데이터)에 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">액세스 권한을 부여할 수 있습니다</Anchor>. <Anchor target="_blank" href="/marketers/ko/docs/manage-data-access-permissions">사용자 유형에 따른 데이터 액세스</Anchor>를 참조하세요.
 
+<div id="agency-access-to-ad-network-integrations" />
+
 ### 애드 네트워크 연동에 대한 에이전시 액세스
 
 애드 네트워크 연동에 액세스하고 캠페인을 측정하려면 애드 네트워크에서 에이전시가 사전 승인을 받아야 합니다. 이는 귀사의 에이전시 ID (af\_prt)를 애드 네트워크의 승인된 에이전시 목록에 포함시켜야 합니다. 파트너에게 연락하여 귀사의 에이전시가 목록에 포함되어 있는지 확인하세요. [여기](/docs/about-agency-accounts#af_prt-매개변수)에서 에이전시 ID 찾는 방법을 확인하세요.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
 > * 어트리뷰션 링크의 빈 af\_prt 파라미터에도 적용됩니다.
 > * 이는 <Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns">SRN</Anchor>과 협력하는 에이전시에는 적용되지 않습니다.
 
+<div id="agency-transparency" />
+
 ### 에이전시 투명성
 
 에이전시 트래픽은 기본적으로 투명하게 설정됩니다. <Anchor target="_blank" href="/partners/ko/docs/getting-started-agency-onboarding#투명성">더 알아보기</Anchor>
+
+<div id="comparing-different-types-of-accounts" />
 
 ## 다양한 계정 유형 비교
 
@@ -73,6 +85,8 @@ x-zendesk:
 
 계정 구조를 통해 글로벌 에이전시 팀 간에 지식을 공유할 수 있으며 그룹 수준의 ROI(투자수익률) 측정, 계산, 리포팅 및 최적화가 가능합니다.
 
+<div id="differences-between-marketer-and-agency-accounts" />
+
 #### 마케터 계정과 에이전시 계정의 차이점
 
 |  | 마케터 | **에이전시** |
@@ -82,6 +96,8 @@ x-zendesk:
 | 앱 수준 설정 | 리어트리뷰션 윈도우, 원링크 설정, 시간대, 통화 | 다른 모든 설정은 마케터가 정한 설정에 따릅니다. |
 | 연동 파트너 수준 설정 | <ul><li>에이전시 권한</li><li>모든 비(非) SRN (어트리뷰션 링크 기반 광고 네트워크) 설정</li><li>SRN 설정</li><li>링크 관리</li></ul> | <ul><li>모든 비(非) SRN 설정</li><li>마케터 측의 최소 개입으로도 설정 가능한 일부 SRN:</li></ul><ul><li>Google 더블클릭<ul><li>스냅챗</li><li>텐센트</li></ul></li></ul>다른 SRN은 에이전시가 사용하려면 마케터가 설정해야 합니다.<ul><li>링크 관리(마케터가 정의한 템플릿 사용)</li></ul> |
 | 추가 기능 | 예(일부, 구독 플랜의 일부인 경우) | 마케터 구독 및 에이전시에 부여된 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">권한</Anchor>에 따라(아래 표 참조) |
+
+<div id="features-available-to-agencies" />
 
 ### 에이전시에 제공되는 기능
 
@@ -95,11 +111,15 @@ x-zendesk:
 
 <Accordion title="에이전시 vs. 애드 네트워크 계정">
 
+<div id="differences-between-ad-network-and-agency-accounts" />
+
 #### 광고 네트워크 계정과 에이전시 계정의 차이점
 
 <table><thead><tr><th>애드 네트워크</th><th>에이전시</th></tr></thead><tbody><tr><td>식별을 위한 어트리뷰션 링크 매개변수: <code>pid</code> </td><td>식별을 위한 어트리뷰션 링크 매개변수: <code>af_prt</code> </td></tr><tr><td>자체 플랫폼에만 앱 광고 배치</td><td>다양한 매체 소스를 통해 앱 홍보</td></tr><tr><td>자체 플랫폼에 게재된 광고로부터의 트래픽만 확인</td><td>광고하는 매체 소스로부터의 트래픽만 확인</td></tr><tr><td>포스트백을 통해 인스톨 및 인앱 이벤트에 대한 실시간 정보를 수신할 수 있음</td><td>포스트백으로 인스톨이나 인앱 이벤트에 대한 실시간 정보를 수신할 수 없음</td></tr><tr><td>자체에서 발생하는 모든 트래픽에 대해 인앱 이벤트 포스트백을 설정할 수 있습니다.\*</td><td>트래픽을 가져오는 일부 파트너에 대해 인앱 이벤트 포스트백을 설정할 수 있습니다.\*</td></tr><tr><td colspan="2">\* 마케터 권한이 필요합니다.</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="agency-accountscampaigns-and-reporting" />
 
 ## 대행사 계정 - 캠페인 및 리포팅
 
@@ -112,9 +132,13 @@ x-zendesk:
 * * [자체 보고 광고 네트워크 (SRN)](/docs/about-agency-accounts#자체-보고-광고-네트워크)
   * [비 SRN (어트리뷰션 링크를 사용하는 광고 네트워크)](/docs/about-agency-accounts#비-srn)
 
+<div id="self-reporting-ad-networks" />
+
 ### 자체 보고 광고 네트워크
 
 Meta Ads, Google Ads, X Ads와 같은 자체 보고 네트워크는 외부 어트리뷰션 링크를 사용하지 않습니다. 대신 각 네트워크는 앱스플라이어가 사용하여 새로운 인스톨, 인앱 이벤트 등을 전달할 수 있는 고유한 메서드와 API를 갖추고 있습니다.
+
+<div id="srn-configurations" />
 
 #### SRN 설정
 
@@ -128,15 +152,21 @@ Meta Ads, Google Ads, X Ads와 같은 자체 보고 네트워크는 외부 어�
 | TikTok for Business | 예 | TikTok for Business 캠페인에 대한 에이전시 설정의 자세한 내용을 보시려면 <Anchor target="_blank" href="/marketers/ko/docs/tiktok-for-business-advanced-srn-integration-setup#에이전시를-위한-tiktok-for-business-설정하기">여기</Anchor>를 클릭하세요. |
 | 야후 (Oath: 광고 플랫폼 \/ Yahoo Gemini) | 예 | Yahoo 캠페인에 대한 에이전시 설정의 자세한 내용을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/yahoo-integration-setup#agency-configuration">여기</Anchor>를 클릭하세요. |
 
+<div id="non-srns" />
+
 ### 비 SRN
 
 SRN과 달리, 대다수의 애드 네트워크는 어트리뷰션 목적으로 어트리뷰션 링크를 사용합니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#attribution-link-tab">이러한 어트리뷰션 링크는 앱스플라이어의 각 네트워크 설정에 이미 제공되어 있으며</Anchor>, 간단히 복사할 수 있습니다.
 
 에이전시의 경우, 그 절차는 마케터와 거의 동일합니다. 일반 애드 네트워크의 설정 기간으로 이동하면 어트리뷰션 링크가 이미 있습니다. 유일한 차이점은 어트리뷰션 링크에 `af_prt` 매개변수가 자동으로 추가된다는 점입니다.
 
+<div id="ad-network-configuration-visibility" />
+
 #### 애드 네트워크 설정 가시성
 
 마케터(앱 소유자)가 설정했을 때만 애드 네트워크 설정이 애드 네트워크에 보여집니다. 에이전시가 애드 네트워크 연동을 활성화하고 구성하면 네트워크에서는 이 섹션이 비활성으로 표시됩니다.
+
+<div id="af_prt-parameter" />
 
 #### af\_prt 매개변수
 
@@ -147,6 +177,8 @@ SRN과 달리, 대다수의 애드 네트워크는 어트리뷰션 목적으로 
 [altagency-af-prt.pngalt](https://support.appsflyer.com/hc/article_attachments/30679568792465)
 
 **마케터로부터 받은 링크를 사용하지 마세요**: 잘못된 어트리뷰션을 방지하기 위해 귀사 계정에서 생성한 링크를 사용하세요.
+
+<div id="special-case-all-installs-and-all-launches-networks" />
 
 #### 특별한 경우: 모든 인스톨 및 모든 실행 네트워크
 
@@ -176,9 +208,13 @@ SRN과 달리, 대다수의 애드 네트워크는 어트리뷰션 목적으로 
 | MyThings | mythings\_int |
 | TikTok for Business | bytedanceglobal\_int |
 
+<div id="how-to-setup-agency-attribution-with-all-installslaunches-networks" />
+
 #### 모든 인스톨\/실행 네트워크에서 에이전시 어트리뷰션 설정하는 방법은?
 
 이 네트워크들과 작업하려면 에이전시가 유입시키지 않은 인스톨 정보를 전송해야 합니다. 따라서 이러한 네트워크는 마케터가 **에이전시**보다 먼저 설정해야 합니다.
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -190,19 +226,27 @@ SRN과 달리, 대다수의 애드 네트워크는 어트리뷰션 목적으로 
 > 4. 에이전시는 대시보드의 Tapjoy 설정 창으로 이동합니다.
 > 5. 에이전시는 Tapjoy가 **에이전시**에 제공한 Tapjoy 앱 ID를 **app\_id** 텍스트 필드에 입력합니다.
 
+<div id="deep-linking" />
+
 ### 딥링킹
 
 딥링킹은 맞춤형 콘텐츠를 열거나 앱 내 특정 활동으로 사용자를 보내는 방식으로 모바일 앱을 시작하는 것을 의미합니다. 이를 통해 사용자에게 뛰어난 경험을 제공하고 인게이지먼트를 높일 수 있습니다.
 
 딥링킹이 동작하려면 모바일 앱이 딥링킹 기능과 인프라로 개발되어야 합니다. 캠페인을 설정하기 전에 앱 소유자에게 연락하여 앱이 딥링킹에 적합한지 확인하세요.
 
+<div id="retargeting" />
+
 ### 리타겟팅
 
 * * <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide">리타겟팅 어트리뷰션</Anchor>을 통해 캠페인에서 기존 또는 이전 사용자를 타겟팅할 수 있습니다. 리타겟팅 캠페인은 올바르게 작동하기 위해 딥링킹 기능이 필요한 경우가 많습니다.
 
+<div id="in-app-events" />
+
 ### 인앱 이벤트
 
 앱 소유자는 앱스플라이어에서 기록하고 분석할 수 있는 다양한 이벤트(예: 구매, 튜토리얼 시청, 수준 통과 등)를 앱에서 발생시킬 수 있습니다. 에이전시는 계정의 이벤트 페이지에서 자신에게 어트리뷰션된 이벤트 데이터를 확인할 수 있습니다.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -225,9 +269,13 @@ SRN과 달리, 대다수의 애드 네트워크는 어트리뷰션 목적으로 
 * 에이전시는 일반적으로 마케터의 트래픽 일부에만 책임지므로 에이전시의 데이터 액세스는 마케터의 액세스에 비해 제한적입니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/manage-data-access-permissions">이 문서</Anchor>는 이러한 차이점을 설명합니다. 다음 섹션에서 주요 내용을 살펴봅니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > Meta Ads와 X Ads의 서비스 약관에 따라 제3자로 간주되는 **에이전시**는 **Meta Ads 또는 X Ads에서 발생하는 로데이터 리포트 트래픽에 액세스할 수 없습니다**.
+
+<div id="access-to-aggregate-data" />
 
 ### 집계된 데이터에 대한 접근
 
@@ -235,13 +283,19 @@ SRN과 달리, 대다수의 애드 네트워크는 어트리뷰션 목적으로 
 * 집계된 오가닉 데이터 리포트에 접근하려면 마케터의 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">권한</Anchor>이 필요합니다.
 * 에이전시는 리텐션 및 코호트 리포트와 Protect360 대시보드에 액세스할 수 있습니다. 이를 위해서는 마케터가 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">**리텐션 및 코호트 리포트 접근 허용**</Anchor> 또는 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">**Protect360 대시보드 접근 허용**</Anchor>을 각각 활성화해야 합니다. **권한** 탭에서 **활성화된 연동**을 통해 설정할 수 있습니다.
 
+<div id="access-to-raw-data" />
+
 ### 로데이터 접근
 
 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview">로데이터 리포트</Anchor> (사용자 수준 데이터 리포트)는 어트리뷰션 정보를 포함하며 주제별로 구분됩니다.
 
+<div id="time-zone-and-currency" />
+
 ### 시간대와 통화
 
 에이전시는 앱에서 정의된 시간대와 통화로 앱을 볼 수 있지만, 이러한 설정은 마케터만이 변경할 수 있습니다.
+
+<div id="cost-reporting" />
 
 ### 비용 리포팅
 
@@ -256,12 +310,16 @@ SRN과 달리, 대다수의 애드 네트워크는 어트리뷰션 목적으로 
 5. 해당 파트너의 API 키를 입력하세요.
 6. **저장**을 클릭하세요.
 
+<div id="accessing-and-viewing-cost-data" />
+
 #### 비용 데이터 액세스 및 보기
 
 에이전시는 다음 데이터 소스를 통해 비용 데이터를 확인할 수 있습니다.
 
 * **개요** 페이지: 비용 데이터는 개요 페이지의 **데이터 집약형 성과 리포트**에서 확인할 수 있습니다.
 * **리포트**: 비용 데이터는 **설치**(**로데이터 리포트**) 및 **파트너 (매체 소스)**(**성과 리포트**) 같은 내보낸 리포트에서 확인할 수 있습니다.
+
+<div id="hybrid-account-data-access" />
 
 ### 하이브리드 계정 데이터 액세스
 

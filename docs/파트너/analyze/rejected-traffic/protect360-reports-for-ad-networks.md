@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** UA 및 리타게팅을 담당하는 광고 네트워크는 차단된 클릭 및 노출에 대한 데이터를 수신할 수 있습니다.
 
+<div id="protect360-reports-for-ad-networks" />
+
 ## 광고 네트워크에 대한 Protect360 리포트
 
 주의 사항
@@ -30,7 +32,11 @@ x-zendesk:
 * <span id="report-considerations"></span>데이터 최신성: <Anchor target="_blank" href="/marketers/ko/docs/about-data-freshness-and-timezone-support#ad-revenue">매일, 즉 0일 차 데이터는 1일 차에 도착합니다</Anchor>. 데이터는 매일 21:00(UTC 시간)에 데이터 락커 버킷의 h=23에 기록됩니다./span>
 * 앱 포함 내역:
 
+<div id="report-types" />
+
 ## 리포트 유형
+
+<div id="report-structure-fieldsdimensions" />
 
 #### 리포트 구조 필드 및 차원
 
@@ -41,6 +47,8 @@ x-zendesk:
 | date |  |
 | agency |  |
 
+<div id="report-structure-metrics" />
+
 #### 리포트 구조: 측정 지표
 
 | **필드** | **비고** |
@@ -50,6 +58,8 @@ x-zendesk:
 | number\_of\_capped\_clicks |  |
 | number\_of\_capped\_impressions |  |
 
+
+<div id="report-structure-fieldsdimensions-1" />
 
 #### 리포트 구조 필드 및 차원
 

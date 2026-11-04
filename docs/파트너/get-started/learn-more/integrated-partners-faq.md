@@ -132,6 +132,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="partner-permissions" />
+
 ## 파트너 권한
 
 <div id="what-are-the-partner-permissions" />
@@ -180,6 +182,8 @@ x-zendesk:
 마케터가 부여하는 에이전시 권한에 관해서는 <Anchor target="_blank" href="/partners/ko/docs/getting-started-agency-onboarding#이것은-마케터로부터-권한을-부여받는다는-것을-의미합니다">이 문서</Anchor>를 읽어보세요.
 
 </Accordion>
+
+<div id="data---postbacks-and-reports" />
 
 ## 데이터 - 포스트백 및 리포트
 
@@ -353,6 +357,8 @@ Pull API 및 데이터 내보내기 페이지를 통해 하루에 생성할 수 
 
 광고주가 설정을 완료하면 애드 네트워크가 인앱이벤트 포스트백 설정을 볼 수 있지만, 에이전시가 설정을 했을 때에는 볼 수 없습니다. 따라서 에이전시가 포스트백을 위한 인앱 이벤트를 네트워크에 매핑할 때, 에이전시에 대해 활성화되어 있더라도 애드 네트워크에서 해당 섹션이 비활성된 것으로 간주합니다.
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > Yuval은 **com.fused** app의 마케터이며, 이 앱은 **Sonnet**이라는 애드 네트워크의 클라이언트 앱 입니다. Yuval은 Sonnet에 기여한 유저가 구매를 수행할 때 **af\_purchase** 이벤트가 Sonnet에 포스트백으로 전송되도록 매핑합니다.
@@ -441,6 +447,8 @@ Pull API 및 데이터 내보내기 페이지를 통해 하루에 생성할 수 
 <Anchor target="_blank" href="/partners/ko/docs/getting-started-agency-onboarding#skadnetwork-에이전시-캠페인">SKAN 캠페인에 대한 자세한 정보는 여기서 확인하세요.</Anchor>
 
 </Accordion>
+
+<div id="anti-fraud-protect360" />
 
 ## Protect360
 

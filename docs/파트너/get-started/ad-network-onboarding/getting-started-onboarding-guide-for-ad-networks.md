@@ -28,9 +28,13 @@ x-zendesk:
 
 ![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
 
+<div id="what-is-appsflyer" />
+
 ## 앱스플라이어란 무엇인가요?
 
 모바일 어트리뷰션의 선두주자인 앱스플라이어는 귀사를 애드 네트워크 연동 파트너로 환영합니다. 이 문서는 앱스플라이어 파트너 등록을 완료한 애드 네트워크를 위한 것입니다. 파트너로 등록하려면 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#앱스플라이어에-새로운-파트너-초대">앱스플라이어 고객(광고주)에게 초대를 요청해야 합니다.</Anchor>
+
+<div id="ad-network-onboarding" />
 
 ## 광고 네트워크 온보딩
 
@@ -56,6 +60,8 @@ x-zendesk:
 * 이 문서의 예상 시간은 애드 네트워크와 협력한 경험을 바탕으로 합니다. 각 연동은 약간씩 다르므로 실제 시간은 달라질 수 있습니다.
 * 앱스플라이어는 다양한 <Anchor target="_blank" href="/partners/ko/docs/platforms-for-ad-networks">성과 플랫폼</Anchor>을 지원합니다. 목록에 있는 플랫폼 중 하나를 사용한다면, 연동하기 전에 플랫폼별 지침을 검토하세요.
 
+<div id="onboarding-steps" />
+
 ## 온보딩 단계
 
 **앱스플라이어와 연동하려면**:
@@ -64,9 +70,13 @@ x-zendesk:
 2. [2부—광고주 앱과의 테스트 완료.](/docs/getting-started-onboarding-guide-for-ad-networks#2부-광고주-앱을-사용하여-테스트하세요)
 3. [3부—앱스플라이어 대시보드 및 리포팅 도구 사용.](/docs/getting-started-onboarding-guide-for-ad-networks#3부-앱스플라이어-대시보드-및-리포팅-옵션)
 
+<div id="part-1-integration-and-testing" />
+
 ### 1부: 연동 및 테스트
 
 <table><thead><tr><th>작업</th><th>소요 시간</th></tr></thead><tbody><tr><td>필수 연동 단계를 완료하도록 초대하는 등록 승인 이메일을 기다리세요.</td><td>--</td></tr><tr><td colspan="2"> <strong>필수 연동 단계</strong> </td></tr><tr><td> <a href="./self-serve-integration-management-for-ad-networks#어트리뷰션-링크" target="_blank">귀사의 어트리뷰션 링크를 지정하세요.</a>: 어트리뷰션 링크는 매크로가 포함된 URL입니다. 매크로는 귀사가 실제 값으로 채워 사용자가 링크를 클릭할 때마다 앱스플라이어로 전송됩니다. <br/>주의! 앱스플라이어가 지원하는 성과 네트워크 플랫폼을 사용하는 경우, 플랫폼별 지침을 유념하세요. <a href="./platforms-for-ad-networks" target="_blank">성과 네트워크 가이드</a>를 참조하세요. </td><td>60</td></tr><tr><td> <a href="./self-serve-integration-management-for-ad-networks#기본-포스트백" target="_blank">포스트백 매크로 지정</a>: 포스트백은 앱스플라이어에서 생성된 매크로를 포함한 URL로, 전환 후 실시간으로 귀사의 서버에 전송됩니다.</td><td>60</td></tr><tr><td>제공된 자격 증명을 사용하여 <a href="https://hq1.appsflyer.com/auth/login" target="_blank">앱스플라이어 대시보드</a>에 로그인하세요. </td><td> </td></tr><tr><td>귀사의 회사 로고를 업로드하세요. 로고는 200 X 50 크기의 투명 PNG 형식이어야 합니다. <ol><li>앱스플라이어의 메뉴 표시줄에서 귀사의 이메일을 선택하고 <strong>파트너 설정</strong>을 클릭하세요. </li><li> <strong>프로필</strong> 탭에서 귀사의 로고를 업로드하세요. </li><li> <strong>저장</strong>을 클릭합니다.</li></ol></td><td>5</td></tr><tr><td>앱스플라이어 시험 앱을 이용하여 연동을 테스트하세요.<ul><li><a href="./android-integration-testing-for-ad-networks" target="_blank">안드로이드</a></li><li><a href="./ios-integration-testing-for-ad-networks" target="_blank">iOS</a></li></ul></td><td>10</td></tr><tr><td colspan="2"><strong>선택적 연동 단계</strong></td></tr><tr><td>[iOS] 귀사의 광고주가 앱스플라이어의 데이터 집약형 개인 정보 보호를 요구하는 경우 <a href="./self-serve-integration-management-for-ad-networks#프라이버시-강화-모드와-skan-포스트백" target="_blank">고급 개인 정보 보호</a> 연동을 완료하세요.</td><td>60</td></tr><tr><td>[iOS] SKAdNetwork 캠페인을 실행하는 경우 <a href="./self-serve-integration-management-for-ad-networks#프라이버시-강화-모드와-skan-포스트백" target="_blank">SKAdNetwork 연동</a>을 완료하세요. </td><td>60</td></tr><tr><td><h4><strong><span id="authorized-agencies"></span>공인 대행사</strong></h4>성공적인 캠페인을 위해 승인한 대행사의 목록을 생성하고 관리하세요. 보안 센터의 <a href="./set-up-your-list-of-authorized-agencies" target="_blank"><strong>공인 대행사</strong></a>  섹션에 기관 ID (af_prt)를 입력하여 이 작업을 완료하세요. 대행사 ID를 얻으려면 해당 대행사가 귀사에 연락하여 제공해야 합니다.</td><td>2</td></tr><tr><td colspan="2"><p><strong>선택 기능 및 고려 사항</strong><br/> </p><p>광고주 요구 사항에 따라 연동 및 옵션을 고려하여 구현하세요.</p></td></tr><tr><td>귀사의 파트너 식별자가 사용되어 사기성 클릭이 전송되지 않도록 <a href="./click-signing-for-ad-networks" target="_blank">클릭 서명</a>을 구현하세요. </td><td>60+</td></tr><tr><td>Protect360 또는 유효성 검증 규칙을 적용하는 광고주의 경우 <a href="./postback-macros-for-ad-networks#macros-installs-inapp-events-and-rejected-events" target="_blank">거부된 어트리뷰션 포스트백</a>을 추가하세요.</td><td>15</td></tr><tr><td>API를 통해 앱스플라이어로 비용을 전송하세요. <a href="./incost-api-for-ad-networks" target="_blank">InCost API</a>를 참조하세요.</td><td>60+</td></tr><tr><td> <a href="/marketers/ko/docs/retargeting-attribution-guide" target="_blank">리타게팅 연동</a>.</td><td>15</td></tr><tr><td> <a href="/marketers/ko/docs/measure-view-through-engagements" target="_blank">뷰-쓰루 어트리뷰션 연동</a>.</td><td>15</td></tr></tbody></table>
+
+<div id="part-2-test-using-advertiser-apps" />
 
 ### 2부: 광고주 앱을 사용하여 테스트하세요.
 
@@ -80,6 +90,8 @@ x-zendesk:
 | 광고주(관리자) | <Anchor target="_blank" href="/marketers/ko/docs/registering-test-devices">시험 디바이스를 등록하세요</Anchor>. 광고주에게 귀하를 대신하여 이 작업을 해달라고 요청하세요. | 3 |
 | 애드 네트워크 | <Anchor target="_blank" href="/partners/ko/docs/test-marketer-campaign-integration-with-the-ad-network">광고주 앱을 사용하여 연동을 시험하세요.</Anchor> | 60 |
 
+<div id="part-3-appsflyer-dashboard-and-reporting-options" />
+
 ### 3부: 앱스플라이어 대시보드 및 리포팅 옵션
 
 | 옵션 |
@@ -88,9 +100,13 @@ x-zendesk:
 | 애드 네트워크를 위한 <Anchor target="_blank" href="/partners/ko/docs/data-locker-for-partners">데이터 락커</Anchor>를 사용하여 클라우드 스토리지를 통해 데이터 집약형 성과 데이터를 얻으세요. |
 | Protect360 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-export-page">로데이터를 받으세요.</Anchor> |
 
+<div id="integration-validation-period" />
+
 ## 연동 유효성 검증 기간
 
 앱스플라이어 생태계의 무결성을 보장하고 내부 시스템을 잘못된 트래픽으로부터 보호하기 위해 모든 새로운 애드 네트워크 연동은 유효성 검증 기간을 거칩니다. 이 기간 동안 앱스플라이어는 트래픽을 철저히 검증하고 품질을 평가한 후 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations">마켓플레이스</Anchor>에서 다른 광고주들이 연동을 사용할 수 있도록 합니다.
+
+<div id="validation-periodfaq" />
 
 ### 유효성 검증 기간 - FAQ
 

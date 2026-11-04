@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **간단히 보기**: 요약: 광고 네트워크는 집계된 성과 리포트(일명 코호트 리포트)를 BI 시스템에 로드하여 7일 보존 KPI와 같은 캠페인 성과 지표를 계산합니다.
 
+<div id="aggregated-campaign-performance-report" />
+
 ## 집약 캠페인 성과 리포트
 
 이 리포트는 해당 이벤트를 수행하는 고유 사용자 수를 포함한 캠페인 성과 데이터를 제공합니다. 사용자(광고 네트워크)는 BI 시스템의 데이터를 사용하여 광고주 KPI의 맥락에서 캠페인 성과 지표를 계산합니다. 리포트는 <Anchor target="_blank" href="/partners/ko/docs/data-locker-for-partners">파트너용 데이터 락커</Anchor>를 통해 매일 갱신됩니다.
@@ -46,11 +48,15 @@ iOS 14.5를 시작하고 광고주가 집약형 프라이버시 강화 프레임
 * 파트너용 데이터 락커로 제공됩니다. 리포트는 <Anchor target="_blank" href="/marketers/ko/docs/about-data-freshness-and-timezone-support#daily">UTC 시간으로 매일</Anchor> 업데이트됩니다.
 * 광고주가 대시보드에서 [권한을 부여](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data)해야 사용자와의 데이터 공유를 시작할 수 있습니다.
 
+<div id="about-the-report" />
+
 ## 리포트 소개
 
 <div id="report-structure" />
 
 <Accordion title="리포트 구조">
+
+<div id="dimensions" />
 
 #### 디멘션
 
@@ -251,6 +257,8 @@ iOS 14.5를 시작하고 광고주가 집약형 프라이버시 강화 프레임
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 측정 지표
 
 | 이름 | 필드 | 이벤트를 수행한 고유 유저 수 |
@@ -305,6 +313,8 @@ iOS 14.5를 시작하고 광고주가 집약형 프라이버시 강화 프레임
 기준을 추가하거나 제거하면 달리 세분화된 지표를 얻을 수 있습니다.
 
 </Accordion>
+
+<div id="permissions" />
 
 ## 권한
 

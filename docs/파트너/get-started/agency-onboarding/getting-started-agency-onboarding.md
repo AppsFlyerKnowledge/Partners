@@ -30,6 +30,8 @@ x-zendesk:
 
 <Embed title="시작하기—에이전시 온보딩" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
+<div id="appsflyer-attribution-model" />
+
 ## 앱스플라이어 어트리뷰션 모델
 
 진행하기 전에 앱스플라이어의 어트리뷰션 작업 방식을 이해하는 것이 필수입니다. 이 섹션에서는 첫 번째 클릭 또는 광고 노출로부터 인스톨 또는 이벤트의 어트리뷰션, 그리고 그 이후까지 이르는 길을 따라 발생하는 상황에 대해 설명합니다.
@@ -46,6 +48,8 @@ x-zendesk:
 8. 인스톨이 어트리뷰트되면 마케터 및 에이전시의 대시보드와 리포트(<Anchor target="_blank" href="/partners/ko/docs/about-agency-accounts#자체-보고-광고-네트워크">Facebook 및 X Ads 제외</Anchor>)에 이를 표시합니다.
 9. 그런 다음 전환 세부 정보가 포함된 포스트백을 광고 네트워크로 전송하면 이 정보를 추가적인 최적화에 사용할 수 있습니다.
 
+<div id="agency-role-in-mobile-attribution-chain" />
+
 ## 모바일 어트리뷰션 체인에서 에이전시의 역할
 
 앱을 소유한 마케터는 앱스플라이어 SDK를 체인에 통합하여 마케팅 노력을 정량화합니다.
@@ -58,9 +62,13 @@ x-zendesk:
 
 일러두기: 만약 조직이 앱을 소유하고 있거나, 앱의 마케팅뿐만 아니라 개발도 취급한다면, 마케터 계정을 개설해야 합니다.
 
+<div id="pricing" />
+
 ## 과금 체계
 
 에이전시 계정 기능의 범위는 각 앱에 대해 앱 소유자가 제공하는 권한에 따라 달라집니다. 따라서 에이전시 계정은 **무료로** 제공되며 앱 소유자에게만 어트리뷰션 요금이 부과됩니다. 앱 소유자 및 에이전시는 보상 목적으로 앱스플라이어 어트리뷰션 데이터를 사용할 수 있습니다.
+
+<div id="getting-started" />
 
 ## 시작하기
 
@@ -72,9 +80,13 @@ x-zendesk:
 2. 앱스플라이어 에이전시 팀의 팀원이 등록을 완료하는 데 필요한 추가 정보를 문의할 수 있습니다.
 3. 계정이 활성화되면 알림을 받게 되며 그러면 앱스플라이어를 사용하기 시작할 수 있습니다.
 
+<div id="adding-team-members" />
+
 ## 팀원 추가
 
 계정이 개설되어 실행되면 계정 관리자(계정을 개설한 자)는 에이전시에서 관리하는 앱의 일부 또는 전체에 액세스할 수 있는 팀원을 추가할 수 있습니다. 새 팀원을 추가하는 자세한 방법은 여기를 클릭하세요.
+
+<div id="adding-apps-to-your-account" />
 
 ## 앱을 계정에 추가하기
 
@@ -90,6 +102,8 @@ x-zendesk:
 
 마케터는 플랫폼에서 직접 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">에이전시에 액세스 권한을 부여합니다</Anchor>. 계정을 설정하고 앱에 액세스할 수 있게 되면 앱스플라이어 기능을 사용하여 캠페인 실행을 시작할 수 있습니다.
 
+<div id="what-does-it-mean-to-get-permission-from-a-marketer" />
+
 ### 이것은 마케터로부터 권한을 부여받는다는 것을 의미합니다.
 
 마케터로부터 권한을 부여받는 방법:
@@ -104,6 +118,8 @@ x-zendesk:
 
 추가 권한으로는 코호트 리포트, Protect360 대시보드 및 오가닉 데이터 집계 등이 있습니다.
 
+<div id="app-list" />
+
 ### 앱 목록
 
 마케터로부터 권한을 받으면 앱이 앱 페이지에 나타납니다.
@@ -111,6 +127,8 @@ x-zendesk:
 계정의 앱 페이지는 최대 1000 개의 앱을 나열합니다. 권한이 있는 앱 목록이 1,000을 초과하면 일부 앱이 목록에 표시되지 않습니다. 검색을 사용하면 여전히 찾을 수는 있습니다.
 
 ![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+
+<div id="searching-for-apps" />
 
 #### 앱 검색하기
 
@@ -126,6 +144,8 @@ x-zendesk:
 
 참고:
 
+<div id="agency-dashboard" />
+
 ## 에이전시 대시보드
 
 앱 목록에서 원하는 앱을 클릭하여 앱의 <Anchor target="_blank" href="/marketers/ko/docs/getting-started-with-appsflyer-dashboards">대시보드</Anchor>에 액세스합니다. 캠페인 실행을 시작하면 어트리뷰트된 집계 데이터가 여기에 표시됩니다.
@@ -138,7 +158,11 @@ x-zendesk:
 * 인앱 이벤트 대시보드
 * 리타겟팅 대시보드
 
+<div id="running-campaigns" />
+
 ## 캠페인 실행
+
+<div id="self-reporting-networks-srns" />
 
 ### 셀프 리포팅 네트워크(SRN)
 
@@ -148,12 +172,16 @@ x-zendesk:
 
 위의 링크를 클릭하여 네트워크 가이드와 에이전트 설정에 대한 특정 지침을 읽어보십시오.
 
+<div id="non-srns" />
+
 ### 비 SRN
 
 대부분의 광고 네트워크에는 광고 뒤에 배치되는 어트리뷰션 링크가 필요합니다. <Anchor target="_blank" href="/partners/ko/docs/about-agency-accounts#비-srn">여기</Anchor>에서 그것을 통해 캠페인을 실행하는 방법에 대해 자세히 알아보십시오.
 
 
 <span id="sandbox-attribution-agency-campaigns"></span>Apple은 SKAdNetwork 어트리뷰션 프로세스의 일부로 에이전시를 포함하지 않고 앱스플라이어는 에이전시를 직접 어트리뷰션할 수 없지만 앱스플라이어는 여전히 SKAdNetworks에서 실행되는 에이전시 캠페인에 대한 어트리뷰션 데이터를 제공할 수 있습니다.
+
+<div id="campaign-naming" />
 
 #### 캠페인 이름 지정
 
@@ -165,9 +193,13 @@ x-zendesk:
 
 `AgencyX_SummerSale`
 
+<div id="skadnetwork-agency-campaigns" />
+
 ### SKAdNetwork 에이전시 캠페인
 
 Apple iOS의 일부인 SKAdNetwork 인프라를 사용하여 마케터는 IDFA나 광고 ID 없이 캠페인 성공을 측정할 수 있습니다. Apple은 SKAdNetwork 어트리뷰션 프로세스의 일부로 에이전시를 포함하지 않고 앱스플라이어는 에이전시를 직접 어트리뷰션할 수 없지만 앱스플라이어는 여전히 SKAdNetworks에서 실행되는 에이전시 캠페인에 대한 어트리뷰션 데이터를 제공할 수 있습니다.
+
+<div id="campaign-naming-1" />
 
 #### 캠페인 이름 지정
 
@@ -181,14 +213,22 @@ Apple iOS의 일부인 SKAdNetwork 인프라를 사용하여 마케터는 IDFA�
 
 `AgencyX_SummerSale`
 
+<div id="note-2" />
+
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * SKAdNetwork의 에이전시 캠페인은 항상 투명하며 캠페인을 실행하는 광고 네트워크의 ID는 마케터로부터 숨겨지지 않습니다. iOS 15부터는 마케터(앱 소유자)가 <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">포스트백 복사본을 직접 수신하도록 선택</Anchor>할 수 있습니다.
 > * 이 요청은 사용자 인터페이스에서 액세스할 수 있는 파트너 활성화 설정에 추가됩니다.
 
+<div id="access-to-skan-conversion-studio" />
+
 #### SKAN Conversion Studio 액세스
 
 에이전시는 <Anchor target="_blank" href="/marketers/ko/docs/skan-conversion-studio#view-cv-mapping">Conversion Studio</Anchor>에서 마케터의 SKAN CV 매핑 구성을 <Anchor target="_blank" href="/marketers/ko/docs/skan-conversion-studio#skan-conversion-studio-basics">보고 다운로드</Anchor> 할 수 있지만 설정을 구성하거나 수정할 수는 없습니다 .
+
+<div id="skadnetwork-dashboard" />
 
 #### SKAdNetwork 대시보드
 
@@ -199,6 +239,8 @@ Apple iOS의 일부인 SKAdNetwork 인프라를 사용하여 마케터는 IDFA�
 * <Anchor target="_blank" href="/marketers/ko/docs/about-att-and-skan">SKAdNetwork 빠른 시작 가이드</Anchor>
 * <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork 대시보드</Anchor>
 * <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide">SKAdNetwork 솔루션</Anchor>
+
+<div id="single-source-of-truth-ssot-for-agencies" />
 
 ### 에이전시를 위한 SSOT(단일진성공급원)
 
@@ -211,6 +253,8 @@ SSOT는 서로 다른 모델의 어트리뷰션 데이터를 결합하고 중복
 **더 읽어보기:**
 
 * <Anchor target="_blank" href="/marketers/ko/docs/single-source-of-truth-ssot-guide-for-ios-attribution">iOS 어트리뷰션을 위한 Single Source of Truth (SSOT) 가이드</Anchor>
+
+<div id="what-else-you-can-do" />
 
 ## 할 수 있는 다른 작업
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** PeerClick을 사용하는 애드 네트워크는 앱스플라이어 확률적 모델링 솔루션을 통해 인스톨 및 인앱 이벤트에 대한 어트리뷰션 데이터를 받을 수 있습니다.
 
+<div id="starting-the-integration" />
+
 ## 연동 시작하기
 
 연동을 시작하려면 앱스플라이어에 어트리뷰션 링크와 리포팅을 위한 포스트백을 모두 보내야 합니다.
@@ -47,16 +49,22 @@ x-zendesk:
 | &clickid= | `{clickid}` | 유저 세션의 고유 트랜잭션 ID - **필수** |
 | &af\_siteid= | `{trafficsource.id}` | 트래픽 소스 ID - **선택** |
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > * 전체 앱스플라이어 파라미터 목록을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">여기를 클릭하세요</Anchor>
 > * 전체 PeerClick 목록을 보려면 <Anchor target="_blank" href="https://help-center.peerclick.com/en/">여기를 클릭하세요</Anchor>
+
+<div id="complete-attribution-link-template" />
 
 ### 전체 어트리뷰션 링크 템플릿
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### 인스톨 및 인앱 이벤트 포스트백
 
@@ -72,6 +80,8 @@ https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 
 * **userid:** PeerClick에서 제공한 유저 ID
 * **txid:** 광고주가 각 앱의 앱스플라이어 대시보드에서 **이벤트 태그**로 설정한 앱의 실제 인앱 이벤트 이름
+
+<div id="appsflyers-in-app-event-dashboard" />
 
 ### 앱스플라이어의 인앱 이벤트 대시보드
 

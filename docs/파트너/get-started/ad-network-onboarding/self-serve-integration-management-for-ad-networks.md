@@ -34,10 +34,14 @@ x-zendesk:
   * TLS 버전 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client">기재된 암호 포함</Anchor> TLS 1.2 이상.
   * 포트 80, 443
 
+<div id="accessing-integration-management" />
+
 ## 연동 관리에 액세스하기
 
 1. 앱스플라이어 파트너 계정에 로그인합니다.
 2. 오른쪽 맨 위 드롭다운 메뉴 > **포스트백 관리**를 클릭합니다.
+
+<div id="attribution-link" />
 
 ## 어트리뷰션 링크
 
@@ -51,6 +55,8 @@ x-zendesk:
    * 파라미터 이름
    * **사용자 매크로**: 파라미터를 값으로 채우는 매크로를 추가합니다.
    * **포함**: 링크에 파라미터를 포함하려면 확인란을 선택합니다.
+
+   <div id="important" />
 
    > 🚧 **중요!**
    >
@@ -66,6 +72,8 @@ x-zendesk:
 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">어트리뷰션 링크 및 사용가능한 파라미터에 대해 자세히 알아보십시오</Anchor>.
 
 문제가 있는 경우 <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">파트너 도우미 위젯</Anchor>을 사용하여 문의하세요.
+
+<div id="default-postback" />
 
 ## 기본 포스트백
 
@@ -83,6 +91,8 @@ x-zendesk:
 
    <Anchor target="_blank" href="/partners/ko/docs/postback-macros-for-ad-networks">포스트백 매크로 전체 목록</Anchor>
 
+   <div id="important-1" />
+
    > 🚧 **중요!**
    >
    > * 합법적인 이벤트에 대한 포스트백과 거부된 포스트백을 구분할 수 있으려면 <Anchor target="_blank" href="/partners/ko/docs/postback-macros-for-ad-networks#macros-installs-inapp-events-and-rejected-events">거부된 포스트백 매크로</Anchor>를 구성하세요.
@@ -99,6 +109,8 @@ x-zendesk:
 <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration">추가 포스트백 정보 및 예.</Anchor>
 
 문제가 있는 경우 <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">파트너 도우미 위젯</Anchor>을 사용합니다.
+
+<div id="advanced-privacy-and-skan-postbacks" />
 
 ## 프라이버시 강화 모드와 SKAN 포스트백
 
@@ -121,6 +133,8 @@ x-zendesk:
    <Anchor target="_blank" href="/partners/ko/docs/skan-integration-guide-for-ad-networks#앱스플라이어에서-데이터-수신">SKAdNetwork 포스트백 매크로</Anchor> 목록
 
    <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">Advanced Privacy 포스트백 매크로</Anchor> 목록
+
+   <div id="important-2" />
 
    > 🚧 **중요!**
    >

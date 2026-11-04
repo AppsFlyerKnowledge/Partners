@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **요약:** 앱스플라이어 애드 네트워크 파트너에게 제공되는 비용 공유 방법을 비교합니다.
 
+<div id="sharing-cost-with-appsflyer-and-advertisers" />
+
 ## 앱스플라이어와 광고주가 비용을 공유하는 방법
 
 광고주는 ROI, 청구서 및 마케팅 예산 배분 결정을 위해 앱스플라이어를 정보 소스로 사용합니다. 애드 네트워크가 눈에 띄려면 앱스플라이어와 비용 데이터를 공유해야 합니다. 비용 데이터가 없는 네트워크는 앱스플라이어 대시보드 목록의 하단에 표시됩니다.
@@ -37,6 +39,8 @@ x-zendesk:
 * **Cost Import**: 비용 데이터 파일을 앱스플라이어에 업로드하거나 전송합니다.
 * **클릭당 비용**: 어트리뷰션 링크를 클릭할 때마다 네트워크에서 비용을 보고합니다.
 
+<div id="cost-badge-for-ad-networks" />
+
 ### 애드 네트워크를 위한 비용 배지
 
 ![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
@@ -44,6 +48,8 @@ x-zendesk:
 * 비용 배지는 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#partner-details-and-performance">파트너 세부 정보 페이지</Anchor>에 표시되며, InCost 또는 Cost API를 사용하는 파트너임을 강조합니다.
 * 배지는 파트너가 비용 처리 역량이 있는 파트너임을 인증합니다.
 * 내부 분석과 광범위한 유저 설문 조사에 따르면, 광고주는 항상 새로운 파트너를 찾고 있습니다. 비용 배지가 있는 파트너는 더 두드러져 보일 가능성이 큰데, 이는 광고주가 ROI 분석을 기반으로 마케팅 성과를 파악하고 싶어 하기 때문입니다.
+
+<div id="reporting-cost-options-available-to-ad-networks" />
 
 ### 애드 네트워크에 제공되는 비용 리포팅 옵션
 

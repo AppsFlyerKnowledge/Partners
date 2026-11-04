@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **간단히 보기**: 요약: 광고 네트워크는 앱스플라이어 SKAdNetworks(SKAN)와 연동하여 캠페인을 최적화하고 생성하는 트래픽에 어트리뷰트 할 수 있습니다.
 
+<div id="appsflyer-offering-for-ad-networks" />
+
 ## 광고 네트워크를 위한 앱스플라이어 오퍼링
 
 **광고주 용 앱스플라이어 SKAN 솔루션 자세히 알아보기**:
@@ -42,6 +44,8 @@ x-zendesk:
   * SKAN 연동을 포함한 광고 네트워크는 앱스플라이어 대시보드에서 인증되고 식별됩니다.
   * 이로부터 광고주는 이 어트리뷰션 모델을 통해 결정론적으로 측정할 수 있는 광고 네트워크로 작업하고 있음을 확신할 수 있습니다.
 
+<div id="skan-data-flow" />
+
 ## SKAN 데이터 흐름
 
 ![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
@@ -54,12 +58,16 @@ x-zendesk:
    * 리디렉트
 3. **앱스플라이어** 는 포스트백을 검증하고 디코드합니다. 그런 다음 디코드되고 보강된 포스트백을 광고 네트워크로 보냅니다 (또한 광고주와 공유함).
 
+<div id="main-integration-parts" />
+
 ## 기본 연동 부분
 
 앱스플라이어와 광고 네트워크 간의 SKAN 연동은 본 문서에 설명된 대로 다음과 같은 주요 부분으로 구성됩니다.
 
 * 광고 네트워크가 SKAN 데이터를 앱스플라이어로 전송
 * 광고 네트워크가 포스트백을 통해 앱스플라이어로부터 보강되고 디코드된 데이터 수신
+
+<div id="send-data-to-appsflyer" />
 
 ## 앱스플라이어로 데이터 전송
 
@@ -97,6 +105,8 @@ x-zendesk:
 * 포스트백을 앱스플라이어에 전송
 * **참고! 참고! 앱스플라이어에 포스트백을 보내기 전에 발신 포스트백의 콘텐츠를 사용하여 Apple** 어트리뷰션 서명/strong>을 검증하여 실수로 데이터가 손상되지 않도록 합니다.
 
+<div id="skan-enriched-postback-protocol" />
+
 #### SKAN 강화 포스트백 프로토콜
 
 | 앤드 포인트 | `https://skadpostbacks.appsflyer.com/api/postbacks` |
@@ -104,6 +114,8 @@ x-zendesk:
 | HTTP 메서드 | POST |
 | 허용되는 콘텐츠 유형 | `application/json` |
 | 리턴 코드 | 200 OK 200 OK: 수신한 포스트백의 형식이 잘못되었습니다.<br /><br />400: 잘못된 요청 400: 잘못된 요청: 잘못된 형식의 JSON, 비어 있는 값, JSON, 필수 필드 누락. |
+
+<div id="skan-enriched-postback-json-parameters" />
 
 #### SKAN 보강 포스트백 JSON 파라미터
 
@@ -138,6 +150,8 @@ x-zendesk:
 | 광고 소재 | 문자열 | <ul><li>SKAN 4+에만 해당됩니다.</li><li>추가 캠페인 세분성을 위해 source\_identifier 에서 추가 숫자를 사용할 때 사용할 수 있습니다.</li></ul> | 애드 네트워크 |
 | channe | 문자열 | <ul><li>SKAN 4+에만 해당됩니다.</li><li>추가 캠페인 세분성을 위해 source\_identifier 에서 추가 숫자를 사용할 때 사용할 수 있습니다.</li></ul> | 애드 네트워크 |
 
+<div id="curl-exampleenriched-skan-3-postback" />
+
 #### **Curl 예제 - 강화된 SKAN 3 포스트백**
 
 ```bash
@@ -159,6 +173,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "campaign-id": 99
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-fine-conversion-values" />
 
 #### **curl 예제 - 미세 변환 값으로 강화된 SKAN 4 포스트백**
 
@@ -182,6 +198,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "attribution-signature": "MEUCIGRmSMrqedNu6uaHyhVcifs118R5z/AB6cvRaKrRRHWRAiEAv96ne3dKQ5kJpbsfk4eYiePmrZUU6sQmo+7zfP/1Bxo="
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-coarse-conversion-values" />
 
 #### curl 예제 - 코스 변환 값으로 강화된 SKAN 4 포스트백
 
@@ -218,6 +236,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
 
 리디렉션 방법에는 다음과 같은 장점이 있습니다:
 
+<div id="implementation" />
+
 #### **구현하기**
 
 1. 포스트백을 *[https://skadredirect.appsflyer.com/api/redirects](https://skadredirect.appsflyer.com/api/redirects)*로 리디렉션하는 HTTP 307 응답으로 응답하도록 서버를 구성합니다.
@@ -230,6 +250,8 @@ https://skadredirect.appsflyer.com/api/redirects?
   &ad-network-campaign-id=243232&ad-network-campaign-name=yarg_campaign_name
   &ad-network-adset-name=dsdsa&creative=examplecreative&channel=channelexample
 ```
+
+<div id="query-params-for-campaign-details-not-mandatory" />
 
 #### 캠페인 세부 정보에 대한 쿼리 매개 변수(필수 아님)
 
@@ -250,6 +272,8 @@ https://skadredirect.appsflyer.com/api/redirects?
 | channe | <ul><li>SKAN 4+에만 해당됩니다.</li><li>추가 캠페인 세분성을 위해 source\_identifier 에서 추가 숫자를 사용할 때 사용할 수 있습니다.</li></ul> |
 
 </Accordion>
+
+<div id="receive-data-from-appsflyer" />
 
 ## 앱스플라이어에서 데이터 수신
 
@@ -308,6 +332,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 </Accordion>
 
+<div id="integration-testing" />
+
 ## 연동 테스트
 
 앱스플라이어와의 연동을 검증하려면 다음 방법 중 하나 또는 둘 다를 사용하십시오. 
@@ -333,6 +359,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 광고 네트워크는 이 방법을 사용하여 라이브 앱에서 앱스플라이어에 실제 SKAN 포스트백을 전송합니다.
 
+<div id="testing-integration" />
+
 #### 테스트 통합
 
 | 책임 | 작업 |
@@ -341,6 +369,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | 광고 네트워크 및 앱스플라이어 | 포스트백 통합 인증에 사용할 상호 고객(최신 AppsFlyer SDK를 통합)에 동의합니다. |
 | 애드 네트워크 | 본 기사에서 설명한 방법 중 하나를 사용하여 앱 SKAN 포스트백을 앱스플라이어로 보냅니다. |
 | 앱스플라이어 | 광고주에 의해 설정된 변환 값 매핑에 따라 디코딩된 포스트백을 광고 네트워크로 보냅니다. |
+
+<div id="test-criteria" />
 
 #### 테스트 기준
 
@@ -365,6 +395,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | <span id="id888707086"></span>id888707086 | 인앱 이벤트를 포함한 전환:<ul><li>af\_레벨\_완성</li><li>af\_로그인</li><li>af\_SKAN\_revenue</li><li>af\_등록</li><li>af\_구독</li><li>af\_고객\_이벤트</li></ul> | <ol><li>통합 탭에서 i**n-app 이벤트 포스트백을 활성화합니다**.</li><li>나열된 각 인앱 이벤트를 선택하고 이벤트 식별자에 매핑합니다.</li><li>구성을 저장합니다.</li><li>포스트백에서 전송 전환 가치 = 7.</li><li>앱스플라이어는 다음과 같이 응답합니다:<ul><li>인스톨 포스트백</li><li>af\_레벨\_완성 포스트백</li><li>af\_로그인 포스트백</li><li>af\_SKAN\_revenue 포스트백</li><li>af\_등록 포스트백</li><li>af\_구독 포스트백</li><li>af\_고객\_이밴트 포스트백</li></ul></li></ol> |
 | <span id="id888707087"></span>id888707087 | af\_SKAN\_revenue 이벤트를 사용하여 측정한 인게이지먼트 | <ol><li>통합 탭에서 i**n-app 이벤트 포스트백을 활성화합니다**.</li><li>이벤트 이름 af\_SKAN\_revenue*을 매핑하고 이벤트 식별자에 보냅니다.*</li><li>설정 저장</li><li>포스트백에서 전송 전환 가치 = 7.</li><li>앱스플라이어는 다음과 같이 응답합니다:<ul><li>인스톨 포스트백</li><li>af\_SKAN\_revenue 이벤트의 3개 포스트백</li></ul></li></ol> |
 
+<div id="integration-steps" />
+
 #### 통합 단계
 
 | 책임 | 작업 |
@@ -372,6 +404,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | 애드 네트워크 |  |
 | 애드 네트워크 | <ol><li><Anchor target="_blank" href="/partners/ko/docs/turn-on-test-app-integration-for-ad-networks">테스트 앱을 활성화합니다</Anchor>.</li><li>각 앱에 대해 이전 표의 지침 열을 완료합니다.</li><li>앞의 표에 나열된 테스트 앱을 사용하여 시뮬레이션된 포스트백을 보냅니다. 시뮬레이션된 포스트백을 보낼 때의 고려 사항:<ul><li>app\_id 및 변환 값을 앞의 표에 나열된 대로 설정합니다.</li><li>광고 네트워크는 Apple 호환 서명을 생성할 수 없으므로 시뮬레이션된 포스트백에 서명 필드를 포함할 필요가 없습니다. 앱스플라이어는 시뮬레이션된 포스트백에 대해 이를 확인하지 않습니다.</li><li>광고 네트워크는 포스트 또는 리디렉션 접근 방식을 사용하여 포스트백을 보냅니다.</li></ul></li></ol> |
 | 앱스플라이어 | 통합 중에 광고 네트워크에서 지정한 엔드포인트에 대한 디코딩된 포스트백으로 응답합니다. |
+
+<div id="test-criteria-1" />
 
 #### 테스트 기준
 
@@ -381,6 +415,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | 애드 네트워크 | <ul><li>광고 네트워크는 번역된 포스트백을 수신하고 디코딩합니다.</li><li>앱스플라이어에서 보낸 인앱 포스트백은 예상 흐름과 일치합니다. 예를 들어 앱 ID888707087의 전환 값이 3인 경우 광고 네트워크는*af\_SKAN\_revenue* 이벤트의 포스트백을 3회 수신합니다.</li></ul> |
 
 </Accordion>
+
+<div id="clarifications" />
 
 ## 규명
 

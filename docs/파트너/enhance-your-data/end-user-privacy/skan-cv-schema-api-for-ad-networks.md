@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **간단히 보기**: 요약: 광고주가 매핑한 SKAN CV 스키마를 확인합니다.
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## 광고 네트워크를 위한 SKAN CV 스키마 API
 
 SKAdNetwork(SKAN) 어트리뷰션을 통해 광고주는 특정 기간(기간) 동안의 설치 후 사용자 활동을 기반으로 전환 가치(CV)를 설정하여 사용자 품질을 평가합니다. <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide">SKAN에 대해 자세히 알아보기</Anchor>

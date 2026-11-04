@@ -25,19 +25,27 @@ x-zendesk:
 
 Enriched Engagement Types(EET)는 사용자가 광고를 조회하거나 이와 상호작용할 때 발생하는 순간적인 노출부터 즉각적인 반응에 이르기까지, 사용자의 모든 엔게이지먼트 범위와 전환 의도를 반영합니다. 본 문서는 사용자가 광고와 상호작용하는 방식에 따라, 파트너사가 앱스플라이어 어트리뷰션 링크에서 인게이지먼트 타입을 리포팅하는 방법을 상세히 설명합니다.
 
+<div id="disclaimer" />
+
 > ❗️ **주의 사항**
 >
 > 이 기사는 파트너와 관련된 EET의 측면에 초점을 맞추고 있습니다. EET가 무엇인지 알아보고 이에 대한 종합적인 정보를 확인하려면 <Anchor target="_blank" href="/marketers/ko/docs/about-enriched-engagement-types#which-ad-networks-report-enriched-engagement-types">Enriched Engagement Types</Anchor> 문서를 참조하세요.
 
+<div id="which-networks-can-report-eet-to-appsflyer" />
+
 ## 어떤 네트워크가 AppsFlyer에 EET를 보고할 수 있나요?
 
 Enriched Engagement 기능은 앱스플라이어 파트너 프로그램의 Premier, Advance, 또는 Engage 기준을 충족하는 네트워크에 한해 지원됩니다. 이 등급들은 양사의 공통 고객에게 지속적으로 높은 품질의 트래픽을 대규모로 제공하고, 인게이지먼트 데이터를 투명하고 신뢰할 수 있는 방식으로 전송하며, 앱스플라이어의 광범위한 서비스와 연동되어 활발하게 활동 중인 네트워크를 의미합니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
 > 인게이지드 뷰와 클릭을 리포팅하기 위해, 광고 네트워크는 앱스플라이어 서포트 팀에 문의해야 합니다.
 
 [EET 리포팅이 가능한 네트워크 목록](#01JCAT81K2EJNH91YS6NJGMXMB-data-title)을 확인해 보세요.
+
+<div id="warning" />
 
 > ❗️ **경고**
 >
@@ -147,6 +155,8 @@ https://impression.appsflyer.com/com.greatapp?pid=greatnetwork_int&c=GreatCampai
 <Accordion title="EET 보고가 가능한 네트워크">
 
 허용된 네트워크 목록에는 앱스플라이어가 처리할 수 있는 인리치드 Enriched Engagement-type 이벤트를 지원하는 파트너들이 포함되며, 이때 인게이지드 클릭 및 인게이지드 뷰는 제외됩니다. 이 목록에 있는 네트워크 중 앱스플라이어가 자사의 인게이지드 클릭 및 인게이지드 뷰를 처리하기를 원하는 파트너는 앱스플라이어 지원 센터에 문의해야 합니다. 어떤 네트워크가 이미 앱스플라이어에서 인게이지드 클릭 및 뷰 데이터를 처리하고 있는지 확인하려면, <Anchor target="_blank" href="/marketers/ko/docs/about-enriched-engagement-types#allowed-networks">EET 광고주 안내 문서</Anchor>를 참조하세요.
+
+<div id="warning-1" />
 
 > ❗️ **경고**
 >

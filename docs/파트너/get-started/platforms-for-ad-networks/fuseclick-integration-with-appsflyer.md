@@ -54,6 +54,10 @@ https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_siteid={ADV_SID}
 ```
 
+<div id="finalizing-your-registration" />
+
+<div id="install-and-in-app-event-postbacks" />
+
 ### 인스톨 및 인앱 이벤트 포스트백
 
 글로벌 인스톨 포스트백:

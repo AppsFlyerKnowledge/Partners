@@ -25,17 +25,25 @@ x-zendesk:
 ---
 > **한눈에 보기:** 데이터 락커의 SSOT(Single Source of Truth) 리포트는 ID 매칭, SKAN 등의 다양한 어트리뷰션 방법에서 얻은 데이터를 병합하여 앱 캠페인 성과에 대한 통합적이고 정확한 개요를 제공합니다.  또한 최고의 데이터 정확도를 얻기 위해 BI 시스템에 데이터를 로드하는 방법을 제공합니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > * 광고주가 대시보드에서 [권한을 부여](/docs/single-source-of-truth-ssot-data-locker-report-for-ad-networks#permissions)해야 사용자와의 데이터 공유를 시작할 수 있습니다.
+
+<div id="what-is-data-locker" />
 
 ## 데이터 락커란?
 
 데이터 락커는 AWS, GCS, Snowflake 등 주요 클라우드 플랫폼에 직접 데이터를 제공하는 보안 솔루션입니다. 데이터 락커를 통해 포괄적인 분석 및 리포팅을 위해 내부 BI 시스템에 데이터를 쉽게 통합하고 사용할 수 있습니다. <Anchor target="_blank" href="/partners/ko/docs/data-locker-for-partners">더 알아보기</Anchor>.
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## SSOT(Single Source of Truth)란?
 
 SSOT(Single Source of Truth) 솔루션은 ID 매칭, SKAN 등의 다양한 어트리뷰션 방법에서 얻은 데이터를 병합하여 앱 캠페인 성과에 대한 통합적이고 정확한 개요를 제공하여 데이터 단편화 문제를 해결하는 것을 목표로 합니다. <Anchor target="_blank" href="/marketers/ko/docs/single-source-of-truth-ssot-guide-for-ios-attribution">더 알아보기</Anchor>.
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## 데이터 락커에서 SSOT 리포트의 이점
 
@@ -106,6 +114,8 @@ Single Source of Truth 리포트는 마케터가 성과 분석 및 측정에 사
 | 데이터 최신성 | <ul><li>일별.</li><li>지표는 해당 날짜가 끝나는 시점인 자정(UTC)에 사용 가능한 데이터를 사용하여 계산합니다.</li><li>SLA: 새 리포트는 16:00 UTC까지 데이터 락커에서 확인할 수 있습니다. 매일 마지막 15개 설치 날짜에 대해 새 버전이 생성됩니다. <Anchor target="_blank" href="/marketers/ko/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy">더 보기</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## 리포트 구조
 
@@ -489,6 +499,8 @@ Single Source of Truth 리포트는 마케터가 성과 분석 및 측정에 사
 
 </Accordion>
 
+<div id="directory-structure" />
+
 ## 디렉터리 구조
 
 <div id="report-folder-hierarchy" />
@@ -555,6 +567,8 @@ bucket
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## BI 개발사 고려사항
 
 **리포트의 데이터 범위:**
@@ -580,6 +594,8 @@ bucket
 <div id="days-postattribution" />
 
 <Accordion title="어트리뷰션 후 일수">
+
+<div id="important" />
 
 > 🚧 **중요!**
 >

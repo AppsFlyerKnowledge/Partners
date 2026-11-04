@@ -29,6 +29,8 @@ x-zendesk:
 
 연동을 시작하려면 앱스플라이어에 어트리뷰션 링크와 리포팅을 위한 포스트백을 모두 보내야 합니다.
 
+<div id="base-attribution-link" />
+
 ## 기본 어트리뷰션 링크
 
 아래에서 각 파라미터에 대한 자세한 설명이 포함된 기본 어트리뷰션 링크를 확인할 수 있습니다.
@@ -45,13 +47,23 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 전체 앱스플라이어 파라미터 목록을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">여기를 클릭하세요</Anchor>
 
+<div id="complete-attribution-link-template" />
+
 ## 전체 어트리뷰션 링크 템플릿
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## 인스톨 및 인앱 이벤트 포스트백
+
+<div id="global-in-app-event-postback-android" />
+
+<div id="global-install-postback-android" />
+
+<div id="global-install-postback-ios" />
 
 ### 글로벌 인스톨 포스트백:
 
@@ -63,6 +75,10 @@ https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={id
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
+
+<div id="finalizing-your-registration" />
+
+<div id="global-in-app-event-postback-ios" />
 
 ### 글로벌 인앱 이벤트 포스트백:
 

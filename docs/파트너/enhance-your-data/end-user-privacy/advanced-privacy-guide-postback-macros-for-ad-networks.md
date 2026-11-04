@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **요약: 요약: Advanced Privacy가 활성화된 경우 파트너와 데이터 공유를 수행할 수 있습니다. Advanced Privacy 포스트백 설정에 대한 광고 네트워크의 지침. 참고! 이 문서는 SKAdNetwork 포스트백과 관련이 없으며 광고주들이 사용하기 위한 것도 아닙니다.**
 
+<div id="advanced-privacy-for-ad-networks-news" />
+
 > 📄 **광고 네트워크 뉴스에 대한 Advanced Privacy**
 >
 > 이 문서에서 설명하는 Advanced Privacy 포스트백 메커니즘은 다음 사항이 모두 충족되는 경우에 작동합니다.
@@ -40,6 +42,8 @@ x-zendesk:
 * 어트리뷰션 자격을 가지려면 [URL 요구 사항을 클릭하십시오.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#click-url-requirements)
 * 앱스플라이어 대시보드에서 Advanced Privacy [포스트백](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification) 설정
 * [Advanced Privacy 및 SKAdNetwork](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#ap-vs-skadnetwork)사이의 차이.
+
+<div id="ad-network-advanced-privacy-data-sharing-principles" />
 
 ## 광고 네트워크 Advanced Privacy 데이터 공유 원칙
 
@@ -59,11 +63,15 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
 ![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
 
+<div id="types-of-templates-for-sending-postbacks" />
+
 #### 포스트백을 보내기 위한 템플릿의 종류
 
 * **일반 템플릿** 일반 템플릿: 유저 식별자 및 어트리뷰트-데이터 매크로를 포함해 앱스플라이어와 함께 제공되는 기존 연동 템플릿. 를 포함합니다. 이 템플릿은 유저 수준 어트리뷰션 데이터가 포함된 포스트백을 보내는 데 사용됩니다.
 * 이 템플릿은 집약된 어트리뷰션 데이터가 포함된 포스트백을 보내는 데 사용됩니다.    
   **참고:** 참고: AP 포스트백이 필요하고 AP 통합을 완료하지 않은 경우 포스트백이 전송되지 않습니다. 셀프 서비스 포스트백 관리 도구를 사용하여 AP 연동을 설정할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -73,11 +81,15 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 >   * 광고 네트워크에 포스트백 인스톨이 **오가닉을 포함한 모든 미디어소스**로 설정된 경우
 >   * 광고 네트워크에서 Advanced Privacy를 지원하지 않는 경우
 
+<div id="type-of-postback-used" />
+
 ### 사용된 포스트백 유형
 
 다음 표는 iOS 14.5 이상을 실행하는 사용자의 데이터에 적용할 수 있습니다.
 
 참고! iOS 버전이 14.4 이하라면 아래 표는 해당되지 않습니다. 즉, 일반 템플릿을 사용한 포스트백은 어트리뷰션 광고 네트워크와 비어트리뷰션 광고 네트워크 모두 전송됩니다.
+
+<div id="postback-type-for-ios-145" />
 
 #### iOS 14.5 이상에 대한 포스트백 유형
 
@@ -91,13 +103,19 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
   ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
 
+<div id="web-campaigns" />
+
 ### 웹 캠페인
 
 광고 네트워크가 웹상에서 광고를 제공하는 경우, AP는 다른 방식으로 작동합니다.
 
+<div id="postback-type-used-for-ios-145-when-ap-is-on" />
+
 #### AP가 켜져 있을 때 iOS 14.5 이상에 사용되는 포스트백 유형
 
 <table><thead><tr><th colspan="2">ATT 상태</th><th rowspan="2">어트리뷰트 참여자에 대한 포스트백 유형\*</th><th rowspan="2">어트리뷰트 해제 참여자에 대한 포스트백 유형\*</th></tr><tr><th><p>퍼블리셔 앱</p></th><th><p>광고주 앱</p></th></tr></thead><tbody><tr><td><p><span>해당 없음</span></p></td><td><p><span>승인되지 않음</span></p></td><td><p><span>프라이버시 강화 모드</span></p></td><td><p><span>없음</span></p></td></tr><tr><td><p><span>해당 없음</span></p></td><td><p><span>승인됨</span></p></td><td><p>일반  IDFA, IDFV, CUID, Click ID.</p></td><td><p>일반. 사용자 수준 ID 전용.</p></td></tr></tbody></table>
+
+<div id="integration" />
 
 ## 연동
 
@@ -124,6 +142,8 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
 2. 다음 필수 파라미터를 클릭 URL에 추가합니다.*  
 
+   <div id="caution" />
+
    > ❗️ **주의**
    >
    > 클릭 URL이 필수 파라미터를 전달하지 않는 경우, 유도하는 대부분의 인스톨로 인정되지 않습니다.
@@ -138,6 +158,8 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
    * 인앱을 통한 리디렉트
    * 서버 간 클릭(일명, S2S)
+
+   <div id="parameters-for-advanced-privacy-attribution" />
 
    #### Advanced Privacy 어트리뷰션용 파라미터
 
@@ -255,10 +277,14 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 1. [앱스플라이어 대시보드에서 Advanced Privacy 포스트백을 설정합니다.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback)
 2. <Anchor target="_blank" href="/partners/ko/docs/ios-integration-testing-for-ad-networks">Advanced Privacy 연동 테스트.</Anchor>
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * 합법적인 이벤트에 대한 포스트백과 거부된 포스트백을 구분하려면 거부된 포스트백 매크로를 구성해야 합니다.
 > * 거부된 인스톨/이벤트 포스트백을 활성화하려면 <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">Partner Assistant 위젯</Anchor>을 사용하여 문의하십시오.
+
+<div id="advanced-privacy-postback-endpoint-complete-as-required" />
 
 #### Advanced Privacy 포스트백 엔드포인트 [필요에 따라 완료]
 
@@ -266,6 +292,8 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 | --- |
 | 인스톨 |
 | 인앱 |
+
+<div id="advanced-privacy-attribution-macros-available" />
 
 #### 사용 가능한 Advanced Privacy 어트리뷰션 매크로
 
@@ -313,6 +341,8 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="ap-for-analytics-partners" />
@@ -323,6 +353,8 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
 * AP 끄기: 제한 없는 사용자 수준 포스트백.
 * AP 켜기: 이 테이블에 자세히 설명한 것처럼 사용자 소스 및 ATT 상태에 따름.
+
+<div id="analytics-partner-postback-type-according-to-att-status-and-user-source" />
 
 #### ATT 상태 및 사용자 소스에 따른 분석 파트너 포스트백 유형
 

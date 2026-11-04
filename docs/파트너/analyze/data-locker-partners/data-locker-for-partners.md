@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
 
+<div id="data-locker-for-partners" />
+
 ## 파트너용 데이터 락커
 
 파트너용 데이터 락커는 앱 데이터를 클라우드 스토리지로 전달합니다. 광고주는 앱스플라이어에 선택한 데이터를 특정 파트너와 공유할 수 있는 권한을 설정합니다.
@@ -54,6 +56,8 @@ x-zendesk:
 * <Anchor target="_blank" href="/partners/ko/docs/data-locker-reports-for-api-partners">마케팅 파트너</Anchor>
 
 </Accordion>
+
+<div id="data-storage-architecture" />
 
 ## 데이터 스토리지 아키텍처
 
@@ -124,6 +128,8 @@ x-zendesk:
 | 데이터 보존 | 사용자가 제어 |
 | 보안 | 사용자가 스토리지를 제어합니다.<ul><li>AWS  AWS: 앱스플라이어를 사용하려면 버킷에 대한 GetObject, ListBucket, DeleteObject, PutObject 사용 권한이 필요합니다. 버킷은 앱스플라이어 사용 전용이어야 합니다. 다른 목적으로 사용하지 마십시오.</li><li><Anchor target="_blank" href="/marketers/ko/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor></li></ul> |
 
+<div id="notice-to-security-officers" />
+
 #### **보안 담당자에 대한 통지**
 
 고려 사항:
@@ -154,6 +160,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="procedures" />
+
 ## 절차
 
 <div id="set-up-data-locker" />
@@ -180,6 +188,8 @@ x-zendesk:
 3. <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">데이터 락커 설정 지침</Anchor> 단계 3-16을 따릅니다.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

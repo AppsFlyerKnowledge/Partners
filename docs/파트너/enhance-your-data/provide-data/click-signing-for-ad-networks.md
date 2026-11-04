@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 사기 책임을 방지하기 위해 클릭에 서명 유효성 검증을 추가하면 광고 네트워크에서 부정한 클릭이 발생하지 않습니다.
 
+<div id="about-click-signing" />
+
 ## 클릭 서명 정보
 
 간단한 기술을 이용하여, 사기범들은 광고 네트워크를 대신하여 클릭을 전송할 수 있고, 수천 또는 심지어 수백만의 가짜 클릭을 생성하여 앱스플라이어에 전송할 수 있습니다. 광고 네트워크 자체가 이 문제를 인식하지 못하는 경우도 있습니다.
@@ -40,13 +42,19 @@ x-zendesk:
   * 광고 네트워크(광고주가 아님)용 Protect360 리포트에서 보실 수 있습니다. <Anchor target="_blank" href="/partners/ko/docs/protect360-reports-for-ad-networks#failed-click-signatures">더 알아보기</Anchor>
   * 전환율이나 광고 네트워크의 클릭 차단 임계값에 영향을 주지 않습니다.
 
+<div id="click-signature-integration" />
+
 ## 클릭 서명 연동
+
+<div id="flow" />
 
 ### 플로우
 
 다음 차트는 초기 개발 및 기본 테스트, 생산 테스트, 마지막으로 생산까지의 흐름을 개략적으로 설명합니다.
 
 ![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+
+<div id="procedure" />
 
 ### 절차
 
@@ -65,13 +73,31 @@ x-zendesk:
      https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_siteid=12345&expires=1597657118&signature_v2=8fnDVzZP_WRZnv3KNJaREOEfvB5p9oRc_XlKEvUo8gk
      ```
 
+<div id="signature-example" />
+
+<div id="signature-algorithm" />
+
+<div id="json-spaces" />
+
+<div id="attribute-value-escaping" />
+
+<div id="json-data-structure" />
+
+<div id="empty-attributes" />
+
+<div id="order-and-appearance-of-attributes" />
+
+<div id="attribute-and-json-rules" />
+
+<div id="note" />
+
 > 📘 **참고**
 >
 > 클릭 서명이 생성되기 전에 링크에 특수 문자 또는 공백의 URL 인코딩이 발생하는지 확인하십시오.  서명을 먼저 생성하면 검증에 실패하게 됩니다.
 
 
 
-| <span id="list-of-attributes"></span>순서 | 파라미터 | 필수 | 참고 |
+| <span id="creating-a-click-signature"></span><span id="list-of-attributes"></span>순서 | 파라미터 | 필수 | 참고 |
 | --- | --- | --- | --- |
 | 1 | link\_domain | 예 | <ul><li>app.appsflyer.com</li><li>myapp.onelink.me</li><li>click.mycustomdomain.com</li></ul> |
 | 2 | link\_path | 예 |  |
@@ -135,6 +161,8 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 &signature_v2=WIfCmfLAPSsVrBTqCqfihMeLCnbE4dIAlhHF84WsiWA
 ```
 
+
+<div id="code-examples" />
 
 ### 코드 예
 
@@ -316,9 +344,13 @@ func main() {
 
 </Accordion>
 
+<div id="click-signature-apis" />
+
 ## 클릭 서명 API
 
 앱스플라이어는 광고 네트워크가 클릭 서명 프로세스를 관리하고 테스트하는 데 사용할 수 있는 API를 제공합니다. 아래 표의 API 목록과 API 사용에 필요한 정보가 포함된 섹션을 참조하십시오.
+
+<div id="click-signature-apis-1" />
 
 #### 클릭 서명 API
 
@@ -341,6 +373,8 @@ func main() {
 
 <Accordion title="V1(레거시)">
 
+<div id="generate-secret-key-method" />
+
 ### 비밀 키 메서드 생성
 
 <div id="generate-secret-key-basics" />
@@ -360,6 +394,8 @@ func main() {
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
+
+<div id="parameters" />
 
 #### 파라미터
 
@@ -408,6 +444,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP 응답 코드">
 
+<div id="response-codes" />
+
 #### 응답 코드
 
 | 코드 | 메시지 | 비고 |
@@ -416,6 +454,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | 승인되지 않음 | 유효하지 않거나 누락된 권한 관리 헤더 |
 
 </Accordion>
+
+<div id="revoke-secret-key-method" />
 
 ### 비밀 키 메서드 취소
 
@@ -436,6 +476,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
+
+<div id="parameters-1" />
 
 #### 파라미터
 
@@ -462,6 +504,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <Accordion title="HTTP 응답 코드">
 
+<div id="response-codes-1" />
+
 #### 응답 코드
 
 | 코드 | 메시지 | 비고 |
@@ -470,6 +514,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 | 401 | 승인되지 않음 | 유효하지 않거나 누락된 권한 관리 헤더 |
 
 </Accordion>
+
+<div id="test-method" />
 
 ### 테스트 방법
 
@@ -490,6 +536,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
+
+<div id="parameters-2" />
 
 #### 파라미터
 
@@ -540,6 +588,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP 응답 코드">
 
+<div id="response-codes-2" />
+
 #### 응답 코드
 
 | 코드 | 메시지 | 비고 |
@@ -548,6 +598,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | 승인되지 않음 | 유효하지 않거나 누락된 권한 관리 헤더 |
 
 </Accordion>
+
+<div id="configure-mode-method" />
 
 ### 모드 메서드 설정
 
@@ -566,6 +618,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
+
+<div id="parameters-3" />
 
 #### 파라미터
 
@@ -592,6 +646,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP 응답 코드">
 
+<div id="response-codes-3" />
+
 #### 응답 코드
 
 | 코드 | 메시지 | 비고 |
@@ -601,6 +657,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | 승인되지 않음 | 유효하지 않거나 누락된 권한 관리 헤더 |
 
 </Accordion>
+
+<div id="configure-circuit-breaker-method" />
 
 ### 회로 차단기 메서드 설정
 
@@ -621,6 +679,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
+
+<div id="request-body-json" />
 
 #### 요청 본문 JSON
 
@@ -650,6 +710,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP 응답 코드">
 
+<div id="response-codes-4" />
+
 #### 응답 코드
 
 | 코드 | 메시지 | 비고 |
@@ -659,6 +721,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | 승인되지 않음 | 유효하지 않거나 누락된 권한 관리 헤더 |
 
 </Accordion>
+
+<div id="get-configuration-method" />
 
 ### 설정 메서드 가져오기
 
@@ -730,6 +794,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="HTTP 응답 코드">
 
+<div id="response-codes-7" />
+
 #### 응답 코드
 
 | 코드 | 메시지 | 비고 |
@@ -738,6 +804,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | 승인되지 않음 | 유효하지 않거나 누락된 권한 관리 헤더 |
 
 </Accordion>
+
+<div id="report-method" />
 
 ### 리포트 메서드
 
@@ -758,6 +826,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="parameters-4" />
 
 #### 파라미터
 
@@ -809,6 +879,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="HTTP 응답 코드">
 
+<div id="response-codes-8" />
+
 #### 응답 코드
 
 | 코드 | 메시지 | 비고 |
@@ -817,6 +889,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | 승인되지 않음 | 유효하지 않거나 누락된 권한 관리 헤더 |
 
 </Accordion>
+
+<div id="exclude-app-method" />
 
 ### 앱 메서드 제외
 
@@ -839,6 +913,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-5" />
 
 #### 파라미터
 
@@ -874,6 +950,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 </Accordion>
 
+<div id="remove-excluded-app-method" />
+
 ### 제외된 앱 메서드 삭제
 
 <div id="remove-excluded-app-method-basics" />
@@ -893,6 +971,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-6" />
 
 #### 파라미터
 
@@ -969,6 +1049,8 @@ String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

@@ -34,6 +34,8 @@ x-zendesk:
 | pid | 앱스플라이어 서버에서 연동 네트워크를 식별하기 위해 미디어소스 이름에 \_int를 포함합니다 |
 | c | 캠페인 이름 |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### 권장 어트리뷰션 링크 파라미터:
 
 | 앱스플라이어 파라미터 |  | 설명 |
@@ -41,9 +43,13 @@ x-zendesk:
 | **클릭아이디** | **`{tid}`** |  |
 | af\_siteid | `{publisher_id}` |  |
 
+<div id="complete-attribution-link-template" />
+
 ### 전체 어트리뷰션 링크 템플릿
 
 `https://app.appsflyer.com/com.appsflyer?pid={traffic_source}&clickid={tid}&af_siteid={publisher_id}`
+
+<div id="install-and-in-app-event-postbacks" />
 
 ## 인스톨 및 인앱 이벤트 포스트백
 

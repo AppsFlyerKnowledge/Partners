@@ -26,6 +26,10 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="global-postbacks-for-installs-and-in-app-events" />
+
+<div id="creating-the-attribution-link" />
+
 ## 어트리뷰션 링크 사용
 
 | 앱스플라이어 기본 URL | 설명 |
@@ -137,7 +141,7 @@ https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction
 
 
 
-| <span id="finalizing-your-registration"></span>앱스플라이어 파라미터를 추가하세요. |  | 설명 |
+| <span id="mapping-of-appsflyer-parameters-and-hubscale-macros"></span><span id="finalizing-your-registration"></span>앱스플라이어 파라미터를 추가하세요. |  | 설명 |
 | --- | --- | --- |
 | pid | pub\_id | <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters#partner-id-pid-parameter">자세한 내용</Anchor>. |
 | c | campaign\_name |  |

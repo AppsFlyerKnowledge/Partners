@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** CTV 디바이스에서 시청한 광고에 대한 모바일 앱 인스톨을 측정합니다.
 
+<div id="ctv-to-mobile-app-attribution-for-ad-networks" />
+
 ## 광고 네트워크를 위한 CTV-모바일 앱 어트리뷰션
 
 앱스플라이어 크로스 플랫폼 노출 URL을 사용하면 모바일 앱 인스톨을 CTV에 표시된 광고에 귀속시킬 수 있습니다. 한 가구 내에서 여러 번의 인스톨이 동일한 CTV 광고 노출에 의해 측정될 수 있습니다.
@@ -41,6 +43,8 @@ https://impressions.onelink.me/{template_id}?pid=__media_source__&af_xplatform=t
 ```
 
 전환 발생 후 포스트백이 발송됩니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >

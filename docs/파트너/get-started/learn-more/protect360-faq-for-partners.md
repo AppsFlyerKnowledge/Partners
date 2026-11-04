@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 파트너가 Protect360에 대해 자주 묻는 질문에 대한 답변을 찾아보세요.
 
+<div id="impression-level-anomalies" />
+
 ## 클릭/노출 수준 이상
 
 <div id="why-are-impressionsclicks-being-capped" />
@@ -76,6 +78,8 @@ Protect360 대시보드에 표시되는 "제한된 클릭 수"는 제한이 실�
 
 </Accordion>
 
+<div id="installin-app-event-level-anomalies" />
+
 ## 설치/인앱 이벤트 수준 이상
 
 <div id="why-was-my-test-install-rejected-from-attribution" />
@@ -97,6 +101,8 @@ Protect360 대시보드에 표시되는 "제한된 클릭 수"는 제한이 실�
 <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data-reports#차단된-이유">Protect360 차단 사유</Anchor>에 대해 읽어보시기 바랍니다.
 
 </Accordion>
+
+<div id="protect360-data-visibility-and-comprehension" />
 
 ## Protect360 데이터 가시성 및 이해
 

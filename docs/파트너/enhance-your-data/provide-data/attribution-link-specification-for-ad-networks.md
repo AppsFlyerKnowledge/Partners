@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **요약:** 앱스플라이어와 연동하는 광고 네트워크는 본 문서에 따라 어트리뷰션 링크를 지정해야 합니다.
 
+<div id="attribution-links-for-ad-networks" />
+
 ## 광고 네트워크를 위한 어트리뷰션 링크
 
 어트리뷰션 링크는 사용자가 광고를 클릭했음을 앱스플라이어에 알리는 데 사용됩니다. 가장 간단한 형태로, 광고 뒤에 어트리뷰션 링크를 배치하여 사용자가 광고를 클릭할 때 어트리뷰션 링크를 클릭하게 됩니다.
+
+<div id="attribution-model" />
 
 ### 어트리뷰션 모델
 
@@ -50,9 +54,13 @@ x-zendesk:
 
 이 과정에서, 어트리뷰션 링크를 통해 정보를 수집하고 포스트백으로 정보를 다시 발송합니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > TUNE, CAKE 또는 Affise와 같은 써드 파티 성과 마케팅 도구를 사용하는 경우 <Anchor target="_blank" href="/partners/ko/docs/platforms-for-ad-networks">플랫폼별 지침</Anchor>을 참조하십시오.
+
+<div id="attribution-link-template" />
 
 ### 어트리뷰션 링크 템플릿
 
@@ -73,6 +81,8 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={clickid}&advert
 * 귀사의 매크로 이름을 포함한 어트리뷰션 링크 템플릿을 이메일로 발송해 주세요.
 
 다음 표에 나열된 파라미터를 권장 최소값으로 간주합니다. 더 많은 파라미터를 지원합니다. 클릭에서 수집한 만큼의 정보를 최대한 공유해 주세요. <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters#어트리뷰션-링크-파라미터">어트리뷰션 링크 파라미터 목록</Anchor>을 참조하십시오.
+
+<div id="recommended-minimum-attribution-link-parameters" />
 
 #### 권장 최소 어트리뷰션 링크 파라미터
 

@@ -33,6 +33,8 @@ x-zendesk:
 
 ![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
 
+<div id="how-to-share-cost" />
+
 ## 비용을 공유하는 방법
 
 앱스플라이어 어트리뷰션 URL을 통해 사용자 수준의 비용 데이터를 전달하는 방법에는 두 가지가 있습니다. 암호화되지 않거나 암호화됩니다. 암호화된 비용 패스를 사용하면 파트너가 클릭 어트리뷰션 URL에서 비용 가치를 보낼 수 있습니다.
@@ -68,6 +70,8 @@ A12345678910&af_siteid=12345&af_cost_model=CPI&af_cost_value=1.00&af_cost_curren
 https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af_siteid=12345 **&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvucFygbll9IwAMSN%2B%2BDQxo%3D**
 
 **참고:** 앱스플라이어와 비용 암호화 연동을 수행하는 광고 네트워크만이 실제로 고객의 어트리뷰션 링크와 암호화된 비용 데이터를 보낼 수 있습니다.
+
+<div id="aes-encryption-process" />
 
 ## AES 암호화 프로세스
 
@@ -174,6 +178,8 @@ if end >= start:
 print(msg)
 print(urllib.quote_plus(base64.b64encode(enc)))
 ```
+
+<div id="which-networks-support-cost-reporting" />
 
 ## 어떤 네트워크가 비용 리포트를 지원하나요?
 

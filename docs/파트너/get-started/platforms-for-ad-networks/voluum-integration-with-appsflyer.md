@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** PeerClick을 사용하는 애드 네트워크는 앱스플라이어 확률적 모델링 솔루션을 통해 인스톨 및 인앱 이벤트에 대한 어트리뷰션 데이터를 받을 수 있습니다.
 
+<div id="starting-the-integration" />
+
 ## 연동 시작하기
 
 연동을 시작하려면 앱스플라이어에 어트리뷰션 링크와 리포팅을 위한 포스트백을 모두 보내야 합니다.
@@ -49,11 +51,15 @@ x-zendesk:
 
 전체 앱스플라이어 파라미터 목록을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">여기를 클릭하세요</Anchor>
 
+<div id="complete-attribution-link-template" />
+
 ### 전체 어트리뷰션 링크 템플릿
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### 인스톨 및 인앱 이벤트 포스트백
 
@@ -68,6 +74,10 @@ https://{Company-Domain}.voluumtrk.com/postback?cid={clickid}
 ```http
 https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary}&txid={event-name}
 ```
+
+<div id="finalizing-your-registration" />
+
+<div id="appsflyers-in-app-event-dashboard" />
 
 ### 앱스플라이어의 인앱 이벤트 대시보드
 
