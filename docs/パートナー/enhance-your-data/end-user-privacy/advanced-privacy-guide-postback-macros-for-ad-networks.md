@@ -237,7 +237,7 @@ APがONになっている場合、iOS14.5以上のOSでATTに同意しなかっ�
 
    **サンプル**
 
-| `name}&af_adset_id={adset ID}&af_ad={ad name}&af_ad_id={adID}  <br />&af_ad_type={Ad type}&af_siteid={PublisherId}`<br /><br />`&af_ua=Mozilla%2F5.0%20%28iPhone%3B%20CPU%20iPhone%20OS%2012_1_4%20`<br /><br />`2F605.1.15%20%``28KHTML%2C%20like%20Gecko%29%20Mobile%2F16D57&af_lang=en-US&af_ip=11.11.1.11` |
+| `name}&af_adset_id={adset ID}&af_ad={ad name}&af_ad_id={adID}  <br />&af_ad_type={Ad type}&af_siteid={PublisherId}`<br /><br />`&af_ua=Mozilla%2F5.0%20%28iPhone%3B%20CPU%20iPhone%20OS%2012_1_4%20`<br /><br />`2F605.1.15%20%28KHTML%2C%20like%20Gecko%29%20Mobile%2F16D57&af_lang=en-US&af_ip=11.11.1.11` |
 | --- |
 
    * クエリパラメータはURLエンコードする必要があります。
