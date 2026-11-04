@@ -49,6 +49,10 @@ Tài khoản đại lý được các nhóm đại lý sử dụng để đo lư
   * Nhắm mục tiêu lại
 * KPI có sẵn bao gồm số lượt hiển thị, số lượt nhấp, số lượt cài đặt, mức độ trung thành của người dùng, chi phí và ROI. Giới thiệu về <Anchor target="_blank" href="/marketers/vi/docs/getting-started-with-appsflyer-dashboards">bảng điều khiển.</Anchor>
 
+<div id="note" />
+
+<div id="agency-access-to-ad-network-integrations" />
+
 <div id="agency-access-to-marketer-data" />
 
 ### Cơ quan truy cập vào dữ liệu tiếp thị
@@ -107,6 +111,8 @@ Cấu trúc tài khoản cho phép chia sẻ kiến thức giữa các nhóm age
 <table><thead><tr><th><p>Mạng Quảng cáo</p></th><th><p>Đại lý</p></th></tr></thead><tbody><tr><td><p>Thông số đường dẫn phân bổ để nhận dạng: <code>pid</code></p></td><td><p>Thông số đường dẫn phân bổ để nhận dạng: <code>af_prt</code></p></td></tr><tr><td><p>Đặt quảng cáo ứng dụng trên chính nền tảng của mình</p></td><td><p>Quảng bá ứng dụng thông qua nhiều nguồn truyền thông</p></td></tr><tr><td><p>Chỉ thấy lưu lượng truy cập từ quảng cáo được đặt trên chính nền tảng</p></td><td><p>Chỉ thấy lưu lượng truy cập từ các nguồn truyền thông mà thực hiện quảng cáo</p></td></tr><tr><td><p>Có thể nhận thông tin theo thời gian thực về lượt cài đặt và các sự kiện trong ứng dụng thông qua đăng lại</p></td><td><p>Không thể nhận thông tin trong thời gian thực về lượt cài đặt và sự kiện trong ứng dụng thông qua đăng lại</p></td></tr><tr><td><p>Có thể cấu hình đăng lại sự kiện trong ứng dụng cho bất kỳ lưu lượng truy cập nào từ chính nó\*</p></td><td><p>Có thể cấu hình đăng lại sự kiện trong ứng dụng đến một số đối tác mà mang lưu lượng truy cập từ đó\*</p></td></tr><tr><td colspan="2"><p>\* Yêu cầu sự cho phép của nhà tiếp thị</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="important" />
 
 <div id="agency-accountscampaigns-and-reporting" />
 
@@ -250,6 +256,8 @@ Liên kết sâu là khởi chạy một ứng dụng di động khi mở nội 
 ### Nhắm mục tiêu lại
 
 * * <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide">Nhắm mục tiêu lại cho phân bổ</Anchor> cho phép bạn nhắm mục tiêu người dùng hiện tại hoặc quá khứ trong các chiến dịch của bạn. Các chiến dịch nhắm mục tiêu lại thường yêu cầu chức năng liên kết sâu để hoạt động chính xác.
+
+<div id="in-app-event-postbacks" />
 
 <div id="in-app-events" />
 

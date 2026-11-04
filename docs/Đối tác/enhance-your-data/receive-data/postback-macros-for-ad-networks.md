@@ -109,6 +109,12 @@ Các cột trong bảng dưới đây có ý nghĩa như sau:
 
 Các ví dụ tiếp theo liên quan đến đăng lại sự kiện trong ứng dụng có sẵn cho các đối tác.
 
+<div id="sample-postbacks" />
+
+<div id="encoded-values" />
+
+<div id="example" />
+
 > 📄 **Ví dụ:**
 >
 > Mẫu postback sự kiện "&event=(event)&json=(encode)" đã được dịch thành postback sau đây cho sự kiện af\_purchase cụ thể:
@@ -134,6 +140,8 @@ Các ví dụ tiếp theo liên quan đến đăng lại sự kiện trong ứng
 
 ### Postback mẫu
 
+<div id="general-install-postback-examples" />
+
 ### Ví dụ về Postback Cài Đặt tổng quan
 
 <Tabs>
@@ -156,6 +164,10 @@ device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
+
+<div id="general-in-app-event-postback-examples" />
 
 ### Ví dụ về Postback Sự kiện trong ứng dụng chung
 
