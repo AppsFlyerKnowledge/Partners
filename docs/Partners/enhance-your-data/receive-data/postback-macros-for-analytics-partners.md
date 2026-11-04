@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **At a glance:** Use macros as part of the postbacks sent to analytics partners to get relevant attribution data.
 
+<div id="postbacks-for-analytics-partners" />
+
 ## Postbacks for analytics partners
 
 Analytics partners can define the content and endpoints of postbacks sent to them, as part of their integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on.
 
 * **Postback configuration:** To request changes to your postback settings, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> to open a ticket, or contact your AppsFlyer partner development manager.
 * **Postback types**: Postbacks are available for install and in-app events.
+
+<div id="postback-macros" />
 
 ## Postback macros
 
@@ -42,6 +46,8 @@ When included in a postback, macros are replaced with user-relevant data. For ex
   * AF: After processing by AppsFlyer
 * **[Base]** **Macros for all postbacks**: Macros relevant to install and in-app event.
 * **[Optional]** for in-app events as indicated in the column.
+
+<div id="macrosinstalls-and-in-app-events" />
 
 #### Macros—installs and in-app events
 
@@ -88,9 +94,13 @@ When included in a postback, macros are replaced with user-relevant data. For ex
 | af\_subsite\_id | Link | <ul><li>Ad sub-network/Publisher ID.</li><li>If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567</li></ul> | Yes | Yes |
 | af\_ad\_type | Link | Use the following naming convention:<ul><li>**text:** an ad unit containing only text, for example a search result</li><li>**banner:** a basic format that appears at the top or bottom of the device screen</li><li>**interstitial:** a full-page ad that appears during breaks in the current experience</li><li>**video:** a standard video, that is non-rewarded</li><li>**rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video</li><li>**playable:** an ad unit containing an interactive preview of the app experience</li><li>**sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article</li><li>**audio:** an audio ad</li></ul> | Yes | Yes |
 
+<div id="in-app-event-only-macros" />
+
 ## In-app event only macros
 
 The examples that follow relate to in-app event postbacks available to partners.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -105,12 +115,18 @@ The examples that follow relate to in-app event postbacks available to partners.
 >
 > The decoded JSON value of this postback is `{"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
 
+<div id="encoded-values" />
+
 ### Encoded values
 
 Postbacks may contain irregular characters, which are not alpha-numerical. To transfer these values correctly via postbacks, AppsFlyer URL-encodes non-alpha-numerical values.  
 To decode or encode a postback use [an encoding web service](https://www.urldecoder.org/).
 
+<div id="sample-postbacks" />
+
 ## Sample postbacks
+
+<div id="general-install-postback-examples" />
 
 ### General install postback examples
 
@@ -132,6 +148,8 @@ http://YourCompanyDomain.com?pid=(media source)&device_ip=(ip)&idfa=(idfa)&insta
 </Tab>
 </Tabs>
 
+<div id="general-in-app-event-postback-examples" />
+
 ### General in-app event postback examples
 
 <Tabs>
@@ -151,6 +169,8 @@ http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&insta
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ## In-app event postback example
 

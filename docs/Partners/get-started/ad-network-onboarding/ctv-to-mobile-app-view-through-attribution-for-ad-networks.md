@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Attribute mobile app installs to ads viewed on Connected TV (CTV) devices.
 
+<div id="ctv-to-mobile-app-attribution-for-ad-networks" />
+
 ## CTV-to-mobile app attribution for ad networks
 
 With AppsFlyer cross-platform impression URLs, you can attribute mobile app installs to ads displayed on CTV. Multiple installs within the same household can be attributed to the same CTV ad impression.
@@ -42,6 +44,8 @@ https://impressions.onelink.me/{template_id}?pid=__media_source__&af_xplatform=t
 ```
 
 AppsFlyer sends postbacks to you after each conversion.
+
+<div id="note" />
 
 > 📘 **Note**
 >

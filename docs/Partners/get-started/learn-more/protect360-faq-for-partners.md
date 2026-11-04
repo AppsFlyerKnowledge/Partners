@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Find answers to questions frequently asked by partners about Protect360.
 
+<div id="impression-level-anomalies" />
+
 ## Impression level anomalies
 
 <div id="why-are-impressionsclicks-being-capped" />
@@ -55,6 +57,8 @@ We recommend reading: <Anchor target="_blank" href="https://www.appsflyer.com/gl
 
 </Accordion>
 
+<div id="installin-app-event-level-anomalies" />
+
 ## Install/in-app event level anomalies
 
 <div id="why-was-my-test-install-rejected-from-attribution" />
@@ -76,6 +80,8 @@ Please review the "fraud sub reason" associated with the rejection for better cl
 We recommend reading about <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons">Protect360 blocked reasons</Anchor>.
 
 </Accordion>
+
+<div id="protect360-data-visibility-and-comprehension" />
 
 ## Protect360 data visibility and comprehension
 

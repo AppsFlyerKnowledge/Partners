@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Create and manage your agency account's AppsFlyer users, and assign them permissions to access features and apps.
 
+<div id="user-roles-and-access-permissions" />
+
 ## User roles and access permissions
 
 AppsFlyer accounts allow for multiple users, each with individually-managed permissions. Each user’s permissions are defined along 2 primary dimensions:
@@ -34,7 +36,11 @@ Permissions within each of these dimensions are assigned independently. In other
 
 The only exception is the [Admin role](/docs/user-management-for-agencies#admina-special-role), as discussed below, which has access to all capabilities and apps.
 
+<div id="predefined-roles" />
+
 ### Predefined roles
+
+<div id="predefined-roles-hash" />
 
 #### predefined roles hash
 
@@ -49,6 +55,8 @@ Each of these roles defines the specific AppsFlyer features the user can access 
 
 As a general rule, all roles are predefined, and each role’s functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by changing their role (except for the [account owner](/docs/user-management-for-agencies#account-owner-hash), as discussed below).
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > You have assigned Bill Bates the role of **Team manager.** This role gives Bill the ability to manage **App settings** but does not allow him access to the **Audit log.**
@@ -57,11 +65,15 @@ As a general rule, all roles are predefined, and each role’s functional capabi
 >
 > **Answer:** No. As long as Bill stays in the Team manager role, you cannot give him the ability to access the Audit log. Nor can you remove his ability to manage App settings. Of course, you can assign Bill to a different role, and his capabilities will change to those defined by that role.
 
+<div id="temp-rolesan-exception-to-the-rule" />
+
 ### Temp roles—an exception to the rule
 
 If your AppsFlyer account existed under our prior user management system (when the only available account types were Admin and Team member), all users were brought into the new system with unchanged capabilities. As a result, most of these users appear in the current system with **temp roles**.
 
 Learn more about [managing temp roles](/docs/user-management-for-agencies#managing-temp-roles).
+
+<div id="admina-special-role" />
 
 ### Admin—a special role
 
@@ -72,6 +84,8 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
   * All current and future apps
   * All media sources and geosThis "all-access" characteristic of the Admin role cannot be changed or limited.
 
+  <div id="account-owner-hash" />
+
   #### account owner hash
 * The user created at the time the account was opened (the **"account owner"**) is assigned the Admin role by default.
   * The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [**User management**](/docs/user-management-for-agencies#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
@@ -80,12 +94,16 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
 * Only a user with an admin role can <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">manage API and S2S tokens</Anchor>.
 * Any Admin other than the account owner **can** be changed to a different role or deleted from the AppsFlyer account through the User management page.
 
+<div id="user-management-page" />
+
 ## User management page
 
 **To access the User management page:**
 
 1. In the top menu bar, click, open the account menu (email address dropdown).
 2. Select **User management.**
+
+<div id="users-tab" />
 
 ### Users tab
 
@@ -96,6 +114,8 @@ The **Users** tab displays a table of all existing users in your account. It is 
 * Click the filter icon <Image alt="filter_icon.png" src="https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png" width="25px" /> in the **Role** column heading to filter users by their role (including temp roles).
   * To clear the filter, select **None** in the filter dropdown list.
 * Use the checkboxes to select and [edit multiple users](/docs/user-management-for-agencies#multi-user-editing) at the same time.
+
+<div id="roles-tab" />
 
 ### Roles tab
 
@@ -110,6 +130,8 @@ Click on the name of any role in the left panel to see:
 * The number of users currently assigned that role (in the top-right corner of the screen)
   * Hover over the user icon <Image alt="user_icon.png" src="https://files.readme.io/afd47a11e82e0cfac3240fe39582bd141639465952f6eef76bcf1f6e7532d6a9-16162513473937.png" width="21px" /> to see a list of the first 20.
 
+<div id="creating-a-user" />
+
 ## Creating a user
 
 **To create a new user:**
@@ -122,6 +144,8 @@ Click on the name of any role in the left panel to see:
    * Can include letters, numbers, apostrophes ('), ampersands (&), dollar signs ($), hash symbols (#), hyphens (-), underscores (\_), and periods (.)
    * Two consecutive periods (..) and other special characters are not allowed.
    * Must end with a valid email domain.
+
+   <div id="important" />
 
    > 🚧 **Important!**
    >
@@ -141,14 +165,20 @@ Click on the name of any role in the left panel to see:
 
    * The user is sent an email invitation to activate their account.
 
+   <div id="account-activation-hash" />
+
    #### account activation hash
 
    * The user is displayed in the user table. The envelope icon ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png) indicates that an invitation has been sent and the account is awaiting activation. Once the user activates their account, the envelope will disappear.
    * The activation link sent to the user is valid for 48 hours. If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](/docs/user-management-for-agencies#resending-a-user-invitation).
 
+<div id="editing-users" />
+
 ## Editing users
 
 Users can be edited either one at a time or in groups.
+
+<div id="individual-editing" />
 
 ### Individual editing
 
@@ -160,9 +190,13 @@ Users can be edited either one at a time or in groups.
 4. All settings other than email address are editable.
 5. Click **Save**.
 
+<div id="multi-user-editing" />
+
 ### Multi-user editing
 
 Multi-user editing is an efficient way to change the account permissions of several users at one time. Using this feature in combination with the search and filtering capabilities of the **Users** tab can make it particularly helpful for managing large numbers of users.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -180,6 +214,8 @@ Multi-user editing is an efficient way to change the account permissions of seve
    * Remember that your changes apply to all selected users!
 5. The edited users are highlighted in the table, and the users appear as they will once the changes are saved. However, you still have the opportunity to review your changes and confirm or cancel them in the next step.
 6. Review your changes. Click **Save** to confirm or **Cancel** to undo them.
+
+<div id="example-1" />
 
 > 📄 **Example**
 >
@@ -202,12 +238,16 @@ Multi-user editing is an efficient way to change the account permissions of seve
 >    * Use the search box to find Alice, then individually edit her user to give her access to the Astounding app.
 >    * Repeat these steps for Bill and Charlie to give them access to Beautiful and Charming, respectively.
 
+<div id="deleting-users" />
+
 ## Deleting users
 
 **To delete a user:**
 
 1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png" width="25px" /> on the far-right side of the user’s row.
 2. Select **Delete** from the menu.
+
+<div id="special-situations-and-additional-procedures" />
 
 ## Special situations and additional procedures
 
@@ -220,6 +260,8 @@ If your account previously used our prior user management system, [**temp roles*
 * Users with the same capabilities were assigned the same temp role.
 * Use the features of the [Roles tab](/docs/user-management-for-agencies#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
 
+<div id="temp-role-limitations" />
+
 #### Temp role limitations
 
 Temp roles were designed specifically to allow seamless transition from our prior user management system. As such, they are available only in limited situations:
@@ -229,6 +271,8 @@ Temp roles were designed specifically to allow seamless transition from our prio
   * Note that a user's access to future apps **cannot** be changed while the user is in a temp role.
 * When a user with a temp role is changed to a predefined role, they cannot be returned to the previously-assigned temp role (or to any other temp role).
 * If the last user in a temp role is removed from it, the role will no longer appear in your account.
+
+<div id="example-2" />
 
 > 📄 **Example**
 >
@@ -247,6 +291,8 @@ Temp roles were designed specifically to allow seamless transition from our prio
 
 Because all Admins have the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > A few things to consider before you begin:
@@ -254,12 +300,16 @@ Because all Admins have the same permissions as the account owner, changing the 
 > * If you're still using Pull, Master, or GDPR APIs with token v1, changing the account owner automatically resets these services. To avoid data loss, <Anchor target="_blank" href="/marketers/docs/bulletin-api-token-changes">transition to start using these APIs with token v2</Anchor> **before changing the account owner**.
 > * Changing the account owner must be completed manually according to these steps. It cannot be done from the **User management** page.
 
+<div id="1send-your-request-via-the-chat-widget" />
+
 #### #1–Send your request via the chat widget
 
 To begin the process of changing the account owner, open the chat widget <Anchor target="_blank" href="https://hq1.appsflyer.com/apps/search?openAssistant=true">using this link</Anchor> or by clicking the Help button in the top menu bar. Include the following information in the chat:
 
 * Name of the account owner you would like to replace
 * Name, title, and email of the new account owner
+
+<div id="2next-steps" />
 
 #### #2–Next steps
 

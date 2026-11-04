@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks. Note! This article is not related to either SKAdNetwork postbacks nor is it intended for use by advertisers.
 
+<div id="advanced-privacy-for-ad-networks-news" />
+
 > 📄 **Advanced Privacy for Ad Networks news**
 >
 > The Advanced Privacy postback mechanism described in this article works when all of the following are true:
@@ -41,6 +43,8 @@ This article discusses:
 * [Click URL](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#click-url-requirements) requirements in order to be eligible for attribution
 * Setting up your Advanced Privacy [postbacks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification) in the AppsFlyer dashboard
 * The difference between [Advanced Privacy and SKAdNetwork.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#ap-vs-skadnetwork)
+
+<div id="ad-network-advanced-privacy-data-sharing-principles" />
 
 ## Ad network Advanced Privacy data-sharing principles
 
@@ -60,11 +64,15 @@ You can view the current AP setting, per app: In AppsFlyer, from the side menu, 
 
 ![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
 
+<div id="types-of-templates-for-sending-postbacks" />
+
 #### Types of templates for sending postbacks
 
 * **Regular template:** Your existing integration template with AppsFlyer with user-identifier and attribution-data macros. This template is used for sending postbacks containing user-level attribution data.
 * **Advanced Privacy template**: A template with no user-identifier macros. This template is used for sending postbacks containing aggregated attribution data.   
   **Note:** If an AP postback is required and you haven't completed AP integration, no postback is sent. You can set up AP integration using our self-service [Postback Management](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback) tool.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -74,9 +82,13 @@ You can view the current AP setting, per app: In AppsFlyer, from the side menu, 
 >   * Install postback on the ad network was set to **All media sources, including organic**
 >   * The ad network doesn't support Advanced Privacy
 
+<div id="type-of-postback-used" />
+
 ### Type of postback used
 
 The following table describes postback types based on Advertiser ID availability and Advanced Privacy status.
+
+<div id="postback-type-for-ios-145" />
 
 #### Postback type for iOS 14.5+
 
@@ -91,6 +103,8 @@ For any given event, multiple ad network partners may be entitled to a postback.
 
   ![InAppEventAll.png](https://files.readme.io/8167a7a133cd7a8e31947e7e26ba66b08363ddb9973b9626cc8874f7c4a57c42-360018213678.png)
 
+<div id="web-campaigns" />
+
 ### Web campaigns
 
 AP behaves differently when the ad network serves an ad on the web.
@@ -99,9 +113,13 @@ To indicate whether a click came from the web or from an app, you must send the 
 
 If you don't send `af_media_type`, the default is `app`.
 
+<div id="postback-type-used-for-ios-145-when-ap-is-on" />
+
 #### Postback type used for iOS 14.5+ when AP is on
 
 <table><thead><tr><th colspan="2">ATT status</th><th rowspan="2">Postback type to attributed partner\*</th><th rowspan="2">Postback type to unattributed partner\*</th></tr><tr><th>Publisher app</th><th>Advertiser app</th></tr></thead><tbody><tr><td>N/A</td><td>Not authorized</td><td>Advanced Privacy</td><td>None</td></tr><tr><td>N/A</td><td>Authorized</td><td>Regular. User-level with the following IDs: IDFA, IDFV, CUID, Click ID.</td><td>Regular. User-level IDs only.</td></tr></tbody></table>
+
+<div id="integration" />
 
 ## Integration
 
@@ -128,6 +146,8 @@ In many cases, an Advertiser ID may not be available in the publisher app, the a
 
 2. Add the following mandatory parameters to click URLs*:
 
+   <div id="caution" />
+
    > ❗️ **Caution**
    >
    > If your click URL does not pass the mandatory parameters, you will not be credited with the majority of installs you drive.
@@ -142,6 +162,8 @@ In many cases, an Advertiser ID may not be available in the publisher app, the a
 
    * Redirect via in-app
    * Server-to-server clicks (aka, S2S)
+
+   <div id="parameters-for-advanced-privacy-attribution" />
 
    #### Parameters for Advanced Privacy attribution
 
@@ -258,10 +280,14 @@ To receive Advanced Privacy postbacks, you must set up an Advanced Privacy integ
 1. [Set up your Advanced Privacy postback in the AppsFlyer dashboard.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback)
 2. <Anchor target="_blank" href="/partners/docs/ios-integration-testing-for-ad-networks">Test Advanced Privacy integration.</Anchor>
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * In order to be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the rejected postback macros.
 > * To enable rejected installs/events postback, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+
+<div id="advanced-privacy-postback-endpoint-complete-as-required" />
 
 #### Advanced Privacy postback endpoint [complete as required]
 
@@ -269,6 +295,8 @@ To receive Advanced Privacy postbacks, you must set up an Advanced Privacy integ
 | --- |
 | Install |
 | In-app |
+
+<div id="advanced-privacy-attribution-macros-available" />
 
 #### Advanced Privacy attribution macros available
 
@@ -318,6 +346,8 @@ In the case of any issues, reach out to us using the <Anchor target="_blank" hre
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <div id="ap-for-analytics-partners" />
@@ -328,6 +358,8 @@ Postbacks are sent to analytics partners as follows:
 
 * AP off: The customer may make user-level postback data available without restriction.
 * AP on: Postback type depends on user source and Advertiser ID availability, as detailed in the following table.
+
+<div id="analytics-partner-postback-type-according-to-att-status-and-user-source" />
 
 #### Analytics partner postback type according to ATT status and user source
 

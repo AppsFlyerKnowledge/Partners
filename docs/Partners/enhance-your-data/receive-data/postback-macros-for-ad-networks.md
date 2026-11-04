@@ -34,10 +34,14 @@ Related integrated partner postback guides:
 * <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor>
 * <Anchor target="_blank" href="/partners/docs/rejected-attribution-postbacks-to-integrated-partners">Rejected attribution postbacks</Anchor>
 
+<div id="postbacks-for-ad-networks" />
+
 ## Postbacks for ad networks
 
 * **Postback configuration:** To request changes to your postback settings, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>, or contact your AppsFlyer partner development manager.
 * **Postback types**: Postbacks are available for install and in-app events and blocked install and in-app events (due to fraud identified by Protect360 or in violation of targeting validation rules).
+
+<div id="postback-data-sources" />
 
 ### Postback data sources
 
@@ -48,6 +52,8 @@ Related integrated partner postback guides:
 | SDK derived information | Information extracted from the device by the AppsFlyer SDK<br /><br />Example: iOS device IDs can be extracted by using "&IDFA=(idfa)" on the postback |
 | Derived by the AppsFlyer platform | Information derived by the AppsFlyer platform. |
 | Protect360 and validation rules | Information about installs identified as fraud and installs violating campaign targeting rules, and their associated in-app events |
+
+<div id="postback-macros" />
 
 ## Postback macros
 
@@ -62,6 +68,8 @@ The columns in the table below have the following meaning:
 * **Send all**: If yes, you can receive the data of installs and events attributed to other networks or organic. (Means not attributed to you).
 * **[Base] Macros for all postbacks**: Macros relevant to install, in-app event, and rejected event postbacks
 * **[Optional]** for in-app events and rejected events as indicated in the column (rejected, in-app)
+
+<div id="macrosinstalls-in-app-events-and-rejected-events" />
 
 ### Macros—installs, in-app events, and rejected events
 
@@ -115,9 +123,13 @@ The columns in the table below have the following meaning:
 | <span id="platform"></span>platform | SDK | Yes | Device platform: iOS, Android, or Windows Mobile | Yes |  |
 | <span id="retargeting-conversion-type"></span>retargeting\_conversion\_type | AF | No | A flag marking if this is a re-attribution or re-engagement | Retargeting only |  |
 
+<div id="in-app-event-only-macros" />
+
 ### In-app event only macros
 
 The examples that follow relate to in-app event postbacks available to partners.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -136,13 +148,19 @@ The examples that follow relate to in-app event postbacks available to partners.
 > {"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}
 > ```
 
+<div id="encoded-values" />
+
 #### **Encoded values**
 
 Postbacks may contain irregular characters, which are not alpha-numerical. To transfer these values correctly via postbacks, AppsFlyer URL-encodes non-alpha-numerical values.
 
 To decode or encode a postback use an <Anchor target="_blank" href="https://www.urldecoder.org/">encoding web service.</Anchor>
 
+<div id="sample-postbacks" />
+
 ## Sample postbacks
+
+<div id="general-install-postback-examples" />
 
 ### General install postback examples
 
@@ -166,6 +184,8 @@ device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="general-in-app-event-postback-examples" />
 
 ### General in-app event postback examples
 
@@ -191,6 +211,8 @@ device_ip=(ip)&idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ### In-app event postback example
 

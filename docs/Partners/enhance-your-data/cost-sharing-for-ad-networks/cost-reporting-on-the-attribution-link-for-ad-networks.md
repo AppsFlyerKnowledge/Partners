@@ -34,6 +34,8 @@ Advertisers often check their top-performing partners using sort by ROI. Those t
 
 ![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
 
+<div id="how-to-share-cost" />
+
 ## How to share cost
 
 There are two ways to pass user-level cost data through AppsFlyer attribution URLs: unencrypted and encrypted. Encrypted cost pass allows partners to send cost value in the click attribution URL.
@@ -69,6 +71,8 @@ Sample attribution link with encrypted value pass:
 https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af_siteid=12345 **&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
 
 **Note:** Only ad networks that perform the cost encryption integration with AppsFlyer can actually send encrypted cost data with their clients' attribution links.
+
+<div id="aes-encryption-process" />
 
 ## AES encryption process
 
@@ -175,6 +179,8 @@ if end >= start:
 print(msg)
 print(urllib.quote_plus(base64.b64encode(enc)))
 ```
+
+<div id="which-networks-support-cost-reporting" />
 
 ## Which networks support cost reporting?
 

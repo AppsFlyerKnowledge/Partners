@@ -26,15 +26,21 @@ x-zendesk:
 ---
 > **At a glance:** Create and manage your ad network account's AppsFlyer users, and assign them a role defining which features they can access.
 
+<div id="background" />
+
 ## Background
 
 AppsFlyer ad network accounts allow for multiple users, each with a role that defines their access to features and functions.
 
 The **Admin** role has access to all capabilities. The **Marketing** role has access to a more limited set of features. A full list of capabilities per role is available on the [Roles tab](/docs/user-management-for-ad-networks#roles-tab) of the **User management** page.
 
+<div id="more-about-roles" />
+
 ## More about roles
 
 As a general rule, all roles are predefined, and each role’s functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by changing their role (except for the [account owner](/docs/user-management-for-ad-networks#admina-special-role), as discussed below).
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -44,11 +50,15 @@ As a general rule, all roles are predefined, and each role’s functional capabi
 >
 > **Answer:** No. As long as Bill stays in the Marketing role, you cannot give him the ability to access the Audit log. Nor can you remove his ability to manage Validation Rules. Of course, you can assign Bill to a different role, and his capabilities will change to those defined by that role.
 
+<div id="temp-rolesan-exception-to-the-rule" />
+
 ### Temp roles—an exception to the rule
 
 If your AppsFlyer account existed under our prior user management system (when the only available account types were Admin and Team member), all users were brought into the new system with unchanged capabilities. As a result, most of these users appear in the current system with **temp roles**.
 
 Learn more about [managing temp roles](/docs/user-management-for-ad-networks#managing-temp-roles).
+
+<div id="admina-special-role" />
 
 ### Admin—a special role
 
@@ -68,12 +78,16 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
 * Admins can <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">manage API and S2S tokens</Anchor>.
 * Any Admin other than the account owner **can** be changed to a different role or deleted from the AppsFlyer account through the User management page.
 
+<div id="user-management-page" />
+
 ## User management page
 
 **To access the User management page:**
 
 1. In the top menu bar, click on the email address dropdown.
 2. Select **User management.**
+
+<div id="users-tab" />
 
 ### Users tab
 
@@ -84,6 +98,8 @@ The **Users** tab displays a table of all existing users in your account. It is 
 * Click the filter icon <Image alt="filter_icon.png" src="https://files.readme.io/00fa39bef5e51bf9a8a0b2ae2dee4b631b57d423e261883bff1199d7293c0458-17387375698833.png" width="25px" /> in the **Role** column heading to filter users by their role (including temp roles).
   * To clear the filter, select **None** in the filter dropdown list.
 * Use the checkboxes to select and [edit multiple users](/docs/user-management-for-ad-networks#multi-user-editing) at the same time.
+
+<div id="roles-tab" />
 
 ### Roles tab
 
@@ -98,6 +114,8 @@ Click on the name of any role in the left panel to see:
 * The number of users currently assigned that role (in the top-right corner of the screen)
   * Hover over the user icon <Image alt="user_icon.png" src="https://files.readme.io/70d626cc0d2888c46c0e080dc76e4f005312fe5dea7e7811336e0324e4a846ad-17387375703569.png" width="21px" /> to see a list of the first 20.
 
+<div id="creating-a-user" />
+
 ## Creating a user
 
 **To create a new user:**
@@ -111,6 +129,8 @@ Click on the name of any role in the left panel to see:
    * Can include letters, numbers, apostrophes ('), ampersands (&), dollar signs ($), hash symbols (#), hyphens (-), underscores (\_), and periods (.)
    * Two consecutive periods (..) and other special characters are not allowed.
    * Must end with a valid email domain.
+
+   <div id="important" />
 
    > 🚧 **Important!**
    >
@@ -129,15 +149,21 @@ Click on the name of any role in the left panel to see:
 7. Click **Save** to create the user.
 8. **On the user's side:** To become an active user (team member), the user must [activate their account](#becoming-an-active-user) from the email invitation they received.
 
+<div id="becoming-an-active-user" />
+
 #### Becoming an active user
 
 After clicking **Save** to finish the procedure of [creating a user](/docs/user-management-for-ad-networks#creating-a-user) (above), the user receives an email invitation to activate their account. The activation link is valid for 48 hours. If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](/docs/user-management-for-ad-networks#resending-a-user-invitation).
 
 You can see the new user on the User management page, with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/1e334edd433f9ac13a175cdd48345adebe02892215896ea967768dc3cabf0349-17387375704209.png) near their name. This indicates that an invitation has been sent and the account is awaiting activation. Once the user activates their account, the envelope disappears.
 
+<div id="editing-users" />
+
 ## Editing users
 
 Users can be edited either one at a time or in groups.
+
+<div id="individual-editing" />
 
 ### Individual editing
 
@@ -149,9 +175,13 @@ Users can be edited either one at a time or in groups.
    * All settings other than email address are editable.
 4. Click **Save**.
 
+<div id="multi-user-editing" />
+
 ### Multi-user editing
 
 Multi-user editing is an efficient way to change the role of several users at one time. Using this feature in combination with the search and filtering capabilities of the **Users** tab can make it particularly helpful for managing large numbers of users.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -167,12 +197,16 @@ Multi-user editing is an efficient way to change the role of several users at on
 4. The edited users are highlighted in the table, and the users appear as they will once the changes are saved. However, you still have the opportunity to review your changes and confirm or cancel them in the next step.
 5. Review your changes. Click **Save** to confirm or **Cancel** to undo them.
 
+<div id="deleting-users" />
+
 ## Deleting users
 
 **To delete a user:**
 
 1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png" width="25px" /> on the far-right side of the user’s row.
 2. Select **Delete** from the menu.
+
+<div id="special-situations-and-additional-procedures" />
 
 ## Special situations and additional procedures
 
@@ -185,6 +219,8 @@ If your account previously used our prior user management system, [temp roles](/
 * Users with the same capabilities were assigned the same temp role.
 * Use the features of the [Roles tab](/docs/user-management-for-ad-networks#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
 
+<div id="temp-role-limitations" />
+
 #### Temp role limitations
 
 Temp roles were designed specifically to allow seamless transition from our prior user management system. As such, they are available only in limited situations:
@@ -193,6 +229,8 @@ Temp roles were designed specifically to allow seamless transition from our prio
 * A user with a temp role cannot be assigned a different temp role.
 * When a user with a temp role is changed to a predefined role, they cannot be returned to the previously-assigned temp role (or to any other temp role).
 * If the last user in a temp role is removed from it, the role will no longer appear in your account.
+
+<div id="example-1" />
 
 > 📄 **Example**
 >
@@ -209,11 +247,15 @@ Temp roles were designed specifically to allow seamless transition from our prio
 
 Because all Admins have the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > A few things to consider before you begin:
 >
 > Changing the account owner must be completed manually according to these steps. It cannot be done from the **User management** page.
+
+<div id="1send-your-request-via-the-chat-widget" />
 
 #### #1–Send your request via the chat widget
 
@@ -221,6 +263,8 @@ To begin the process of changing the account owner, open the chat widget <Anchor
 
 * Name of the account owner you would like to replace
 * Name, title, and email of the new account owner
+
+<div id="2next-steps" />
 
 #### #2–Next steps
 

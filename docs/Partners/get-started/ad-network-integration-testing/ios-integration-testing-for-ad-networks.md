@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Test your AppsFlyer iOS integration using the AppsFlyer Partner Integrations app to trigger regular and Advanced Privacy postbacks.
 
+<div id="ios-integration-testing" />
+
 ## iOS integration testing
 
 Testing consists of the following elements:
@@ -30,11 +32,15 @@ Testing consists of the following elements:
 * Use the iOS version of the AppsFlyer Partner Integrations app to generate test install and purchase in-app events. These tests, in turn, trigger postbacks sent to your endpoints. You also have the option to test login and registration in-app events.
 * On receipt of the postbacks, verify that you are able to ingest them.
 
+<div id="testing-scope" />
+
 ### Testing scope
 
 Advertisers control the data shared with ad networks via the Advanced Privacy setting. This setting, in conjunction with the app user <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat">ATT</Anchor> setting, impacts the postback type and the data shared with ad networks, as described in the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy postback guide</Anchor>. The following table lists test scenarios according to the setting combinations available.
 
 For each scenario, you can test installs and in-app events. In regards to in-app events, you can use <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">in-app event mapping</Anchor> to map advertiser events to your events.
+
+<div id="test-scenario-combinations" />
 
 #### Test scenario combinations
 
@@ -42,6 +48,8 @@ For each scenario, you can test installs and in-app events. In regards to in-app
 | --- | --- | --- | --- |
 | A | Off | Allow | Regular |
 | B | On | Ask app not to track | Advanced Privacy |
+
+<div id="testing" />
 
 ## Testing
 
@@ -105,6 +113,8 @@ Complete the prerequisites before beginning to execute the test procedure.
     2. The event name is mapped correctly (if you mapped in-app events).
     3. You are able to ingest the postback.
 
+<div id="advanced-privacy-offtest-results" />
+
 #### Advanced Privacy off—Test results
 
 | Postback | Time you triggered the event | Expected postback type | Actual postback received (pass/fail) | Postback validation (pass/fail) |
@@ -152,6 +162,8 @@ Complete the prerequisites before beginning to execute the test procedure.
     2. The event name is mapped correctly (if you mapped in-app events).
     3. You are able to ingest the postback.
 
+<div id="advanced-privacy-ontest-results" />
+
 #### Advanced Privacy on—Test results
 
 | Postback | Time you triggered the event | Expected postback type | Actual postback received (pass/fail) | Postback validation (pass/fail) |
@@ -160,6 +172,8 @@ Complete the prerequisites before beginning to execute the test procedure.
 | In-app event: Purchase |  | Advanced Privacy |  |  |
 
 </Accordion>
+
+<div id="supplementary-information-and-procedures" />
 
 ## Supplementary information and procedures
 

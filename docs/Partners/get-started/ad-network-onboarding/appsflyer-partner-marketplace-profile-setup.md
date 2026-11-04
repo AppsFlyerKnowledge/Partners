@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance**: Create a robust Partner Marketplace profile page with information about your company and its services and solutions.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer Partner Marketplace is where advertisers can find new ad networks, agencies, and other platforms to work with. Create your profile and provide as much information as possible for them to see in the marketplace and make educated choices.
@@ -41,11 +43,15 @@ AppsFlyer Partner Marketplace is where advertisers can find new ad networks, age
 
 ![partner](https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png)
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > You can see a preview of your currently saved draft:
 >
 > * From the bottom-right, click **Preview draft**.
+
+<div id="general" />
 
 ## General
 
@@ -56,15 +62,21 @@ The information in this section is dynamic and is based on your existing AppsFly
 * Geography of your traffic
 * Industry categories and subcategories
 
+<div id="profile" />
+
 ## Profile
 
 Add or edit your company details (e.g., company logo (mandatory), description (mandatory), website, support languages, etc.)
 
 We recommend filling in all the details to provide as much information as possible and make your page in the Partner Marketplace more attractive to potential customers.
 
+<div id="your-offering" />
+
 ## Your offering
 
 Add details about the services you provide. We recommend adding as much information as possible for better discoverability in the Partner Marketplace.
+
+<div id="overview-1" />
 
 ### Overview
 
@@ -74,6 +86,8 @@ Add details about the services you provide. We recommend adding as much informat
 * **Offering description:** Provide an extensive description of your offering.
 
 ![partner offering.png](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
+
+<div id="characteristics" />
 
 ### Characteristics
 
@@ -88,12 +102,16 @@ Provide information about your services. Select all possible options that apply�
 
 ![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
 
+<div id="sales" />
+
 ### Sales
 
 Enter the sales details about the offer:
 
 * Link to the terms of service
 * Minimum budget required for the service
+
+<div id="marketing-collateral" />
 
 ### Marketing collateral
 
@@ -104,6 +122,8 @@ Add any additional marketing information about the offer:
 * Customer success stories
 * Video
 
+<div id="contacts" />
+
 ## Contacts
 
 Select either of the following ways advertisers can <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">contact you</Anchor> via the Partner Marketplace:
@@ -112,6 +132,8 @@ Select either of the following ways advertisers can <Anchor target="_blank" href
   **Note:** When no contact details are provided, the **Introduce me** button in the marketplace is grayed out.
 * **Link to your landing page:** You can choose to send users directly to a landing page. When selecting this option, advertisers will see the **Contact Partner** button instead of the **Introduce me** button, and clicking it leads to your URL.  
   **Tip:** Add a UTM parameter to your link for your own tracking purposes.
+
+<div id="offices" />
 
 ## Offices
 

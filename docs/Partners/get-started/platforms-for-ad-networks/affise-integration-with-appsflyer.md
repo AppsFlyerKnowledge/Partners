@@ -30,6 +30,8 @@ x-zendesk:
 
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
 
+<div id="base-attribution-link" />
+
 ## Base attribution link
 
 Below you can find the base attribution link with a detailed explanation per each parameter:
@@ -48,15 +50,21 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 For a complete AppsFlyer parameter list <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">click here</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ## Complete attribution link template
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## Install and in-app event postbacks
 
 The following are examples of Install and In-App Event Postbacks:
+
+<div id="global-install-postback-ios" />
 
 ### Global install postback iOS
 
@@ -64,17 +72,23 @@ The following are examples of Install and In-App Event Postbacks:
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}
 ```
 
+<div id="global-install-postback-android" />
+
 ### Global install postback Android
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
 
+<div id="global-in-app-event-postback-ios" />
+
 ### Global in-app event postback iOS
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}&goal={event-name}
 ```
+
+<div id="global-in-app-event-postback-android" />
 
 ### Global in-app event postback Android
 
@@ -87,6 +101,8 @@ Domain.com is the network ID (domain) name provided by Affise.
 e= Set as **Event Name** in the AppsFlyer dashboard for each App by the advertiser - This is the actual in-app event name from the application.
 
 Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA etc.
+
+<div id="finalizing-your-registration" />
 
 ## Finalizing your registration
 

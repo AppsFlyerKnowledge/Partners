@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Ad networks that use FuseClick can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
 
+<div id="basic-attribution-link" />
+
 ## Basic attribution link
 
 Below you can find the base attribution link with a detailed explanation per each parameter:
@@ -58,6 +60,8 @@ Complete Attribution Link Template:
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_siteid={ADV_SID}
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ### Install and in-app event postbacks
 
 Global Install Postback:
@@ -67,6 +71,8 @@ https://tracking.zadsmobile.com/pb?tid={TID}
 ```
 
 Additional attribution information can be added to the postback by request such as: Country Code, Advertising ID, IDFA, and more.
+
+<div id="finalizing-your-registration" />
 
 ## Finalizing your registration
 

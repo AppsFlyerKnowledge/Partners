@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Report cost data via cost API (requires a subscription to ROI360 premium solution), and cost by click.
 
+<div id="cost-reporting-for-agencies" />
+
 ## Cost reporting for agencies
 
 Advertisers use AppsFlyer as their source of truth for ROI, billing, and to make marketing budget allocation decisions. To do so, they need to have all the cost information on a single platform. ROI360, an AppsFlyer premium solution, enables advertisers and agencies to collect cost data via API, making it available for viewing using AppsFlyer dashboards and reporting tools. 

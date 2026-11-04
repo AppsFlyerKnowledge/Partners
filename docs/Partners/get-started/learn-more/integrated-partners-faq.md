@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance**: FAQ and integration troubleshooting for integrated partners.
 
+<div id="account-and-dashboard" />
+
 ## Account and dashboard
 
 <div id="i-want-to-become-an-integrated-partner" />
@@ -132,6 +134,8 @@ To view event data on the dashboard, the advertiser must grant you permission to
 
 </Accordion>
 
+<div id="partner-permissions" />
+
 ## Partner permissions
 
 <div id="what-are-the-partner-permissions" />
@@ -180,6 +184,8 @@ The user journey prior to installing an advertised app can impact how users perc
 The allowlist is managed by the advertiser. To use a specific landing page, share the page URL with your advertiser and ask them to add its domain to their allowlist.
 
 </Accordion>
+
+<div id="data---postbacks-and-reports" />
 
 ## Data - postbacks and reports
 
@@ -307,6 +313,8 @@ If you believe postbacks aren’t being sent to your servers, verify the followi
 
 Ad networks get visibility to their setup done by advertisers, **but not when it's done by agencies**. Therefore, when an agency maps in-app events for postbacks to a network, although it's active for the agency, the ad network sees this section as inactive.
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > Yuval is the marketer of the **com.fused** app, which is a client app of the **Sonnet** ad network. Yuval maps the **af\_purchase** event to be sent as a postback to Sonnet when an attributed user to Sonnet performs a purchase. **Sava**, an agency permitted to work with **com.fused**, also configures **Sonnet** and maps the **af\_completeregistration** event to be sent as postback.
@@ -375,6 +383,8 @@ For example, if your *af\_prt* is *greatagency*, your campaign name may look lik
 <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#skadnetwork-agency-campaigns">More information on SKAN campaigns.</Anchor>
 
 </Accordion>
+
+<div id="anti-fraud-protect360" />
 
 ## Anti-fraud (Protect360)
 

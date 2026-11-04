@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer receives engagement data (clicks and impressions) for attribution in a number of ways:
@@ -33,9 +35,13 @@ AppsFlyer receives engagement data (clicks and impressions) for attribution in a
 
 In both cases, the regular <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution link structure and parameters</Anchor> are used.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > For SRNs, data is received via specialized APIs
+
+<div id="users-redirected-via-appsflyer" />
 
 ## Users redirected via AppsFlyer
 
@@ -47,6 +53,8 @@ When an ad is clicked, the user is directed to AppsFlyer, which then redirects t
 4. The user installs the app
 5. AppsFlyer attributes the install
 
+<div id="users-sent-directly-by-the-ad-network" />
+
 ## Users sent directly by the ad network
 
 When an ad is clicked, the user is directed to the app store by the ad network, minimizing the number of redirects:
@@ -56,11 +64,15 @@ When an ad is clicked, the user is directed to the app store by the ad network, 
 3. The user installs the app
 4. AppsFlyer attributes the install
 
+<div id="sending-engagement-data-to-appsflyer" />
+
 ### Sending engagement data to AppsFlyer
 
 Sending user directly to the app store improves their experience by reducing the number of redirections. It also ensures accurate attribution of installs and enables high-quality traffic.
 
 Ad networks can only report clicks and impressions to AppsFlyer **directly from the user's device**.
+
+<div id="timing-of-sending-redirects" />
 
 #### Timing of sending redirects
 

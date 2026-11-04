@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
 
+<div id="using-the-appsflyer-dashboard" />
+
 ## Using the AppsFlyer dashboard
 
 **To log in to AppsFlyer**:
@@ -34,9 +36,13 @@ x-zendesk:
 2. Select an app or search for it.  
    Note! If you don't see the required app, ask the advertiser to grant you <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Ad network permissions</Anchor>. The advertiser does this in the AppsFlyer dashboard in the permissions tab.
 
+<div id="overview-dashboard" />
+
 ## Overview dashboard
 
 Campaign performance metrics and charts are available in the Overview dashboard. This dashboard contains different view types for UA and retargeting campaigns.
+
+<div id="report-access" />
 
 ## Report access
 
@@ -47,6 +53,8 @@ To view report data:
   * <Anchor target="_blank" href="/marketers/docs/aggregated-data-export-page">Aggregated Data Export</Anchor>  
     The Reports window opens.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * Data shown in raw data reports is limited to raw data in postbacks attributed to the partner only.
@@ -55,6 +63,8 @@ To view report data:
 >
 > * * Request from the advertiser to provide you in-app event raw data reports
 >   * Add `(event-value)` <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">macro to the postback URL</Anchor>
+
+<div id="using-postback-reports" />
 
 ### Using Postback reports
 
@@ -67,6 +77,8 @@ Download the relevant Postbacks report and look for the **Postback URL** and *
 
 [![](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)
 
+<div id="viewing-configuration-settings-and-data" />
+
 ## Viewing configuration settings and data
 
 Click **Active Integrations** on the left side of the window to view the current configuration settings. Even if you have not been granted permissions, you may be able to view the configuration settings (read-only mode).
@@ -75,9 +87,13 @@ Ad network can view the configuration on its dashboard only when it is set up by
 
 Agencies can configure ad network setup upon getting relevant permission from the advertiser. Note that **when** **the configuration is made by an agency, the ad network sees it as inactive**.
 
+<div id="permissions" />
+
 ## Permissions
 
 Using the **Permissions** tab, advertisers can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">grant different types of permissions to the ad networks</Anchor>.
+
+<div id="enabling-permissions" />
 
 ### Enabling Permissions
 
@@ -87,12 +103,16 @@ The first step is for your client to enable permissions. Your client must switch
 2. The admin of your ad network account gets access to view the dashboard of your client's app. At the first stage, only the admin has access. If you want your team member to also view the app's dashboard, your client needs to give them permissions.
 3. Permissions to view the app's dashboard are given only to your ad network.
 
+<div id="granting-permissions-to-ad-network-team-members" />
+
 ### Granting permissions to ad network team members
 
 If you want your team member to also view the app's dashboard, your client needs to give them permissions.
 
 1. Give your client the emails of the team members that you want the client to give permissions to.
 2. The client should then <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">add them to the integration with your ad network</Anchor>.
+
+<div id="granting-additional-permissions" />
 
 ### Granting additional permissions
 
@@ -109,6 +129,8 @@ Your client can grant additional permission for the ad network and its team memb
 To allow this, contact your client to select you from the list of Active Integrations and grant you access to the relevant section within the Permissions tab.
 
 When the advertiser gives permission for the ad network to configure their attribution link and map in-app events, they can enter the relevant tabs and make changes accordingly.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

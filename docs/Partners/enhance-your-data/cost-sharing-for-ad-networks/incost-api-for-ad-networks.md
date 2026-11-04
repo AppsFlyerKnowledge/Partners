@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **At a glance:** InCost API, part of AppsFlyer ROI360, lets ad networks programmatically send advertising cost data to AppsFlyer. Doing so provides advertisers with aggregate cost data and lets them understand the true impact of your network.
 
+<div id="about-incost-api" />
+
 ## About InCost API
 
 InCost API is the optimal solution for ad networks to send cost data to AppsFlyer. Ad network partners send detailed advertising cost data to AppsFlyer using the API. AppsFlyer ingests and processes the data, and makes it available to advertisers and partners via dashboards and reports.
+
+<div id="benefits" />
 
 #### Benefits
 
@@ -37,6 +41,8 @@ InCost API is the optimal solution for ad networks to send cost data to AppsFlye
 * InCost API is quick and simple to deploy, and the impact is almost immediate. You also get complete control over how and when you send the data, including the ability to send cost data for up to 90 days back.
 * InCost API supports all campaign pricing models; not just CPI (which is the only model available when sending cost by click).
 * Stand out in the AppsFlyer Partner Marketplace with a “Cost” badge that indicates this is a feature you support.
+
+<div id="implementing-incost-api" />
 
 ## Implementing InCost API
 
@@ -60,9 +66,13 @@ InCost API is the optimal solution for ad networks to send cost data to AppsFlye
 | 6 | In the ticket thread (from step 1), confirm with AppsFlyer that your integration is operational. |
 | 7 | Make sure your advertisers enable <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#cost-tab">get cost data</Anchor> in the cost tab of their AppsFlyer integrated partner page. Then they'll begin to receive cost data. |
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Best practice: only resend data for a given date if its cost has changed. You can send the last 7 days on every call, but you don't need to resend unchanged records.
+
+<div id="fields-for-incost-upload-json" />
 
 ### Fields for InCost Upload JSON
 

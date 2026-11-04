@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Test your AppsFlyer Android integration using the AppsFlyer Partner Integrations app to trigger postbacks.
 
+<div id="android-integration-testing" />
+
 ## Android integration testing
 
 Testing consists of the following elements:
@@ -35,6 +37,8 @@ Testing consists of the following elements:
 The following table lists test scenarios according to the setting combinations available.
 
 For each scenario, you can test installs and in-app events. For in-app events, you can use <Anchor target="_blank" href="/partners/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">in-app event mapping</Anchor> to map advertiser events to your events.
+
+<div id="testing" />
 
 ## Testing
 
@@ -81,6 +85,8 @@ Complete the prerequisites before beginning to execute the test procedure.
    3. You are able to ingest the postback.
 
 </Accordion>
+
+<div id="supplementary-information-and-procedures" />
 
 ## Supplementary information and procedures
 
@@ -167,6 +173,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 
 Install the app using the retargeting link. The flow is the same as described in [testing install attribution](/docs/android-integration-testing-for-ad-networks#test-install-attribution).
 
+<div id="viewing-retargeted-installs-in-the-dashboard" />
+
 ### Viewing retargeted installs in the dashboard
 
 Access your AppsFlyer dashboard and click on **Re-targeting** in the left-side menu. Allow up to 30 minutes for the retargeted install to appear in the dashboard.
@@ -209,6 +217,8 @@ Access your AppsFlyer dashboard and click on **Re-targeting** in the left-side m
 Tip
 
 For more elaborate results, repeat the installation process using the view-through attribution link with the new test device. Uninstall the app, change the parameters in the link (the campaign name, af\_siteid, and advertising\_id), and install again by clicking the URL.
+
+<div id="view-installs-in-the-dashboard" />
 
 ### View installs in the dashboard
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyer provides UA partners with complete and accurate ad, in-app purchases, and auto-renewable subscription data via reports and postbacks. Partners can ingest the information to optimize UA campaigns.
 
+<div id="introduction" />
+
 ## Introduction
 
 AppsFlyer receives revenue information from both its partners and the app stores (Apple App Store and Google Play Store). Once received, the data undergoes a series of steps including validation, normalization, attribution, and enrichment with additional properties and dimensions.  AppsFlyer can send the information to the UA partner. Following this process, AppsFlyer transmits the enriched and attributed data to the UA partner. The UA partner can then utilize this information to optimize their user acquisition campaigns and enhance the service they offer to advertisers.
@@ -49,6 +51,8 @@ AppsFlyer provides partners with information on in-app ads, in-app purchases, an
 * **Store Revenue postbacks**: Every time a purchase or subscription event occurs a postback is sent from AppsFlyer to the partner containing the details of the revenue event.
 
 </Accordion>
+
+<div id="set-up-roi360-for-partners" />
 
 ## Set up ROI360 for partners
 
@@ -78,6 +82,8 @@ To contact AppsFlyer partner support, open the **Help** menu in your dashboard a
 [![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
 
 </Accordion>
+
+<div id="roi360-ua-signals-report-for-ua-networks" />
 
 ## ROI360 UA Signals Report for UA Networks
 
@@ -154,6 +160,8 @@ Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 <A
 
 </Accordion>
 
+<div id="in-app-ad-revenue-iaa-postbacks" />
+
 ## In-app ad revenue (IAA) postbacks
 
 IAA postbacks are the second ingestion approach that AppsFlyer uses to send revenue information to partners. Their main advantage over the Ad Revenue UA signals report is their freshness, as postbacks offer near real-time IAA revenue data sharing. This is in contrast to the X+1  freshness (one day after the event occurrence date) offered through the ad revenue UA signals report.
@@ -192,6 +200,8 @@ AppsFlyer ROI360 performs the following steps for each impression-level data rec
 The event is sent to the partner through an existing postback configuration between the partner and AppsFlyer as an additional parameter.
 
 </Accordion>
+
+<div id="in-app-purchase-iap-postbacks" />
 
 ## In-app purchase (IAP) postbacks
 

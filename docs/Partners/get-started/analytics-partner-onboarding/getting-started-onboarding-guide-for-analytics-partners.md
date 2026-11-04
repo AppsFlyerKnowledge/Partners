@@ -25,9 +25,13 @@ x-zendesk:
 
 ![54150 Partners onboarding KB.png](https://files.readme.io/f8d8abe52561baf06cb3125d7f49760d2510aaa1ed63c6c0515d3543418dad91-34615688043409.png)
 
+<div id="about-the-analytics-partner-integration" />
+
 ## About the analytics partner integration
 
 An analytics partner account in AppsFlyer is a specialized account for analytics providers. It enables access to install and in-app event postback data, which allows partners to analyze user behavior, campaign results, and app performance. This article is intended for analytics providers that want to set up a partner integration with AppsFlyer.
+
+<div id="set-up-the-integration" />
 
 ## Set up the integration
 
@@ -70,6 +74,8 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
 2. **Validation and conversion:** AppsFlyer will validate your request and convert your ad network account to an analytics account after verification.
 
 </Accordion>
+
+<div id="faq" />
 
 ## FAQ
 

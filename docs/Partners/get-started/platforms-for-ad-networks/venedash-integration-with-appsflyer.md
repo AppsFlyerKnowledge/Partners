@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Send attribution data from AppsFlyer to venedash. AppsFlyer can send venedash both install and in-app event data.
 
+<div id="venedash-integration-setup" />
+
 ## venedash integration setup
 
 * If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.

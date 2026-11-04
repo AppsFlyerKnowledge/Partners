@@ -32,6 +32,8 @@ x-zendesk:
 1. Your [attribution link](/docs/tune-formerly-hasoffers-integration-with-appsflyer#create-attribution-link)
 2. Your [postbacks](/docs/tune-formerly-hasoffers-integration-with-appsflyer#create-install-and-in-app-event-postbacks) (for installs and in-app events)
 
+<div id="create-attribution-link" />
+
 ## Create attribution link
 
 The attribution link consists of the following AppsFlyer base attribution link and additional macros added by the ad network.
@@ -44,6 +46,8 @@ See the following AppsFlyers base attribution link with a detailed explanation p
 | app\_id | Unique app ID – dynamic value changed per app promoted |
 | pid= | Media source name concatenated with `_int` to identify<br />integrated networks |
 | c= | Campaign name |
+
+<div id="example-attribution-link-after-adding-tune-macros" />
 
 ### Example attribution link after adding TUNE macros
 
@@ -61,6 +65,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 
 Read more about [TUNE macros](https://help.tune.com/hasoffers/parameters-macros-in-hasoffers/).
 
+<div id="create-install-and-in-app-event-postbacks" />
+
 ## Create install and in-app event postbacks
 
 Step-by-step instructions for creating your install and in-app event postbacks:
@@ -72,7 +78,11 @@ Step-by-step instructions for creating your install and in-app event postbacks:
 
 Read more about [TUNE global postback URLs](http://help.tune.com/hasoffers/global-postback-urls/).
 
+<div id="sample-postbacks" />
+
 ### Sample postbacks
+
+<div id="global-install-postback" />
 
 #### Global install postback:
 
@@ -83,6 +93,8 @@ Read more about [TUNE global postback URLs](http://help.tune.com/hasoffers/globa
 ```http
 https://NETWORK_ID.go2cloud.org/aff_lsr?offer_id={af_c_id}&transaction_id={clickid}
 ```
+
+<div id="in-app-event-postback" />
 
 #### In-app event postback:
 
@@ -101,6 +113,8 @@ In the above postback URLs:
 * goal\_id = event tag in the AppsFlyer dashboard for each of your apps. This is the actual in-app event name from the app.
 
 Learn more about <Anchor target="_blank" href="/partners/docs/dynamic-event-mapping-for-in-app-events">Dynamic Event Mapping for In-App Events</Anchor>.
+
+<div id="finalizing-your-registration" />
 
 ## Finalizing your registration
 

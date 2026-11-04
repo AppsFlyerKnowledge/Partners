@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance**: Create your agency profile page in the Partner Marketplace with information about your company, its services, and solutions.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer Partner Marketplace is where advertisers can find new ad networks, agencies, and other platforms to work with. Create your profile and provide as much information as possible for them to see in the marketplace and make educated choices.
@@ -38,11 +40,15 @@ AppsFlyer Partner Marketplace is where advertisers can find new ad networks, age
 
 [![agency-setup-page.png](https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png)](https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png)
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > You can see a preview of your currently saved draft:
 >
 > * From the bottom-right, click **Preview draft**.
+
+<div id="general" />
 
 ## General
 
@@ -53,17 +59,25 @@ The information in this section is based on your current AppsFlyer configuration
 * Geography of your traffic
 * Industry categories and subcategories
 
+<div id="profile" />
+
 ## Profile
 
 Share important details for customers to see in your marketplace profile. Enter your company details in different categories, upload your logo, select the various options, and add media links related to your company. We recommend providing as much information as possible to make your page in the Partner Marketplace more attractive to potential customers.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
 > If you don't have a parent company, your profile is displayed as **Independent agency**.
 
+<div id="your-offering" />
+
 ## Your offering
 
 Add details about the services you provide. We recommend adding as much information as possible for better discoverability in the Partner Marketplace.
+
+<div id="overview-1" />
 
 ### Overview
 
@@ -73,6 +87,8 @@ Add details about the services you provide. We recommend adding as much informat
 * **Offering description:** Provide an extensive description of your offering.
 
 [![partner_offering1.png](https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png)](https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png)
+
+<div id="characteristics" />
 
 ### Characteristics
 
@@ -87,6 +103,8 @@ Provide information about your services. Select all possible options that apply�
 
 [![your-offering-2.png](https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png)](https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png)
 
+<div id="sales" />
+
 ### Sales
 
 Enter the sales details about the offer:
@@ -94,6 +112,8 @@ Enter the sales details about the offer:
 * Link to the terms of service
 * Minimum budget required for the service
 * Select the currency
+
+<div id="marketing-collateral" />
 
 ### Marketing collateral
 
@@ -104,7 +124,11 @@ Add links to additional marketing information describing what you're offering:
 * Images (up to 5)
 * Video
 
+<div id="contacts" />
+
 ## Contacts
+
+<div id="methods-for-marketers-to-contact-you" />
 
 ### Methods for marketers to contact you
 
@@ -115,9 +139,13 @@ Select either of the following ways advertisers can <Anchor target="_blank" href
 * **Link to your landing page:** You can choose to send users directly to a landing page. When selecting this option, advertisers will see the **Contact Partner** button instead of the **Introduce me** button, and clicking it leads to your URL.  
   **Tip:** Add a UTM parameter to your link for your own tracking purposes.
 
+<div id="company-points-of-contact" />
+
 ### Company points of contact
 
 Enter points of contact in your company.
+
+<div id="offices" />
 
 ## Offices
 

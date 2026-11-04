@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Advertisers use Validation Rules to manually define conditions to block installs, attribution, and in-app events of non-compliant installs/IAEs. Integrated partners (ad networks and agencies) can view the rules and get reports of blocked installs, attribution, and IAEs.
 
+<div id="about-validation-rules" />
+
 ## About Validation Rules
 
 Validation rules:
@@ -43,6 +45,8 @@ Validation rules:
 * Run in real-time and take immediate action. A rejection postback is sent to partners who have rejected postbacks set up. <Anchor target="_blank" href="/partners/docs/rejected-attribution-postbacks-to-integrated-partners">Learn more</Anchor>.
 * Have additional options available to <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> customers, on top of the automatic Protect360 fraud blocking and detection. These conditions are known to help in the detection of various install-hijacking, fake install, and fake in-app event fraud types.
 
+<div id="availability-to-ad-networks-and-agencies" />
+
 ## Availability to ad networks and agencies
 
 The rules governing validation rule access to ad networks and agencies are as follows:
@@ -54,6 +58,8 @@ The rules governing validation rule access to ad networks and agencies are as fo
   * By default, the permission is turned off.
   * If off, a partner can click **Request access**. The advertiser then receives a notification of the request.
 * An ad network can't create or edit rules.
+
+<div id="agencies" />
 
 ### Agencies
 
@@ -73,7 +79,11 @@ The rules governing additional validation rule access to agencies are as follows
    * The list of rules defined by the app owner account for traffic that could come from you is displayed.
    * For an explanation of how rulesets work see <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Validation Rules for app owners</Anchor>.
 
+<div id="reports" />
+
 ## Reports
+
+<div id="protect360-fraud-export-data" />
 
 ### Protect360 fraud: export data
 
@@ -84,6 +94,8 @@ Advertisers can give partners (ad networks and agencies) <Anchor target="_blank"
 * Blocked install postbacks: A single report of the rejection postbacks sent to you in real-time.
 
 The **Blocked Reason** and **Blocked Reason Value** fields are populated in the reports. The **Blocked Reason Value** includes the rule name that caused the rejection.
+
+<div id="validation-rules-rejected-installation-postbacks" />
 
 ## Validation Rules rejected installation postbacks
 

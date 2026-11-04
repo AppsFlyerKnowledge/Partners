@@ -26,19 +26,27 @@ x-zendesk:
 
 Enriched Engagement Types (EET) reflect users' full spectrum of engagement and intentionality when viewing or interacting with an ad, from momentary exposure to direct response. This article details how partners should report engagement types in AppsFlyer attribution links based on how users interact with their ads.
 
+<div id="disclaimer" />
+
 > ❗️ **Disclaimer**
 >
 > This article focuses on the aspects of EET relevant to partners. To learn what EET is and to get comprehensive information on it, see the <Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#which-ad-networks-report-enriched-engagement-types">Enriched Engagement Types</Anchor> article.
 
+<div id="which-networks-can-report-eet-to-appsflyer" />
+
 ## Which networks can report EET to AppsFlyer?
 
 Enriched Engagement support will be available for networks that meet the Premier, Advance, or Engage criteria of AppsFlyer’s Partner Program. These levels refer to networks that have a significant track record of delivering consistently high-quality traffic at scale to our mutual customers, send engagement data in a transparent and trusted manner, and are integrated with a comprehensive range of AppsFlyer services.
+
+<div id="note" />
 
 > 📘 **Note**
 >
 > To begin reporting engaged views and clicks, ad networks should contact AppsFlyer support.
 
 See [the list of networks eligible to report EET](#01JCAT81K2EJNH91YS6NJGMXMB-data-title)
+
+<div id="warning" />
 
 > ❗️ **Warning**
 >
@@ -148,6 +156,8 @@ Below is a use case of user engagement that ad networks should **not** report wi
 <Accordion title="Networks eligible to report EET">
 
 The allowed network list includes partners whose enriched engagement-type events can be processed by AppsFlyer, with the exclusion of engaged clicks and views. Networks from this list that would like AppsFlyer to process their engaged clicks and views should contact AppsFlyer support. To learn which networks already have their engaged clicks and views processed by AppsFlyer, see the <Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#which-networks-can-report-engaged-views-and-engaged-clicks">EET advertisers article</Anchor>.
+
+<div id="warning-1" />
 
 > ❗️ **Warning**
 >

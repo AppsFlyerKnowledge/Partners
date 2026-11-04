@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Add signature validation to clicks to avoid fraud liabilities and so fraudulent clicks aren't attributed to your ad network.
 
+<div id="about-click-signing" />
+
 ## About click signing
 
 With minimal tech, fraudsters can send clicks on behalf of an ad network and create thousands, or even millions, of fake clicks that get sent to AppsFlyer. Sometimes, the ad networks themselves aren't aware of the issue.
@@ -43,13 +45,19 @@ The signatures enable AppsFlyer to validate the clicks and make sure that the cl
   * Are made available in Protect360 reports for ad networks (not advertisers). <Anchor target="_blank" href="/partners/docs/protect360-reports-for-ad-networks#failed-click-signatures">Learn more</Anchor>
   * Do not impact the conversion rate or click-blocking threshold of the ad network
 
+<div id="click-signature-integration" />
+
 ## Click signature integration
+
+<div id="flow" />
 
 ### Flow
 
 The following chart outlines the flow from initial development and basic tests to production tests, and finally, to production.
 
 ![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+
+<div id="procedure" />
 
 ### Procedure
 
@@ -70,9 +78,13 @@ The following chart outlines the flow from initial development and basic tests t
      https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_siteid=12345&expires=1597657118&signature_v2=8fnDVzZP_WRZnv3KNJaREOEfvB5p9oRc_XlKEvUo8gk
      ```
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Make sure any URL encoding of special characters or spaces in your link occurs before the click signature is generated. Generating the signature first results in verification failure.
+
+<div id="creating-a-click-signature" />
 
 ## Creating a click signature
 
@@ -80,6 +92,8 @@ To create a click signature you must:
 
 1. Build a JSON using the list of attributes and JSON rules below
 2. Create the signature from this JSON using HMAC56
+
+<div id="list-of-attributes" />
 
 ### List of attributes
 
@@ -106,16 +120,24 @@ The following list of attributes is supported for click and engagement signing.
 | 17 | idfa | No |  |
 | 18 | idfv | No |  |
 
+<div id="attribute-and-json-rules" />
+
 ### Attribute and JSON rules
+
+<div id="order-and-appearance-of-attributes" />
 
 #### Order and appearance of attributes
 
 * Supported parameters in the engagement URL with a value must be in the JSON
 * Attributes must be listed in the JSON in the order listed in the table above
 
+<div id="empty-attributes" />
+
 #### Empty attributes
 
 * Attributes listed in the JSON cannot be empty values or contain only spaces
+
+<div id="json-data-structure" />
 
 #### JSON Data structure
 
@@ -124,13 +146,19 @@ The following list of attributes is supported for click and engagement signing.
     Example:   
     `[["key-1","value-1"],["key-2","value-2"]...["key-n","value-n"]]`
 
+<div id="attribute-value-escaping" />
+
 #### Attribute value escaping
 
 * The values in the JSON must be written in **lowercase strings** as defined in the <Anchor target="_blank" href="https://www.w3docs.com/snippets/java/how-should-i-escape-strings-in-json.html">JSON standard</Anchor>.
 
+<div id="json-spaces" />
+
 #### JSON spaces
 
 * The JSON must be compacted. It should not contain any blanks, tabs, or newline characters between the values.
+
+<div id="signature-algorithm" />
 
 #### Signature algorithm
 
@@ -141,6 +169,8 @@ The following list of attributes is supported for click and engagement signing.
 ```json
 //generate a signature from the click url and encode it with base64 without padding String generatedSignature = Base64.getUrlEncoder().withoutPadding().encodeToString(mac.doFinal(jsonString.getBytes()));
 ```
+
+<div id="signature-example" />
 
 ### Signature example
 
@@ -185,6 +215,8 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 ```
 
 </Accordion>
+
+<div id="code-examples" />
 
 ### Code examples
 
@@ -366,9 +398,13 @@ func main() {
 
 </Accordion>
 
+<div id="click-signature-apis" />
+
 ## Click signature APIs
 
 AppsFlyer provides APIs that allow ad networks to manage and test the click signing process. See the list of APIs in the table below, and the sections that follow with information necessary for using the API. 
+
+<div id="click-signature-apis-1" />
 
 #### Click signature APIs
 
@@ -384,6 +420,8 @@ AppsFlyer provides APIs that allow ad networks to manage and test the click sign
 | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">Exclude app</Anchor> | Configure app IDs to be excluded from click signing. |
 | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete">Remove excluded app</Anchor> | Configure app IDs to be included in click signing after being excluded. |
 
+<div id="legacy-versions" />
+
 ## Legacy versions
 
 These versions should not be used and are listed for reference only
@@ -391,6 +429,8 @@ These versions should not be used and are listed for reference only
 <div id="v1-legacy" />
 
 <Accordion title="V1 - Legacy">
+
+<div id="generate-secret-key-method" />
 
 ### Generate secret key method
 
@@ -411,6 +451,8 @@ These versions should not be used and are listed for reference only
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
+
+<div id="parameters" />
 
 #### Parameters
 
@@ -459,6 +501,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP response codes">
 
+<div id="response-codes" />
+
 #### Response codes
 
 | Code | Message | Remarks |
@@ -467,6 +511,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized | Invalid or missing authorization header |
 
 </Accordion>
+
+<div id="revoke-secret-key-method" />
 
 ### Revoke secret key method
 
@@ -485,6 +531,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
+
+<div id="parameters-1" />
 
 #### Parameters
 
@@ -511,6 +559,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <Accordion title="HTTP response codes">
 
+<div id="response-codes-1" />
+
 #### Response codes
 
 | Code | Message | Remarks |
@@ -519,6 +569,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 | 401 | Not authorized | Invalid or missing authorization header |
 
 </Accordion>
+
+<div id="test-method" />
 
 ### Test method
 
@@ -537,6 +589,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
+
+<div id="parameters-2" />
 
 #### Parameters
 
@@ -587,6 +641,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP response codes">
 
+<div id="response-codes-2" />
+
 #### Response codes
 
 | Code | Message | Remarks |
@@ -595,6 +651,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized | Invalid or missing authorization header |
 
 </Accordion>
+
+<div id="configure-mode-method" />
 
 ### Configure mode method
 
@@ -615,6 +673,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
+
+<div id="parameters-3" />
 
 #### Parameters
 
@@ -639,6 +699,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP response codes">
 
+<div id="response-codes-3" />
+
 #### Response codes
 
 | Code | Message | Remarks |
@@ -648,6 +710,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized | Invalid or missing authorization header |
 
 </Accordion>
+
+<div id="configure-circuit-breaker-method" />
 
 ### Configure circuit breaker method
 
@@ -670,6 +734,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
+
+<div id="request-body-json" />
 
 #### Request body JSON
 
@@ -701,6 +767,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP response codes">
 
+<div id="response-codes-4" />
+
 #### Response codes
 
 | Code | Message | Remarks |
@@ -710,6 +778,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized | Invalid or missing authorization header |
 
 </Accordion>
+
+<div id="get-configuration-method" />
 
 ### Get configuration method
 
@@ -777,6 +847,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="HTTP response codes">
 
+<div id="response-codes-5" />
+
 #### Response codes
 
 | Code | Message | Remarks |
@@ -785,6 +857,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | Not authorized | Invalid or missing authorization header |
 
 </Accordion>
+
+<div id="report-method" />
 
 ### Report method
 
@@ -807,6 +881,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="parameters-4" />
 
 #### Parameters
 
@@ -856,6 +932,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="HTTP response codes">
 
+<div id="response-codes-6" />
+
 #### Response codes
 
 | Code | Message | Remarks |
@@ -864,6 +942,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | Not authorized | Invalid or missing authorization header |
 
 </Accordion>
+
+<div id="exclude-app-method" />
 
 ### Exclude app method
 
@@ -884,6 +964,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-5" />
 
 #### Parameters
 
@@ -910,6 +992,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP response codes">
 
+<div id="response-codes-7" />
+
 #### Response codes
 
 | Code | Message | Remarks |
@@ -918,6 +1002,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized | Invalid or missing authorization header |
 
 </Accordion>
+
+<div id="remove-excluded-app-method" />
 
 ### Remove excluded app method
 
@@ -940,6 +1026,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-6" />
 
 #### Parameters
 
@@ -969,6 +1057,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 <div id="http-response-codes::b5e059da" />
 
 <Accordion title="HTTP response codes">
+
+<div id="response-codes-8" />
 
 #### Response codes
 
@@ -1021,6 +1111,8 @@ String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

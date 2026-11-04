@@ -32,6 +32,8 @@ x-zendesk:
 <Embed title="Getting started—agency onboarding" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
 
+<div id="appsflyer-attribution-model" />
+
 ## AppsFlyer attribution model
 
 Before you proceed, it’s essential to understand how AppsFlyer’s attribution works. This section explains what happens along the way from the first click or impression to the attribution of an install or an event — and beyond.
@@ -48,6 +50,8 @@ Before you proceed, it’s essential to understand how AppsFlyer’s attribution
 8. Once the install is attributed, we show it on marketer and agency dashboards and reports (<Anchor target="_blank" href="/partners/docs/about-agency-accounts#self-reporting-ad-networks">except Meta ads and X Ads</Anchor>).
 9. Then, we send a postback with the conversion details to the ad network, who can use this information for further optimization.
 
+<div id="agency-role-in-mobile-attribution-chain" />
+
 ## Agency role in mobile attribution chain
 
 A marketer, who owns the app, integrates AppsFlyer SDK inside it in order to quantify their marketing effort.
@@ -60,9 +64,13 @@ When an install is attributed to an ad placed by an agency, it is displayed on a
 
 Note: if your organization owns the app, or handles its development as well as marketing, you should open a marketer account.
 
+<div id="pricing" />
+
 ## Pricing
 
 The scope of an agency account functionality depends on the permissions provided by the app owner for each app. Therefore, agency accounts are offered **for free**, and only app owners are charged for attribution. App owners and agencies can use AppsFlyer attribution data for compensation purposes.
+
+<div id="getting-started" />
 
 ## Getting started
 
@@ -74,9 +82,13 @@ To set up a new agency account:
 2. A member of the AppsFlyer agency team may contact you with further information required to complete the registration.
 3. Once your account is activated, you get notified and can start using AppsFlyer.
 
+<div id="adding-team-members" />
+
 ## Adding team members
 
 When your account is up and running, the account admin (the person who opened the account) can add more team members, who can get access to some or all of the apps managed by the agency. For the details of how to add new team members, click here.
+
+<div id="adding-apps-to-your-account" />
 
 ## Adding apps to your account
 
@@ -92,6 +104,8 @@ Any agency individual or team requires permission from the app owner to:
 
 Marketers <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">provide access to any agency</Anchor> directly through the platform. Once your account is set up and you've received access to the apps, you can start running campaigns using AppsFlyer features.
 
+<div id="what-does-it-mean-to-get-permission-from-a-marketer" />
+
 ### What does it mean to get permission from a marketer
 
 When you get permission from a marketer:
@@ -103,12 +117,16 @@ When you get permission from a marketer:
 * You can see the app data.
 * You can grant permission for ad networks and their team members to view basic information about the app.
 
+  <div id="note" />
+
   > 📘 **Note**
   >
   > The agency gains control over the main toggle for ad network permissions and the individual permissions nested under it. Both the agency and the advertiser can change these settings, and the most recent change by either party determines the current state.
 
 
 Additional permissions include access to the Cohort report, the Protect360 dashboard, and aggregate organic data. See a <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">description of the different ad network permissions</Anchor>.
+
+<div id="app-list" />
 
 ### App list
 
@@ -118,6 +136,8 @@ The apps page in your account lists up to 1000 apps. If the list of apps you hav
 
 ![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
 
+<div id="searching-for-apps" />
+
 #### Searching for apps
 
 1. In your account, from the top menu, select **My Apps.**
@@ -125,6 +145,8 @@ The apps page in your account lists up to 1000 apps. If the list of apps you hav
    * App Name
    * App ID
    * App Owner Email
+
+<div id="agency-dashboard" />
 
 ## Agency dashboard
 
@@ -138,7 +160,11 @@ The Agency account dashboard includes default access to:
 * In-app events dashboard
 * Retargeting dashboard
 
+<div id="running-campaigns" />
+
 ## Running campaigns
+
+<div id="self-reporting-networks-srns" />
 
 ### Self-reporting networks (SRNs)
 
@@ -148,13 +174,19 @@ A majority of these networks require special setup for agencies. For example, si
 
 Click the links above to read network guides and specific instructions for agency settings.
 
+<div id="non-srns" />
+
 ### Non-SRNs
 
 Most ad networks need attribution links that are placed behind an ad. Read more about running campaigns with them <Anchor target="_blank" href="/partners/docs/about-agency-accounts#non-srns">here</Anchor>.
 
+<div id="sandbox-attribution-agency-campaigns" />
+
 ### Sandbox attribution agency campaigns
 
 Sandbox attribution infrastructure, part of Android by Google, lets marketers measure campaign success without advertising ID. Although Google doesn't include agencies as part of the Sandbox attribution process, and AppsFlyer can't attribute agencies directly, AppsFlyer still has the ability to provide attribution data for agency campaigns running on Sandbox.
+
+<div id="campaign-naming" />
 
 #### Campaign naming
 
@@ -168,13 +200,19 @@ For example, if your af\_prt is AgencyX, your campaign name may look like this:
 
 `AgencyX_SummerSale`
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * Agency campaigns in Sandbox attribution are also transparent and the identity of the ad network running the campaign is not masked from the marketer.
 
+<div id="skadnetwork-agency-campaigns" />
+
 ### SKAdNetwork agency campaigns
 
 SKAdNetwork infrastructure, part of iOS by Apple, lets marketers measure campaign success without IDFA or advertising ID. Although Apple doesn't include agencies as part of the SKAdNetwork attribution process, and AppsFlyer can't attribute agencies directly, AppsFlyer still has the ability to provide attribution data for agency campaigns running on SKAdNetworks.
+
+<div id="campaign-naming-1" />
 
 #### Campaign naming
 
@@ -188,14 +226,20 @@ For example, if your af\_prt is AgencyX, your campaign name may look like this:
 
 `AgencyX_SummerSale`
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > * Agency campaigns in SKAdNetwork are also transparent and the identity of the ad network running the campaign is not masked from the marketer. Consider that starting iOS 15, the marketer (app owner) can <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">opt-in to directly receive a copy of the postback.</Anchor>
 > * Make sure the marketer activates the ad network **Partner activation** setting in the Integration tab. Failure to do so will prevent AppsFlyer from sharing decoded postback data with networks, impacting their ability to use it for reporting and optimization. This is in addition to the Partner activation setting that you can access in the user interface.
 
+<div id="access-to-skan-conversion-studio" />
+
 #### Access to SKAN Conversion Studio
 
 Agencies can <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#view-cv-mapping">view and download</Anchor> a marketer's SKAN CV mapping configuration in <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#skan-conversion-studio-basics">Conversion Studio</Anchor>, but they can't configure or edit the settings.
+
+<div id="skadnetwork-dashboard" />
 
 #### SKAdNetwork Dashboard
 
@@ -206,6 +250,8 @@ Agencies can <Anchor target="_blank" href="/marketers/docs/skan-conversion-studi
 * <Anchor target="_blank" href="/marketers/docs/about-att-and-skan">SKAdNetwork Quickstart guide</Anchor>
 * <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork Dashboard</Anchor>
 * <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAdNetwork Solution</Anchor>
+
+<div id="single-source-of-truth-ssot-for-agencies" />
 
 ### Single Source of Truth (SSOT) for agencies
 
@@ -218,6 +264,8 @@ To include the SSOT flag in your overview dashboard, the marketer must turn on S
 **Further reading:**
 
 * <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Single Source of Truth (SSOT) guide for iOS attribution</Anchor>
+
+<div id="what-else-you-can-do" />
 
 ## What else you can do
 

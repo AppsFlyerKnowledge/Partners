@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Ad networks that use FOCUUS can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
 
+<div id="creating-your-attribution-link" />
+
 ## Creating your attribution link
 
 The attribution link consists of the below AppsFlyer base attribution link and additional macros added by the ad network.
@@ -40,6 +42,8 @@ See below AppsFlyers base attribution link with a detailed explanation per macro
 | pid | Media source name include \_int to identify integrated network at AppsFlyer servers |
 | c | Campaign name |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### Recommended attribution link parameters
 
 | AppsFlyer Parameter | FOCUUS Macros | Description |
@@ -51,11 +55,15 @@ For a complete list of AppsFlyer parameters, <Anchor target="_blank" href="/mark
 
 FOCUUS allows an unlimited number of macros, and you can name them as you wish, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">click</Anchor> <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros">here</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ### Complete attribution link template
 
 `https://app.appsflyer.com/com.appsflyer?pid={traffic_source}&clickid={tid}&af_siteid={publisher_id}`
 
 This attribution link is set on your FOCUUS campaign <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827784-adding-a-new-link">destination</Anchor>.
+
+<div id="install-and-in-app-event-postbacks" />
 
 ## Install and in-app event postbacks
 

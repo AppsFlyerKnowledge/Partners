@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance**: Test ad network integration using marketer apps.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before you can start testing the marketer's integration with your ad network, there are a few requirements:
@@ -32,9 +34,13 @@ Before you can start testing the marketer's integration with your ad network, th
 * If the app is not live on Google Play or the iOS App Store, you need to ask the marketer to provide you with the app
 * Whether or not the app is live, it must be <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">in the marketer's AppsFlyer account</Anchor>
 
+<div id="getting-started" />
+
 ## Getting started
 
 Open your AppsFlyer Dashboard. In the **App search** screen, enter the marketer's app ID:
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -46,9 +52,13 @@ Once the green tick appears in the input field, click on the blue arrow. Clickin
 
 [![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
 
+<div id="testing-live-apps" />
+
 ## Testing live apps
 
 In the AppsFlyer dashboard for your app, from the side menu, select, **Active integrations**. Choose your ad network and click on **Attribution link**.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -65,6 +75,8 @@ Now you can generate an attribution Link to test install attribution.
 Add parameters to the attribution link according to your requirements and the data that you want to record.
 
 [![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -83,6 +95,8 @@ Launching the app is crucial for the attribution flow. If the app is not launche
 You can then [view the install in your dashboard](/docs/test-marketer-campaign-integration-with-the-ad-network#viewing-installs-in-the-dashboard).
 
 </Accordion>
+
+<div id="testing-apps-in-development" />
 
 ## Testing apps in development
 
@@ -110,7 +124,11 @@ Install the app on the test device using the file that the marketer provides you
 
 </Accordion>
 
+<div id="testing-in-app-events" />
+
 ## Testing in-app events
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -136,6 +154,8 @@ In your app's AppsFlyer dashboard, from the side menu, select **Active integrati
 
 Once you know which in-app events the marketer records, and event mapping is in place, trigger a few events from the installed app.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Ad networks don’t have access to the Events Dashboard and can see in-app events on Overview Dashboard only after the advertiser enables the **Access aggregate in-app events data** <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permission</Anchor>. However, you can export in-app event-related data from the [In-app events postback](/docs/test-marketer-campaign-integration-with-the-ad-network#verifying-postback-data) report.
@@ -151,9 +171,13 @@ After exporting the in-app events postbacks report, you can look into the report
 
 </Accordion>
 
+<div id="viewing-installs-in-the-dashboard" />
+
 ## Viewing installs in the dashboard
 
 Once you install and launch the app, you can see the results in your dashboard.
+
+<div id="important-1" />
 
 > 🚧 **Important!**
 >
@@ -164,6 +188,8 @@ Access your AppsFlyer dashboard and from the side menu, select **Analyze** >  *
 Filter by your ad network. You can see the number of clicks and installs that are attributed to your ad network.
 
 Data related to clicks and installs appears at the top of the **Overview** screen. The **Overview** screen also includes **Breakdown by campaign** and **Aggregated performance report**. Verify that campaigns that appear in these sections correspond with the campaign parameter in the attribution link.
+
+<div id="verifying-postback-data" />
 
 ## Verifying postback data
 

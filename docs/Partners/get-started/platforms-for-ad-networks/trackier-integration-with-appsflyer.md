@@ -31,9 +31,13 @@ x-zendesk:
 
 To begin integration, provide AppsFlyer with both the attribution link URL and the postback URL. The URLs are needed for reporting purposes. This article explains how to build these URLs.
 
+<div id="attribution-link-url" />
+
 ## Attribution link URL
 
 This section provides the base attribution link and related parameter descriptions.
+
+<div id="base-attribution-link-url" />
 
 ### Base attribution link URL
 
@@ -49,7 +53,11 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 | pid= | Media source name | **\_int** identifies an **integrated** network |
 | c= | Campaign name | Name given by the advertiser |
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -66,11 +74,17 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 | &af\_siteid= | `{publisher_id}` | ID of the affiliate promoting an offer |
 | &af\_c\_id= | `{camp_id}` | Offer ID |
 
+<div id="postback-urls-for-install-and-in-app-events" />
+
 ## Postback URLs for install and in-app events
 
 This section provides examples of postback URLs and parameters for install and in-app events.
 
+<div id="ios-postback-urls" />
+
 ### **iOS** postback URLs
+
+<div id="global-install-postback" />
 
 #### Global install postback
 
@@ -78,13 +92,19 @@ This section provides examples of postback URLs and parameters for install and i
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&idfa={idfa}
 ```
 
+<div id="global-in-app-event-postback" />
+
 #### Global in-app event postback
 
 ```http
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&idfa={idfa}&goal_value={event-name}
 ```
 
+<div id="android-postback-urls" />
+
 ### **Android** postback URLs
+
+<div id="global-install-postback-1" />
 
 #### Global install postback
 
@@ -92,11 +112,15 @@ https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxx
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&gaid={android_id}
 ```
 
+<div id="global-in-app-event-postback-1" />
+
 #### Global in-app event postback
 
 ```http
 https://yourdomain.com/acquisition?click_id={click_id}&security_token=xxxxxxxxxxxxxxx&gaid={android_id}&goal_value={event-name}
 ```
+
+<div id="postback-parameters" />
 
 ### Postback parameters
 
@@ -106,6 +130,8 @@ https://yourdomain.com/acquisition?click_id={click_id}&security_token=xxxxxxxxxx
 | event-name | <ul><li>In-app event name</li><li>Defined by the advertiser</li></ul> |
 | security\_token | Provided by Trackier |
 | Country code, advertising ID, IDFA, etc. | [Optional] Attribution information that can be added to a postback |
+
+<div id="finalizing-your-registration" />
 
 ## Finalizing your registration
 

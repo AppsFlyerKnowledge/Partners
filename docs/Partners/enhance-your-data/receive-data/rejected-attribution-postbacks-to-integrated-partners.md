@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrated partners get postbacks of rejected installs and in-app events due to fraud or non-compliance with validation rules.
 
+<div id="rejected-attribution-postbacks-relating-to-fraud-and-validation-rules" />
+
 ## Rejected attribution postbacks relating to fraud and validation rules
 
 **Terminology**:
@@ -58,6 +60,8 @@ The following table lists the reject reason, reject reason value, and an explana
 | validation\_hijacking | Rule names | ✓ | Customer-defined rule. |
 | ai\_layer | N/A | **x** | AI models are utilized to analyze vast amounts of data points, enhancing detection capabilities for identifying fraudulent device and installation activities. |
 
+<div id="reject-reasons-for-in-app-events" />
+
 #### Reject reasons for in-app events
 
 | Reject reason | Reject reason value | Explanation |
@@ -67,6 +71,8 @@ The following table lists the reject reason, reject reason value, and an explana
 | validation\_inapps | invalid\_event\_name | Based on requested or manually defined validation rule |
 | validation\_inapps | invalid\_event\_value | Based on requested or manually defined validation rule |
 | validation\_inapps | Rule name/s | Based on manually-defined rules |
+
+<div id="important" />
 
 > 🚧 **Important!**
 >

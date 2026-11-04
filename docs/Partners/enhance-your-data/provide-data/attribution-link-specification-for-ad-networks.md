@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **At a glance:** Ad networks integrating with AppsFlyer specify their attribution link according to this article.
 
+<div id="attribution-links-for-ad-networks" />
+
 ## Attribution links for ad networks
 
 Attribution links are used to notify AppsFlyer that a user engaged with an ad by clicking it. In its simplest form, the attribution link is placed behind an ad so that when a user clicks on an ad they are clicking on an attribution link.
+
+<div id="attribution-model" />
 
 ### Attribution model
 
@@ -51,9 +55,13 @@ What happens on the journey from a first click or impression to the attribution 
 
 As it follows from this flow, we use attribution links to get information from you, and postbacks to send the information back to you.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If you use third-party performance marketing tools such as TUNE, CAKE, or Affise, see <Anchor target="_blank" href="/partners/docs/platforms-for-ad-networks">platform-specific instructions</Anchor>.
+
+<div id="attribution-link-template" />
 
 ### Attribution link template
 
@@ -74,6 +82,8 @@ Link structure explanation:
 * To integrate with AppsFlyer, send us the attribution link template by email with your macro names.
 
 Regard the parameters listed in the table that follows as the recommended minimum. We support a larger set of parameters. You should share with us as much information on the click as you collect. See the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">list of attribution link parameters</Anchor>.
+
+<div id="recommended-minimum-attribution-link-parameters" />
 
 #### Recommended minimum attribution link parameters
 

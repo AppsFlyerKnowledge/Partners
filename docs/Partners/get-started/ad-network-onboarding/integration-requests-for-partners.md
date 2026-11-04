@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **At a glance**: Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and much more.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Changes to AppsFlyer postbacks and attribution URL structures affect all existing and future campaigns across all apps.

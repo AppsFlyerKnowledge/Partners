@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance**: Ad networks load the aggregated performance report (AKA Cohort report) into their BI systems to calculate campaign performance metrics like the 7-day retention KPI.
 
+<div id="aggregated-campaign-performance-report" />
+
 ## Aggregated campaign performance report
 
 This report provides campaign performance data, including the number of unique users performing a given event. You (the ad network), use the data in your BI systems to calculate campaign performance metrics in the context of advertiser KPIs. The report is available daily via <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">Data Locker for Partners</Anchor>
@@ -47,11 +49,15 @@ Metrics are provided with the best granularity possible using the dimensions rep
 * Provided via Data Locker for Partners. The report updates <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">Daily UTC time</Anchor>.
 * Before we start sharing the data with you, the advertisers must [grant permissions](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) in the dashboard.
 
+<div id="about-the-report" />
+
 ## About the report
 
 <div id="report-structure" />
 
 <Accordion title="Report structure">
+
+<div id="dimensions" />
 
 #### Dimensions
 
@@ -241,6 +247,8 @@ Metrics are provided with the best granularity possible using the dimensions rep
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Metrics
 
 | Name | Field | Unique users performing the event |
@@ -295,6 +303,8 @@ To create retention metrics, for example, retention day-7, do so by setting filt
 By adding or removing dimensions you can get metrics with different granularity.
 
 </Accordion>
+
+<div id="permissions" />
 
 ## Permissions
 

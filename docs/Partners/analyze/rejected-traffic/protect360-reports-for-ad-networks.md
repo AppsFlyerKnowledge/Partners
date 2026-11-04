@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Ad networks responsible for user acquisition and retargeting can receive data regarding blocked clicks and impressions.
 
+<div id="protect360-reports-for-ad-networks" />
+
 ## Protect360 reports for ad networks
 
 **Disclaimer**: This article provides information on Protect360 reports available only to ad networks. For data that is also available to advertisers, see <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners">Protect360 for integrated partners</Anchor>.
@@ -34,6 +36,8 @@ Ad networks can receive reports via <Anchor target="_blank" href="/partners/docs
 
 Ad networks can then ingest this network-level data with cross-customer visibility of their blocked clicks and impressions and use it to protect against fraud.
 
+<div id="report-considerations" />
+
 ### Report considerations
 
 * Data arrives in CSV format to the UA/retargeting partner's bucket.
@@ -41,6 +45,8 @@ Ad networks can then ingest this network-level data with cross-customer visibili
 * Available via <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">Data Locker for Partners</Anchor>.
 * Data freshness: <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#ad-revenue">Daily, meaning data for Day 0 arrives on Day 1</Anchor>. Data is written daily at 07:00 <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">UTC time</Anchor> to the h=23 of your Data Locker bucket.
 * Apps included: A single report contains the data of all apps.
+
+<div id="report-types" />
 
 ## Report types
 
@@ -50,6 +56,8 @@ Ad networks can then ingest this network-level data with cross-customer visibili
 
 This report contains aggregate level data about clicks and impressions that are blocked due to capping or any other reason. 
 
+<div id="report-structure-fieldsdimensions" />
+
 #### Report structure: Fields/Dimensions
 
 | **Field** | **Remarks** |
@@ -58,6 +66,8 @@ This report contains aggregate level data about clicks and impressions that are 
 | site\_id | ID that identifies the publisher that displays the ad. |
 | date | Blocked date |
 | agency | <ul><li>Agency that brought the traffic via this ad network.</li><li>Returns as null if there is no agency involved.</li></ul> |
+
+<div id="report-structure-metrics" />
 
 #### Report structure: Metrics
 
@@ -75,6 +85,8 @@ This report contains aggregate level data about clicks and impressions that are 
 <Accordion title="Failed click signatures">
 
 This report contains user-level about failed click signatures. Meaning, when ad networks use the <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">AppsFlyer click signing method</Anchor>, the report contains clicks of URLs with the network’s PID that don't have validated click signatures, either because the signature is invalid or expired, or the click is not signed at all. Click signing failures could occur when there are technical errors in the implementation of click signatures by the ad network, or when clicks are sent on behalf of the network (with its PID) by another party.
+
+<div id="report-structure-fieldsdimensions-1" />
 
 #### Report structure: Fields/Dimensions
 

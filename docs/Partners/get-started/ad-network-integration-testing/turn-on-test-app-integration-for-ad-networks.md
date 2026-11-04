@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Ad networks performing integration testing must turn on app integration (activation).
 
+<div id="test-apps-for-ad-networks-ios-and-android" />
+
 ## Test apps for ad networks (iOS and Android)
 
 Ad networks after setting up integration and postbacks must test integration using AppsFlyer test apps. Before testing, the ad network must activate the app integration and enable additional ad network permissions as needed. The activation is performed once per app.
@@ -32,6 +34,8 @@ Ad networks after setting up integration and postbacks must test integration usi
 | <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks#part-2-test-using-advertiser-apps">Android</Anchor> | com.appsflyer.adNetworkTest |
 | <Anchor target="_blank" href="/partners/docs/ios-integration-testing-for-ad-networks">iOS</Anchor> | id1543229303 |
 | <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> | <ul><li>id888707085</li><li>id888707086</li><li>id888707087</li></ul> |
+
+<div id="activation-procedure" />
 
 ### Activation procedure
 

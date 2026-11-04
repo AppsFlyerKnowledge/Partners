@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn the differences between an Agency account and an Ad Network integration, and the advantages of each.
 
+<div id="agency-account" />
+
 ## Agency account
 
 <span id="b6fb9285-2105-489b-8048-548ba5ce0705"></span>AppsFlyer Agency Solution enables you to manage all your advertiser's performance under one universal dashboard!
@@ -41,9 +43,13 @@ Agency Account Key Features:
 
 Click this link to learn more about how to set up an <Anchor target="_blank" href="/partners/docs/about-agency-accounts">Agency Account</Anchor>.
 
+<div id="ad-network-integration" />
+
 ## Ad network integration
 
 As an AppsFlyer integrated partner, your name and logo are presented on the AppsFlyer website. The integration enables you to receive information via postbacks. You'll get an ad network login that holds install and postback information.
+
+<div id="note" />
 
 > 📘 **Note**
 >

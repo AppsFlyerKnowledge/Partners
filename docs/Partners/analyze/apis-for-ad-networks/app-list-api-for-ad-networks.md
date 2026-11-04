@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Ad networks can retrieve metadata of apps associated with their integrated partner account.
 
+<div id="get-app-list-api" />
+
 ## Get app list API
 
 The following sections include information necessary for using the API.
@@ -49,9 +51,13 @@ The API request consists of the method, path, mandatory capabilities parameter, 
 GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
 ```
 
+<div id="get-app-list-mandatory-parameters" />
+
 #### Get app list mandatory parameters
 
 <table><thead><tr><th>Query parameter</th><th>Description</th></tr></thead><tbody><tr><td>capabilities</td><td><p>To get the list and number of apps to which you have permission/integration capabilities: set the capabilities parameter to one of the options listed. </p><figure><table><thead><tr><th>Option</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>protect_360</code></td><td>Report permission</td><td>Get <a href="./protect360-for-integrated-partners" target="_blank">Protect360 raw data reports for ad networks</a></td></tr><tr><td><code>cost</code> </td><td>Integration</td><td>App is enabled to get cost data <a href="./incost-api-for-ad-networks" target="_blank">via InCost API</a></td></tr></tbody></table></figure><p><strong>Example</strong>: List of apps for which you have Protect360 report API permission:<code>capabilities=protect_360</code></p></td></tr></tbody></table>
+
+<div id="pagination-mechanism" />
 
 #### **Pagination mechanism**
 
@@ -91,6 +97,8 @@ A pagination mechanism, always operational, is implemented.
     }
 }
 ```
+
+<div id="pagination-mechanism-parameters-optional" />
 
 #### Pagination mechanism parameters (optional)
 

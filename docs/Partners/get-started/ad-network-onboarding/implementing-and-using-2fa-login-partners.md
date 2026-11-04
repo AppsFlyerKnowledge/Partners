@@ -22,7 +22,11 @@ x-zendesk:
 ---
 > **At a glance:** Two-factor authentication (2FA) is used to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator.
 
+<div id="intro" />
+
 ## Intro
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -31,6 +35,8 @@ x-zendesk:
 * 2FA is mandatory by AppsFlyer.
 * 2FA must be set up using **Google or Microsoft Authenticator.**
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > After you set up 2FA, don’t delete your authenticator app. Doing so breaks the connection to AppsFlyer, and you won’t be able to log in.
@@ -38,6 +44,8 @@ x-zendesk:
 <div id="firsttime-setup" />
 
 <Accordion title="First-time setup">
+
+<div id="new-account-user" />
 
 #### **New account user**
 
@@ -48,6 +56,8 @@ x-zendesk:
    * Scan the QR code.
    * Enter the **Google or Microsoft Authenticator**-issued verification code.
    * Click **Verify**, and you'll be redirected to the **My apps** page.
+
+<div id="existing-account-users" />
 
 #### **Existing account users**
 
@@ -83,12 +93,16 @@ To reset your 2FA, contact your Admin. The admin should follow these steps:
 
 Note: If you are an account owner, you can reset your own 2FA in [the steps that follow](/docs/implementing-and-using-2fa-login-partners#for-an-account-owner-resetting-their-own-2fa).
 
+<div id="for-an-admin-resetting-a-users-2fa" />
+
 #### **For an Admin resetting a user's 2FA**
 
 1. In the menu bar, click the email address dropdown.
 2. Select **User management**.
 3. On the **Users** tab, click the menu options on the far right side of the user’s row.
 4. Select **Reset 2FA** from the menu.
+
+<div id="for-an-account-owner-resetting-their-own-2fa" />
 
 #### **For an Account owner resetting their own 2FA**
 

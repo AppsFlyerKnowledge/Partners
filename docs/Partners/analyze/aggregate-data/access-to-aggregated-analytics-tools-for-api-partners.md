@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** API partners can use their API token to access advertisers' data when granted permission by the advertiser, allowing them to extract performance metrics from the platform.
 
+<div id="api-token-permissions" />
+
 ## API token permissions
 
 <Image alt="api-access-permissions.jpg" src="https://files.readme.io/7961394cb39cf1e6f85d77cd732183edea5fb1408c220ca05b23ae7bbb50138e-23701010316689.jpg" width="439px" />
@@ -39,6 +41,8 @@ Advertisers can grant the following app-level permissions:
 | SKAN reporting | <ul><li><Anchor target="_blank" href="/marketers/docs/skan-aggregated-performance-report-api">SKAN performance reporting</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/skan-aggregated-postback-arrival-date-api">SKAN aggregate postback reporting</Anchor></li></ul> | -- |
 
 
+<div id="considerations" />
+
 ### Considerations
 
 * **Advertiser perspective**
@@ -49,6 +53,8 @@ Advertisers can grant the following app-level permissions:
   * Advertisers can revoke permissions to access their app data. This won't impact your partner credentials.
 
 <Accordion title="Granting access to the partner">
+
+<div id="important" />
 
 > 🚧 **Important**
 >

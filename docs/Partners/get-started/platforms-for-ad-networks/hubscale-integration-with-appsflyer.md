@@ -32,6 +32,8 @@ x-zendesk:
 1. Your attribution link
 2. Your postback (for installs and in-app events)
 
+<div id="creating-the-attribution-link" />
+
 ## Creating the attribution link
 
 the attribution link consists of the below AppsFlyer base attribution link and additional macros added by the ad network.
@@ -61,6 +63,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 ```
 
 <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer complete list of parameters</Anchor>
+
+<div id="global-postbacks-for-installs-and-in-app-events" />
 
 ## Global postbacks for installs and in-app events:
 
@@ -162,10 +166,14 @@ Generic attribution link:
 https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction_id}&af_siteid={pub_id}-{sub_pub_id}&advertising_id={google_id}&idfa={ios_ifa}
 ```
 
+<div id="finalizing-your-registration" />
+
 ## Finalizing your registration
 
 * If you have an integration with AppsFlyer, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
 * If you don't have an integration with AppsFlyer, complete the ad Partners Registration application <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">here</Anchor>.
+
+<div id="mapping-of-appsflyer-parameters-and-hubscale-macros" />
 
 ## Mapping of AppsFlyer parameters and hubscale macros
 

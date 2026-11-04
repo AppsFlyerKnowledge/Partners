@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Ad networks that use CAKE can receive attribution data from AppsFlyer about installs and in-app events.
 
+<div id="base-attribution-link" />
+
 ## Base attribution link
 
 Below you can find the base attribution link with a detailed explanation per each parameter:
@@ -39,6 +41,8 @@ Below you can find the base attribution link with a detailed explanation per eac
 | pid | Media source name include **\_int** to identify<br />**integrated** network at AppsFlyer servers |
 | c | Campaign name |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### Recommended attribution link parameters
 
 | AppsFlyer Parameter | CAKE Macros | Description |
@@ -50,19 +54,27 @@ For a complete AppsFlyer parameter list, click <Anchor target="_blank" href="/ma
 
 For a complete CAKE macro list, click <Anchor target="_blank" href="https://support.getcake.com/support/solutions/articles/5000566463-tokens">here</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ### Complete attribution link template
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#oreqid#
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## Install and in-app event postbacks
+
+<div id="global-install-postback" />
 
 ### Global install postback
 
 ```http
 https://{company-domain}.com/p.ashx?f=pb&r=(Click-ID)
 ```
+
+<div id="global-in-app-event-postback" />
 
 ### Global in-app event postback
 
@@ -74,11 +86,15 @@ Click-ID
 e= Set as **Event Tag** in the AppsFlyer dashboard for each App by the advertiser - This is the actual in-app event name from the application.  
 For complete CAKE postback structure Click Here
 
+<div id="appsflyer-in-app-events-dashboard" />
+
 ### AppsFlyer in-app events dashboard
 
 ![IAEP.png](https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png)
 
 Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, and so on.
+
+<div id="finalizing-your-registration" />
 
 ## Finalizing your registration
 

@@ -33,6 +33,8 @@ Data richness score, a metric provided by AppsFlyer, indicates the comprehensive
 
 To maximize the score, ad networks must overcome the data gaps they have.
 
+<div id="data-richness-score" />
+
 ## Data richness score
 
 **To see your data richness score:**
@@ -45,6 +47,8 @@ To maximize the score, ad networks must overcome the data gaps they have.
    ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
 
 Advertisers can see the data richness score (low, medium, or high) for each ad network that has an integration with AppsFlyer.
+
+<div id="included-data" />
 
 ### Included data
 
@@ -66,10 +70,14 @@ In order to receive a high score, the following parameters should be provided by
   * Subsite ID
   * Channel
 
+<div id="data-threshold" />
+
 ### Data threshold
 
 * The score is calculated weekly and can rise or drop depending on the completeness of the parameters listed above.
 * There is a minimum amount of conversions (installs, reattributions, reengagements) required for the score to be calculated. If the network has fewer conversions than the minimum within a given week, on the following week the score indicator will be disabled and no data categories will be shown.
+
+<div id="next-steps" />
 
 ## Next steps
 

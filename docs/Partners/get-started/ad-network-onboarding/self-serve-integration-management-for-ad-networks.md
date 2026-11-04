@@ -26,6 +26,8 @@ x-zendesk:
 
 <Embed title="Self-serve integration management for ad networks" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
 
+<div id="prerequisites" />
+
 ## **Prerequisites:**
 
 * You have to have login credentials (username and password) for AppsFlyer before you can manage attribution links and postbacks. To <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">create a partner</Anchor> account, ask an AppsFlyer customer (advertiser) to <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer">invite you</Anchor>.
@@ -36,10 +38,14 @@ x-zendesk:
   * Ports: 80, 443
 * ![AppsFlyerAdmin_us-en.png](https://files.readme.io/047d2ffa8bd5258c09f60c6f560162b285c4e9742d98b1158952a26d988ce763-18271759619089.png) Only Admin users can access and manage this section.
 
+<div id="accessing-integration-management" />
+
 ## Accessing Integration management
 
 1. Log into your AppsFlyer partner account.
 2. Click the top-right drop-down menu > **Postback Management**.
+
+<div id="attribution-link" />
 
 ## Attribution link
 
@@ -55,6 +61,8 @@ Completion of attribution link configuration is mandatory
    * **Your macro**: add the macro that populates the parameters with values.
    * **Include**: check the box to include the parameter in the link
 
+   <div id="important" />
+
    > 🚧 **Important!**
    >
    > * Add campaign and ad-related parameters to provide more robust data about campaign performance.
@@ -69,6 +77,8 @@ Completion of attribution link configuration is mandatory
 <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">More about attribution links and available parameters</Anchor>.
 
 In the case of any issues, reach out using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+
+<div id="default-postback" />
 
 ## Default postback
 
@@ -87,6 +97,8 @@ Postbacks are URLs containing macros populated by AppsFlyer and sent to your ser
 
    <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">Full list of postback macros</Anchor>
 
+   <div id="important-1" />
+
    > 🚧 **Important!**
    >
    > * To be able to distinguish between postbacks for legitimate events and rejected postbacks,  configure the <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events">rejected postback macros</Anchor>.
@@ -104,6 +116,8 @@ Postbacks are URLs containing macros populated by AppsFlyer and sent to your ser
 <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">More postback info and examples.</Anchor>
 
 In the case of any issues, use the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.
+
+<div id="advanced-privacy-and-skan-postbacks" />
 
 ## Advanced Privacy and SKAN postbacks
 
@@ -128,6 +142,8 @@ Advanced Privacy and SKAN postbacks can be configured only after the attribution
    List of <Anchor target="_blank" href="/partners/docs/skan-integration-guide-for-ad-networks#receive-data-from-appsflyer">SKAdNetwork postback macros</Anchor>
 
    List of <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">Advanced Privacy postback macros</Anchor>
+
+   <div id="important-2" />
 
    > 🚧 **Important!**
    >

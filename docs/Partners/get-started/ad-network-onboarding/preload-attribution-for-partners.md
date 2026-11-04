@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Attribute mobile app installs to campaigns that preload the app at the Original Equipment Manufacturer (OEM) or when the device is first turned on by the user.
 
+<div id="overview" />
+
 ## Overview
 
 By supporting AppsFlyer preload attribution solutions, preload partners can have app installs attributed to preload campaigns. Preload campaigns are for when an app is installed on a device by a preload partner either at the factory or upon device activation (when the device is first turned on).
@@ -42,6 +44,8 @@ There are 3 ways to attribute preload campaigns:
 Postbacks are sent to you after each conversion.
 
 <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">Learn more about the preload campaign attribution methods</Anchor>
+
+<div id="set-up-preload-attribution" />
 
 ## Set up preload attribution
 

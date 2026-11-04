@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrated partners (ad networks and agencies) can view fraud related to their traffic identified and blocked by the ProtectLITE and Protect360 engines, as well as the customer’s manually-defined validation rules.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer identifies and blocks fraud via: 
@@ -42,11 +44,15 @@ With the correct permissions, integrated partners can:
 
 There are also <Anchor target="_blank" href="/partners/docs/protect360-reports-for-ad-networks">raw data reports</Anchor> available to ad networks about impression capping, as well as failed click signatures, for which no advertiser permissions are required.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > For advertisers that work with ad networks through an agency, in order for both the ad network and agency to access data, the advertiser must integrate both the agency and ad network in AppsFlyer, and grant them both permission to access data.
 >
 > If only the agency is integrated and granted permissions, the ad network does not have access to the data.
+
+<div id="dashboard-view" />
 
 ### Dashboard view
 
@@ -68,6 +74,8 @@ Limitations:
 
   <Image alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
 
+<div id="raw-data-reports" />
+
 ### Raw-data reports
 
 **Prerequisites**: Permission from the advertiser to access ProtectLITE and Protect360. 
@@ -81,6 +89,8 @@ Reports are available via:
 
 Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">Protect360 raw data reports</Anchor>.
 
+<div id="protect360-ad-network-reporting-api" />
+
 ## Protect360 ad network reporting API
 
 * The raw-data reports listed in this section are available to ad networks via API.
@@ -93,6 +103,8 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-raw-da
 * For a list of apps for which you have Protect360 permissions use <Anchor target="_blank" href="/partners/docs/app-list-api-for-ad-networks">get app list API.</Anchor>
 * The admin needs to get an AppsFlyer <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">V2.0 authentication token</Anchor> available in the dashboard.
 
+<div id="protect360-api-reports" />
+
 #### Protect360 API reports
 
 | Report | Data freshness | Description |
@@ -102,6 +114,8 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-raw-da
 | Installs | Real-time | Blocked installs with the block reason<br /><br />Report topic: blocked\_installs\_report |
 | In-app event | Real-time | In-app events performed by blocked users<br /><br />Report topic: `blocked_in-app_events_report` |
 | Clicks | Real-time | Clicks performed by blocked users<br /><br />Report topic: `blocked_clicks_report` |
+
+<div id="procedure-for-ad-networks-to-get-protect360-reports-by-download" />
 
 #### **Procedure for ad networks to get Protect360 reports by download**
 
@@ -115,6 +129,8 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/protect360-raw-da
    3. To date
    4. Bearer token  (AppsFlyer <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">V2.0 authentication token</Anchor>)
 4. Some calls have [optional parameters](/docs/protect360-for-integrated-partners#api-parameters), as described in this article.
+
+<div id="curl-examples" />
 
 ### Curl examples
 
@@ -183,6 +199,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 </Accordion>
 
+<div id="protect360-ad-network-api-reference-guide" />
+
 ### Protect360 ad network API reference guide
 
 <div id="api-basics" />
@@ -238,6 +256,8 @@ Error codes and solutions:
 
 </Accordion>
 
+<div id="impression-capping" />
+
 ## Impression capping
 
 If an ad network has extremely high rates of impression fraud, Protect360 blocks the ad network’s impressions for a 24-hour cycle. This means that any impressions that occur after the threshold is reached are not recorded by AppsFlyer, nor are they eligible for attribution. The blocked impressions do appear in the Protect360 dashboard and reports.
@@ -271,6 +291,8 @@ Impressions capping FAQ:
 | **Q: How can we check for problematic traffic and improve campaign performance?**<br /><br />**A: Partners can use their impression data and reports to identify suspicious sources and stop those campaigns. Partners can also see blocked impression data in the Protect360/ProtectLITE dashboard under the dedicated columns, as long as they have received the required permission from the advertiser to view fraud data in the dashboard.** |
 
 </Accordion>
+
+<div id="click-signing" />
 
 ### Click signing
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance**: Reports listed in this article are available to you (agencies) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article.
 
+<div id="data-locker-reports-for-agencies" />
+
 ## Data Locker reports for agencies
 
 The following data-sharing principles apply:
@@ -31,6 +33,8 @@ The following data-sharing principles apply:
 * **Organic data**: Requires explicit advertiser permission.
 * **Data Locker**: A subscription is not required for advertisers.
 * [Coming soon] Non-organic data attributed to other partners.
+
+<div id="permissions-required-per-report-granted-by-the-advertiser" />
 
 ### Permissions required per report (granted by the advertiser)
 
@@ -43,6 +47,8 @@ The permissions required per report are listed in the table that follows. You, t
 3. Select the integration partner (agency).
 4. Go to the **Permissions** tab.
 5. Grant data access permissions using the table that follows as a guide. You must grant the permissions according to your data sharing policies.
+
+<div id="reports-available-to-agencies" />
 
 #### Reports available to agencies
 

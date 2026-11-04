@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Set up your attribution link so that your partners (such as TUNE or CAKE) can receive different postbacks for a single in-app event, based on Goal IDs.
 
+<div id="introduction" />
+
 ## Introduction
 
 Different postbacks can be sent for an in-app event depending on the Goal ID.
@@ -36,7 +38,11 @@ On the Active Integrations page in the dashboard, advertisers map each of their 
 
 This enables ad networks to open multiple campaigns with a separate dynamic event tag (example: HasOffers calls this goal\_id) for each campaign. The dynamic event tags are then passed to the ad network in the postback based on the value that was placed in the click URL.
 
+<div id="attribution-link" />
+
 ## Attribution link
+
+<div id="attribution-link-example" />
 
 > 📄 **Attribution Link Example**
 >

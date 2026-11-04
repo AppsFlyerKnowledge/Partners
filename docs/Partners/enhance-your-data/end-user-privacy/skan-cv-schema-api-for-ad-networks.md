@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance**: See the SKAN CV schema as mapped by the advertiser.
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## SKAN CV schema API for ad networks
 
 With SKAdNetwork (SKAN) attribution, advertisers grade user quality by setting conversion values (CV) based on post-install user activity during specific time periods (windows). <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">Learn more about SKAN</Anchor>

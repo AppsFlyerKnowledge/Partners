@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **At a glance:** Manage which agencies you authorize to run campaigns through your network integration.
 
+<div id="overview" />
+
 ## Overview
 
 To prevent unauthorized use of your network, all agencies running campaigns through your network integration must be pre-approved. This is done by adding their agency ID (`af_prt`) to your list of authorized agencies. Agencies that don't appear in the list are unable to configure the integration, as the partner configuration window is grayed out. This prevents them from managing campaigns. After they're added to the list, the approval applies account-wide, allowing them to run campaigns with all apps on your network.
 
 As of July 31, 2024, only traffic from agencies authorized by the ad networks will be recorded and measured in AppsFlyer. Unauthorized traffic will result in a 403 (Forbidden) response from AppsFlyer.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -36,6 +40,8 @@ As of July 31, 2024, only traffic from agencies authorized by the ad networks wi
 > * The list of authorized agencies can include up to 200 agencies
 
 [![authorized-agencies-5.jpg](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)
+
+<div id="manage-authorized-agencies" />
 
 ## Manage authorized agencies
 
@@ -51,6 +57,8 @@ From the **Authorized agencies** page, you can add agencies, view the existing 
 1. From the top bar, open the account menu (email address dropdown) > **Security center.**
 2. In the **Authorized agencies** section, click **Manage authorized agencies**.
 
+<div id="add-an-agency-to-the-list" />
+
 ### Add an agency to the list
 
 1. From the left pane of the **Authorized agencies** page, enter the agency ID.
@@ -58,9 +66,13 @@ From the **Authorized agencies** page, you can add agencies, view the existing 
 3. [Optional] Repeat steps 1-2 for adding more agencies.
 4. Click **Save list**.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Make sure to enter a valid agency ID. For example (af\_prt=) `my_agency_123`
+
+<div id="delete-an-agency-from-the-list" />
 
 ### Delete an agency from the list
 

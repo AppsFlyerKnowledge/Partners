@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Compare cost-sharing methods available to AppsFlyer ad network partners.
 
+<div id="sharing-cost-with-appsflyer-and-advertisers" />
+
 ## Sharing cost with AppsFlyer and advertisers
 
 Advertisers use AppsFlyer as their source of truth for ROI, billing, and to make marketing budget allocation decisions. For networks to be visible, sharing cost data with AppsFlyer is a must. Networks with no cost data appear at the bottom of the AppsFlyer dashboard list.
@@ -38,6 +40,8 @@ Ad networks share cost with AppsFlyer using any of the following: 
 * **Cost Import**: Cost data files are uploaded/sent to AppsFlyer
 * **Cost by click:** Networks report cost each time an attribution link is clicked
 
+<div id="cost-badge-for-ad-networks" />
+
 ### Cost badge for ad networks
 
 ![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
@@ -45,6 +49,8 @@ Ad networks share cost with AppsFlyer using any of the following: 
 * A cost badge displays in the <Anchor target="_blank" href="/marketers/docs/partner-integrations#partner-details-and-performance">partner details page</Anchor> highlighting partners using the InCost or Cost API.
 * The badge certifies that the partner as a cost-capable partner.
 * Internal analytics and extensive user surveys show that advertisers are always on the lookout for new partners. Those with a cost badge are more likely to stand out, as advertisers want to understand their marketing performance based on ROI analysis.
+
+<div id="reporting-cost-options-available-to-ad-networks" />
 
 ### Reporting cost options available to ad networks
 

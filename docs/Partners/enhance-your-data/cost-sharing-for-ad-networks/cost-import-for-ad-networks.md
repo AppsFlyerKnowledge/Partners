@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Learn how ad networks can report the advertiser's campaign costs directly to AppsFlyer via CSV files.
 
+<div id="cost-import-for-ad-networks" />
+
 ## Cost Import for ad networks
 
 ![AdspendIngestion.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
+
+<div id="overview" />
 
 #### Overview
 
@@ -44,11 +48,15 @@ x-zendesk:
   * Once a file is uploaded, it can't be reverted.
 * Monitor and check that no errors were found in the file.
 
+<div id="submitting-ad-spend-files-for-ad-networks" />
+
 ### Submitting ad spend files for ad networks
 
 * Use either the upload or email method to ingest ad spend files.
 * [Best practice] Initially, use the upload method as it is easier to resolve CSV formatting issues.
 * Ad Networks cannot import agency cost data; only advertisers can.
+
+<div id="submission-by-file-upload" />
 
 #### Submission by file upload
 
@@ -66,6 +74,8 @@ x-zendesk:
 6. Additional procedures:
    * <Anchor target="_blank" href="/marketers/docs/import-cost-data#cost-import-dashboard">Overwrite previous ingestion</Anchor>
    * <Anchor target="_blank" href="/marketers/docs/import-cost-data#cost-import-dashboard">Revert (cancel)</Anchor>
+
+<div id="submission-by-email" />
 
 #### Submission by email
 
