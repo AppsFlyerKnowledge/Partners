@@ -89,7 +89,7 @@ El nuevo conjunto de macros añade una serie de parámetros adicionales de forma
 
 | **Nombre de la macro** | **Nota** | **Offerslook** |
 | --- | --- | --- |
-| af\_c\_id | ID de campaña: proporcionado por el anunciante | `{adv_sub1}<br /><br />{adv_sub2}<br /><br />{adv_sub3}` |
+| af\_c\_id | ID de campaña: proporcionado por el anunciante | `{adv_sub1}`<br /><br />`{adv_sub2}`<br /><br />`{adv_sub3}` |
 | af\_conjunto de anuncios | Nombre del conjunto de anuncios: proporcionado por el anunciante. El conjunto de anuncios es un nivel intermedio en la jerarquía entre **Campaña** y **Anuncio**. |  |
 | af\_adset\_id | ID del adset |  |
 | af\_anuncio | Nota |  |
