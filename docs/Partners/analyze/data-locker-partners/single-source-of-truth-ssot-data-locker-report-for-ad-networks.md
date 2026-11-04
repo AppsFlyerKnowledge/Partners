@@ -89,7 +89,7 @@ Ad networks designadas (activadas) por las agencias: La agencia no puede concede
 1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Partners integrados**.
 2. Busca al partner y selecciónalo.
 3. Haz clic en **Configurar integración**. Se te dirigirá a la página de configuración de la integración.
-4. Verifica que **Activar partner**esté encendido. De lo contrario, los datos no se comparten.
+4. Verifica que **Activar partner** esté encendido. De lo contrario, los datos no se comparten.
 5. Ve a la pestaña **Permisos** .
 6. Activa los siguientes permisos de ad network:
    * **Acceder a datos agregados de conversiones**.

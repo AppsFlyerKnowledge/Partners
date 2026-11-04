@@ -99,7 +99,8 @@ Cuando se abre la app por primera vez, la página **Install Data** muestra los 
 
 Las siguientes funciones están disponibles:
 
-* **In-App Event Tests**Envía `purchase`, `login` y `registration`, y eventos in-app. Al asignar los nombres de los eventos in-app de la app a tus nombres de evento, los postbacks se completan con tus nombres de evento.
+* **In-App Event Tests**  
+  Envía `purchase`, `login` y `registration`, y eventos in-app. Al asignar los nombres de los eventos in-app de la app a tus nombres de evento, los postbacks se completan con tus nombres de evento.
 
 </Accordion>
 

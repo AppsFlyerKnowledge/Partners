@@ -140,7 +140,8 @@ Completa los requisitos previos antes de empezar a ejecutar el procedimiento de 
    Aparece el cuadro de diálogo de consentimiento de ATT.
 
    ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
-6. Toca **Pedir a la app que no haga track.** Se muestra la página **datos de instalación**.
+6. Toca **Pedir a la app que no haga track.**  
+   Se muestra la página **datos de instalación**.
 
    [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
 7. Toca **ATT Status**.  
@@ -186,8 +187,10 @@ Cuando se abre la aplicación por primera vez, se muestra el cuadro de diálogo 
 
 Las siguientes funciones están disponibles:
 
-* **Pruebas de eventos in-app**Envía `purchase`, `login` y `registration`, además de eventos in-app. Al asignar los nombres de los eventos in-app de la aplicación a tus nombres de evento, los postbacks se completan con tus nombres de evento.
-* **Estado de ATT**Devuelve el estado actual de ATT que iOS reporta como **Authorized** o **Denied**. El estado de ATT depende del consentimiento del usuario para el track en el cuadro de diálogo de consentimiento de ATT y del ajuste del dispositivo **Allow Apps to Request to Track**.
+* **Pruebas de eventos in-app**  
+  Envía `purchase`, `login` y `registration`, además de eventos in-app. Al asignar los nombres de los eventos in-app de la aplicación a tus nombres de evento, los postbacks se completan con tus nombres de evento.
+* **Estado de ATT**  
+  Devuelve el estado actual de ATT que iOS reporta como **Authorized** o **Denied**. El estado de ATT depende del consentimiento del usuario para el track en el cuadro de diálogo de consentimiento de ATT y del ajuste del dispositivo **Allow Apps to Request to Track**.
 
 </Accordion>
 

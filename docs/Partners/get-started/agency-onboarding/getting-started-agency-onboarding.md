@@ -231,7 +231,7 @@ Si ejecutas campañas en medios que no sean redes de publicidad (redes sociales,
 > 📘 **Nota:**
 >
 > * Las campañas de agencias en SKAdNetwork siempre son transparentes y la identidad de la red de publicidad que ejecuta la campaña no está enmascarada del marketer. Ten en cuenta que a partir de iOS 15, el marketer (propietario de la aplicación) puede <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">optar por recibir directamente una copia del postback.</Anchor>
-> * Debes pedirle al marketer que habilite la configuración de **activación de partners** de la red de publicidad en la pestaña de integración. Si no lo haces, la red de publicidad no recibirá los postbacks relacionados con las campañas de SKAN. Nota: Esto es una adición a la configuración de activación de partners a la que puedes acceder en la interfaz de usuario.
+> * <mark>Debes pedirle al marketer que habilite la configuración de **activación de partners**</mark> de la red de publicidad en la pestaña de integración. Si no lo haces, la red de publicidad no recibirá los postbacks relacionados con las campañas de SKAN. Nota: Esto es una adición a la configuración de activación de partners a la que puedes acceder en la interfaz de usuario.
 
 <div id="access-to-skan-conversion-studio" />
 
