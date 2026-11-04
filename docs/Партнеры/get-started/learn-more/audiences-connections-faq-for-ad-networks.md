@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Вы рекламная сеть? Найдите ответы на часто задаваемые вопросы о подключениях партнеров аудиторий.
 
+<div id="api-key-and-partner-pull-key" />
+
 ## Ключ API и ключ partner pull
 
 <div id="what-are-the-api-key-and-testing-api-key-used-for" />
@@ -50,6 +52,8 @@ x-zendesk:
 На более позднем этапе, когда мы будем тестировать вашу конечную точку `/sync`, команда AppsFlyer Audiences отправит вам `PARTNER_PULL_KEY`.
 
 </Accordion>
+
+<div id="audience-file-size-and-limitations" />
 
 ## Файл аудитории, размер и ограничения
 
@@ -137,6 +141,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="api-calls-responses-and-status-codes" />
+
 ## Вызовы API, ответы и коды статуса
 
 <div id="when-should-the-partner-return-a-response" />
@@ -201,6 +207,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="naming-rules" />
+
 ## Правила именования
 
 <div id="in-the-validate-interface-is-the-api_key-field-a-string-or-string-array" />
@@ -230,6 +238,8 @@ x-zendesk:
 Поддерживаются и цифры, и английские символы.
 
 </Accordion>
+
+<div id="sha256-and-hashed-url" />
 
 ## SHA256 и хешированный URL
 

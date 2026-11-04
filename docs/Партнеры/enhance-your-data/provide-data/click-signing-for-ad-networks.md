@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Добавьте проверку подписи кликов, чтобы избежать ответственности за мошенничество и чтобы мошеннические клики не атрибутировались к вашей рекламной сети.
 
+<div id="about-click-signing" />
+
 ## О подписи кликов
 
 Используя минимальные технологии, мошенники могут отправлять клики от имени рекламной сети и создавать тысячи или даже миллионы фальшивых кликов, которые отправляются в AppsFlyer. Иногда сами рекламные сети не знают об этой проблеме. 
@@ -42,13 +44,19 @@ x-zendesk:
   * Доступны в отчетах Protect360 для рекламных сетей (не для рекламодателей). <Anchor target="_blank" href="/partners/ru/docs/protect360-reports-for-ad-networks#failed-click-signatures">Узнать больше</Anchor>
   * Без влияния на коэффициент конверсии или порог блокировки кликов в рекламной сети
 
+<div id="click-signature-integration" />
+
 ## Интеграция подписи кликов
+
+<div id="flow" />
 
 ### Сценарий
 
 На схеме ниже показан процесс от первоначальной разработки и базовых тестов до производственных тестов и, наконец, производства. 
 
 ![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+
+<div id="procedure" />
 
 ### Процедура
 
@@ -69,9 +77,13 @@ x-zendesk:
      https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_siteid=12345&expires=1597657118&signature_v2=8fnDVzZP_WRZnv3KNJaREOEfvB5p9oRc_XlKEvUo8gk
      ```
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > Убедитесь, что URL-адрес содержит специальные символы или пробелы в вашей ссылке до создания подписи клика. Генерирование подписи сначала приводит к ошибке верификации.
+
+<div id="creating-a-click-signature" />
 
 ## Создание подписи клика
 
@@ -79,6 +91,8 @@ x-zendesk:
 
 1. Создайте JSON, используя приведенный ниже список атрибутов и правила JSON
 2. Создайте подпись из этого JSON с помощью HMAC56
+
+<div id="list-of-attributes" />
 
 ### Список атрибутов
 
@@ -105,16 +119,24 @@ x-zendesk:
 | 17 | idfa | Нет |  |
 | 18 | idfv | Нет |  |
 
+<div id="attribute-and-json-rules" />
+
 ### Атрибуты и правила JSON
+
+<div id="order-and-appearance-of-attributes" />
 
 #### Порядок и внешний вид атрибутов
 
 * В JSON должны быть поддерживаемые параметры в URL-адресе вовлечения со значением
 * Атрибуты должны быть перечислены в JSON в порядке, указанном в таблице выше
 
+<div id="empty-attributes" />
+
 #### Пустые атрибуты
 
 * Атрибуты, перечисленные в JSON, не могут быть пустыми значениями или содержать только пробелы
+
+<div id="json-data-structure" />
 
 #### Структура данных JSON
 
@@ -123,13 +145,19 @@ x-zendesk:
     Пример:   
     `[["key-1","value-1"],["key-2","value-2"]...["key-n","value-n"]]`
 
+<div id="attribute-value-escaping" />
+
 #### Экранирование значения атрибута
 
 * Значения в JSON должны быть записаны в **строках нижнего регистра**, как определено в <Anchor target="_blank" href="https://www.w3docs.com/snippets/java/how-should-i-escape-strings-in-json.html">стандарте JSON</Anchor>.
 
+<div id="json-spaces" />
+
 #### Пробелы JSON
 
 * JSON необходимо сжать. В нем не должно быть пробелов, табуляций или символов новой строки между значениями.
+
+<div id="signature-algorithm" />
 
 #### Алгоритм подписи
 
@@ -140,6 +168,8 @@ x-zendesk:
 ```json
 //generate a signature from the click url and encode it with base64 without padding String generatedSignature = Base64.getUrlEncoder().withoutPadding().encodeToString(mac.doFinal(jsonString.getBytes()));
 ```
+
+<div id="signature-example" />
 
 ### Пример подписи
 
@@ -184,6 +214,8 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 ```
 
 </Accordion>
+
+<div id="code-examples" />
 
 ### Примеры кода
 
@@ -365,9 +397,13 @@ func main() {
 
 </Accordion>
 
+<div id="click-signature-apis" />
+
 ## API подписи кликов
 
 AppsFlyer предоставляет API, которые позволяют рекламным сетям управлять процессом подписи кликов и тестировать его. См. список API в таблице ниже и следующие разделы с информацией, необходимой для использования API.
+
+<div id="click-signature-apis-1" />
 
 #### API подписи кликов
 
@@ -383,6 +419,8 @@ AppsFlyer предоставляет API, которые позволяют ре
 | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">Исключение приложения</Anchor> | Настройте идентификаторы приложений, подлежащих исключению из подписи кликов. |
 | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete">Удаление исключенного приложения</Anchor> | Настройте идентификаторы приложений, которые будут включены в подпись кликов после исключения. |
 
+<div id="legacy-versions" />
+
 ## Устаревшие версии
 
 Эти версии не следует использовать, они приведены только для справки
@@ -390,6 +428,8 @@ AppsFlyer предоставляет API, которые позволяют ре
 <div id="v1-legacy" />
 
 <Accordion title="V1 (устарел)">
+
+<div id="generate-secret-key-method" />
 
 ### Метод генерирования секретного ключа
 
@@ -410,6 +450,8 @@ AppsFlyer предоставляет API, которые позволяют ре
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
+
+<div id="parameters" />
 
 #### Параметры
 
@@ -458,6 +500,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Коды ответа HTTP">
 
+<div id="response-codes" />
+
 #### Коды ответа
 
 | Код | Сообщение | Примечания |
@@ -466,6 +510,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Не авторизовано | Неверный или отсутствующий заголовок авторизации |
 
 </Accordion>
+
+<div id="revoke-secret-key-method" />
 
 ### Метод отмены секретного ключа
 
@@ -484,6 +530,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
+
+<div id="parameters-1" />
 
 #### Параметры
 
@@ -510,6 +558,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <Accordion title="Коды ответа HTTP">
 
+<div id="response-codes-1" />
+
 #### Коды ответа
 
 | Код | Сообщение | Примечания |
@@ -518,6 +568,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 | 401 | Не авторизовано | Неверный или отсутствующий заголовок авторизации |
 
 </Accordion>
+
+<div id="test-method" />
 
 ### Метод тестирования
 
@@ -536,6 +588,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
+
+<div id="parameters-2" />
 
 #### Параметры
 
@@ -586,6 +640,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Коды ответа HTTP">
 
+<div id="response-codes-2" />
+
 #### Коды ответа
 
 | Код | Сообщение | Примечания |
@@ -594,6 +650,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Не авторизовано | Неверный или отсутствующий заголовок авторизации |
 
 </Accordion>
+
+<div id="configure-mode-method" />
 
 ### Метод настройки режима
 
@@ -614,6 +672,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
+
+<div id="parameters-3" />
 
 #### Параметры
 
@@ -638,6 +698,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Коды ответа HTTP">
 
+<div id="response-codes-3" />
+
 #### Коды ответа
 
 | Код | Сообщение | Примечания |
@@ -647,6 +709,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Не авторизовано | Неверный или отсутствующий заголовок авторизации |
 
 </Accordion>
+
+<div id="configure-circuit-breaker-method" />
 
 ### Метод настройки автоматического выключателя
 
@@ -669,6 +733,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
+
+<div id="request-body-json" />
 
 #### Тело запроса JSON
 
@@ -700,6 +766,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Коды ответа HTTP">
 
+<div id="response-codes-4" />
+
 #### Коды ответа
 
 | Код | Сообщение | Примечания |
@@ -709,6 +777,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Не авторизовано | Неверный или отсутствующий заголовок авторизации |
 
 </Accordion>
+
+<div id="get-configuration-method" />
 
 ### Получение метода настройки
 
@@ -776,6 +846,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="Коды ответа HTTP">
 
+<div id="response-codes-5" />
+
 #### Коды ответа
 
 | Код | Сообщение | Примечания |
@@ -784,6 +856,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | Не авторизовано | Неверный или отсутствующий заголовок авторизации |
 
 </Accordion>
+
+<div id="report-method" />
 
 ### Метод отчета
 
@@ -806,6 +880,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="parameters-4" />
 
 #### Параметры
 
@@ -855,6 +931,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="Коды ответа HTTP">
 
+<div id="response-codes-6" />
+
 #### Коды ответа
 
 | Код | Сообщение | Примечания |
@@ -863,6 +941,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | Не авторизовано | Неверный или отсутствующий заголовок авторизации |
 
 </Accordion>
+
+<div id="exclude-app-method" />
 
 ### Метод исключения приложения
 
@@ -909,6 +989,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Коды ответа HTTP">
 
+<div id="response-codes-7" />
+
 #### Коды ответа
 
 | Код | Сообщение | Примечания |
@@ -917,6 +999,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Не авторизовано | Неверный или отсутствующий заголовок авторизации |
 
 </Accordion>
+
+<div id="remove-excluded-app-method" />
 
 ### Метод удаления исключенного приложения
 
@@ -939,6 +1023,10 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-6" />
+
+<div id="parameters-5" />
 
 #### Параметры
 
@@ -968,6 +1056,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 <div id="http-response-codes::b5e059da" />
 
 <Accordion title="Коды ответа HTTP">
+
+<div id="response-codes-8" />
 
 #### Коды ответа
 
@@ -1019,6 +1109,8 @@ String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Дополнительные сведения
 

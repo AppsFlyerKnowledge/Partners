@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Кратко:** рекламные сети могут получать метаданные приложений, связанных с их учетной записью интегрированного партнера.
 
+<div id="get-app-list-api" />
+
 ## API для получения списка приложений
 
 В следующих разделах содержится информация, необходимая для использования API.
@@ -47,6 +49,8 @@ API-запрос состоит из метода, пути, обязатель�
 ```http
 GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
 ```
+
+<div id="get-app-list-mandatory-parameters" />
 
 #### Обязательные параметры для получения списка приложений
 
@@ -80,6 +84,8 @@ GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
     </tr>
   </tbody>
 </Table>
+
+<div id="pagination-mechanism" />
 
 #### **Механизм пагинации**
 
@@ -119,6 +125,8 @@ GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
     }
 }
 ```
+
+<div id="pagination-mechanism-parameters-optional" />
 
 #### Параметры механизма пагинации (необязательно)
 

@@ -31,6 +31,8 @@ x-zendesk:
 1. Ваша [ссылка атрибуции](/docs/tune-formerly-hasoffers-integration-with-appsflyer#создать-ссылку-атрибуции)
 2. Ваши [постбэки](/docs/tune-formerly-hasoffers-integration-with-appsflyer#создайте-постбэки-по-установкам-и-событиям-в-приложении) (для установок и событий в приложении)
 
+<div id="create-attribution-link" />
+
 ## Создать ссылку атрибуции
 
 Ссылка атрибуции состоит из базовой ссылки атрибуции AppsFlyer и дополнительных макросов, добавленных рекламной сетью.
@@ -43,6 +45,8 @@ x-zendesk:
 | app\_id (идентификатор приложения) | Уникальный идентификатор приложения — динамическое значение, которое меняется для каждого продвигаемого приложения |
 | pid= | Название медиаисточника, объединенное с `_int`, для идентификации интегрированных сетей |
 | c= | Доступно только в <Anchor target="_blank" href="/marketers/ru/docs/about-data-locker-advanced-reports">расширенных отчётах</Anchor>. |
+
+<div id="example-attribution-link-after-adding-tune-macros" />
 
 ### Пример ссылки атрибуции после добавления макросов TUNE
 
@@ -60,6 +64,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 
 Подробнее о [макросах TUNE](https://help.tune.com/hasoffers/parameters-macros-in-hasoffers/).
 
+<div id="create-install-and-in-app-event-postbacks" />
+
 ## Создайте постбэки по установкам и событиям в приложении
 
 Пошаговые инструкции по созданию постбэков для установок и событий в приложении:
@@ -71,7 +77,11 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 
 Узнайте больше о [глобальных URL-адресах постбэков TUNE](http://help.tune.com/hasoffers/global-postback-urls/).
 
+<div id="sample-postbacks" />
+
 ### Примеры постбэков
+
+<div id="global-install-postback" />
 
 #### Глобальный постбэк по установке:
 
@@ -82,6 +92,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 ```http
 https://NETWORK_ID.go2cloud.org/aff_lsr?offer_id={af_c_id}&transaction_id={clickid}
 ```
+
+<div id="in-app-event-postback" />
 
 #### Постбэк по внутреннему событию:
 
@@ -100,6 +112,8 @@ https://NETWORK_ID.go2cloud.org/aff_goal?a=lsr&goal_id={goal_id}&transaction_id=
 * goal\_id = тег события в дэшборде AppsFlyer для каждого из ваших приложений. Это фактическое название события в приложении.
 
 Узнать больше о <Anchor target="_blank" href="/partners/ru/docs/dynamic-event-mapping-for-in-app-events">динамическом сопоставлении событий для событий в приложении</Anchor>.
+
+<div id="finalizing-your-registration" />
 
 ## Завершение регистрации
 

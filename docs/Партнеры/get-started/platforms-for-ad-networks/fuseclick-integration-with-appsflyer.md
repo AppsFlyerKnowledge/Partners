@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Рекламные сети, использующие FuseClick, могут воспользоваться решением AppsFlyer для вероятностного моделирования, чтобы получать данные атрибуции об установках и событиях в приложении.
 
+<div id="basic-attribution-link" />
+
 ## Базовая ссылка атрибуции
 
 Ниже вы найдете базовую ссылку атрибуции с подробным объяснением каждого параметра:
@@ -57,6 +59,8 @@ https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_siteid={ADV_SID}
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ### Постбэки по установкам и внутренним событиям приложения
 
 Глобальный постбэк по установке:
@@ -66,6 +70,8 @@ https://tracking.zadsmobile.com/pb?tid={TID}
 ```
 
 По запросу в постбэк можно добавить дополнительную информацию об атрибуции, например код страны, Advertising ID, IDFA и другое.
+
+<div id="finalizing-your-registration" />
 
 ## Завершение регистрации
 

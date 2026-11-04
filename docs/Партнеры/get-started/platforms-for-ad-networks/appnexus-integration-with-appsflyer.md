@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Рекламные сети, использующие Affise, могут воспользоваться решением AppsFlyer для вероятностного моделирования, чтобы получать данные атрибуции об установках и событиях в приложении.
 
+<div id="starting-the-integration" />
+
 ## Начало интеграции
 
 Чтобы начать интеграцию, вы должны отправить в AppsFlyer ссылку атрибуции и постбэк для отчетности.
@@ -60,11 +62,15 @@ x-zendesk:
 
 Полный список макросов AppNexus можно посмотреть <Anchor target="_blank" href="https://wiki.appnexus.com/display/sdk/Welcome">здесь</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ### Шаблон полной ссылки атрибуции:
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=${SSP_DATA}&af_siteid=${PUBLISHER_ID}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### Постбэки по установкам и внутренним событиям приложения
 
@@ -76,11 +82,15 @@ https://sspx-router.adnxs.net/sspx?id={ID}&sspdata={clickid}
 
 `{ID}` — идентификатор сети, предоставленный AppNexus и добавляемый в дэшборде AppsFlyer для каждого приложения.
 
+<div id="appsflyer-install-dashboard" />
+
 ### Дэшборд установок AppsFlyer
 
 [![appnexus-pixelid.png](https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png)](https://support.appsflyer.com/hc/article_attachments/49929594144273)
 
 По запросу в постбэк можно добавить дополнительную информацию об атрибуции, например код страны, рекламный идентификатор, IDFA и т. д.
+
+<div id="finalizing-your-registration" />
 
 ## Завершение регистрации
 

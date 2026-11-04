@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Кратко:** Everflow — интегрированный партнер AppsFlyer. AppsFlyer отправляет Everflow данные атрибуции по установкам и событиям в приложении.
 
+<div id="initiating-the-integration-with-appsflyer" />
+
 ## Настройка интеграции с AppsFlyer
 
 **Чтобы начать интеграцию с AppsFlyer:**
@@ -37,6 +39,8 @@ x-zendesk:
    * Любые дополнительные значения, которые вы хотите использовать.
    * Ваш идентификатор сети Everflow (nid) и домен постбэка для настройки постбэков по установкам и событиям в приложении
 
+<div id="attribution-url-template" />
+
 ### Шаблон URL-адреса атрибуции
 
 ```http
@@ -48,6 +52,8 @@ https://app.appsflyer.com/{app_id}?pid=mediaName_int&clickid={transaction_id}&af
 Если у вас уже есть интеграция с AppsFlyer, свяжитесь с нами с помощью виджета помощника партнера
 
  и добавьте новый постбэк Everflow и шаблон ссылки атрибуции.
+
+<div id="creating-your-attribution-link" />
 
 ## Создание ссылки атрибуции
 
@@ -69,6 +75,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_i
 &af_cost_value={amount}&af_cost_currency={offer_currency}&af_cost_model=CPI
 ```
 
+<div id="note" />
+
 > 📘 **Примечание:**
 >
 > * Для моделей стоимости кампании, отличных от CPI, обновите параметр **&af\_cost\_model=**, указав соответствующую модель. Пример:  CPA, CPC
@@ -78,7 +86,11 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_i
 
 Чтобы просмотреть полный список макросов Everflow, нажмите<Anchor target="_blank" href="https://help.everflow.io/support/solutions/articles/22000176119-parameters-and-macros">здесь</Anchor>.
 
+<div id="integrating-your-install-and-in-app-event-postbacks" />
+
 ## Интеграция постбэков по установкам и in-app событиям
+
+<div id="note-1" />
 
 > 📘 **Примечание:**
 >
@@ -86,11 +98,15 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_i
 > * В приведенных ниже постбэках необходимо передать AppsFlyer ваш пользовательский домен Everflow вместо  [everflow\_domain\_placeholder].
 > * NID — это идентификатор сети, предоставленный Everflow.
 
+<div id="global-install-postback" />
+
 ## Глобальный постбэк по установке
 
 ```http
 https://[everflow_domain_placeholder]/?nid=[everflow_network_placeholder]&transaction_id=$$click(clickid)
 ```
+
+<div id="global-in-app-event-postback" />
 
 ## Глобальные постбэки от событий внутри приложения
 
@@ -107,6 +123,8 @@ https://[everflow_domain_placeholder]/?event_id=[everflow_eventid_placeholder]&n
 Это фактическое название события в приложении.
 
 Подробную информацию о динамическом сопоставлении событий для событий в приложении см. <Anchor target="_blank" href="/partners/ru/docs/dynamic-event-mapping-for-in-app-events">здесь</Anchor>
+
+<div id="event-setup-in-everflow" />
 
 ## Настройка событий в Everflow
 

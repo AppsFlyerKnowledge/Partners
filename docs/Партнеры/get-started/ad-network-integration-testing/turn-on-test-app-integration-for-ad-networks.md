@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Рекламные сети, которые тестируют интеграцию, должны включить интеграцию приложения (активацию).
 
+<div id="test-apps-for-ad-networks-ios-and-android" />
+
 ## Тестовые приложения для рекламных сетей (iOS и Android)
 
 После настройки интеграции и постбэков рекламные сети должны протестировать интеграцию с помощью тестовых приложений AppsFlyer. Перед тестированием рекламная сеть должна активировать интеграцию приложения и при необходимости включить дополнительные разрешения для рекламной сети. Активация выполняется один раз для каждого приложения.
@@ -31,6 +33,8 @@ x-zendesk:
 | <Anchor target="_blank" href="/partners/ru/docs/getting-started-onboarding-guide-for-ad-networks#часть-2-тестирование-при-помощи-приложений-рекламодателя">Android;</Anchor> | com.appsflyer.adNetworkTest |
 | <Anchor target="_blank" href="/partners/ru/docs/ios-integration-testing-for-ad-networks">https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png</Anchor> | id1543229303 |
 | <Anchor target="_blank" href="/partners/ru/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> | <ul><li>id888707085</li><li>id888707086</li><li>id888707087</li></ul> |
+
+<div id="activation-procedure" />
 
 ### Процедура активации
 

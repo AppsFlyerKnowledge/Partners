@@ -30,9 +30,13 @@ x-zendesk:
 
 Чтобы начать интеграцию, предоставьте AppsFlyer URL-адрес ссылки атрибуции и URL-адрес постбэка. Эти URL-адреса нужны для отчетности. В этой статье объясняется, как создать эти URL-адреса.
 
+<div id="attribution-link-url" />
+
 ## URL-адрес ссылки атрибуции
 
 В этом разделе приведены базовая ссылка атрибуции и описания связанных параметров.
+
+<div id="base-attribution-link-url" />
 
 ### Базовый URL-адрес ссылки атрибуции
 
@@ -48,7 +52,11 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 | pid= | Название медиаисточника | **\_int** обозначает **интегрированную** сеть |
 | c= | Доступно только в <Anchor target="_blank" href="/marketers/ru/docs/about-data-locker-advanced-reports">расширенных отчётах</Anchor>. | Имя, заданное рекламодателем |
 
+<div id="attribution-link-parameters" />
+
 ### Параметры ссылки атрибуции
+
+<div id="note" />
 
 > 📘 **Примечание**
 >
@@ -65,11 +73,17 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 | &af\_siteid= | `{publisher_id}` | Идентификатор партнера, продвигающего предложение |
 | &af\_c\_id= | `{camp_id}` | Тип конверсии, который был зафиксирован в системе AppsFlyer из-за действий пользователя, связанных с [conversion\_name](#attribution::942d31ab). |
 
+<div id="postback-urls-for-install-and-in-app-events" />
+
 ## URL-адреса постбэков для установок и событий в приложении
 
 В этом разделе приведены примеры URL-адресов постбэка и параметров для установки и событий в приложении.
 
+<div id="ios-postback-urls" />
+
 ### URL-адреса постбэка **iOS**
+
+<div id="global-install-postback" />
 
 #### Глобальный постбэк по установке
 
@@ -77,13 +91,19 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&idfa={idfa}
 ```
 
+<div id="global-in-app-event-postback" />
+
 #### Глобальные постбэки от событий внутри приложения
 
 ```http
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&idfa={idfa}&goal_value={event-name}
 ```
 
+<div id="android-postback-urls" />
+
 ### URL-адреса постбэка **Android**
+
+<div id="global-install-postback-1" />
 
 #### Глобальный постбэк по установке
 
@@ -91,11 +111,15 @@ https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxx
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&gaid={android_id}
 ```
 
+<div id="global-in-app-event-postback-1" />
+
 #### Глобальные постбэки от событий внутри приложения
 
 ```http
 https://yourdomain.com/acquisition?click_id={click_id}&security_token=xxxxxxxxxxxxxxx&gaid={android_id}&goal_value={event-name}
 ```
+
+<div id="postback-parameters" />
 
 ### Параметры постбэка
 
@@ -105,6 +129,8 @@ https://yourdomain.com/acquisition?click_id={click_id}&security_token=xxxxxxxxxx
 | название события | <ul><li>"event\_name"</li><li>Определяется рекламодателем</li></ul> |
 | security\_token | Предоставляется Trackier |
 | Код страны, рекламный идентификатор, IDFA и т. д. | [Необязательно] Информация об атрибуции, которую можно добавить в постбэк |
+
+<div id="finalizing-your-registration" />
 
 ## Завершение регистрации
 

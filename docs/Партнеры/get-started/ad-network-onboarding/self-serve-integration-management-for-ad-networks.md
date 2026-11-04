@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="Самостоятельное управление интеграцией для рекламных сетей" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/medias/9kvwrhnzjo/swatch" providerUrl="https://fast.wistia.com" />
 
+<div id="prerequisites" />
+
 ## **Необходимые условия:**
 
 * Прежде чем вы сможете управлять ссылками атрибуции и постбэками, вам необходимо иметь учетные данные для входа (имя пользователя и пароль) в AppsFlyer. Чтобы <Anchor target="_blank" href="/partners/ru/docs/getting-started-onboarding-guide-for-ad-networks">создать аккаунт партнера</Anchor>, попросите клиента AppsFlyer (рекламодателя) <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#приглашайте-новых-партнёров-в-appsflyer">пригласить вас</Anchor>.
@@ -35,10 +37,14 @@ x-zendesk:
   * Порты:  80, 443
 * ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Только пользователи с правами администратора могут получить доступ к этому разделу и управлять им.
 
+<div id="accessing-integration-management" />
+
 ## Доступ к управлению интеграцией
 
 1. Войдите в свой аккаунт партнера в AppsFlyer.
 2. Нажмите раскрывающееся меню в правом верхнем углу > **Управление постбэками**.
+
+<div id="attribution-link" />
 
 ## Ссылка атрибуции
 
@@ -54,6 +60,8 @@ x-zendesk:
    * **Ваш макрос**: добавьте макрос, который заполняет параметры значениями.
    * **Включить**: установите флажок, чтобы включить параметр в ссылку.
 
+   <div id="important" />
+
    > 🚧 **Важно!**
    >
    > * Добавьте параметры, связанные с кампанией и объявлениями, чтобы получить более надежные данные об эффективности кампании.
@@ -68,6 +76,8 @@ x-zendesk:
 <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">Подробнее о ссылках атрибуции и доступных параметрах</Anchor>.
 
 В случае возникновения каких-либо проблем обращайтесь к нам с помощью <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">виджета помощи партнерам</Anchor>.
+
+<div id="default-postback" />
 
 ## Постбэк по умолчанию
 
@@ -86,6 +96,8 @@ x-zendesk:
 
    <Anchor target="_blank" href="/partners/ru/docs/postback-macros-for-ad-networks">Полный список макросов для постбэков</Anchor>
 
+   <div id="important-1" />
+
    > 🚧 **Важно!**
    >
    > * Чтобы иметь возможность различать постбэки для легитимных событий и постбэки с отказом, настройте <Anchor target="_blank" href="/partners/ru/docs/postback-macros-for-ad-networks#макросы-установки-внутренние-события-приложения-и-отклоненные-события">макросы для постбэков с отказом</Anchor>.
@@ -103,6 +115,8 @@ x-zendesk:
 <Anchor target="_blank" href="/marketers/ru/docs/in-app-event-postback-configuration">Дополнительная информация и примеры постбэков.</Anchor>
 
 В случае возникновения каких-либо проблем воспользуйтесь <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">виджетом помощи партнерам</Anchor>.
+
+<div id="advanced-privacy-and-skan-postbacks" />
 
 ## Постбэки для расширенной конфиденциальности и постбэки SKAN
 
@@ -127,6 +141,8 @@ x-zendesk:
    Список <Anchor target="_blank" href="/partners/ru/docs/skan-integration-guide-for-ad-networks#получение-данных-от-appsflyer">макросов для постбэков SKAdNetwork</Anchor>
 
    Полный список <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">макросов для постбэков в режиме расширенной конфиденциальности</Anchor>.
+
+   <div id="important-2" />
 
    > 🚧 **Важно!**
    >

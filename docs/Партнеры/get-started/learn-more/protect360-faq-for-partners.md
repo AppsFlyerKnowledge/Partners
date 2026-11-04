@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Найдите ответы на часто задаваемые вопросы партнеров о Protect360.
 
+<div id="impression-level-anomalies" />
+
 ## Аномалии на уровне показов
 
 <div id="why-are-impressionsclicks-being-capped" />
@@ -54,6 +56,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="installin-app-event-level-anomalies" />
+
 ## Аномалии на уровне установок/событий в приложении
 
 <div id="why-was-my-test-install-rejected-from-attribution" />
@@ -75,6 +79,8 @@ x-zendesk:
 Рекомендуем прочитать о <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data-reports#причины-блокировки">причинах блокировки в Protect360</Anchor>.
 
 </Accordion>
+
+<div id="protect360-data-visibility-and-comprehension" />
 
 ## Видимость и понимание данных в Protect360
 

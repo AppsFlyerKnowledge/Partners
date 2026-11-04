@@ -28,9 +28,13 @@ x-zendesk:
 
 ![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
 
+<div id="what-is-appsflyer" />
+
 ## Что такое AppsFlyer?
 
 AppsFlyer, лидер в области мобильной атрибуции, приветствует вас в качестве нашего интегрированного партнера рекламной сети. Эта статья предназначена для рекламных сетей, которые завершили регистрацию партнеров AppsFlyer. Если вы хотите зарегистрироваться как партнер, попросите <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#приглашайте-новых-партнёров-в-appsflyer">клиента AppsFlyer (рекламодателя) пригласить вас.</Anchor>
+
+<div id="ad-network-onboarding" />
 
 ## Ознакомление рекламной сети
 
@@ -56,6 +60,8 @@ AppsFlyer, лидер в области мобильной атрибуции, �
 * Оценки времени в этой статье основаны на нашем опыте работы с рекламными сетями. Каждая интеграция немного отличается, поэтому фактическое время может варьироваться.
 * AppsFlyer поддерживает множество <Anchor target="_blank" href="/partners/ru/docs/platforms-for-ad-networks">платформ для повышения эффективности</Anchor>. Если вы используете платформу из списка, перед интеграцией обязательно ознакомьтесь с инструкциями для этой платформы.
 
+<div id="onboarding-steps" />
+
 ## Шаги ознакомления
 
 **Для интеграции с AppsFlyer**:
@@ -64,9 +70,13 @@ AppsFlyer, лидер в области мобильной атрибуции, �
 2. [Выполните часть 2 — тестирование с приложениями рекламодателей.](/docs/getting-started-onboarding-guide-for-ad-networks#часть-2-тестирование-при-помощи-приложений-рекламодателя)
 3. [Выполните часть 3 — используйте дэшборд AppsFlyer и инструменты отчетности.](/docs/getting-started-onboarding-guide-for-ad-networks#часть-3-дэшборд-appsflyer-и-параметры-отчетности)
 
+<div id="part-1-integration-and-testing" />
+
 ### Часть 1: Интеграция и тестирование
 
 <table><thead><tr><th>Действие</th><th>Требуемые минуты</th></tr></thead><tbody><tr><td>Дождитесь электронного письма с подтверждением регистрации, которое предложит вам выполнить обязательные шаги интеграции.</td><td>--</td></tr><tr><td colspan="2"> <strong>Обязательные шаги интеграции</strong> </td></tr><tr><td> <a href="./self-serve-integration-management-for-ad-networks#ссылка-атрибуции" target="_blank">Укажите ссылку атрибуции</a>: Ссылки атрибуции — это URL-адреса с макросами. Эти макросы заполняются вами фактическими ценностями, значениями и отправляются в AppsFlyer каждый раз, когда пользователь нажимает на ссылку. <br/>Примечание! Если вы используете платформу сети эффективности, поддерживаемую AppsFlyer, вам необходимо учитывать инструкцию, специфичную для этой платформы. См. <a href="./platforms-for-ad-networks" target="_blank">Руководства по сетям эффективности</a>. </td><td>60</td></tr><tr><td> <a href="./self-serve-integration-management-for-ad-networks#постбэк-по-умолчанию" target="_blank">Укажите макросы постбэка</a>: Постбэки — это URL-адреса, содержащие макросы, которые заполняются в AppsFlyer и отправляются на ваши серверы в реальном времени после каждой конверсии.</td><td>60</td></tr><tr><td>Войдите в <a href="https://hq1.appsflyer.com/auth/login" target="_blank">дэшборд AppsFlyer</a>, используя предоставленные учетные данные. </td><td> </td></tr><tr><td><p>Загрузите логотип вашей компании. Ваш логотип должен быть в формате прозрачного PNG размером 200 X 50. </p><ol><li>В AppsFlyer в строке меню выберите свой адрес электронной почты &gt; <strong>Настройка партнера</strong>. </li><li>На вкладке <strong>Профиль</strong> загрузите логотип своей компании. </li><li>Нажмите <strong>Сохранить</strong>.</li></ol></td><td>5</td></tr><tr><td><p>Проверьте интеграцию с помощью тестовых приложений AppsFlyer:</p><ul><li><a href="./android-integration-testing-for-ad-networks" target="_blank">Android;</a></li><li><a href="./ios-integration-testing-for-ad-networks" target="_blank">https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png</a></li></ul></td><td>10</td></tr><tr><td colspan="2"><strong>Дополнительные шаги интеграции</strong></td></tr><tr><td>[iOS] Если вашим рекламодателям необходима функция AppsFlyer Aggregated Advanced Privacy, выполните интеграцию <a href="./self-serve-integration-management-for-ad-networks#постбэки-для-расширенной-конфиденциальности-и-постбэки-skan" target="_blank">Advanced Privacy</a>.</td><td>60</td></tr><tr><td>[iOS] Если вы запускаете кампании SKAdNetwork, выполните интеграцию <a href="./self-serve-integration-management-for-ad-networks#постбэки-для-расширенной-конфиденциальности-и-постбэки-skan" target="_blank">SKAdNetwork</a>. </td><td>60</td></tr><tr><td><h4><strong><span id="authorized-agencies"></span>Авторизованные агентства</strong></h4><p>Создайте и управляйте списком агентств, которым вы даете разрешение на проведение кампаний через вашу интеграцию сети. Это делается путем ввода идентификатора агентства (af_prt) в разделе <a href="./set-up-your-list-of-authorized-agencies" target="_blank"><strong>Авторизованные агентства</strong></a>  Центра безопасности. Чтобы получить идентификатор агентства, агентство должно связаться с вами и предоставить его.</p></td><td>2</td></tr><tr><td colspan="2"><p><strong>Дополнительные функции и соображения</strong><br/> </p><p>Рассмотрите возможность внедрения интеграций и опций на основе требований рекламодателя.</p></td></tr><tr><td>Чтобы исключить отправку мошеннических кликов с использованием вашего партнерского идентификатора, внедрите <a href="./click-signing-for-ad-networks" target="_blank">подписание кликов</a>. </td><td>&gt;60</td></tr><tr><td>Для рекламодателей, использующих Protect360 или правила валидации, добавьте <a href="./postback-macros-for-ad-networks#макросы-установки-внутренние-события-приложения-и-отклоненные-события" target="_blank">отклоненные постбэки атрибуции</a>.</td><td>15</td></tr><tr><td>Отправка стоимости в AppsFlyer через API. См. <a href="./incost-api-for-ad-networks" target="_blank">InCost API</a>.</td><td>&gt;60</td></tr><tr><td> <a href="/marketers/ru/docs/retargeting-attribution-guide" target="_blank">Интеграция ретаргетинга</a>.</td><td>15</td></tr><tr><td> <a href="/marketers/ru/docs/measure-view-through-engagements" target="_blank">Интеграция атрибуции по просмотрам</a>.</td><td>15</td></tr></tbody></table>
+
+<div id="part-2-test-using-advertiser-apps" />
 
 ### Часть 2: Тестирование при помощи приложений рекламодателя
 
@@ -80,6 +90,8 @@ AppsFlyer, лидер в области мобильной атрибуции, �
 | Рекламодатель (администратор) | <Anchor target="_blank" href="/marketers/ru/docs/registering-test-devices">Зарегистрируйте свои тестовые устройства</Anchor>. Попросите рекламодателя сделать это от вашего имени. | 3 |
 | Рекламные сети | <Anchor target="_blank" href="/partners/ru/docs/test-marketer-campaign-integration-with-the-ad-network">Протестируйте интеграцию с помощью приложений рекламодателя.</Anchor> | 60 |
 
+<div id="part-3-appsflyer-dashboard-and-reporting-options" />
+
 ### Часть 3: Дэшборд AppsFlyer и параметры отчетности
 
 | Вариант |
@@ -88,9 +100,13 @@ AppsFlyer, лидер в области мобильной атрибуции, �
 | Получайте агрегированные данные об эффективности через облачное хранилище с помощью <Anchor target="_blank" href="/partners/ru/docs/data-locker-for-partners">Data Locker</Anchor> для рекламных сетей. |
 | Получите необработанные данные Protect360<Anchor target="_blank" href="/marketers/ru/docs/raw-data-export-page">.</Anchor> |
 
+<div id="integration-validation-period" />
+
 ## Период проверки интеграции
 
 Для обеспечения сохранности экосистемы AppsFlyer и защиты внутренних систем от недопустимого трафика все новые интеграции рекламных сетей проходят период проверки. В течение этого периода AppsFlyer тщательно проверяет трафик и оценивает его качество, прежде чем сделать интеграцию доступной другим рекламодателям на <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations">маркетплейсе</Anchor>. Интеграции рекламных сетей, которые после проверки не соответствуют критериям высококачественного трафика, могут быть подвергнуты блокировке аккаунта.
+
+<div id="validation-periodfaq" />
 
 ### Период проверки — часто задаваемые вопросы
 

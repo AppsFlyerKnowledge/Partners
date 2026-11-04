@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Кратко:** Рекламные сети, использующие CAKE, могут получать от AppsFlyer данные атрибуции об установках и событиях в приложении.
 
+<div id="base-attribution-link" />
+
 ## Базовая ссылка атрибуции
 
 Ниже вы найдете базовую ссылку атрибуции с подробным объяснением каждого параметра:
@@ -38,6 +40,8 @@ x-zendesk:
 | pid | Имя медиа-источника включает **\_int** для идентификации **интегрированной** сети на серверах AppsFlyer |
 | c | Название кампании |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### Рекомендуемые параметры ссылки атрибуции
 
 | Параметр AppsFlyer | Макросы CAKE | Описание |
@@ -49,19 +53,27 @@ x-zendesk:
 
 Полный список макросов CAKE можно посмотреть <Anchor target="_blank" href="https://support.getcake.com/support/solutions/articles/5000566463-tokens">здесь</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ### Шаблон полной ссылки атрибуции
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#oreqid#
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## Постбэки по установкам и внутренним событиям приложения
+
+<div id="global-install-postback" />
 
 ### Глобальный постбэк по установке
 
 ```http
 https://{company-domain}.com/p.ashx?f=pb&r=(Click-ID)
 ```
+
+<div id="global-in-app-event-postback" />
 
 ### Глобальные постбэки от событий внутри приложения
 
@@ -73,11 +85,15 @@ https://{company-domain}.com/p.ashx?f=pb&r=(Click-ID)
 e= задается рекламодателем как **Метка события** в дэшборде AppsFlyer для каждого Приложения — это фактическое название события в приложении.  
 Чтобы посмотреть полную структуру постбэка CAKE, кликните здесь
 
+<div id="appsflyer-in-app-events-dashboard" />
+
 ### Дэшборд AppsFlyer с событиями в приложении
 
 ![IAEP.png](https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png)
 
 По запросу в постбэк может быть добавлена дополнительная информация об атрибуции, например код страны, рекламный идентификатор, IDFA и т. д.
+
+<div id="finalizing-your-registration" />
 
 ## Завершение регистрации
 

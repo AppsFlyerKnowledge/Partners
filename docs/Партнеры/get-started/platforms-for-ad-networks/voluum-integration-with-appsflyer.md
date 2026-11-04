@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Рекламные сети, использующие Voluum, могут воспользоваться решением AppsFlyer для вероятностного моделирования, чтобы получать данные атрибуции об установках и событиях в приложении.
 
+<div id="starting-the-integration" />
+
 ## Начало интеграции
 
 Чтобы начать интеграцию, вы должны отправить в AppsFlyer ссылку атрибуции и постбэк для отчетности.
@@ -51,11 +53,15 @@ x-zendesk:
 
 ** Полный список макросов Voluum можно посмотреть <Anchor target="_blank" href="http://feedback.voluum.com/knowledgebase/articles/318681-click-urls">здесь</Anchor>
 
+<div id="complete-attribution-link-template" />
+
 ### Шаблон полной ссылки атрибуции
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### Постбэки по установкам и внутренним событиям приложения
 
@@ -74,10 +80,14 @@ https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary
 ** `{Company-Domain}` — идентификатор сети (доменное имя), предоставленный Volumm.  
 ** txid= Рекламодатель задает его как **Event Tag** на дэшборде AppsFlyer для каждого приложения. Это фактическое название события в приложении.
 
+<div id="appsflyers-in-app-event-dashboard" />
+
 ### Дэшборд AppsFlyer событий в приложении
 
 ![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
 ** По запросу в постбэк может быть добавлена дополнительная информация об атрибуции, например код страны, ID рекламы, IDFA и т.д.
+
+<div id="finalizing-your-registration" />
 
 ## Завершение регистрации
 

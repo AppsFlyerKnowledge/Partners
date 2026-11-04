@@ -29,6 +29,8 @@ x-zendesk:
 
 Чтобы начать интеграцию, вы должны отправить в AppsFlyer ссылку атрибуции и постбэк для отчетности.
 
+<div id="base-attribution-link" />
+
 ## Базовая ссылка атрибуции
 
 Ниже вы найдете базовую ссылку атрибуции с подробным объяснением каждого параметра:
@@ -47,15 +49,21 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 Полный список параметров AppsFlyer можно посмотреть <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">здесь</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ## Шаблон полной ссылки атрибуции
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## Постбэки по установкам и внутренним событиям приложения
 
 Ниже приведены примеры постбэков по установкам и событиям в приложении:
+
+<div id="global-install-postback-ios" />
 
 ### Глобальный постбэк по установке iOS
 
@@ -63,17 +71,23 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}
 ```
 
+<div id="global-install-postback-android" />
+
 ### Глобальный постбэк по установке Android
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
 
+<div id="global-in-app-event-postback-ios" />
+
 ### Глобальный постбэк по событию в приложении iOS
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}&goal={event-name}
 ```
+
+<div id="global-in-app-event-postback-android" />
 
 ### Глобальный постбэк по событию в приложении Android
 
@@ -86,6 +100,8 @@ Domain.com — это имя идентификатора сети (домена
 e= задается как **Event Name** в дэшборде AppsFlyer для каждого приложения рекламодателем — это фактическое название события в приложении из приложения.
 
 По запросу в постбэк может быть добавлена дополнительная информация об атрибуции, например код страны, рекламный идентификатор, IDFA и т. д.
+
+<div id="finalizing-your-registration" />
 
 ## Завершаем вашу регистрацию
 

@@ -31,6 +31,8 @@ x-zendesk:
 1. Ваша ссылка для атрибуции
 2. Ваш постбэк (для установок и событий в приложении)
 
+<div id="creating-the-attribution-link" />
+
 ## Создание ссылки атрибуции
 
 ссылка атрибуции состоит из базовой ссылки атрибуции AppsFlyer, приведенной ниже, и дополнительных макросов, добавленных рекламной сетью.
@@ -60,6 +62,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 ```
 
 <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">Полный список параметров AppsFlyer</Anchor>
+
+<div id="global-postbacks-for-installs-and-in-app-events" />
 
 ## Глобальные постбэки для установок и событий в приложении:
 
@@ -161,10 +165,14 @@ https://companyname.156th.com/conv?transaction_id={publisher_ref_id}&ios_ifa={io
 https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction_id}&af_siteid={pub_id}-{sub_pub_id}&advertising_id={google_id}&idfa={ios_ifa}
 ```
 
+<div id="finalizing-your-registration" />
+
 ## Завершение регистрации
 
 * Если у вас есть интеграция с AppsFlyer, свяжитесь с нами через <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">виджет помощи партнерам</Anchor>.
 * Если у вас нет интеграции с AppsFlyer, заполните заявку на регистрацию рекламного партнера <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">здесь</Anchor>.
+
+<div id="mapping-of-appsflyer-parameters-and-hubscale-macros" />
 
 ## Сопоставление параметров AppsFlyer и макросов Hubscale
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Рекламные сети, использующие PeerClick, могут воспользоваться решением AppsFlyer для вероятностного моделирования, чтобы получать данные об атрибуции установок и событий в приложении.
 
+<div id="starting-the-integration" />
+
 ## Начало интеграции
 
 Чтобы начать интеграцию, вы должны отправить в AppsFlyer ссылку атрибуции и постбэк для отчетности.
@@ -47,16 +49,22 @@ x-zendesk:
 | &clickid= | `{clickid}` | Уникальный идентификатор транзакции пользовательской сессии — **обязательно** |
 | &af\_siteid= | `{trafficsource.id}` | Идентификатор источника трафика — **необязательно** |
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > * Полный список параметров AppsFlyer можно посмотреть <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">здесь</Anchor>
 > * Полный список PeerClick можно посмотреть <Anchor target="_blank" href="https://help-center.peerclick.com/en/">здесь</Anchor>
+
+<div id="complete-attribution-link-template" />
 
 ### Шаблон полной ссылки атрибуции
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### Постбэки по установкам и внутренним событиям приложения
 
@@ -72,6 +80,8 @@ https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 
 * **userid:** Идентификатор пользователя, предоставленный PeerClick
 * **txid:** Фактическое название события в приложении, установленное рекламодателем в качестве **Event Tag** (тег события) на дэшборде AppsFlyer для каждого приложения.
+
+<div id="appsflyers-in-app-event-dashboard" />
 
 ### Дэшборд AppsFlyer событий в приложении
 

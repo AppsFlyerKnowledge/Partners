@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
 
+<div id="data-locker-for-partners" />
+
 ## Data Locker для партнёров
 
 Data Locker для партнеров доставляет данные приложения в облачное хранилище. Рекламодатели задают разрешения, на основе которых AppsFlyer может предоставлять выбранные данные определенному партнеру.
@@ -54,6 +56,8 @@ Data Locker для партнеров доставляет данные прил
 * <Anchor target="_blank" href="/partners/ru/docs/data-locker-reports-for-api-partners">Маркетинговые партнёры</Anchor>
 
 </Accordion>
+
+<div id="data-storage-architecture" />
 
 ## Архитектура хранилища данных
 
@@ -124,6 +128,8 @@ Data Locker для партнеров доставляет данные прил
 | Хранение данных | Контролируется вами |
 | Безопасность | Хранилищем управляете вы.<ul><li>**AWS**: По этой корзине AppsFlyer требуются разрешения GetObject, ListBucket, DeleteObject, PutObject. Корзина должна быть выделена для использования AppsFlyer. Не задействуйте ее для других целей.</li><li><Anchor target="_blank" href="/marketers/ru/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor></li></ul> |
 
+<div id="notice-to-security-officers" />
+
 #### **Примечание для сотрудников службы безопасности**
 
 Рассмотрим:
@@ -155,6 +161,8 @@ Data Locker для партнеров доставляет данные прил
 
 </Accordion>
 
+<div id="procedures" />
+
 ## Процедуры
 
 <div id="set-up-data-locker" />
@@ -181,6 +189,8 @@ Data Locker для партнеров доставляет данные прил
 3. Следуйте инструкциям по настройке <Anchor target="_blank" href="/marketers/ru/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">Data Locker</Anchor>, шаги 3-16.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Дополнительные сведения
 

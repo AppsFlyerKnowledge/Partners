@@ -25,18 +25,26 @@ x-zendesk:
 ---
 > **Краткий обзор:** Отчет с единым источником истины (SSOT) в Data Locker позволяет получить единый и точный обзор эффективности кампаний для приложений, объединяя данные из различных методов атрибуции, таких как сопоставление идентификаторов и SKAN.  Он позволяет загружать данные в системы бизнес-аналитики для получения максимально точных данных.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > * Чтобы мы могли предоставлять вам данные, рекламодатели должны [дать разрешение](/docs/single-source-of-truth-ssot-data-locker-report-for-ad-networks#permissions) на дэшборде.
 > * В отчёте по SSOT от Data Locker содержатся данные на основе LTV, а не активности. Это означает, что данные отражают пожизненную ценность пользователей во всех точках взаимодействия, а не их активность в приложении или событии.
 
+<div id="what-is-data-locker" />
+
 ## Что такое Data Locker
 
 Data Locker — это безопасное решение, которое передает данные непосредственно на основные облачные платформы, такие как AWS, GCS и Snowflake. Это позволяет легко интегрировать и использовать данные во внутренних системах бизнес-аналитики для комплексного анализа и составления отчетов. <Anchor target="_blank" href="/partners/ru/docs/data-locker-for-partners">Подробнее</Anchor>.
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## Что такое единый источник истины (SSOT)
 
 Решение «Единый источник истины» (SSOT) призвано решить проблему фрагментации данных, предлагая единый и точный обзор эффективности кампаний для приложений путем объединения данных из различных методов атрибуции, таких как сопоставление идентификаторов и SKAN. <Anchor target="_blank" href="/marketers/ru/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Подробнее</Anchor>.
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## Преимущества отчетов SSOT в Data Locker
 
@@ -107,6 +115,8 @@ Data Locker — это безопасное решение, которое пе�
 | Актуальность данных | <ul><li>Ежедневно.</li><li>Метрики рассчитываются на основе данных, доступных в полночь по UTC, то есть на конец дня.</li><li>SLA: Новые отчеты доступны в Data Locker к 16:00 UTC. Каждый день создается новая версия для последних 15 дат установки. <Anchor target="_blank" href="/marketers/ru/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy">Подробнее</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## Структура отчета
 
@@ -490,6 +500,8 @@ AppsFlyer моделирует данные, которые не могут пр
 
 </Accordion>
 
+<div id="directory-structure" />
+
 ## Структура каталогов
 
 <div id="report-folder-hierarchy" />
@@ -556,6 +568,8 @@ bucket
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## Информация для разработчиков систем бизнес-аналитики
 
 **Объем данных в отчете:**
@@ -581,6 +595,8 @@ bucket
 <div id="days-postattribution" />
 
 <Accordion title="Дни после атрибуции">
+
+<div id="important" />
 
 > 🚧 **Важно!**
 >

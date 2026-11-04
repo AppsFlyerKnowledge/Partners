@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Рекламные сети интегрируются с AppsFlyer SKAdNetworks (SKAN), что позволяет им оптимизировать кампании и атрибутировать генерируемый ими трафик.
 
+<div id="appsflyer-offering-for-ad-networks" />
+
 ## Предложение AppsFlyer для рекламных сетей
 
 **Узнайте больше о решении AppsFlyer SKAN для рекламодателей:**
@@ -42,6 +44,8 @@ x-zendesk:
   * Рекламные сети, имеющие интеграцию SKAN, сертифицированы и идентифицированы как таковые на дэшборде AppsFlyer.
   * Это гарантирует рекламодателям, что они работают с рекламными сетями, которые могут быть детерминированно измерены с помощью этой модели атрибуции.
 
+<div id="skan-data-flow" />
+
 ## Поток данных SKAN
 
 ![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
@@ -54,12 +58,16 @@ x-zendesk:
    * **Перенаправить:** сеть запрашивает iOS-устройство перенаправить постбэк непосредственно на AppsFlyer. В этом случае обогащение данных кампании будет осуществляться через отдельный API между AppsFlyer и рекламной сетью.
 3. **AppsFlyer** проверяет и декодирует постбэк. Затем он отправляет декодированный и обогащенный постбэк в рекламную сеть (параллельно с передачей его рекламодателю).
 
+<div id="main-integration-parts" />
+
 ## Основные части интеграции
 
 Интеграция SKAN между AppsFlyer и рекламными сетями состоит из следующих основных частей, описанных в этой статье:
 
 * Рекламные сети отправляют данные SKAN в AppsFlyer
 * Рекламные сети получают обогащенные и декодированные данные от AppsFlyer посредством постбэков
+
+<div id="send-data-to-appsflyer" />
 
 ## Отправка данных в AppsFlyer
 
@@ -99,6 +107,8 @@ x-zendesk:
 * Отправляет постбэк в AppsFlyer
 * **Внимание!** Перед отправкой постбэка в AppsFlyer проверьте <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/SKAdnetwork/verifying_an_install-validation_postback">подпись атрибуции</Anchor> Apple с помощью содержимого исходящего постбэка, чтобы убедиться, что вы случайно не повредили данные.
 
+<div id="skan-enriched-postback-protocol" />
+
 #### Протокол обогащенных постбэков SKAN
 
 | Конечная точка | `https://skadpostbacks.appsflyer.com/api/postbacks` |
@@ -106,6 +116,8 @@ x-zendesk:
 | HTTP-метод | POST |
 | Принятые типы контента | `application/json` |
 | Коды возврата | 200 OK: Полученный постбэк имеет действительный формат.<br /><br />400: Неверный запрос: Некорректный JSON, пустой JSON, отсутствуют обязательные поля. |
+
+<div id="skan-enriched-postback-json-parameters" />
 
 #### Параметры обогащенных постбэков SKAN в JSON
 
@@ -140,6 +152,8 @@ x-zendesk:
 | Креатив | строка | <ul><li>Актуально только для SKAN 4+</li><li>Доступно при использовании дополнительных цифр в идентификаторе источника source\_identifier для дополнительной детализации кампании.</li></ul> | Рекламная сеть |
 | Дата, когда было обнаружено мошенничество с атрибуцией. | строка | <ul><li>Актуально только для SKAN 4+</li><li>Доступно при использовании дополнительных цифр в идентификаторе источника source\_identifier для дополнительной детализации кампании.</li></ul> | Рекламная сеть |
 
+<div id="curl-exampleenriched-skan-3-postback" />
+
 #### **Пример Curl — обогащенный постбэк SKAN 3**
 
 ```bash
@@ -161,6 +175,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "campaign-id": 99
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-fine-conversion-values" />
 
 #### **Пример Curl — обогащенный постбэк SKAN 4 с точными значениями конверсии**
 
@@ -184,6 +200,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "attribution-signature": "MEUCIGRmSMrqedNu6uaHyhVcifs118R5z/AB6cvRaKrRRHWRAiEAv96ne3dKQ5kJpbsfk4eYiePmrZUU6sQmo+7zfP/1Bxo="
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-coarse-conversion-values" />
 
 #### Пример Curl — обогащенный постбэк SKAN 4 с приблизительными значениями конверсии
 
@@ -223,6 +241,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
 * **Повышенное доверие рекламодателей:** MMP действует от имени рекламодателя. Предоставляя AppsFlyer доступ к постбэку из первых рук, рекламодатели уверены, что постбэки не подвергаются манипуляциям во время передачи.
 * **От рекламной сети не требуется обработки данных:** Рекламные сети отвечают командой перенаправления (на устройство), что устраняет необходимость обработки постбэков. Для сравнения, метод обогащения и пересылки требует, чтобы рекламные сети принимали постбэк, обогащали его дополнительными параметрами и, наконец, пересылали его в AppsFlyer.
 
+<div id="implementation" />
+
 #### **Реализация**
 
 1. Настройте сервер на ответ HTTP 307, перенаправляющий постбэк на *[https://skadredirect.appsflyer.com/api/redirects](https://skadredirect.appsflyer.com/api/redirects)*
@@ -235,6 +255,8 @@ https://skadredirect.appsflyer.com/api/redirects?
   &ad-network-campaign-id=243232&ad-network-campaign-name=yarg_campaign_name
   &ad-network-adset-name=dsdsa&creative=examplecreative&channel=channelexample
 ```
+
+<div id="query-params-for-campaign-details-not-mandatory" />
 
 #### Параметры запроса для получения сведений о кампании (не обязательно)
 
@@ -255,6 +277,8 @@ https://skadredirect.appsflyer.com/api/redirects?
 | Дата, когда было обнаружено мошенничество с атрибуцией. | <ul><li>Только для SKAN 4+</li><li>Доступно при использовании дополнительных цифр в идентификаторе источника source\_identifier для дополнительной детализации кампании.</li></ul> |
 
 </Accordion>
+
+<div id="receive-data-from-appsflyer" />
 
 ## Получение данных от AppsFlyer
 
@@ -314,6 +338,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 </Accordion>
 
+<div id="integration-testing" />
+
 ## Тестирование интеграции
 
 Чтобы подтвердить интеграцию с AppsFlyer, используйте один или оба из следующих методов.
@@ -339,6 +365,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 Используя этот метод, рекламная сеть отправляет AppsFlyer фактические постбэки SKAN из реальных приложений.
 
+<div id="testing-integration" />
+
 #### Тестирование интеграции
 
 | Ответственность | Действие |
@@ -347,6 +375,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | Рекламная сеть и AppsFlyer | Договоритесь об общем клиенте (интегрировав последнюю версию SDK AppsFlyer), чтобы использовать его для проверки интеграции постбэков. |
 | Рекламная сеть | Отправьте постбэки SKAN для приложения в AppsFlyer, используя один из методов, описанных в этой статье. |
 | AppsFlyer: | Отправляет декодированные постбэки в рекламную сеть в соответствии с сопоставлением значений конверсии, установленным рекламодателем. |
+
+<div id="test-criteria" />
 
 #### Критерии тестирования
 
@@ -371,6 +401,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | <span id="id888707086"></span>id888707086 | Конверсия, включая события в приложении:<ul><li>af\_level\_complete</li><li>af\_login</li><li>af\_SKAN\_revenue</li><li>af\_register</li><li>af\_subscription</li><li>af\_custom\_event</li></ul> | <ol><li>На вкладке **Интеграция** включите **постбэки по внутренним событиям приложения**.</li><li>Выберите каждое из перечисленных событий в приложении и сопоставьте его со своим идентификатором события.</li><li>Сохраните конфигурацию.</li><li>В постбэке отправьте значение конверсии = 63.</li><li>AppsFlyer присылает в ответ:<ul><li>Постбэк по установке</li><li>Постбэк af\_level\_complete</li><li>Постбэк af\_login</li><li>Постбэк af\_SKAN\_revenue</li><li>Постбэк af\_register</li><li>Постбэк af\_subscription</li><li>Постбэк af\_custom\_event</li></ul></li></ol> |
 | <span id="id888707087"></span>id888707087 | Интеракции, измеряемые с помощью события af\_SKAN\_revenue | <ol><li>На вкладке **Интеграция** включите **постбэки по внутренним событиям приложения**.</li><li>Сопоставьте название события *af\_SKAN\_revenue* и идентификатор события.</li><li>**Сохраните** конфигурацию.</li><li>В постбэке отправьте значение конверсии = 3.</li><li>AppsFlyer присылает в ответ:<ul><li>Постбэк по установке</li><li>3 постбэка события af\_SKAN\_revenue</li></ul></li></ol> |
 
+<div id="integration-steps" />
+
 #### Этапы интеграции
 
 | Ответственность | Действие |
@@ -378,6 +410,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | Рекламная сеть | Настройте свой идентификатор сети SKAN (предоставляется компанией Apple) и шаблон постбэка SKAN на платформе управления постбэком. Для получения помощи свяжитесь с нами, используя <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">виджет помощи партнерам</Anchor>. |
 | Рекламная сеть | <ol><li><Anchor target="_blank" href="/partners/ru/docs/turn-on-test-app-integration-for-ad-networks">Активируйте тестовые приложения</Anchor>.</li><li>Для каждого приложения заполните столбец с инструкциями в предыдущей таблице.</li><li>Отправьте имитированные постбэки, используя тестовые приложения, перечисленные в предыдущей таблице. Что учесть при отправке имитированных постбэков:<ul><li>Установите app\_id и значение конверсии, как указано в предыдущей таблице.</li><li>Поскольку рекламные сети не могут генерировать подписи, совместимые с Apple, имитированные постбэки не должны включать поля подписи. AppsFlyer не будет проверять их для имитированных постбэков.</li><li>Рекламные сети отправляют постбэк, используя подход POST или REDIRECT.</li></ul></li></ol> |
 | AppsFlyer: | Отвечает декодированными постбэками в конечную точку, указанную рекламной сетью во время интеграции. |
+
+<div id="test-criteria-1" />
 
 #### Критерии тестирования
 
@@ -387,6 +421,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | Рекламная сеть | <ul><li>Рекламная сеть получает и декодирует переведенные постбэки.</li><li>Постбэки о событиях в приложении, отправленные AppsFlyer, соответствуют ожидаемым потокам. Например, значение конверсии 3 для приложения ID888707087, рекламная сеть получает 3 постбека о событии *af\_SKAN\_revenue*.</li></ul> |
 
 </Accordion>
+
+<div id="clarifications" />
 
 ## Разъяснения
 

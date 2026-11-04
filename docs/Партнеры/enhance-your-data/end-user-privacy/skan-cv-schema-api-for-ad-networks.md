@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор**. Просмотрите схему CV SKAN, сопоставленную рекламодателем.
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## API схемы CV SKAN для рекламных сетей
 
 С помощью атрибуции SKAdNetwork (SKAN) рекламодатели оценивают качество пользователей, устанавливая значения конверсии (CV) на основе активности пользователей после установки в определенные периоды (окна). <Anchor target="_blank" href="/marketers/ru/docs/skadnetwork-skan-solution-guide">Подробнее о SKAN</Anchor>

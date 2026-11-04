@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** API-партнеры могут использовать свой токен API для доступа к данным рекламодателей с разрешения рекламодателя, что позволяет им извлекать из платформы метрики эффективности.
 
+<div id="api-token-permissions" />
+
 ## Разрешения токена API
 
 <Image alt="api-access-permissions.jpg" src="https://files.readme.io/7961394cb39cf1e6f85d77cd732183edea5fb1408c220ca05b23ae7bbb50138e-23701010316689.jpg" width="439px" />
@@ -37,6 +39,8 @@ x-zendesk:
 | Отчетность по агрегированной аналитике | <Anchor target="_blank" href="/marketers/ru/docs/cohort-analytics-via-data-locker">Когортные аналитические данные через Data Locker</Anchor> | Данные кампаний X Ads недоступны для API-партнеров из-за ограничений со стороны X Ads. |
 | Отчетность SKAN | <ul><li><Anchor target="_blank" href="/marketers/ru/docs/skan-aggregated-performance-report-api">Отчетность по эффективности SKAN</Anchor></li><li><Anchor target="_blank" href="/marketers/ru/docs/skan-aggregated-postback-arrival-date-api">Агрегированная отчетность о постбэках SKAN</Anchor></li></ul> | -- |
 
+
+<div id="considerations" />
 
 ### Соображения
 

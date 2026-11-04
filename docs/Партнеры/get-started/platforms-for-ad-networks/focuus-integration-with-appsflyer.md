@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Рекламные сети, использующие FOCUUS, могут использовать решение AppsFlyer для вероятностного моделирования, чтобы получать данные атрибуции об установках и событиях в приложении.
 
+<div id="creating-your-attribution-link" />
+
 ## Создание собственной ссылки атрибуции
 
 Ссылка атрибуции состоит из приведенной ниже базовой ссылки атрибуции AppsFlyer и дополнительных макросов, добавленных рекламной сетью.
@@ -39,6 +41,8 @@ x-zendesk:
 | pid | Имя медиа-источника включает \_int для идентификации интегрированной сети на серверах AppsFlyer |
 | c | Доступно только в <Anchor target="_blank" href="/marketers/ru/docs/about-data-locker-advanced-reports">расширенных отчётах</Anchor>. |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### Рекомендуемые параметры ссылки атрибуции
 
 | Параметр AppsFlyer | Макросы FOCUUS | Description(Описание) |
@@ -50,11 +54,15 @@ x-zendesk:
 
 FOCUUS поддерживает неограниченное количество макросов, и вы можете называть их как угодно; <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#параметры-ссылки-атрибуции">нажмите</Anchor> <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros">здесь</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ### Шаблон полной ссылки атрибуции
 
 `https://app.appsflyer.com/com.appsflyer?pid={traffic_source}&clickid={tid}&af_siteid={publisher_id}`
 
 Эта ссылка атрибуции устанавливается в поле <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827784-adding-a-new-link">назначение</Anchor> вашей кампании FOCUUS.
+
+<div id="install-and-in-app-event-postbacks" />
 
 ## Постбэки по установкам и внутренним событиям приложения
 

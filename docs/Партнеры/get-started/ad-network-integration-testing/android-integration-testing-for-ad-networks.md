@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Кратко:** Проверьте интеграцию AppsFlyer для Android с помощью приложения AppsFlyer Partner Integrations, чтобы запускать постбэки.
 
+<div id="android-integration-testing" />
+
 ## Тестирование интеграции Android
 
 Тестирование включает следующие элементы:
@@ -34,6 +36,8 @@ x-zendesk:
 В следующей таблице перечислены тестовые сценарии в соответствии с доступными комбинациями настроек.
 
 Для каждого сценария можно тестировать установки и события в приложении. Для событий в приложении можно использовать <Anchor target="_blank" href="/partners/ru/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">сопоставление событий в приложении</Anchor>, чтобы сопоставить события рекламодателя с вашими событиями.
+
+<div id="testing" />
 
 ## Тестирование
 
@@ -80,6 +84,8 @@ x-zendesk:
    3. Вы можете принять постбэк.
 
 </Accordion>
+
+<div id="supplementary-information-and-procedures" />
 
 ## Дополнительная информация и процедуры
 
@@ -166,6 +172,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 
 Установите приложение, используя ссылку ретаргетинга. Процесс такой же, как описано в разделе [тестирование атрибуции установки](/docs/android-integration-testing-for-ad-networks#test-install-attribution).
 
+<div id="viewing-retargeted-installs-in-the-dashboard" />
+
 ### Просмотр установок после ретаргетинга в дэшборде
 
 Откройте дэшборд AppsFlyer и кликните **Re-targeting** в меню слева. Данные об установке, выполненной в результате ретаргетинга, появятся на дэшборде в течение 30 минут.
@@ -208,6 +216,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 Совет.
 
 Чтобы получить более детальные результаты, повторите процесс установки, используя ссылку атрибуции по просмотрам на новом тестовом устройстве. Удалите приложение, измените параметры в ссылке (название кампании, af\_siteid и advertising\_id), а затем снова установите его, нажав URL-адрес.
+
+<div id="view-installs-in-the-dashboard" />
 
 ### Просмотр установок в дэшборде
 
