@@ -49,6 +49,10 @@ Akun agensi digunakan oleh tim agensi untuk mengukur kampanye pemasaran aplikasi
   * Retargeting
 * KPI yang tersedia termasuk tayangan, klik, penginstalan, kesetiaan pelanggan, biaya, dan ROI. Tentang <Anchor target="_blank" href="/marketers/id/docs/getting-started-with-appsflyer-dashboards">dashboard.</Anchor>
 
+<div id="note" />
+
+<div id="agency-access-to-ad-network-integrations" />
+
 <div id="agency-access-to-marketer-data" />
 
 ### Akses agen ke data pemasar
@@ -107,6 +111,8 @@ Struktur akun memungkinkan berbagi pengetahuan antara tim agensi global dan memu
 <table><thead><tr><th><p>Ad Network</p></th><th><p>agency</p></th></tr></thead><tbody><tr><td><p>Parameter tautan atribusi untuk identifikasi: <code>pid</code></p></td><td><p>Parameter tautan atribusi untuk identifikasi: <code>af_prt</code></p></td></tr><tr><td><p>Menempatkan iklan aplikasi di platformnya sendiri</p></td><td><p>Mempromosikan aplikasi melalui berbagai sumber media</p></td></tr><tr><td><p>Hanya melihat lalu lintas dari iklan yang ditempatkan di platformnya</p></td><td><p>Hanya melihat lalu lintas dari sumber media yang diiklankan</p></td></tr><tr><td><p>Dapat menerima informasi waktu aktual tentang instalasi dan in-app event melalui postback</p></td><td><p>Tidak dapat menerima informasi real-time tentang penginstalan dan in-app event melalui postback</p></td></tr><tr><td><p>Dapat mengonfigurasi postback in-app event untuk semua lalu-lintasnya\*</p></td><td><p>Dapat mengonfigurasi postback in-app event ke beberapa mitra yang membawa lalu lintas dari\*</p></td></tr><tr><td colspan="2"><p>Membutuhkan izin pemasar</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="important" />
 
 <div id="agency-accountscampaigns-and-reporting" />
 
@@ -250,6 +256,8 @@ Agar penautan langsung berfungsi, aplikasi seluler HARUS dikembangkan dengan kem
 ### Retargeting
 
 * * <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">Atribusi penargetan ulang</Anchor> memungkinkan Anda untuk menargetkan pengguna yang ada atau pengguna sebelumnya di kampanye Anda. Kampanye penargetan ulang seringkali memerlukan kemampuan deep linking agar berfungsi dengan baik.
+
+<div id="in-app-event-postbacks" />
 
 <div id="in-app-events" />
 

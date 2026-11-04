@@ -109,6 +109,10 @@ Kolom pada tabel berikut memiliki arti berikut:
 
 Contoh berikut terkait dengan postback in-app event yang tersedia untuk mitra.
 
+<div id="encoded-values" />
+
+<div id="example" />
+
 > 📄 **Contoh**
 >
 > Event postback template "&event=(event)&json=(encode)" was translated to the following postback for a specific af\_purchase event:
@@ -156,6 +160,8 @@ device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ### General in-app event postback examples
 
