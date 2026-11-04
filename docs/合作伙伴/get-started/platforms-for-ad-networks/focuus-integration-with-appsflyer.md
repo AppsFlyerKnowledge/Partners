@@ -28,7 +28,7 @@ x-zendesk:
 > **概要：**
 
 
-<span id="creating-your-attribution-link"></span>请参阅下列AppsFlyer基本归因链接，附有每个宏的详细说明：
+<span id="install-and-in-app-event-postbacks"></span><span id="complete-attribution-link-template"></span><span id="recommended-attribution-link-parameters"></span><span id="creating-your-attribution-link"></span>请参阅下列AppsFlyer基本归因链接，附有每个宏的详细说明：
 
 |  | 说明 |
 | --- | --- |

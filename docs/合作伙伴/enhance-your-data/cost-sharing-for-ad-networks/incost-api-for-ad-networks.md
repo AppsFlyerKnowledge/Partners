@@ -41,6 +41,8 @@ InCost API是广告平台向AppsFlyer发送成本数据的最佳解决方案。�
 * InCost API支持所有的广告定价模式，不仅仅局限于CPI（若通过点击发送成本，则仅支持CPI）。
 * 完成InCost API对接后贵平台在AppsFlyer Partner Marketplace中会获得一个“成本”徽章，表示支持成本数据。
 
+<div id="note" />
+
 <div id="implementing-incost-api" />
 
 ## InCost API的部署方式

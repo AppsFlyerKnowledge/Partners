@@ -773,6 +773,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 </Accordion>
 
+<div id="response-codes-5" />
+
 <div id="get-configuration-method" />
 
 ### Get configuration方法
@@ -873,6 +875,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="response-codes-6" />
 
 <div id="parameters-4" />
 

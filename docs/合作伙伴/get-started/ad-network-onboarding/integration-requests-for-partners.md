@@ -31,6 +31,10 @@ x-zendesk:
 ---
 > **概要**：请求更改初始集成设置所需了解的所有信息。
 
+<div id="implement-audience-feature" />
+
+<div id="implement-incost-api" />
+
 <div id="important" />
 
 > 🚧 **重要提示！**

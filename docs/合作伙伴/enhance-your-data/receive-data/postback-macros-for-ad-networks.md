@@ -68,6 +68,8 @@ x-zendesk:
 * **[基础] 适用于所有回传的宏**：涵盖激活、应用内事件和被拒绝事件。
 * **[可选]** 仅适用于应用内事件和被拒绝事件，详见表格中的标注（如rejected、in-app）。
 
+<div id="is-reinstall" />
+
 <div id="macrosinstalls-in-app-events-and-rejected-events" />
 
 ### 激活、应用内事件和被拒绝事件中的宏

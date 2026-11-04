@@ -102,6 +102,8 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 广告主可以直接在AF后台<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">为相关代理开放访问权限</Anchor> 。账户设置完毕并获得相关应用的权限后，您就可以使用AppsFlyer的功能来投放广告了。
 
+<div id="note" />
+
 <div id="what-does-it-mean-to-get-permission-from-a-marketer" />
 
 ### 广告主授权的作用
