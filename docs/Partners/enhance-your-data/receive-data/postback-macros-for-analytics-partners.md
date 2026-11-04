@@ -25,12 +25,16 @@ x-zendesk:
 ---
 > **At a glance:** Usa macros como parte de los postbacks enviados a partners de analítica para obtener datos de atribución relevantes.
 
+<div id="postbacks-for-analytics-partners" />
+
 ## Postbacks para Partners de analítica
 
 Los Partners de analítica pueden definir el contenido y los endpoints de los postbacks que se les envían como parte de su integración con AppsFlyer. Los postbacks se relacionan con el engagement del usuario de la aplicación, como instalaciones, eventos in-app, re-engagements, etc.
 
 * **Configuración de postback:** Para solicitar cambios en la configuración de postback, usa el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para Partners</Anchor> para abrir un ticket o contacta con tu gerente de desarrollo de Partners de AppsFlyer.
 * **Tipos de postback**: Hay postbacks disponibles para instalación y eventos in-app.
+
+<div id="postback-macros" />
 
 ## Macros de postbacks
 
@@ -41,6 +45,8 @@ Cuando se incluyen en un postback, las macros se sustituyen por datos relevantes
   * AF: Tras el procesamiento por parte de AppsFlyer.
 * **[Base]** **Macros para todos los postbacks**: Macros relevantes para la instalación y el evento in-app.
 * **[Opcional]** para eventos in-app, como se indica en la columna.
+
+<div id="macrosinstalls-and-in-app-events" />
 
 #### Macros: instalaciones y eventos in-app
 
@@ -87,6 +93,8 @@ Cuando se incluyen en un postback, las macros se sustituyen por datos relevantes
 | af\_subsite\_id | Atribución | <ul><li>ID de subred publicitaria/ID del publisher.</li><li>Si, además del editor principal (ID del sitio), hay un subeditor o deseas incluir información adicional, como tipo de anuncio/ubicación dentro de la aplicación, como banner, intersticial, vídeo, etc., utiliza af\_sub\_siteid. Por ejemplo: af\_sub\_siteid =ABCD\_4567</li></ul> | Sí | Sí |
 | af\_ad\_type | Atribución | Usa la siguiente convención de nomenclatura:<ul><li>**text:** una unidad de anuncio que contiene solo texto, por ejemplo, un resultado de búsqueda</li><li>**banner:** un formato básico que aparece en la parte superior o inferior de la pantalla del dispositivo</li><li>**interstitial:** un anuncio de página completa que aparece durante las pausas de la experiencia actual</li><li>**video:** un video estándar, es decir, no recompensado</li><li>**rewarded\_video:** una unidad de anuncio que ofrece recompensas in-app a cambio de ver un video</li><li>**playable:** una unidad de anuncio que contiene una vista previa interactiva de la experiencia de la aplicación</li><li>**sponsored\_content:** un enlace incluido en una pieza de contenido patrocinado, como un artículo publicitario</li><li>**audio:** un anuncio de audio</li></ul> | Sí | Sí |
 
+<div id="in-app-event-only-macros" />
+
 ## Macros solo para eventos in-app
 
 Los ejemplos a continuación se relacionan con los postbacks de eventos in-app disponibles para los partners.
@@ -104,12 +112,18 @@ Los ejemplos a continuación se relacionan con los postbacks de eventos in-app d
 >
 > El valor JSON decodificado de este postback es `{"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
 
+<div id="encoded-values" />
+
 ### Valores codificados
 
 Es posible que los postbacks incluyan caracteres irregulares no alfanuméricos. Para transferir estos valores correctamente a través de postbacks, AppsFlyer codifica en URL los valores no alfanuméricos.  
 Para decodificar o codificar un postback, usa [un servicio web de codificación](https://www.urldecoder.org/).
 
+<div id="sample-postbacks" />
+
 ## Postbacks de muestra
+
+<div id="general-install-postback-examples" />
 
 ### Ejemplos de postbacks de instalación generales
 
@@ -131,6 +145,8 @@ http://YourCompanyDomain.com?pid=(media source)&device_ip=(ip)&idfa=(idfa)&insta
 </Tab>
 </Tabs>
 
+<div id="general-in-app-event-postback-examples" />
+
 ### Ejemplos de postbacks de eventos in-app generales
 
 <Tabs>
@@ -150,6 +166,8 @@ http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&insta
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ## Ejemplo de postbacks de eventos in-app
 

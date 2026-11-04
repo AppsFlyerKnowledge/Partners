@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo**: De un vistazo: Las redes de publicidad cargan el reporte de estadísticas agregadas de rendimiento (también conocido como reporte de cohorte) en sus sistemas de Business Intelligence para calcular las métricas de rendimiento de la campaña, como el KPI de retención de 7 días.
 
+<div id="aggregated-campaign-performance-report" />
+
 ## Reporte agregado de rendimiento de la campaña
 
 Este reporte proporciona datos de rendimiento de la campaña, incluso la cantidad de usuarios únicos que realizan un evento determinado. Tú (la red publicitaria) usas los datos en tus sistemas de BI para calcular las métricas del rendimiento de la campaña en el contexto de los KPI de los anunciantes. El reporte está disponible diariamente a través de <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners">Data Locker para Socios</Anchor>
@@ -46,11 +48,15 @@ Las métricas se proporcionan con la mejor granularidad posible usando las dimen
 * Proporcionado a través de Data Locker para Socios. El reporte actualiza la <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#daily">hora UTC diaria</Anchor>.
 * Antes de empezar a compartir los datos contigo, los anunciantes deben [otorgar permisos](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) en el dashboard.
 
+<div id="about-the-report" />
+
 ## Sobre el reporte
 
 <div id="report-structure" />
 
 <Accordion title="Estructura del informe">
+
+<div id="dimensions" />
 
 #### Dimensiones
 
@@ -251,6 +257,8 @@ Las métricas se proporcionan con la mejor granularidad posible usando las dimen
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Métricas
 
 | Nombre | Campo | Usuarios únicos que realizan el evento |
@@ -305,6 +313,8 @@ Para crear métricas de retención, por ejemplo, el día 7 de retención, hazlo 
 Al agregar o eliminar dimensiones, puedes obtener métricas con diferente granularidad.
 
 </Accordion>
+
+<div id="permissions" />
 
 ## Permisos
 

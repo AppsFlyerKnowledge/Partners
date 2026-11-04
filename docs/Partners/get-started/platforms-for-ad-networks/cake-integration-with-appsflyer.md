@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Las ad network que usan CAKE pueden recibir datos de atribución de AppsFlyer sobre instalaciones y eventos in-app.
 
+<div id="base-attribution-link" />
+
 ## Enlace de atribución de base
 
 A continuación tienes el enlace de atribución base con una explicación detallada de cada parámetro:
@@ -38,6 +40,8 @@ A continuación tienes el enlace de atribución base con una explicación detall
 | PID | El nombre de la fuente de medios incluye **\_int** para identificar la red **integrada** en los servidores de AppsFlyer |
 | C | Nombre de la campaña |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### Parámetros recomendados de los enlaces de atribución
 
 | Parámetro de AppsFlyer | Macros de CAKE | Nota |
@@ -49,19 +53,27 @@ Para obtener la lista completa de parámetros de AppsFlyer, haz clic <Anchor tar
 
 Para obtener la lista completa de macros de CAKE, haz clic <Anchor target="_blank" href="https://support.getcake.com/support/solutions/articles/5000566463-tokens">aquí</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ### Plantilla de enlace de atribución completa
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#oreqid#
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## Postbacks de instalaciones y eventos in-app
+
+<div id="global-install-postback" />
 
 ### Postback de instalación global
 
 ```http
 https://{company-domain}.com/p.ashx?f=pb&r=(Click-ID)
 ```
+
+<div id="global-in-app-event-postback" />
 
 ### Postback global de evento in-app
 
@@ -73,11 +85,15 @@ Clic-ID
 e= Se configura como **Event Tag** en el dashboard de AppsFlyer para cada App por el anunciante. Este es el nombre real del evento in-app de la aplicación.  
 Para ver la estructura completa del postback de CAKE, haz clic aquí
 
+<div id="appsflyer-in-app-events-dashboard" />
+
 ### Dashboard de eventos in-app de AppsFlyer
 
 ![IAEP.png](https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png)
 
 Se puede añadir información de atribución adicional al postback previa solicitud, como el código de país, el ID de publicidad, el IDFA, etc.
+
+<div id="finalizing-your-registration" />
 
 ## Finaliza tu registro
 

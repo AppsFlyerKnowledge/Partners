@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Atribuye instalaciones de apps móviles a anuncios vistos en dispositivos de TV conectada (CTV).
 
+<div id="ctv-to-mobile-app-attribution-for-ad-networks" />
+
 ## Atribución de CTV-to-Mobile para ad networks
 
 Con las URL de impresiones multiplataforma de AppsFlyer, puedes atribuir instalaciones de aplicaciones móviles a anuncios mostrados en CTV. Varias instalaciones dentro del mismo hogar pueden atribuirse a la misma impresión de anuncio en CTV.

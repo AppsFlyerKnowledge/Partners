@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **En resumen:** Las redes de publicidad que se integran con AppsFlyer especifican su enlace de atribución como se describe en este artículo.
 
+<div id="attribution-links-for-ad-networks" />
+
 ## Enlaces de atribución para redes de publicidad
 
 Los enlaces de atribución se utilizan para notificar a AppsFlyer que un usuario interactuó con un anuncio al hacer clic en él. En su forma más simple, el enlace de atribución se coloca detrás de un anuncio, de modo que cuando un usuario hace clic en un anuncio, hace clic en un enlace de atribución.
+
+<div id="attribution-model" />
 
 ### Modelo de atribución
 
@@ -50,9 +54,13 @@ Qué sucede en la trayectoria desde un primer clic o impresión hasta la atribuc
 
 Como se desprende de este flujo, utilizamos enlaces de atribución para obtener información sobre ti y postbacks para enviarte la información de vuelta.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Si utilizas herramientas de marketing de rendimiento de terceros, como TUNE, CAKE o Affise, consulta las <Anchor target="_blank" href="/partners/es/docs/platforms-for-ad-networks">instrucciones específicas de la plataforma</Anchor>.
+
+<div id="attribution-link-template" />
 
 ### Plantilla de enlace de atribución
 
@@ -73,6 +81,8 @@ Explicación de la estructura del enlace:
 * Para integrar con AppsFlyer, envíanos la plantilla de enlace de atribución por correo electrónico con los nombres de tus macros.
 
 Considera los parámetros enumerados en la tabla siguiente como el mínimo recomendado. Admitimos un conjunto más amplio de parámetros. Deberías compartir con nosotros tanta información sobre el clic como recopiles. Consulta la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-del-enlace-de-atribución">lista de parámetros de enlaces de atribución</Anchor>.
+
+<div id="recommended-minimum-attribution-link-parameters" />
 
 #### Parámetros mínimos recomendados del enlace de atribución
 

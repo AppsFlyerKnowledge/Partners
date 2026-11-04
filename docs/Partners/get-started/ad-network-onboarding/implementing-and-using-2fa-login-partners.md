@@ -21,7 +21,11 @@ x-zendesk:
 ---
 > **En resumen:** La autenticación de dos factores (2FA) se utiliza para añadir una capa adicional de seguridad al proceso de inicio de sesión. Las credenciales de login de los usuarios de la cuenta se complementan con Google o Microsoft Authenticator.
 
+<div id="intro" />
+
 ## Introducción
+
+<div id="note" />
 
 > 📘 **Advertencia**
 >
@@ -30,6 +34,8 @@ x-zendesk:
 * AppsFlyer exige el uso de 2FA.
 * La 2FA debe configurarse con **Google o Microsoft Authenticator.**
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > Después de configurar la 2FA, no elimines tu app de autenticación. Si lo haces, se interrumpirá la conexión con AppsFlyer y no podrás iniciar sesión.
@@ -37,6 +43,8 @@ x-zendesk:
 <div id="firsttime-setup" />
 
 <Accordion title="Configuración inicial">
+
+<div id="new-account-user" />
 
 #### **Nuevo usuario de cuenta**
 
@@ -47,6 +55,8 @@ x-zendesk:
    * Escanea el QR code.
    * Ingresa el código de verificación emitido por **Google Authenticator**.
    * Haz clic en **Verificar**, y serás redireccionado a la página de **Mis aplicaciones**.
+
+<div id="existing-account-users" />
 
 #### **Usuarios de cuentas existentes**
 
@@ -82,12 +92,16 @@ Para restablecer tu 2FA, ponte en contacto con tu administrador. El administrado
 
 Nota: Si eres el propietario de una cuenta, puedes restablecer tu propia 2FA en [los pasos que aparecen a continuación](/docs/implementing-and-using-2fa-login-partners#para-que-el-propietario-de-una-cuenta-restablezca-su-propia-2fa).
 
+<div id="for-an-admin-resetting-a-users-2fa" />
+
 #### **Para que un administrador restablezca la 2FA de un usuario**
 
 1. En la barra de menú, haz clic en el menú desplegable de la dirección de correo electrónico.
 2. Selecciona **Administración de usuarios**.
 3. En la pestaña **Usuarios** , haz clic en las opciones del menú en el extremo derecho de la fila del usuario.
 4. Selecciona **Restablecer 2FA** en el menú.
+
+<div id="for-an-account-owner-resetting-their-own-2fa" />
 
 #### **Para que el propietario de una cuenta restablezca su propia 2FA**
 

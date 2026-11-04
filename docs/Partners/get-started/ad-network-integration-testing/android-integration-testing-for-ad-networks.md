@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Prueba tu integración de Android con AppsFlyer usando la aplicación AppsFlyer Partner Integrations para activar postbacks.
 
+<div id="android-integration-testing" />
+
 ## Pruebas de integración de Android
 
 Las pruebas constan de los siguientes elementos:
@@ -34,6 +36,8 @@ Las pruebas constan de los siguientes elementos:
 La siguiente tabla enumera escenarios de prueba según las combinaciones de ajustes disponibles.
 
 Para cada escenario, puedes probar instalaciones y eventos in-app. Para los eventos in-app, puedes usar el <Anchor target="_blank" href="/partners/es/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">mapeo de eventos in-app</Anchor> para asignar los eventos del anunciante a tus eventos.
+
+<div id="testing" />
 
 ## Pruebas
 
@@ -80,6 +84,8 @@ Completa los requisitos previos antes de empezar a ejecutar el procedimiento de 
    3. Puedes procesar el postback.
 
 </Accordion>
+
+<div id="supplementary-information-and-procedures" />
 
 ## Información y procedimientos complementarios
 
@@ -166,6 +172,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 
 Instala la aplicación con el enlace de retargeting. El flujo es el mismo que se describe en [la prueba de atribución de instalación](/docs/android-integration-testing-for-ad-networks#test-install-attribution).
 
+<div id="viewing-retargeted-installs-in-the-dashboard" />
+
 ### Ver instalaciones de retargeting en el dashboard
 
 Accede a tu dashboard de AppsFlyer y haz clic en **retargeting** en el menú lateral izquierdo. Es posible que debas esperar hasta 30 minutos para que la instalación con retargeting aparezca en el dashboard.
@@ -208,6 +216,8 @@ Accede a tu dashboard de AppsFlyer y haz clic en **retargeting** en el menú lat
 Consejo
 
 Para obtener resultados más completos, repite el proceso de instalación usando el enlace de atribución view-through con el nuevo dispositivo de prueba. Desinstala la aplicación, cambia los parámetros del enlace (el nombre de la campaña, af\_siteid y advertising\_id) y vuelve a instalarla haciendo clic en la URL.
+
+<div id="view-installs-in-the-dashboard" />
 
 ### Ver instalaciones en el Dashboard
 

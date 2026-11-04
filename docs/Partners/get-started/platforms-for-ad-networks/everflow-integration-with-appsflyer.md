@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:** Everflow es un partner integrado de AppsFlyer. AppsFlyer envía Datos de atribución a Everflow para instalaciones y eventos in-app.
 
+<div id="initiating-the-integration-with-appsflyer" />
+
 ## Iniciar la integración con AppsFlyer
 
 **Para iniciar la integración con AppsFlyer:**
@@ -37,6 +39,8 @@ x-zendesk:
    * Cualquier valor adicional que quieras usar.
    * Tu ID de red de Everflow (nid) y el dominio de postback para las configuraciones de postbacks de instalación y de eventos in-app
 
+<div id="attribution-url-template" />
+
 ### Plantilla de URL de atribución
 
 ```http
@@ -48,6 +52,8 @@ https://app.appsflyer.com/{app_id}?pid=mediaName_int&clickid={transaction_id}&af
 Si actualmente tienes una integración con AppsFlyer, ponte en contacto con nosotros mediante el widget del asistente de partners
 
  e incluye el nuevo postback de Everflow y la plantilla de enlace de atribución.
+
+<div id="creating-your-attribution-link" />
 
 ## Crear tu enlace de atribución
 
@@ -69,6 +75,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_i
 &af_cost_value={amount}&af_cost_currency={offer_currency}&af_cost_model=CPI
 ```
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > * Para modelos de costo de campaña distintos de CPI, actualiza el parámetro **&af\_cost\_model=** al modelo correspondiente. Ejemplo:  CPA, CPC
@@ -78,7 +86,11 @@ Para ver la lista completa de parámetros de AppsFlyer, haz clic <Anchor target=
 
 Para ver la lista completa de macros de Everflow, haz clic <Anchor target="_blank" href="https://help.everflow.io/support/solutions/articles/22000176119-parameters-and-macros">aquí</Anchor>.
 
+<div id="integrating-your-install-and-in-app-event-postbacks" />
+
 ## Integración de tus postbacks de instalación y de eventos in-app
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
@@ -86,11 +98,15 @@ Para ver la lista completa de macros de Everflow, haz clic <Anchor target="_blan
 > * Debes enviar a AppsFlyer tu dominio personalizado de Everflow en lugar de  [everflow\_domain\_placeholder] en los postbacks siguientes.
 > * NID es el ID de red proporcionado por Everflow.
 
+<div id="global-install-postback" />
+
 ## Postback de instalación global
 
 ```http
 https://[everflow_domain_placeholder]/?nid=[everflow_network_placeholder]&transaction_id=$$click(clickid)
 ```
+
+<div id="global-in-app-event-postback" />
 
 ## Postback de evento in-app global
 
@@ -107,6 +123,8 @@ El ID único del evento in-app que Everflow genera para cada evento de la oferta
 Este es el nombre real del evento in-app de la aplicación.
 
 Para obtener más información sobre Dynamic Event Mapping para eventos in-app, haz clic <Anchor target="_blank" href="/partners/es/docs/dynamic-event-mapping-for-in-app-events">aquí</Anchor>
+
+<div id="event-setup-in-everflow" />
 
 ## Configuración de eventos en Everflow
 

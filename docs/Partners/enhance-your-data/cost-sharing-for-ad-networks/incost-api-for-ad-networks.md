@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **Resumen:** La API InCost, que forma parte de AppsFlyer ROI360, permite a las ad network enviar datos de costo publicitario de forma programática a AppsFlyer. Al hacerlo, los anunciantes obtienen datos de costos agregados y comprenden el verdadero impacto de tu red.
 
+<div id="about-incost-api" />
+
 ## Acerca de la API InCost
 
 La API InCost es la solución óptima para que las redes de publicidad envíen datos de costos a AppsFlyer. Los partners de la red de publicidad envían datos detallados de los costos publicitarios a AppsFlyer mediante la API. AppsFlyer ingiere y procesa los datos, y los pone a disposición de los anunciantes y partners a través de paneles de control y reportes.
+
+<div id="benefits" />
 
 #### Ventajas
 
@@ -36,6 +40,8 @@ La API InCost es la solución óptima para que las redes de publicidad envíen d
 * La API InCost es rápida y sencilla de implementar, y el impacto es casi inmediato. También obtienes un control completo sobre cómo y cuándo envías los datos, incluida la capacidad de enviar datos de costos de hasta 90 días atrás.
 * La API InCost es compatible con todos los modelos de precios de campaña, no solo el CPI (que es el único modelo disponible cuando se envía el costo por clic).
 * Destácate en el Partner Marketplace de AppsFlyer con una insignia de "Costo" que indica que esta es una función que admites.
+
+<div id="implementing-incost-api" />
 
 ## Implementación de la API InCost
 
@@ -59,9 +65,13 @@ La API InCost es la solución óptima para que las redes de publicidad envíen d
 | 6 | En el hilo del ticket (del paso 1), notifica a AppsFlyer que se completó la implementación de la API y espera a que confirmen que tu integración está operativa. |
 | 7 | Asegúrate de que tus anunciantes habiliten la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#cost-tab">obtención de datos de costos</Anchor> en la pestaña de costos de su página de partner integrado de AppsFlyer. Luego comenzarán a recibir datos de costos. |
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Mejor práctica: vuelve a enviar datos de una fecha concreta solo si su costo ha cambiado. Puedes enviar los últimos 7 días en cada llamada, pero no necesitas reenviar los registros que no hayan cambiado.
+
+<div id="fields-for-incost-upload-json" />
 
 ### Campos del JSON de carga de InCost
 

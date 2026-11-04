@@ -31,6 +31,8 @@ x-zendesk:
 <Embed title="Introducción: onboarding de agencias" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
 
+<div id="appsflyer-attribution-model" />
+
 ## Modelo de atribución de AppsFlyer
 
 Antes de continuar, es esencial comprender cómo funciona la atribución de AppsFlyer. En esta sección se explica lo que sucede en todo el proceso, desde el primer clic o impresión hasta la atribución de una instalación o un evento, y posterior a ello.
@@ -47,6 +49,8 @@ Antes de continuar, es esencial comprender cómo funciona la atribución de Apps
 8. Una vez que se atribuye la instalación, la mostramos en los paneles de control y reportes del marketer y la agencia (<Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#redes-publicitarias-de-autoinforme">excepto Anuncios de Meta y X Ads</Anchor>).
 9. Luego, enviamos un postback con los detalles de conversión a la red de publicidad, que puede usar esta información para una mayor optimización.
 
+<div id="agency-role-in-mobile-attribution-chain" />
+
 ## Rol de la agencia en la cadena de atribución móvil
 
 Un marketer que es propietario de la aplicación integra el SDK de AppsFlyer dentro de ella para cuantificar sus esfuerzos de marketing.
@@ -59,9 +63,13 @@ Cuando se atribuye una instalación a un anuncio colocado por una agencia, se mu
 
 Nota: Si tu organización es propietaria de la aplicación o gestiona su desarrollo y marketing, debes abrir una cuenta de marketer.
 
+<div id="pricing" />
+
 ## Precios
 
 El alcance de la funcionalidad de una cuenta de agencia depende de los permisos proporcionados por el propietario de la aplicación para cada aplicación. Por lo tanto, las cuentas de agencia se ofrecen **de forma gratuita** y solo los propietarios de aplicaciones pagan por la atribución. Las agencias y los propietarios de aplicaciones pueden usar los datos de atribución de AppsFlyer con fines de compensación.
+
+<div id="getting-started" />
 
 ## Primeros pasos
 
@@ -73,9 +81,13 @@ Para configurar una nueva cuenta de agencia:
 2. Un miembro del equipo de la agencia de AppsFlyer puede contactarte con más información necesaria para completar el registro.
 3. Una vez que se active tu cuenta, recibirás una notificación y podrás comenzar a usar AppsFlyer.
 
+<div id="adding-team-members" />
+
 ## Agregar miembros al equipo
 
 Cuando tu cuenta esté en funcionamiento, el administrador de la cuenta (la persona que abrió la cuenta) puede agregar más miembros del equipo, quienes pueden tener acceso a algunas o todas las aplicaciones administradas por la agencia. Para saber cómo agregar nuevos miembros al equipo, haz clic aquí.
+
+<div id="adding-apps-to-your-account" />
 
 ## Agregar aplicaciones a tu cuenta
 
@@ -91,6 +103,8 @@ Cualquier individuo o equipo de la agencia requiere permiso del propietario de l
 
 Los marketers <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">proporcionan acceso a cualquier agencia</Anchor> directamente a través de la plataforma. Una vez que tu cuenta esté configurada y hayas obtenido acceso a las aplicaciones, puedes comenzar a ejecutar campañas utilizando las funciones de AppsFlyer.
 
+<div id="what-does-it-mean-to-get-permission-from-a-marketer" />
+
 ### Qué significa obtener el permiso de un marketer
 
 Cuando obtienes permiso de un marketer:
@@ -103,12 +117,16 @@ Cuando obtienes permiso de un marketer:
 * Puedes conceder permiso a las redes de publicidad y a los miembros de sus equipos para ver información básica sobre la aplicación.  
     
 
+  <div id="note" />
+
   > 📘 **Nota**
   >
   > La agencia obtiene el control del interruptor principal de permisos de ad network y de los permisos individuales anidados en él. Tanto la agencia como el anunciante pueden cambiar estos ajustes, y el cambio más reciente de cualquiera de las dos partes determina el estado actual.
 
 
 Los permisos adicionales incluyen acceso al reporte de cohortes, al panel de control de Protect360 y a datos orgánicos agregados. Consulta una <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">descripción de los distintos permisos de la red publicitaria</Anchor>.
+
+<div id="app-list" />
 
 ### Lista de aplicaciones
 
@@ -118,6 +136,8 @@ La página de aplicaciones de tu cuenta enumera hasta 1000 aplicaciones. Si la 
 
 ![aplicaciones-agencia.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
 
+<div id="searching-for-apps" />
+
 #### Búsqueda de aplicaciones
 
 1. En tu cuenta, en el menú superior, selecciona **Mis apps**.
@@ -125,6 +145,8 @@ La página de aplicaciones de tu cuenta enumera hasta 1000 aplicaciones. Si la 
    * Nombre de aplicación
    * ID de aplicación
    * Correo electrónico del propietario de la aplicación
+
+<div id="agency-dashboard" />
 
 ## Panel de control de agencia
 
@@ -138,7 +160,11 @@ El panel de control de la cuenta de agencia incluye acceso predeterminado a:
 * Panel de Control de Eventos In-App
 * Panel de Control de Retargeting
 
+<div id="running-campaigns" />
+
 ## Campañas en ejecución
+
+<div id="self-reporting-networks-srns" />
 
 ### Redes de autorreporte (SRN)
 
@@ -148,13 +174,19 @@ La mayoría de estas redes requieren una configuración especial para las agenci
 
 Haz clic en los enlaces anteriores para leer las guías de la red y las instrucciones específicas para la configuración de la agencia.
 
+<div id="non-srns" />
+
 ### No SRN
 
 La mayoría de las redes de publicidad necesitan enlaces de atribución que se colocan detrás de un anuncio. Lee más sobre cómo ejecutar campañas con ellos <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#no-srn">aquí</Anchor>.
 
+<div id="sandbox-attribution-agency-campaigns" />
+
 ### Campañas de agencia en la atribución de Sandbox
 
 La infraestructura SKAdNetwork, parte de iOS de Apple, permite a los marketers medir el éxito de la campaña sin el identificador de anunciante (IDFA) o el ID de publicidad. Aunque Apple no incluye las agencias como parte del proceso de atribución de SKAdNetwork, y AppsFlyer no puede atribuir las agencias directamente, AppsFlyer todavía tiene la capacidad de proporcionar datos de atribución para las campañas de agencias que se ejecutan en SKAdNetworks.
+
+<div id="campaign-naming" />
 
 #### Introducción: onboarding de agencias
 
@@ -168,13 +200,19 @@ Si ejecutas campañas en medios que no sean redes de publicidad (redes sociales,
 
 `Comenzar`
 
+<div id="note-1" />
+
 > 📘 **Nota:**
 >
 > * Las campañas de agencia en la atribución de Sandbox también son transparentes, y la identidad de la ad network que ejecuta la campaña no queda enmascarada para el profesional de marketing.
 
+<div id="skadnetwork-agency-campaigns" />
+
 ### Campañas de agencias de SKAdNetwork
 
 La infraestructura SKAdNetwork, parte de iOS de Apple, permite a los marketers medir el éxito de la campaña sin el identificador de anunciante (IDFA) o el ID de publicidad. Aunque Apple no incluye las agencias como parte del proceso de atribución de SKAdNetwork, y AppsFlyer no puede atribuir las agencias directamente, AppsFlyer todavía tiene la capacidad de proporcionar datos de atribución para las campañas de agencias que se ejecutan en SKAdNetworks.
+
+<div id="campaign-naming-1" />
 
 #### Nombres de las campañas
 
@@ -188,14 +226,20 @@ Si ejecutas campañas en medios que no sean redes de publicidad (redes sociales,
 
 `Comenzar`
 
+<div id="note-2" />
+
 > 📘 **Nota:**
 >
 > * Las campañas de agencias en SKAdNetwork siempre son transparentes y la identidad de la red de publicidad que ejecuta la campaña no está enmascarada del marketer. Ten en cuenta que a partir de iOS 15, el marketer (propietario de la aplicación) puede <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">optar por recibir directamente una copia del postback.</Anchor>
 > * Debes pedirle al marketer que habilite la configuración de **activación de partners** de la red de publicidad en la pestaña de integración. Si no lo haces, la red de publicidad no recibirá los postbacks relacionados con las campañas de SKAN. Nota: Esto es una adición a la configuración de activación de partners a la que puedes acceder en la interfaz de usuario.
 
+<div id="access-to-skan-conversion-studio" />
+
 #### Acceso a SKAN Conversion Studio
 
 Las agencias pueden <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#view-cv-mapping">ver y descargar</Anchor> la configuración de asignación de CV de SKAN de un marketer en <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#aspectos-básicos-del-skan-conversion-studio">Conversion Studio</Anchor>, pero no pueden configurar o editar los ajustes.
+
+<div id="skadnetwork-dashboard" />
 
 #### Panel de control de SKAdNetwork
 
@@ -206,6 +250,8 @@ Las agencias pueden <Anchor target="_blank" href="/marketers/es/docs/skan-conver
 * <Anchor target="_blank" href="/marketers/es/docs/about-att-and-skan">Guía de inicio rápido de SKAdNetwork</Anchor>
 * <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">Panel de control de SKAdNetwork</Anchor>
 * <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">Solución SKAdNetwork</Anchor>
+
+<div id="single-source-of-truth-ssot-for-agencies" />
 
 ### Fuente única de verdad (SSOT) para agencias
 
@@ -218,6 +264,8 @@ Para incluir el indicador SSOT en tu panel de control, el marketer debe activar 
 **Lectura adicional:**
 
 * <Anchor target="_blank" href="/marketers/es/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Guía de la Única fuente de verdad (SSOT) para la atribución de iOS</Anchor>
+
+<div id="what-else-you-can-do" />
 
 ## Qué más puedes hacer
 

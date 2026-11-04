@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **De un vistazo:** ¿Eres una ad network? Encuentra respuestas a las preguntas frecuentes sobre las conexiones con partners de audiencias.
 
+<div id="api-key-and-partner-pull-key" />
+
 ## Clave de API y clave de extracción de Partners
 
 <div id="what-are-the-api-key-and-testing-api-key-used-for" />
@@ -50,6 +52,8 @@ La **clave de API** es una clave única que el partner emite a cada anunciante. 
 El equipo de audiencias de AppsFlyer te enviará una `PARTNER_PULL_KEY` cuando probemos tu endpoint `/sync` en una fase posterior.
 
 </Accordion>
+
+<div id="audience-file-size-and-limitations" />
 
 ## Archivo de audiencia, tamaño y limitaciones
 
@@ -137,6 +141,8 @@ Enviaremos los ID de dispositivo de la audiencia al ID del contenedor que especi
 
 </Accordion>
 
+<div id="api-calls-responses-and-status-codes" />
+
 ## Llamadas a la API, respuestas y códigos de estado
 
 <div id="when-should-the-partner-return-a-response" />
@@ -201,6 +207,8 @@ La solución recomendada es asegurarte de que la API actual pueda gestionar un t
 
 </Accordion>
 
+<div id="naming-rules" />
+
 ## Reglas de nomenclatura
 
 <div id="in-the-validate-interface-is-the-api_key-field-a-string-or-string-array" />
@@ -230,6 +238,8 @@ El nombre de la audiencia es idéntico al nombre de la interfaz de usuario de Ap
 Se admiten tanto números como caracteres ingleses.
 
 </Accordion>
+
+<div id="sha256-and-hashed-url" />
 
 ## SHA256 y URL con Hashing
 

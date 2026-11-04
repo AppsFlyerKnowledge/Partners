@@ -33,10 +33,14 @@ Guías relacionadas de postback de partners integrados:
 * <Anchor target="_blank" href="/partners/es/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor>
 * <Anchor target="_blank" href="/partners/es/docs/rejected-attribution-postbacks-to-integrated-partners">Postbacks de atribución rechazados</Anchor>
 
+<div id="postbacks-for-ad-networks" />
+
 ## Postbacks para ad networks
 
 * **Configuración de postback:** Para solicitar cambios en tu configuración de postbacks, usa el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor> o contacta con tu gerente de desarrollo de partners de AppsFlyer.
 * **Tipos de postback**: Los postbacks están disponibles para los eventos in-app e instalaciones y los eventos in-app e instalaciones bloqueadas debido al fraude identificado por Protect360 o a la violación de las reglas de validación de segmentación.
+
+<div id="postback-data-sources" />
 
 ### Fuentes de datos de postbacks
 
@@ -47,6 +51,8 @@ Guías relacionadas de postback de partners integrados:
 | Información derivada del SDK | Información extraída del dispositivo por el SDK de AppsFlyer.<br /><br />Ejemplo: los IDs de dispositivos iOS pueden extraerse utilizando "&IDFA=(idfa)" en el postback. |
 | Derivado de la plataforma de AppsFlyer | Información derivada de la plataforma de AppsFlyer. |
 | Protect360 y reglas de validación | Información sobre instalaciones identificadas como fraude e instalaciones que violan las reglas de segmentación de la campaña y sus eventos in-app asociados. |
+
+<div id="postback-macros" />
 
 ## Macros de postbacks
 
@@ -61,6 +67,8 @@ Las columnas de la tabla a continuación tienen el siguiente significado:
 * **Enviar todo**:  En caso afirmativo, puedes recibir los datos sobre instalaciones y eventos atribuidos a otras redes u orgánicos (es decir, los no atribuidos a ti). (es decir, los no atribuidos a ti).
 * [Base] Macros para todos los postbacks Macros relevantes para la instalación, eventos in-app y postbacks de eventos rechazados
 * **[Opcional]** para eventos in-app y eventos rechazados como se indica en la columna (rechazado, in-app).
+
+<div id="macrosinstalls-in-app-events-and-rejected-events" />
 
 ### Macros: instalaciones, eventos in-app y eventos rechazados
 
@@ -114,9 +122,13 @@ Las columnas de la tabla a continuación tienen el siguiente significado:
 | <span id="platform"></span>Identificador de origen | SDK | Sí | Plataforma del dispositivo: iOS, Android o Windows Mobile | Sí |  |
 | <span id="retargeting-conversion-type"></span>tipo\_conversion\_retargeting | AF | No | Un indicador que marca si se trata de una reatribución o un re-engagement | Solo retargeting |  |
 
+<div id="in-app-event-only-macros" />
+
 ### Macros solo para eventos in-app
 
 Los ejemplos a continuación se relacionan con los postbacks de eventos in-app disponibles para los partners.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -135,13 +147,19 @@ Los ejemplos a continuación se relacionan con los postbacks de eventos in-app d
 > {"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}
 > ```
 
+<div id="encoded-values" />
+
 #### **Valores codificados**
 
 Es posible que los postbacks incluyan caracteres irregulares no alfanuméricos. Para transferir estos valores correctamente a través de postbacks, la URL de AppsFlyer codifica valores no alfanuméricos.
 
 Para decodificar o codificar un postback usa un <Anchor target="_blank" href="https://www.urldecoder.org/">servicio web de codificación.</Anchor>
 
+<div id="sample-postbacks" />
+
 ## Postbacks de muestra
+
+<div id="general-install-postback-examples" />
 
 ### Ejemplos de postbacks de instalación generales
 
@@ -165,6 +183,8 @@ device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="general-in-app-event-postback-examples" />
 
 ### Ejemplos de postbacks de eventos in-app generales
 
@@ -190,6 +210,8 @@ device_ip=(ip)&idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ### Ejemplo de postbacks de eventos in-app
 

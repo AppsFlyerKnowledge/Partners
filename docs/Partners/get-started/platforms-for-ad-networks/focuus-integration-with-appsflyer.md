@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Las ad network que utilizan FOCUUS pueden usar la solución de modelado probabilístico de AppsFlyer para recibir datos de atribución sobre instalaciones y eventos in-app.
 
+<div id="creating-your-attribution-link" />
+
 ## Crear tu enlace de atribución
 
 El enlace de atribución consta del enlace de atribución base de AppsFlyer que aparece a continuación y de macros adicionales añadidas por la ad network.
@@ -39,6 +41,8 @@ A continuación se muestra el enlace de atribución base de AppsFlyer con una ex
 | PID | El nombre de la fuente de medios incluye \_int para identificar la red integrada en los servidores de AppsFlyer |
 | C | Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### Parámetros recomendados de los enlaces de atribución
 
 | Parámetro de AppsFlyer | Macros de FOCUUS | Nota |
@@ -50,11 +54,15 @@ Para consultar la lista completa de parámetros de AppsFlyer, <Anchor target="_b
 
 FOCUUS permite un número ilimitado de macros y puedes ponerles el nombre que quieras; haz <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-del-enlace-de-atribución">clic</Anchor> <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros">aquí</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ### Plantilla de enlace de atribución completa
 
 `https://app.appsflyer.com/com.appsflyer?pid={traffic_source}&clickid={tid}&af_siteid={publisher_id}`
 
 Este enlace de atribución se configura en el <Anchor target="_blank" href="http://support.focuus.com/knowledgebase/articles/827784-adding-a-new-link">destino</Anchor> de tu campaña de FOCUUS.
+
+<div id="install-and-in-app-event-postbacks" />
 
 ## Postbacks de instalaciones y eventos in-app
 

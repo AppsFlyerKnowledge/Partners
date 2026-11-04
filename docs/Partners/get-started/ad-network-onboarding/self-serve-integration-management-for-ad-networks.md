@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="Gestión de la integración de autoservicio para redes de publicidad" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
 
+<div id="prerequisites" />
+
 ## **Pré-requisitos:**
 
 * Debes disponer de credenciales de inicio de sesión (nombre de usuario y contraseña) para AppsFlyer antes de poder administrar enlaces de atribución y postbacks. Para <Anchor target="_blank" href="/partners/es/docs/getting-started-onboarding-guide-for-ad-networks">crear una cuenta de partner</Anchor>, pídele a un cliente de AppsFlyer (anunciante) que <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#invita-a-nuevos-partners-a-appsflyer">te invite</Anchor>.
@@ -35,10 +37,14 @@ x-zendesk:
   * Puertos: 80, 443
 * ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Solo los usuarios administradores pueden acceder y administrar esta sección.
 
+<div id="accessing-integration-management" />
+
 ## Acceso a la gestión de integraciones
 
 1. Inicia sesión en tu cuenta de partner de AppsFlyer.
 2. Haz clic en el menú desplegable de la parte superior derecha > **Administración de postbacks**.
+
+<div id="attribution-link" />
 
 ## Enlace de atribución
 
@@ -54,6 +60,8 @@ Es obligatorio completar la configuración del enlace de atribución.
    * **Tu macro**: agrega la macro que completa los parámetros con valores.
    * **Incluir**: marca la casilla para incluir el parámetro en el enlace.
 
+   <div id="important" />
+
    > 🚧 **¡Importante!**
    >
    > * Agrega parámetros relacionados con la campaña y los anuncios para proporcionar datos más sólidos sobre el rendimiento de la campaña.
@@ -68,6 +76,8 @@ Es obligatorio completar la configuración del enlace de atribución.
 <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Más información sobre enlaces de atribución y parámetros disponibles</Anchor>.
 
 Si tienes algún problema, ponte en contacto con nosotros a través del <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>.
+
+<div id="default-postback" />
 
 ## Postback predeterminado
 
@@ -86,6 +96,8 @@ Los postbacks son URL que contienen macros completadas por AppsFlyer y enviadas 
 
    <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks">Lista completa de macros de postback</Anchor>
 
+   <div id="important-1" />
+
    > 🚧 **¡Importante!**
    >
    > * Para poder distinguir entre postbacks de eventos legítimos y postbacks rechazados, configura las <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks#macros-instalaciones-eventos-in-app-y-eventos-rechazados">macros de los postbacks rechazados</Anchor>.
@@ -103,6 +115,8 @@ Los postbacks son URL que contienen macros completadas por AppsFlyer y enviadas 
 <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration">Más información sobre los postbacks y ejemplos.</Anchor>
 
 Si tienes algún problema, usa el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente de partners</Anchor>.
+
+<div id="advanced-privacy-and-skan-postbacks" />
 
 ## Postbacks de Privacidad avanzada y SKAN
 
@@ -127,6 +141,8 @@ Los postbacks de Privacidad avanzada y SKAN se pueden configurar solo después d
    Lista de <Anchor target="_blank" href="/partners/es/docs/skan-integration-guide-for-ad-networks#recibir-datos-de-appsflyer">macros de postbacks de SKAdNetwork</Anchor>
 
    Lista de <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">macros de postbacks de Privacidad avanzada.</Anchor>
+
+   <div id="important-2" />
 
    > 🚧 **¡Importante!**
    >

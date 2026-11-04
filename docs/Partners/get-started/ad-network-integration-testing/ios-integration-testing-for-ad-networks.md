@@ -29,11 +29,15 @@ Las pruebas constan de los siguientes elementos:
 * Usa la versión para iOS de la aplicación AppsFlyer Partner Integrations para generar eventos in-app de instalación y compra de prueba. Estas pruebas, a su vez, activan postbacks que se envían a tus endpoints. También tienes la opción de probar eventos in-app de login y registro.
 * Cuando recibas los postbacks, verifica que puedas ingerirlos.
 
+<div id="testing-scope" />
+
 ### Alcance de las pruebas
 
 Los anunciantes controlan los datos que se comparten con ad network mediante la configuración de Advanced Privacy. Esta configuración, junto con la configuración de <Anchor target="_blank" href="/marketers/es/docs/att-implications-ios-14-and-deprecation-of-lat">ATT</Anchor> del usuario de la aplicación, afecta al tipo de postback y a los datos compartidos con ad network, tal como se describe en la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">guía de postback de Advanced Privacy</Anchor>. La siguiente tabla enumera los escenarios de prueba según las combinaciones de configuración disponibles.
 
 Para cada escenario, puedes probar instalaciones y eventos in-app. En cuanto a los eventos in-app, puedes usar el <Anchor target="_blank" href="/partners/es/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">mapeo de eventos in-app</Anchor> para asignar los eventos del anunciante a tus eventos.
+
+<div id="test-scenario-combinations" />
 
 #### Combinaciones de escenarios de prueba
 
@@ -41,6 +45,8 @@ Para cada escenario, puedes probar instalaciones y eventos in-app. En cuanto a l
 | --- | --- | --- | --- |
 | A | Desactivado | Permitir | Regular |
 | B | en | Pedir a la aplicación que no rastree | Privacidad Avanzada |
+
+<div id="testing" />
 
 ## Pruebas
 
@@ -104,6 +110,8 @@ Completa los requisitos previos antes de empezar a ejecutar el procedimiento de 
     2. El nombre del evento está asignado correctamente (si has asignado eventos in-app).
     3. Puedes procesar el postback.
 
+<div id="advanced-privacy-offtest-results" />
+
 #### Privacidad avanzada desactivada: resultados de la prueba
 
 | Postback | Hora a la que activaste el evento | Tipo de postback esperado | Postback real recibido (aprobado/no aprobado) | Validación del postback (aprobado/no aprobado) |
@@ -151,6 +159,8 @@ Completa los requisitos previos antes de empezar a ejecutar el procedimiento de 
     2. El nombre del evento está asignado correctamente (si has asignado eventos in-app).
     3. Puedes procesar el postback.
 
+<div id="advanced-privacy-ontest-results" />
+
 #### Privacidad Avanzada activada: resultados de la prueba
 
 | Postback | Hora a la que activaste el evento | Tipo de postback esperado | Postback real recibido (correcto/incorrecto) | Validación del postback (correcto/incorrecto) |
@@ -159,6 +169,8 @@ Completa los requisitos previos antes de empezar a ejecutar el procedimiento de 
 | Evento in-app: compra |  | Privacidad Avanzada |  |  |
 
 </Accordion>
+
+<div id="supplementary-information-and-procedures" />
 
 ## Información y procedimientos complementarios
 

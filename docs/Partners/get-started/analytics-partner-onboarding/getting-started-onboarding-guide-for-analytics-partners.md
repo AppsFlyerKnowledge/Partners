@@ -24,9 +24,13 @@ x-zendesk:
 
 ![54150 Onboarding de Partners KB.png](https://files.readme.io/f8d8abe52561baf06cb3125d7f49760d2510aaa1ed63c6c0515d3543418dad91-34615688043409.png)
 
+<div id="about-the-analytics-partner-integration" />
+
 ## Acerca de la integración con Partners de analítica
 
 Una cuenta de partner de analítica en AppsFlyer es una cuenta especializada para proveedores de analítica. Permite acceder a los datos de postback de instalación y de eventos in-app, lo que permite a los Partners analizar el comportamiento del Usuario, los resultados de las campañas y el rendimiento de la Aplicación. Este artículo está dirigido a proveedores de analítica que quieran configurar una integración de Partners con AppsFlyer.
+
+<div id="set-up-the-integration" />
 
 ## Configura la integración
 
@@ -69,6 +73,8 @@ Una cuenta de partner de analítica en AppsFlyer es una cuenta especializada par
 2. **Validación y conversión:** AppsFlyer validará tu solicitud y convertirá tu cuenta de ad network en una cuenta de analítica tras la verificación.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 

@@ -31,6 +31,8 @@ x-zendesk:
 1. Tu [enlace de atribución](/docs/tune-formerly-hasoffers-integration-with-appsflyer#crea-un-enlace-de-atribución)
 2. Tus [postbacks](/docs/tune-formerly-hasoffers-integration-with-appsflyer#crea-postbacks-de-instalación-y-de-eventos-in-app) (para instalaciones y eventos in-app)
 
+<div id="create-attribution-link" />
+
 ## Crea un enlace de atribución
 
 El enlace de atribución consta del enlace de atribución base de AppsFlyer y de macros adicionales añadidas por la ad network.
@@ -43,6 +45,8 @@ Consulta el siguiente enlace de atribución base de AppsFlyer con una explicaci�
 | id\_aplicación | ID único de la aplicación: valor dinámico que cambia según la aplicación promocionada |
 | pid= | Nombre de la fuente de medios concatenado con `_int` para identificar las redes integradas |
 | c= | Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. |
+
+<div id="example-attribution-link-after-adding-tune-macros" />
 
 ### Ejemplo de enlace de atribución después de añadir macros de TUNE
 
@@ -60,6 +64,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 
 Lee más sobre las [macros de TUNE](https://help.tune.com/hasoffers/parameters-macros-in-hasoffers/).
 
+<div id="create-install-and-in-app-event-postbacks" />
+
 ## Crea postbacks de instalación y de eventos in-app
 
 Instrucciones paso a paso para crear tus postbacks de instalación y de eventos in-app:
@@ -71,7 +77,11 @@ Instrucciones paso a paso para crear tus postbacks de instalación y de eventos 
 
 Lee más sobre las [URL de postback globales de TUNE](http://help.tune.com/hasoffers/global-postback-urls/).
 
+<div id="sample-postbacks" />
+
 ### Postbacks de muestra
+
+<div id="global-install-postback" />
 
 #### Postback de instalación global:
 
@@ -82,6 +92,8 @@ Lee más sobre las [URL de postback globales de TUNE](http://help.tune.com/hasof
 ```http
 https://NETWORK_ID.go2cloud.org/aff_lsr?offer_id={af_c_id}&transaction_id={clickid}
 ```
+
+<div id="in-app-event-postback" />
 
 #### Postback de eventos in-app:
 
@@ -100,6 +112,8 @@ En las URL de postback anteriores:
 * goal\_id = etiqueta de evento en el Dashboard de AppsFlyer para cada una de tus aplicaciones. Este es el nombre real del evento in-app de la aplicación.
 
 Saber más sobre <Anchor target="_blank" href="/partners/es/docs/dynamic-event-mapping-for-in-app-events">la asignación dinámica de eventos para eventos in-app</Anchor>.
+
+<div id="finalizing-your-registration" />
 
 ## Finalizando tu registro
 

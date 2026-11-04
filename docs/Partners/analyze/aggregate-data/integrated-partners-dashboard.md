@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Los partners integrados utilizan el panel de control y los reportes para ver y analizar el tráfico de campaña que se te atribuye.
 
+<div id="using-the-appsflyer-dashboard" />
+
 ## Uso del panel de control de AppsFlyer
 
 **Para iniciar sesión en AppsFlyer**:
@@ -33,9 +35,13 @@ x-zendesk:
 2. Selecciona una aplicación o búscala.  
    ¡Atención! Nota: Si no ves la aplicación requerida, pídele al anunciante que te conceda <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions">permisos de red de publicidad</Anchor>. El anunciante hace esto en el panel de control de AppsFlyer en la pestaña de permisos.
 
+<div id="overview-dashboard" />
+
 ## Panel de vista general
 
 Las métricas y los gráficos de rendimiento de la campaña están disponibles en el Panel de control general. Este panel de control contiene diferentes tipos de vistas para las campañas UA y de retargeting.
+
+<div id="report-access" />
 
 ## Acceso a reportes
 
@@ -46,6 +52,8 @@ Para ver los datos del reporte:
   * <Anchor target="_blank" href="/marketers/es/docs/aggregated-data-export-page">Exportación de datos agregados</Anchor>  
     Se abre la ventana Reportes.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > * Los datos que se muestran en los reportes de raw data se limitan a los raw data en los postbacks atribuidos solo al partner.
@@ -54,6 +62,8 @@ Para ver los datos del reporte:
 >
 > * * Solicita al anunciante que te proporcione reportes de raw data de eventos in-app
 >   * Add `(event-value)` <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks">macro to the postback URL</Anchor>
+
+<div id="using-postback-reports" />
 
 ### Uso de reportes de postback
 
@@ -66,6 +76,8 @@ Descarga el reporte de Postbacks correspondiente y busca los campos **URL de po
 
 [![](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)
 
+<div id="viewing-configuration-settings-and-data" />
+
 ## Ver la configuración y los datos
 
 Click **Integrated Partners** on the left side of the window to view the current configuration settings. Incluso si no te han otorgado permisos, es posible que puedas ver los ajustes de configuración (modo de solo lectura).
@@ -74,9 +86,13 @@ La ad network puede ver la configuración en su dashboard solo cuando la configu
 
 Las agencias pueden configurar la configuración de la ad network al recibir el permiso correspondiente del anunciante. Ten en cuenta que **cuando** **la configuración la realiza una agencia, la ad network la ve como inactiva**.
 
+<div id="permissions" />
+
 ## Permisos
 
 Con la pestaña **Permisos**, los anunciantes pueden <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions">otorgar diferentes tipos de permisos a las redes de publicidad</Anchor>.
+
+<div id="enabling-permissions" />
 
 ### Habilitar permisos
 
@@ -86,12 +102,16 @@ El primer paso es que tu cliente habilite los permisos. Tu cliente debe activar 
 2. El admin de tu cuenta de ad network obtiene acceso para ver el dashboard de la app de tu cliente. En la primera fase, solo el administrador tiene acceso. Si quieres que un miembro de tu equipo también vea el dashboard de la app, tu cliente tiene que concederle permisos.
 3. Los permisos para ver el dashboard de la app se conceden solo a tu ad network.
 
+<div id="granting-permissions-to-ad-network-team-members" />
+
 ### Concesión de permisos a miembros del equipo de la ad network
 
 Si quieres que un miembro de tu equipo también vea el dashboard de la app, tu cliente tiene que concederle permisos.
 
 1. Da a tu cliente los correos electrónicos de los miembros del equipo a los que quieres que conceda permisos.
 2. A continuación, el cliente debería <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions">agregarlos a la integración con tu red de publicidad</Anchor>.
+
+<div id="granting-additional-permissions" />
 
 ### Conceder permisos adicionales
 
@@ -108,6 +128,8 @@ Tu cliente puede conceder permisos adicionales para que la ad network y los miem
 To allow this, contact your client to select you from the Integrated Partners list and grant you access to the relevant section within the Permissions tab.
 
 Cuando el anunciante concede permiso a la ad network para configurar su enlace de atribución y mapear eventos in-app, pueden entrar en las pestañas correspondientes y hacer los cambios necesarios.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >

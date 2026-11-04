@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo:** AppsFlyer proporciona a los partners de UA datos completos y precisos sobre anuncios, compras in-app y suscripciones autorrenovables a través de reportes y postbacks. Los partners pueden procesar la información para optimizar las campañas de UA.
 
+<div id="introduction" />
+
 ## Introducción
 
 AppsFlyer recibe información de ingresos tanto de sus partners como de las tiendas de aplicaciones (Apple App Store y Google Play Store). Una vez recibidos, los datos se someten a una serie de pasos que incluyen validación, normalización, atribución y enriquecimiento con propiedades y dimensiones adicionales.  AppsFlyer puede enviar la información al partner de UA. Siguiendo este proceso, AppsFlyer transmite los datos enriquecidos y atribuidos al partner de UA. El partner de UA puede entonces utilizar esta información para optimizar sus campañas de adquisición de usuarios y mejorar el servicio que ofrece a los anunciantes.
@@ -48,6 +50,8 @@ AppsFlyer proporciona a los partners información sobre anuncios in-app, compras
 * **Postbacks de ingresos de la tienda**: cada vez que ocurre un evento de compra o suscripción, se envía un postback desde AppsFlyer al partner que contiene los detalles del evento generador de ingresos.
 
 </Accordion>
+
+<div id="set-up-roi360-for-partners" />
 
 ## Configurar el ROI360 para partners
 
@@ -77,6 +81,8 @@ Para ponerte en contacto con el soporte técnico de AppsFlyer, abre el menú **A
 [![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
 
 </Accordion>
+
+<div id="roi360-ua-signals-report-for-ua-networks" />
 
 ## Reporte de señales de UA de ROI360 para redes de UA
 
@@ -153,6 +159,8 @@ Los datos se escriben diariamente en la carpeta h=23 de tu bucket de Data Locker
 
 </Accordion>
 
+<div id="in-app-ad-revenue-iaa-postbacks" />
+
 ## Postbacks de ingresos por publicidad in-app (IAA)
 
 Los postbacks de IAA son el segundo enfoque de ingestión que AppsFlyer utiliza para enviar información de ingresos a los partners. Su principal ventaja sobre el reporte de señales de ingresos por publicidad de UA es su actualización ya que los postbacks ofrecen un intercambio de datos de ingresos de IAA casi en tiempo real. Esto contrasta con la actualización X+1 (un día después de la fecha de ocurrencia del evento) ofrecida a través del reporte de señales de UA de ingresos por publicidad.
@@ -191,6 +199,8 @@ ROI360 de AppsFlyer realiza los siguientes pasos para cada dato de nivel de impr
 El evento se envía al partner a través de una configuración de postback existente entre el partner y AppsFlyer como parámetro adicional.
 
 </Accordion>
+
+<div id="in-app-purchase-iap-postbacks" />
 
 ## Postbacks de compras in-app (IAP)
 

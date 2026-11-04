@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Ponte en contacto con el soporte de AppsFlyer para Partners a través del chatbot Partner Assistant para solucionar problemas, abrir un ticket de soporte u obtener orientación sobre el Producto.
 
+<div id="overview" />
+
 ## Visión general
 
 El chatbot Partner Assistant dirige tus problemas al equipo adecuado y abarca consultas relacionadas con la aplicación, orientación sobre el producto y soporte técnico. Los pasos del chatbot te piden que proporciones los detalles necesarios para una asistencia precisa, lo que reduce la necesidad de información adicional.
@@ -38,6 +40,8 @@ El chatbot Partner Assistant dirige tus problemas al equipo adecuado y abarca co
 **Nota:** Las agencias no tienen la opción "Problemas de integración o actualizaciones".
 
 3. Haz clic en **Enviar**.
+
+<div id="viewing-partner-tickets" />
 
 ## Visualización de tickets de Partners
 

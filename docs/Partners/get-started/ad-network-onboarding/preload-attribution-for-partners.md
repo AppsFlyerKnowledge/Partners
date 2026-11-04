@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Atribuye las instalaciones de aplicaciones móviles a campañas que precargan la app en el fabricante de equipos originales (OEM) o cuando el usuario enciende el dispositivo por primera vez.
 
+<div id="overview" />
+
 ## Visión general
 
 Al proporcionar soporte a las soluciones de atribución de precarga de AppsFlyer, los Partners de precarga pueden tener las instalaciones de la app atribuidas a campañas de precarga. Las campañas de precarga son para cuando una app se instala en un dispositivo por un Partner de precarga, ya sea en la fábrica o al activar el dispositivo (cuando el dispositivo se enciende por primera vez).
@@ -41,6 +43,8 @@ Hay 3 formas de atribuir campañas precargadas:
 Se te envían postbacks después de cada conversión.
 
 <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#preload-campaigns">Saber más sobre los métodos de atribución de campañas de precarga</Anchor>
+
+<div id="set-up-preload-attribution" />
 
 ## Configurar la atribución de precarga
 

@@ -25,13 +25,19 @@ x-zendesk:
 
 Los tipos de engagement enriquecidos (EET) reflejan todo el espectro de engagement e intencionalidad de los usuarios cuando ven un anuncio o interactúan con él, desde la exposición momentánea hasta la respuesta directa. Este artículo detalla cómo los partners deben reportar los tipos de engagement en los enlaces de atribución de AppsFlyer según cómo los usuarios interactúan con sus anuncios.
 
+<div id="disclaimer" />
+
 > ❗️ **Advertencia**
 >
 > Este artículo se centra en los aspectos de EET relevantes para los partners. Para aprender qué es EET y obtener información completa al respecto, consulta el artículo sobre <Anchor target="_blank" href="/marketers/es/docs/about-enriched-engagement-types#which-ad-networks-report-enriched-engagement-types">Tipos de Engagement Enriquecidos</Anchor>.
 
+<div id="which-networks-can-report-eet-to-appsflyer" />
+
 ## ¿Qué redes pueden reportar EETs a AppsFlyer?
 
 El soporte a engagement enriquecidos estará disponible para las redes que cumplan los criterios Premier, Advance o Engage del programa de partners de AppsFlyer. Estos niveles se refieren a redes que tienen un historial significativo de entrega de tráfico de alta calidad a escala a nuestros clientes comunes, envían datos de engagement de forma transparente y confiable, y están integradas con una amplia gama de servicios de AppsFlyer.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -147,6 +153,10 @@ A continuación se presenta un caso de uso de engagement de usuario que las ad n
 <Accordion title="Redes elegibles para reportar EETs">
 
 La lista de redes permitidas incluye partners cuyos eventos de tipo de engagement enriquecido pueden ser procesados por AppsFlyer, con la exclusión de engaged clicks y engaged views. Las redes de esta lista que deseen que AppsFlyer procese sus engaged clicks y engaged views deben contactar al soporte de AppsFlyer. Para saber qué redes ya tienen sus engaged clicks y engaged views procesados por AppsFlyer, consulta el <Anchor target="_blank" href="/marketers/es/docs/about-enriched-engagement-types#qué-redes-pueden-reportar-sobre-view-engaged-y-engaged-clicks">artículo de anunciantes de EET</Anchor>.
+
+<div id="warning-1" />
+
+<div id="warning" />
 
 > ❗️ **Advertencia**
 >

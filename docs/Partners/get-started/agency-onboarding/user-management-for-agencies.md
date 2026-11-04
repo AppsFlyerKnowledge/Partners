@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En resumen:** Crea y administra los usuarios de AppsFlyer de tu cuenta de agencia y asígnales permisos para acceder a funciones y aplicaciones.
 
+<div id="user-roles-and-access-permissions" />
+
 ## Funciones de usuario y permisos de acceso
 
 Las cuentas de AppsFlyer permiten múltiples usuarios, cada uno con permisos administrados de manera individual. Los permisos de cada usuario se definen a lo largo de 2 dimensiones principales:
@@ -33,7 +35,11 @@ Los permisos dentro de cada una de estas dimensiones se asignan de forma indepen
 
 La única excepción es la [función de administrador](/docs/user-management-for-agencies#administrador-un-rol-especial), como se explica a continuación, que tiene acceso a todas las funciones y aplicaciones.
 
+<div id="predefined-roles" />
+
 ### Roles predefinidos
+
+<div id="predefined-roles-hash" />
 
 #### hash de roles predefinidos
 
@@ -48,6 +54,8 @@ Cada uno de estos roles define las características específicas de AppsFlyer a 
 
 Como regla general, todos los roles están predefinidos y las capacidades funcionales de cada rol están fijas: no se permite "mezclar y hacer coincidir". Sin embargo, puedes cambiar las capacidades funcionales de un usuario en cualquier momento cambiando su rol (excepto el [propietaria de la cuenta](/docs/user-management-for-agencies#hash-del-propietario-de-la-cuenta), como se explica a continuación).
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > Has asignado a Bill Bates el rol de **Administrador del equipo.** Esta función le da a Bill la capacidad de administrar **la configuración de la aplicación**, pero no le permite acceder al **registro de auditoría.**
@@ -56,11 +64,15 @@ Como regla general, todos los roles están predefinidos y las capacidades funcio
 >
 > **Respuesta:** No. Mientras Bill permanezca en el puesto de administrador de equipo, no puedes darle la posibilidad de acceder al registro de auditoría. Tampoco puedes eliminar su capacidad para administrar la configuración de la aplicación. Por supuesto, puedes asignar un rol diferente a Bill, y sus capacidades cambiarán a las definidas por ese rol.
 
+<div id="temp-rolesan-exception-to-the-rule" />
+
 ### Roles temporales: excepción a la regla
 
 Si tu cuenta de AppsFlyer existía en nuestro sistema de gestión de usuarios anterior (cuando los únicos tipos de cuenta disponibles eran Administrador y Miembro del Equipo), todos los usuarios se incorporaron al nuevo sistema con sus capacidades sin cambios. Como resultado, la mayoría de estos usuarios aparecen en el sistema actual con **roles temporales**.
 
 Aprende más sobre la [administración de roles temporales](/docs/user-management-for-agencies#managing-temp-roles).
+
+<div id="admina-special-role" />
 
 ### Administrador: un rol especial
 
@@ -71,6 +83,8 @@ Una cuenta de AppsFlyer puede tener **uno o más** administradores, pero todas l
   * Todas las aplicaciones actuales y futuras
   * Todas las fuentes de medios y geolocalizacionesEsta característica de "acceso completo" del rol de administrador no se puede cambiar ni limitar.
 
+  <div id="account-owner-hash" />
+
   #### hash del propietario de la cuenta
 * El usuario creado en el momento en que se abrió la cuenta (el **"propietario de la cuenta"**) tiene asignado el rol de Administrador de forma predeterminada.
   * El propietario de la cuenta no se puede eliminar, su rol de administrador no puede ser desactivado ni se puede editar de ninguna otra forma desde la página de [**Administración de usuarios.**](/docs/user-management-for-agencies#página-de-administración-de-usuarios) Asimismo, la dirección de correo electrónico del propietario de la cuenta no se puede cambiar.
@@ -79,12 +93,16 @@ Una cuenta de AppsFlyer puede tener **uno o más** administradores, pero todas l
 * Solo un usuario con un rol de administrador puede <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">administrar los tokens de API y S2S.</Anchor>
 * Cualquier administrador que no sea el propietario de la cuenta **puede** cambiarse a un rol diferente o eliminarse de la cuenta de AppsFlyer a través de la página de Administración de usuarios.
 
+<div id="user-management-page" />
+
 ## Página de administración de usuarios
 
 **Para acceder a la página de Administración de usuarios:**
 
 1. En la barra de menús superior, haz clic en y abre el menú de la cuenta (menú desplegable de direcciones de correo electrónico).
 2. Selecciona **Administración de usuarios.**
+
+<div id="users-tab" />
 
 ### Pestaña usuarios
 
@@ -95,6 +113,8 @@ La pestaña **Usuarios** muestra una tabla de todos los usuarios existentes en t
 * Haz clic en el icono de filtro <Image alt="filter_icon.png" src="https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png" width="25px" /> en el encabezado de la columna para filtrar los usuarios por su rol (incluidos los roles temporales).
   * Para borrar el filtro, selecciona **Ninguno** en la lista desplegable de filtros.
 * Utiliza las casillas de verificación para seleccionar y [editar varios usuarios](/docs/user-management-for-agencies#edición-multiusuario) al mismo tiempo.
+
+<div id="roles-tab" />
 
 ### Pestaña Roles
 
@@ -109,6 +129,8 @@ Haz clic en el nombre de cualquier rol en el panel izquierdo para ver:
 * El número de usuarios asignados actualmente a ese rol (en la esquina superior derecha de la pantalla)
   * Desplázate sobre el icono de usuario <Image alt="user_icon.png" src="https://files.readme.io/afd47a11e82e0cfac3240fe39582bd141639465952f6eef76bcf1f6e7532d6a9-16162513473937.png" width="21px" /> para ver una lista de los 20 primeros.
 
+<div id="creating-a-user" />
+
 ## Crear un usuario
 
 **Para crear un nuevo usuario:**
@@ -121,6 +143,8 @@ Haz clic en el nombre de cualquier rol en el panel izquierdo para ver:
    * Puedes incluir letras, números, apóstrofes ('),ampersands (&), signos de dólar ($), símbolos hash (#), guiones (-), guiones bajos (\_) y puntos (.)
    * No se permiten dos puntos consecutivos (..) ni otros caracteres especiales.
    * Debe terminar con un dominio de correo electrónico válido.
+
+   <div id="important" />
 
    > 🚧 **Importante:**
    >
@@ -140,14 +164,20 @@ Haz clic en el nombre de cualquier rol en el panel izquierdo para ver:
 
    * Se envía al usuario una invitación por correo electrónico para activar su cuenta.
 
+   <div id="account-activation-hash" />
+
    #### hash de activación de cuenta
 
    * El usuario se muestra en la tabla de usuarios. El icono del sobre ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png) indica que se ha enviado una invitación y que la cuenta está pendiente de activación. Una vez que el usuario active su cuenta, el sobre desaparecerá.
    * El enlace de activación enviado al usuario tiene una validez de 48 horas. Si el usuario no recibió la invitación o si el enlace ha expirado, puedes [volver a enviar la invitación](/docs/user-management-for-agencies#resending-a-user-invitation).
 
+<div id="editing-users" />
+
 ## Edición de usuarios
 
 Los usuarios se pueden editar uno a la vez o en grupos.
+
+<div id="individual-editing" />
 
 ### Edición individual
 
@@ -159,9 +189,13 @@ Los usuarios se pueden editar uno a la vez o en grupos.
 4. Todos los ajustes que no sean la dirección de correo electrónico se pueden editar.
 5. Haz clic en **Guardar**.
 
+<div id="multi-user-editing" />
+
 ### Edición multiusuario
 
 La edición multiusuario es una forma eficiente de cambiar los permisos de cuenta de varios usuarios a la vez. El uso de esta función en combinación con las capacidades de búsqueda y filtrado de la pestaña **Usuarios** puede resultar particularmente útil para administrar un gran número de usuarios.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -179,6 +213,8 @@ La edición multiusuario es una forma eficiente de cambiar los permisos de cuent
    * ¡Recuerda que tus cambios se aplican a todos los usuarios seleccionados!
 5. Los usuarios editados se resaltan en la tabla y los usuarios aparecen como aparecerán una vez que se guarden los cambios. Sin embargo, aún tienes la oportunidad de revisar tus cambios y confirmarlos o cancelarlos en el siguiente paso.
 6. Revisa tus cambios. Haz clic en **Guardar** para confirmar o en **Cancelar** para deshacer la acción.
+
+<div id="example-1" />
 
 > 📄 **Ejemplo**
 >
@@ -201,12 +237,16 @@ La edición multiusuario es una forma eficiente de cambiar los permisos de cuent
 >    * Utiliza el cuadro de búsqueda para encontrar a Alice y, a continuación, edita individualmente su usuario para darle acceso a la aplicación Astounding.
 >    * Repite estos pasos para Bill y Charlie para darles acceso a Beautiful y Charming, respectivamente.
 
+<div id="deleting-users" />
+
 ## Eliminar usuarios
 
 **Para eliminar un usuario:**
 
 1. En la pestaña **Usuarios**, haz clic en el botón <Image alt="" src="https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png" width="25px" />**Acciones** altactions\_icon.pngalt en el extremo derecho de la fila del usuario.
 2. Selecciona **Eliminar** en el menú.
+
+<div id="special-situations-and-additional-procedures" />
 
 ## Situaciones especiales y procedimientos adicionales
 
@@ -219,6 +259,8 @@ Si tu cuenta utilizaba anteriormente nuestro sistema de administración de usuar
 * A los usuarios con las mismas capacidades se les asignó el mismo rol temporal.
 * Utiliza las características de la [pestaña Roles](/docs/user-management-for-agencies#pestaña-roles) para revisar las capacidades de cada rol temporal y una lista de usuarios que se encuentran actualmente en él.
 
+<div id="temp-role-limitations" />
+
 #### Limitaciones de los roles temporales
 
 Los roles temporales se diseñaron específicamente para permitir una transición fluida desde nuestro sistema de administración de usuarios anterior. Por lo tanto, solo están disponibles en situaciones limitadas:
@@ -228,6 +270,8 @@ Los roles temporales se diseñaron específicamente para permitir una transició
   * Ten en cuenta que el acceso de un usuario a aplicaciones futuras **no se** puede cambiar mientras el usuario tiene un rol temporal.
 * Cuando un usuario con un rol temporal se cambia a un rol predefinido, no se puede devolver al rol temporal asignado anteriormente (o a cualquier otro rol temporal).
 * Si el último usuario en un rol temporal se elimina, el rol ya no aparecerá en tu cuenta.
+
+<div id="example-2" />
 
 > 📄 **Ejemplo**
 >
@@ -246,6 +290,8 @@ Los roles temporales se diseñaron específicamente para permitir una transició
 
 Como todos los administradores tienen los mismos permisos que el propietario de la cuenta, no suele ser necesario cambiar el propietario de la cuenta. Pero si necesitas cambiar el propietario de la cuenta, sigue estos pasos para hacerlo.
 
+<div id="important-1" />
+
 > 🚧 **Importante:**
 >
 > Algunas cosas a considerar antes de comenzar:
@@ -253,12 +299,16 @@ Como todos los administradores tienen los mismos permisos que el propietario de 
 > * Si sigues usando las API Pull, Master o GDPR con el token v1, cambiar el propietario de la cuenta restablece automáticamente estos servicios. Para evitar la pérdida de datos, <Anchor target="_blank" href="/marketers/es/docs/bulletin-api-token-changes">haz la transición para empezar a usar estas API con el token v2</Anchor> **antes de cambiar el propietario de la cuenta**.
 > * El cambio del propietario de la cuenta debe completarse manualmente de acuerdo con estos pasos. No se puede hacer desde la página de **Administración de usuarios.**
 
+<div id="1send-your-request-via-the-chat-widget" />
+
 #### #1 — Envía tu solicitud a través del widget de chat
 
 Para comenzar el proceso de cambiar el propietario de la cuenta, abre el widget de chat <Anchor target="_blank" href="https://hq1.appsflyer.com/apps/search?openAssistant=true">usando este enlace</Anchor> o haciendo clic en el botón Ayuda en la barra de menú superior. Incluye la siguiente información en el chat:
 
 * Nombre del propietario de la cuenta que quieres reemplazar
 * Nombre, cargo y correo electrónico del nuevo propietario de la cuenta
+
+<div id="2next-steps" />
 
 #### #2 – Próximos pasos
 

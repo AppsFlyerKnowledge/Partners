@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En resumen:** Encuentra respuestas a las preguntas más frecuentes de los partners sobre Protect360.
 
+<div id="impression-level-anomalies" />
+
 ## Anomalías a nivel de clics/impresiones
 
 <div id="why-are-impressionsclicks-being-capped" />
@@ -54,6 +56,8 @@ Te recomendamos leer: <Anchor target="_blank" href="https://www.appsflyer.com/gl
 
 </Accordion>
 
+<div id="installin-app-event-level-anomalies" />
+
 ## Anomalías a nivel de instalación/evento in-app
 
 <div id="why-was-my-test-install-rejected-from-attribution" />
@@ -75,6 +79,8 @@ Revisa el "submotivo del fraude" asociado con el rechazo para mayor claridad. Es
 Te recomendamos leer sobre los <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#motivos-de-bloqueo">Motivos de bloqueo de Protect360</Anchor>.
 
 </Accordion>
+
+<div id="protect360-data-visibility-and-comprehension" />
 
 ## Visibilidad y comprensión de datos de Protect360
 

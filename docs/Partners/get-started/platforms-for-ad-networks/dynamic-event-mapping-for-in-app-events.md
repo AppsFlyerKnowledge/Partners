@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Configura tu enlace de atribución para que tus Partners (como TUNE o CAKE) puedan recibir distintos postbacks para un único evento in-app, en función de los ID de objetivo.
 
+<div id="introduction" />
+
 ## Introducción
 
 Se pueden enviar distintos postbacks para un evento in-app en función del ID de objetivo.
@@ -35,7 +37,11 @@ En la página Active Integrations del Dashboard, los anunciantes asignan cada un
 
 Esto permite a las Ad network abrir varias campañas con una etiqueta de evento dinámica independiente (por ejemplo, HasOffers llama a esto goal\_id) para cada campaña. A continuación, las etiquetas de evento dinámicas se pasan a la Ad network en el postback en función del valor que se colocó en la URL de clic.
 
+<div id="attribution-link" />
+
 ## Enlace de atribución
+
+<div id="attribution-link-example" />
 
 > 📄 **Ejemplo de enlace de atribución**
 >

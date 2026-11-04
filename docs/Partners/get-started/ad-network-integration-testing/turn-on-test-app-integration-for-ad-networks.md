@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Las ad network que realizan pruebas de integración deben activar la integración de la aplicación (activación).
 
+<div id="test-apps-for-ad-networks-ios-and-android" />
+
 ## Aplicaciones de prueba para ad networks (iOS y Android)
 
 Las ad networks, después de configurar la integración y los postbacks, deben probar la integración con las aplicaciones de prueba de AppsFlyer. Antes de realizar las pruebas, la ad network debe activar la integración de la app y habilitar permisos adicionales de la ad network según sea necesario. La activación se realiza una vez por aplicación.
@@ -31,6 +33,8 @@ Las ad networks, después de configurar la integración y los postbacks, deben p
 | <Anchor target="_blank" href="/partners/es/docs/getting-started-onboarding-guide-for-ad-networks#parte-2-prueba-usando-aplicaciones-de-anunciantes">Android</Anchor> | com.appsflyer.adNetworkTest |
 | <Anchor target="_blank" href="/partners/es/docs/ios-integration-testing-for-ad-networks">apps de iOS,</Anchor> | id1543229303 |
 | <Anchor target="_blank" href="/partners/es/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> | <ul><li>id888707085</li><li>id888707086</li><li>id888707087</li></ul> |
+
+<div id="activation-procedure" />
 
 ### Procedimiento de activación
 

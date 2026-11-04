@@ -32,6 +32,8 @@ La calificación de riqueza de datos, una métrica proporcionada por AppsFlyer, 
 
 Para maximizar la calificación, las ad networks deben subsanar las carencias de datos que tengan.
 
+<div id="data-richness-score" />
+
 ## Calificación de riqueza de datos
 
 **Para ver tu calificación de riqueza de datos:**
@@ -44,6 +46,8 @@ Para maximizar la calificación, las ad networks deben subsanar las carencias de
    ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
 
 Los anunciantes pueden ver la calificación de riqueza de datos (baja, media o alta) de cada ad network que tenga una integración con AppsFlyer.
+
+<div id="included-data" />
 
 ### Datos incluidos
 
@@ -65,10 +69,14 @@ Para recibir una calificación alta, una ad network debe proporcionar los siguie
   * ID de sub sitio
   * Ejemplo
 
+<div id="data-threshold" />
+
 ### Umbral de datos
 
 * La calificación se calcula semanalmente y puede subir o bajar en función de la integridad de los parámetros indicados arriba.
 * Se requiere una cantidad mínima de conversiones (instalaciones, reatribuciones y reengagements) para que se calcule la calificación. Si la red tiene menos conversiones que el mínimo durante una semana determinada, la semana siguiente el indicador de la calificación se desactivará y no se mostrará ninguna categoría de datos.
+
+<div id="next-steps" />
 
 ## Siguientes pasos
 

@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Agrega la validación de firma a los clics para evitar responsabilidades por fraude y para que los clics fraudulentos no se atribuyan a tu red de publicidad.
 
+<div id="about-click-signing" />
+
 ## Acerca de la firma de clics
 
 Con un mínimo de tecnología, los estafadores pueden enviar clics en nombre de una red de publicidad y crear miles, o incluso millones, de clics falsos que se envían a AppsFlyer. A veces, las propias redes de publicidad no son conscientes del problema.
@@ -42,13 +44,19 @@ Las firmas permiten que AppsFlyer valide los clics y asegurarse de que la inform
   * Están disponibles en los reportes de Protect360 para las redes de publicidad (no para los anunciantes). <Anchor target="_blank" href="/partners/es/docs/protect360-reports-for-ad-networks#failed-click-signatures">Saber más</Anchor>
   * No afectan la tasa de conversión ni el umbral de bloqueo de clics de la red de publicidad
 
+<div id="click-signature-integration" />
+
 ## Integración de la firma clic
+
+<div id="flow" />
 
 ### Flujo
 
 El siguiente gráfico describe el flujo desde el desarrollo inicial y las pruebas básicas hasta las pruebas de producción y, por último, hasta la producción.
 
 ![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+
+<div id="procedure" />
 
 ### Procedimiento
 
@@ -70,9 +78,13 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
      https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_siteid=12345&expires=1597657118&signature_v2=8fnDVzZP_WRZnv3KNJaREOEfvB5p9oRc_XlKEvUo8gk
      ```
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Asegúrate de que cualquier codificación URL de caracteres especiales o espacios en tu enlace se produce antes de que se genere la firma de clic. Generar primero la firma provoca un fallo en la verificación.
+
+<div id="creating-a-click-signature" />
 
 ## Crear una firma de clic
 
@@ -80,6 +92,8 @@ Para crear una firma de clic debes:
 
 1. Construir un JSON utilizando la lista de atributos y reglas JSON que se indican a continuación
 2. Crear la firma a partir de este JSON utilizando HMAC56
+
+<div id="list-of-attributes" />
 
 ### Lista de atributos
 
@@ -106,16 +120,24 @@ La siguiente lista de atributos es compatible con la firma por clic y engagement
 | 17 | idfa | No |  |
 | 18 | idfv | No |  |
 
+<div id="attribute-and-json-rules" />
+
 ### Reglas de atributos y JSON
+
+<div id="order-and-appearance-of-attributes" />
 
 #### Orden y apariencia de los atributos
 
 * Los parámetros admitidos en la URL de engagement con un valor deben estar en el JSON
 * Los atributos deben figurar en el JSON en el orden indicado en la tabla anterior
 
+<div id="empty-attributes" />
+
 #### Atributos vacíos
 
 * Los atributos listados en el JSON no pueden ser valores vacíos o contener sólo espacios
+
+<div id="json-data-structure" />
 
 #### Estructura de datos JSON
 
@@ -124,13 +146,19 @@ La siguiente lista de atributos es compatible con la firma por clic y engagement
      Ejemplo:   
     `[["key-1","value-1"],["key-2","value-2"]...["key-n","value-n"]]`
 
+<div id="attribute-value-escaping" />
+
 #### Escape de valores de atributos
 
 * Los valores del JSON deben escribirse en **minúsculas**, tal y como se define en el <Anchor target="_blank" href="https://www.w3docs.com/snippets/java/how-should-i-escape-strings-in-json.html">estándar JSON</Anchor>.
 
+<div id="json-spaces" />
+
 #### Espacios JSON
 
 * El JSON debe estar compactado. No debe contener espacios en blanco, tabuladores ni caracteres de nueva línea entre los valores.
+
+<div id="signature-algorithm" />
 
 #### Algoritmo de firma
 
@@ -141,6 +169,8 @@ La siguiente lista de atributos es compatible con la firma por clic y engagement
 ```json
 //genera una firma a partir de la URL de clic y la codifica con base64 sin relleno String generatedSignature = Base64.getUrlEncoder().withoutPadding().encodeToString(mac.doFinal(jsonString.getBytes()));
 ```
+
+<div id="signature-example" />
 
 ### Ejemplo de firma
 
@@ -185,6 +215,8 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 ```
 
 </Accordion>
+
+<div id="code-examples" />
 
 ### Ejemplos de código
 
@@ -357,9 +389,13 @@ func main() {
 
 </Accordion>
 
+<div id="click-signature-apis" />
+
 ## API de firma por clic
 
 AppsFlyer proporciona API que permiten a las redes de publicidad gestionar y probar el proceso de firma de clics. Consulta la lista de API en la tabla siguiente y las secciones que siguen con la información necesaria para utilizar la API. 
+
+<div id="click-signature-apis-1" />
 
 #### API de firma por clic
 
@@ -375,6 +411,8 @@ AppsFlyer proporciona API que permiten a las redes de publicidad gestionar y pro
 | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">Excluir aplicación</Anchor> | Configura los ID de aplicación que se excluirán de la firma por clic. |
 | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete">Eliminar la aplicación excluida</Anchor> | Configura los ID de aplicación para que se incluyan en la firma por clic después de haber sido excluidos. |
 
+<div id="legacy-versions" />
+
 ## Versiones heredadas
 
 Estas versiones no deben utilizarse y se enumeran únicamente a título de referencia
@@ -382,6 +420,8 @@ Estas versiones no deben utilizarse y se enumeran únicamente a título de refer
 <div id="v1-legacy" />
 
 <Accordion title="V1: heredado">
+
+<div id="generate-secret-key-method" />
 
 ### Método de generación de clave secreta
 
@@ -402,6 +442,8 @@ Estas versiones no deben utilizarse y se enumeran únicamente a título de refer
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
+
+<div id="parameters" />
 
 #### Parámetros
 
@@ -450,6 +492,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Códigos de respuesta HTTP">
 
+<div id="response-codes" />
+
 #### Códigos de respuesta
 
 | Código | Mensaje | Observaciones |
@@ -458,6 +502,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
+
+<div id="revoke-secret-key-method" />
 
 ### Método de revocación de la clave secreta
 
@@ -476,6 +522,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
+
+<div id="parameters-1" />
 
 #### Parámetros
 
@@ -502,6 +550,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <Accordion title="Códigos de respuesta HTTP">
 
+<div id="response-codes-1" />
+
 #### Códigos de respuesta
 
 | Código | Mensaje | Observaciones |
@@ -510,6 +560,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 | 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
+
+<div id="test-method" />
 
 ### Método de prueba
 
@@ -528,6 +580,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
+
+<div id="parameters-2" />
 
 #### Parámetros
 
@@ -578,6 +632,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Códigos de respuesta HTTP">
 
+<div id="response-codes-2" />
+
 #### Códigos de respuesta
 
 | Código | Mensaje | Observaciones |
@@ -586,6 +642,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
+
+<div id="configure-mode-method" />
 
 ### Configurar método de modo
 
@@ -606,6 +664,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
+
+<div id="parameters-3" />
 
 #### Parámetros
 
@@ -632,6 +692,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Códigos de respuesta HTTP">
 
+<div id="response-codes-3" />
+
 #### Códigos de respuesta
 
 | Código | Mensaje | Observaciones |
@@ -641,6 +703,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
+
+<div id="configure-circuit-breaker-method" />
 
 ### Configurar el método del disyuntor
 
@@ -663,6 +727,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
+
+<div id="request-body-json" />
 
 #### Cuerpo de la solicitud JSON
 
@@ -692,6 +758,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Códigos de respuesta HTTP">
 
+<div id="response-codes-4" />
+
 #### Códigos de respuesta
 
 | Código | Mensaje | Observaciones |
@@ -701,6 +769,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
+
+<div id="get-configuration-method" />
 
 ### Obtener método de configuración
 
@@ -770,6 +840,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="Códigos de respuesta HTTP">
 
+<div id="response-codes-5" />
+
 #### Códigos de respuesta
 
 | Código | Mensaje | Observaciones |
@@ -778,6 +850,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
+
+<div id="report-method" />
 
 ### Método de reporte
 
@@ -800,6 +874,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="parameters-4" />
 
 #### Parámetros
 
@@ -850,6 +926,8 @@ Asegúrate de que tienes una clave secreta válida comprobando la configuración
 
 <Accordion title="Códigos de respuesta HTTP">
 
+<div id="response-codes-6" />
+
 #### Códigos de respuesta
 
 | Código | Mensaje | Observaciones |
@@ -858,6 +936,8 @@ Asegúrate de que tienes una clave secreta válida comprobando la configuración
 | 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
+
+<div id="exclude-app-method" />
 
 ### Excluir método de aplicación
 
@@ -878,6 +958,8 @@ Asegúrate de que tienes una clave secreta válida comprobando la configuración
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-5" />
 
 #### Parámetros
 
@@ -904,6 +986,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="Códigos de respuesta HTTP">
 
+<div id="response-codes-7" />
+
 #### Códigos de respuesta
 
 | Código | Mensaje | Observaciones |
@@ -912,6 +996,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | No autorizado | Encabezado de autorización no válido o ausente |
 
 </Accordion>
+
+<div id="remove-excluded-app-method" />
 
 ### Eliminar el método de aplicaciones excluidas
 
@@ -934,6 +1020,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-6" />
 
 #### Parámetros
 
@@ -959,6 +1047,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 <div id="http-response-codes::b5e059da" />
 
 <Accordion title="Códigos de respuesta HTTP">
+
+<div id="response-codes-8" />
 
 #### Códigos de respuesta
 
@@ -1010,6 +1100,8 @@ String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **A primera vista:** Las ad networks responsables de la adquisición de usuarios y del retargeting pueden recibir datos sobre clics e impresiones bloqueados.
 
+<div id="protect360-reports-for-ad-networks" />
+
 ## Reportes de Protect360 para redes de publicidad
 
 **Aviso**: Este artículo proporciona información sobre los reportes de Protect360 disponibles solo para ad networks. Para los datos que también están disponibles para los anunciantes, consulta <Anchor target="_blank" href="/partners/es/docs/protect360-for-integrated-partners">Protect360 para Partners integrados</Anchor>.
@@ -33,6 +35,8 @@ Las ad networks pueden recibir reportes a través de <Anchor target="_blank" hre
 
 A continuación, las ad networks pueden ingerir estos datos a nivel de red con visibilidad entre clientes de sus clics e impresiones bloqueados y usarlos para protegerse contra el fraude.
 
+<div id="report-considerations" />
+
 ### Consideraciones sobre el reporte
 
 * Los datos llegan en formato CSV al bucket del partner de UA/retargeting.
@@ -40,6 +44,8 @@ A continuación, las ad networks pueden ingerir estos datos a nivel de red con v
 * Disponible a través de <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners">Data Locker for Partners</Anchor>.
 * Actualización de datos: <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#ad-revenue">A diario, lo que significa que los datos del Día 0 llegan el Día 1</Anchor>. Los datos se escriben diariamente a las 07:00 <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#daily">hora UTC</Anchor> en la h=23 de tu bucket de Data Locker.
 * Aplicaciones incluidas: Un único reporte contiene los datos de todas las aplicaciones.
+
+<div id="report-types" />
 
 ## Tipos de informes
 
@@ -49,6 +55,8 @@ A continuación, las ad networks pueden ingerir estos datos a nivel de red con v
 
 Este reporte contiene datos de nivel agregado sobre clics e impresiones que se bloquean debido al capping o por cualquier otro motivo. 
 
+<div id="report-structure-fieldsdimensions" />
+
 #### Estructura del reporte: Campos/Dimensiones
 
 | **Campo** | **Nota** |
@@ -57,6 +65,8 @@ Este reporte contiene datos de nivel agregado sobre clics e impresiones que se b
 | id\_sitio | ID que identifica al publisher que muestra el anuncio. |
 | fecha | Fecha de bloqueo |
 | agencia | <ul><li>Agencia que trajo el tráfico a través de esta ad network.</li><li>Devuelve null si no hay ninguna agencia implicada.</li></ul> |
+
+<div id="report-structure-metrics" />
 
 #### Estructura del reporte: Métricas
 
@@ -74,6 +84,8 @@ Este reporte contiene datos de nivel agregado sobre clics e impresiones que se b
 <Accordion title="Firmas de clic fallidas">
 
 Este reporte contiene datos a nivel de usuario sobre firmas de clic fallidas. Es decir, cuando las ad network usan el <Anchor target="_blank" href="/partners/es/docs/click-signing-for-ad-networks">método de firma de clics de AppsFlyer</Anchor>, el reporte contiene clics de URL con el PID de la red que no tienen firmas de clic validadas, ya sea porque la firma no es válida o ha caducado, o porque el clic no está firmado en absoluto. Los fallos en la firma de clics pueden producirse cuando hay errores técnicos en la implementación de las firmas de clic por parte de la ad network, o cuando otra party envía clics en nombre de la red (con su PID).
+
+<div id="report-structure-fieldsdimensions-1" />
 
 #### Estructura del reporte: Campos/Dimensiones
 

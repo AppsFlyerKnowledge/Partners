@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Aprende cómo configurar tus datos de interacción con anuncios para que AppsFlyer pueda aplicar modelado probabilístico cuando no haya señales determinísticas disponibles.
 
+<div id="about-probabilistic-modeling" />
+
 ## Sobre el modelado probabilístico
 
 AppsFlyer utiliza el modelado probabilístico como un método estadístico que preserva la privacidad para reportar el performance de las campañas de marketing de los desarrolladores de apps. Genera reportes agregados del performance de campañas a nivel de campaña para desarrolladores de apps.
@@ -29,6 +31,8 @@ AppsFlyer utiliza el modelado probabilístico como un método estadístico que p
 
 * Se basa en estadísticas y no en IDs únicos.
 * Es un método alternativo que se utiliza cuando no hay disponibles un referer o identificadores publicitarios. Los métodos de atribución determinista, como los clics con referentes o coincidencia de ID, tienen prioridad si ocurren dentro de la ventana de lookback.
+
+<div id="when-is-probabilistic-modeling-used" />
 
 ### ¿Cuándo se utiliza el modelado probabilístico?
 

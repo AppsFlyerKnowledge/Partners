@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumen**: prueba la integración con la ad network usando aplicaciones de marketing.
 
+<div id="prerequisites" />
+
 ## Prerrequisitos
 
 Antes de que puedas empezar a probar la integración de marketing con tu ad network, hay algunos requisitos:
@@ -31,9 +33,13 @@ Antes de que puedas empezar a probar la integración de marketing con tu ad netw
 * Si la aplicación no está publicada en Google Play o en la tienda de aplicaciones de iOS, debes pedir al marketer que te proporcione la aplicación
 * Tanto si la aplicación está publicada como si no, debe estar <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">en la cuenta de AppsFlyer del marketer</Anchor>
 
+<div id="getting-started" />
+
 ## Primeros pasos
 
 Abre tu Dashboard de AppsFlyer. En la pantalla **App search**, introduce el ID de la aplicación del marketer:
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -45,9 +51,13 @@ Cuando aparezca la marca de verificación verde en el campo de entrada, haz clic
 
 [![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
 
+<div id="testing-live-apps" />
+
 ## Prueba de aplicaciones en producción
 
 En el Dashboard de AppsFlyer de tu aplicación, selecciona **Active integrations** en el menú lateral. Elige tu ad network y haz clic en **Attribution link**.
+
+<div id="important" />
 
 > 🚧 **Dos puntos (:)**
 >
@@ -64,6 +74,8 @@ Ahora puedes generar un enlace de atribución para probar la atribución de la i
 Añade parámetros al enlace de atribución según tus necesidades y los datos que quieras registrar.
 
 [![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
+
+<div id="tip" />
 
 > 👍 **Consejo**
 >
@@ -82,6 +94,8 @@ Iniciar la aplicación es fundamental para el flujo de atribución. Si no se ini
 Después, puedes [ver la instalación en tu dashboard](/docs/test-marketer-campaign-integration-with-the-ad-network#ver-instalaciones-en-el-dashboard).
 
 </Accordion>
+
+<div id="testing-apps-in-development" />
 
 ## Prueba de aplicaciones en desarrollo
 
@@ -109,7 +123,11 @@ Instala la aplicación en el dispositivo de prueba con el archivo que te proporc
 
 </Accordion>
 
+<div id="testing-in-app-events" />
+
 ## Probando eventos in-app
+
+<div id="note" />
 
 > 📘 **Advertencia**
 >
@@ -135,6 +153,8 @@ En el dashboard de AppsFlyer de tu aplicación, selecciona **Active integrations
 
 Cuando sepas qué eventos in-app registra el anunciante y el mapeo de eventos esté configurado, activa algunos eventos desde la aplicación instalada.
 
+<div id="note-1" />
+
 > 📘 **Advertencia**
 >
 > Las ad networks no tienen acceso al Dashboard de eventos y solo pueden ver los eventos in-app en el Dashboard general después de que el anunciante habilite el **Acceso a los datos agregados de eventos in-app** <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permiso de ad network</Anchor>. Sin embargo, you can export in-app event-related data from the [In-app events postback](/docs/test-marketer-campaign-integration-with-the-ad-network#verificar-datos-de-postback) report.
@@ -150,9 +170,13 @@ Después de exportar el reporte de postbacks de eventos in-app, puedes revisarlo
 
 </Accordion>
 
+<div id="viewing-installs-in-the-dashboard" />
+
 ## Ver instalaciones en el dashboard
 
 Cuando instales y abras la aplicación, podrás ver los resultados en tu dashboard.
+
+<div id="important-1" />
 
 > 🚧 **Dos puntos (:)**
 >
@@ -163,6 +187,8 @@ Accede a tu dashboard de AppsFlyer y, en el menú lateral, selecciona **Análisi
 Filtra por tu ad network. Puedes ver el número de clics e instalaciones que se atribuyen a tu ad network.
 
 Los datos relacionados con clics e instalaciones aparecen en la parte superior de la pantalla **General**. La pantalla **General** también incluye **Desglose por campaña** y **Reporte de rendimiento agregado**. Verifica que las campañas que aparecen en estas secciones se correspondan con el parámetro de campaña del enlace de atribución.
+
+<div id="verifying-postback-data" />
 
 ## Verificar datos de postback
 

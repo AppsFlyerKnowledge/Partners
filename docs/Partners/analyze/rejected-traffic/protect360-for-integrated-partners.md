@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumen:** Los socios integrados, como redes publicitarias y agencias, pueden visualizar el fraude relacionado con el tráfico que ha sido identificado y bloqueado por los motores ProtectLITE y Protect360, así como también por las reglas de validación definidas manualmente por el cliente.
 
+<div id="overview" />
+
 ## Visión general
 
 AppsFlyer detecta y bloquea el fraude a través de: 
@@ -41,11 +43,15 @@ Con los permisos adecuados, los socios integrados pueden:
 
 Además, hay <Anchor target="_blank" href="/partners/es/docs/protect360-reports-for-ad-networks">informes de datos sin procesar</Anchor> accesibles para redes publicitarias sobre límites de clics e impresiones, así como firmas de clics fallidos, que no requieren permisos de los anunciantes.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Para anunciantes que trabajan con redes publicitarias a través de una agencia, es necesario que tanto la red publicitaria como la agencia tengan acceso a los datos. Por lo tanto, el anunciante debe integrar a ambos en AppsFlyer y concederles permiso para acceder a los datos.
 >
 > Si solo la agencia está integrada y tiene permisos, la red publicitaria no podrá acceder a los datos.
+
+<div id="dashboard-view" />
 
 ### Vista del panel de control
 
@@ -67,6 +73,8 @@ Limitaciones:
 
   <Image alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
 
+<div id="raw-data-reports" />
+
 ### Informes de datos sin procesar
 
 **Requisitos previos: Permiso del anunciante para acceder a ProtectLITE y Protect360.**
@@ -80,6 +88,8 @@ Los informes están disponibles a través de:
 
 Obtenga más información sobre los <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports">informes de datos brutos de Protect360</Anchor>.
 
+<div id="protect360-ad-network-reporting-api" />
+
 ## API de informes de redes publicitarias de Protect360
 
 * Los informes de datos brutos que se describen en esta sección están disponibles para las redes publicitarias a través de API.
@@ -92,6 +102,8 @@ Obtenga más información sobre los <Anchor target="_blank" href="/marketers/es/
 * Para obtener una lista de aplicaciones para las que tiene permisos de Protect360, utilice la <Anchor target="_blank" href="/partners/es/docs/app-list-api-for-ad-networks">API de lista de aplicaciones.</Anchor>
 * El administrador debe obtener un token de autenticación de AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">V2.0</Anchor> disponible en el panel.
 
+<div id="protect360-api-reports" />
+
 #### Informes de la API de Protect360
 
 | Informe | Actualización de datos | Descripción |
@@ -101,6 +113,8 @@ Obtenga más información sobre los <Anchor target="_blank" href="/marketers/es/
 | Instalaciones | En tiempo real | Instalaciones bloqueadas con motivo del bloqueo<br /><br />Tema del informe:  blocked\_installs\_report |
 | Evento en la aplicación | En tiempo real | Eventos dentro de la aplicación realizados por usuarios bloqueados<br /><br />Tema del informe: `blocked_in-app_events_report` |
 | Clics | En tiempo real | Clics realizados por usuarios bloqueados<br /><br />Tema del informe: `blocked_clicks_report` |
+
+<div id="procedure-for-ad-networks-to-get-protect360-reports-by-download" />
 
 #### **Procedimiento para que las redes publicitarias obtengan informes de Protect360 a través de descarga**
 
@@ -114,6 +128,8 @@ Obtenga más información sobre los <Anchor target="_blank" href="/marketers/es/
    3. Hasta la fecha
    4. Token de portador (token de autenticación de AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">V2.0</Anchor>)
 4. Algunas llamadas tienen [parámetros opcionales](/docs/protect360-for-integrated-partners#api-parameters), como se describe en este artículo.
+
+<div id="curl-examples" />
 
 ### Ejemplos de curl
 
@@ -182,6 +198,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 </Accordion>
 
+<div id="protect360-ad-network-api-reference-guide" />
+
 ### Guía de referencia de la API de la red publicitaria Protect360
 
 <div id="api-basics" />
@@ -237,6 +255,8 @@ Códigos de error y soluciones:
 
 </Accordion>
 
+<div id="impression-capping" />
+
 ## Umbral de impresiones
 
 Si una red de anuncios presenta tasas extremadamente altas de fraude en impresiones o clics, Protect360 bloquea estas acciones de la red durante un ciclo de 24 horas. Esto significa que cualquier impresión o clic que ocurra después de alcanzar el umbral no se registra en AppsFlyer ni es elegible para atribución. Las impresiones/clics bloqueados aparecen en el panel de control y en los informes de Protect360.
@@ -270,6 +290,8 @@ Preguntas frecuentes sobre umbrales de impresiones y clics:
 | P: ¿Cómo podemos detectar tráfico problemático y mejorar el rendimiento de las campañas?<br /><br />R:**Los socios pueden utilizar sus datos e informes de impresiones y clics para identificar fuentes sospechosas y detener esas campañas. Adicionalmente, pueden ver datos de clics e impresiones bloqueados en el panel de control de Protect360/ProtectLITE en las columnas dedicadas, siempre que el anunciante les haya concedido el permiso necesario para ver los datos de fraude en el panel.** |
 
 </Accordion>
+
+<div id="click-signing" />
 
 ### Firma de clics
 

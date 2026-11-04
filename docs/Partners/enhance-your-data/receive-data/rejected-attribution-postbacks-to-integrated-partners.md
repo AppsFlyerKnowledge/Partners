@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **A simple vista:** Los socios integrados reciben notificaciones de instalaciones y eventos dentro de la aplicación rechazados debido a fraude o incumplimiento de las reglas de validación.
 
+<div id="rejected-attribution-postbacks-relating-to-fraud-and-validation-rules" />
+
 ## Publicaciones de atribución rechazadas relacionadas con el fraude y las reglas de validación
 
 **Terminología**:
@@ -57,6 +59,8 @@ La siguiente tabla enumera la razón del rechazo, el valor de la razón del rech
 | validación\_secuestro | Nombres de reglas | ✓ | Regla definida por el cliente. |
 | capa\_ai | N/D | . | Se utilizan modelos de AI para analizar grandes cantidades de puntos de datos, mejorando las capacidades de detección para identificar actividades fraudulentas en dispositivos e instalaciones. |
 
+<div id="reject-reasons-for-in-app-events" />
+
 #### Razones para rechazar eventos en la app
 
 | Razón del rechazo | Valor de la razón del rechazo | Explicación |
@@ -66,6 +70,8 @@ La siguiente tabla enumera la razón del rechazo, el valor de la razón del rech
 | validación\_inapps | nombre\_de\_evento\_inválido | Basado en la regla de validación solicitada o definida manualmente |
 | validación\_inapps | valor\_de\_evento\_inválido | Basado en la regla de validación solicitada o definida manualmente |
 | validación\_inapps | Nombre/s\_de\_la\_regla | Basado en reglas definidas manualmente |
+
+<div id="important" />
 
 > 🚧 **Importante:**
 >

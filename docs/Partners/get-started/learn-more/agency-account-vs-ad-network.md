@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **De un vistazo:** conoce las diferencias entre una cuenta de agencia y una integración con redes de publicidad, y las ventajas de cada una.
 
+<div id="agency-account" />
+
 ## Cuenta de agencia
 
 <span id="b6fb9285-2105-489b-8048-548ba5ce0705"></span>AppsFlyer Agency Solution te permite administrar todo el rendimiento de tu anunciante en un único dashboard universal.
@@ -40,9 +42,13 @@ Hallazgos Clave de la Cuenta de Agencia:
 
 Haz clic en este enlace para obtener más información sobre cómo configurar una <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts">Cuenta de Agencia</Anchor>.
 
+<div id="ad-network-integration" />
+
 ## Integración de ad network
 
 Como partner integrado de AppsFlyer, tu nombre y logotipo se presentan en el sitio web de AppsFlyer. La integración con AppsFlyer como una red publicitaria te permite recibir información a través de postbacks. Como partner integrado de AppsFlyer, recibes un inicio de sesión de la red de publicidad que contiene información de instalación y postback.
+
+<div id="note" />
 
 > 📘 **Nota**
 >

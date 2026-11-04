@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:** Obtén información sobre las opciones para redirigir a los usuarios a la tienda de aplicaciones después de publicar un anuncio y cómo enviar los datos de engagement a AppsFlyer.
 
+<div id="overview" />
+
 ## Descripción general
 
 AppsFlyer recibe los datos de engagement (clics e impresiones) para su atribución de varias maneras:
@@ -32,9 +34,13 @@ AppsFlyer recibe los datos de engagement (clics e impresiones) para su atribuci�
 
 En ambos casos, se utilizan la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">estructura y los parámetros habituales de los enlaces de atribución</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > En el caso de las SRN, los datos se reciben a través de API especializadas.
+
+<div id="users-redirected-via-appsflyer" />
 
 ## Usuarios redirigidos a través de AppsFlyer
 
@@ -46,6 +52,8 @@ Cuando se hace clic en un anuncio, se dirige al usuario a AppsFlyer, que luego l
 4. El usuario instala la aplicación.
 5. AppsFlyer atribuye la instalación.
 
+<div id="users-sent-directly-by-the-ad-network" />
+
 ## Usuarios enviados directamente por la red publicitaria
 
 Cuando se hace clic en un anuncio, la red publicitaria dirige al usuario a la tienda de aplicaciones, lo que minimiza la cantidad de redireccionamientos:
@@ -55,11 +63,15 @@ Cuando se hace clic en un anuncio, la red publicitaria dirige al usuario a la ti
 3. El usuario instala la aplicación.
 4. AppsFlyer atribuye la instalación.
 
+<div id="sending-engagement-data-to-appsflyer" />
+
 ### Envío de los datos de engagement a AppsFlyer
 
 Enviar al usuario directamente a la tienda de aplicaciones mejora su experiencia al reducir la cantidad de redirecciones. También garantiza una atribución precisa de las instalaciones y permite un tráfico de alta calidad.
 
 Las redes publicitarias solo pueden reportar los clics y las impresiones a AppsFlyer **directamente desde el dispositivo del usuario**.
+
+<div id="timing-of-sending-redirects" />
 
 #### Tiempo de envío de redireccionamientos
 

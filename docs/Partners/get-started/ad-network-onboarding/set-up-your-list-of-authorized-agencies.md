@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **En resumen:** Administra qué agencias autorizas a ejecutar campañas a través de la integración de tu red.
 
+<div id="overview" />
+
 ## Visión general
 
 Para evitar el uso no autorizado de tu red, todas las agencias que ejecuten campañas a través de la integración de tu red deben contar con una aprobación previa. Esto se hace agregando su ID de agencia (`af_prt`) a tu lista de agencias autorizadas. Las agencias que no aparecen en la lista no pueden configurar la integración, ya que la ventana de configuración de Partners aparece atenuada. Esto impide que gestionen campañas. La aprobación se realiza a nivel de cuenta, lo que significa que una vez que se aprueba una agencia, tiene acceso a todas las aplicaciones que ejecutan campañas en tu red.
 
 A partir del 31 de julio de 2024, solo el tráfico de las agencias autorizadas por las redes de publicidad se registrará y medirá en AppsFlyer. El tráfico no autorizado dará lugar a una respuesta 403 (Prohibido) de AppsFlyer.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -35,6 +39,8 @@ A partir del 31 de julio de 2024, solo el tráfico de las agencias autorizadas p
 > * La lista de agencias autorizadas puede incluir hasta 200 agencias.
 
 [![authorized-agencies-5.jpg](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)
+
+<div id="manage-authorized-agencies" />
 
 ## Gestión de las agencias autorizadas
 
@@ -50,6 +56,8 @@ Desde la página **Agencias autorizadas**, puedes agregar agencias, ver la lista
 1. En la barra superior, abre el menú de la cuenta (menú desplegable de direcciones de correo electrónico) > **Centro de seguridad**.
 2. En la sección **Agencias autorizadas**, haz clic en **Administrar agencias autorizadas**.
 
+<div id="add-an-agency-to-the-list" />
+
 ### Agregar una agencia a la lista
 
 1. En el panel izquierdo de la página **Agencias autorizadas**, introduce el ID de la agencia.
@@ -57,9 +65,13 @@ Desde la página **Agencias autorizadas**, puedes agregar agencias, ver la lista
 3. [Opcional] Repite los pasos 1 y 2 para agregar más agencias.
 4. Haz clic en **Guardar lista**.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Asegúrate de introducir un ID de agencia válido. Por ejemplo, (af\_prt=) `my_agency_123`
+
+<div id="delete-an-agency-from-the-list" />
 
 ### Eliminar una agencia de la lista
 

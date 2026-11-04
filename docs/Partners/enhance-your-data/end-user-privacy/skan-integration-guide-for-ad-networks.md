@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo**: Las redes de publicidad se integran con AppsFlyer SKAdNetworks (SKAN), lo que les permite optimizar campañas y atribuirse el tráfico que generan.
 
+<div id="appsflyer-offering-for-ad-networks" />
+
 ## Oferta de AppsFlyer para redes de publicidad
 
 **Aprender más sobre la solución SKAN de AppsFlyer para anunciantes:**
@@ -42,6 +44,8 @@ x-zendesk:
   * Las redes de publicidad con integración de SKAN están certificadas e identificadas como tales en el panel de control de AppsFlyer.
   * Esto asegura a los anunciantes que están trabajando con redes de publicidad que pueden medirse de forma determinista a través de este modelo de atribución.
 
+<div id="skan-data-flow" />
+
 ## Flujo de datos de SKAN
 
 ![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
@@ -54,12 +58,16 @@ El flujo de postback completo de SKAN es el siguiente:
    * **Redirigir:** la red solicita al dispositivo iOS que redirija el postback y los datos de campaña que añade de vuelta a AppsFlyer.
 3. **Redirigir:** la red solicita al dispositivo iOS que redirija el postback directamente a AppsFlyer. En este caso, el enriquecimiento de los datos de la campaña se realizará a través de una API separada entre AppsFlyer y la red de publicidad.
 
+<div id="main-integration-parts" />
+
 ## Partes principales de la integración
 
 La integración de SKAN entre AppsFlyer y las redes de publicidad consta de las siguientes partes principales, descritas en este artículo:
 
 * Las redes de publicidad envían los datos de SKAN a AppsFlyer.
 * Las redes de publicidad reciben los datos enriquecidos y decodificados de AppsFlyer a través de postbacks.
+
+<div id="send-data-to-appsflyer" />
 
 ## Envío de datos a AppsFlyer
 
@@ -99,6 +107,8 @@ Mediante este método, las redes de publicidad reenvían cada postback recibido 
 * Envía el postback a AppsFlyer
 * **¡Atención!** Nota: **Antes de enviar el postback a AppsFlyer, valida la <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/SKAdnetwork/verifying_an_install-validation_postback">firma de atribución</Anchor> de Apple usando el contenido del postback saliente, para asegurarte de que no corrompiste involuntariamente los datos.**
 
+<div id="skan-enriched-postback-protocol" />
+
 #### Protocolo de postback enriquecido de SKAN
 
 | Punto final | `https://skadpostbacks.appsflyer.com/api/postbacks` |
@@ -106,6 +116,8 @@ Mediante este método, las redes de publicidad reenvían cada postback recibido 
 | Método HTTP | POST |
 | Tipos de contenido aceptado | `application/json` |
 | Códigos de respuesta | 200 OK: el postback recibido tiene un formato válido.<br /><br />400: Solicitud incorrecta: JSON mal formado, JSON vacío, faltan campos obligatorios. |
+
+<div id="skan-enriched-postback-json-parameters" />
 
 #### Parámetros JSON de postbacks enriquecidos de SKAN
 
@@ -140,6 +152,8 @@ Mediante este método, las redes de publicidad reenvían cada postback recibido 
 | Creatividad | Cadena | <ul><li>Solo relevante para SKAN 4+.</li><li>Disponible cuando usas dígitos adicionales en el source\_identifier para obtener granularidad adicional de la campaña.</li></ul> | Red de publicidad |
 | canal | Cadena | <ul><li>Solo relevante para SKAN 4+.</li><li>Disponible cuando usas dígitos adicionales en el source\_identifier para obtener granularidad adicional de la campaña.</li></ul> | Red de publicidad |
 
+<div id="curl-exampleenriched-skan-3-postback" />
+
 #### **Ejemplo de curl: postback de SKAN 3 enriquecido**
 
 ```bash
@@ -161,6 +175,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "campaign-id": 99
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-fine-conversion-values" />
 
 #### **Ejemplo de curl: postback de SKAN 4 enriquecido con valores de conversión precisos**
 
@@ -184,6 +200,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "attribution-signature": "MEUCIGRmSMrqedNu6uaHyhVcifs118R5z/AB6cvRaKrRRHWRAiEAv96ne3dKQ5kJpbsfk4eYiePmrZUU6sQmo+7zfP/1Bxo="
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-coarse-conversion-values" />
 
 #### Ejemplo de curl: postback de SKAN 4 enriquecido con valores de conversión aproximados
 
@@ -223,6 +241,8 @@ El método de redireccionamiento tiene las siguientes ventajas:
 * **Mayor confianza del anunciante:** el MMP actúa en nombre de un anunciante. Al proporcionar acceso a AppsFlyer al postback de primera mano, los anunciantes confían en que los postbacks no se manipulan en tránsito.
 * **No requiere procesamiento por parte de la red de publicidad:** las redes de publicidad responden con el comando de redireccionamiento (al dispositivo), eliminando así la necesidad de procesar postbacks. En comparación, el método de enriquecer y reenviar requiere que las redes de publicidad consuman el postback, lo enriquezcan con parámetros adicionales y finalmente lo reenvíen a AppsFlyer.
 
+<div id="implementation" />
+
 #### **Implementación**
 
 1. Configura tu servidor para que responda con una respuesta HTTP 307 que redirija el postback a *[https://skadredirect.appsflyer.com/api/redirects](https://skadredirect.appsflyer.com/api/redirects)*
@@ -236,6 +256,8 @@ https://skadredirect.appsflyer.com/api/redirects?
   &ad-network-campaign-id=243232&ad-network-campaign-name=yarg_campaign_name
   &ad-network-adset-name=dsdsa&creative=examplecreative&channel=channelexample
 ```
+
+<div id="query-params-for-campaign-details-not-mandatory" />
 
 #### Parámetros de consulta para los detalles de la campaña (no obligatorio)
 
@@ -256,6 +278,8 @@ https://skadredirect.appsflyer.com/api/redirects?
 | canal | <ul><li>Solo relevante para SKAN 4+.</li><li>Disponible cuando usas dígitos adicionales en el source\_identifier para obtener granularidad adicional de la campaña.</li></ul> |
 
 </Accordion>
+
+<div id="receive-data-from-appsflyer" />
 
 ## Recibir datos de AppsFlyer
 
@@ -315,6 +339,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 </Accordion>
 
+<div id="integration-testing" />
+
 ## Pruebas de integración
 
 Para validar la integración con AppsFlyer, utiliza uno de los siguientes métodos o ambos.
@@ -340,6 +366,8 @@ Para validar la integración con AppsFlyer, utiliza uno de los siguientes métod
 
 Mediante este método, la red de publicidad envía a AppsFlyer los postbacks reales de SKAN desde aplicaciones activas.
 
+<div id="testing-integration" />
+
 #### Probar la integración
 
 | Responsabilidad | Acción |
@@ -348,6 +376,8 @@ Mediante este método, la red de publicidad envía a AppsFlyer los postbacks rea
 | Red de publicidad y AppsFlyer | Acordar un cliente mutuo (habiendo integrado el SDK de AppsFlyer más reciente) para usar para la verificación de la integración de postbacks. |
 | Red de publicidad | Enviar postbacks de la aplicación de SKAN a AppsFlyer, utilizando uno de los métodos descritos en este artículo. |
 | AppsFlyer | Enviar los postbacks decodificados a la red de publicidad de acuerdo con la asignación de valores de conversión establecida por el anunciante. |
+
+<div id="test-criteria" />
 
 #### Criterios de prueba
 
@@ -372,6 +402,8 @@ Mediante este método, la red de publicidad envía a AppsFlyer los postbacks rea
 | <span id="id888707086"></span>id888707086 | Conversión, incluidos los eventos in-app:<ul><li>af\_level\_complete</li><li>af\_login</li><li>af\_SKAN\_revenue</li><li>af\_register</li><li>af\_subscription</li><li>af\_custom\_event</li></ul> | <ol><li>En la pestaña **Integración**, habilita los **postbacks de eventos in-app**.</li><li>Selecciona cada uno de los eventos in-app enumerados y asígnalos a tu identificador de evento.</li><li>Guarda la configuración.</li><li>En un postback, envía el valor de conversión = 63.</li><li>AppsFlyer responde con:<ul><li>Postback de instalación</li><li>af\_level\_complete postback</li><li>af\_login postback</li><li>Postback af\_SKAN\_revenue</li><li>af\_register postback</li><li>af\_subscription postback</li><li>af\_custom\_event postback</li></ul></li></ol> |
 | <span id="id888707087"></span>id888707087 | Engagement, medido usando el evento af\_SKAN\_revenue | <ol><li>En la pestaña **Integración**, habilita los **postbacks de eventos in-app**.</li><li>Asigna el nombre del evento *af\_SKAN\_revenue* y a tu identificador de evento.</li><li>**Guarda** la configuración.</li><li>En un postback, envía el valor de conversión = 3.</li><li>AppsFlyer responde con:<ul><li>Postback de instalación</li><li>3 postbacks del evento af\_SKAN\_revenue</li></ul></li></ol> |
 
+<div id="integration-steps" />
+
 #### Pasos de integración
 
 | Responsabilidad | Acción |
@@ -379,6 +411,8 @@ Mediante este método, la red de publicidad envía a AppsFlyer los postbacks rea
 | Red de publicidad | Configura el ID de tu red de SKAN (proporcionado por Apple) y la plantilla de postback de SKAN en la <Anchor target="_blank" href="/partners/es/docs/self-serve-integration-management-for-ad-networks">plataforma de administración de postbacks</Anchor>. Para consultas y asistencia, contáctanos utilizando el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor>. |
 | Red de publicidad | <ol><li><Anchor target="_blank" href="/partners/es/docs/turn-on-test-app-integration-for-ad-networks">Activa las aplicaciones de prueba</Anchor>.</li><li>Para cada aplicación, completa la columna de instrucciones en la tabla anterior.</li><li>Envía postbacks simulados usando las aplicaciones de prueba enumeradas en la tabla anterior. Consideraciones al enviar postbacks simulados:<ul><li>Establece el app\_id y el valor de conversión como se indica en la tabla anterior.</li><li>Dado que las redes de publicidad no pueden generar firmas compatibles con Apple, los postbacks simulados no tienen que incluir los campos de firma. AppsFlyer no los verificará para postbacks simulados.</li><li>Las redes de publicidad envían el postback usando el enfoque POST o REDIRECT.</li></ul></li></ol> |
 | AppsFlyer | Responde con los postbacks decodificados al punto de conexión designado por la red de publicidad durante la integración. |
+
+<div id="test-criteria-1" />
 
 #### Criterios de prueba
 
@@ -388,6 +422,8 @@ Mediante este método, la red de publicidad envía a AppsFlyer los postbacks rea
 | Red de publicidad | <ul><li>La red de publicidad recibe y decodifica los postbacks traducidos.</li><li>Los postbacks in-app enviados por AppsFlyer coinciden con los flujos esperados. Por ejemplo, el valor de conversión 3 para la aplicación ID888707087, la red de publicidad recibe 3 postbacks del evento *af\_SKAN\_revenue* .</li></ul> |
 
 </Accordion>
+
+<div id="clarifications" />
 
 ## Aclaraciones
 

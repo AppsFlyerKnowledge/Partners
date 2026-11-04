@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En resumen:** Compara los métodos de costos compartidos disponibles para los partners de la red publicitaria de AppsFlyer.
 
+<div id="sharing-cost-with-appsflyer-and-advertisers" />
+
 ## Costo compartido con AppsFlyer y anunciantes
 
 Los anunciantes utilizan AppsFlyer como fuente de confianza para el ROI, la facturación y para tomar decisiones de asignación del presupuesto de marketing. Para que las redes sean visibles, es imprescindible compartir datos de costos con AppsFlyer. Las redes sin datos de costo aparecen en la parte inferior de la lista del dashboard de AppsFlyer.
@@ -37,6 +39,8 @@ Las redes publicitarias comparten costos con AppsFlyer utilizando cualquiera de 
 * **Importación de costos**: Los archivos de datos de costos se cargan/envían a AppsFlyer
 * **Costo por clic:** Las redes reportan el costo cada vez que se hace clic en un enlace de atribución
 
+<div id="cost-badge-for-ad-networks" />
+
 ### Indicador de costo para redes publicitarias
 
 ![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
@@ -44,6 +48,8 @@ Las redes publicitarias comparten costos con AppsFlyer utilizando cualquiera de 
 * Se muestra un indicador de costo en la <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#partner-details-and-performance">página de detalles del partner</Anchor> que destaca a los partners que utilizan InCost o Cost API.
 * Esto certifica que es un partner con capacidad de costos.
 * Los análisis internos y las extensas encuestas a los usuarios muestran que los anunciantes siempre están buscando nuevos partners. Aquellos con un indicador de costo tienen más probabilidades de destacarse, ya que los anunciantes quieren comprender su desempeño de marketing basándose en el análisis del ROI.
+
+<div id="reporting-cost-options-available-to-ad-networks" />
 
 ### Opciones de reporte de costos disponibles para las redes publicitarias
 

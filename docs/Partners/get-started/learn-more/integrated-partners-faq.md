@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **De un vistazo**: Preguntas frecuentes y resolución de problemas de integración de partners integrados.
 
+<div id="account-and-dashboard" />
+
 ## Cuenta y panel de control
 
 <div id="i-want-to-become-an-integrated-partner" />
@@ -131,6 +133,8 @@ Si el anunciante te otorga permisos para la configuración de eventos in-app, as
 
 </Accordion>
 
+<div id="partner-permissions" />
+
 ## Permisos de partners
 
 <div id="what-are-the-partner-permissions" />
@@ -179,6 +183,8 @@ El viaje del Usuario antes de instalar una aplicación anunciada puede influir e
 El anunciante gestiona la lista de permitidos. Para usar una página de destino específica, comparte la URL de la página con tu anunciante y pídele que añada su dominio a su lista de permitidos.
 
 </Accordion>
+
+<div id="data---postbacks-and-reports" />
 
 ## Datos: postbacks y reportes
 
@@ -306,6 +312,8 @@ Asegúrate de que el punto de conexión del postback sea el correcto; comunícat
 
 Las redes de publicidad tienen visibilidad de su configuración cuando la misma fue hecha por un anunciante, **pero no cuando fue realizada por una agencia**. Por lo tanto, cuando una agencia asigna eventos in-app para postbacks a una red, aunque está activa para la agencia, la red de publicidad ve esta sección como inactiva.
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > Yuval es el marketer de la aplicación **com.fused**, que es una aplicación de cliente de la red de publicidad **Sonnet**. Yuval asigna el evento **af\_purchase** para que se envíe como postback a Sonnet, cuando un usuario atribuido a Sonnet realiza una compra.
@@ -375,6 +383,8 @@ Por ejemplo, si tu *af\_prt* es *greatagency*, el nombre de tu campaña puede te
 <Anchor target="_blank" href="/partners/es/docs/getting-started-agency-onboarding#campañas-de-agencias-de-skadnetwork">Más información sobre las campañas de SKAN.</Anchor>
 
 </Accordion>
+
+<div id="anti-fraud-protect360" />
 
 ## Protect360
 

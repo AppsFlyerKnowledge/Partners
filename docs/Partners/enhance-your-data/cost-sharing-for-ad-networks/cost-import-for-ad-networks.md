@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **En resumen:** Descubre cómo las redes publicitarias pueden informar los costos de la campaña del anunciante directamente a AppsFlyer a través de archivos CSV.
 
+<div id="cost-import-for-ad-networks" />
+
 ## Importación de costos para redes publicitarias
 
 ![AdspendIngestion.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
+
+<div id="overview" />
 
 #### Visión general
 
@@ -43,11 +47,15 @@ x-zendesk:
   * Una vez que se carga un archivo, no se puede revertir.
 * Supervisa y verifica que no se hayan encontrado errores en el archivo.
 
+<div id="submitting-ad-spend-files-for-ad-networks" />
+
 ### Envío de archivos de gasto publicitario para ad networks
 
 * Utiliza el método de upload o correo electrónico para ingerir archivos de gasto publicitario.
 * [Práctica recomendada] Utiliza inicialmente el método de upload, ya que es más fácil resolver problemas de formato CSV.
 * Las ad networks no pueden importar datos de costos de agencia; solo los anunciantes pueden.
+
+<div id="submission-by-file-upload" />
 
 #### Envío mediante upload de archivos
 
@@ -65,6 +73,8 @@ x-zendesk:
 6. Procedimientos adicionales:
    * <Anchor target="_blank" href="/marketers/es/docs/import-cost-data#cost-import-dashboard">Sobrescribir la ingestión anterior</Anchor>
    * <Anchor target="_blank" href="/marketers/es/docs/import-cost-data#cost-import-dashboard">Revertir (cancelar)</Anchor>
+
+<div id="submission-by-email" />
 
 #### Envío por correo electrónico
 

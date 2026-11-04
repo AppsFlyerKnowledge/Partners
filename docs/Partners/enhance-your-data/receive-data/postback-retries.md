@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Aprende cómo funcionan los reintentos de postback en AppsFlyer y cómo los Partners integrados pueden configurar sus mecanismos de postback.
 
+<div id="introduction" />
+
 ## Introducción
 
 Los postbacks a partners son una parte esencial de la integración entre AppsFlyer y nuestros partners. Como cualquier sistema puede experimentar problemas momentáneos de respuesta, AppsFlyer puede reintentar los postbacks fallidos.
+
+<div id="important-information" />
 
 ## Información importante
 
