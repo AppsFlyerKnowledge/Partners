@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 概要：AppsFlyerとのAndroidのポストバック連携を、専用のアプリを使ってテストすることが可能です。
 
+<div id="android-integration-testing" />
+
 ## Androidの連携テスト
 
 テストは以下の要素で構成されています。
@@ -34,6 +36,8 @@ x-zendesk:
 以下の表で、利用可能な設定の組み合わせに応じた、テストシナリオを示しています。
 
 各シナリオ毎に、インストールとアプリ内イベントのテストが可能です。アプリ内イベントに関しては、<Anchor target="_blank" href="/partners/ja/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">アプリ内イベントをマッピング</Anchor>して、広告主イベントをパートナー側のイベントにマッピングすることが可能です。
+
+<div id="testing" />
 
 ## テスト
 
@@ -78,6 +82,8 @@ x-zendesk:
    3. 受け取ったポストバックを正しく取り込めたこと。
 
 </Accordion>
+
+<div id="supplementary-information-and-procedures" />
 
 ## 補足情報および手順詳細について
 
@@ -160,6 +166,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 
 このリターゲティング用のURLを使用して、アプリをインストールしてください。フローは、[インストール計測のテスト](/docs/android-integration-testing-for-ad-networks#test-install-attribution)で説明したものと同様です。
 
+<div id="viewing-retargeted-installs-in-the-dashboard" />
+
 ### 管理画面でのリターゲティングコンバージョンの確認
 
 AppsFlyerの管理画面を開いて、左メニューにある**リターゲティング**をクリックしてください。リターゲティングされたインストールが管理画面に表示されるまで、最大30分程度お待ちください。
@@ -197,6 +205,8 @@ AppsFlyerの管理画面を開いて、左メニューにある**リターゲテ
    ![vta-testing-postback.png](https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png)
 
 ヒント
+
+<div id="view-installs-in-the-dashboard" />
 
 ### 管理画面上でのインストールの確認
 

@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer の ROI360 の機能の一部である InCost API を使用することで、アドネットワークは広告のコストデータを AppsFlyer へ送信できるようになります。そうすることで、広告主に集計コストデータが提供され、あなたのアドネットワークの本当のパフォーマンスを理解してもらえるようになります。
 
+<div id="about-incost-api" />
+
 ## InCost API について
 
 InCost API は、アドネットワークが AppsFlyer へコストデータを送信するためのソリューションです。アドネットワークは、API を使用して広告の詳細なコストデータを AppsFlyer へ送信します。AppsFlyer がそのデータを取り込んで処理するので、管理画面やレポート上で広告主やパートナーが利用できるようになります。
+
+<div id="benefits" />
 
 #### メリット
 
@@ -36,6 +40,8 @@ InCost API は、アドネットワークが AppsFlyer へコストデータを�
 * InCost API は迅速かつ簡単に実装でき、利用開始までの期間も短いです。また、最大で過去90日間のコストデータを送り返す機能など、データをいつどのように送信するかを完全に制御できます。
 * InCost APIでは、CPI（クリックURL経由でコスト情報を共有する場合は唯一対応）だけでなく、すべてのコスト形式をサポートしています。
 * AppsFlyerのPartner Marketplace上でも、InCost APIの連携が完了すれば「コスト」のバッジが付与されます。
+
+<div id="implementing-incost-api" />
 
 ## InCost API の実装
 
@@ -58,6 +64,8 @@ InCost API は、アドネットワークが AppsFlyer へコストデータを�
 | 5 | 連携テスト：<ol><li>ステップ1から続くチケットスレッド内で、APIの実装が完了したことをAppsFlyerへ連絡し、実データではなくAPIテストに使用できる以下アプリの権限を付与してもらってください。<ul><li>com.cost.app</li><li>id888123456</li></ul></li><li>パートナーアカウントで管理画面に入り、左メニューの**連携** > **Partner Marketplace**を選択し、自社媒体を選択してください。</li><li>**連携設定**をクリックしてください。</li><li>テストアプリを1つ選択してください。</li><li>連携画面の**コスト**タブを開いてください。</li><li>**コストデータを取得**のトグルをオンにしてください。</li><li>**コストを保存**をクリックしてください。</li><li>**接続テスト**をクリックします。<br />これでAPIが有効になります。</li></ol> |
 | 6 | チケットスレッドにて、連携が正しく機能しているかどうかをAppsFlyerへ確認してください。 |
 | 7 | 連携完了後、広告主にAppsFlyer の連携ページのコストタブで、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#cost-tab">コストデータの取得</Anchor>を有効にしてもらってください。以降、コストデータの受信が開始されます。 |
+
+<div id="fields-for-incost-upload-json" />
 
 ### InCost アップロード JSON の項目
 

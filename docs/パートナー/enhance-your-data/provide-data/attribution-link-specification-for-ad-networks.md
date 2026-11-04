@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** 概要： AppsFlyerと連携しているアドネットワークは、このページの内容に従って計測リンクの設定を行ってください。
 
+<div id="attribution-links-for-ad-networks" />
+
 ## 計測リンク：アドネットワーク向け
 
 計測リンクは、ユーザーが広告をクリックすることで広告へエンゲージしたことをAppsFlyerへ通知するために使用するものです。もっともシンプルな例は、計測リンクを広告の裏側に設定しておいて、ユーザーが広告をクリックした際に計測リンクもクリックされたことになるというものです。
+
+<div id="attribution-model" />
 
 ### 計測方法
 
@@ -49,9 +53,13 @@ x-zendesk:
 
 この流れに沿って、計測リンクを利用してアドネットワークから情報を得て、ポストバックで情報を送り返しています。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > TUNE、CAKE、Affiseなどのサードパーティのパフォーマンスマーケティングツールを使用している場合は、<Anchor target="_blank" href="/partners/ja/docs/platforms-for-ad-networks">プラットフォーム向けのガイド</Anchor>を代わりに参照してください。
+
+<div id="attribution-link-template" />
 
 ### 計測リンクのテンプレート
 
@@ -70,6 +78,8 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={clickid}&advert
 * AppsFlyerとの連携をご希望の場合には、計測リンクのテンプレートを御社側のマクロも記載した上でメールでご連絡ください。
 
 クリック時に取得できた情報は、できる限り多くAppsFlyerへ共有してください。詳細は、 <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#計測リンクのパラメータ">計測リンクパラメータの一覧</Anchor>をご覧ください。
+
+<div id="recommended-minimum-attribution-link-parameters" />
 
 #### 最低限推奨の計測リンクパラメータ
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** 概要： 連携済みパートナーは、広告や検証ルールの違反によって、除外されたインストールとアプリ内イベントのポストバックを受け取ることが可能です。
 
+<div id="rejected-attribution-postbacks-relating-to-fraud-and-validation-rules" />
+
 ## 広告不正と検証ルールによって除外された計測データのポストバック
 
 **用語**：
@@ -55,6 +57,8 @@ x-zendesk:
 | 検証ハイジャック |  | ✓ | 広告主側で定義したルール |
 | ai\_layer | N/A | **x** | AIモデルを使用して、大量のデータポイントを分析し、不正なデバイスとインストール活動を検知する能力を強化します。 |
 
+<div id="reject-reasons-for-in-app-events" />
+
 #### アプリ内イベント向けのブロック理由
 
 | Reject reason | Reject reason value | 概要 |
@@ -64,6 +68,8 @@ x-zendesk:
 | アプリ内検証 | invalid\_event\_name | 要求または手動で定義された検証ルールに基づく |
 | アプリ内検証 | invalid\_event\_value | 要求または手動で定義された検証ルールに基づく |
 | アプリ内検証 | ルール名 | 広告主側でマニュアルで定義したルール |
+
+<div id="important" />
 
 > 🚧 **重要！**
 >

@@ -34,10 +34,14 @@ x-zendesk:
   * TLS バージョン
   * ポート2024-02-26
 
+<div id="accessing-integration-management" />
+
 ## 連携管理へのアクセス
 
 1. AppsFlyerのパートナーアカウント(Admin)でログインしてください。
 2. 上段右のメールアドレスをクリックし、ドロップダウンメニューから**ポストバック管理**を選択してください。
+
+<div id="attribution-link" />
 
 ## 計測リンク
 
@@ -52,6 +56,8 @@ x-zendesk:
    * **あなたのマクロ：** パラメータへ値を渡すアドネットワーク側のマクロを追加してください。
    * **追加：** リンクにそのパラメータを追加する場合には、チェックを入れてください。
 
+   <div id="important" />
+
    > 🚧 **重要！**
    >
    > * キャンペーンパフォーマンスに関するデータをより豊富にするために、キャンペーンや広告関連のパラメータを可能な限り追加してください。
@@ -64,6 +70,8 @@ x-zendesk:
 4. **保存**をクリックしてください。
 
 より詳細は、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">計測リンクの構造とパラメータの詳細</Anchor>を参照してください。
+
+<div id="default-postback" />
 
 ## デフォルトポストバック
 
@@ -81,6 +89,8 @@ x-zendesk:
 
    <Anchor target="_blank" href="/partners/ja/docs/postback-macros-for-ad-networks">ポストバックマクロの全一覧</Anchor>
 
+   <div id="important-1" />
+
    > 🚧 **重要！**
    >
    > * * `is-rejected`
@@ -93,6 +103,8 @@ x-zendesk:
 5. **保存**をクリックしてください。
 
 <Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration">ポストバックの詳細とそのサンプルについても参照してください。</Anchor>
+
+<div id="advanced-privacy-and-skan-postbacks" />
 
 ## 高プライバシーとSKANのポストバック
 
@@ -115,6 +127,8 @@ x-zendesk:
    <Anchor target="_blank" href="/partners/ja/docs/skan-integration-guide-for-ad-networks#appsflyerからのデータ受け取り">SKAdNetworkのポストバックマクロ一覧</Anchor>
 
    <Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">高プライバシーポストバックのマクロ一覧</Anchor>
+
+   <div id="important-2" />
 
    > 🚧 **重要！**
    >

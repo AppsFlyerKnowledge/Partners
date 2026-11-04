@@ -33,9 +33,13 @@ x-zendesk:
 * <Anchor target="_blank" href="/partners/ja/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor>
 * <Anchor target="_blank" href="/partners/ja/docs/rejected-attribution-postbacks-to-integrated-partners">ブロックされたデータのポストバック</Anchor>
 
+<div id="postbacks-for-ad-networks" />
+
 ## アドネットワークへのポストバック
 
 * ポストバックの種類： ポストバックは、インストールとアプリ内イベント、ブロックされたインストールとアプリ内イベント(Protect360による不正検知、もしくは検証ルールの違反によるもの)において利用可能です。
+
+<div id="postback-data-sources" />
 
 #### ポストバックデータのソース
 
@@ -46,6 +50,8 @@ x-zendesk:
 | SDKによる取得情報 | AppsFlyerのSDKによって端末から取得された情報<br /><br />例：iOSの広告IDは、ポストバック時に"&IDFA=(idfa)"を使うことで取得できます。 |
 | AppsFlyerのプラットフォームが取得 | AppsFlyerのプラットフォームによって取得された情報 |
 | Protect360と検証ルール | 不正と判定されたインストールと検証ルールを違反したインストール、またそれらに紐付くアプリ内イベントに関する情報 |
+
+<div id="postback-macros" />
 
 ## ポストバックのマクロ
 
@@ -58,6 +64,8 @@ x-zendesk:
 * Send all
 * [基本] すべてのポストバック向け
 * **[オプション] アプリ内イベントとブロックされたイベント向け：** 列に記入されているイベント向けのマクロです。(ブロック / アプリ内イベント)
+
+<div id="macrosinstalls-in-app-events-and-rejected-events" />
 
 #### マクロ名一覧 - インストール / アプリ内イベント / ブロックされたイベント向け
 
@@ -107,9 +115,13 @@ x-zendesk:
 | <span id="imei"></span>imei | SDK | はい | 携帯電話の識別に使用される端末固有の番号 | はい |  |
 | <span id="is_organic"></span>is\_organic | AF | はい |  | インストールのみ |  |
 
+<div id="in-app-event-only-macros" />
+
 ### アプリ内イベント専用マクロ
 
 以下の例では、パートナーが利用可能なアプリ内イベントのポストバックについて紹介しています。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -128,13 +140,19 @@ x-zendesk:
 > {"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}
 > ```
 
+<div id="encoded-values" />
+
 #### **エンコードされる値**
 
 ポストバックに、 英数字以外の特殊文字が含まれる場合があります。ポストバック時にこれらの値を正しく送信するために、AppsFlyerではポストバック内の英数字以外の値をURLエンコードします。
 
 ポストバックをデコード、もしくはエンコードする場合には、<Anchor target="_blank" href="https://www.urldecoder.org/">各種エンコードのWebサービス</Anchor>を利用してください。
 
+<div id="sample-postbacks" />
+
 ### ポストバックの例
+
+<div id="general-install-postback-examples" />
 
 ### 一般的なインストールポストバックの例
 
@@ -158,6 +176,8 @@ device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="general-in-app-event-postback-examples" />
 
 ### 一般的なアプリ内イベントのポストバックの例
 
@@ -183,6 +203,8 @@ device_ip=(ip)&idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ### アプリ内イベントのポストバック例
 

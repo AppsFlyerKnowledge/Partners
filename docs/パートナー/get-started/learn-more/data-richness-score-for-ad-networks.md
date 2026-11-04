@@ -30,6 +30,8 @@ AppsFlyerが提供する指標であるデータ充実度スコアは、アド�
 
 スコアを最大化するには、アドネットワークが抱えているデータのギャップを改善する必要があります。
 
+<div id="data-richness-score" />
+
 ## データ充実度スコア
 
 **自分のアドネットワークのスコアを確認するには：**
@@ -41,6 +43,8 @@ AppsFlyerが提供する指標であるデータ充実度スコアは、アド�
    ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
 
 もちろん、広告主もAppsFlyerと連携している各アドネットワークのデータ充実度スコア（low / medium / high）を確認可能です。
+
+<div id="included-data" />
 
 ### 含まれるデータ
 
@@ -62,9 +66,13 @@ AppsFlyerが提供する指標であるデータ充実度スコアは、アド�
   * Subsite ID
   * Channel
 
+<div id="data-threshold" />
+
 ### データのしきい値
 
 * スコアは毎週計算され、上記パラメータの状況に応じて上昇 / 下落する可能性があります。
+
+<div id="next-steps" />
 
 ## 次のステップ
 

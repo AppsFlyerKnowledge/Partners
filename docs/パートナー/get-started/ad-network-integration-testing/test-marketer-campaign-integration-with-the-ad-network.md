@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要**：
 
+<div id="prerequisites" />
+
 ## 前提条件
 
 マーケターによるあなたのアドネットワークとの連携をテストする前に、いくつかの前提条件を確認してください。
@@ -31,9 +33,13 @@ x-zendesk:
 * アプリが Google Play または iOS App Store で公開されていない場合は、マーケターにアプリの提供を依頼する必要があります
 * アプリが公開されているかどうかにかかわらず、<Anchor target="_blank" href="/marketers/ja/docs/adding-an-app-to-appsflyer">マーケターのAppsFlyerアカウントにある</Anchor>必要があります
 
+<div id="getting-started" />
+
 ## はじめよう
 
 AppsFlyerダッシュボードを開いてください。**アプリ検索**画面で、マーケターのアプリ IDを入力します。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -45,9 +51,13 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 
 [![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
 
+<div id="testing-live-apps" />
+
 ## リリース済みアプリのテスト
 
 アプリのAppsFlyer管理画面にて、サイドメニューから**アクティブな連携**を選択します。あなたのアドネットワークを選択して**計測リンク**をクリックしてください。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -65,6 +75,8 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 
 [![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > 計測リンクに追加可能なパラメータの詳細については、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyerの計測リンクの構造とパラメータ</Anchor>のページを参照してください。
@@ -80,6 +92,8 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 その後、 [ダッシュボードでインストールを表示できます](/docs/test-marketer-campaign-integration-with-the-ad-network#管理画面でのインストールの確認)。
 
 </Accordion>
+
+<div id="testing-apps-in-development" />
 
 ## 開発中アプリのテスト
 
@@ -107,7 +121,13 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 
 </Accordion>
 
+<div id="testing-in-app-events" />
+
 ## アプリ内イベントのテスト
+
+<div id="note-1" />
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -144,9 +164,13 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 
 </Accordion>
 
+<div id="viewing-installs-in-the-dashboard" />
+
 ## 管理画面でのインストールの確認
 
 アプリをダウンロードして初回起動すると、管理画面にその結果が表示されます。
+
+<div id="important-1" />
 
 > 🚧 **重要！**
 >
@@ -155,6 +179,8 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 AppsFlyer管理画面にアクセスし、サイドメニューから**分析**>**概要**を選択します。
 
 クリックとインストールに関するデータは、**オーバービュー**の画面の上部に表示されます。
+
+<div id="verifying-postback-data" />
 
 ## ポストバックデータの検証
 

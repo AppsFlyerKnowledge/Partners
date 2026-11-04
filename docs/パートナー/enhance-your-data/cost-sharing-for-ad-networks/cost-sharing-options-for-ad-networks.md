@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerのアドネットワークパートナーが利用できる、コストデータの共有方法について比較しています。
 
+<div id="sharing-cost-with-appsflyer-and-advertisers" />
+
 ## AppsFlyer・広告主とのコストデータの共有
 
 広告主は、AppsFlyerをROI / 請求 / マーケティング予算配分に関する意思決定のための情報源として使用しています。アドネットワークの情報を可視化する上で、AppsFlyerとのコストデータの共有は必要不可欠です。  なお、コストデータを持たないアドネットワークのデータは、AppsFlyerの管理画面上でも最下部に表示される仕様になっています。
@@ -37,6 +39,8 @@ x-zendesk:
 * **コストインポート**：コストデータのファイルをAppsFlyerにアップロード/送信する方法です。
 * **Cost by click** 計測リンクがクリックされるたびにコストが記録される方法です
 
+<div id="cost-badge-for-ad-networks" />
+
 ### コスト連携のバッジ
 
 ![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
@@ -44,6 +48,8 @@ x-zendesk:
 * <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーページ">パートナー詳細ページに</Anchor>、InCostまたはCost APIを使用しているパートナーを示すコストバッジが表示されます。
 * このバッジは、そのパートナーがコスト計測に対応しているパートナーであることを証明します。
 * 弊社分析とユーザー調査の結果、広告主は常に新しい広告媒体を探していることがわかっています。また、広告主はROIに注目しながらマーケティングパフォーマンスを分析したいと考えているため、コストバッジが付与されることで注目される可能性も高くなるでしょう。
+
+<div id="reporting-cost-options-available-to-ad-networks" />
 
 ### アドネットワークが利用可能な、コスト連携の選択肢
 

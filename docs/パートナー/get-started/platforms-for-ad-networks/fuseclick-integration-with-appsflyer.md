@@ -54,6 +54,8 @@ AppsFlyer の全パラメーターリストについては、<Anchor target="_bl
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_siteid={ADV_SID}
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ### インストールとアプリ内イベントのポストバック
 
 グローバルインストールポストバック：
@@ -61,6 +63,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_sitei
 ```
 https://tracking.zadsmobile.com/pb?tid={TID}
 ```
+
+<div id="finalizing-your-registration" />
 
 ## 登録の完了
 

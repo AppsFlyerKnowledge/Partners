@@ -28,9 +28,13 @@ x-zendesk:
 
 ![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
 
+<div id="what-is-appsflyer" />
+
 ## AppsFlyerとは？
 
 モバイルアトリビューションのリーダーであるAppsFlyerは、アドネットワーク統合パートナーとして皆様を歓迎します。この記事は、AppsFlyerのパートナー登録を完了したアドネットワーク向けです。パートナー登録を希望する場合は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#appsflyerに新しいパートナーを招待する">AppsFlyerのカスタマー（広告主）</Anchor>に招待してもらう必要があります。
+
+<div id="ad-network-onboarding" />
 
 ## アドネットワークのオンボーディング
 
@@ -56,6 +60,8 @@ x-zendesk:
 * この記事で記載されている所要時間は、アドネットワークとの作業体験に基づいています。各統合設定は多少異なるため、実際の所要時間も変わることがあります。
 * AppsFlyerは多くの<Anchor target="_blank" href="/partners/ja/docs/platforms-for-ad-networks">パフォーマンスプラットフォーム</Anchor>をサポートしています。リストにあるプラットフォームを利用している場合は、統合前に該当プラットフォームの説明を確認する必要があります。
 
+<div id="onboarding-steps" />
+
 ## オンボーディング手順
 
 **AppsFlyerとの統合方法**:
@@ -64,9 +70,13 @@ x-zendesk:
 2. [パート2 - 広告主アプリでのテストの完了](/docs/getting-started-onboarding-guide-for-ad-networks#パート2広告主アプリを使用してテストします)
 3. [パート3 - AppsFlyer管理画面とレポートツールの利用](/docs/getting-started-onboarding-guide-for-ad-networks#パート3appsflyer管理画面とレポーティングオプション)
 
+<div id="part-1-integration-and-testing" />
+
 ### パート1：統合とテスト
 
 <table><thead><tr><th>アクション</th><th>所要時間</th></tr></thead><tbody><tr><td>必須の統合手順を完了するための登録確認メールが届くまでお待ちください。</td><td>--</td></tr><tr><td colspan="2"> <strong>必須の統合手順</strong> </td></tr><tr><td> <a href="./self-serve-integration-management-for-ad-networks#計測リンク" target="_blank">アトリビューションリンクを指定してください</a>: アトリビューションリンクはマクロを含むURLです。これらのマクロには実際の値が入力され、ユーザーがリンクをクリックするたびにAppsFlyerに送信されます。 <br/>注意！AppsFlyerがサポートするパフォーマンスネットワークプラットフォームを利用する場合は、各プラットフォーム固有の指示を考慮する必要があります。<a href="./platforms-for-ad-networks" target="_blank">パフォーマンスネットワークガイド</a>をご覧ください。 </td><td>60</td></tr><tr><td> <a href="./self-serve-integration-management-for-ad-networks#デフォルトポストバック" target="_blank">ポストバックマクロを指定する</a>:ポストバックは、AppsFlyerによって入力されたマクロを含むURLで、各コンバージョン後にリアルタイムでサーバーに送信されます。</td><td>60</td></tr><tr><td>提供された資格情報を使って、<a href="https://hq1.appsflyer.com/auth/login" target="_blank">AppsFlyer管理画面</a>にログインします。 </td><td> </td></tr><tr><td>企業のロゴをアップロードします。ロゴは200 x 50の透明PNG形式である必要があります。 <ol><li>AppsFlyerのメニューバーで、自分のメールアドレス &gt; <strong>パートナー設定</strong>を選択します。 </li><li> <strong>プロフィール</strong>タブで、企業のロゴをアップロードします。 </li><li> <strong>保存</strong>をクリックします。</li></ol></td><td>5</td></tr><tr><td>AppsFlyerテストアプリを使って統合をテストします。<ul><li><a href="./android-integration-testing-for-ad-networks" target="_blank">Android</a></li><li><a href="./ios-integration-testing-for-ad-networks" target="_blank">iOS</a></li></ul></td><td>10</td></tr><tr><td colspan="2"><strong>オプションの統合手順</strong></td></tr><tr><td>[iOS] 広告主がAppsFlyer Aggregated Advanced Privacyを必要とする場合、<a href="./self-serve-integration-management-for-ad-networks#高プライバシーとskanのポストバック" target="_blank">Advanced Privacy</a>の統合を完了してください。</td><td>60</td></tr><tr><td>[iOS] SKAdNetworkキャンペーンを行う場合、<a href="./self-serve-integration-management-for-ad-networks#高プライバシーとskanのポストバック" target="_blank">SKAdNetwork統合</a>を完了してください。 </td><td>60</td></tr><tr><td><h4><strong><span id="authorized-agencies"></span>認定代理店</strong></h4>ネットワーク統合を通じてキャンペーンを行うことを承認した代理店リストを作成、管理します。これは、セキュリティセンターの<a href="./set-up-your-list-of-authorized-agencies" target="_blank"><strong>承認済み代理店</strong></a> セクションに代理店ID (af_prt)を入力することで行います。代理店IDを取得するには、代理店が連絡し提供する必要があります。</td><td>2</td></tr><tr><td colspan="2"><p><strong>オプション機能と考慮事項</strong><br/> </p><p>広告主の要望に基づいて、統合やオプションの実装を検討してください。</p></td></tr><tr><td>不正なクリックがパートナーIDで送信されないようにするには、<a href="./click-signing-for-ad-networks" target="_blank">クリック署名</a>を実装します。 </td><td>60+</td></tr><tr><td>Protect360や検証ルールを実装している広告主には、<a href="./postback-macros-for-ad-networks#マクロ名一覧---インストール--アプリ内イベント--ブロックされたイベント向け" target="_blank">拒否されたアトリビューションポストバック</a>を追加します。</td><td>15</td></tr><tr><td>API経由でAppsFlyerにコストを送信します。<a href="./incost-api-for-ad-networks" target="_blank">InCost API</a>を参照してください。</td><td>60+</td></tr><tr><td> <a href="/marketers/ja/docs/retargeting-attribution-guide" target="_blank">リターゲティング統合</a>。</td><td>15</td></tr><tr><td> <a href="/marketers/ja/docs/measure-view-through-engagements" target="_blank">ビュースルーアトリビューション統合</a>。</td><td>15</td></tr></tbody></table>
+
+<div id="part-2-test-using-advertiser-apps" />
 
 ### パート2:広告主アプリを使用してテストします
 
@@ -80,6 +90,8 @@ x-zendesk:
 | 広告主（管理者） | <Anchor target="_blank" href="/marketers/ja/docs/registering-test-devices">テストデバイスを登録します</Anchor>。広告主に、あなたに代わってこれを実行するよう依頼してください。 | 3 |
 | アドネットワーク | <Anchor target="_blank" href="/partners/ja/docs/test-marketer-campaign-integration-with-the-ad-network">広告主のアプリを使用して統合をテストします。</Anchor> | 60 |
 
+<div id="part-3-appsflyer-dashboard-and-reporting-options" />
+
 ### パート3:AppsFlyer管理画面とレポーティングオプション
 
 | オプション |
@@ -88,9 +100,13 @@ x-zendesk:
 | アドネットワーク向けに、<Anchor target="_blank" href="/partners/ja/docs/data-locker-for-partners">Data Locker</Anchor>を使用してクラウドストレージから集計パフォーマンスデータを取得します。 |
 | Protect360<Anchor target="_blank" href="/marketers/ja/docs/raw-data-export-page">のローデータを取得します。</Anchor> |
 
+<div id="integration-validation-period" />
+
 ## 統合検証期間
 
 AppsFlyerエコシステムの整合性を確保し、内部システムを無効なトラフィックから保護するために、すべての新しいアドネットワーク統合には検証期間が設けられています。この期間中、AppsFlyerはトラフィックを徹底的に検証し、その品質を評価した上で、<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations">マーケットプレイス</Anchor>で他の広告主に統合を利用可能にします。
+
+<div id="validation-periodfaq" />
 
 ### 検証期間—FAQ
 

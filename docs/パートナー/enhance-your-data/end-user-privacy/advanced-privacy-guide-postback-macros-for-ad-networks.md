@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：概要：高プライバシーポストバックが有効になっている場合の、パートナーへのデータ共有について記載しています。ご注意くださいこの記事はSKAdNetworkのポストバックには一切関係なく、広告主向けのものでもありません。**
 
+<div id="advanced-privacy-for-ad-networks-news" />
+
 > 📄 **高プライバシーポストの更新情報**
 >
 > 本ページ内に記載されている高プライバシーポストバックの機能は、以下条件に全て当てはまった場合に有効になります：
@@ -40,6 +42,8 @@ x-zendesk:
 * アトリビューションの対象となるために必要な、[Click URL](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#click-url-requirements)の要件
 * AppsFlyerの管理画面上での、[高プライバシーポストバックのテンプレート](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)の設定方法
 * [高プライバシーポストバックとSKAdNetwork](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#ap-vs-skadnetwork)の違い
+
+<div id="ad-network-advanced-privacy-data-sharing-principles" />
 
 ## 高プライバシーポストバックでのデータ共有の原則
 
@@ -63,15 +67,21 @@ APがONになっている場合、iOS14.5以上のOSでATTに同意しなかっ�
 * <span id="types-of-templates-for-sending-postbacks"></span>レギュラーテンプレートレギュラーポストバック：AppsFlyerとの既存のポストバック連携のテンプレートで、ユーザー識別子やclickID、アトリビューションデータに関するマクロが含まれています。
 * **注記：** AP連携の作業はパートナーアカウント上のポストバック管理の画面を使って、ご自身で設定が可能です。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * エンドユーザーが広告主アプリと広告配信アプリの両方でATTに同意した場合、レギュラーポストバックのテンプレートを使って成果の紐付いた媒体と成果の紐付いていない媒体へもポストバックが送信されます。
+
+<div id="type-of-postback-used" />
 
 ### 使用されるポストバックの種類について
 
 以下の表は、iOS14.5以降のユーザーデータに適用されるものです。
 
 ご注意ください
+
+<div id="postback-type-for-ios-145" />
 
 #### iOS14.5以降使用されるポストバックの種類
 
@@ -85,13 +95,19 @@ APがONになっている場合、iOS14.5以上のOSでATTに同意しなかっ�
 
   ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
 
+<div id="web-campaigns" />
+
 ### Web面での広告配信
 
 アドネットワークがWeb面上で広告を表示している場合、APの挙動が異なります。
 
+<div id="postback-type-used-for-ios-145-when-ap-is-on" />
+
 #### APがON かつ iOS14.5以降において使用されるポストバックタイプ
 
 <table><thead><tr><th colspan="2">ATTのステータス</th><th rowspan="2">紐付いた成果のポストバックタイプ\*</th><th rowspan="2">紐付いていない成果のポストバックタイプ\*</th></tr><tr><th><p>広告掲載アプリ</p></th><th><p>広告主アプリ</p></th></tr></thead><tbody><tr><td><p><span>N/A</span></p></td><td><p><span>許可されていません</span></p></td><td><p><span>高プライバシーポストバック</span></p></td><td><p><span>なし</span></p></td></tr><tr><td><p><span>N/A</span></p></td><td><p><span>承認</span></p></td><td><p>レギュラー<span>ポストバックIDFA, IDFV, CUID, Click ID</span></p></td><td><p>レギュラーポストバック(媒体情報は含まれず、IDFAなどのユーザー情報のみ)</p></td></tr></tbody></table>
+
+<div id="integration" />
 
 ## 統合
 
@@ -118,6 +134,8 @@ APがONになっている場合、iOS14.5以上のOSでATTに同意しなかっ�
 
 2. 各クリックURLに、以下の必須パラメータを追加してください*：  
 
+   <div id="caution" />
+
    > ❗️ **注意**
    >
    > クリックURLが各必須パラメータを渡さない場合、配信しているキャンペーンに紐づくべきインストールの大部分があなたの媒体成果として反映されなくなる可能性があるので注意してください。
@@ -132,6 +150,10 @@ APがONになっている場合、iOS14.5以上のOSでATTに同意しなかっ�
 
    * アプリ内でのリダイレクト(アプリ面)
    * サーバーtoサーバーでのクリック計測 (S2S)
+
+   <div id="important" />
+
+   <div id="parameters-for-advanced-privacy-attribution" />
 
    #### 高プライバシー計測用のパラメータ
 
@@ -249,12 +271,16 @@ APがONになっている場合、iOS14.5以上のOSでATTに同意しなかっ�
 1. [AppsFlyerのパートナーアカウント上での、高プライバシーポストバックの設定](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback)
 2. <Anchor target="_blank" href="/partners/ja/docs/ios-integration-testing-for-ad-networks">高プライバシーポストバックの連携テスト</Anchor>
 
+<div id="advanced-privacy-postback-endpoint-complete-as-required" />
+
 #### 高プライバシーポストバックのエンドポイント [必要に応じて]
 
 | ポストバックの種類 |
 | --- |
 | インストール |
 | アプリ内 |
+
+<div id="advanced-privacy-attribution-macros-available" />
 
 #### 高プライバシーポストバックで利用可能なポストバックマクロ
 
@@ -300,6 +326,8 @@ AppsFlyerの管理画面上にある、ポストバック管理の機能を使�
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 追加情報
 
 <div id="ap-for-analytics-partners" />
@@ -310,6 +338,8 @@ AppsFlyerの管理画面上にある、ポストバック管理の機能を使�
 
 * AP OFF：制約なく、ユーザーレベルのポストバックが送信されます。
 * AP ON：ユーザーの流入元とATTのステータスに応じて、以下表のようにポストバックが送信されます。
+
+<div id="analytics-partner-postback-type-according-to-att-status-and-user-source" />
 
 #### ATTステータスとユーザーの流入元毎のポストバックタイプ：アナリティクスパートナー向け
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** Protect360 に関するパートナー様からのよくある質問への回答をご覧ください。
 
+<div id="impression-level-anomalies" />
+
 ## クリック数/インプレッション数の異常
 
 <div id="why-are-impressionsclicks-being-capped" />
@@ -76,6 +78,8 @@ Protect360 管理画面に表示される「クリック数の上限」は、上
 
 </Accordion>
 
+<div id="installin-app-event-level-anomalies" />
+
 ## インストール/アプリ内イベントレベルの異常
 
 <div id="why-was-my-test-install-rejected-from-attribution" />
@@ -97,6 +101,8 @@ AppsFlyer の不正検知対策は、シングルインストールやインス�
 <Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#ブロック理由">Protect360 のブロックされた理由</Anchor>を読まれることをお勧めします。
 
 </Accordion>
+
+<div id="protect360-data-visibility-and-comprehension" />
 
 ## Protect360 データの可視性と理解
 

@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **概要：** 概要： 関連する計測データをアナリティクスパートナーに対してポストバックで送信する際に利用可能なマクロについて記載しています。
 
+<div id="postbacks-for-analytics-partners" />
+
 ## アナリティクスパートナーへのポストバック
 
 アドネットワークは、AppsFlyerとの連携の一環として、AppsFlyerから送信されるポストバックの内容とエンドポイントの情報を定義する必要があります。 ポストバックは、インストール、アプリ内イベント、リエンゲージメントなど、アプリユーザーのエンゲージメント全般に関連します。
+
+<div id="postback-macros" />
 
 ## ポストバックのマクロ
 
@@ -38,6 +42,8 @@ x-zendesk:
   * AppsFlyer計測：AF＝AppsFlyer側で処理した情報
 * [基本] すべてのポストバック向け
 * **[オプション] アプリ内イベント向け：** アプリ内イベントのデータ専用のマクロです。
+
+<div id="macrosinstalls-and-in-app-events" />
 
 #### インストールおよびアプリ内イベントのマクロ
 
@@ -84,9 +90,13 @@ x-zendesk:
 | af\_subsite\_id | リンク | <ul><li>アドネットワークのサブネットワーク／パブリッシャーID。</li><li>メインパブリッシャー（サイトID）に加えてサブパブリッシャーがある場合、またはバナー、インタースティシャル、ビデオなど、アプリ内の広告タイプ／配置情報を含める場合は、af\_sub\_siteidを使用します。例: af\_sub\_siteid =ABCD\_4567</li></ul> | はい | はい |
 | af\_ad\_type | リンク | 以下の命名規則を利用してください：<ul><li>**テキスト：** テキストのみを含む広告ユニット(例：検索結果など）</li><li>**バナー：** 画面の上部または下部に表示される基本フォーマット</li><li>**インタースティシャル：** 画面閲覧中に差し込まれる、インターステシャル広告</li><li>**ビデオ：** リワード広告ではない通常の動画広告</li><li>**rewarded\_video:** 動画視聴と引き換えにアプリ内報酬を提供するリワード動画広告</li><li>**プレイアブル：** 実際のアプリ操作が一部可能な、インタラクティブな広告</li><li>**sponsored\_content:** 広告記事のようなスポンサードコンテンツに含まれるリンク</li><li>**オーディオ：** 音声広告</li></ul> | はい | はい |
 
+<div id="in-app-event-only-macros" />
+
 ## アプリ内イベント専用マクロ
 
 以下の例では、パートナーが利用可能なアプリ内イベントのポストバックについて紹介しています。
+
+<div id="note" />
 
 > 📄 **例**
 >
@@ -97,12 +107,18 @@ x-zendesk:
 >
 > `{"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`このポストバックのデコードされたJSONの値は次のようになります。
 
+<div id="encoded-values" />
+
 ### エンコードされる値
 
 ポストバックに、 英数字以外の特殊文字が含まれる場合があります。ポストバック時にこれらの値を正しく送信するために、AppsFlyerではポストバック内の英数字以外の値をURLエンコードします。  
 ポストバックをデコード、もしくはエンコードする場合には、[各種エンコードのWebサービス](https://www.urldecoder.org/)を利用してください。
 
+<div id="sample-postbacks" />
+
 ## ポストバックの例
+
+<div id="general-install-postback-examples" />
 
 ### 一般的なインストールポストバックの例
 
@@ -124,6 +140,8 @@ http://YourCompanyDomain.com?pid=(media source)&device_ip=(ip)&idfa=(idfa)&insta
 </Tab>
 </Tabs>
 
+<div id="general-in-app-event-postback-examples" />
+
 ### 一般的なアプリ内イベントのポストバックの例
 
 <Tabs>
@@ -143,6 +161,8 @@ http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&insta
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ## アプリ内イベントのポストバック例
 

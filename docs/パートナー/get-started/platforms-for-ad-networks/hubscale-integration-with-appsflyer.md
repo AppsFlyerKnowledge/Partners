@@ -26,6 +26,10 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="global-postbacks-for-installs-and-in-app-events" />
+
+<div id="creating-the-attribution-link" />
+
 ## 計測リンクを使用する
 
 以下のAppsFlyerの基本的な計測リンクと、各マクロの詳細な雪面を参照してください。
@@ -136,6 +140,8 @@ https://companyname.156th.com/conv?transaction_id={publisher_ref_id}&ios_ifa={io
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction_id}&af_siteid={pub_id}-{sub_pub_id}&advertising_id={google_id}&idfa={ios_ifa}
 ```
+
+<div id="finalizing-your-registration" />
 
 ## 登録の完了
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要**：概要：このページでは、SKAdNetwork (SKAN) におけるアドネットワークとAppsFlyerの連携方法、キャンペーンの最適化の方法や各アドネットワークが生み出したトラフィックに成果を紐付ける方法などを記載しています。
 
+<div id="appsflyer-offering-for-ad-networks" />
+
 ## AppsFlyerが提供するもの
 
 参考：**広告主向けのSKAdNetworkソリューション**：
@@ -42,6 +44,8 @@ x-zendesk:
   * SKAdNetworkの連携が完了したアドネットワークは、AppsFlyerの管理画面上でもその認証が付与されます。
   * この認証表示により、SKAdNetworkによる計測をサポートしたアドネットワークを使用していることを、各広告主は確認できるようになります。
 
+<div id="skan-data-flow" />
+
 ## SKAdNetworkのデータフロー
 
 ![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
@@ -54,12 +58,16 @@ SKANのポストバックの全体像は以下のような流れになってい�
    * リダイレクト
 3. **AppsFlyer**は受け取ったSKAdNetworkのポストバックを検証・解読し、再度、その解読し情報を追加したポストバックをアドネットワークへ送信します。(広告主側へも管理画面上で情報が提供されます。)
 
+<div id="main-integration-parts" />
+
 ## 連携について
 
 この記事でも記載しているように、AppsFlyerとアドネットワークのSKAdNetworkの連携は、以下の2つのパートから構成されています。
 
 * アドネットワークが、SKAdNetworkのデータをAppsFlyerへ送信する。
 * アドネットワークが、解読され情報が追加されたSKAdNetworkのデータをAppsFlyerからポストバックで受け取る。
+
+<div id="send-data-to-appsflyer" />
 
 ## AppsFlyerへのデータ送信
 
@@ -97,6 +105,8 @@ iOS端末からSKANのポストバックを受け取った後、 アドネッ�
 * ポストバックをAppsFlyerへ送信
 * **注！注意！ポストバックをAppsFlyerに送信する前に、送信するポストバックの内容を使ってAppleの**Attribution Signature/strong>を検証し、データを誤って改変してしまっていないか確認してください。
 
+<div id="skan-enriched-postback-protocol" />
+
 #### SKAdNetworkのデータ追加ポストバックのプロトコル
 
 | エンドポイント | `https://skadpostbacks.appsflyer.com/api/postbacks` |
@@ -104,6 +114,8 @@ iOS端末からSKANのポストバックを受け取った後、 アドネッ�
 | HTTP メソッド | POST |
 | 受け入れ可能なcontent types | `application/json` |
 | 返されるコード | 200 OK200 OK：受信したポストバックは有効なフォーマットです。<br /><br />2024-02-26Bad request400：不正なリクエスト：不正な形式のJSON、空のJSONデータ、必須な値の欠損など |
+
+<div id="skan-enriched-postback-json-parameters" />
 
 #### SKAdNetworkのデータ追加ポストバックのJSONパラメータ一覧
 
@@ -138,6 +150,8 @@ iOS端末からSKANのポストバックを受け取った後、 アドネッ�
 | クリエイティブ | 文字列 | <ul><li>SKAN 4以降にのみ</li><li>キャンペーンの粒度を高めるために source\_identifier で追加の数字を使用する場合に使用できます</li></ul> | アドネットワーク |
 | channel | 文字列 | <ul><li>SKAN 4以降にのみ</li><li>キャンペーンの粒度を高めるために source\_identifier で追加の数字を使用する場合に使用できます</li></ul> | アドネットワーク |
 
+<div id="curl-exampleenriched-skan-3-postback" />
+
 #### **Curlの例—データを追加したSKAN 3のポストバック**
 
 ```bash
@@ -159,6 +173,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "campaign-id": 99
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-fine-conversion-values" />
 
 #### **Curlの例—細かいコンバージョン値でデータを追加したSKAN 4のポストバック**
 
@@ -182,6 +198,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "attribution-signature": "MEUCIGRmSMrqedNu6uaHyhVcifs118R5z/AB6cvRaKrRRHWRAiEAv96ne3dKQ5kJpbsfk4eYiePmrZUU6sQmo+7zfP/1Bxo="
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-coarse-conversion-values" />
 
 #### **Curlの例—粗いコンバージョン値でデータを追加したSKAN 4のポストバック**
 
@@ -218,6 +236,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
 
 このリダイレクトの方法には以下の利点があります：
 
+<div id="implementation" />
+
 #### **実装について**
 
 1. HTTP 307 のレスポンスで応答するようにサーバーを設定し、ポストバックを *[https://skadredirect.appsflyer.com/api/redirects](https://skadredirect.appsflyer.com/api/redirects)* へリダイレクトさせてください。
@@ -230,6 +250,8 @@ https://skadredirect.appsflyer.com/api/redirects?
   &ad-network-campaign-id=243232&ad-network-campaign-name=yarg_campaign_name
   &ad-network-adset-name=dsdsa&creative=examplecreative&channel=channelexample
 ```
+
+<div id="query-params-for-campaign-details-not-mandatory" />
 
 #### キャンペーン詳細のクエリパラメータ(必須ではないです)
 
@@ -250,6 +272,8 @@ https://skadredirect.appsflyer.com/api/redirects?
 | channel | <ul><li>SKAN 4以降にのみ</li><li>キャンペーンの粒度を高めるために source\_identifier で追加の数字を使用する場合に使用できます</li></ul> |
 
 </Accordion>
+
+<div id="receive-data-from-appsflyer" />
 
 ## AppsFlyerからのデータ受け取り
 
@@ -308,6 +332,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 </Accordion>
 
+<div id="integration-testing" />
+
 ## 連携テスト
 
 AppsFlyerとの連携を検証するには、以下方法のいずれか、もしくは両方を使用してください。 
@@ -333,6 +359,8 @@ AppsFlyerとの連携を検証するには、以下方法のいずれか、も�
 
 この方法を使用する場合、アドネットワークは広告主のアプリで実際のSKANのポストバックをAppsFlyerへ送信することになります。
 
+<div id="testing-integration" />
+
 #### 連携のテスト
 
 | 担当者 | アクション |
@@ -341,6 +369,8 @@ AppsFlyerとの連携を検証するには、以下方法のいずれか、も�
 | アドネットワークとAppsFlyer | ポストバック連携の検証に使用する広告主(最新のAppsFlyerSDKを実装済み)について、合意形成してください。 |
 | アドネットワーク | このページに記載されているいずれかの方法を使って、SKANのポストバックをAppsFlyerに送信してください。 |
 | AppsFlyer | 広告主が設定したコンバージョン値の計測設定に従って、解読したポストバックをアドネットワークへ送信します。 |
+
+<div id="test-criteria" />
 
 #### テストの判定基準
 
@@ -365,6 +395,8 @@ AppsFlyerとの連携を検証するには、以下方法のいずれか、も�
 | <span id="id888707086"></span>id888707086 | ［コンバージョン］を選択し、アプリ内イベントは以下を選択：<ul><li>af\_level\_complete</li><li>ログイン</li><li>af\_SKAN\_revenue</li><li>af\_register</li><li>af\_subscription</li><li>af\_custom\_event</li></ul> | <ol><li>[連携 ] タブにて、[**アプリ内イベントのポストバック**]を有効にしてください。</li><li>予めリストアップした各アプリ内イベントをマッピングし、御社側のイベント識別子も選択してください。(御社側の識別名を設定しない場合もございます)</li><li>設定を保存してください。</li><li>ポストバックにて、conversion value = 63 を送信してください。</li><li>AppsFlyerは以下の内容で応答します：<ul><li>Installのポストバックを1つ送信</li><li>af\_level\_completeのポストバックを1つ送信</li><li>af\_loginのポストバックを1つ送信</li><li>af\_SKAN\_revenueのポストバックを1つ送信</li><li>af\_registerのポストバックを1つ送信</li><li>af\_subscriptionのポストバックを1つ送信</li><li>af\_custom\_eventのポストバックを1つ送信</li></ul></li></ol> |
 | <span id="id888707087"></span>id888707087 | ［エンゲージメント］を選択し、af\_SKAN\_revenueのイベントで計測 | <ol><li>[連携 ] タブにて、[**アプリ内イベントのポストバック**]を有効にしてください。</li><li>af\_SKAN\_revenueのイベント を選択して、*御社側のイベント識別子も設定してください。*(御社側の識別名を設定しない場合もございます)</li><li>設定を保存してください。</li><li>ポストバックにて、conversion value = 3 を送信してください。</li><li>AppsFlyerは以下の内容で応答します：<ul><li>Installのポストバックを1つ送信</li><li>af\_SKAN\_revenueのイベントのポストバックを3つ送信</li></ul></li></ol> |
 
+<div id="integration-steps" />
+
 #### 連携手順
 
 | 担当者 | アクション |
@@ -372,6 +404,8 @@ AppsFlyerとの連携を検証するには、以下方法のいずれか、も�
 | アドネットワーク |  |
 | アドネットワーク | <ol><li><Anchor target="_blank" href="/partners/ja/docs/turn-on-test-app-integration-for-ad-networks">テストアプリをアクティブ化してください。</Anchor></li><li>各アプリにて、前の表の［作業(instructions)］の内容を完了してください。</li><li>前述の表に記載されているテストアプリを使用して、ポストバック送信の模擬テストを実施してください。ポストバックの模擬テストを送信するときの注意点：<ul><li>app\_idとconversion valueは、前述の表に記載されているものを設定してください。</li><li>アドネットワークではAppleのCompatible Signatureを生成できないため、ポストバックの模擬テストにはSignatureフィールドを含める必要はありません。(AppsFlyerでは、ポストバックの模擬テストでは検証を行いません。)</li><li>POSTもしくはREDIRECTのどちらかを使用して、ポストバックを送信してください。</li></ul></li></ol> |
 | AppsFlyer | 連携時に定義したアドネットワークのエンドポイントに対し、解読されたポストバックを返します。 |
+
+<div id="test-criteria-1" />
 
 #### テストの判定基準
 
@@ -381,6 +415,8 @@ AppsFlyerとの連携を検証するには、以下方法のいずれか、も�
 | アドネットワーク | <ul><li>解読されたポストバックを受け取り、デコードする。</li><li>AppsFlyerから送信されたアプリ内イベントのポストバックが、想定されたデータフローと合致する。例：ID888707087のアプリでコンバージョン値が3の場合、アドネットワークは*af\_SKAN\_revenue*のイベントのポストバックを3つ受信</li></ul> |
 
 </Accordion>
+
+<div id="clarifications" />
 
 ## 詳細
 

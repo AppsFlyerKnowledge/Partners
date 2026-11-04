@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="base-attribution-link" />
+
 ## 計測URLの基盤
 
 以下に、各パラメーターの詳細な説明を含む基本アトリビューションリンクを示します。
@@ -38,6 +40,8 @@ x-zendesk:
 | pid |  |
 | c | キャンペーン名 |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### 推奨アトリビューションリンクパラメーター：
 
 | AppsFlyer のパラメーター |  | 説明 |
@@ -47,19 +51,27 @@ x-zendesk:
 
 AppsFlyer の全パラメーターリストについては、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">こちらをクリック</Anchor>してください
 
+<div id="complete-attribution-link-template" />
+
 ### 完全なアトリビューションリンクテンプレート
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#oreqid#
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## インストールとアプリ内イベントのポストバック
+
+<div id="global-install-postback" />
 
 ### グローバルインストールポストバック：
 
 ```http
 https://{company-domain}.com/p.ashx?f=pb&r=(Click-ID)
 ```
+
+<div id="global-in-app-event-postback" />
 
 ### グローバルアプリ内イベントポストバック：
 
@@ -72,7 +84,9 @@ Click-ID
 
 ![IAEP.png](https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png)
 
-<span id="appsflyer-inapp-events-dashboard"></span>リクエストに応じて、国コード、広告ID、IDFA などのアトリビューション情報をポストバックに追加できます。
+<span id="appsflyer-in-app-events-dashboard"></span><span id="appsflyer-inapp-events-dashboard"></span>リクエストに応じて、国コード、広告ID、IDFA などのアトリビューション情報をポストバックに追加できます。
+
+<div id="finalizing-your-registration" />
 
 ## 登録の完了
 

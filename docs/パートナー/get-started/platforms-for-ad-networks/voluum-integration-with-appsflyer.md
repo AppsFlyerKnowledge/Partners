@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** PeerClick を使用するアドネットワークは、AppsFlyer の確率論的モデリングソリューションを活用して、インストールやアプリ内イベントに関するアトリビューションデータを受け取ることができます。
 
+<div id="starting-the-integration" />
+
 ## 連携を開始する
 
 連携を開始するには、レポート用に AppsFlyer にアトリビューションリンクとポストバックの両方を送信する必要があります。
@@ -49,11 +51,15 @@ x-zendesk:
 
 AppsFlyer の全パラメーターリストについては、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">こちらをクリック</Anchor>してください
 
+<div id="complete-attribution-link-template" />
+
 ### 完全なアトリビューションリンクテンプレート
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### インストールとアプリ内イベントのポストバック
 
@@ -69,10 +75,14 @@ https://{Company-Domain}.voluumtrk.com/postback?cid={clickid}
 https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary}&txid={event-name}
 ```
 
+<div id="appsflyers-in-app-event-dashboard" />
+
 ### AppsFlyer のアプリ内イベント管理画面
 
 ![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
 リクエストに応じて、国コード、広告ID、IDFA などのアトリビューション情報をポストバックに追加できます。
+
+<div id="finalizing-your-registration" />
 
 ## 登録の完了
 

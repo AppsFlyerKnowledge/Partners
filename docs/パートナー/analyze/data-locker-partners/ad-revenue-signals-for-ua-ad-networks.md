@@ -30,6 +30,8 @@ x-zendesk:
 
 アドネットワークは、このデータをキャンペーンターゲティングおよび最適化アルゴリズムに取り込み、それを使用して、生み出した収益の全体像に基づいてROASキャンペーンを改善できます。
 
+<div id="set-the-ad-revenue-report-in-data-locker" />
+
 ## Data Lockerで広告収益レポートを設定
 
 Data Lockerで広告収益レポートにアクセスするには、以下を完了する必要があります。
@@ -64,6 +66,8 @@ Data Lockerで広告収益レポートにアクセスするには、以下を完
 4. 手順については、[<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">アドネットワークによる広告収益データの取得を許可する</Anchor>]をご覧ください。
 
 </Accordion>
+
+<div id="report-specification" />
 
 ## レポートの仕様
 

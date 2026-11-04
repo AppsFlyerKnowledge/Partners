@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 概要：アドネットワークが連携テストを行う場合には、必ずテストアプリの連携を有効化（アクティブ）する必要があります。
 
+<div id="test-apps-for-ad-networks-ios-and-android" />
+
 ## アドネットワーク向けのテストアプリ（iOS/Android）
 
 連携とポストバックの設定が完了したアドネットワークは、次にAppsFlyerのテストアプリを使って連携のテストを実施する必要があります。テスト前に、まずはそのテストアプリとの連携を有効にし、必要に応じて追加でアドネットワーク向けの権限を有効にする必要があります。なお、この作業は1アプリにつき1度のみ必要です。
@@ -31,6 +33,8 @@ x-zendesk:
 | <Anchor target="_blank" href="/partners/ja/docs/getting-started-onboarding-guide-for-ad-networks#パート2広告主アプリを使用してテストします">Android</Anchor> | com.appsflyer.adNetworkTest |
 | <Anchor target="_blank" href="/partners/ja/docs/ios-integration-testing-for-ad-networks">iOS</Anchor> | id1543229303 |
 | <Anchor target="_blank" href="/partners/ja/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor> | <ul><li>id888707085</li><li>id888707086</li><li>id888707087</li></ul> |
+
+<div id="activation-procedure" />
 
 ### 連携有効化の手順
 

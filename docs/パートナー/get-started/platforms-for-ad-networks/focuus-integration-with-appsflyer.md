@@ -36,6 +36,8 @@ x-zendesk:
 | pid | メディアソース名には、AppsFlyer サーバーの連携ネットワークを識別するための\_intが含まれています |
 | c | キャンペーン名 |
 
+<div id="recommended-attribution-link-parameters" />
+
 ### 推奨アトリビューションリンクパラメーター：
 
 | AppsFlyer のパラメーター |  | 説明 |
@@ -43,9 +45,13 @@ x-zendesk:
 | **clickid** | **`{tid}`** |  |
 | af\_siteid | `{publisher_id}` |  |
 
+<div id="complete-attribution-link-template" />
+
 ### 完全なアトリビューションリンクテンプレート
 
 `https://app.appsflyer.com/com.appsflyer?pid={traffic_source}&clickid={tid}&af_siteid={publisher_id}`
+
+<div id="install-and-in-app-event-postbacks" />
 
 ## インストールとアプリ内イベントのポストバック
 

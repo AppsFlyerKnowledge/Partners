@@ -29,6 +29,8 @@ x-zendesk:
 
 連携を開始するには、レポート用に AppsFlyer にアトリビューションリンクとポストバックの両方を送信する必要があります。
 
+<div id="base-attribution-link" />
+
 ## 計測URLの基盤
 
 以下に、各パラメーターの詳細な説明を含む基本アトリビューションリンクを示します。
@@ -45,13 +47,23 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 AppsFlyer の全パラメーターリストについては、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">こちらをクリック</Anchor>してください
 
+<div id="complete-attribution-link-template" />
+
 ## 完全なアトリビューションリンクテンプレート
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## インストールとアプリ内イベントのポストバック
+
+<div id="global-in-app-event-postback-android" />
+
+<div id="global-install-postback-android" />
+
+<div id="global-install-postback-ios" />
 
 ### グローバルインストールポストバック：
 
@@ -63,6 +75,8 @@ https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={id
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
+
+<div id="global-in-app-event-postback-ios" />
 
 ### グローバルアプリ内イベントポストバック：
 
@@ -78,6 +92,8 @@ https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={
 アプリからの実際のアプリ内イベント名。広告主が各アプリの AppsFlyer 管理画面で**イベントタグ**として設定したもの
 
 リクエストに応じて、国コード、広告ID、IDFA などのアトリビューション情報をポストバックに追加できます。
+
+<div id="finalizing-your-registration" />
 
 ## 登録の完了
 

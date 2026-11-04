@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** 概要：クリックに署名の検証を追加することで、広告不正による被害を回避することが可能です。これにより、不正なクリックがアドネットワークに紐付けられなくなります。
 
+<div id="about-click-signing" />
+
 ## クリック署名について
 
 不正業者は、ごくわずかな技術でアドネットワークに代わって、数千はたまた数百万もの偽クリックを作成し、AppsFlyerへ送信することが可能です。アドネットワーク自身がこのような問題が発生していることを認識できていない場合もあります。
@@ -40,13 +42,21 @@ AppsFlyerによって媒体へ紐付けられたクリックが、不正業者�
   * <Anchor target="_blank" href="/partners/ja/docs/protect360-reports-for-ad-networks#failed-click-signatures">詳細はこちら</Anchor>
   * アドネットワークのコンバージョン率やクリック洪水のしきい値には影響を与えません。
 
+<div id="click-signature-integration" />
+
 ## クリック署名の連携
+
+<div id="flow" />
 
 ### フロー
 
 以下のチャートでは、初期の開発と基本テストから実稼働テスト、そして最終的な実稼働までの流れの概要を示しています。
 
 ![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+
+<div id="note" />
+
+<div id="procedure" />
 
 ### 手順
 
@@ -67,7 +77,7 @@ AppsFlyerによって媒体へ紐付けられたクリックが、不正業者�
 
 
 
-| <span id="list-of-attributes"></span>順序 | パラメータ | 必須 | 備考 |
+| <span id="creating-a-click-signature"></span><span id="list-of-attributes"></span>順序 | パラメータ | 必須 | 備考 |
 | --- | --- | --- | --- |
 | 1 | link\_domain | はい | <ul><li>app.appsflyer.com</li><li>myapp.onelink.me</li><li>click.mycustomdomain.com</li></ul> |
 | 2 | link\_path | はい |  |
@@ -131,6 +141,8 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 &signature_v2=WIfCmfLAPSsVrBTqCqfihMeLCnbE4dIAlhHF84WsiWA
 ```
 
+
+<div id="code-examples" />
 
 ### コードの例
 
@@ -312,9 +324,13 @@ func main() {
 
 </Accordion>
 
+<div id="click-signature-apis" />
+
 ## クリック署名の各種API
 
 AppsFlyerでは、アドネットワークがクリック署名のプロセルを管理できる各種APIを用意しています。以下表のAPI一覧と、APIの利用に必要な各種情報をまとめた各セクションを参照してください。
+
+<div id="click-signature-apis-1" />
 
 #### クリック署名の各種API
 
@@ -337,6 +353,8 @@ AppsFlyerでは、アドネットワークがクリック署名のプロセル�
 
 <Accordion title="V1（レガシー）">
 
+<div id="generate-secret-key-method" />
+
 ### Generate secret keyのメソッド
 
 <div id="generate-secret-key-basics" />
@@ -356,6 +374,8 @@ AppsFlyerでは、アドネットワークがクリック署名のプロセル�
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
+
+<div id="parameters" />
 
 #### パラメーター
 
@@ -404,6 +424,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP のレスポンスコード">
 
+<div id="response-codes" />
+
 #### 応答コード
 
 | コード | メッセージ | 備考 |
@@ -412,6 +434,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | 許可されていません | 認証ヘッダーが無効、または見つかりません。 |
 
 </Accordion>
+
+<div id="revoke-secret-key-method" />
 
 ### Revoke secret keyのメソッド
 
@@ -430,6 +454,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
+
+<div id="parameters-1" />
 
 #### パラメーター
 
@@ -456,6 +482,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <Accordion title="HTTP のレスポンスコード">
 
+<div id="response-codes-1" />
+
 #### 応答コード
 
 | コード | メッセージ | 備考 |
@@ -464,6 +492,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 | 401 | 許可されていません | 認証ヘッダーが無効、または見つかりません。 |
 
 </Accordion>
+
+<div id="test-method" />
 
 ### Testのメソッド
 
@@ -484,6 +514,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
+
+<div id="parameters-2" />
 
 #### パラメーター
 
@@ -534,6 +566,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP のレスポンスコード">
 
+<div id="response-codes-2" />
+
 #### 応答コード
 
 | コード | メッセージ | 備考 |
@@ -542,6 +576,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | 許可されていません | 認証ヘッダーが無効、または見つかりません。 |
 
 </Accordion>
+
+<div id="configure-mode-method" />
 
 ### Configure modeのメソッド
 
@@ -560,6 +596,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
+
+<div id="parameters-3" />
 
 #### パラメーター
 
@@ -585,6 +623,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 <div id="http-response-codes::b3328f8b" />
 
 <Accordion title="HTTP のレスポンスコード">
+
+<div id="response-codes-3" />
 
 #### 応答コード
 
@@ -632,6 +672,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP のレスポンスコード">
 
+<div id="response-codes-4" />
+
 #### 応答コード
 
 | コード | メッセージ | 備考 |
@@ -641,6 +683,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | 許可されていません | 認証ヘッダーが無効、または見つかりません。 |
 
 </Accordion>
+
+<div id="get-configuration-method" />
 
 ### Get configurationのメソッド
 
@@ -710,6 +754,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="HTTP のレスポンスコード">
 
+<div id="response-codes-7" />
+
 #### 応答コード
 
 | コード | メッセージ | 備考 |
@@ -718,6 +764,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | 許可されていません | 認証ヘッダーが無効、または見つかりません。 |
 
 </Accordion>
+
+<div id="report-method" />
 
 ### Reportのメソッド
 
@@ -738,6 +786,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="parameters-4" />
 
 #### パラメーター
 
@@ -787,6 +837,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 <Accordion title="HTTP のレスポンスコード">
 
+<div id="response-codes-8" />
+
 #### 応答コード
 
 | コード | メッセージ | 備考 |
@@ -795,6 +847,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 | 401 | 許可されていません | 認証ヘッダーが無効、または見つかりません。 |
 
 </Accordion>
+
+<div id="exclude-app-method" />
 
 ### Exclude appのメソッド
 
@@ -817,6 +871,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-5" />
 
 #### パラメーター
 
@@ -852,6 +908,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 </Accordion>
 
+<div id="remove-excluded-app-method" />
+
 ### Remove excluded appのメソッド
 
 <div id="remove-excluded-app-method-basics" />
@@ -873,6 +931,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-6" />
 
 #### パラメーター
 
@@ -953,6 +1013,8 @@ String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 

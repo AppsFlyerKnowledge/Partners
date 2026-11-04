@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要**：概要：このページでは、連携済みパートナからよくいただく質問や連携のトラブルシューティングについて記載しています。
 
+<div id="account-and-dashboard" />
+
 ## アカウントと管理画面について
 
 <div id="i-want-to-become-an-integrated-partner" />
@@ -108,6 +110,8 @@ AppsFlyerと新しく連携を行うには、広告主から招待してもら�
 
 <div id="how-do-i-enable-advanced-privacy" />
 
+<div id="Why-can-t-advertisers-find-my-account" />
+
 <Accordion title="高プライバシーポストバックの連携を行うにはどうしたらいいですか？">
 
 <Anchor target="_blank" href="/partners/ja/docs/self-serve-integration-management-for-ad-networks#高プライバシーとskanのポストバック">こちらの手順</Anchor>に従ってください。
@@ -117,9 +121,13 @@ AppsFlyerと新しく連携を行うには、広告主から招待してもら�
 * <Anchor target="_blank" href="/partners/ja/docs/getting-started-onboarding-guide-for-ad-networks#統合検証期間">統合検証期間</Anchor>
 
 
+<div id="partner-permissions" />
+
 ## パートナー権限
 
 <div id="what-are-the-partner-permissions" />
+
+<div id="why-don-t-i-see-event-data-on-the-dashboard" />
 
 <Accordion title="パートナー権限とは？">
 
@@ -166,9 +174,13 @@ AppsFlyerと新しく連携を行うには、広告主から招待してもら�
 
 </Accordion>
 
+<div id="data---postbacks-and-reports" />
+
 ## データ：ポストバックとレポート
 
 <div id="how-long-does-it-take-for-results-to-appear-in-the-dashboard" />
+
+<div id="why-can-t-i-redirect-users-to-a-designated-landing-page" />
 
 <Accordion title="管理画面に配信結果が反映されるまでには、どれくらい時間が掛かりますか？">
 
@@ -275,6 +287,8 @@ AppsFlyerと新しく連携を行うには、広告主から招待してもら�
 
 <div id="i-cant-export-reports" />
 
+<div id="install-postbacks-arent-sent-to-my-servers" />
+
 <Accordion title="レポートをエクスポートできません">
 
 | 理由 | 解決策 |
@@ -324,6 +338,8 @@ AppsFlyerと新しく連携を行うには、広告主から招待してもら�
 
 広告ネットワークは、広告主アカウント上で行われた連携設定を確認することができますが、**代理店アカウント上で行われた設定は確認できません**。そのため、代理店がアプリ内イベントをネットワークにマッピングしてポストバックを設定すると、そのイベントは代理店に対してはアクティブですが、広告ネットワークではこのセクションは非アクティブと見なされます。
 
+<div id="example" />
+
 > 📄 **例**
 >
 > Yuval氏は、**Sonnet**アドネットワークにとっての広告主である、**com.fused**というアプリのマーケターです。彼は、Sonnetに成果が紐付いたユーザーが購入イベントを行ったときに発火するaf\_purchaseイベントをSonnetにマッピングしています。
@@ -366,6 +382,8 @@ AppsFlyerの計測リンクを、リダイレクトURLとしてあなたのサ�
 
 <div id="dashboard-data-is-missing" />
 
+<div id="how-can-i-investigate-fraud-from-appsflyer-dashboard" />
+
 <Accordion title="管理画面上にデータがない">
 
 もしもあなたのアドネットワークが連携において各種IDやキーの入力を必要とするのに対し、広告主側（もしくは代理店側）で入力がされていなかった場合、AppsFlyerからのポストバックがアドネットワーク側のサーバーによって受信を拒否されることがあります。ポストバックデータをサーバーに送信できないため、結果的にデータがサーバー上にないのです。
@@ -379,6 +397,8 @@ AppsFlyerの計測リンクを、リダイレクトURLとしてあなたのサ�
 
 <div id="data-from-the-advertiser-is-missing-or-incorrect" />
 
+<div id="why-do-clicks-and-impressions-get-capped" />
+
 <Accordion title="広告主からのデータが見つからない / 正しくない。">
 
 広告主と一緒に連携をテストするも、インストール、アプリ内イベントのデータが利用できない場合には、以下のステップに従ってください。
@@ -391,6 +411,8 @@ AppsFlyerの計測リンクを、リダイレクトURLとしてあなたのサ�
 </Accordion>
 
 <div id="there-is-a-discrepancy-on-click-data-between-appsflyer-and-our-platform" />
+
+<div id="why-was-my-test-install-rejected-from-attribution" />
 
 <Accordion title="AppsFlyerと当社のプラットフォーム間でクリックデータに乖離があります">
 
@@ -406,11 +428,15 @@ AppsFlyerの計測リンクを、リダイレクトURLとしてあなたのサ�
 
 <div id="my-agency-account-doesnt-show-skan-data" />
 
+<div id="what-detection-methods-are-used-to-detect-install-rejections" />
+
 <Accordion title="代理店アカウントに SKAN データが表示されません">
 
 <strong>キャンペーン名が正しく設定されていることを確認してください。</strong>代理店のSKAdNetwork管理画面からキャンペーンを確認するには、以下の通り、SKAdNetworkで設定されたキャンペーン名に代理店の識別子を含める必要があります。
 
 </Accordion>
+
+<div id="anti-fraud-protect360" />
 
 ## Protect360
 

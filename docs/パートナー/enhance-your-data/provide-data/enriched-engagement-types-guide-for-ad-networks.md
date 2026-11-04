@@ -25,19 +25,27 @@ x-zendesk:
 
 拡張エンゲージメントタイプ（EET）は、広告を閲覧または操作した際のユーザーのエンゲージメントや意図の度合いを、瞬間的な露出からダイレクトレスポンスまで幅広く反映します。本記事では、ユーザーが広告とどのように接触したかに応じて、パートナーが AppsFlyer の計測リンクでエンゲージメントタイプをどのようにレポートすべきかを解説します。
 
+<div id="disclaimer" />
+
 > ❗️ **免責事項**
 >
 > 本記事は、パートナー向けのEETの仕様を説明しています。EET の概要や詳細については、<Anchor target="_blank" href="/marketers/ja/docs/about-enriched-engagement-types#which-ad-networks-report-enriched-engagement-types">拡張エンゲージメントタイプ</Anchor> の記事をご参照ください。
 
+<div id="which-networks-can-report-eet-to-appsflyer" />
+
 ## EETに対応している広告媒体
 
 拡張エンゲージメントタイプを利用する広告媒体は、AppsFlyer パートナープログラムにおける Premier、Advance、Engageの基準を満たしている必要があります。これらのレベルは、広告主に対して大規模かつ一貫して高品質なトラフィックを提供してきた実績があり、透明性と信頼性の高い形でエンゲージメントデータを送信し、AppsFlyer の幅広いサービスと統合されているネットワークを指します。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > エンゲージビューとエンゲージクリックのレポートの開始を検討したい場合には、担当PDMまでお問い合わせください。
 
 また、EETをレポートする資格のあるネットワーク一覧もご参照ください。
+
+<div id="warning" />
 
 > ❗️ **要注意**
 >
@@ -147,6 +155,8 @@ https://impression.appsflyer.com/com.greatapp?pid=greatnetwork_int&c=GreatCampai
 <Accordion title="EETをレポートする資格のあるアドネットワーク">
 
 このネットワーク一覧には、AppsFlyer が拡張エンゲージメントタイプのイベントを処理可能なパートナーが記載されています。（ただし、デフォルトではエンゲージビューとエンゲージクリックは除外されています）この一覧に含まれているアドネットワークで、エンゲージクリックおよびエンゲージビューの処理を希望する場合は、AppsFlyerの担当PDMまでお問い合わせください。既にエンゲージクリックとビューを処理されているネットワークについて知りたい場合は、<Anchor target="_blank" href="/marketers/ja/docs/about-enriched-engagement-types#エンゲージビューとエンゲージクリックを報告できるアドネットワーク">EETの広告主向けのヘルプページ</Anchor>を参照してください。
+
+<div id="warning-1" />
 
 > ❗️ **注意**
 >

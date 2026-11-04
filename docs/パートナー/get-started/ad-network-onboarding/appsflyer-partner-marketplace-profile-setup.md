@@ -25,6 +25,10 @@ x-zendesk:
 ---
 > **概要**：概要： 会社とそのサービス、ソリューションに関する情報を載せるPartner Marketplaceのプロフィールページを作成しましょう。
 
+<div id="note" />
+
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerのPartner Marketplaceは、広告主が新しいアドネットワークやマーケティングプラットフォームを見つけることができる場所です。
@@ -35,6 +39,8 @@ AppsFlyerのPartner Marketplaceは、広告主が新しいアドネットワー�
 
 Partner
 
+<div id="general" />
+
 ## 概要
 
 このセクションの情報は既存のAppsFlyerとの連携情報や計測データに基づいており、適宜変更されます。
@@ -44,19 +50,27 @@ Partner
 * 配信地域
 * アプリのカテゴリとサブカテゴリ
 
+<div id="profile" />
+
 ## プロフィール
 
 自社の企業情報の詳細を追加または編集してください。（ロゴ画像(必須)、説明(必須)、ウェブサイトのURL、対応言語など））
 
 Partner Marketplace内の自社ページを潜在顧客にとってより魅力的なものにするために、できるだけ多くの情報を提供し、すべての項目を記入することをお勧めします。
 
+<div id="your-offering" />
+
 ## 提供サービス
 
 Parner Marketplace上での見つけやすさを向上させるために、できるかぎり多くの情報を追加することをおすすめします。
 
+<div id="overview-1" />
+
 ### 概要
 
 ![partner offering.png](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
+
+<div id="characteristics" />
 
 ### 特徴
 
@@ -71,12 +85,16 @@ Parner Marketplace上での見つけやすさを向上させるために、で�
 
 ![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
 
+<div id="sales" />
+
 ### 営業
 
 販売条件の詳細を入力してください。
 
 * 利用規約へのリンク
 * 最低出稿金額
+
+<div id="marketing-collateral" />
 
 ### 概要資料
 
@@ -87,10 +105,14 @@ Parner Marketplace上での見つけやすさを向上させるために、で�
 * 成功事例
 * 動画
 
+<div id="contacts" />
+
 ## Contacts/連絡先
 
 * **注：**
 * ヒント
+
+<div id="offices" />
 
 ## オフィス
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** 概要： アドネットワークは、自分の連携済みパートナーアカウントに紐付けられている広告主アプリのメタデータを取得できます。
 
+<div id="get-app-list-api" />
+
 ## アプリリストの取得API
 
 以下のセクションにて、APIを使用するために必要な情報を記載しています。
@@ -47,6 +49,8 @@ API リクエストは、メソッド、経路、必須の機能パラメータ�
 ```http
 GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
 ```
+
+<div id="get-app-list-mandatory-parameters" />
 
 #### 必須パラメーター
 
@@ -80,6 +84,8 @@ GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
     </tr>
   </tbody>
 </Table>
+
+<div id="pagination-mechanism" />
 
 #### **ページネーションの仕組みについて**
 
@@ -119,6 +125,8 @@ GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
     }
 }
 ```
+
+<div id="pagination-mechanism-parameters-optional" />
 
 #### ページネーション機能のパラメータ（任意）
 

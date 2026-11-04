@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要**：概要：広告主によって定義された、アプリ毎のSKANCV値の設定を確認しましょう。
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## SKANにおけるCV値設定の取得API：アドネットワーク向け
 
 SKAN計測の場合、広告主はコンバージョン値(CV値)を設定することで、インストール後一定期間内に発生したユーザーの行動を計測しユーザーの質を評価しています。<Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide">SKANの詳細はこちらを参照してください。</Anchor>

@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
 
+<div id="data-locker-for-partners" />
+
 ## Data Locker：連携済みパートナー向け
 
 パートナー向けのデータロッカーは、アプリデータをクラウドストレージに提供します。広告主は、AppsFlyerが特定のパートナーと選択したデータを共有できるようにする権限を設定します。
@@ -54,6 +56,8 @@ x-zendesk:
 * <Anchor target="_blank" href="/partners/ja/docs/data-locker-reports-for-api-partners">マーケティングパートナー</Anchor>
 
 </Accordion>
+
+<div id="data-storage-architecture" />
 
 ## データストレージのアーキテクチャ
 
@@ -124,6 +128,8 @@ x-zendesk:
 | データ保持期間 | 御社による管理 |
 | セキュリティ | 御社がストレージを管理します：<ul><li>**AWS：** AppsFlyerでは、バケットへのGetObject、ListBucket、DeleteObject、PutObject 権限が必要です。バケットはAppsFlyer専用にする必要があります。他の用途には使用しないでください。</li><li><Anchor target="_blank" href="/marketers/ja/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor></li></ul> |
 
+<div id="notice-to-security-officers" />
+
 #### **セキュリティ担当者へのお知らせ：**
 
 次の点を考慮してください：
@@ -155,6 +161,8 @@ Data Lockerでは、一部または全てのデータを複数のディスティ
 
 </Accordion>
 
+<div id="procedures" />
+
 ## 手順
 
 <div id="set-up-data-locker" />
@@ -181,6 +189,8 @@ Data Lockerでは、一部または全てのデータを複数のディスティ
 3. <Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">DataLockerのセットアップ手順</Anchor>のステップ3〜16に従ってください。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 

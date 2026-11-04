@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** アドネットワークが広告主のキャンペーン費用をCSVファイル形式で直接AppsFlyerへ報告する方法について記載しています。
 
+<div id="cost-import-for-ad-networks" />
+
 ## 広告ネットワークのコストインポート
 
 ![AdspendIngestion.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
+
+<div id="overview" />
 
 #### 概要
 
@@ -43,11 +47,15 @@ x-zendesk:
   * 一度ファイルをアップロードすると、元に戻すことはできません。
 * インポート後は、ファイルにエラーが見つからなかったことを確認してください。
 
+<div id="submitting-ad-spend-files-for-ad-networks" />
+
 ### 広告費インポート：アドネットワーク向け
 
 * 管理画面からのアップロード、またはメール方式のどちらかを使って、広告費をインポートしてください。
 * ［推奨］CSVフォーマットに関する問題を解決するのがより簡単なため、基本的には管理画面からのアップロード方式をご利用ください。
 * アドネットワークは代理店のコストデータをインポートできません。広告主のみがインポートできます。
+
+<div id="submission-by-file-upload" />
 
 #### ファイルアップロードによるファイル提出
 
@@ -65,6 +73,8 @@ x-zendesk:
 6. その他の作業：
    * <Anchor target="_blank" href="/marketers/ja/docs/import-cost-data#cost-import-dashboard">以前に取り込んだ広告費の上書き</Anchor>
    * <Anchor target="_blank" href="/marketers/ja/docs/import-cost-data#cost-import-dashboard">インポートのキャンセル</Anchor>
+
+<div id="submission-by-email" />
 
 #### メールでの提出
 

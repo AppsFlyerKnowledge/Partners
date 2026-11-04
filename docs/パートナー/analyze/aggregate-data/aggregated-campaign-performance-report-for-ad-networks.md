@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要**：概要：アドネットワークは、7日目のリテンションKPIなどのキャンペーンパフォーマンス指標を計算するために、集計パフォーマンスレポート（≒ コホートレポート）を自社のBIシステムに取り込むことができます。
 
+<div id="aggregated-campaign-performance-report" />
+
 ## キャンペーンの集計パフォーマンスレポート
 
 このレポートでは、特定のイベントを実行したユニークユーザー数を含む、キャンペーンのパフォーマンスデータを提供します。アドネットワークは、このデータを自社のBIシステムで使用して、広告主のKPIを把握するためのキャンペーンパフォーマンス指標を計算することができます。このレポートは<Anchor target="_blank" href="/partners/ja/docs/data-locker-for-partners">パートナー向けData Locker</Anchor>経由で毎日更新されます。
@@ -46,11 +48,15 @@ iOS 14.5以降、広告主による高プライバシー一括設定（AAP）の
 * レポートはパートナー向けData Locker経由で提供されます。レポートは<Anchor target="_blank" href="/marketers/ja/docs/about-data-freshness-and-timezone-support#daily">UTC時刻で毎日</Anchor>更新されます。
 * アドネットワークへのデータ共有を可能にするには、予め広告主側で管理画面上から[権限を付与する](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data)必要があります。
 
+<div id="about-the-report" />
+
 ## レポートについて
 
 <div id="report-structure" />
 
 <Accordion title="レポート構成">
+
+<div id="dimensions" />
 
 #### ディメンション
 
@@ -251,6 +257,8 @@ iOS 14.5以降、広告主による高プライバシー一括設定（AAP）の
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 指標
 
 | 名前 | フィールド | イベントを実行したユニークユーザー |
@@ -305,6 +313,8 @@ iOS 14.5以降、広告主による高プライバシー一括設定（AAP）の
 ディメンションを追加または削除することで、異なる粒度の指標を取得できます。
 
 </Accordion>
+
+<div id="permissions" />
 
 ## 権限
 

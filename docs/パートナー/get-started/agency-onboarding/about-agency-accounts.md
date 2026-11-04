@@ -34,6 +34,8 @@ x-zendesk:
 ---
 > **概要:** 高度な設定を活用し、AppsFlyer代理店アカウントを最大限に活用しましょう。
 
+<div id="about-agency-accounts" />
+
 ## 代理店アカウントについて
 
 代理店アカウントは、代理店チームがクライアント(アプリ所有者)に代わって行うアプリマーケティングキャンペーンを測定します。
@@ -45,22 +47,32 @@ x-zendesk:
   * リターゲティング
 * 利用可能なKPIは、インプレッション、クリック、インストール、ユーザーロイヤルティ、コスト、ROIなどがあります。管理画面について
 
+<div id="agency-access-to-marketer-data" />
+
 ### 代理店のマーケターデータへのアクセス
 
 代理店は、関連するトラフィックのデータにいつでもアクセスできます。マーケターは、オーガニック集計データなどの追加データへのアクセス権を代理店に付与できます。さまざまなタイプのユーザーによるデータへのアクセスについては、<Anchor target="_blank" href="/marketers/ja/docs/manage-data-access-permissions">こちらをご覧ください。</Anchor>
 
+<div id="agency-access-to-ad-network-integrations" />
+
 ### アドネットワーク統合への代理店のアクセス
 
 アドネットワーク統合へのアクセスを可能にし、キャンペーンを測定するには、代理店がアドネットワークから事前承認を受ける必要があります。これは、代理店ID(af\_prt)をアドネットワークの認定代理店リストに含めることで行われます。代理店が含まれることを確認するためにパートナーに連絡してください。代理店IDの確認方法については、[こちら](/docs/about-agency-accounts#af_prtパラメータ)をご覧ください。
+
+<div id="note" />
 
 > 📘 **注記**
 >
 > * 帰属リンクの空のaf\_prtパラメーターにも適用されます
 > * SRNを扱う代理店には適用されません。
 
+<div id="agency-transparency" />
+
 ### 代理店の透明性
 
 代理店のトラフィックはデフォルトで透明に設定されています。<Anchor target="_blank" href="/partners/ja/docs/getting-started-agency-onboarding#運用媒体の開示">詳細はこちら</Anchor>
+
+<div id="comparing-different-types-of-accounts" />
 
 ## 異なるアカウントのタイプの比較
 
@@ -73,6 +85,8 @@ x-zendesk:
 
 アカウント構造により、グローバルな代理店チーム間での知識共有が可能になり、グループレベルでのROI計測、計算、レポート、最適化が可能になります。
 
+<div id="differences-between-marketer-and-agency-accounts" />
+
 #### マーケターアカウントと代理店アカウントの違い
 
 |  | マーケター | **代理店** |
@@ -82,6 +96,8 @@ x-zendesk:
 | アプリレベルの設定 | リアトリビューション期間、OneLink構成、タイムゾーン、通貨 | 他のすべての設定はマーケターによって設定されたものに従う |
 | 統合パートナーレベルの構成 | <ul><li>代理店の許可</li><li>すべての非SRN（アトリビューションリンクベースの広告ネットワーク）構成</li><li>SRN 構成</li><li>リンク管理</li></ul> | <ul><li>すべての非SRN構成</li><li>マーケター側の介入が最小限で済むSRN構成の例:</li></ul><ul><li>Googleダブルクリック<ul><li>Snapchat</li><li>Tencent</li></ul></li></ul>その他のSRNは、代理店が利用するためにマーケターにより設定される必要があります。<ul><li>リンク管理（マーケターが定義したテンプレートを使用）</li></ul> |
 | 追加機能 | はい（サブスクリプションプランの一部である場合のみ） | マーケターのサブスクリプションと代理店に付与された<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#代理店の許可">権限</Anchor>に応じて（下のテーブルを参照） |
+
+<div id="features-available-to-agencies" />
 
 ### 代理店が利用できる機能
 
@@ -95,11 +111,15 @@ x-zendesk:
 
 <Accordion title="代理店とアドネットワークのアカウント">
 
+<div id="differences-between-ad-network-and-agency-accounts" />
+
 #### アドネットワークと代理店アカウントの違い
 
 <table><thead><tr><th>アドネットワーク</th><th>代理店</th></tr></thead><tbody><tr><td>識別のためのアトリビューションリンクパラメータ: <code>pid</code> </td><td>識別のためのアトリビューションリンクパラメータ: <code>af_prt</code> </td></tr><tr><td>独自のプラットフォームにアプリ広告を掲載</td><td>複数のメディアソースを通じてアプリを宣伝する</td></tr><tr><td>自社のプラットフォームに掲載された広告からのトラフィックのみを表示</td><td>広告を掲載しているメディアソースからのトラフィックのみを表示</td></tr><tr><td>ポストバックを介してインストールやアプリ内イベントに関するリアルタイム情報を受け取ることができます</td><td>ポストバック経由でインストールやアプリ内イベントのリアルタイム情報を受け取れません</td></tr><tr><td>自社からのトラフィックに対して、アプリ内イベントポストバックの設定が可能です\*</td><td>トラフィックをもたらす一部のパートナーへのアプリ内イベントポストバックを設定可能です\*</td></tr><tr><td colspan="2">\* マーケターの許可が必要です</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="agency-accountscampaigns-and-reporting" />
 
 ## 代理店アカウント-キャンペーンとレポート
 
@@ -112,9 +132,13 @@ x-zendesk:
 * * [セルフレポーティング広告ネットワーク（SRN）](/docs/about-agency-accounts#セルフレポーティング広告ネットワーク)
   * [非SRN（アトリビューションリンクを使用する広告ネットワーク）](/docs/about-agency-accounts#非srn)
 
+<div id="self-reporting-ad-networks" />
+
 ### セルフレポーティング広告ネットワーク
 
 Meta広告、Google広告、X広告などのセルフレポーティングネットワークは、外部アトリビューションリンクを使用しません。代わりに、各ネットワークには独自のメソッドとAPIがあり、AppsFlyerはそれらを活用して新規インストールやアプリ内イベントなどを伝達します。
+
+<div id="srn-configurations" />
 
 #### SRN 構成
 
@@ -128,15 +152,21 @@ Meta広告、Google広告、X広告などのセルフレポーティングネッ
 | TikTok for Business | はい | TikTok for Businessキャンペーンの代理店設定の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/tiktok-for-business-advanced-srn-integration-setup#代理店向けtiktok-for-businessとの連携">こちら</Anchor>をクリック。 |
 | ヤフー（Oath：広告プラットフォーム／Yahoo Gemini) | はい | Yahooキャンペーンの代理店設定の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/yahoo-integration-setup#agency-configuration">こちらをクリック</Anchor>してください。 |
 
+<div id="non-srns" />
+
 ### 非SRN
 
 SRNとは異なり、大多数のアドネットワークはアトリビューションリンクをアトリビューション目的で使用します。<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#attribution-link-tab">これらのアトリビューションリンクは、AppsFlyerの各ネットワーク設定ですでに提供されており</Anchor>、そこから直接コピーできます。
 
 代理店の場合、そのプロセスはマーケターとほぼ同じです。通常のアドネットワークのセットアップ期間にアクセスすると、アトリビューションリンクがすでに表示されています。唯一の違いは、`af_prt`パラメータがアトリビューションリンクに自動的に追加されることです。
 
+<div id="ad-network-configuration-visibility" />
+
 #### アドネットワーク設定の可視性
 
 アドネットワークの設定は、マーケター（アプリの所有者）が設定するときにのみ、アドネットワークに表示されます。代理店がアドネットワーク連携を有効化して設定すると、ネットワークはこのセクションを非アクティブと見なします。
+
+<div id="af_prt-parameter" />
 
 #### af\_prtパラメータ
 
@@ -147,6 +177,8 @@ SRNとは異なり、大多数のアドネットワークはアトリビュー�
 [altagency-af-prt.pngalt](https://support.appsflyer.com/hc/article_attachments/30629262900241)
 
 **マーケターから受け取ったリンクを使用しないでください**。誤ったアトリビューションを防ぐため、必ず自分のアカウントからのリンクを使用してください。
+
+<div id="special-case-all-installs-and-all-launches-networks" />
 
 #### 特別なケース：全インストールネットワークと全起動ネットワーク
 
@@ -176,9 +208,13 @@ SRNとは異なり、大多数のアドネットワークはアトリビュー�
 | MyThings | mythings\_int |
 | TikTok for Business | bytedanceglobal\_int |
 
+<div id="how-to-setup-agency-attribution-with-all-installslaunches-networks" />
+
 #### すべてのインストール／起動ネットワークでの代理店のアトリビューション設定方法
 
 これらのネットワークを利用するには、代理店によらないインストールから情報を送信する必要があります。そのため、これらのネットワークは、マーケターが**代理店**より先に設定する必要があります。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -190,19 +226,27 @@ SRNとは異なり、大多数のアドネットワークはアトリビュー�
 > 4. 代理店は、代理店管理画面のTapjoyセットアップ期間に進みます。
 > 5. 代理店は、**代理店**にTapjoyから付与されたTapjoyアプリIDを**app\_id**テキストフィールドに入力します。
 
+<div id="deep-linking" />
+
 ### ディープリンク
 
 ディープリンクとは、パーソナライズされたコンテンツを開いたり、ユーザーをアプリ内の特定のアクティビティに送信したりしてモバイルアプリを起動することです。これにより、あなたのユーザーに優れた体験を提供し、エンゲージメントを高めることができます。
 
 ディープリンクを機能させるためには、モバイルアプリがディープリンクの機能とインフラストラクチャを持って開発されていることが必要です。キャンペーンを設定する前に、アプリ所有者にアプリがディープリンクに適しているかどうか確認してください。
 
+<div id="retargeting" />
+
 ### リターゲティング
 
 * * <Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">リターゲティングアトリビューション</Anchor>を利用すると、キャンペーンで既存または過去のユーザーをターゲットにすることができます。リターゲティングキャンペーンを正常に機能させるためには、ディープリンク機能が必要とされることが多いです。
 
+<div id="in-app-events" />
+
 ### アプリ内イベント
 
 アプリ所有者は、アプリ内でさまざまなイベント（例: 購入、チュートリアルの視聴、レベルクリアなど）を発生させ、それをAppsFlyerで記録して分析できます。代理店は、自分のアカウントの[イベント]ページで、自社に紐づくイベントデータを確認できます。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -225,9 +269,13 @@ SRNとは異なり、大多数のアドネットワークはアトリビュー�
 * 代理店は通常、マーケターのトラフィックの一部のみを担当しているため、データへのアクセスはマーケターに比べて制限されています。
 * <Anchor target="_blank" href="/marketers/ja/docs/manage-data-access-permissions">この記事</Anchor>では、これらの違いについて詳しく説明しています。以下のセクションでは、これらを強調しています。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > Meta広告とX広告の利用規約により、第三者とみなされる**代理店**は、**Meta広告またはX広告から発生するトラフィックのローデータレポートにアクセスできません**。
+
+<div id="access-to-aggregate-data" />
 
 ### 集計データへのアクセス
 
@@ -235,13 +283,19 @@ SRNとは異なり、大多数のアドネットワークはアトリビュー�
 * 集計オーガニックデータレポートにアクセスするには、マーケターの<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#代理店の許可">許可</Anchor>が必要です。
 * 代理店はリテンションレポート、コホートレポート、Protect360管理画面にアクセスできます。これには、マーケターが<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#代理店の許可">**リテンションとコホートレポートへのアクセスを許可する**</Anchor> または<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#代理店の許可">**Protect360ダッシュボードへのアクセスを許可する**</Anchor>を有効にする必要があります。[**アクティブ統合**]の[**権限**]タブでそれぞれのアクセス許可を有効にする必要があります。
 
+<div id="access-to-raw-data" />
+
 ### ローデータへのアクセス
 
 <Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">ローデータレポート</Anchor>（ユーザーレベルのデータレポート）にはアトリビューション情報が含まれており、トピックに分かれています。
 
+<div id="time-zone-and-currency" />
+
 ### タイムゾーンと通貨
 
 代理店はアプリで定義されたタイムゾーンと通貨でアプリを表示しますが、これらの設定を変更できるのはマーケターのみです。
+
+<div id="cost-reporting" />
 
 ### コストレポーティング
 
@@ -256,12 +310,16 @@ SRNとは異なり、大多数のアドネットワークはアトリビュー�
 5. このパートナーのAPIキーを入力してください。
 6. [**保存**] をクリックしてください。
 
+<div id="accessing-and-viewing-cost-data" />
+
 #### コストデータのアクセスと表示
 
 コストデータは次のデータソースにおいて代理店へ提供されます。
 
 * **概要**ページ: コストデータは、概要ページ内の**集計パフォーマンスレポート**に表示されます。
 * **レポート**: コストデータは、**ローデータレポート**の**インストール**や、**パフォーマンスレポート**内の<strong>パートナー（メディアソース）</strong>などのエクスポートレポートで利用可能です。
+
+<div id="hybrid-account-data-access" />
 
 ### ハイブリッドアカウントのデータアクセス
 

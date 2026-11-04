@@ -33,6 +33,8 @@ x-zendesk:
 
 ![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
 
+<div id="how-to-share-cost" />
+
 ## コスト情報の共有方法
 
 AppsFlyerの計測URLを介してユーザーレベルのコストデータを渡すには、非暗号化 / 暗号化の2つがあります。暗号化されたコストパスにより、パートナーはクリックアトリビューションURLにコスト値を送信することができます。
@@ -68,6 +70,8 @@ A12345678910&af_siteid=12345&af_cost_model=CPI&af_cost_value=1.00&af_cost_curren
 https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af_siteid=12345 **&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
 
 **注記：** AppsFlyerとコストの暗号化連携を実行したアドネットワークのみが、暗号化したコスト情報を広告主の計測URLと共に実際に送信できます。
+
+<div id="aes-encryption-process" />
 
 ## AESの暗号化プロセス
 
@@ -174,6 +178,8 @@ if end >= start:
 print(msg)
 print(urllib.quote_plus(base64.b64encode(enc)))
 ```
+
+<div id="which-networks-support-cost-reporting" />
 
 ## コスト計測をサポートしているアドネットワーク
 

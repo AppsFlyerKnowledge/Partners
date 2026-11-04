@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** PeerClick を使用するアドネットワークは、AppsFlyer の確率論的モデリングソリューションを活用して、インストールやアプリ内イベントに関するアトリビューションデータを受け取ることができます。
 
+<div id="starting-the-integration" />
+
 ## 連携を開始する
 
 連携を開始するには、レポート用に AppsFlyer にアトリビューションリンクとポストバックの両方を送信する必要があります。
@@ -47,16 +49,22 @@ x-zendesk:
 | &clickid= | clickid | ユーザーセッションの一意のトランザクション ID -**必須** |
 | &af\_siteid= | `{trafficsource.id}` | トラフィックソースの ID -**オプション** |
 
+<div id="note" />
+
 > 📘 **注**
 >
 > * AppsFlyer の全パラメーターリストについては、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">こちらをクリック</Anchor>してください
 > * PeerClick の全リストについては、<Anchor target="_blank" href="https://help-center.peerclick.com/en/">こちらをクリック</Anchor>してください
+
+<div id="complete-attribution-link-template" />
 
 ### 完全なアトリビューションリンクテンプレート
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### インストールとアプリ内イベントのポストバック
 
@@ -72,6 +80,8 @@ https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 
 * PeerClick によって提供されたユーザー ID
 * アプリからの実際のアプリ内イベント名。広告主が各アプリの AppsFlyer 管理画面で**イベントタグ**として設定したもの
+
+<div id="appsflyers-in-app-event-dashboard" />
 
 ### AppsFlyer のアプリ内イベント管理画面
 

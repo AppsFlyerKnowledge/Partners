@@ -30,6 +30,8 @@ x-zendesk:
 
 <Embed title="代理店アカウント：入門" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
+<div id="appsflyer-attribution-model" />
+
 ## AppsFlyerの計測モデル
 
 まずはじめに、AppsFlyerでの計測がどのように働いているのかを理解する必要があります。このセクションでは、最初のクリックまたはインプレッションからインストール / イベントの紐付けに至るまでの過程で何が起こるかを説明します。
@@ -46,6 +48,8 @@ x-zendesk:
 8. 一度インストールが計測されると、広告主と代理店両方の管理画面とレポート(<Anchor target="_blank" href="/partners/ja/docs/about-agency-accounts#セルフレポーティング広告ネットワーク">Meta広告 と Twitterは例外あり</Anchor>)に表示。
 9. 最後に、今後の配信最適化のためなどに情報を利用できるアドネットワークに対して、コンバージョンデータをポストバック。
 
+<div id="agency-role-in-mobile-attribution-chain" />
+
 ## モバイル計測における代理店の役割
 
 アプリを所有しているマーケティング担当者は、マーケティングの成果を測るためにAppsFlyerのSDKをアプリに実装します。
@@ -58,9 +62,13 @@ x-zendesk:
 
 注：広告代理店自体がアプリを所有している場合、またはアプリの開発も担当している場合には、マーケティング担当者アカウントを開設することをお勧めします。
 
+<div id="pricing" />
+
 ## 料金
 
 代理店アカウントの機能 の範囲は、各アプリの所有者(広告主)によって提供される権限に依存します。したがって、代理店アカウントは**無料**で提供され、アプリ所有者(広告主)のみに対して計測における費用が発生します。アプリの所有者と代理店は、AppsFlyerのデータを相互補完的に利用することが可能です。
+
+<div id="getting-started" />
 
 ## はじめよう
 
@@ -72,9 +80,13 @@ x-zendesk:
 2. AppsFlyerの代理店チームの担当者から、登録を完了するために必要な詳細情報を連絡する場合があります。
 3. アカウントがアクティブになると通知が届き、AppsFlyerを使用できるようになります。
 
+<div id="adding-team-members" />
+
 ## チームメンバーの追加
 
 アカウントが立ち上がったら、アカウントアドミン（アカウントを開いた人）がチームメンバーを追加でき、広告主から権限付与されているアプリの一部、もしくはすべてのアプリへのアクセスを付与することができます。新しいチームメンバーの追加方法の詳細については、こちらを参照してください。
+
+<div id="adding-apps-to-your-account" />
 
 ## 代理店アカウント上にアプリを表示させる
 
@@ -90,6 +102,8 @@ x-zendesk:
 
 マーケティング担当者は、直接管理画面上から<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#代理店の許可">各代理店アカウントに対して権限を付与</Anchor>できます。代理店アカウントを設定し、アプリへのアクセス権を取得したら、AppsFlyer機能を使用してキャンペーンの設定・配信を開始できます。
 
+<div id="what-does-it-mean-to-get-permission-from-a-marketer" />
+
 ### マーケティング担当者からの権限を得るとはどういうことですか
 
 マーケティング担当者から権限を得た場合：
@@ -104,6 +118,8 @@ x-zendesk:
 
 その他の権限には、コホート/リテンションレポート、Protect360の管理画面、および集約パフォーマンスレポートへのオーガニックデータへの表示が含まれます。
 
+<div id="app-list" />
+
 ### アプリ一覧
 
 マーケティング担当者から権限を得ると、アプリがアプリページに表示されます。
@@ -111,6 +127,8 @@ x-zendesk:
 アプリページには、最大1000個までのアプリが表示されます。アプリのリストが1000を超えた場合、一部のアプリはリストに表示されなくなりますが、検索機能を使用してそれらを見つけることが可能です。
 
 ![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+
+<div id="searching-for-apps" />
 
 #### アプリの検索
 
@@ -126,6 +144,8 @@ x-zendesk:
 
 注記：
 
+<div id="agency-dashboard" />
+
 ## 代理店管理画面
 
 アプリ一覧にあるアプリをクリックして、 <Anchor target="_blank" href="/marketers/ja/docs/getting-started-with-appsflyer-dashboards">管理画面</Anchor>にアクセスしてください。広告出稿を開始すると、あなた代理店アカウントに紐付いた集計データがここに表示されます。
@@ -138,7 +158,11 @@ x-zendesk:
 * アプリ内イベント管理画面
 * リターゲティング管理画面
 
+<div id="running-campaigns" />
+
 ## 広告出稿
+
+<div id="self-reporting-networks-srns" />
 
 ### セルフレポーティングネットワーク（SRN）
 
@@ -148,12 +172,16 @@ SRNは、セルフアトリビューションネットワーク（SAN）とも�
 
 上記のリンクをクリックして、各ネットワークのガイドと代理店設定の具体的な手順を確認してください。
 
+<div id="non-srns" />
+
 ### 非SRN
 
 ほとんどの広告ネットワークは、出稿の際広告の裏に設置される計測リンクが必要です。詳細については、<Anchor target="_blank" href="/partners/ja/docs/about-agency-accounts#非srn">こちら</Anchor>を参照してください。
 
 
 <span id="sandbox-attribution-agency-campaigns"></span>AppleのSKAdNetworkの計測プロセスに代理店は含まれておらず、AppsFlyerは代理店を直接成果を紐づけることはできませんが、AppsFlyerではSKAdNetworkで配信されている代理店のキャンペーンを代理店アカウントへ紐付け計測データを提供することができます。
+
+<div id="campaign-naming" />
 
 #### キャンペーンの命名規則
 
@@ -165,9 +193,13 @@ SRNは、セルフアトリビューションネットワーク（SAN）とも�
 
 `AgencyX_SummerSale`
 
+<div id="skadnetwork-agency-campaigns" />
+
 ### SKAdNetworkの代理店データ
 
 AppleのiOSの一部であるSKAdNetworkは、マーケティング担当者がIDFAなどの広告IDを使わずにキャンペーンの良し悪しを計測可能なものです。AppleのSKAdNetworkの計測プロセスに代理店は含まれておらず、AppsFlyerは代理店を直接成果を紐づけることはできませんが、AppsFlyerではSKAdNetworkで配信されている代理店のキャンペーンを代理店アカウントへ紐付け計測データを提供することができます。
+
+<div id="campaign-naming-1" />
 
 #### キャンペーンの命名規則
 
@@ -181,14 +213,22 @@ AppsFlyerのSKAdNetworkの管理画面においてデータを確認できるよ
 
 `AgencyX_SummerSale`
 
+<div id="note-2" />
+
+<div id="note-1" />
+
 > 📘 **注**
 >
 > * SKAdNetworkで計測された代理店のキャンペーンは常にマーケティング担当者に対して開示された状態であり、キャンペーンを配信しているアドネットワーク名はマーケティング担当者に対してマスクされません。iOS 15 以降では、マーケティング担当者(アプリの所有者)が<Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">オプトインしてポストバックのコピーを直接受け取る</Anchor>ことができることを考慮ください。
 > * これは、ユーザー インターフェイスでアクセスできるパートナーのアクティブ化設定に追加されます。
 
+<div id="access-to-skan-conversion-studio" />
+
 #### SKAN Conversion Studioへのアクセス
 
 広告代理店は<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio#view-cv-mapping">Conversion Studio</Anchor>でマーケティング担当者のSKAN CVマッピングの設定を<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio#skan-conversion-studioの基本">閲覧およびダウンロード</Anchor>できますが、設定を作成または編集することはできません。
+
+<div id="skadnetwork-dashboard" />
 
 #### SKAdNetworkの管理画面
 
@@ -199,6 +239,8 @@ AppsFlyerのSKAdNetworkの管理画面においてデータを確認できるよ
 * <Anchor target="_blank" href="/marketers/ja/docs/about-att-and-skan">SKAdNetworkクイックスタートガイド</Anchor>
 * <Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetworkの管理画面</Anchor>
 * <Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide">SKAdNetwork ソリューション</Anchor>
+
+<div id="single-source-of-truth-ssot-for-agencies" />
 
 ### 代理店向け Single Source of Truth (SSOT)
 
@@ -211,6 +253,8 @@ SSOTは、異なるモデルのアトリビューションデータを組み合�
 **参考記事：**
 
 * <Anchor target="_blank" href="/marketers/ja/docs/single-source-of-truth-ssot-guide-for-ios-attribution">SSOT (Single Source of Truth) - iOS計測ガイド</Anchor>
+
+<div id="what-else-you-can-do" />
 
 ## 他にできること
 

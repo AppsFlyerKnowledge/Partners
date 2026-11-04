@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 概要： 連携済みパートナー(アドネットワークと代理店)は、ProtectLITEとProtect360、広告主によって定義された検証ルールによって検知・ブロックされたトラフィックの情報を確認可能です。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerでは以下の機能で不正を検知・ブロックします。
@@ -41,11 +43,15 @@ AppsFlyerでは以下の機能で不正を検知・ブロックします。
 
 また、クリックとインプレッションの上限設定、失敗したクリック署名については、アドネットワークが利用できるローデータレポートがあり、これについては広告主の許可は必要ありません。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 代理店を通してアドネットワークを利用している広告主の場合、代理店とアドネットワークの両方がデータにアクセスするためには、広告主がAppsFlyerの管理画面上で代理店とアドネットワークの両方の連携設定を行い、権限付与とP360へのアクセスを付与する必要があります。
 >
 > 代理店のみが統合され、許可が与えられている場合は、アドネットワークはデータにアクセスできません。
+
+<div id="dashboard-view" />
 
 ### 管理画面表示
 
@@ -61,6 +67,8 @@ ProtectLITE<Anchor target="_blank" href="/marketers/ja/docs/basic-fraud-detectio
 
 [![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
 
+<div id="raw-data-reports" />
+
 ### ローデータレポート
 
 **前提条件**前提条件：ProtectLite / Protect360へのアクセスに関する、広告主からの権限付与が必要です。
@@ -74,6 +82,8 @@ Protect360のローデータレポートでは、ProtectLITE / Protect360 / 検�
 
 Protect360のローデータレポートの詳細については<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports">こちら</Anchor>を参照してください。
 
+<div id="protect360-ad-network-reporting-api" />
+
 ## Protect360のアドネットワーク向けレポートAPI
 
 * アドネットワークは、このセクションに記載されているローデータレポートをAPI経由で利用可能です。
@@ -86,6 +96,8 @@ Protect360のローデータレポートの詳細については<Anchor target="
 * Protect360へのアクセス権限を持っているアプリの一覧については、<Anchor target="_blank" href="/partners/ja/docs/app-list-api-for-ad-networks">アプリリストの取得API</Anchor>を使用してください。
 * パートナーアカウントのAdminアカウントは、AppsFlyerの管理画面からAppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">V2.0 認証トークン</Anchor>を取得する必要があります。
 
+<div id="protect360-api-reports" />
+
 #### Protect360 APIレポート
 
 | レポート | データ更新頻度 | 説明 |
@@ -95,6 +107,8 @@ Protect360のローデータレポートの詳細については<Anchor target="
 | インストール | リアルタイム | ブロック済みインストールとブロックされた理由<br /><br />レポートトピック： blocked\_installs\_report |
 | アプリ内イベント | リアルタイム | ブロックされたユーザーが実行したアプリ内イベント<br /><br />`blocked_in-app_events_report`report\_topic: |
 | クリック | リアルタイム | ブロックされたユーザーが実行したクリック<br /><br />`blocked_clicks_report`report\_topic: |
+
+<div id="procedure-for-ad-networks-to-get-protect360-reports-by-download" />
 
 #### **Protect360のローデータレポートをダウンロードして取得する手順**
 
@@ -108,6 +122,8 @@ Protect360のローデータレポートの詳細については<Anchor target="
    3. To date (終了日)
    4. Bearer token  (AppsFlyer <Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">V2.0 認証トークン</Anchor>)
 4. 記事内に記載のあるように、一部のコールには[オプションのパラメータ](/docs/protect360-for-integrated-partners#api-parameters)もあります。
+
+<div id="curl-examples" />
 
 ### Curl サンプル
 
@@ -176,6 +192,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 </Accordion>
 
+<div id="protect360-ad-network-api-reference-guide" />
+
 ### Protect360 アドネットワーク API 仕様ガイド
 
 <div id="api-basics" />
@@ -231,6 +249,8 @@ Protect360のAPIパラメータ：
 
 </Accordion>
 
+<div id="impression-capping" />
+
 ## インプレッションとクリックの上限ブロック(capping)
 
 アドネットワークが非常に高いインプレッションとクリックの不正率を示す場合、Protect360はアドネットワークのインプレッションとクリックを24時間のサイクルでブロックします。つまり、閾値に達したあとに発生したインプレッションとクリックはAppsFlyerで記録されず、アトリビューションの対象にもなりません。これらのブロックされたインプレッションとクリックの情報は、Protect360の管理画面とレポートにのみ表示されます。
@@ -266,6 +286,8 @@ Protect360のAPIパラメータ：
 | **Q:Q: ネットワークには上限に関する通知メールが送信されますか?**<br /><br />A.A: クリック制限の場合、AppsFlyerはクリック上限のしきい値に達するたびに広告ネットワークにメール通知を送信します。/span> |
 
 </Accordion>
+
+<div id="click-signing" />
 
 ### クリック署名
 
