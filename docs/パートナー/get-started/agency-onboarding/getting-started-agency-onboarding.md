@@ -102,6 +102,8 @@ x-zendesk:
 
 マーケティング担当者は、直接管理画面上から<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#代理店の許可">各代理店アカウントに対して権限を付与</Anchor>できます。代理店アカウントを設定し、アプリへのアクセス権を取得したら、AppsFlyer機能を使用してキャンペーンの設定・配信を開始できます。
 
+<div id="note" />
+
 <div id="what-does-it-mean-to-get-permission-from-a-marketer" />
 
 ### マーケティング担当者からの権限を得るとはどういうことですか

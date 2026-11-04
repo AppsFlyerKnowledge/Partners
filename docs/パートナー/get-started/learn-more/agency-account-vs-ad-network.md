@@ -42,6 +42,8 @@ x-zendesk:
 
 代理店アカウントの詳細については<Anchor target="_blank" href="/partners/ja/docs/about-agency-accounts">こちらのページ</Anchor>も参照してください。
 
+<div id="note" />
+
 <div id="ad-network-integration" />
 
 ## アドネットワークの連携

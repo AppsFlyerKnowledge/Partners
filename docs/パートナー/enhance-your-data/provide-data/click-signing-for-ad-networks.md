@@ -58,6 +58,10 @@ AppsFlyerによって媒体へ紐付けられたクリックが、不正業者�
 
 <div id="procedure" />
 
+<div id="building-a-signature-example" />
+
+<div id="signature-example" />
+
 ### 手順
 
 前提条件：
@@ -77,7 +81,7 @@ AppsFlyerによって媒体へ紐付けられたクリックが、不正業者�
 
 
 
-| <span id="creating-a-click-signature"></span><span id="list-of-attributes"></span>順序 | パラメータ | 必須 | 備考 |
+| <span id="creating-a-click-signature"></span><span id="signature-algorithm"></span><span id="json-spaces"></span><span id="attribute-value-escaping"></span><span id="json-data-structure"></span><span id="empty-attributes"></span><span id="order-and-appearance-of-attributes"></span><span id="attribute-and-json-rules"></span><span id="list-of-attributes"></span>順序 | パラメータ | 必須 | 備考 |
 | --- | --- | --- | --- |
 | 1 | link\_domain | はい | <ul><li>app.appsflyer.com</li><li>myapp.onelink.me</li><li>click.mycustomdomain.com</li></ul> |
 | 2 | link\_path | はい |  |
@@ -637,7 +641,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 </Accordion>
 
 
-<table><thead><tr><th><span id="configure-circuit-breaker-method"></span>カテゴリ</th><th>アイテム</th><th><span>説明</span></th></tr></thead><tbody><tr><td rowspan="3">リクエスト</td><td>HTTP メソッド</td><td><code>POST</code></td></tr><tr><td>経路</td><td><span>https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker</span></td></tr><tr><td>認証ヘッダー  </td><td><ul><li>認証ヘッダーには、Bearerトークンを含める必要があります。  </li><li>管理者ユーザーは、次のようにダッシュボードでトークンを取得します。  <a href="/marketers/ja/docs/managing-appsflyer-tokens" target="_blank">管理者はメールドロップダウンリスト &gt; API トークンの順で移動し、V2.0 トークンを取得します</a>  </li></ul></td></tr><tr><td>レスポンス</td><td>結果</td><td></td></tr></tbody></table>
+<table><thead><tr><th><span id="configure-circuit-breaker-basics"></span><span id="configure-circuit-breaker-method"></span>カテゴリ</th><th>アイテム</th><th><span>説明</span></th></tr></thead><tbody><tr><td rowspan="3">リクエスト</td><td>HTTP メソッド</td><td><code>POST</code></td></tr><tr><td>経路</td><td><span>https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker</span></td></tr><tr><td>認証ヘッダー  </td><td><ul><li>認証ヘッダーには、Bearerトークンを含める必要があります。  </li><li>管理者ユーザーは、次のようにダッシュボードでトークンを取得します。  <a href="/marketers/ja/docs/managing-appsflyer-tokens" target="_blank">管理者はメールドロップダウンリスト &gt; API トークンの順で移動し、V2.0 トークンを取得します</a>  </li></ul></td></tr><tr><td>レスポンス</td><td>結果</td><td></td></tr></tbody></table>
 
 
 <div id="api-request::ef73eae0" />
@@ -651,7 +655,7 @@ POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
 
 
-| <span id="request-body-json"></span>パラメータ | 説明 |
+| <span id="configure-circuit-breaker-curl-example-and-response"></span><span id="request-body-json"></span>パラメータ | 説明 |
 | --- | --- |
 | ステータス | <ul><li>enabled</li><li>disabled</li></ul> |
 
@@ -683,6 +687,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | 許可されていません | 認証ヘッダーが無効、または見つかりません。 |
 
 </Accordion>
+
+<div id="response-codes-5" />
 
 <div id="get-configuration-method" />
 
@@ -786,6 +792,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="response-codes-6" />
 
 <div id="parameters-4" />
 

@@ -41,6 +41,8 @@ InCost API は、アドネットワークが AppsFlyer へコストデータを�
 * InCost APIでは、CPI（クリックURL経由でコスト情報を共有する場合は唯一対応）だけでなく、すべてのコスト形式をサポートしています。
 * AppsFlyerのPartner Marketplace上でも、InCost APIの連携が完了すれば「コスト」のバッジが付与されます。
 
+<div id="note" />
+
 <div id="implementing-incost-api" />
 
 ## InCost API の実装

@@ -65,6 +65,16 @@ x-zendesk:
 * [基本] すべてのポストバック向け
 * **[オプション] アプリ内イベントとブロックされたイベント向け：** 列に記入されているイベント向けのマクロです。(ブロック / アプリ内イベント)
 
+<div id="retargeting-conversion-type" />
+
+<div id="is-reinstall" />
+
+<div id="is_contrib" />
+
+<div id="af_validation_type" />
+
+<div id="af_validated" />
+
 <div id="macrosinstalls-in-app-events-and-rejected-events" />
 
 #### マクロ名一覧 - インストール / アプリ内イベント / ブロックされたイベント向け

@@ -31,6 +31,10 @@ x-zendesk:
 ---
 > **概要**：初期統合設定の変更をリクエストするために知っておくべきことすべて。
 
+<div id="implement-audience-feature" />
+
+<div id="implement-incost-api" />
+
 <div id="important" />
 
 > 🚧 **重要！**
