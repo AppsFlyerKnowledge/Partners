@@ -36,6 +36,8 @@ x-zendesk:
 
 <Embed title="Giới thiệu về tài khoản đại lý" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
+<div id="about-agency-accounts" />
+
 ## Giới thiệu về tài khoản đại lý
 
 Tài khoản đại lý được các nhóm đại lý sử dụng để đo lường các chiến dịch tiếp thị ứng dụng do đại lý chạy thay mặt cho khách hàng của nhà quảng cáo (chủ sở hữu ứng dụng).
@@ -47,13 +49,19 @@ Tài khoản đại lý được các nhóm đại lý sử dụng để đo lư
   * Nhắm mục tiêu lại
 * KPI có sẵn bao gồm số lượt hiển thị, số lượt nhấp, số lượt cài đặt, mức độ trung thành của người dùng, chi phí và ROI. Giới thiệu về <Anchor target="_blank" href="/marketers/vi/docs/getting-started-with-appsflyer-dashboards">bảng điều khiển.</Anchor>
 
+<div id="agency-access-to-marketer-data" />
+
 ### Cơ quan truy cập vào dữ liệu tiếp thị
 
 Các cơ quan luôn có quyền truy cập vào dữ liệu lưu lượng truy cập được quy cho cơ quan. Các nhà quảng cáo có thể <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#cấp-quyền-cho-đại-lý">cấp cho các đại lý quyền truy cập</Anchor> vào dữ liệu bổ sung, ví dụ như dữ liệu hợp nhất tự nhiên. Xem <Anchor target="_blank" href="/marketers/vi/docs/manage-data-access-permissions">truy cập vào dữ liệu theo các loại người dùng khác nhau.</Anchor>
 
+<div id="agency-transparency" />
+
 ### Tính minh bạch của agency
 
 Lưu lượng truy cập đại lý được đặt theo mặc định là minh bạch. Tìm hiểu thêm về <Anchor target="_blank" href="/partners/vi/docs/getting-started-agency-onboarding#transparency">tính minh bạch của cơ quan</Anchor>.
+
+<div id="comparing-different-types-of-accounts" />
 
 ## So sánh các loại tài khoản
 
@@ -66,6 +74,8 @@ Lưu lượng truy cập đại lý được đặt theo mặc định là minh 
 
 Cấu trúc tài khoản cho phép chia sẻ kiến thức giữa các nhóm agency trên toàn cầu và cho phép đo lường, tính toán, báo cáo và tối ưu hóa tỷ suất hoàn vốn theo cấp nhóm.
 
+<div id="differences-between-marketer-and-agency-accounts" />
+
 #### Sự khác biệt giữa tài khoản Nhà tiếp thị và Đại lý
 
 |  | Nhà tiếp thị | **Đại lý** |
@@ -75,6 +85,8 @@ Cấu trúc tài khoản cho phép chia sẻ kiến thức giữa các nhóm age
 | Cài đặt cấp độ ứng dụng | Thời gian phân bổ lại, cấu hình OneLink, múi giờ, đơn vị tiền tệ | <ul><li>Đại lý minh bạch đối với nhà tiếp thị</li><li>Tất cả các cài đặt khác đều theo cài đặt của nhà tiếp thị</li></ul> |
 | Cấu hình cấp độ đối tác tích hợp | <ul><li>Cấp quyền cho Đại lý</li><li>Tất cả các cấu hình không phải SRN (mạng quảng cáo dựa trên liên kết phân bổ)</li><li>Cấu hình SRN</li><li>Quản lý liên kết</li></ul> | <ul><li>Tất cả các cấu hình không phải SRN</li><li>Một số cấu hình SRN yêu cầu can thiệp tối thiểu từ phía nhà quảng cáo:</li></ul><ul><li>Google Doubleclick</li><li>Snapchat</li><li>Tencent</li></ul>Các SRN khác cần được nhà quảng cáo cấu hình thì đại lý mới sử dụng được.<ul><li>Quản lý liên kết (sử dụng các mẫu do Nhà tiếp thị xác định)</li></ul> |
 | Tính năng bổ sung | Có (một số, nếu thuộc gói đăng ký) | Theo gói đăng ký của nhà quảng cáo và <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#cấp-quyền-cho-đại-lý">quyền</Anchor> được cấp cho đại lý (xem bảng bên dưới) |
+
+<div id="features-available-to-agencies" />
 
 ### Các tính năng có sẵn cho các đại lý
 
@@ -88,11 +100,15 @@ Cấu trúc tài khoản cho phép chia sẻ kiến thức giữa các nhóm age
 
 <Accordion title="Tài khoản Agency và Tài khoản Mạng Quảng cáo">
 
+<div id="differences-between-ad-network-and-agency-accounts" />
+
 #### Sự khác biệt giữa tài khoản Mạng quảng cáo và Đại lý
 
 <table><thead><tr><th><p>Mạng Quảng cáo</p></th><th><p>Đại lý</p></th></tr></thead><tbody><tr><td><p>Thông số đường dẫn phân bổ để nhận dạng: <code>pid</code></p></td><td><p>Thông số đường dẫn phân bổ để nhận dạng: <code>af_prt</code></p></td></tr><tr><td><p>Đặt quảng cáo ứng dụng trên chính nền tảng của mình</p></td><td><p>Quảng bá ứng dụng thông qua nhiều nguồn truyền thông</p></td></tr><tr><td><p>Chỉ thấy lưu lượng truy cập từ quảng cáo được đặt trên chính nền tảng</p></td><td><p>Chỉ thấy lưu lượng truy cập từ các nguồn truyền thông mà thực hiện quảng cáo</p></td></tr><tr><td><p>Có thể nhận thông tin theo thời gian thực về lượt cài đặt và các sự kiện trong ứng dụng thông qua đăng lại</p></td><td><p>Không thể nhận thông tin trong thời gian thực về lượt cài đặt và sự kiện trong ứng dụng thông qua đăng lại</p></td></tr><tr><td><p>Có thể cấu hình đăng lại sự kiện trong ứng dụng cho bất kỳ lưu lượng truy cập nào từ chính nó\*</p></td><td><p>Có thể cấu hình đăng lại sự kiện trong ứng dụng đến một số đối tác mà mang lưu lượng truy cập từ đó\*</p></td></tr><tr><td colspan="2"><p>\* Yêu cầu sự cho phép của nhà tiếp thị</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="agency-accountscampaigns-and-reporting" />
 
 ## Tài khoản đại lý—chiến dịch và báo cáo
 
@@ -106,9 +122,13 @@ Các đại lý có thể đo lường các loại lưu lượng truy cập chí
 * [Không phải SRN (mạng quảng cáo sử dụng đường dẫn phân bổ)](/docs/about-agency-accounts#không-phải-srn)
 * [Truyền thông Sở hữu](/docs/about-agency-accounts#truyền-thông-sở-hữuonelink-và-liên-kết-tùy-chỉnh)
 
+<div id="self-reporting-ad-networks" />
+
 ### Mạng quảng cáo tự báo cáo
 
 Các mạng tự báo cáo, chẳng hạn như Facebook, Google Ads hoặc Twitter không sử dụng các đường dẫn phân bổ bên ngoài. Thay vào đó, mỗi mạng có các phương thức và API của riêng AppsFlyer sử dụng để chia sẻ thông tin về số lượt cài đặt mới, sự kiện trong ứng dụng, v.v.
+
+<div id="srn-configurations" />
 
 #### Cấu hình SRN
 
@@ -121,15 +141,21 @@ Các mạng tự báo cáo, chẳng hạn như Facebook, Google Ads hoặc Twitt
 | Snapchat | Không | Để biết thông tin chi tiết về cấu hình đại lý cho chiến dịch Snapchat, <Anchor target="_blank" href="/marketers/vi/docs/snapchat-advanced-srn-integration-setup">nhấp vào đây</Anchor>. |
 | Yahoo (Oath: Nền tảng quảng cáo / Yahoo Gemini) | Có | Để biết thông tin chi tiết về cấu hình đại lý cho chiến dịch Snapchat, <Anchor target="_blank" href="/marketers/vi/docs/yahoo-integration-setup#agency-configuration">nhấp vào đây</Anchor>. |
 
+<div id="non-srns" />
+
 ### Không phải SRN
 
 Không giống như SRN, phần lớn các mạng quảng cáo sử dụng đường dẫn phân bổ cho mục đích phân bổ. <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#attribution-link-tab">Các đường dẫn phân bổ này đã được cung cấp</Anchor> trong mỗi cài đặt của mạng trên AppsFlyer và có thể được sao chép trực tiếp từ đó.
 
 Đối với các đại lý, quy trình này gần giống với quy trình của các nhà tiếp thị. Khi truy cập vào cửa sổ thiết lập của bất kỳ mạng quảng cáo thông thường nào, liên kết phân bổ đã có sẵn ở đó. Sự khác biệt duy nhất là tự động thêm thông số `af_prt` vào liên kết phân bổ.
 
+<div id="ad-network-configuration-visibility" />
+
 #### Khả năng hiển thị cấu hình mạng quảng cáo
 
 Thiết lập mạng quảng cáo chỉ hiển thị cho chính các mạng quảng cáo khi nhà quảng cáo (chủ sở hữu ứng dụng) cấu hình nó. Khi một đại lý kích hoạt và cấu hình tích hợp mạng quảng cáo trực tuyến, mạng sẽ thấy phần này không hoạt động.
+
+<div id="af_prt-parameter" />
 
 #### thông số af\_prt
 
@@ -142,6 +168,8 @@ Có `af_prt` với tên đại lý của bạn trên liên kết phân bổ dẫ
 Khi không có `af_prt`, một lượt cài đặt mới không thể được phân bổ tới bất kỳ tài khoản đại lý nào, vì vậy nó được phân bố trực tiếp tới mạng quảng cáo.
 
 **Không sử dụng các liên kết nhận được từ nhà quảng cáo**: đảm bảo sử dụng các liên kết từ tài khoản của bạn để ngăn phân bổ sai.
+
+<div id="special-case-all-installs-and-all-launches-networks" />
 
 #### Trường hợp đặc biệt: Mạng tất cả các lượt cài đặt và tất cả khởi chạy
 
@@ -171,9 +199,13 @@ Bảng sau đây hiển thị danh sách đầy đủ của mạng lưới Tấ
 | MyThings | mythings\_int |
 | TikTok dành cho Doanh nghiệp | bytedanceglobal\_int |
 
+<div id="how-to-setup-agency-attribution-with-all-installslaunches-networks" />
+
 #### Làm sao để thiết lập phân bổ đại lý với Mạng lưới Tất cả lượt cài đặt/khởi chạy?
 
 Làm việc với các mạng lưới này yêu cầu phải gửi thông tin từ các lượt cài đặt không được đem đến bởi đại lý. Do đó, các mạng này yêu cầu nhà tiếp thị định cấu hình chúng TRƯỚC KHI **đại lý**.
+
+<div id="example" />
 
 > 📄 **Ví dụ**
 >
@@ -213,9 +245,13 @@ Liên kết sâu là khởi chạy một ứng dụng di động khi mở nội 
 
 Để làm liên kết sâu hoạt động, ứng dụng di động PHẢI được phát triển có chức năng và cơ sở hạ tầng liên kết sâu. Liên hệ với chủ sở hữu ứng dụng để tìm hiểu xem ứng dụng có phù hợp để liên kết sâu hay không, trước khi thiết lập các chiến dịch.
 
+<div id="retargeting" />
+
 ### Nhắm mục tiêu lại
 
 * * <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide">Nhắm mục tiêu lại cho phân bổ</Anchor> cho phép bạn nhắm mục tiêu người dùng hiện tại hoặc quá khứ trong các chiến dịch của bạn. Các chiến dịch nhắm mục tiêu lại thường yêu cầu chức năng liên kết sâu để hoạt động chính xác.
+
+<div id="in-app-events" />
 
 ### Sự kiện trong Ứng dụng
 
@@ -242,14 +278,20 @@ Các đại lý có thể cấp quyền để cấu hình <Anchor target="_blank
 * Đại lý thường chỉ chịu trách nhiệm về một phần lưu lượng truy cập của nhà quảng cáo, do đó, quyền truy cập của đại lý vào dữ liệu bị hạn chế so với quyền truy cập của nhà quảng cáo.
 * <Anchor target="_blank" href="/marketers/vi/docs/manage-data-access-permissions">Bài viết này</Anchor> sẽ phân tích những điểm khác biệt này. Các phần sau sẽ làm rõ các khác biệt đó
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > Do các điều khoản dịch vụ của Facebook và Twitter, **các đại lý**, còn gọi là bên thứ 3, **không có quyền truy cập vào lưu lượng báo cáo dữ liệu thô từ Facebook và Twitter**.
+
+<div id="access-to-aggregate-data" />
 
 ### Truy cập vào báo cáo hiệu suất
 
 * Báo cáo hiệu suất, còn được gọi là báo cáo hợp nhất, theo mặc định sẽ có sẵn cho tài khoản đại lý.Bài đọc liên quan: <Anchor target="_blank" href="/marketers/vi/docs/aggregated-and-analytics-reporting-overview">Báo cáo hiệu suất hợp nhất</Anchor>
 * Truy cập vào các báo cáo dữ liệu không phải trả tiền tổng hợp cần có <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#cấp-quyền-cho-đại-lý">sự cho phép</Anchor> của nhà tiếp thị.
+
+<div id="access-to-raw-data" />
 
 ### Truy cập Dữ liệu Thô
 
@@ -257,9 +299,13 @@ Các đại lý có thể cấp quyền để cấu hình <Anchor target="_blank
 
 Các đại lý có thể nhận được quyền truy cập vào các báo cáo Giữ lại người dùng và Nhóm người và bảng điều khiển Protect360. Điều này yêu cầu nhà tiếp thị <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#cấp-quyền-cho-đại-lý">**bật Cho phép truy cập vào báo cáo lưu giữ và nhóm thuần tập của bạn**</Anchor> hoặc <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#cấp-quyền-cho-đại-lý">**Cho phép truy cập vào bảng điều khiển Protect360 của bạn**</Anchor>, tương ứng, trong tab **Quyền** của **Tích hợp đang hoạt động**.
 
+<div id="time-zone-and-currency" />
+
 ### Múi giờ và Tiền tệ
 
 Các đại lý nhìn thấy các ứng dụng với múi giờ và tiền tệ do ứng dụng xác định, nhưng các cài đặt này chỉ có thể do nhà quảng cáo quảng cáo.
+
+<div id="cost-reporting" />
 
 ### Báo cáo Chi phí
 
@@ -274,12 +320,16 @@ Các đại lý có thể bật tùy chọn **Get cost data** (Nhận dữ liệ
 5. Nhấp mã khóa API cho đối tác này
 6. Nhấp vào **Save** (Lưu).
 
+<div id="accessing-and-viewing-cost-data" />
+
 #### Truy cập và xem dữ liệu chi phí
 
 Đại lý có thể xem dữ liệu chi phí trong các nguồn dữ liệu sau:
 
 * Trang **tổng quan**: dữ liệu chi phí được hiển thị trong **Báo cáo hiệu suất hợp nhất** trong trang Tổng quan.
 * **Báo cáo**: dữ liệu chi phí có sẵn trong các báo cáo đã xuất, chẳng hạn như **Số lượt cài đặt** trong **Báo cáo dữ liệu thô** và **Đối tác (Nguồn truyền thông)** trong **Báo cáo hiệu suất**
+
+<div id="hybrid-account-data-access" />
 
 ### Truy cập dữ liệu tài khoản kết hợp
 

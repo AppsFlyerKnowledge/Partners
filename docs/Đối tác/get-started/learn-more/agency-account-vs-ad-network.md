@@ -46,6 +46,8 @@ Việc tích hợp với AppsFlyer làm mạng quảng cáo cho phép bạn nh�
 
 * As AppsFlyer integrated partner, you receive an ad network login that holds install and postback information.
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Là mạng quảng cáo tích hợp, bạn không có quyền truy cập vào bất kỳ thông tin sự kiện trong ứng dụng nào trừ khi được nhà quảng cáo chấp thuận (cần có tích hợp phụ).

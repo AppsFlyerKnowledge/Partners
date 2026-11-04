@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Khái quát:** AppsFlyer cung cấp cho các đối tác UA quảng cáo, giao dịch mua hàng trong ứng dụng cũng như dữ liệu đăng ký có thể tự động gia hạn đầy đủ và chính xác thông qua các báo cáo và bài đăng lại. Đối tác có thể nhập thông tin để tối ưu hóa chiến dịch UA.
 
+<div id="introduction" />
+
 ## Giới thiệu
 
 AppsFlyer nhận thông tin doanh thu từ cả đối tác và cửa hàng ứng dụng (Apple App Store và Google Play Store). Sau khi được nhận, dữ liệu sẽ trải qua một loạt các bước bao gồm xác thực, chuẩn hóa, phân bổ và làm phong phú thêm các thuộc tính và phương diện bổ sung.  AppsFlyer có thể gửi thông tin cho đối tác UA. Sau quy trình này, AppsFlyer truyền dữ liệu được bổ sung và phân bổ cho đối tác UA. Sau đó, đối tác UA có thể sử dụng thông tin này để tối ưu hóa chiến dịch thu hút người dùng và nâng cao dịch vụ mà họ cung cấp cho nhà quảng cáo.
@@ -48,6 +50,8 @@ AppsFlyer cung cấp cho đối tác thông tin về quảng cáo trong ứng d�
 * **Đăng lại Doanh thu Cửa hàng**: Mỗi lần một giao dịch mua hàng hoặc sự kiện doanh thu diễn ra, một đăng lại sẽ được gửi từ AppsFlyer tới đối tác chứa thông tin chi tiết về sự kiện doanh thu đó.
 
 </Accordion>
+
+<div id="set-up-roi360-for-partners" />
 
 ## Thiết lập ROI360 cho đối tác
 
@@ -77,6 +81,8 @@ AppsFlyer cung cấp cho đối tác thông tin về quảng cáo trong ứng d�
 [![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
 
 </Accordion>
+
+<div id="roi360-ua-signals-report-for-ua-networks" />
 
 ## Báo cáo Tín hiệu UA ROI360 cho Mạng UA
 
@@ -155,6 +161,8 @@ Dữ liệu được ghi hàng ngày vào thư mục h=23 trong bộ chứa Data
 
 </Accordion>
 
+<div id="in-app-ad-revenue-iaa-postbacks" />
+
 ## Đăng lại doanh thu quảng cáo trong ứng dụng (IAA)
 
 Đăng lại IAA là phương thức nhập thứ hai mà AppsFlyer sử dụng để gửi thông tin doanh thu cho đối tác. Lợi thế chính của chúng so với báo cáo tín hiệu UA Doanh thu Quảng cáo là tính cập nhật, vì tính năng đăng lại cung cấp tính năng chia sẻ dữ liệu doanh thu IAA gần như theo thời gian thực. Điều này trái ngược với tính cập nhật X+1 (một ngày sau ngày xảy ra sự kiện) được cung cấp thông qua báo cáo tín hiệu UA doanh thu quảng cáo.
@@ -193,6 +201,8 @@ AppsFlyer ROI360 thực hiện các bước sau cho từng dữ liệu cấp đ�
 Sự kiện được gửi tới đối tác thông qua cấu hình đăng lại hiện có giữa đối tác và AppsFlyer dưới dạng thông số bổ sung.
 
 </Accordion>
+
+<div id="in-app-purchase-iap-postbacks" />
 
 ## Đăng lại giao dịch mua hàng trong ứng dụng (IAP)
 

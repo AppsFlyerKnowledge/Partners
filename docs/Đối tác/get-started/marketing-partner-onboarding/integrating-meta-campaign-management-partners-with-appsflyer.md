@@ -33,6 +33,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn what data types Meta campaign management partners can receive from AppsFlyer.
 
+<div id="install-postbacks" />
+
 ## Install postbacks
 
 Upon conversion, AppsFlyer can return the following parameters:
@@ -52,9 +54,13 @@ Upon conversion, AppsFlyer can return the following parameters:
 | Channel (Instagram, Meta Audience Network, Facebook, Messenger) | `{af_channel}` |
 | Geo | `{user_country}` |
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > http://mcmp_postbackURL.........&mcmp_ADset_name =`{adset_name}`
+
+<div id="in-app-event-postbacks" />
 
 ## In-app event postbacks
 
@@ -65,11 +71,15 @@ Upon In-app events, AppsFlyer can return the following parameters (in addition t
 | Event Name* | `{event_name}` |
 | Event Value | `{event_value}` |
 
+<div id="example-1" />
+
 > 📄 **Example**
 >
 > `http://FMP_postbackURL.........&eventname={event_name}`
 
 * The Meta campaign management partner can choose to receive the in-app event name as the advertiser configured it in AppsFlyer's SDK or to have the advertiser fill in a free text field per event.
+
+<div id="user-level-data-policy" />
 
 ## User-level data policy
 
@@ -81,9 +91,13 @@ For example: If an install happened at 4.32 pm and 42 seconds, we can pass 5 pm 
 
 * AppsFlyer can use a Random ID of its own creation to attach to events that ID shouldn’t be derived from the IDFA/Android ID and should be unique to Meta ads. The same random ID can be passed downstream for In-app event postbacks.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Based on Meta terms sending postbacks is available only for companies obtaining the following badges: Ad Technology
+
+<div id="example-2" />
 
 > 📄 **Example**
 >

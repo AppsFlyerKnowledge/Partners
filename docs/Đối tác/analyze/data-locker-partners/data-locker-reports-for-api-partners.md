@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Sơ lược**: Các báo cáo trong bài viết này có sẵn dành cho bạn (đối tác tiếp thị) trong Data Locker của bạn. Trước khi chúng tôi có thể chia sẻ dữ liệu với bạn, nhà quảng cáo (chủ sở hữu ứng dụng) phải cấp cho bạn quyền truy cập dữ liệu như được nêu chi tiết trong bài viết này.
 
+<div id="data-locker-reports-for-api-partners" />
+
 ## Báo cáo Data Locker dành cho đối tác tiếp thị
 
 Để nhận được báo cáo, bạn, tức là đối tác tiếp thị phải:
@@ -55,6 +57,8 @@ Các báo cáo được truyền trực tuyến vào thư mục h=23.
 | Tính cập nhật của dữ liệu | <ul><li>Báo cáo thường có sẵn trước 10:00 UTC trong thư mục h=23 của ngày hôm trước. Ví dụ: báo cáo về dữ liệu được tạo vào thứ Hai nằm trong thư mục h=23 của thứ Hai.</li><li>Ngoại lệ: Sự kiện doanh thu quảng cáo có dữ liệu mới vào Ngày 0+3. Có nghĩa là các sự kiện về doanh thu quảng cáo trong báo cáo thứ Hai đã diễn ra vào thứ Bảy.</li><li>[Beta] Báo cáo theo phiên bản thường có sẵn trước 06:00 UTC.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Khái quát**: Xem lược đồ CV SKAN như được nhà quảng cáo ánh xạ.
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## API lược đồ CV SKAN cho mạng quảng cáo
 
 Với phân bổ SKAdNetwork (SKAN), nhà quảng cáo chấm điểm chất lượng người dùng bằng cách cài đặt giá trị chuyển đổi (CV) dựa trên hoạt động của người dùng sau khi cài đặt trong các khoảng thời gian (khung thời gian) cụ thể. <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-solution-guide">Tìm hiểu thêm về SKAN</Anchor>

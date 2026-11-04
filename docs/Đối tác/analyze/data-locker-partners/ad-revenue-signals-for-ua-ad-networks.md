@@ -30,6 +30,8 @@ Mạng quảng cáo có thể nhận các báo cáo qua Data Locker với thông
 
 Sau đó, các mạng quảng cáo có thể nhập dữ liệu này vào các thuật toán tối ưu và nhắm mục tiêu theo chiến dịch, đồng thời sử dụng dữ liệu này để cải thiện chiến dịch ROAS dựa trên cái nhìn toàn diện về doanh thu do UA tạo ra.
 
+<div id="set-the-ad-revenue-report-in-data-locker" />
+
 ## Thiết lập báo cáo Doanh thu Quảng cáo trong Data Locker
 
 Bạn cần hoàn thành các hoạt động sau để truy cập báo cáo Doanh thu Quảng cáo trong Data Locker:
@@ -64,6 +66,8 @@ Bạn cần hoàn thành các hoạt động sau để truy cập báo cáo Doan
 4. Để được hướng dẫn, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">Cho phép mạng quảng cáo nhận dữ liệu doanh thu quảng cáo.</Anchor>
 
 </Accordion>
+
+<div id="report-specification" />
 
 ## Thông số kỹ thuật của báo cáo
 
