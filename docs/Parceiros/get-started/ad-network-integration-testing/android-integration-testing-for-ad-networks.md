@@ -99,7 +99,8 @@ Quando o aplicativo é aberto pela primeira vez, a página **Install Data** exi
 
 As seguintes funções estão disponíveis:
 
-* **In-App Event Tests**Envie `purchase`, `login` e `registration` e eventos in-app. Ao mapear os nomes dos eventos in-app do aplicativo para os nomes dos seus eventos, os postbacks são preenchidos usando os nomes dos seus eventos.
+* **In-App Event Tests**  
+  Envie `purchase`, `login` e `registration` e eventos in-app. Ao mapear os nomes dos eventos in-app do aplicativo para os nomes dos seus eventos, os postbacks são preenchidos usando os nomes dos seus eventos.
 
 </Accordion>
 

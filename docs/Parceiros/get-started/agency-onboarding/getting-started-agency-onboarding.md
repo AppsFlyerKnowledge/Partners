@@ -228,7 +228,7 @@ Se o profissional de marketing desabilitar as permissões da agência, os dados 
 > 📘 **Observação**
 >
 > * As campanhas de agência no SKAdNetwork são sempre transparentes e a identidade da ad network que executa a campanha não é mascarada do profissional de marketing. Considere que a partir do iOS 15, o profissional de marketing (proprietário do aplicativo) pode <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">optar por receber diretamente uma cópia do postback.</Anchor>
-> * Você deve solicitar ao profissional de marketing que habilite a configuração **Ativação do parceiro**  na aba de integração. Se isso não for feito, a AppsFlyer não compartilhará os dados de postback decodificados com as networks, o que afetará a capacidade delas de usá-los para relatórios e otimização. Isso deve ser feito além da configuração de ativação do parceiro, que pode ser acessada na interface do usuário.
+> * <mark>Você deve solicitar ao profissional de marketing que habilite a configuração **Ativação do parceiro**</mark>  na aba de integração. Se isso não for feito, a AppsFlyer não compartilhará os dados de postback decodificados com as networks, o que afetará a capacidade delas de usá-los para relatórios e otimização. Isso deve ser feito além da configuração de ativação do parceiro, que pode ser acessada na interface do usuário.
 
 <div id="access-to-skan-conversion-studio" />
 

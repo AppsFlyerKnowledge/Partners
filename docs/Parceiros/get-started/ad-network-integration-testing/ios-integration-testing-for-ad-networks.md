@@ -188,8 +188,10 @@ Quando o aplicativo é aberto pela primeira vez, a caixa de diálogo do iOS **So
 
 As seguintes funções estão disponíveis:
 
-* **Testes de evento in-app**Envia eventos in-app `purchase`, `login` e `registration`. Ao mapear os nomes dos eventos in-app do aplicativo para os nomes dos seus eventos, os postbacks são preenchidos usando os nomes dos seus eventos.
-* **Status de ATT**Retorna o status atual de ATT reportado pelo iOS como **Authorized** ou **Denied**. O status de ATT depende do consentimento do usuário para rastrear na caixa de diálogo de consentimento de ATT e da configuração do dispositivo **Permitir que aplicativos solicitem para rastrear**.
+* **Testes de evento in-app**  
+  Envia eventos in-app `purchase`, `login` e `registration`. Ao mapear os nomes dos eventos in-app do aplicativo para os nomes dos seus eventos, os postbacks são preenchidos usando os nomes dos seus eventos.
+* **Status de ATT**  
+  Retorna o status atual de ATT reportado pelo iOS como **Authorized** ou **Denied**. O status de ATT depende do consentimento do usuário para rastrear na caixa de diálogo de consentimento de ATT e da configuração do dispositivo **Permitir que aplicativos solicitem para rastrear**.
 
 </Accordion>
 
