@@ -34,6 +34,8 @@ x-zendesk:
 ---
 > **概要：** 本文解释了如何利用高级配置，充分发挥AppsFlyer代理账户的作用。
 
+<div id="about-agency-accounts" />
+
 ## 代理账户详解
 
 代理账户是专为代理团队设计的，用于衡量代理代广告主（应用所有者）投放的应用营销广告效果。
@@ -45,22 +47,32 @@ x-zendesk:
   * 再营销
 * 可用指标包括展示量、点击量、激活量、用户忠实度、广告成本、ROI等。详见<Anchor target="_blank" href="/marketers/zh/docs/getting-started-with-appsflyer-dashboards">AppsFlyer面板指南</Anchor>。
 
+<div id="agency-access-to-marketer-data" />
+
 ### 代理对广告主数据的访问权限
 
 对于归因到代理的流量，代理总是可以访问其相关数据。广告主也可以<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">向代理开放</Anchor>其他数据的权限，例如自然量汇总数据。详见<Anchor target="_blank" href="/marketers/zh/docs/manage-data-access-permissions">不同类型用户的数据访问权限</Anchor>。
 
+<div id="agency-access-to-ad-network-integrations" />
+
 ### 代理对广告平台对接的访问权限
 
 代理如需使用某个广告平台的对接，并对自己在该平台中代投的广告进行衡量，必须事先获得平台侧的认可。也就是说该平台的授权代理列表中必须包含该代理的ID（即af\_prt）。请联系您的合作渠道，沟通授权事宜。如需查找相关代理ID，请参考[这部分说明](/docs/about-agency-accounts#af_prt参数)。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > * 即使归因链接中的af\_prt参数为空，也同样需要符合上述要求。
 > * 与<Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns">SRN</Anchor>合作的代理不在此要求的适用范围之内。
 
+<div id="agency-transparency" />
+
 ### 代理数据透明化
 
 您的流量数据默认对广告主可见。<Anchor target="_blank" href="/partners/zh/docs/getting-started-agency-onboarding#代理数据透明化设置">详情请见此处说明。</Anchor>
+
+<div id="comparing-different-types-of-accounts" />
 
 ## 对比不同类型的账户
 
@@ -73,6 +85,8 @@ x-zendesk:
 
 这样的账户构架是为了推动跨国代理团队之间的信息交流，并打通团队层级的ROI衡量、计算、上报和优化。
 
+<div id="differences-between-marketer-and-agency-accounts" />
+
 #### 广告主帐户与代理帐户的差异：
 
 |  | 营销人员 | **Agency（代理）** |
@@ -82,6 +96,8 @@ x-zendesk:
 | 应用层级设置 | 再归因窗口、OneLink配置、时区、货币 | 其他所有设置均取决于广告主侧的设置 |
 | 合作伙伴配置 | <ul><li>代理权限</li><li>所有非SRN（即使用归因链接的广告平台）的配置</li><li>SRN配置</li><li>链接管理</li></ul> | <ul><li>所有非SRN的配置</li><li>下列SRN要求必须由广告主完成的配置很少：</li></ul><ul><li>Google Doubleclick<ul><li>Snapchat</li><li>腾讯</li></ul></li></ul>其他SRN必须由广告主配置后代理方可使用。<ul><li>链接管理（使用广告主定义的模板）</li></ul> |
 | 其他功能 | 是（限套餐包含的产品） | 取决于广告主购买的套餐和授予代理的<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">权限</Anchor> （请参见下表） |
+
+<div id="features-available-to-agencies" />
 
 ### 代理可用的功能
 
@@ -95,11 +111,15 @@ x-zendesk:
 
 <Accordion title="代理帐户与广告平台帐户">
 
+<div id="differences-between-ad-network-and-agency-accounts" />
+
 #### 广告平台帐户与代理帐户的差异：
 
 <table><thead><tr><th>广告平台</th><th>Agency（代理）</th></tr></thead><tbody><tr><td>归因链接中用于标识渠道的参数：<code>pid</code> </td><td>归因链接中用于标识渠道的参数：<code>af_prt</code> </td></tr><tr><td>将应用广告投放在自家平台上</td><td>通过多个媒体渠道推广应用</td></tr><tr><td>仅可查看自家平台上的广告带来的流量</td><td>仅可查看代理使用的媒体渠道所带来的流量</td></tr><tr><td>可以通过回传接收实时的激活和应用内事件信息</td><td>无法通过回传接收实时的激活和应用内事件信息</td></tr><tr><td>可以配置自带流量的所有应用内事件回传\*</td><td>可以配置某些带量渠道的应用内事件回传\*</td></tr><tr><td colspan="2">\*需要广告主授权</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="agency-accountscampaigns-and-reporting" />
 
 ## 代理账户——广告投放及数据上报
 
@@ -112,9 +132,13 @@ x-zendesk:
 * * [自归因平台（SRN）](/docs/about-agency-accounts#自归因平台平台)
   * [非SRN（使用归因链接的广告平台）](/docs/about-agency-accounts#非srn)
 
+<div id="self-reporting-ad-networks" />
+
 ### 自归因平台平台
 
 自归因平台（如Meta ads、Google Ads或X Ads）不使用外部归因链接，而是提供各自专用的方法和API，让AppsFlyer获取新增激活、应用内事件等信息。
+
+<div id="srn-configurations" />
 
 #### SRN配置
 
@@ -128,15 +152,21 @@ x-zendesk:
 | TikTok for Business | 是 | 如需进一步了解代理的TikTok for Business投放配置方式，请参考<Anchor target="_blank" href="/marketers/zh/docs/tiktok-for-business-advanced-srn-integration-setup#代理的tiktok-for-business对接设置">此文档</Anchor>。 |
 | Yahoo（Oath:Ad Platforms / Yahoo Gemini) | 是 | 详情请见<Anchor target="_blank" href="/marketers/zh/docs/yahoo-integration-setup#agency-configuration">Yahoo广告的代理配置指南</Anchor>。 |
 
+<div id="non-srns" />
+
 ### 非SRN
 
 与SRN不同，绝大多数广告平台使用归因链接进行归因。AppsFlyer后台的合作伙伴配置页中为各平台提供<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#attribution-link-tab">现成的归因链接</Anchor>，可以直接复制取用。
 
 代理帐户的操作方式与广告主帐户基本一致，任何常规广告平台的设置页面都会提供现成的归因链接，唯一的区别在于代理账户的归因链接中会自动添加`af_prt`参数。
 
+<div id="ad-network-configuration-visibility" />
+
 #### 广告平台配置对代理的可见性
 
 由广告主（应用所有者）配置广告平台对接时，相关平台才能看到这些设置。如果由代理激活并配置广告平台对接，则这部分设置对广告平台会显示为未启用。
+
+<div id="af_prt-parameter" />
 
 #### af\_prt参数
 
@@ -147,6 +177,8 @@ x-zendesk:
 [![agency-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
 
 **请勿使用广告主侧的链接**：请务必使用您自己帐户中的链接，以防导致错误归因。
+
+<div id="special-case-all-installs-and-all-launches-networks" />
 
 #### 特殊情况：全安装和全启动广告平台
 
@@ -176,9 +208,13 @@ x-zendesk:
 | MyThings | mythings\_int |
 | TikTok for Business | bytedanceglobal\_int |
 
+<div id="how-to-setup-agency-attribution-with-all-installslaunches-networks" />
+
 #### 如何在全量激活/应用开启回传渠道上配置代理链接？
 
 与这类平台合作时，需要向其发送所有激活的信息，即是这些激活不是由相关代理带来的。因此，这些平台会要求广告主在配置**代理**前先对他们进行配置。
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -190,19 +226,27 @@ x-zendesk:
 > 4. 代理从其帐户的面板进入Tapjoy的配置页面
 > 5. 代理在**app\_id**字段中输入Tapjoy的App ID（由Tapjoy提供给**代理**）
 
+<div id="deep-linking" />
+
 ### 深度链接
 
 深度链接是指用户点击个性化广告时吊起相关应用和/或让用户进入应用中的特定页面，从而为用户带来极佳的体验并提升用户与应用的互动。
 
 如需使用深度链接，开发人员必须在应用代码中写入深度链接功能，否则深度链接无法正常生效。因此请在投放广告前先与广告主确认相关应用是否能支持深度链接。
 
+<div id="retargeting" />
+
 ### 再营销
 
 * * <Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">再营销归因</Anchor>使您可以在广告系列中锁定现有或历史用户。再营销广告通常需要深度链接功能才能达到预期的效果。
 
+<div id="in-app-events" />
+
 ### 应用内事件
 
 应用所有者可以在其应用中对各种事件打点（如购买、观看教程、通关等），这样他们就能通过AppsFlyer对这些事件进行记录和分析。代理可以在其帐户的事件面板中查看归因给自己的应用内事件数据。
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -225,9 +269,13 @@ x-zendesk:
 * 由于代理通常仅负责广告主的部分流量，因此代理仅具有部分数据的权限。
 * 有关各类账户之间的差异请参见<Anchor target="_blank" href="/marketers/zh/docs/manage-data-access-permissions">此文档</Anchor>。下文重点说明了代理账户的权限。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 在Meta ads和X Ads的服务条款中，**代理**属于第三方，因此**无法获取来自Meta ads和X Ads的原始数据报告**。
+
+<div id="access-to-aggregate-data" />
 
 ### 汇总数据的访问权限
 
@@ -235,13 +283,19 @@ x-zendesk:
 * 代理可以获取汇总自然量报告，但需要广告主<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">授权</Anchor>。
 * 代理可以查看留存报告、群组报告和Protect360面板，但需要广告主向代理<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">**开放留存和群组报告的权限**</Anchor>和/或<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">**Protect360面板的权限**</Anchor>，这两种权限在**活跃对接**页面的**授权**选项卡中分别设有配置选项。
 
+<div id="access-to-raw-data" />
+
 ### 原始数据权限
 
 <Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">原始数据报告</Anchor>（用户级别数据报告）中包含归因信息，并分为各种专项报告。
 
+<div id="time-zone-and-currency" />
+
 ### 时区和货币
 
 代理可以查看在应用配置中设定的时区和货币，但只有广告主可以修改这些设置。
+
+<div id="cost-reporting" />
 
 ### 成本上报
 
@@ -256,12 +310,16 @@ x-zendesk:
 5. 输入该渠道的API key。
 6. 点击**保存**。
 
+<div id="accessing-and-viewing-cost-data" />
+
 #### 成本数据的查看及拉取
 
 代理可以从以下数据来源中获取费用信息：
 
 * **数据总览**面板：代理可以在数据总览面板的**汇总效果报告**中查看成本数据。
 * **报告**：代理可以导出**原始数据**下的**激活**报告或**效果数据**下的**渠道**报告，并在其中查看成本数据。
+
+<div id="hybrid-account-data-access" />
 
 ### 混合账户的数据访问权限
 

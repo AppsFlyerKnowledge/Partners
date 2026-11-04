@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** 了解在广告投放后将用户重定向到应用商店的选项，以及如何将参与数据发送到AppsFlyer。
 
+<div id="overview" />
+
 ## 速览
 
 AppsFlyer通过多种方式接收参与数据（点击和展示）以进行归因：
@@ -32,9 +34,13 @@ AppsFlyer通过多种方式接收参与数据（点击和展示）以进行归�
 
 在这两种情况下，使用常规的<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">归因链接结构和参数</Anchor>。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 对于SRN，数据通过专用API接收
+
+<div id="users-redirected-via-appsflyer" />
 
 ## 通过AppsFlyer重定向的用户
 
@@ -46,6 +52,8 @@ AppsFlyer通过多种方式接收参与数据（点击和展示）以进行归�
 4. 用户安装应用
 5. AppsFlyer归因安装
 
+<div id="users-sent-directly-by-the-ad-network" />
+
 ## 广告网络直接发送的用户
 
 当广告被点击时，用户通过广告网络被引导到应用商店，最小化重定向次数：
@@ -55,11 +63,15 @@ AppsFlyer通过多种方式接收参与数据（点击和展示）以进行归�
 3. 用户安装应用
 4. AppsFlyer归因安装
 
+<div id="sending-engagement-data-to-appsflyer" />
+
 ### 将参与数据发送到AppsFlyer
 
 直接将用户发送到应用商店通过减少重定向次数改善了他们的体验。它还确保了安装的准确归属，并能够提供高质量的流量。
 
 广告网络只能直接从用户的设备向 AppsFlyer 报告点击和展示。
+
+<div id="timing-of-sending-redirects" />
 
 #### 发送重定向的时机
 

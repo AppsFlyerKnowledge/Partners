@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** 了解广告网络如何通过 CSV 文件直接向 AppsFlyer 报告广告主的活动成本。
 
+<div id="cost-import-for-ad-networks" />
+
 ## 广告平台的成本导入说明
 
 ![AdspendIngestion.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
+
+<div id="overview" />
 
 #### 概览
 
@@ -43,11 +47,15 @@ x-zendesk:
   * 一旦文件上传，就无法恢复。
 * 监控并检查文件中是否没有发现错误。
 
+<div id="submitting-ad-spend-files-for-ad-networks" />
+
 ### 为广告网络提交广告支出文件
 
 * 使用上传或电子邮件方法来导入广告支出文件。
 * [最佳实践] 最初使用上传方法，因为它更容易解决 CSV 格式问题。
 * 广告网络无法导入代理成本数据；只有广告主可以。
+
+<div id="submission-by-file-upload" />
 
 #### 通过文件上传提交
 
@@ -65,6 +73,8 @@ x-zendesk:
 6. 其他操作
    * <Anchor target="_blank" href="/marketers/zh/docs/import-cost-data#cost-import-dashboard">覆盖先前的摄取</Anchor>
    * <Anchor target="_blank" href="/marketers/zh/docs/import-cost-data#cost-import-dashboard">恢复（取消）</Anchor>
+
+<div id="submission-by-email" />
 
 #### 通过电子邮件提交
 

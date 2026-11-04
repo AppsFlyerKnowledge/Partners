@@ -34,10 +34,14 @@ x-zendesk:
   * TLS版本 TLS 1.2+，详情请见<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client">密码列表</Anchor>。
   * 端口 21
 
+<div id="accessing-integration-management" />
+
 ## 管理对接
 
 1. 登入您的AppsFlyer渠道账户。
 2. 点击右上角的下拉菜单 >**回传管理**。
+
+<div id="attribution-link" />
 
 ## 归因链接
 
@@ -51,6 +55,8 @@ x-zendesk:
    * 参数名称
    * **宏**：添加宏以填充参数值。
    * **链接参数**：勾选需要在链接中添加的参数。
+
+   <div id="important" />
 
    > 🚧 **重要提示！**
    >
@@ -66,6 +72,8 @@ x-zendesk:
 如需进一步了解相关信息，请参考<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">归因链接和可用参数说明</Anchor>。
 
 如出现任何问题，请通过<Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">渠道支持微件</Anchor>联系我们。
+
+<div id="default-postback" />
 
 ## 默认回传
 
@@ -83,6 +91,8 @@ x-zendesk:
 
    <Anchor target="_blank" href="/partners/zh/docs/postback-macros-for-ad-networks">回传宏完整列表</Anchor>
 
+   <div id="important-1" />
+
    > 🚧 **重要提示！**
    >
    > * 如需区分正常事件和被拦截的回传，请配置<Anchor target="_blank" href="/partners/zh/docs/postback-macros-for-ad-networks#激活应用内事件和被拒绝事件中的宏">被拦截的回传宏</Anchor>。
@@ -99,6 +109,8 @@ x-zendesk:
 <Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration">戳这里进一步了解回传信息和示例。</Anchor>
 
 如出现任何问题，请通过<Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">渠道支持微件</Anchor>联系我们。
+
+<div id="advanced-privacy-and-skan-postbacks" />
 
 ## 高级隐私保护和SKAN回传
 
@@ -121,6 +133,8 @@ x-zendesk:
    <Anchor target="_blank" href="/partners/zh/docs/skan-integration-guide-for-ad-networks#接收appsflyer发送的数据">SKAN回传宏</Anchor>列表
 
    <Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">高级隐私保护回传宏</Anchor>列表
+
+   <div id="important-2" />
 
    > 🚧 **重要提示！**
    >

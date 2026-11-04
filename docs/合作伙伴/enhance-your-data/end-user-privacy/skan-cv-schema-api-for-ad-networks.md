@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要**：概要：本文介绍了广告平台应如何查看广告主设置的SKAN转化值映射构架。
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## 广告平台的SKAN转化值映射构架API
 
 在SKAdNetwork（SKAN）归因场景中，广告主需要根据用户激活后指定时间段（即窗口期）内的行为设置转化值（CV），从而对用户质量分级。<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide">详情请见SKAN解决方案指南。</Anchor>

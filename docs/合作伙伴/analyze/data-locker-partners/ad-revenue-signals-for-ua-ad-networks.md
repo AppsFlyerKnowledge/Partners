@@ -30,6 +30,8 @@ x-zendesk:
 
 广告平台完成数据入库后，可将其用于定向投放和算法优化，同时全面了解通过UA广告产生的收入，以此为基础提升ROAS。
 
+<div id="set-the-ad-revenue-report-in-data-locker" />
+
 ## 设置Data Locker中的广告收入报告
 
 您必须先完成以下操作，才能在Data Locker中获取广告收入报告。
@@ -64,6 +66,8 @@ x-zendesk:
 4. 详细说明请见<Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">向广告平台开放广告收入数据的方法</Anchor>。
 
 </Accordion>
+
+<div id="report-specification" />
 
 ## 报告规格
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要**：概览：广告平台将汇总业绩报告加载到他们的BI系统中，以计算广告活动绩效指标，如7天留存率KPI。
 
+<div id="aggregated-campaign-performance-report" />
+
 ## 汇总广告活动业绩报告
 
 此报告提供广告活动绩效数据，包括执行给定事件的独特用户数量。您（广告平台），使用您BI系统中的数据，在广告主KPI的背景下，计算广告活动的绩效指标。该报告每天可通过<Anchor target="_blank" href="/partners/zh/docs/data-locker-for-partners">Data Locker for Partners</Anchor>获取
@@ -46,11 +48,15 @@ x-zendesk:
 * 通过Data Locker for Partners提供。<Anchor target="_blank" href="/marketers/zh/docs/about-data-freshness-and-timezone-support#daily-processing">每日UTC时间</Anchor>更新报告。
 * 广告主必须先在面板中为您开放必要[权限](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data)，然后我们才会与您共享相关数据。
 
+<div id="about-the-report" />
+
 ## 关于报告
 
 <div id="report-structure" />
 
 <Accordion title="报告结构">
+
+<div id="dimensions" />
 
 #### 维度
 
@@ -251,6 +257,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 指标
 
 | 特点 | 字段 | 完成事件的唯一用户 |
@@ -305,6 +313,8 @@ x-zendesk:
 通过添加或删除特征，您可以获得不同粒度的指标。
 
 </Accordion>
+
+<div id="permissions" />
 
 ## 授权
 

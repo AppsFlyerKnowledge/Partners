@@ -25,6 +25,16 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="finalizing-your-registration" />
+
+<div id="appsflyers-in-app-event-dashboard" />
+
+<div id="install-and-in-app-event-postbacks" />
+
+<div id="complete-attribution-link-template" />
+
+<div id="starting-the-integration" />
+
 ## 测试对接
 
 `https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}`

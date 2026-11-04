@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **概要：** InCost API是AppsFlyer ROI360的一部分，能让广告平台通过程序化的方式向AppsFlyer发送广告成本数据，从而为广告主提供汇总成本信息，让其了解贵平台真正的投放价值。
 
+<div id="about-incost-api" />
+
 ## InCost API简介
 
 InCost API是广告平台向AppsFlyer发送成本数据的最佳解决方案。与广告主合作的广告平台可通过此API向AppsFlyer发送详细的广告投放成本数据。AppsFlyer取得该数据后会对其进行处理，并通过面板和报告向广告主和平台呈现相关信息。
+
+<div id="benefits" />
 
 #### 优势
 
@@ -36,6 +40,8 @@ InCost API是广告平台向AppsFlyer发送成本数据的最佳解决方案。�
 * InCost API部署简单快捷，效果立竿见影，并能让您完全把控数据发送的方式和节点，且支持前90天内的成本数据发送。
 * InCost API支持所有的广告定价模式，不仅仅局限于CPI（若通过点击发送成本，则仅支持CPI）。
 * 完成InCost API对接后贵平台在AppsFlyer Partner Marketplace中会获得一个“成本”徽章，表示支持成本数据。
+
+<div id="implementing-incost-api" />
 
 ## InCost API的部署方式
 
@@ -58,6 +64,8 @@ InCost API是广告平台向AppsFlyer发送成本数据的最佳解决方案。�
 | 5 | 测试对接<ol><li>在工单线程（来自第1步）中，通知AppsFlyer API实现已完成，并获取以下应用的权限，这些应用可以在不使用真实数据的情况下测试API：<ul><li>com.cost.app</li><li>id888123456</li></ul></li><li>在AppsFlyer中，从侧边菜单中选择 **协作** > **合作伙伴市场**，然后选择合作伙伴。</li><li>点击**设置对接**，</li><li>选择1个测试应用。</li><li>打开相关渠道对接页面中的**成本**选项卡。</li><li>打开**获取成本数据**的开关。</li><li>点击**保存成本**。</li><li>点击**测试连接**。<br />完成上述操作后，API即处于启用状态。</li></ol> |
 | 6 | 在工单线程（来自第1步）中，确认与AppsFlyer的集成已正常运行。 |
 | 7 | 请确保您的广告主在AppsFlyer对接渠道页面的成本选项卡中打开了<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#cost-tab">获取成本数据</Anchor>的开关。打开该开关后广告主即可获取成本数据。 |
+
+<div id="fields-for-incost-upload-json" />
 
 ### JSON格式的InCost Upload字段
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要**：概要：广告平台与AppsFlyer完成SKAdNetwork（SKAN）对接后，便可获得SKAN归因结果并进行相应的投放优化。
 
+<div id="appsflyer-offering-for-ad-networks" />
+
 ## AppsFlyer可为广告平台提供以下优势：
 
 **如需了解AppsFlyer为广告主提供的SKAN解决方案，请参见以下文档**：
@@ -42,6 +44,8 @@ x-zendesk:
   * AppsFlyer会对支持SKAN对接的广告平台进行认证并予以特别标识。
   * 便于使用SKAN的广告主准确定位到支持SKAN归因的广告平台。
 
+<div id="skan-data-flow" />
+
 ## SKAN数据流
 
 ![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
@@ -54,12 +58,16 @@ x-zendesk:
    * redirect
 3. **AppsFlyer**会对回传进行验证和解析，然后将解析并扩充后的回传数据发回给广告平台（同时同步给广告主）。
 
+<div id="main-integration-parts" />
+
 ## 主要对接流程
 
 AppsFlyer与广告平台的SKAN对接主要分为以下几个步骤（下文会有详细说明）：
 
 * 广告平台将SKAN数据发送给AppsFlyer
 * AppsFlyer对SKAN数据进行解析和扩充，然后发回给广告平台
+
+<div id="send-data-to-appsflyer" />
 
 ## 向AppsFlyer发送数据
 
@@ -97,6 +105,8 @@ AppsFlyer接收到SKAN回传后会进行如下处理：
 * 完成上述数据扩充后，再将回传发送到AppsFlyer
 * **请注意：注意：向AppsFlyer转发回传之前，广告平台必须先通过回传内容验证Apple的**归因签名/strong>（Attribution Signature），避免对数据造成意外损坏。
 
+<div id="skan-enriched-postback-protocol" />
+
 #### 扩充后的SKAN数据回传规范
 
 | 端点 | `https://skadpostbacks.appsflyer.com/api/postbacks` |
@@ -104,6 +114,8 @@ AppsFlyer接收到SKAN回传后会进行如下处理：
 | HTTP方法 | POST |
 | 可用格式 | `application/json` |
 | 响应码 | 200 OK200 OK：接收到的回传格式正确。<br /><br />21Bad request（请求无效）400：请求无效——JSON文件格式错误、文件为空、缺失必要字段。 |
+
+<div id="skan-enriched-postback-json-parameters" />
 
 #### 扩充后的JSON格式SKAN回传参数
 
@@ -138,6 +150,8 @@ AppsFlyer接收到SKAN回传后会进行如下处理：
 | creative | 字符串 | <ul><li>仅适用于SKAN 4+</li><li>在source\_identifier中使用额外数位以细化广告系列颗粒度时可用</li></ul> | 广告平台 |
 | channel | 字符串 | <ul><li>仅适用于SKAN 4+</li><li>在source\_identifier中使用额外数位以细化广告系列颗粒度时可用</li></ul> | 广告平台 |
 
+<div id="curl-exampleenriched-skan-3-postback" />
+
 #### **Curl示例—扩充后的SKAN 3回传数据**
 
 ```bash
@@ -159,6 +173,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "campaign-id": 99
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-fine-conversion-values" />
 
 #### **Curl示例—扩充后带精细转化值的SKAN 4回传数据**
 
@@ -182,6 +198,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "attribution-signature": "MEUCIGRmSMrqedNu6uaHyhVcifs118R5z/AB6cvRaKrRRHWRAiEAv96ne3dKQ5kJpbsfk4eYiePmrZUU6sQmo+7zfP/1Bxo="
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-coarse-conversion-values" />
 
 #### **Curl示例—扩充后带粗略转化值的SKAN 4回传数据**
 
@@ -218,6 +236,8 @@ Redirect\_us-en\_\_2\_.png
 
 重定向方法具有以下优势：
 
+<div id="implementation" />
+
 #### **启用方式**
 
 1. 配置您的服务器以使用HTTP 307对SKAdNetwork回调进行响应，将回调信息重定向到 *[https://skadredirect.appsflyer.com/api/redirects](https://skadredirect.appsflyer.com/api/redirects)*
@@ -230,6 +250,8 @@ https://skadredirect.appsflyer.com/api/redirects?
   &ad-network-campaign-id=243232&ad-network-campaign-name=yarg_campaign_name
   &ad-network-adset-name=dsdsa&creative=examplecreative&channel=channelexample
 ```
+
+<div id="query-params-for-campaign-details-not-mandatory" />
 
 #### 建议添加的广告系列相关参数（非必须）
 
@@ -250,6 +272,8 @@ https://skadredirect.appsflyer.com/api/redirects?
 | channel | <ul><li>仅适用于SKAN 4+</li><li>在source\_identifier中使用额外数位以细化广告系列颗粒度时可用</li></ul> |
 
 </Accordion>
+
+<div id="receive-data-from-appsflyer" />
 
 ## 接收AppsFlyer发送的数据
 
@@ -308,6 +332,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 </Accordion>
 
+<div id="integration-testing" />
+
 ## 对接测试
 
 您可以使用以下任一方式测试您的平台与AppsFlyer的SKAN对接：
@@ -333,6 +359,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 在该方法中，广告平台需针对实际使用中的应用向AppsFlyer发送其真实的SKAN回传。
 
+<div id="testing-integration" />
+
 #### 测试对接
 
 | 负责人员 | 操作 |
@@ -341,6 +369,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | 广告平台和AppsFlyer | 确认要参与回传对接测试的客户（需接入最新的AppsFlyer SDK）。 |
 | 广告平台 | 使用本文所述的任一方法将相关应用的SKAN回传发送给AppsFlyer。 |
 | AppsFlyer | 根据广告客户设置的转化价值映射关系，将解码后的应用内事件信息发送到广告平台。 |
+
+<div id="test-criteria" />
 
 #### 测试成功标准：
 
@@ -365,6 +395,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | <span id="id888707086"></span>id888707086 | 转化模式，且记录以下事件：<ul><li>af\_level\_complete</li><li>af\_login</li><li>af\_SKAN\_revenue</li><li>af\_register</li><li>af\_subscription</li><li>af\_custom\_event</li></ul> | <ol><li>在对接选项卡中，打开**应用内事件回传**开关。</li><li>选择列表中的各个应用内事件，并将其关联到您对应的事件标识符。</li><li>保存配置。</li><li>回传中发送的转化值 = 63。</li><li>AppsFlyer解码后回传：<ul><li>1次激活</li><li>af\_level\_complete</li><li>af\_login</li><li>af\_register</li><li>af\_subscription</li><li>af\_custom\_event</li></ul></li></ol> |
 | <span id="id888707087"></span>id888707087 | 使用af\_SKAN\_revenue事件记录到的互动 | <ol><li>在对接选项卡中，打开**应用内事件回传**开关。</li><li>将名为af\_SKAN\_revenue的事件*关联到您对应的事件标识符*。</li><li>保存配置。</li><li>回传中发送的转化值 = 3。</li><li>AppsFlyer解码后回传：<ul><li>1次激活</li><li>af\_SKAN\_revenue事件的3次回传</li></ul></li></ol> |
 
+<div id="integration-steps" />
+
 #### 对接流程
 
 | 负责人员 | 操作 |
@@ -372,6 +404,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | 广告平台 |  |
 | 广告平台 | <ol><li><Anchor target="_blank" href="/partners/zh/docs/turn-on-test-app-integration-for-ad-networks">激活测试应用</Anchor>。</li><li>为各应用完成上表所列操作。</li><li>使用上表所列的测试应用发送模拟回传。发送模拟回传时请注意以下事项：<ul><li>请按照上表内容设置模拟回传中的app\_id和转化值。</li><li>由于广告平台无法生成Apple支持的签名，因此模拟回传中不必带有签名字段。AppsFlyer不会验证模拟回传中的签名。</li><li>AppsFlyer支持广告平台使用POST或REDIRECT方法发送回传。</li></ul></li></ol> |
 | AppsFlyer | 对模拟回传中的转化值进行解析，并再次回发给广告平台 |
+
+<div id="test-criteria-1" />
 
 #### 测试成功标准：
 
@@ -381,6 +415,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 | 广告平台 | <ul><li>广告平台接收到解析后的回传。</li><li>确认AppsFlyer发送的回传与预期的事件回传内容完全一致。比如对于标识符为ID888707087的应用，假设其转化值为3，则广告平台会收到3次*af\_SKAN\_revenue*事件的回传。</li></ul> |
 
 </Accordion>
+
+<div id="clarifications" />
 
 ## 说明
 

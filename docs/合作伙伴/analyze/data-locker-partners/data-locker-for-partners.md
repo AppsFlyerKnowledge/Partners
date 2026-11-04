@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
 
+<div id="data-locker-for-partners" />
+
 ## 合作渠道专用的Data Locker
 
 合作渠道专用的Data Locker可将应用数据传输至云端存储。广告主可设置权限，允许AppsFlyer向指定合作渠道共享所选数据。
@@ -54,6 +56,8 @@ x-zendesk:
 * <Anchor target="_blank" href="/partners/zh/docs/data-locker-reports-for-api-partners">平台官方合作渠道</Anchor>
 
 </Accordion>
+
+<div id="data-storage-architecture" />
 
 ## 数据存储结构
 
@@ -124,6 +128,8 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 | 数据保留 | 由您控制 |
 | 数据安全 | 存储空间由您掌控。<ul><li>**AWS**:AppsFlyer需要存储桶的GetObject、ListBucket、DeleteObject、PutObject权限。该存储桶必须仅用于AppsFlyer数据存储。请勿将其用于其他用途。</li><li><Anchor target="_blank" href="/marketers/zh/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor></li></ul> |
 
+<div id="notice-to-security-officers" />
+
 #### **安全负责人须知**
 
 注意事项：
@@ -155,6 +161,8 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 
 </Accordion>
 
+<div id="procedures" />
+
 ## 配置流程
 
 <div id="set-up-data-locker" />
@@ -181,6 +189,8 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 3. 按照<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">Data Locker设置说明</Anchor>中的第3-16步进行操作。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

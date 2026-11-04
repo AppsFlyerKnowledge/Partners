@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer可通过报告和回传向UA渠道提供完整精确的广告、应用内购买和自动续费数据。渠道可以将这些信息入库，将其用于UA投放的优化。
 
+<div id="introduction" />
+
 ## 简介
 
   完成这一流程后，
@@ -47,6 +49,8 @@ AppsFlyer会通过以下方式向渠道提供应用内广告、应用内购买�
 * 商店收入回传：每产生一次购买或订阅事件，AppsFlyer就会向相关渠道发送回传，其中包含该收入事件的详细信息。
 
 </Accordion>
+
+<div id="set-up-roi360-for-partners" />
 
 ## 渠道的ROI360设置说明
 
@@ -76,6 +80,8 @@ AppsFlyer会通过以下方式向渠道提供应用内广告、应用内购买�
 alt
 
 </Accordion>
+
+<div id="roi360-ua-signals-report-for-ua-networks" />
 
 ## UA平台的ROI UA Signals报告
 
@@ -152,6 +158,8 @@ AppsFlyer会将设备级别的数据写入Data Locker的报告中，每天写入
 
 </Accordion>
 
+<div id="in-app-ad-revenue-iaa-postbacks" />
+
 ## 应用内广告收入（IAA）回传
 
 IAA回传是AppsFlyer用来向渠道发送收入信息的一种数据传输方式。IAA回传能够以近乎实时的方式与渠道共享IAA收入数据，而广告收入UA Signal报告的数据共享时间为第X+1天（即事件发生次日），因此在时效性方面，IAA回传要优于广告收入UA Signal报告。
@@ -190,6 +198,8 @@ AppsFlyer的ROI360功能会对我们接收到的每条展示级别数据进行�
 相关事件会作为一个附加的参数，通过渠道和AppsFlyer之间的现有回传配置发送到渠道。
 
 </Accordion>
+
+<div id="in-app-purchase-iap-postbacks" />
 
 ## 应用内购买（IAP）回传
 

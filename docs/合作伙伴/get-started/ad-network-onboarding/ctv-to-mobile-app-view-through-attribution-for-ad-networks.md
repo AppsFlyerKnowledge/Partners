@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：概要：本文解释了如何将应用激活归因到用户在CTV设备上浏览的广告。**
 
+<div id="ctv-to-mobile-app-attribution-for-ad-networks" />
+
 ## CTV到移动应用程序的归因用于广告网络
 
 您可以利用AppsFlyer的跨平台展示链接将应用激活归因到CTV上展示的广告。同一住宅内的多次激活可以归因到同一个CTV广告展示。
@@ -41,6 +43,8 @@ https://impressions.onelink.me/{template_id}?pid=__media_source__&af_xplatform=t
 ```
 
 每次转化后会向您发送回调。
+
+<div id="note" />
 
 > 📘 **注意**
 >

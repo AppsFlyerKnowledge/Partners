@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：概要：本文解释了高级隐私保护（Advanced Privacy，简称AP）启用时与渠道共享数据的注意事项，并为广告平台提供了高级隐私保护回传的设置指南。请注意：本文与SKAdNetwork回传无关，且其中的信息不适用于广告主。**
 
+<div id="advanced-privacy-for-ad-networks-news" />
+
 > 📄 **广告平台的高级隐私保护适用条件**
 >
 > 本文所述的高级隐私保护回传机制在同时符合以下条件时生效：
@@ -40,6 +42,8 @@ x-zendesk:
 * 用于归因的[点击链接](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#click-url-requirements)需要符合的要求
 * 在AppsFlyer控制面板中设置您的高级隐私保护[回传](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
 * [高级隐私保护模式和SKAdNetwork](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#ap-vs-skadnetwork)之间的区别。
+
+<div id="ad-network-advanced-privacy-data-sharing-principles" />
 
 ## 广告平台在高级隐私保护（AP）模式下的数据共享原则
 
@@ -59,11 +63,15 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 
 ![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
 
+<div id="types-of-templates-for-sending-postbacks" />
+
 #### 用于发送回传的各类模版
 
 * **常规模板**常规模板：您与AppsFlyer之间的现行对接模板，其中带有用户标识符以及归因数据宏。该模板用于发送包含用户级别归因数据的回传。
 * 该模板用于发送包含汇总归因数据的回传。   
   **请注意：** 请注意：如果有AP回传要求，但您尚未完成AP对接，则AppsFlyer不会发送回传。您可以使用我们的自助回传管理工具设置AP对接。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -73,11 +81,15 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 >   * 相关广告平台的激活回传设置为**所有媒体渠道，包括自然流量**
 >   * 该广告平台不支持高级隐私保护模式
 
+<div id="type-of-postback-used" />
+
 ### 使用的回传类型
 
 下表适用于iOS 14.5+用户的数据。
 
 请注意： 如果用户的操作系统为iOS14.4或更早的版本，则下表所列信息不适用。AppsFlyer会使用常规模板向获得归因以及未获得归因的广告平台发送回传。
+
+<div id="postback-type-for-ios-145" />
 
 #### 适用于iOS 14.5+的回传类型
 
@@ -91,13 +103,19 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 
   ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
 
+<div id="web-campaigns" />
+
 ### 网页广告
 
 当广告平台在网页上投放广告时，AP模式的生效方式不同于应用内广告场景。
 
+<div id="postback-type-used-for-ios-145-when-ap-is-on" />
+
 #### AP开启时适用于iOS 14.5+的回传类型
 
 <table><thead><tr><th colspan="2">ATT状态</th><th rowspan="2">向获得归因的渠道发送的回传类型</th><th rowspan="2">向未获得归因的渠道发送的回传类型\*</th></tr><tr><th><p>流量侧应用（Publisher App）</p></th><th><p>广告主 App</p></th></tr></thead><tbody><tr><td><p><span>不适用</span></p></td><td><p><span>Not authorized（拒绝授权）</span></p></td><td><p><span>高级隐私保护</span></p></td><td><p><span>无</span></p></td></tr><tr><td><p><span>不适用</span></p></td><td><p><span>已授权</span></p></td><td><p>常规IDFA, IDFV, CUID, Click ID</p></td><td><p>常规。仅限用户级别ID。</p></td></tr></tbody></table>
+
+<div id="integration" />
 
 ## 对接
 
@@ -124,6 +142,8 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 
 2. 请在点击链接中添加下列必须配置的参数*：  
 
+   <div id="caution" />
+
    > ❗️ **注意事项**
    >
    > 如果您未在点击请求中添加必须配置的参数，则您带来的大部分激活都不会归因到贵平台。
@@ -138,6 +158,8 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 
    * 点击请求通过应用内流量跳转
    * 服务器到服务器的点击（又称S2S）
+
+   <div id="parameters-for-advanced-privacy-attribution" />
 
    #### 适用于高级隐私保护归因的参数
 
@@ -255,10 +277,14 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 1. [在AppsFlyer面板中设置您的高级隐私保护回传。](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback)
 2. <Anchor target="_blank" href="/partners/zh/docs/ios-integration-testing-for-ad-networks">测试高级隐私保护对接。</Anchor>
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 如需区分正常事件和被拦截的回传，必须配置被拦截的回传宏。
 > * 如需启用被拦截的激活/事件回传，请使用<Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">渠道支持微件</Anchor>联系我们。
+
+<div id="advanced-privacy-postback-endpoint-complete-as-required" />
 
 #### 高级隐私保护回传端点【根据实际需求配置】
 
@@ -266,6 +292,8 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 | --- |
 | 激活 |
 | 应用内事件 |
+
+<div id="advanced-privacy-attribution-macros-available" />
 
 #### 高级隐私保护归因可用参数
 
@@ -313,6 +341,8 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="ap-for-analytics-partners" />
@@ -323,6 +353,8 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 
 * AP关闭时：回传用户级别数据，无限制。
 * AP开启时：回传类型取决于用户来源和ATT授权状态，具体请见下表：
+
+<div id="analytics-partner-postback-type-according-to-att-status-and-user-source" />
 
 #### 分ATT授权状态和用户来源的数据分析平台回传类型
 

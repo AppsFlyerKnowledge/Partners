@@ -33,10 +33,14 @@ x-zendesk:
 * <Anchor target="_blank" href="/partners/zh/docs/skan-integration-guide-for-ad-networks">SKAdNetwork</Anchor>
 * <Anchor target="_blank" href="/partners/zh/docs/rejected-attribution-postbacks-to-integrated-partners">被拒绝的归因回传</Anchor>
 
+<div id="postbacks-for-ad-networks" />
+
 ## 广告平台的回传
 
 * **回传配置：** 要更改您的回传设置，可通过<Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">渠道支持微件</Anchor>提交请求，或联系您的AppsFlyer合作伙伴拓展经理。
 * **回传类型**：可对激活、应用内事件以及被拦截的激活和应用内事件（由Protect360识别或违反定向验证规则的事件）进行回传。
+
+<div id="postback-data-sources" />
 
 ### 回传数据来源
 
@@ -47,6 +51,8 @@ x-zendesk:
 | SDK提取的信息 | AppsFlyer SDK从设备中提取的信息。<br /><br />示例：可通过 "&IDFA=(idfa)" 在回传中获取iOS设备ID |
 | AppsFlyer平台提取信息 | 由AppsFlyer平台提取的信息。 |
 | Protect360及验证规则 | 被判定为作弊、违反定向投放规则的激活及其关联的应用内事件信息。 |
+
+<div id="postback-macros" />
 
 ## 回传宏
 
@@ -61,6 +67,8 @@ x-zendesk:
 * **全部发送**:若为是，则您可以接收归因到其他广告平台或自然流量的激活和事件数据（即非归因于您的流量）。
 * **[基础] 适用于所有回传的宏**：涵盖激活、应用内事件和被拒绝事件。
 * **[可选]** 仅适用于应用内事件和被拒绝事件，详见表格中的标注（如rejected、in-app）。
+
+<div id="macrosinstalls-in-app-events-and-rejected-events" />
 
 ### 激活、应用内事件和被拒绝事件中的宏
 
@@ -113,9 +121,13 @@ x-zendesk:
 | <span id="platform"></span>platform | SDK | 是 | 设备系统：iOS、Android或Windows Mobile | 是 |  |
 | <span id="retargeting-conversion-type"></span>retargeting\_conversion\_type | AF | 否 | 标记该事件是否为重新归因或再互动。 | 仅再营销 |  |
 
+<div id="in-app-event-only-macros" />
+
 ### 仅适用于应用内事件的宏
 
 以下示例展示了广告平台可用的应用内事件回传。
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -134,13 +146,19 @@ x-zendesk:
 > {"af_quantity":1,"af_revenue":"12000","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}
 > ```
 
+<div id="encoded-values" />
+
 #### **编码值说明**
 
 回传可能包含非字母数字的特殊字符。为了确保这些值能被正确传输，AppsFlyer会对所有非字母数字的值进行URL编码。
 
 要对回传进行解码或编码，可使用<Anchor target="_blank" href="https://www.urldecoder.org/">编码网络服务。</Anchor>
 
+<div id="sample-postbacks" />
+
 ## 回传示例
+
+<div id="general-install-postback-examples" />
 
 ### 常规激活回传示例
 
@@ -164,6 +182,8 @@ device_ip=(ip)&;idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="general-in-app-event-postback-examples" />
 
 ### 常规应用内事件回传示例
 
@@ -189,6 +209,8 @@ device_ip=(ip)&idfa=(idfa)&install_time=(install_unix_ts)
 
 </Tab>
 </Tabs>
+
+<div id="in-app-event-postback-example" />
 
 ### 应用内事件回传示例
 

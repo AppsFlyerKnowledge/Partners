@@ -30,6 +30,8 @@ x-zendesk:
 
 <Embed title="代理商入门指南" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
+<div id="appsflyer-attribution-model" />
+
 ## AppsFlyer归因模型
 
 AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解相关内容后再着手下一步工作。本节解释了从首次点击/展示到激活/事件归因，再到数据呈现/回传的整条链路。
@@ -46,6 +48,8 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 8. 归因完毕后，AppsFlyer会在广告主和代理的面板和报告中（<Anchor target="_blank" href="/partners/zh/docs/about-agency-accounts#自归因平台平台">Meta ads和X Ads除外</Anchor>）呈现归因结果。
 9. 然后，AppsFlyer会向广告平台发送回传，其中包含详细的转化数据。广告平台可以利用这些信息进一步优化广告投放。
 
+<div id="agency-role-in-mobile-attribution-chain" />
+
 ## 代理在移动归因产业链中的角色
 
 广告主（即应用所有者）在其应用中接入AppsFlyer SDK，以衡量其营销成效。
@@ -58,9 +62,13 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 注意：若贵司持有某个应用，或同时负责某个应用的开发和营销工作，则需开设广告主账户，而非代理账户。
 
+<div id="pricing" />
+
 ## 定价
 
 代理账户的使用范围取决于广告主在每个应用下为代理设置的权限。因此代理账户是**免费**的，归因费用完全由广告主承担。广告主和代理可以使用AppsFlyer的归因数据作为结算依据。
+
+<div id="getting-started" />
 
 ## 启用流程
 
@@ -72,9 +80,13 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 2. 如果注册过程中需要您提供其他信息，AppsFlyer的代理团队会与您取得联系。
 3. 您的账户激活后会收到通知，确认您可以开始使用AppsFlyer的服务。
 
+<div id="adding-team-members" />
+
 ## 添加团队成员
 
 账户设立完毕并成功激活后，账户管理员（即开户人）可以在该账户中添加团队成员，为他们开放该代理账户下部分或所有应用的权限。有关添加团队成员的详细信息，请参考此文档。
+
+<div id="adding-apps-to-your-account" />
 
 ## 在您的账户下添加应用
 
@@ -90,6 +102,8 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 广告主可以直接在AF后台<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">为相关代理开放访问权限</Anchor> 。账户设置完毕并获得相关应用的权限后，您就可以使用AppsFlyer的功能来投放广告了。
 
+<div id="what-does-it-mean-to-get-permission-from-a-marketer" />
+
 ### 广告主授权的作用
 
 代理获得广告主授权后：
@@ -104,6 +118,8 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 此外，您还可让广告主为您开放其他功能的权限，如群组报告、Protect360面板及汇总的自然量数据等。
 
+<div id="app-list" />
+
 ### 应用列表
 
 广告主授权后，授权应用就会出现在代理的“应用”页面中。
@@ -111,6 +127,8 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 代理账户的“应用”页面最多可显示1000个应用。如果您账户下的授权应用超过1000个，则部分应用不会显示在列表中，但您仍可以通过搜索找到这些应用。
 
 ![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+
+<div id="searching-for-apps" />
 
 #### 搜索应用程序
 
@@ -125,6 +143,8 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 请注意：
 
+<div id="agency-dashboard" />
+
 ## 代理面板
 
 您仅需点击应用列表中的相关应用，就能进入其<Anchor target="_blank" href="/marketers/zh/docs/getting-started-with-appsflyer-dashboards">面板</Anchor>。投放广告时，您可以在面板中查看归因给您的汇总数据。
@@ -137,7 +157,11 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 * 应用内事件控制面板
 * 重定向控制面板
 
+<div id="running-campaigns" />
+
 ## 广告投放
+
+<div id="self-reporting-networks-srns" />
 
 ### 自归因平台（SRN）
 
@@ -147,12 +171,16 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 有关具体SRN的操作指南和代理设置，请参见上文链接中的文档。
 
+<div id="non-srns" />
+
 ### 非SRN
 
 大多数广告平台需要在广告中设置归因链接。在非SRN平台上投放广告的详细指南请见<Anchor target="_blank" href="/partners/zh/docs/about-agency-accounts#非srn">此文档</Anchor>。
 
 
 <span id="sandbox-attribution-agency-campaigns"></span>虽然Apple并没有把代理纳入SKAN的归因流程，且AppsFlyer也不能直接将转化归因到代理，但在SKAN环境中投放广告的代理仍能获得AppsFlyer提供的归因数据。
+
+<div id="campaign-naming" />
 
 #### 广告系列的命名
 
@@ -164,9 +192,13 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 `AgencyX_SummerSale`
 
+<div id="skadnetwork-agency-campaigns" />
+
 ### SKAdNetwork中的代理投放
 
 Apple推出的SKAdNetwork框架（简称SKAN）是iOS的一部分，该框架可让广告主在没有IDFA或广告ID的情况下衡量投放效果。虽然Apple并没有把代理纳入SKAN的归因流程，且AppsFlyer也不能直接将转化归因到代理，但在SKAN环境中投放广告的代理仍能获得AppsFlyer提供的归因数据。
+
+<div id="campaign-naming-1" />
 
 #### 广告系列的命名
 
@@ -180,14 +212,22 @@ Apple推出的SKAdNetwork框架（简称SKAN）是iOS的一部分，该框架可
 
 `AgencyX_SummerSale`
 
+<div id="note-2" />
+
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * SKAN中的代理投放信息始终是透明的，不会对广告主隐瞒代理使用的广告平台。而且从iOS 15开始，广告主（即应用所有者）可以<Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks">选择直接接收SKAN回传副本</Anchor>。
 > * 上述操作不是您面板中的渠道激活设置，您在代理面板中激活渠道后还需要广告主完成上述操作。
 
+<div id="access-to-skan-conversion-studio" />
+
 #### SKAN转化值操作台的访问权限
 
 代理可以在<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio#view-cv-mapping">转化值操作台</Anchor>中<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio#skan转化值操作台基础操作指南">查看并下载</Anchor>广告主的SKAN CV映射配置，但不能进行配置或更改操作。
+
+<div id="skadnetwork-dashboard" />
 
 #### SKAN面板
 
@@ -198,6 +238,8 @@ Apple推出的SKAdNetwork框架（简称SKAN）是iOS的一部分，该框架可
 * <Anchor target="_blank" href="/marketers/zh/docs/about-att-and-skan">SKAdNetwork快速入门指南</Anchor>
 * <Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN面板</Anchor>
 * <Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide">SKAdNetwork 解决方案</Anchor>
+
+<div id="single-source-of-truth-ssot-for-agencies" />
 
 ### 代理的单一可信数据源（SSOT）权限
 
@@ -210,6 +252,8 @@ SSOT机制可结合不同模式的归因数据，并对激活及其相关的成�
 **相关文档：**
 
 * <Anchor target="_blank" href="/marketers/zh/docs/single-source-of-truth-ssot-guide-for-ios-attribution">iOS归因的单一可信数据源（SSOT）指南</Anchor>
+
+<div id="what-else-you-can-do" />
 
 ## 代理可用的其他功能
 

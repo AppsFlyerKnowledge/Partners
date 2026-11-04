@@ -28,9 +28,13 @@ x-zendesk:
 
 ![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
 
+<div id="what-is-appsflyer" />
+
 ## AppsFlyer的角色
 
 作为移动归因行业的领军企业，AppsFlyer热忱欢迎您加入我们的对接渠道阵营。本指南旨在帮助已完成AppsFlyer渠道注册的广告平台进行对接设置。如果您想要注册为渠道，需要<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#在appsflyer中添加新的对接渠道">AppsFlyer客户（即广告主）向您发出相关邀请。</Anchor>
+
+<div id="ad-network-onboarding" />
 
 ## 广告平台入驻
 
@@ -56,6 +60,8 @@ x-zendesk:
 * 本文中的耗时预估是根据我们与广告平台的对接经验得出的。每个对接都会稍有不同，因此实际用时会有出入。
 * AppsFlyer支持多个<Anchor target="_blank" href="/partners/zh/docs/platforms-for-ad-networks">效果广告平台</Anchor>。如果您使用了列表中的平台，请务必在对接前参考相关平台的专用指南。
 
+<div id="onboarding-steps" />
+
 ## 入驻步骤
 
 **请按以下流程与AppsFlyer对接**：
@@ -64,9 +70,13 @@ x-zendesk:
 2. [第二部分——通过广告主应用测试。](/docs/getting-started-onboarding-guide-for-ad-networks#第二部分通过广告主应用测试)
 3. [第三部分——使用AppsFlyer面板及报告工具。](/docs/getting-started-onboarding-guide-for-ad-networks#第三部分appsflyer面板及报告选项)
 
+<div id="part-1-integration-and-testing" />
+
 ### 第一部分：对接与测试
 
 <table><thead><tr><th>操作</th><th>用时（分钟）</th></tr></thead><tbody><tr><td>您的注册申请获批后会收到邮件通知，其中包含对接邀请，让您完成必要的步骤。</td><td>--</td></tr><tr><td colspan="2"> <strong>必须完成的对接步骤</strong>  </td></tr><tr><td> <a href="./self-serve-integration-management-for-ad-networks#归因链接" target="_blank">配置您的归因链接</a>： 归因链接是带有宏的URL，广告平台以实际产生的值填充这些宏，然后每当有用户点击链接时将其发送到AppsFlyer。 <br/>请注意：如果您使用了AppsFlyer支持的效果广告平台，必须按相关平台的专用指南进行操作。详情请见<a href="./platforms-for-ad-networks" target="_blank">效果广告平台指南。</a> </td><td>60</td></tr><tr><td> <a href="./self-serve-integration-management-for-ad-networks#默认回传" target="_blank">配置回传宏</a>：回传URL中所包含的宏由AppsFlyer填充，并会在每次发生转化后实时发送到您的服务器。</td><td>60</td></tr><tr><td>使用证书登录到<a href="https://hq1.appsflyer.com/auth/login" target="_blank">AppsFlyer面板</a>。 </td><td> </td></tr><tr><td>上传您的公司Logo。Logo的格式必须为200 X 50透明PNG。 <ol><li>在AppsFlyer后台的菜单栏中点选您的邮箱地址 &gt; <strong>合作伙伴配置</strong>。 </li><li>在<strong>简介</strong>选项卡中上传您的公司Logo。 </li><li>点击<strong>保存</strong>。</li></ol></td><td>5</td></tr><tr><td>使用AppsFlyer的测试应用来测试对接：<ul><li><a href="./android-integration-testing-for-ad-networks" target="_blank">安卓</a></li><li><a href="./ios-integration-testing-for-ad-networks" target="_blank">iOS</a></li></ul></td><td>10</td></tr><tr><td colspan="2"><strong>可选对接设置</strong></td></tr><tr><td>【iOS】如果您的广告主需要使用AppsFlyer的AAP功能（Aggregated Advanced Privacy，即汇总层级的高级隐私保护），请完成<a href="./self-serve-integration-management-for-ad-networks#高级隐私保护和skan回传" target="_blank">高级隐私</a>对接。</td><td>60</td></tr><tr><td>【iOS】如果您投放SKAdNetwork广告，请完成<a href="./self-serve-integration-management-for-ad-networks#高级隐私保护和skan回传" target="_blank">SKAdNetwork对接</a>。 </td><td>60</td></tr><tr><td><h4><strong><span id="authorized-agencies"></span>授权代理</strong></h4>您可以创建一个授权代理列表，并根据需要对其进行调整，获得您认可的代理才能通过您的平台对接来投放广告。如需添加授权代理，请进入AppsFlyer后台的安全中心，并将相关代理的代理ID（af_prt）添加到<a href="./set-up-your-list-of-authorized-agencies" target="_blank"><strong>授权代理</strong></a>部分。代理ID信息须由相关代理提供。</td><td>2</td></tr><tr><td colspan="2"><p><strong>其他功能及注意事项</strong><br/> </p><p>请根据广告主的要求配置对接。</p></td></tr><tr><td>如需防止作弊平台使用您的渠道标识符发送点击假量，请启用<a href="./click-signing-for-ad-networks" target="_blank">点击签名</a>。 </td><td>60+</td></tr><tr><td>如果广告主启用了Protect360或验证规则，请添加<a href="./postback-macros-for-ad-networks#激活应用内事件和被拒绝事件中的宏" target="_blank">被拦截的归因回传</a>。</td><td>15</td></tr><tr><td>通过API向AppsFlyer发送成本数据。详见<a href="./incost-api-for-ad-networks" target="_blank">InCost API</a>。</td><td>60+</td></tr><tr><td> <a href="/marketers/zh/docs/retargeting-attribution-guide" target="_blank">再营销对接</a>。</td><td>15</td></tr><tr><td> <a href="/marketers/zh/docs/measure-view-through-engagements" target="_blank">浏览型归因对接</a>。</td><td>15</td></tr></tbody></table>
+
+<div id="part-2-test-using-advertiser-apps" />
 
 ### 第二部分：通过广告主应用测试
 
@@ -80,6 +90,8 @@ x-zendesk:
 | 广告主（管理员） | <Anchor target="_blank" href="/marketers/zh/docs/registering-test-devices">测试机加白</Anchor>。需要广告主代您完成此步骤。 | 3 |
 | 广告平台 | <Anchor target="_blank" href="/partners/zh/docs/test-marketer-campaign-integration-with-the-ad-network">使用广告主的应用测试对接。</Anchor> | 60 |
 
+<div id="part-3-appsflyer-dashboard-and-reporting-options" />
+
 ### 第三部分：AppsFlyer面板及报告选项
 
 | 可选方案 |
@@ -88,9 +100,13 @@ x-zendesk:
 | 使用面向广告平台的<Anchor target="_blank" href="/partners/zh/docs/data-locker-for-partners">Data Locker</Anchor>通过云存储服务获取汇总的效果数据。 |
 | 获取Protect360<Anchor target="_blank" href="/marketers/zh/docs/raw-data-export-page">原始数据</Anchor>。 |
 
+<div id="integration-validation-period" />
+
 ## 对接认证期
 
 为了确保AppsFlyer生态系统中各方的真实性和有效性，同时保护我们的内部系统不受无效流量影响，所有新增的广告平台对接都需要完成对接认证。在对接认证期间，AppsFlyer会对相关渠道进行全面的流量验证和质量评估。新渠道必须先通过认证才能出现在<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations">Marketplace</Anchor>平台中，对所有广告主可见。
+
+<div id="validation-periodfaq" />
 
 ### 对接认证期的常见问题解答
 

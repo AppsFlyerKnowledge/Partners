@@ -25,19 +25,27 @@ x-zendesk:
 
 扩展广告交互类型（Enriched Engagement Types）能帮助广告主全面掌握用户在浏览广告或与广告交互时所产生的各种互动层次和意向强度，覆盖了从短暂曝光到即时反馈等各种级别的互动。本文详细说明了合作渠道应如何根据用户与广告的交互方式，在AppsFlyer归因链接中上报相应的交互类型。
 
+<div id="disclaimer" />
+
 > ❗️ **声明**
 >
 > 本文重点介绍与合作渠道相关的EET内容。如需了解完整信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/about-enriched-engagement-types#which-ad-networks-report-enriched-engagement-types">扩展广告交互类型</Anchor>文档。
 
+<div id="which-networks-can-report-eet-to-appsflyer" />
+
 ## 哪些广告平台可以向AppsFlyer上报EET？
 
 您的合作渠道必须在AppsFlyer的渠道认证项目中达到Premier、Advance或Engage标准，才能使用扩充互动类型。达到这些标准的渠道具有以下特质：1）向我们的共同客户持续提供大量优质流量，长期表现稳健扎实；2）以透明可信的方式发送互动数据；3）与AppsFlyer的各项服务进行了全面对接。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > 广告平台如需上报深度点击或深度浏览，请联系AppsFlyer支持团队。
 
 查看可上报扩展广告交互类型的[广告平台名单](#01JCAT81K2EJNH91YS6NJGMXMB-data-title)
+
+<div id="warning" />
 
 > ❗️ **警告**
 >
@@ -147,6 +155,8 @@ x广告平台应在以下场景中使用参数`af_engagement_type=engaged_click`
 <Accordion title="支持EET的广告平台">
 
 AppsFlyer可处理以下合作渠道上报的EET，但目前不包括深度点击与深度浏览。如名单中的广告平台希望AppsFlyer处理深度点击或深度浏览，请与AppsFlyer技术支持团队联系。如需查看AppsFlyer可处理哪些广告平台上报的深度点击与深度浏览，请参考<Anchor target="_blank" href="/marketers/zh/docs/about-enriched-engagement-types#哪些广告平台可以上报深度浏览和深度点击">扩展广告交互类型广告主指南</Anchor>。
+
+<div id="warning-1" />
 
 > ❗️ **警告**
 >

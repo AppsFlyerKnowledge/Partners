@@ -24,6 +24,10 @@ x-zendesk:
 ---
 > **概要**：
 
+<div id="see-also" />
+
+<div id="data-locker-reports-for-api-partners" />
+
 ## 营销渠道的Data Locker报告
 
 * 设置Data Locker**请注意**：

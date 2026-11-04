@@ -25,18 +25,26 @@ x-zendesk:
 ---
 > **概要：** Data Locker中的SSOT报告结合ID匹配和SKAN等多种归因模式的数据，以一体化的视图全面准确地呈现应用广告的投放效果。  您可以将这些报告导入您的BI系统，从而获得最为精准的数据。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 广告主必须先在面板中为您开放必要[权限](/docs/single-source-of-truth-ssot-data-locker-report-for-ad-networks#permissions)，然后我们才会与您共享相关数据。
 > * SSOT Data Locker报告提供的是LTV维度数据而非活跃维度数据。也就是说，报告中的数据反映的是用户在各个触点上的生命周期价值，而不是应用内或事件活跃数据。
 
+<div id="what-is-data-locker" />
+
 ## Data Locker简介
 
 Data Locker能够以安全可靠的方式直接向AWS、GCS和Snowflake等主流云平台传输数据。您可以通过该解决方案便捷地完成数据对接和入库，便于对数据进行综合分析与上报。详情请见<Anchor target="_blank" href="/partners/zh/docs/data-locker-for-partners">此文档</Anchor>。
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## 单一可信数据源（SSOT）简介
 
 SSOT报告结合ID匹配和SKAN等多种归因模式的数据，以一体化的视图全面准确地呈现应用广告的投放效果，旨在解决数据碎片化所带来的问题。详情请见<Anchor target="_blank" href="/marketers/zh/docs/single-source-of-truth-ssot-guide-for-ios-attribution">此文档</Anchor>。
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## 通过Data Locker获取SSOT报告的优势
 
@@ -107,6 +115,8 @@ SSOT报告所呈现的数据能完全满足营销人员对投放效果分析与�
 | 数据时效性 | <ul><li>每天更新一次，</li><li>根据UTC时间凌晨（即一天结束）时的数据计算指标。</li><li>SLA：新报告会在UTC时间16:00前写入Data Locker中。每天生成一个新版本，每个版本覆盖最近15个激活日期。<Anchor target="_blank" href="/marketers/zh/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy">详情请见此处说明。</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## 报告结构
 
@@ -490,6 +500,8 @@ AppsFlyer的数据模型可推算出基础SKAN数据无法提供的信息。
 
 </Accordion>
 
+<div id="directory-structure" />
+
 ## 文件目录结构
 
 <div id="report-folder-hierarchy" />
@@ -556,6 +568,8 @@ bucket
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## BI开发者注意事项
 
 **报告中的数据范围：**
@@ -581,6 +595,8 @@ bucket
 <div id="days-postattribution" />
 
 <Accordion title="归因后的天数">
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >

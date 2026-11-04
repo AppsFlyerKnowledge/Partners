@@ -33,6 +33,8 @@ x-zendesk:
 
 ![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
 
+<div id="how-to-share-cost" />
+
 ## 如何上报成本数据
 
 广告平台可通过AppsFlyer归因链接以两种方式传递用户层级的成本数据：加密传输及为加密传输。加密传输方式允许广告平台将成本值以加密形式附加在点击归因链接中。
@@ -68,6 +70,8 @@ A12345678910&af_siteid=12345&af_cost_model=CPI&af_cost_value=1.00&af_cost_curren
 https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af_siteid=12345 **&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
 
 **注意：** 只有完成与AppsFlyer加密成本对接的广告平台，才可通过归因链接为其客户传递加密成本数据。
+
+<div id="aes-encryption-process" />
 
 ## AES加密流程
 
@@ -174,6 +178,8 @@ if end >= start:
 print(msg)
 print(urllib.quote_plus(base64.b64encode(enc)))
 ```
+
+<div id="which-networks-support-cost-reporting" />
 
 ## 哪些广告平台支持成本上报？
 

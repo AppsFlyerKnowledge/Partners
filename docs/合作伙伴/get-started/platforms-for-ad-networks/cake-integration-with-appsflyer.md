@@ -25,6 +25,14 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="global-install-postback" />
+
+<div id="install-and-in-app-event-postbacks" />
+
+<div id="complete-attribution-link-template" />
+
+<div id="base-attribution-link" />
+
 ## 基础归因链接
 
 `https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}`
@@ -52,6 +60,12 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#oreqid#
 ```http
 https://{company-domain}.com/p.ashx?f=pb&r=(Click-ID)
 ```
+
+<div id="finalizing-your-registration" />
+
+<div id="appsflyer-in-app-events-dashboard" />
+
+<div id="global-in-app-event-postback" />
 
 ### 3. 全球应用内事件回传。
 

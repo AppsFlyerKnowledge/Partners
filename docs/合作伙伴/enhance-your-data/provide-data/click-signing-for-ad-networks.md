@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** 广告平台可以在点击中添加签名验证，这样作弊点击就不会被归因到该渠道，避免承担作弊风险。
 
+<div id="about-click-signing" />
+
 ## 点击签名简介
 
 作弊分子能够凭借极低的技术成本，以广告平台的名义生成上千甚至上百万的虚假点击，并将其发送到AppsFlyer。有些情况下，广告平台本身也不知情。
@@ -42,13 +44,19 @@ AppsFlyer可以通过这类签名来验证广告平台的点击，并确保点�
   * 相关数据会通过Protect360报告提供给广告平台（而非广告主）。<Anchor target="_blank" href="/partners/zh/docs/protect360-reports-for-ad-networks#failed-click-signatures">详情请见此处说明。</Anchor>
   * 不会影响该广告平台的转化率或点击截断（capping）的阈值。
 
+<div id="click-signature-integration" />
+
 ## 点击签名的接入方式
+
+<div id="flow" />
 
 ### 链路
 
 下图简要说明了点击签名从初始开发和基础测试到生产环境测试，最后正式上线的整条链路。
 
 ![](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png) altClick\_signing\_integration\_flow.png
+
+<div id="procedure" />
 
 ### 流程
 
@@ -68,9 +76,13 @@ AppsFlyer可以通过这类签名来验证广告平台的点击，并确保点�
      https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_campaign&clickid=sdkfjasksjskdfj9845weh&af_siteid=12345&expires=1597657118&signature_v2=8fnDVzZP_WRZnv3KNJaREOEfvB5p9oRc_XlKEvUo8gk
      ```
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 如果您的链接中存在特殊字符或空格，请务必在点击签名生成之前完成所有的URL编码， 否则会导致验证失败。
+
+<div id="creating-a-click-signature" />
 
 ## 点击签名的创建方式
 
@@ -78,6 +90,8 @@ AppsFlyer可以通过这类签名来验证广告平台的点击，并确保点�
 
 1. 使用下文的参数列表和JSON格式创建一个JSON字符串。
 2. 使用HMAC56为这个JSON创建签名
+
+<div id="list-of-attributes" />
 
 ### 参数列表
 
@@ -104,16 +118,24 @@ AppsFlyer可以通过这类签名来验证广告平台的点击，并确保点�
 | 17 | idfa | 否 |  |
 | 18 | idfv | 否 |  |
 
+<div id="attribute-and-json-rules" />
+
 ### 参数及JSON格式说明
+
+<div id="order-and-appearance-of-attributes" />
 
 #### 参数的顺序和形式
 
 * 广告交互链接中适用参数及其值必须以JSON格式配置。
 * JSON格式中的参数必须以上表所列的顺序排列。
 
+<div id="empty-attributes" />
+
 #### 空值参数
 
 * JSON中所列参数的值不能为空，也不能仅包含空格。
+
+<div id="json-data-structure" />
 
 #### JSON的数据结构
 
@@ -122,9 +144,13 @@ AppsFlyer可以通过这类签名来验证广告平台的点击，并确保点�
     举例来说，   
     `[["key-1","value-1"],["key-2","value-2"]...["key-n","value-n"]]`
 
+<div id="attribute-value-escaping" />
+
 #### 参数值转义（escape）
 
 * JSON中的值必须按照<Anchor target="_blank" href="https://www.w3docs.com/snippets/java/how-should-i-escape-strings-in-json.html">JSON格式标准</Anchor>以**小写字符串**编写。
+
+<div id="json-spaces" />
 
 #### JSON中的空格
 
@@ -183,6 +209,8 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 ```
 
 </Accordion>
+
+<div id="code-examples" />
 
 ### 代码示例
 
@@ -364,9 +392,13 @@ func main() {
 
 </Accordion>
 
+<div id="click-signature-apis" />
+
 ## 用于点击签名的API
 
 AppsFlyer提供多种API，帮助广告平台管理并测试其点击签名流程。如需详细了解这些API的使用方式，请参考下文的API列表以及后续章节的说明。
+
+<div id="click-signature-apis-1" />
 
 #### 用于点击签名的API
 
@@ -382,6 +414,8 @@ AppsFlyer提供多种API，帮助广告平台管理并测试其点击签名流�
 | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">Exclude app</Anchor> | 配置应用ID，在点击签名验证机制中排除相关应用。 |
 | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete">Remove excluded app</Anchor> | 配置应用ID，将被排除的应用其重新添加到点击签名验证机制中。 |
 
+<div id="legacy-versions" />
+
 ## 历史版本
 
 下列信息仅供参考，请勿使用这些历史版本。
@@ -389,6 +423,8 @@ AppsFlyer提供多种API，帮助广告平台管理并测试其点击签名流�
 <div id="v1-legacy" />
 
 <Accordion title="V1（历史版本）">
+
+<div id="generate-secret-key-method" />
 
 ### Generate secret key方法
 
@@ -409,6 +445,8 @@ AppsFlyer提供多种API，帮助广告平台管理并测试其点击签名流�
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 ```
+
+<div id="parameters" />
 
 #### 参数
 
@@ -457,6 +495,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP响应代码">
 
+<div id="response-codes" />
+
 #### 响应代码
 
 | 代码 | 响应消息 | 说明 |
@@ -465,6 +505,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized（拒绝授权） | 授权请求头（authorization header）无效或缺失 |
 
 </Accordion>
+
+<div id="revoke-secret-key-method" />
 
 ### Revoke secret key方法
 
@@ -485,6 +527,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 ```
+
+<div id="parameters-1" />
 
 #### 参数
 
@@ -511,6 +555,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 
 <Accordion title="HTTP响应代码">
 
+<div id="response-codes-1" />
+
 #### 响应代码
 
 | 代码 | 响应消息 | 说明 |
@@ -519,6 +565,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 | 401 | Not authorized（拒绝授权） | 授权请求头（authorization header）无效或缺失 |
 
 </Accordion>
+
+<div id="test-method" />
 
 ### Test方法
 
@@ -539,6 +587,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/test
 ```
+
+<div id="parameters-2" />
 
 #### 参数
 
@@ -589,6 +639,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP响应代码">
 
+<div id="response-codes-2" />
+
 #### 响应代码
 
 | 代码 | 响应消息 | 说明 |
@@ -597,6 +649,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized（拒绝授权） | 授权请求头（authorization header）无效或缺失 |
 
 </Accordion>
+
+<div id="configure-mode-method" />
 
 ### Configure mode方法
 
@@ -615,6 +669,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 ```
+
+<div id="parameters-3" />
 
 #### 参数
 
@@ -641,6 +697,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP响应代码">
 
+<div id="response-codes-3" />
+
 #### 响应代码
 
 | 代码 | 响应消息 | 说明 |
@@ -650,6 +708,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized（拒绝授权） | 授权请求头（authorization header）无效或缺失 |
 
 </Accordion>
+
+<div id="configure-circuit-breaker-method" />
 
 ### Configure circuit breaker方法
 
@@ -670,6 +730,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 ```
+
+<div id="request-body-json" />
 
 #### 请求体中的JSON格式参数
 
@@ -699,6 +761,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP响应代码">
 
+<div id="response-codes-4" />
+
 #### 响应代码
 
 | 代码 | 响应消息 | 说明 |
@@ -708,6 +772,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized（拒绝授权） | 授权请求头（authorization header）无效或缺失 |
 
 </Accordion>
+
+<div id="get-configuration-method" />
 
 ### Get configuration方法
 
@@ -786,6 +852,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 </Accordion>
 
+<div id="report-method" />
+
 ### Report方法
 
 <div id="report-basics" />
@@ -805,6 +873,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 GET https://hq1.appsflyer.com/api/p360-click-signing/report
 ```
+
+<div id="parameters-4" />
 
 #### 参数
 
@@ -863,6 +933,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 </Accordion>
 
+<div id="exclude-app-method" />
+
 ### Exclude app方法
 
 <div id="exclude-app-method-basics" />
@@ -884,6 +956,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 ```http
 POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-5" />
 
 #### 参数
 
@@ -910,6 +984,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 
 <Accordion title="HTTP响应代码">
 
+<div id="response-codes-7" />
+
 #### 响应代码
 
 | 代码 | 响应消息 | 说明 |
@@ -918,6 +994,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 | 401 | Not authorized（拒绝授权） | 授权请求头（authorization header）无效或缺失 |
 
 </Accordion>
+
+<div id="remove-excluded-app-method" />
 
 ### Remove excluded app方法
 
@@ -938,6 +1016,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 ```http
 DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-id>
 ```
+
+<div id="parameters-6" />
 
 #### 参数
 
@@ -967,6 +1047,8 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 <div id="http-response-codes::b5e059da" />
 
 <Accordion title="HTTP响应代码">
+
+<div id="response-codes-8" />
 
 #### 响应代码
 
@@ -1018,6 +1100,8 @@ String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

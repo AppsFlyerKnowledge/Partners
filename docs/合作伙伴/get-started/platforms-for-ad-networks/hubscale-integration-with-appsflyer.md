@@ -26,6 +26,10 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="global-postbacks-for-installs-and-in-app-events" />
+
+<div id="creating-the-attribution-link" />
+
 ## 使用归因链接
 
 请参阅下列AppsFlyer基本归因链接，附有每个宏的详细说明：
@@ -141,7 +145,7 @@ https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction
 
 
 
-|  |  | <span id="finalizing-your-registration"></span>说明 |
+|  |  | <span id="mapping-of-appsflyer-parameters-and-hubscale-macros"></span><span id="finalizing-your-registration"></span>说明 |
 | --- | --- | --- |
 | pid | pub\_id | <Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters#partner-id-pid-parameter">更多详情</Anchor>。 |
 | c | campaign\_name |  |

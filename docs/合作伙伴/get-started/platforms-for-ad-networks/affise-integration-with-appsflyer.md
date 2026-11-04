@@ -27,6 +27,18 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="global-in-app-event-postback-android" />
+
+<div id="global-install-postback-android" />
+
+<div id="global-install-postback-ios" />
+
+<div id="install-and-in-app-event-postbacks" />
+
+<div id="complete-attribution-link-template" />
+
+<div id="base-attribution-link" />
+
 ## 基础归因链接
 
 ```http
@@ -54,6 +66,10 @@ https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={id
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
+
+<div id="finalizing-your-registration" />
+
+<div id="global-in-app-event-postback-ios" />
 
 ### 3. 全球应用内事件回传。
 

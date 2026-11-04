@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 对接渠道（包括广告平台和代理）可以查看与其流量相关的假量数据。这些数据包括由ProtectLITE及Protect360引擎识别并拦截的假量，以及根据广告主自定义的验证规则拦截的流量。
 
+<div id="overview" />
+
 ## 速览
 
 AppsFlyer通过以下方式识别并拦截假量：
@@ -41,11 +43,15 @@ AppsFlyer通过以下方式识别并拦截假量：
 
 此外，广告平台还可以获取点击和展示截断（capping）的原始数据以及验证失败的点击签名<Anchor target="_blank" href="/partners/zh/docs/protect360-reports-for-ad-networks">原始数据</Anchor>。广告平台在访问这类报告时不需要广告主开放权限。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 如果广告主通过代理商在广告平台上进行投放，并且需要让广告平台和代理商都能取数，那么广告主必须在AF中同时对接代理商和广告平台，并为他们开通数据权限。
 >
 > 如果仅接入了代理商并为其开通了权限，这时广告平台没有数据权限。
+
+<div id="dashboard-view" />
 
 ### 面板视图
 
@@ -61,6 +67,8 @@ AppsFlyer通过以下方式识别并拦截假量：
 
 [![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
 
+<div id="raw-data-reports" />
+
 ### 原始数据报告
 
 **前期准备**：让广告主为您开放ProtectLITE和Protect360的访问权限。
@@ -74,6 +82,8 @@ AppsFlyer通过以下方式识别并拦截假量：
 
 如需进一步了解Protect360原始数据报告，请参考<Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports">此文档</Anchor>。
 
+<div id="protect360-ad-network-reporting-api" />
+
 ## Protect360的广告平台数据上报API
 
 * 广告平台可以通过API拉取本节所列的原始数据报告。
@@ -86,6 +96,8 @@ AppsFlyer通过以下方式识别并拦截假量：
 * 如果您不知道自己可以访问哪些应用的Protect360数据，请使用<Anchor target="_blank" href="/partners/zh/docs/app-list-api-for-ad-networks">get app list API</Anchor>获取相关的应用列表。
 * 账户管理员需要在面板中获取一个<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens">2.0版本的AppsFlyer认证token</Anchor>。
 
+<div id="protect360-api-reports" />
+
 #### 可通过API拉取的Protect360报告
 
 | 报告 | 数据时效性 | 说明 |
@@ -95,6 +107,8 @@ AppsFlyer通过以下方式识别并拦截假量：
 | 激活假量 | 实时 | 已拦截的安装（包含拦截原因）<br /><br />报告主题：blocked\_installs\_report |
 | 应用内事件 | 实时 | 已拦截的用户所完成的应用内事件<br /><br />报告主题：`blocked_in-app_events_report` |
 | 点击 | 实时 | 已拦截的用户所完成的归因点击<br /><br />报告主题：`blocked_clicks_report` |
+
+<div id="procedure-for-ad-networks-to-get-protect360-reports-by-download" />
 
 #### **广告平台通过下载获取Protect360报告的方法**
 
@@ -108,6 +122,8 @@ AppsFlyer通过以下方式识别并拦截假量：
    3. 截止日期
    4. Bearer token（<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens">2.0版本的AppsFlyer认证token</Anchor>）
 4. 部分调用请求支持[可选参数](/docs/protect360-for-integrated-partners#api-parameters)，详见本文相关小节的说明。
+
+<div id="curl-examples" />
 
 ### Curl示例
 
@@ -176,6 +192,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 </Accordion>
 
+<div id="protect360-ad-network-api-reference-guide" />
+
 ### Protect360中的广告平台API参考信息
 
 <div id="api-basics" />
@@ -231,6 +249,8 @@ Protect360 API参数：
 
 </Accordion>
 
+<div id="impression-capping" />
+
 ## 展示和点击截断（capping）
 
 如果某个广告平台的展示或点击作弊率非常高，Protect360会在24小时的周期内拦截该平台的展示或点击。也就是说，广告平台一旦触达capping阈值后，AppsFlyer就不会再记录任何展示/点击，也不会对其进行归因。被拦截的展示/点击会出现在Protect360的面板或报告中。
@@ -266,6 +286,8 @@ AppsFlyer的防作弊算法在检测假量时会考察多种参数，包括展�
 | **问：广告平台是否会收到capping的通知邮件？**<br /><br />答<strong>：对于点击capping，AppsFlyer会在广告平台达到capping阈值时向其发送邮件通知。</strong> |
 
 </Accordion>
+
+<div id="click-signing" />
 
 ### 点击签名
 
