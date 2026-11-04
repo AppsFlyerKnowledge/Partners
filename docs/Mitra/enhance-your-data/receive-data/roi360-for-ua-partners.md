@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** AppsFlyer memberi mitra UA iklan yang lengkap dan akurat, pembelian dalam aplikasi, dan data berlangganan yang dapat diperbarui secara otomatis melalui laporan dan postback. Mitra dapat menyerap informasi tersebut untuk mengoptimalkan kampanye UA.
 
+<div id="introduction" />
+
 ## Pengantar
 
 AppsFlyer menerima informasi pendapatan dari mitranya dan app store (Apple App Store dan Google Play Store). Setelah diterima, data menjalani serangkaian langkah termasuk validasi, normalisasi, atribusi, dan pengayaan dengan properti dan dimensi tambahan.  AppsFlyer dapat mengirimkan informasi tersebut ke mitra UA. Setelah proses ini, AppsFlyer mengirimkan data yang diperkaya dan diatribusikan ke mitra UA. Mitra UA kemudian dapat memanfaatkan informasi ini untuk mengoptimalkan kampanye akuisisi pengguna dan meningkatkan layanan yang mereka tawarkan kepada pemasang iklan.
@@ -48,6 +50,8 @@ AppsFlyer memberi mitra informasi mengenai iklan dalam aplikasi, pembelian dalam
 * **Postback Pendapatan Toko**: Setiap kali event pembelian atau berlangganan terjadi, postback dikirim dari AppsFlyer ke mitra yang berisi rincian event pendapatan.
 
 </Accordion>
+
+<div id="set-up-roi360-for-partners" />
 
 ## Siapkan ROI360 untuk mitra
 
@@ -77,6 +81,8 @@ Untuk menghubungi dukungan mitra AppsFlyer, buka menu **Bantuan** di dashboard A
 [![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
 
 </Accordion>
+
+<div id="roi360-ua-signals-report-for-ua-networks" />
 
 ## Laporan Sinyal UA ROI360 untuk Jaringan UA
 
@@ -155,6 +161,8 @@ Data ditulis setiap hari ke folder h=23 bucket Data Locker Anda pada pukul 21:00
 
 </Accordion>
 
+<div id="in-app-ad-revenue-iaa-postbacks" />
+
 ## Postback pendapatan iklan dalam aplikasi (IAA)
 
 Postback IAA adalah pendekatan penyerapan kedua yang digunakan AppsFlyer untuk mengirimkan informasi pendapatan ke mitra. Keuntungan utama mereka dibandingkan laporan sinyal UA Pendapatan Iklan adalah keaktualannya, karena postback menawarkan pembagian data pendapatan IAA yang hampir real-time. Hal ini berbeda dengan keaktualan X+1 (satu hari setelah tanggal terjadinya event) yang ditawarkan melalui laporan sinyal UA pendapatan iklan.
@@ -193,6 +201,8 @@ AppsFlyer ROI360 melakukan langkah-langkah berikut untuk setiap data tingkat imp
 Event tersebut dikirim ke mitra melalui konfigurasi postback yang sudah ada antara mitra dan AppsFlyer sebagai parameter tambahan.
 
 </Accordion>
+
+<div id="in-app-purchase-iap-postbacks" />
 
 ## Postback pembelian dalam aplikasi (IAP).
 

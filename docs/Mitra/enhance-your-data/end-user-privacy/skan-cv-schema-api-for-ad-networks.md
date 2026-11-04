@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Sekilas**: Lihat skema CV SKAN seperti yang dipetakan oleh pemasang iklan.
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## API SKAN CV skema untuk jaringan iklan
 
 Dengan atribusi SKAdNetwork (SKAN), pemasang iklan menilai kualitas pengguna dengan menetapkan nilai konversi (CV) berdasarkan aktivitas pengguna setelah penginstalan selama jangka waktu tertentu (windows/jendela). <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-solution-guide">Pelajari lebih lanjut tentang SKAN</Anchor>

@@ -36,6 +36,8 @@ x-zendesk:
 
 <Embed title="Tentang akun agensi" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
+<div id="about-agency-accounts" />
+
 ## Tentang akun agensi
 
 Akun agensi digunakan oleh tim agensi untuk mengukur kampanye pemasaran aplikasi yang dijalankan oleh agensi atas nama klien pemasar (pemilik aplikasi).
@@ -47,13 +49,19 @@ Akun agensi digunakan oleh tim agensi untuk mengukur kampanye pemasaran aplikasi
   * Retargeting
 * KPI yang tersedia termasuk tayangan, klik, penginstalan, kesetiaan pelanggan, biaya, dan ROI. Tentang <Anchor target="_blank" href="/marketers/id/docs/getting-started-with-appsflyer-dashboards">dashboard.</Anchor>
 
+<div id="agency-access-to-marketer-data" />
+
 ### Akses agen ke data pemasar
 
 Agensi selalu memiliki akses ke data lalu lintas yang diatribusikan ke agensi. Pemasar dapat <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#hak-akses-agensi">memberi agensi akses ke</Anchor> data tambahan, misalnya, data gabungan organik. Lihat <Anchor target="_blank" href="/marketers/id/docs/manage-data-access-permissions">akses ke data oleh berbagai jenis pengguna.</Anchor>
 
+<div id="agency-transparency" />
+
 ### Transparansi agensi
 
 Lalu lintas agensi disetel secara default agar transparan. Pelajari lebih lanjut tentang <Anchor target="_blank" href="/partners/id/docs/getting-started-agency-onboarding#transparency">transparansi agensi</Anchor>.
+
+<div id="comparing-different-types-of-accounts" />
 
 ## Membandingkan berbagai jenis akun
 
@@ -66,6 +74,8 @@ Lalu lintas agensi disetel secara default agar transparan. Pelajari lebih lanjut
 
 Struktur akun memungkinkan berbagi pengetahuan antara tim agensi global dan memungkinkan pengukuran, penghitungan, pelaporan, dan pengoptimalan ROI tingkat grup.
 
+<div id="differences-between-marketer-and-agency-accounts" />
+
 #### Perbedaan antara akun Pemasar dan Agensi
 
 |  | Pemasar | **agency** |
@@ -75,6 +85,8 @@ Struktur akun memungkinkan berbagi pengetahuan antara tim agensi global dan memu
 | Pengaturan tingkat aplikasi | Jendela atribusi ulang, konfigurasi OneLink, zona waktu, mata uang | <ul><li>Transparansi agensi terhadap pemasar</li><li>Semua pengaturan lainnya sesuai dengan yang ditetapkan oleh pemasar</li></ul> |
 | Konfigurasi tingkat mitra terintegrasi | <ul><li>Hak Akses Agensi</li><li>Semua konfigurasi non-SRN (jaringan iklan berbasis tautan atribusi).</li><li>Konfigurasi SRN</li><li>Manajemen tautan</li></ul> | <ul><li>Semua konfigurasi non-SRN</li><li>Beberapa konfigurasi SRN yang memerlukan intervensi minimal dari pihak pemasar:</li></ul><ul><li>Google Doubleclick</li><li>Snapchat</li><li>Tencent</li></ul>SRN lain harus dikonfigurasi oleh pemasar agar agensi dapat menggunakannya.<ul><li>Manajemen tautan (menggunakan templat yang ditentukan oleh Pemasar)</li></ul> |
 | Fitur tambahan | Ya (beberapa, jika termasuk dalam paket berlangganan) | Sesuai langganan pemasar dan <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#hak-akses-agensi">izin</Anchor> yang diberikan kepada agensi (lihat tabel di bawah) |
+
+<div id="features-available-to-agencies" />
 
 ### Fitur yang tersedia untuk agensi
 
@@ -88,11 +100,15 @@ Struktur akun memungkinkan berbagi pengetahuan antara tim agensi global dan memu
 
 <Accordion title="Agensi vs. akun jaringan iklan">
 
+<div id="differences-between-ad-network-and-agency-accounts" />
+
 #### Perbedaan antara Jaringan iklan dan Akun agensi
 
 <table><thead><tr><th><p>Ad Network</p></th><th><p>agency</p></th></tr></thead><tbody><tr><td><p>Parameter tautan atribusi untuk identifikasi: <code>pid</code></p></td><td><p>Parameter tautan atribusi untuk identifikasi: <code>af_prt</code></p></td></tr><tr><td><p>Menempatkan iklan aplikasi di platformnya sendiri</p></td><td><p>Mempromosikan aplikasi melalui berbagai sumber media</p></td></tr><tr><td><p>Hanya melihat lalu lintas dari iklan yang ditempatkan di platformnya</p></td><td><p>Hanya melihat lalu lintas dari sumber media yang diiklankan</p></td></tr><tr><td><p>Dapat menerima informasi waktu aktual tentang instalasi dan in-app event melalui postback</p></td><td><p>Tidak dapat menerima informasi real-time tentang penginstalan dan in-app event melalui postback</p></td></tr><tr><td><p>Dapat mengonfigurasi postback in-app event untuk semua lalu-lintasnya\*</p></td><td><p>Dapat mengonfigurasi postback in-app event ke beberapa mitra yang membawa lalu lintas dari\*</p></td></tr><tr><td colspan="2"><p>Membutuhkan izin pemasar</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="agency-accountscampaigns-and-reporting" />
 
 ## Akun agensi—kampanye dan pelaporan
 
@@ -106,9 +122,13 @@ Agensi dapat mengukur jenis lalu-lintas utama berikut:
 * [Non-SRNs (jaringan iklan menggunakan tautan atribusi)](/docs/about-agency-accounts#non-srn)
 * [Media yang Dimiliki Sendiri](/docs/about-agency-accounts#media-yang-dimiliki-onelink-dan-tautan-kustom)
 
+<div id="self-reporting-ad-networks" />
+
 ### Jaringan iklan pelaporan mandiri
 
 Jaringan pelaporan mandiri, seperti Meta ads, Google Ads, atau Twitter tidak menggunakan tautan atribusi eksternal. Namun, setiap jaringan memiliki metode dan API sendiri yang AppsFlyer gunakan untuk mengomunikasikan penginstalan baru, in-app event, dll.
+
+<div id="srn-configurations" />
 
 #### Konfigurasi SRN
 
@@ -121,15 +141,21 @@ Jaringan pelaporan mandiri, seperti Meta ads, Google Ads, atau Twitter tidak men
 | Snapchat | Tidak | Untuk detail konfigurasi agensi untuk kampanye Snapchat, klik <Anchor target="_blank" href="/marketers/id/docs/snapchat-advanced-srn-integration-setup">di sini</Anchor>. |
 | Yahoo (Oath: Platform Iklan / Yahoo Gemini) | Ya | Untuk detail konfigurasi agensi untuk kampanye Yahoo, <Anchor target="_blank" href="/marketers/id/docs/yahoo-integration-setup#agency-configuration">klik di sini</Anchor>. |
 
+<div id="non-srns" />
+
 ### Non-SRN
 
 Tidak seperti SRN, sebagian besar jaringan iklan menggunakan tautan atribusi untuk tujuan atribusi. <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#attribution-link-tab">Tautan atribusi ini sudah disediakan</Anchor> di setiap pengaturan jaringan di AppsFlyer dan dapat langsung disalin dari sana.
 
 Untuk agensi, prosesnya hampir sama dengan pemasar. Link atribusi sudah tersedia saat Anda membuka jendela pengaturan jaringan iklan reguler. Yang berbeda hanya penambahan otomatis parameter `af_prt` ke link atribusi.
 
+<div id="ad-network-configuration-visibility" />
+
 #### Visibilitas konfigurasi jaringan iklan
 
 Penyiapan jaringan iklan hanya dapat dilihat oleh jaringan iklan itu sendiri ketika pemasar (pemilik aplikasi) mengonfigurasinya. Saat agensi mengaktifkan dan mengonfigurasi integrasi jaringan iklan, jaringan melihat bagian ini sebagai tidak aktif.
+
+<div id="af_prt-parameter" />
 
 #### Parameter af\_prt
 
@@ -142,6 +168,8 @@ Penambahan `af_prt` ke nama agensi Anda di Link atribut yang menghasilkan instal
 Tanpa `af_prt`, install baru tidak dapat diatribusikan ke akun agensi mana pun, oleh karena itu install baru tersebut diatribusikan langsung ke jaringan iklan.
 
 **Jangan gunakan tautan yang diterima dari pemasar**: pastikan untuk menggunakan tautan dari akun Anda sendiri untuk mencegah atribusi yang salah.
+
+<div id="special-case-all-installs-and-all-launches-networks" />
 
 #### Kasus khusus: Semua jaringan penginstalan dan peluncuran
 
@@ -171,9 +199,13 @@ Tabel berikut menampilkan daftar lengkap semua jaringan peluncuran:
 | MyThings | mythings\_int |
 | TikTok untuk Bisnis | bytedanceglobal\_int |
 
+<div id="how-to-setup-agency-attribution-with-all-installslaunches-networks" />
+
 #### Bagaimana cara mengatur atribusi agensi dengan semua jaringan penginstalan/peluncuran?
 
 Bekerja dengan jaringan ini memerlukan pengiriman informasi dari penginstalan yang tidak dibawa oleh agensi. Oleh karena itu, jaringan ini mengharuskan pemasar untuk mengonfigurasinya SEBELUM **agensi**.
+
+<div id="example" />
 
 > 📄 **Contoh**
 >
@@ -207,6 +239,8 @@ Pastikan Anda adalah mitra untuk semua aplikasi yang dipilih di templat OneLink.
 
 **Catatan**: Agar agensi dapat menggunakan templat OneLink, mereka harus menjadi mitra untuk semua aplikasi di templat.
 
+<div id="deep-linking" />
+
 ### Penautan Langsung
 
 Penautan langsung adalah peluncuran aplikasi seluler saat membuka konten yang dipersonalisasi dan/atau mengirim pengguna ke aktivitas tertentu dalam aplikasi. Ini dapat memberi pengguna Anda pengalaman pengguna yang unggul dan meningkatkan keterlibatan mereka.
@@ -216,6 +250,8 @@ Agar penautan langsung berfungsi, aplikasi seluler HARUS dikembangkan dengan kem
 ### Retargeting
 
 * * <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">Atribusi penargetan ulang</Anchor> memungkinkan Anda untuk menargetkan pengguna yang ada atau pengguna sebelumnya di kampanye Anda. Kampanye penargetan ulang seringkali memerlukan kemampuan deep linking agar berfungsi dengan baik.
+
+<div id="in-app-events" />
 
 ### In-App Event
 
@@ -242,14 +278,20 @@ Agensi dapat memberikan izin ke jaringan iklan untuk mengonfigurasi postback in-
 * Agensi biasanya bertanggung jawab hanya untuk sebagian lalu-lintas pemasar, sehingga akses agensi ke data terbatas dibandingkan dengan pemasar.
 * <Anchor target="_blank" href="/marketers/id/docs/manage-data-access-permissions">Artikel ini</Anchor> menguraikan perbedaan ini. Bagian berikut menyoroti hal tersebut
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > Karena persyaratan layanan Meta ads dan Twitter, **agensi**, yang dianggap sebagai pihak ketiga, **tidak memiliki akses ke lalu lintas laporan data lengkap, yang berasal dari Meta ads atau Twitter**.
+
+<div id="access-to-aggregate-data" />
 
 ### Akses ke laporan kinerja
 
 * Laporan kinerja yang juga disebut sebagai laporan gabungan tersedia secara default untuk akun agensi. Bacaan terkait: <Anchor target="_blank" href="/marketers/id/docs/aggregated-and-analytics-reporting-overview">Laporan kinerja gabungan</Anchor>
 * Akses ke laporan data organik gabungan memerlukan izin <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#hak-akses-agensi">pemasar</Anchor>.
+
+<div id="access-to-raw-data" />
 
 ### Akses ke data lengkap
 
@@ -257,9 +299,13 @@ Agensi dapat memberikan izin ke jaringan iklan untuk mengonfigurasi postback in-
 
 Agensi dapat menerima akses ke laporan Retensi dan Kelompok, serta dashboard Protect360. Ini mengharuskan pemasar untuk mengaktifkan <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#hak-akses-agensi">**Izinkan akses ke laporan retensi dan kelompok Anda**</Anchor> atau <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#hak-akses-agensi">**Izinkan akses ke dashboard Protect360 Anda**</Anchor>, masing-masing, di tab **Izin** dari **Integrasi aktif**.
 
+<div id="time-zone-and-currency" />
+
 ### Zona Waktu dan Mata Uang
 
 Agensi melihat aplikasi dalam zona waktu dan mata uang yang ditentukan aplikasi, tetapi pengaturan ini hanya dapat diubah oleh pemasar.
+
+<div id="cost-reporting" />
 
 ### Pelaporan biaya
 
@@ -274,12 +320,16 @@ Agensi dapat mengaktifkan **Get cost data (Dapatkan data biaya)** saat mengonfig
 5. Masukkan kunci API untuk mitra ini.
 6. Klik **Save**.
 
+<div id="accessing-and-viewing-cost-data" />
+
 #### Mengakses dan melihat data biaya
 
 Data biaya tersedia untuk agensi dalam sumber data berikut:
 
 * **Laman Ikhtisar**: data biaya dapat dilihat di **Aggregated performance report (Laporan kinerja gabungan)** di laman Ikhtisar.
 * **Laporan**: data biaya tersedia di laporan yang dieskpor seperti **Installations (Penginstalan)** di bawah **Raw data reports (Laporan data lengkap)** dan **Partners (Mitra) (Media sources/Sumber Media)** di bawah **Performance reports (Laporan kinerja)**
+
+<div id="hybrid-account-data-access" />
 
 ### Akses data akun campuran
 

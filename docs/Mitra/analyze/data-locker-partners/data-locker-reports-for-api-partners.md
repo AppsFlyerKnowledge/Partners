@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Sekilas**: Laporan yang tercantum dalam artikel ini tersedia untuk Anda (mitra pemasaran) di Data Locker Anda. Sebelum kami dapat membagikan data kepada Anda, pemasang iklan (pemilik aplikasi) harus memberi Anda akses data sebagaimana dijelaskan secara rinci dalam artikel ini.
 
+<div id="data-locker-reports-for-api-partners" />
+
 ## Laporan Data Locker untuk mitra pemasaran
 
 Untuk mendapatkan laporan Anda, mitra pemasaran harus:
@@ -55,6 +57,8 @@ Laporan di-streaming ke folder h=23.
 | Kesegaran data | <ul><li>Laporan biasanya tersedia pada pukul 10.00 UTC di folder h=23 hari sebelumnya. Misalnya, laporan untuk data yang dihasilkan pada hari Senin ada di folder Senin h=23.</li><li>Pengecualian: Event pendapatan iklan memiliki keaktualan data Hari 0+3. Artinya, event pendapatan iklan di laporan hari Senin terjadi pada hari Sabtu.</li><li>[Beta] Laporan berversi biasanya tersedia pada pukul 06.00 UTC.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

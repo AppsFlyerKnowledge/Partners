@@ -46,6 +46,8 @@ Berintegrasi dengan AppsFlyer sebagai jaringan iklan memungkinkan Anda untuk men
 
 * As AppsFlyer integrated partner, you receive an ad network login that holds install and postback information.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Sebagai jaringan iklan terintegrasi, Anda tidak memiliki akses ke semua informasi in-app event kecuali disetujui oleh pemasang iklan (diperlukan integrasi sekunder).
