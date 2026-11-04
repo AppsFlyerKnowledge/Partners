@@ -72,7 +72,7 @@ SSOT报告所呈现的数据能完全满足营销人员对投放效果分析与�
 
 1. 登录到您的<Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">AppsFlyer合作伙伴面板。</Anchor>
 2. 进入以下页面：
-   * **广告主**：**报告**>**Data Locker**。
+   * **广告主**： **报告** > **Data Locker**。
    * **营销合作伙伴**：点击 **帐户菜单** > **Data Locker**。
 3. 按照<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">Data Locker设置说明</Anchor>中的第3-16步进行操作。
 

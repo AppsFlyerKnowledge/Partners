@@ -228,7 +228,7 @@ Protect360 API参数：
 | to | 日期范围结束时间：<ul><li>在激活记录中指激活日期。</li><li>在应用内事件记录中指事件发生日期。</li></ul> | YYYY-MM-DD | 是 |
 | event\_name | 【可选】适用于归因后识别的应用内事件假量<br /><br />按应用内事件筛选数据，让报告仅呈现特定的事件，其中可包含一个或多个事件。<br /><br />示例：`&event_name=af_purchase,af_login` | 字符串 | 否 |
 | detect-from | 【查询归因后判定为假量的激活件时，起始检测日期为可选参数】<br /><br />假量检测日期范围的起始时间。日期范围的 | YYYY-MM-DD | 否 |
-| detect-to | 【可选】适用于归因后识别的激活假量<br /><br />假量检测日期范围的结束时间（默认为to）。 | YYYY-MM-DD | 否 |
+| detect-to | 【可选】适用于归因后识别的激活假量<br /><br />假量检测日期范围的结束时间（默认为<u>to</u>）。 | YYYY-MM-DD | 否 |
 
 </Accordion>
 
