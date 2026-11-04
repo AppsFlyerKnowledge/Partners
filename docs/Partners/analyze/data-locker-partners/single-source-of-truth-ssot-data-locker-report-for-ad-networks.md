@@ -73,7 +73,7 @@ Complete one or more of the following storage procedures:
 
 1. Log in to your <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">AppsFlyer partner dashboard.</Anchor>
 2. Go to:
-   * **Advertisers:Report**>**Data Locker**.
+   * **Advertisers**: **Report** > **Data Locker**.
    * **Marketing partners**: Click the **account menu** > **Data Locker**.
 3. Follow the <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">Data Locker setup instructions</Anchor> steps 3-16.
 
@@ -90,7 +90,7 @@ Ad networks appointed (activated) by agencies: The agency can't grant permission
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners**.
 2. Search for the partner and select it.
 3. Click **Set up integration**. You’re directed to the integration setup page.
-4. Verify that **Activate partner**is on. If not, data isn't shared.
+4. Verify that **Activate partner** is on. If not, data isn't shared.
 5. Go to the **Permissions** tab.
 6. Turn on the following ad network permissions:
    * **Access aggregate conversions data**.
