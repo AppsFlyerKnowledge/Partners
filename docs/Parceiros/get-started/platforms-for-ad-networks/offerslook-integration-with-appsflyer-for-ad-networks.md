@@ -89,7 +89,7 @@ O novo conjunto de macros adiciona uma série de parâmetros adicionais de forma
 
 | **Nome da macro** | **A descrição** | **Offerslook** |
 | --- | --- | --- |
-| af\_c\_id | ID da campanha - fornecido pelo anunciante | `{adv_sub1}<br /><br />{adv_sub2}<br /><br />{adv_sub3}` |
+| af\_c\_id | ID da campanha - fornecido pelo anunciante | `{adv_sub1}`<br /><br />`{adv_sub2}`<br /><br />`{adv_sub3}` |
 | af\_adset | Nome do conjunto de anúncios - fornecido pelo anunciante. Adset é um nível intermediário na hierarquia entre **Campanha** e **Anúncio**. |  |
 | af\_adset\_id | Adset ID |  |
 | af\_ad | Ad name |  |
