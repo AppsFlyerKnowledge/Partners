@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Visão geral:** os anunciantes usam as regras de validação para definir manualmente as condições para bloquear instalações, atribuição e eventos in-app de instalações/IAEs não compatíveis. Os parceiros integrados (ad networks e agências) podem visualizar as regras e obter relatórios de instalações bloqueadas, atribuição e IAEs.
 
+<div id="about-validation-rules" />
+
 ## Sobre as regras de validação
 
 Regras de validação:
@@ -42,6 +44,8 @@ Regras de validação:
 * Executadas em tempo real e tomam medidas imediatas. Um postback de rejeição é enviado para parceiros que rejeitaram postbacks configurados. <Anchor target="_blank" href="/partners/pt/docs/rejected-attribution-postbacks-to-integrated-partners">Saiba mais</Anchor>.
 * Opções adicionais de regras de validação estão disponíveis para os clientes do <Anchor target="_blank" href="/marketers/pt/docs/protect360-anti-fraud-guide">Protect360</Anchor>, além do bloqueio e detecção automáticos de fraudes do Protect360. Essas condições são conhecidas por ajudar na detecção de vários tipos de hijacking de instalação, instalação falsa e fraude de eventos in-app falsos.
 
+<div id="availability-to-ad-networks-and-agencies" />
+
 ## Disponibilidade para ad networks e agências
 
 As regras que regem o acesso às redes e agências de publicidade são as seguintes:
@@ -53,6 +57,8 @@ As regras que regem o acesso às redes e agências de publicidade são as seguin
   * Por padrão, a permissão fica desativada.
   * Se estiver desativada, um parceiro pode clicar em **Solicitar acesso**. O anunciante recebe então uma notificação do pedido.
 * Uma ad network não pode criar ou editar regras.
+
+<div id="agencies" />
 
 ### Agências
 
@@ -72,7 +78,11 @@ As regras que regem o acesso a regras de validação adicionais às agências s�
    * A lista de regras definidas pela conta do proprietário do aplicativo para o tráfego que pode vir de você é exibida.
    * Para obter uma explicação de como os conjuntos de regras funcionam, consulte <Anchor target="_blank" href="/marketers/pt/docs/implement-validation-rules-to-prevent-fraud">Regras de validação para proprietários de aplicativos</Anchor>.
 
+<div id="reports" />
+
 ## Relatórios
+
+<div id="protect360-fraud-export-data" />
 
 ### Fraude Protect360: exportar dados
 
@@ -83,6 +93,8 @@ Os anunciantes podem conceder aos parceiros (ad networks e agências) <Anchor ta
 * Postbacks de instalação bloqueados: um único relatório dos postbacks de rejeição enviados a você em tempo real.
 
 Os campos **Motivo da rejeição** e **Valor do motivo da rejeição** são preenchidos nos relatórios. O **Valor do motivo da rejeição** inclui o nome da regra que causou a rejeição.
+
+<div id="validation-rules-rejected-installation-postbacks" />
 
 ## Regras de validação rejeitaram postbacks de instalação
 

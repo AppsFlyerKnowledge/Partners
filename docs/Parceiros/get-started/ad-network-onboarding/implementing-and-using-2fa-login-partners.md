@@ -21,7 +21,11 @@ x-zendesk:
 ---
 > **Em resumo:** a autenticação de dois fatores (2FA) é usada para adicionar uma camada extra de segurança ao processo de login. As credenciais de login dos usuários da conta são complementadas pelo Google Authenticator ou pelo Microsoft Authenticator.
 
+<div id="intro" />
+
 ## Introdução
+
+<div id="note" />
 
 > 📘 **Atenção**
 >
@@ -30,6 +34,8 @@ x-zendesk:
 * A 2FA é obrigatória para a AppsFlyer.
 * A 2FA deve ser configurada usando **Google ou Microsoft Authenticator.**
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Depois de configurar a 2FA, não exclua seu aplicativo autenticador. Isso interrompe a conexão com a AppsFlyer, e você não poderá fazer login.
@@ -37,6 +43,8 @@ x-zendesk:
 <div id="firsttime-setup" />
 
 <Accordion title="Configuração inicial">
+
+<div id="new-account-user" />
 
 #### **Novo usuário da conta**
 
@@ -47,6 +55,8 @@ x-zendesk:
    * Escaneie o QR code.
    * Digite o código de verificação emitido pelo **Google Authenticator**.
    * Clique em **verificar**, e você será redirecionado para a página **meus aplicativos**.
+
+<div id="existing-account-users" />
 
 #### **Usuários existentes**
 
@@ -82,12 +92,16 @@ Para redefinir sua 2FA, entre em contato com seu administrador. O administrador 
 
 Observação: se você for o proprietário da conta, poderá redefinir sua própria 2FA nas [etapas a seguir](/docs/implementing-and-using-2fa-login-partners#para-um-proprietário-da-conta-redefinir-sua-própria-2fa).
 
+<div id="for-an-admin-resetting-a-users-2fa" />
+
 #### **Para um administrador redefinir a 2FA de um usuário**
 
 1. Na barra de menu, clique no menu suspenso do endereço de e-mail.
 2. Selecione **Gerenciar usuários.**
 3. Na guia **Usuários** , clique nas opções de menu na extremidade direita da linha do usuário.
 4. Selecione **Resetar autenticação de dois fatores (2FA)** no menu.
+
+<div id="for-an-account-owner-resetting-their-own-2fa" />
 
 #### **Para um proprietário da conta redefinir sua própria 2FA**
 

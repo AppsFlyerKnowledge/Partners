@@ -31,6 +31,8 @@ x-zendesk:
 1. Seu [link de atribuição](/docs/tune-formerly-hasoffers-integration-with-appsflyer#criar-link-de-atribuição)
 2. Seus [postbacks](/docs/tune-formerly-hasoffers-integration-with-appsflyer#criar-postbacks-de-instalação-e-de-eventos-in-app) (para instalações e eventos in-app)
 
+<div id="create-attribution-link" />
+
 ## Criar link de atribuição
 
 O link de atribuição consiste no link de atribuição de base da AppsFlyer a seguir e em macros adicionais incluídas pela ad network.
@@ -43,6 +45,8 @@ Veja o link de atribuição de base da AppsFlyer a seguir com uma explicação d
 | ativado | ID exclusivo do aplicativo – valor dinâmico alterado por aplicativo promovido |
 | pid= | Nome do canal de mídia concatenado com `_int` para identificar networks integradas |
 | c= | Campaign name |
+
+<div id="example-attribution-link-after-adding-tune-macros" />
 
 ### Exemplo de link de atribuição após adicionar macros do TUNE
 
@@ -60,6 +64,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 
 Saiba mais sobre as [macros do TUNE](https://help.tune.com/hasoffers/parameters-macros-in-hasoffers/).
 
+<div id="create-install-and-in-app-event-postbacks" />
+
 ## Criar postbacks de instalação e de eventos in-app
 
 Instruções passo a passo para criar seus postbacks de instalação e de eventos in-app:
@@ -71,7 +77,11 @@ Instruções passo a passo para criar seus postbacks de instalação e de evento
 
 Saiba mais sobre as [URLs de postback global do TUNE](http://help.tune.com/hasoffers/global-postback-urls/).
 
+<div id="sample-postbacks" />
+
 ### Postbacks de amostra
+
+<div id="global-install-postback" />
 
 #### Postback de instalação global:
 
@@ -82,6 +92,8 @@ Saiba mais sobre as [URLs de postback global do TUNE](http://help.tune.com/hasof
 ```http
 https://NETWORK_ID.go2cloud.org/aff_lsr?offer_id={af_c_id}&transaction_id={clickid}
 ```
+
+<div id="in-app-event-postback" />
 
 #### Postback de evento in-app:
 
@@ -100,6 +112,8 @@ Nas URLs de postback acima:
 * goal\_id = tag de evento no dashboard da AppsFlyer para cada um dos seus aplicativos. Este é o nome real do evento in-app do aplicativo.
 
 Saiba mais sobre <Anchor target="_blank" href="/partners/pt/docs/dynamic-event-mapping-for-in-app-events">Mapeamento dinâmico de eventos para eventos in-app</Anchor>.
+
+<div id="finalizing-your-registration" />
 
 ## Finalizando seu registro
 

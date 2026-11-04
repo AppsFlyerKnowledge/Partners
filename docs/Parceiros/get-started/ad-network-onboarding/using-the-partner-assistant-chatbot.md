@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo:** Entre em contato com o suporte da AppsFlyer para parceiros por meio do Chatbot do Assistente de Parceiros para solucionar problemas, abrir um tíquete de suporte ou receber orientações sobre o produto.
 
+<div id="overview" />
+
 ## Escritórios
 
 O Chatbot de assistência para parceiros encaminha seus problemas para a equipe apropriada, incluindo questões relacionadas ao app, orientações sobre o produto e suporte técnico. Durante as etapas do chatbot, você deve fornecer os detalhes necessários para receber a assistência certa, reduzindo a necessidade de informações adicionais.
@@ -38,6 +40,8 @@ O Chatbot de assistência para parceiros encaminha seus problemas para a equipe 
 **Observação:** As agências não têm a opção "Problemas de integração ou Atualizações".
 
 3. Clique em **Enviar**.
+
+<div id="viewing-partner-tickets" />
 
 ## Visualizar tickets de parceiros
 

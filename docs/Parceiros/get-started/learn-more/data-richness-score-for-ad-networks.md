@@ -32,6 +32,8 @@ A pontuação de riqueza de dados, uma métrica fornecida pela AppsFlyer, indica
 
 Para maximizar a pontuação, as ad networks devem superar as lacunas de dados que têm.
 
+<div id="data-richness-score" />
+
 ## Pontuação de riqueza de dados
 
 **Para ver sua pontuação de riqueza de dados:**
@@ -44,6 +46,8 @@ Para maximizar a pontuação, as ad networks devem superar as lacunas de dados q
    ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
 
 Os anunciantes podem ver a pontuação de riqueza de dados (baixa, média ou alta) de cada ad network que tenha uma integração com a AppsFlyer.
+
+<div id="included-data" />
 
 ### Dados incluídos
 
@@ -65,10 +69,14 @@ Para receber uma pontuação alta, os seguintes parâmetros devem ser fornecidos
   * ID do subsite
   * Canal
 
+<div id="data-threshold" />
+
 ### Limite de dados
 
 * A pontuação é calculada semanalmente e pode subir ou cair dependendo da integridade dos parâmetros listados acima.
 * Há uma quantidade mínima de conversões (instalações, reatribuições, reengajamentos) necessária para que a pontuação seja calculada. Se a network tiver menos conversões do que o mínimo em uma determinada semana, na semana seguinte o indicador de pontuação será desativado e nenhuma categoria de dados será exibida.
+
+<div id="next-steps" />
 
 ## Próximas etapas
 

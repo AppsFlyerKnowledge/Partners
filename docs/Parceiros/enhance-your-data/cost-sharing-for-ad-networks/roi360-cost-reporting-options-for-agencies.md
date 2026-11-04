@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Em resumo:** Reporte dados de custo pela API de custo (requer uma assinatura da solução premium ROI360) e custo por clique.
 
+<div id="cost-reporting-for-agencies" />
+
 ## Relatórios de custo para agências
 
 Anunciantes usam a AppsFlyer como uma fonte confiável para entender seu ROI, faturamento e para tomar decisões de distribuição do seu orçamento de marketing. Para fazer isso, elas precisam ter todas as informações de custo em uma única plataforma. O ROI360, uma solução premium da AppsFlyer, permite que anunciantes e agências coletem dados de custo via API, disponibilizando-os para visualização nos dashboards e nas ferramentas de relatório da AppsFlyer. 

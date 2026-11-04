@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral**: crie uma página de perfil robusta do Marketplace de parceiros com informações sobre sua empresa e seus serviços e soluções.
 
+<div id="overview" />
+
 ## Visão geral
 
 O AppsFlyer Partner Marketplace é onde os anunciantes podem encontrar novas ad networks e plataformas de marketing para trabalhar. Forneça o máximo de informações possível para que eles façam uma escolha informada.
@@ -40,11 +42,15 @@ O AppsFlyer Partner Marketplace é onde os anunciantes podem encontrar novas ad 
 
 ![parceiro](https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png)
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Você pode ver uma prévia do rascunho salvo no momento:
 >
 > * Para visualizar seu rascunho salvo, clique em **Visualizar rascunho**.
+
+<div id="general" />
 
 ## Geral
 
@@ -55,15 +61,21 @@ As informações nesta seção são dinâmicas e baseiam-se em sua configuraçã
 * Geografia do seu tráfego
 * Categorias e subcategorias da indústria
 
+<div id="profile" />
+
 ## Perfil
 
 Adicione ou edite os detalhes da sua empresa (por exemplo, logotipo da empresa (obrigatório), descrição (obrigatório), site, idiomas compatíveis, etc.)
 
 Recomendamos o preenchimento de todos os detalhes para fornecer o máximo de informações possíveis e tornar sua página no Partner Marketplace mais atrativa para os clientes potenciais.
 
+<div id="your-offering" />
+
 ## Sua oferta
 
 Nesta seção, adicione os detalhes dos serviços que você fornece. Recomendamos incluir o máximo de informações possíveis para uma melhor probabilidade de ser encontrado no Partner Marketplace.
+
+<div id="overview-1" />
 
 ### Escritórios
 
@@ -73,6 +85,8 @@ Nesta seção, adicione os detalhes dos serviços que você fornece. Recomendamo
 * **Descrição da oferta:** Forneça uma descrição abrangente da sua oferta.
 
 ![parceiro](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
+
+<div id="characteristics" />
 
 ### Características
 
@@ -87,12 +101,16 @@ Forneça informações sobre seus serviços. Selecione todas as opções possív
 
 ![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
 
+<div id="sales" />
+
 ### Vendas
 
 Insira os detalhes de venda sobre a oferta:
 
 * Link para os termos de serviço
 * Orçamento mínimo necessário para o serviço
+
+<div id="marketing-collateral" />
 
 ### Materiais de marketing
 
@@ -103,6 +121,8 @@ Inclua qualquer informação adicional que você desejar:
 * Histórias de sucesso de clientes
 * Vídeo
 
+<div id="contacts" />
+
 ## Contatos
 
 Selecione uma das seguintes maneiras pelas quais os anunciantes podem <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com você</Anchor> por meio do Marketplace parceiro:
@@ -111,6 +131,8 @@ Selecione uma das seguintes maneiras pelas quais os anunciantes podem <Anchor ta
   **Observação:** quando nenhuma informação de contato é fornecida, o botão **Apresente-me** no marketplace fica esmaecido.
 * **Link para sua página inicial:** você pode optar por enviar os usuários diretamente para uma página de destino. Ao selecionar essa opção, os anunciantes verão o botão **Contatar parceiro** em vez do botão **Apresente-me**, e clicar nele leva ao seu URL.  
   **Dica:** adicione um parâmetro UTM ao seu link para fins de rastreamento.
+
+<div id="offices" />
 
 ## Escritórios
 

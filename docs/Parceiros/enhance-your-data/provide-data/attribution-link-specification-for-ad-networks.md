@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Visão geral:** As ad networks integradas à AppsFlyer especificam seu link de atribuição de acordo com este artigo.
 
+<div id="attribution-links-for-ad-networks" />
+
 ## Links de atribuição para ad networks.
 
 Links de atribuição são usados ​​para notificar a AppsFlyer de que um usuário interagiu com um anúncio ao clicar nele. Ns sua forma mais simples, o link de atribuição é colocado atrás de um anúncio, pelo que quando um usuário clica num anúncio está clicando em um link de atribuição.
+
+<div id="attribution-model" />
 
 ### Modelo de atribuição
 
@@ -50,9 +54,13 @@ O que acontece na jornada desde o primeiro clique ou impressão até a atribuiç
 
 No decorrer desse fluxo, usamos links de atribuição para obter informações fornecidas por você, e retornamos essas informações por meio de postbacks enviados para você.
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > Se você usa ferramentas de marketing de desempenho externas, como TUNE, CAKE ou Affise, consulte <Anchor target="_blank" href="/partners/pt/docs/platforms-for-ad-networks">as instruções específicas da plataforma</Anchor>.
+
+<div id="attribution-link-template" />
 
 ### Template de link de atribuição
 
@@ -73,6 +81,8 @@ Explicação da estrutura do link:
 * Para integração com a AppsFlyer, envie-nos o template do link de atribuição por e-mail com seus nomes de macro.
 
 Considere os parâmetros listados na tabela a seguir como os mínimos recomendados. Oferecemos suporte a um conjunto maior de parâmetros. Você deve compartilhar conosco o máximo de informações coletadas sobre o clique. Veja a <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters#parâmetros-do-link-de-atribuição">lista de parâmetros de link de atribuição</Anchor>.
+
+<div id="recommended-minimum-attribution-link-parameters" />
 
 #### Parâmetros mínimos recomendados de link de atribuição
 

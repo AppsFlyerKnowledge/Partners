@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Em resumo:** Atribua instalações de app mobile a campanhas que pré-carregam o app no Fabricante de Equipamento Original (OEM) ou quando o dispositivo é ligado pela primeira vez pelo usuário.
 
+<div id="overview" />
+
 ## Escritórios
 
 Ao oferecer suporte às soluções de atribuição de pré-carga da AppsFlyer, os parceiros de pré-carga podem ter instalações de aplicativos atribuídas a campanhas de pré-carga. As campanhas de pré-carga se aplicam quando um aplicativo é instalado em um dispositivo por um parceiro de pré-carga, seja na fábrica ou na ativação do dispositivo (quando o dispositivo é ligado pela primeira vez).
@@ -41,6 +43,8 @@ Há 3 maneiras de atribuir campanhas pré-carregadas:
 Postbacks são enviados para você após cada conversão.
 
 <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model#preload-campaigns">Saiba mais sobre os métodos de atribuição de campanhas de pré-carga</Anchor>
+
+<div id="set-up-preload-attribution" />
 
 ## Configurar atribuição de pré-carga
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo:** Saiba mais sobre as opções para redirecionar usuários para a loja de aplicativos depois que um anúncio é veiculado e como enviar dados de engajamento para a AppsFlyer.
 
+<div id="overview" />
+
 ## Visão geral
 
 A AppsFlyer recebe dados de engajamento (cliques e impressões) para atribuição de diversas maneiras:
@@ -32,9 +34,13 @@ A AppsFlyer recebe dados de engajamento (cliques e impressões) para atribuiçã
 
 Em ambos os casos, a <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">estrutura e os parâmetros regulares do link de atribuição</Anchor> são usados.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Para SRNs, os dados são recebidos por meio de APIs especializadas
+
+<div id="users-redirected-via-appsflyer" />
 
 ## Usuários redirecionados via AppsFlyer
 
@@ -46,6 +52,8 @@ Quando um anúncio é clicado, o usuário é direcionado para a AppsFlyer, que o
 4. O usuário instala o aplicativo
 5. A AppsFlyer atribui a instalação
 
+<div id="users-sent-directly-by-the-ad-network" />
+
 ## Usuários enviados diretamente pela ad network
 
 Quando um anúncio é clicado, o usuário é direcionado para a loja de aplicativos pela ad network, minimizando o número de redirecionamentos:
@@ -55,11 +63,15 @@ Quando um anúncio é clicado, o usuário é direcionado para a loja de aplicati
 3. O usuário instala o aplicativo
 4. A AppsFlyer atribui a instalação
 
+<div id="sending-engagement-data-to-appsflyer" />
+
 ### Enviar dados de engajamento para a AppsFlyer
 
 Enviar o usuário diretamente para a loja de aplicativos melhora sua experiência pois reduz o número de redirecionamentos. Isso também garante a atribuição precisa das instalações e permite tráfego de alta qualidade.
 
 As ad networks só podem reportar cliques e impressões à AppsFlyer **diretamente a partir do dispositivo do usuário**.
+
+<div id="timing-of-sending-redirects" />
 
 #### Tempo de envio de redirecionamentos
 

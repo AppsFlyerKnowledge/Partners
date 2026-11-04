@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Os parceiros de API podem usar o token de API para acessar os dados dos anunciantes quando a permissão é concedida pelo anunciante, permitindo extrair métricas de performance da plataforma.
 
+<div id="api-token-permissions" />
+
 ## Permissões de token da API
 
 <Image alt="api-access-permissions.jpg" src="https://files.readme.io/7961394cb39cf1e6f85d77cd732183edea5fb1408c220ca05b23ae7bbb50138e-23701010316689.jpg" width="439px" />
@@ -37,6 +39,8 @@ Os anunciantes podem conceder as seguintes permissões no nível do aplicativo:
 | Relatórios de analytics agregados | <Anchor target="_blank" href="/marketers/pt/docs/cohort-analytics-via-data-locker">Dados de analytics de coorte via DataLocker</Anchor> | Os dados de campanhas de anúncios do X não estão disponíveis para parceiros de API devido às restrições do X. |
 | Relatórios SKAN | <ul><li><Anchor target="_blank" href="/marketers/pt/docs/skan-aggregated-performance-report-api">Relatório de performance da SKAN</Anchor></li><li><Anchor target="_blank" href="/marketers/pt/docs/skan-aggregated-postback-arrival-date-api">Relatório de postback agregado da SKAN</Anchor></li></ul> | -- |
 
+
+<div id="considerations" />
 
 ### considerações
 

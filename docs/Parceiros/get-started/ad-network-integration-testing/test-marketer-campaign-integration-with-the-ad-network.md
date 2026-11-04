@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo**: teste a integração com a ad network usando aplicativos do profissional de marketing.
 
+<div id="prerequisites" />
+
 ## Pré-requisitos
 
 Antes de começar a testar a integração do profissional de marketing com sua ad network, há alguns requisitos:
@@ -35,6 +37,8 @@ Antes de começar a testar a integração do profissional de marketing com sua a
 
 Abra o seu dashboard da AppsFlyer. Na tela **Busca de aplicativo**, insira o ID do aplicativo do profissional de marketing:
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > Android - **com.example.app**
@@ -45,9 +49,13 @@ Quando o visto verde aparecer no campo de entrada, clique na seta azul. Ao clica
 
 [![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
 
+<div id="testing-live-apps" />
+
 ## Teste de aplicativos publicados
 
 No dashboard da AppsFlyer do seu aplicativo, no menu lateral, selecione **Integrações ativas**. Escolha sua ad network e clique em **Link de atribuição**.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -64,6 +72,8 @@ Agora você pode gerar um link de atribuição para testar a atribuição de ins
 Adicione parâmetros ao link de atribuição de acordo com suas necessidades e com os dados que você deseja registrar.
 
 [![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
+
+<div id="tip" />
 
 > 👍 **Observação**
 >
@@ -82,6 +92,8 @@ Executar o aplicativo é crucial para o fluxo de atribuição. Se o aplicativo n
 Em seguida, você pode [ver a instalação no seu dashboard](/docs/test-marketer-campaign-integration-with-the-ad-network#visualização-de-instalações-no-dashboard).
 
 </Accordion>
+
+<div id="testing-apps-in-development" />
 
 ## Teste de aplicativos em desenvolvimento
 
@@ -109,7 +121,11 @@ Instale o aplicativo no dispositivo de teste usando o arquivo fornecido pelo pro
 
 </Accordion>
 
+<div id="testing-in-app-events" />
+
 ## Teste de eventos in-app
+
+<div id="note" />
 
 > 📘 **Atenção**
 >
@@ -135,6 +151,8 @@ No dashboard da AppsFlyer do seu aplicativo, no menu lateral, selecione **Active
 
 Depois de saber quais eventos in-app o profissional de marketing registra, e com o mapeamento de eventos em vigor, acione alguns eventos no aplicativo instalado.
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > As ad networks não têm acesso ao Dashboard de eventos e só podem ver eventos in-app no Dashboard Overview depois que o anunciante habilitar a **Acessar dados agregados de eventos in-app** <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissão da ad network</Anchor>. No entanto, you pode exportar dados relacionados a eventos in-app do relatório [Postback de eventos in-app](/docs/test-marketer-campaign-integration-with-the-ad-network#verificação-de-dados-de-postback).
@@ -150,9 +168,13 @@ Depois de exportar o relatório de postbacks de eventos in-app, você pode anali
 
 </Accordion>
 
+<div id="viewing-installs-in-the-dashboard" />
+
 ## Visualização de instalações no Dashboard
 
 Depois de instalar e abrir o aplicativo, você poderá ver os resultados no seu dashboard.
+
+<div id="important-1" />
 
 > 🚧 **Importante!**
 >
@@ -163,6 +185,8 @@ Acesse o dashboard da AppsFlyer e, no menu lateral, selecione **Analisar** >  *
 Filtre pela sua ad network. Você pode ver o número de cliques e instalações atribuídos à sua ad network.
 
 Os dados relacionados a cliques e instalações aparecem na parte superior da tela **Overview**. A tela **Overview** também inclui **Breakdown by campaign** e **Aggregated performance report**. Verifique se as campanhas que aparecem nessas seções correspondem ao parâmetro de campanha no link de atribuição.
+
+<div id="verifying-postback-data" />
 
 ## Verificação de dados de postback
 

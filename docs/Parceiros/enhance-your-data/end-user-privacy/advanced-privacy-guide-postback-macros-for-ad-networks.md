@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral:** compartilhamento de dados com parceiros quando a Privacidade Avançada está habilitada. Instruções para ad networks sobre a configuração de postbacks de Privacidade Avançada. Atenção! Este artigo não está relacionado aos postbacks de SKAdNetwork nem se destina a anunciantes.
 
+<div id="advanced-privacy-for-ad-networks-news" />
+
 > 📄 **Novidades da Privacidade Avançada para ad networks**
 >
 > O mecanismo de postback de Privacidade Avançada descrito neste artigo funciona quando todos os itens a seguir são verdadeiros:
@@ -40,6 +42,8 @@ Este artigo discute:
 * Requisitos de [clique em URL](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#click-url-requirements) para ser elegível para atribuição
 * Configurando seus [postbacks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification) de Privacidade Avançada no dashboard da AppsFlyer
 * A diferença entre [Privacidade Avançada e SKAdNetwork.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#ap-vs-skadnetwork)
+
+<div id="ad-network-advanced-privacy-data-sharing-principles" />
 
 ## Princípios de compartilhamento de dados de Privacidade Avançada da ad network
 
@@ -59,11 +63,15 @@ Você pode visualizar a configuração atual da AP, por aplicativo, no dashboard
 
 ![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
 
+<div id="types-of-templates-for-sending-postbacks" />
+
 #### Tipos de templates para envio de postbacks
 
 * **Template comum:** seu template de integração existente com a AppsFlyer com identificador de usuário e macros de dados de atribuição. Este template é usado para enviar postbacks contendo dados de atribuição no nível do usuário.
 * **Template de privacidade avançada**: um template sem macros de identificador de usuário. Este template é usado para enviar postbacks contendo dados de atribuição agregados.   
   **Observação:** se um postback AP for necessário e você não tiver concluído a integração AP, nenhum postback será enviado. Você pode configurar a integração de AP usando nossa ferramenta autônoma de [Gerenciamento de postbacks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback).
+
+<div id="note" />
 
 > 📘 **Observação**
 >
@@ -73,9 +81,13 @@ Você pode visualizar a configuração atual da AP, por aplicativo, no dashboard
 >   * postback de instalação na ad network foi definido como **Todas as fontes de mídia, incluindo orgânica**
 >   * a ad network não oferece suporte à Privacidade Avançada
 
+<div id="type-of-postback-used" />
+
 ### Tipo de postback usado
 
 A tabela a seguir descreve os tipos de postback com base na disponibilidade do ID do Anunciante e no status da Privacidade Avançada.
+
+<div id="postback-type-for-ios-145" />
 
 #### Tipo de postback para iOS 14.5+
 
@@ -90,6 +102,8 @@ Para qualquer evento, vários parceiros da ad network podem ter direito a um pos
 
   ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
 
+<div id="web-campaigns" />
+
 ### Campanhas na web
 
 A AP se comporta de maneira diferente quando a ad network exibe um anúncio na web.
@@ -98,9 +112,13 @@ Para indicar se um clique veio da web ou de um aplicativo, você deve enviar o p
 
 Se você não enviar `af_media_type`, o padrão é `app`.
 
+<div id="postback-type-used-for-ios-145-when-ap-is-on" />
+
 #### Tipo de postback usado para iOS 14.5+ quando a AP está ativada
 
 <table><thead><tr><th colspan="2">Status da ATT</th><th rowspan="2">Tipo de postback para parceiro atribuído\*</th><th rowspan="2">Tipo de postback para parceiro não atribuído\*</th></tr><tr><th>Aplicativo do publisher</th><th>Aplicativo de anunciante</th></tr></thead><tbody><tr><td>N/D</td><td>Não autorizado</td><td>Privacidade avançada</td><td>Nenhum</td></tr><tr><td>N/D</td><td>Autorizado</td><td>Comum. Nível do usuário com os seguintes IDs: IDFA, IDFV, CUID, Click ID.</td><td>Comum. Somente IDs a nível do usuário.</td></tr></tbody></table>
+
+<div id="integration" />
 
 ## integração
 
@@ -127,6 +145,8 @@ Em muitos casos, dependendo do consentimento do usuário à ATT, o IDFA não est
 
 2. Adicione os seguintes parâmetros obrigatórios para clicar em URLs*:
 
+   <div id="caution" />
+
    > ❗️ **Atenção**
    >
    > Se a sua URL de clique não passar nos parâmetros obrigatórios, você não será creditado pela maioria das instalações impulsionadas por você.
@@ -141,6 +161,8 @@ Em muitos casos, dependendo do consentimento do usuário à ATT, o IDFA não est
 
    * Redirecionar via in-app
    * Cliques de servidor para servidor (também conhecido como S2S)
+
+   <div id="parameters-for-advanced-privacy-attribution" />
 
    #### Parâmetros para atribuição de privacidade avançada
 
@@ -257,10 +279,14 @@ Para receber postbacks de Privacidade Avançada, você deve configurar uma integ
 1. [Configure seu postback de Privacidade Avançada no dashboard da AppsFlyer.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback)
 2. <Anchor target="_blank" href="/partners/pt/docs/ios-integration-testing-for-ad-networks">Teste a integração da Privacidade Avançada</Anchor>
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Para distinguir entre postbacks de eventos legítimos e postbacks rejeitados, é necessário configurar os postbacks das macros rejeitadas.
 > * Para habilitar a rejeição de parcelas/postbacks de eventos, entre em contato conosco usando o <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget partner assistant</Anchor>.
+
+<div id="advanced-privacy-postback-endpoint-complete-as-required" />
 
 #### Endpoint do postback de Privacidade avançada [complete conforme necessário]
 
@@ -268,6 +294,8 @@ Para receber postbacks de Privacidade Avançada, você deve configurar uma integ
 | --- |
 | Instalação |
 | in-app |
+
+<div id="advanced-privacy-attribution-macros-available" />
 
 #### Macros de atribuição de Privacidade Avançada disponíveis
 
@@ -317,6 +345,8 @@ No caso de problemas, entre em contato conosco usando o widget <Anchor target="_
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="ap-for-analytics-partners" />
@@ -327,6 +357,8 @@ Os postbacks são enviados aos parceiros de análise da seguinte forma:
 
 * AP desativada: postback a nível do usuário sem restrição.
 * AP ativado: o tipo de postback depende da fonte do usuário e da disponibilidade do ID do Anunciante, conforme detalhado na tabela a seguir.
+
+<div id="analytics-partner-postback-type-according-to-att-status-and-user-source" />
 
 #### Tipo de postback do parceiro de análise de acordo com o status da ATT e fonte do usuário
 

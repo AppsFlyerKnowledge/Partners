@@ -34,6 +34,8 @@ x-zendesk:
 ---
 > **Visão geral:** Aproveite ao máximo a sua conta de agência AppsFlyer com uma configuração avançada.
 
+<div id="about-agency-accounts" />
+
 ## Sobre contas de agência
 
 As contas de agência são usadas pelas equipas de agência para medir campanhas de marketing de apps realizadas pela agência para clientes de marketing (proprietários das apps).
@@ -45,22 +47,32 @@ As contas de agência são usadas pelas equipas de agência para medir campanhas
   * Redirecionamento
 * Os KPIs disponíveis incluem impressões, cliques, instalações, lealdade do utilizador, custo e ROI. Sobre o <Anchor target="_blank" href="/marketers/pt/docs/getting-started-with-appsflyer-dashboards">painel.</Anchor>
 
+<div id="agency-access-to-marketer-data" />
+
 ### Acesso da agência aos dados de marketing
 
 As agências têm sempre acesso aos dados de tráfego atribuídos à agência. Os profissionais de marketing podem <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissões-da-agência">conceder acesso às agências a</Anchor> dados adicionais, por exemplo, dados agregados orgânicos. Consulte o <Anchor target="_blank" href="/marketers/pt/docs/manage-data-access-permissions">acesso aos dados por diferentes tipos de utilizadores.</Anchor>
 
+<div id="agency-access-to-ad-network-integrations" />
+
 ### Acesso da agência às integrações de redes de anúncios
 
 Para permitir o acesso às integrações de redes de anúncios e medir as suas campanhas, a sua agência deve ser pré-aprovada pela rede de anúncios. Isto é feito ao incluir o ID da sua agência (af\_prt) na lista de agências autorizadas da rede de anúncios. Contacte o parceiro para garantir a inclusão da sua agência. [Veja aqui](/docs/about-agency-accounts#parâmetro-af_prt) como encontrar o ID da sua agência.
+
+<div id="note" />
 
 > 📘 **Observação**
 >
 > * Também se aplica a parâmetros af\_prt vazios em links de atribuição
 > * Não se aplica a agências que trabalham com <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns">SRNs</Anchor>
 
+<div id="agency-transparency" />
+
 ### Transparência da agência
 
 Por padrão, o tráfego da agência é definido como transparente. <Anchor target="_blank" href="/partners/pt/docs/getting-started-agency-onboarding#transparency">Saiba mais</Anchor>
+
+<div id="comparing-different-types-of-accounts" />
 
 ## Comparação de diferentes tipos de contas
 
@@ -73,6 +85,8 @@ Por padrão, o tráfego da agência é definido como transparente. <Anchor targe
 
 As estruturas de contas permitem a partilha de conhecimento entre equipas de agências globais e possibilitam a medição, cálculos, relatórios e otimização do ROI a nível de grupo.
 
+<div id="differences-between-marketer-and-agency-accounts" />
+
 #### Diferenças entre contas de marketing e de agência
 
 |  | Marketing | **Agência** |
@@ -82,6 +96,8 @@ As estruturas de contas permitem a partilha de conhecimento entre equipas de ag�
 | Definições ao nível da aplicação | Janela de reatribuição, configuração do OneLink, fuso horário, moeda | Todas as outras definições seguem as estipuladas pelo marketer |
 | Configuração ao nível de parceiro integrado | <ul><li>Permissões da agência</li><li>Todas as configurações não-SRN (redes de anúncios baseadas em links de atribuição)</li><li>Configurações SRN</li><li>Gestão de links</li></ul> | <ul><li>Todas as outras configurações não-SRN</li><li>Algumas configurações SRN que requerem intervenção mínima por parte do marketer:</li></ul><ul><li>Doubleclick do Google<ul><li>Snapchat</li><li>Tencent</li></ul></li></ul>Outros SRN devem ser configurados pelo marketer para que a agência os possa utilizar.<ul><li>Gestão de links (utilizando modelos definidos pelos marketers)</li></ul> |
 | Funcionalidades adicionais | Sim (alguns, se incluídos no plano de subscrição) | De acordo com a subscrição do marketer e as <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissões-da-agência">permissões</Anchor> concedidas à agência (ver tabela abaixo) |
+
+<div id="features-available-to-agencies" />
 
 ### Funcionalidades disponíveis para agências
 
@@ -95,11 +111,15 @@ As estruturas de contas permitem a partilha de conhecimento entre equipas de ag�
 
 <Accordion title="Agência vs. conta de rede de anúncios">
 
+<div id="differences-between-ad-network-and-agency-accounts" />
+
 #### Diferenças entre contas de rede de anúncios e agências
 
 <table><thead><tr><th>Rede de anúncios</th><th>Agência</th></tr></thead><tbody><tr><td>Parâmetro de link de atribuição para identificação: <code>pid</code> </td><td>Parâmetro de link de atribuição para identificação: <code>af_prt</code> </td></tr><tr><td>Coloca anúncios de apps na sua própria plataforma</td><td>Promove a app através de múltiplas fontes de mídia</td></tr><tr><td>Vê apenas tráfego de anúncios na sua plataforma</td><td>Vê apenas tráfego das fontes de mídia anunciadas</td></tr><tr><td>Pode receber informações em tempo real sobre instalações e eventos na app via postbacks</td><td>Não pode receber informações em tempo real sobre instalações e eventos na app via postbacks</td></tr><tr><td>Pode configurar postbacks de eventos dentro da app para qualquer tráfego proveniente de si próprio\*</td><td>Pode configurar postbacks de eventos dentro da app para alguns dos parceiros de onde traz tráfego\*</td></tr><tr><td colspan="2">\* Requer permissão do responsável de marketing</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="agency-accountscampaigns-and-reporting" />
 
 ## Contas de agência — campanhas e relatórios
 
@@ -111,6 +131,8 @@ As agências podem medir os seguintes tipos de tráfego principais:
 
 * [Redes de anúncios que fazem autorrelato (SRNs)](/docs/about-agency-accounts#redes-de-anúncios-com-autorrelato)
 * [Não SRNs (redes de anúncios que usam links de atribuição)](/docs/about-agency-accounts#não-srns)
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -125,9 +147,13 @@ As agências podem medir os seguintes tipos de tráfego principais:
 >
 > **Atenção:** Se o anunciante desativar o parceiro sem desativar essas configurações primeiro, as agências poderão continuar usando os recursos de atribuição.
 
+<div id="self-reporting-ad-networks" />
+
 ### Redes de anúncios com autorrelato
 
 As redes de autorrelato, como Meta Ads, Google Ads ou X Ads, não utilizam links de atribuição externos. Cada rede tem os seus próprios métodos e APIs que a AppsFlyer utiliza para comunicar novas instalações, eventos dentro da app, etc.
+
+<div id="srn-configurations" />
 
 #### Configurações SRN
 
@@ -141,15 +167,21 @@ As redes de autorrelato, como Meta Ads, Google Ads ou X Ads, não utilizam links
 | TikTok para Empresas | Sim | Para obter detalhes sobre a configuração da agência para campanhas do TikTok for Business, clique <Anchor target="_blank" href="/marketers/pt/docs/tiktok-for-business-advanced-srn-integration-setup#setting-up-tiktok-for-business-for-agencies">aqui</Anchor>. |
 | Yahoo (Oath: Plataformas de anúncios / Yahoo Gemini) | Sim | Para detalhes da configuração da agência para campanhas do Yahoo, <Anchor target="_blank" href="/marketers/pt/docs/yahoo-integration-setup#configuração-da-agência">clique aqui</Anchor>. |
 
+<div id="non-srns" />
+
 ### Não-SRNs
 
 Ao contrário dos SRNs, a maioria das redes de anúncios utiliza links de atribuição para fins de atribuição. <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#attribution-link-tab">Esses links de atribuição já estão disponíveis</Anchor> nas configurações de cada rede no AppsFlyer e podem ser copiados diretamente de lá.
 
 Para as agências, o processo é quase idêntico ao dos profissionais de marketing. Ao acessar a janela de configuração de qualquer rede de anúncios padrão, o link de atribuição já está presente. A única diferença é a adição automática do parâmetro `af_prt` ao link de atribuição.
 
+<div id="ad-network-configuration-visibility" />
+
 #### Visibilidade da configuração de redes de anúncios
 
 A configuração da rede de anúncios é visível para as próprias redes apenas quando o profissional de marketing (dono da aplicação) a configura. Quando uma agência ativa e configura a integração da rede de anúncios, a rede vê essa seção como inativa.
+
+<div id="af_prt-parameter" />
 
 #### Parâmetro af\_prt
 
@@ -160,6 +192,8 @@ Quando `af_prt` com o nome da sua agência faz parte do link de atribuição, no
 [![agência-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
 
 **Não utilize links recebidos do profissional de marketing**: certifique-se de que está a utilizar os links da sua própria conta para evitar atribuições incorretas.
+
+<div id="special-case-all-installs-and-all-launches-networks" />
 
 #### Caso especial: Redes de todas as instalações e lançamentos
 
@@ -189,9 +223,13 @@ A tabela abaixo mostra a lista completa das redes de todos os lançamentos:
 | MyThings | mythings\_int |
 | TikTok para Empresas | bytedanceglobal\_int |
 
+<div id="how-to-setup-agency-attribution-with-all-installslaunches-networks" />
+
 #### Como configurar a atribuição de agência com todas as redes de instalações/lançamentos?
 
 Trabalhar com estas redes implica enviar informações de instalações que não foram geradas pela agência. Portanto, estas redes exigem que o especialista de marketing as configure ANTES da **agência**.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -209,13 +247,19 @@ Deep linking é o lançamento de uma App móvel ao abrir conteúdo personalizado
 
 Para que o deep linking funcione, a App móvel DEVE ser desenvolvida com capacidades e infraestrutura para tal. Contacte o proprietário da App para verificar se esta suporta deep linking antes de configurar as campanhas.
 
+<div id="retargeting" />
+
 ### Redirecionamento
 
 * * A <Anchor target="_blank" href="/marketers/pt/docs/retargeting-attribution-guide">atribuição de retargeting</Anchor> permite que você direcione utilizadores existentes ou antigos nas suas campanhas. As campanhas de retargeting geralmente requerem capacidades de deep linking para funcionarem corretamente.
 
+<div id="in-app-events" />
+
 ### Eventos na app
 
 Proprietários de Apps podem ter vários eventos em suas Apps (ex.: compra, assistir a um tutorial, passar de nível, etc.), que podem ser registrados e analisados na AppsFlyer. As agências podem ver os dados dos eventos atribuídos a elas na página Eventos em suas contas.
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos na aplicação
 
@@ -238,9 +282,13 @@ As agências podem dar permissão às redes de anúncios para configurarem postb
 * As agências geralmente gerem apenas uma parte do tráfego do profissional de marketing, limitando assim o seu acesso aos dados, em comparação com os profissionais de marketing.
 * <Anchor target="_blank" href="/marketers/pt/docs/manage-data-access-permissions">Este artigo</Anchor> explica em detalhe estas diferenças. As secções seguintes destacam estas diferenças.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Devido aos termos de serviço dos Meta Ads e X Ads, as **agências**, consideradas terceiros, **não têm acesso aos dados brutos de tráfego provenientes de anúncios Meta ou X Ads**.
+
+<div id="access-to-aggregate-data" />
 
 ### Acesso a dados agregados
 
@@ -248,13 +296,19 @@ As agências podem dar permissão às redes de anúncios para configurarem postb
 * O acesso a relatórios de dados orgânicos agregados requer a <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissões-da-agência">permissão</Anchor> do profissional de marketing.
 * As agências podem ter acesso aos relatórios de Retenção e de Coorte, bem como ao painel do Protect360. Isto exige que o profissional de marketing ative <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissões-da-agência">**Permitir acesso aos seus relatórios de retenção e coorte**</Anchor> ou <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissões-da-agência">**Permitir acesso ao painel do Protect360**</Anchor>, respetivamente, no separador **Permissões** de **Integrações ativas**.
 
+<div id="access-to-raw-data" />
+
 ### Acesso a dados brutos
 
 <Anchor target="_blank" href="/marketers/pt/docs/raw-data-reporting-overview">Os relatórios de dados brutos</Anchor> (relatórios de dados ao nível do utilizador) contêm informações de atribuição e estão organizados por tópicos.
 
+<div id="time-zone-and-currency" />
+
 ### Fuso horário e moeda
 
 As agências podem visualizar as aplicações com o fuso horário e a moeda definidos, mas apenas os profissionais de marketing podem alterar essas definições.
+
+<div id="cost-reporting" />
 
 ### Relatórios de custos
 
@@ -269,12 +323,16 @@ As agências podem ativar **Obter dados de custos** ao configurar um parceiro in
 5. Insira a chave API fornecida pelo parceiro.
 6. Clique em **Guardar**.
 
+<div id="accessing-and-viewing-cost-data" />
+
 #### Acesso e visualização dos dados de custo
 
 Os dados de custo estão disponíveis para a agência nas seguintes fontes de dados:
 
 * Página **Visão Geral**: os dados de custo são visíveis no **Relatório de Desempenho Agregado** na página Visão Geral.
 * **Relatórios**: os dados de custo estão disponíveis nos relatórios exportados, como **Instalações** em **Relatórios de Dados Brutos** e **Parceiros (fontes de mídia)** em **Relatórios de Desempenho**.
+
+<div id="hybrid-account-data-access" />
 
 ### Acesso a dados de conta híbrida
 

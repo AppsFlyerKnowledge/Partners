@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
 
+<div id="data-locker-for-partners" />
+
 ## Data Locker para parceiros
 
 O Data Locker para parceiros envia dados de aplicativos para o armazenamento em nuvem. Os anunciantes definem permissões que fazem com que a AppsFlyer possa compartilhar dados selecionados com um determinado parceiro.
@@ -54,6 +56,8 @@ Os relatórios disponíveis e as permissões necessárias para obter os relatór
 * <Anchor target="_blank" href="/partners/pt/docs/data-locker-reports-for-api-partners">Parceiros de marketing</Anchor>
 
 </Accordion>
+
+<div id="data-storage-architecture" />
 
 ## Arquitetura de armazenamento de dados
 
@@ -124,6 +128,8 @@ Os arquivos de dados dependem do tipo de segregação.
 | Retenção de dados | Controlado por você |
 | Segurança | Você controla o armazenamento.<ul><li>**AWS**: AppsFlyer requer a permissão getObject, ListBucket, DeleteObject, PutObject para o bucket. O bucket deve ser dedicado ao uso da AppsFlyer. Não o use para outros fins.</li><li><Anchor target="_blank" href="/marketers/pt/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor></li></ul> |
 
+<div id="notice-to-security-officers" />
+
 #### **Aviso aos agentes de segurança**
 
 Considere:
@@ -155,6 +161,8 @@ Ao administrar suas conexões, considere:
 
 </Accordion>
 
+<div id="procedures" />
+
 ## Procedimentos
 
 <div id="set-up-data-locker" />
@@ -181,6 +189,8 @@ Complete um ou mais dos seguintes procedimentos de armazenamento:
 3. Siga as etapas 3 a 16 das <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers?query=data%20locker%20for#set-up-data-locker">instruções de configuração do Data Locker</Anchor>.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

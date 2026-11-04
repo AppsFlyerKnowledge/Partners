@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Em resumo:** As ad networks podem recuperar metadados dos aplicativos associados à conta de parceiro integrada.
 
+<div id="get-app-list-api" />
+
 ## API para obter a lista de aplicativos
 
 As seções a seguir incluem as informações necessárias para usar a API.
@@ -47,6 +49,8 @@ A solicitação da API consiste no método, no caminho, no parâmetro obrigatór
 ```http
 GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
 ```
+
+<div id="get-app-list-mandatory-parameters" />
 
 #### Parâmetros obrigatórios para obter a lista de aplicativos
 
@@ -80,6 +84,8 @@ GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities} 
     </tr>
   </tbody>
 </Table>
+
+<div id="pagination-mechanism" />
 
 #### **Mecanismo de paginação**
 
@@ -119,6 +125,8 @@ Um mecanismo de paginação, sempre operacional, é implementado.
     }
 }
 ```
+
+<div id="pagination-mechanism-parameters-optional" />
 
 #### Parâmetros do mecanismo de paginação (opcional)
 

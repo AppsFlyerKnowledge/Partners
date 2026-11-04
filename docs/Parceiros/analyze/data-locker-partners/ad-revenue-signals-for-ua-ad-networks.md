@@ -30,6 +30,8 @@ As ad networks podem receber relatórios via Data Locker com informações valio
 
 As ad networks podem então ingerir esses dados em algoritmos de segmentação e otimização de campanhas e usá-los para melhorar as campanhas de ROAS com base em uma visão completa da receita gerada pela UA.
 
+<div id="set-the-ad-revenue-report-in-data-locker" />
+
 ## Defina o relatório de receita de anúncios no Data Locker
 
 As seguintes atividades precisam ser concluídas para acessar o relatório de receita de anúncios no Data Locker:
@@ -64,6 +66,8 @@ Para configurar a saída do relatório, siga as etapas abaixo:
 4. Para obter instruções, consulte <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data">Permitir que ad networks obtenham dados de receita de anúncios.</Anchor>
 
 </Accordion>
+
+<div id="report-specification" />
 
 ## Especificação do relatório
 

@@ -31,6 +31,8 @@ x-zendesk:
 ---
 > **Em resumo**: solicite alterações nas configurações da sua integração existente com a AppsFlyer, incluindo postbacks, URLs de atribuição e muito mais.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Os postbacks e as estruturas de URL de atribuição da AppsFlyer são globais. Isso significa que qualquer alteração dessas estruturas afeta todas as campanhas existentes e futuras em todos os aplicativos.

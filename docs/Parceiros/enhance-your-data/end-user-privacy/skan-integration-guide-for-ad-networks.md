@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo**: as ad networks se integram às SKAdNetworks (SKAN) da AppsFlyer, permitindo que otimizem campanhas e recebam atribuição pelo tráfego que geram.
 
+<div id="appsflyer-offering-for-ad-networks" />
+
 ## Oferta da AppsFlyer para ad networks
 
 **Learn more about the AppsFlyer SKAN solution for advertisers:**
@@ -42,6 +44,8 @@ x-zendesk:
   * Ad networks com integração SKAN são certificadas e identificadas como tal no dashboard da AppsFlyer.
   * Isso assegura aos anunciantes que eles estão trabalhando com ad networks que podem ser mensuradas de forma determinística por meio deste modelo de atribuição.
 
+<div id="skan-data-flow" />
+
 ## Fluxo de dados da SKAN
 
 ![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
@@ -54,12 +58,16 @@ O fluxo completo de postback da SKAN é o seguinte:
    * **Redirect:** The network requests the iOS device to redirect the postback directly to AppsFlyer. In this case, campaign data enrichment will be performed via a separate API between AppsFlyer and the ad network.
 3. **A AppsFlyer** valida e decodifica o postback. Then, it sends the decoded and enriched postback to the ad network (in parallel to sharing it with the advertiser).
 
+<div id="main-integration-parts" />
+
 ## Principais partes da integração
 
 A integração da SKAN entre a AppsFlyer e ad networks consiste nas seguintes partes principais, conforme descrito neste artigo:
 
 * Ad networks enviam dados da SKAN para a AppsFlyer
 * As ad networks recebem dados enriquecidos e decodificados da AppsFlyer via postback
+
+<div id="send-data-to-appsflyer" />
 
 ## Enviar dados para a AppsFlyer
 
@@ -99,6 +107,8 @@ Usando esse método, as ad networks encaminham à AppsFlyer cada postback recebi
 * Envia o postback para a AppsFlyer
 * **Nota!** Before sending the postback to AppsFlyer, validate the Apple <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/SKAdnetwork/verifying_an_install-validation_postback">attribution signature</Anchor> using the content of the outgoing postback to ensure that you didn't inadvertently corrupt the data.
 
+<div id="skan-enriched-postback-protocol" />
+
 #### Protocolo de postback enriquecido da SKAN
 
 | Ponto final | `https://skadpostbacks.appsflyer.com/api/postbacks` |
@@ -106,6 +116,8 @@ Usando esse método, as ad networks encaminham à AppsFlyer cada postback recebi
 | Método HTTP | POST |
 | Tipos de conteúdo aceitos | `application/json` |
 | Códigos de retorno | 200 OK: o postback recebido tem um formato válido.<br /><br />400: Solicitação inválida: JSON malformado, JSON vazio, campos obrigatórios ausentes. |
+
+<div id="skan-enriched-postback-json-parameters" />
 
 #### Parâmetros JSON do postback enriquecido do SKAN
 
@@ -140,6 +152,8 @@ Usando esse método, as ad networks encaminham à AppsFlyer cada postback recebi
 | Data Locker - select Creative.jpg | Sequência de caracteres | <ul><li>Relevante apenas para SKAN 4+</li><li>Available when you use additional digits in the source\_identifier for additional campaign granularity.</li></ul> | Rede de anúncios |
 | Canal | Sequência de caracteres | <ul><li>Relevante apenas para SKAN 4+</li><li>Available when you use additional digits in the source\_identifier for additional campaign granularity.</li></ul> | Rede de anúncios |
 
+<div id="curl-exampleenriched-skan-3-postback" />
+
 #### **Exemplo de Curl — postback avançado da SKAN 3**
 
 ```bash
@@ -161,6 +175,8 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
       "campaign-id": 99
   }'
 ```
+
+<div id="curl-exampleenriched-skan-4-postback-with-fine-conversion-values" />
 
 #### **Exemplo de Curl — postback avançado da SKAN 4 com valores de conversão refinados**
 
@@ -223,6 +239,8 @@ O método de redirecionamento tem as seguintes vantagens:
 * **Increased advertiser trust:** The MMP acts on behalf of an advertiser. By providing AppsFlyer access to the postback firsthand, advertisers are confident that postbacks are not manipulated in transit.
 * **No processing required by the ad network:** Ad networks respond with the redirect command (to the device), thus eliminating the need to process postbacks. In comparison, the enrich and forward method requires that ad networks consume the postback, enrich it with additional parameters, and finally forward it to AppsFlyer.
 
+<div id="implementation" />
+
 #### **Implementação**
 
 1. Configure your server to respond with an HTTP 307 response redirecting the postback to *[https://skadnetworkredirect.appsflyer.com/api/redirects](https://SKANredirect.appsflyer.com/api/redirects)*
@@ -235,6 +253,8 @@ https://skadredirect.appsflyer.com/api/redirects?
   &ad-network-campaign-id=243232&ad-network-campaign-name=yarg_campaign_name
   &ad-network-adset-name=dsdsa&creative=examplecreative&channel=channelexample
 ```
+
+<div id="query-params-for-campaign-details-not-mandatory" />
 
 #### Parâmetros de consulta para detalhes da campanha (não obrigatórios)
 
@@ -255,6 +275,8 @@ https://skadredirect.appsflyer.com/api/redirects?
 | canal | <ul><li>Relevante apenas para SKAN 4+</li><li>Available when you use additional digits in the source\_identifier for additional campaign granularity.</li></ul> |
 
 </Accordion>
+
+<div id="receive-data-from-appsflyer" />
 
 ## Receber dados da AppsFlyer
 
@@ -314,6 +336,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 
 </Accordion>
 
+<div id="integration-testing" />
+
 ## Teste a integração
 
 Para validar a integração com a AppsFlyer, use um ou ambos os métodos a seguir.
@@ -339,6 +363,8 @@ Para validar a integração com a AppsFlyer, use um ou ambos os métodos a segui
 
 Usando este método, a ad network envia à AppsFlyer postbacks reais do SKAN de aplicativos ao vivo.
 
+<div id="testing-integration" />
+
 #### Integração de testes
 
 | Responsabilidade | Action |
@@ -347,6 +373,8 @@ Usando este método, a ad network envia à AppsFlyer postbacks reais do SKAN de 
 | Ad network e AppsFlyer | Cheguem a um acordo sobre um cliente mútuo (que tenha integrado o SDK mais recente da AppsFlyer) a ser usado para a verificação da integração de postback. |
 | Rede de anúncios | Envie postbacks SKAN do aplicativo para a AppsFlyer usando um dos métodos descritos neste artigo. |
 | A AppsFlyer | Envie postbacks decodificados para a ad network de acordo com o mapeamento de valor de conversão definido pelo anunciante. |
+
+<div id="test-criteria" />
 
 #### Critérios de teste
 
@@ -371,6 +399,8 @@ Usando este método, a ad network envia à AppsFlyer postbacks reais do SKAN de 
 | <span id="id888707086"></span>id888707086 | Conversão, incluindo os eventos in-app:<ul><li>af\_level\_complete</li><li>af\_login</li><li>af\_SKAN\_revenue</li><li>af\_register</li><li>af\_subscription</li><li>af\_custom\_event</li></ul> | <ol><li>Na guia **Integração**, ative os **postbacks de eventos in-app**.</li><li>Selecione cada um dos eventos in-app listados e mapeie-o para o identificador do evento.</li><li>Salvar configuração.</li><li>Em um postback, envie valor de conversão = 63.</li><li>A AppsFlyer responde com:<ul><li>Postback de instalação</li><li>postback af\_level\_complete</li><li>postback af\_login</li><li>postback af\_SKAN\_revenue</li><li>postback af\_register</li><li>postback af\_subscription</li><li>postback af\_custom\_event</li></ul></li></ol> |
 | <span id="id888707087"></span>id888707087 | Engagement, measured using af\_SKAN\_revenue event | <ol><li>Na guia **Integração**, ative os **postbacks de eventos in-app**.</li><li>Map the event name *af\_SKAN\_revenue* and to your event identifier.</li><li>**Salvar** configuração.</li><li>Em um postback, envie valor de conversão = 3.</li><li>A AppsFlyer responde com:<ul><li>Postback de instalação</li><li>3 postbacks of af\_SKAN\_revenue event</li></ul></li></ol> |
 
+<div id="integration-steps" />
+
 #### Etapas de integração
 
 | Responsabilidade | Action |
@@ -378,6 +408,8 @@ Usando este método, a ad network envia à AppsFlyer postbacks reais do SKAN de 
 | Rede de anúncios | Configure your SKAN network ID (provided by Apple) and SKAN postback template on the <Anchor target="_blank" href="/partners/pt/docs/self-serve-integration-management-for-ad-networks">postback management platform</Anchor>. For queries and assistance, contact us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>. |
 | Rede de anúncios | <ol><li><Anchor target="_blank" href="/partners/pt/docs/turn-on-test-app-integration-for-ad-networks">Activate the test apps</Anchor>.</li><li>Para cada aplicativo, conclua a coluna de instruções na tabela anterior.</li><li>Envie postbacks simulados usando os aplicativos de teste listados na tabela anterior. Considerações ao enviar postbacks simulados:<ul><li>Defina o app\_id e o valor de conversão conforme listado na tabela anterior.</li><li>Como as ad networks não podem gerar assinaturas compatíveis com a Apple, os postbacks simulados não precisam incluir os campos de assinatura. A AppsFlyer não irá verificá-los quanto a postbacks simulados.</li><li>As ad networks enviam o postback usando a abordagem POST ou REDIRECT.</li></ul></li></ol> |
 | A AppsFlyer | Responde com os postbacks decodificados para o endpoint designado pela ad network durante a integração |
+
+<div id="test-criteria-1" />
 
 #### Critérios de teste
 
@@ -387,6 +419,8 @@ Usando este método, a ad network envia à AppsFlyer postbacks reais do SKAN de 
 | Rede de anúncios | <ul><li>A ad network recebe e decodifica os postbacks traduzidos.</li><li>Os postbacks in-app enviados pela AppsFlyer correspondem aos fluxos esperados. For example, conversion value 3 for app ID888707087, the ad network receives 3 postbacks of *af\_SKAN\_revenue* event.</li></ul> |
 
 </Accordion>
+
+<div id="clarifications" />
 
 ## Esclarecimentos
 

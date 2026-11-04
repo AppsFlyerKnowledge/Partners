@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral**: os relatórios listados neste artigo estão disponíveis para você (parceiros de marketing) em seu Data Locker. Antes de podermos compartilhar os dados com você, o anunciante (proprietário do aplicativo) deve lhe conceder acesso aos dados conforme detalhado neste artigo.
 
+<div id="data-locker-reports-for-api-partners" />
+
 ## Relatórios do Data Locker para parceiros de marketing
 
 Para obter relatórios para você, o parceiro de marketing deve:
@@ -57,6 +59,8 @@ Os relatórios são transmitidos para a pasta h=23.
 Caraterística
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

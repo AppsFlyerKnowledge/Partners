@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **Em resumo:** Saiba como funcionam as tentativas de novo envio de postback na AppsFlyer e como os parceiros integrados podem configurar seus mecanismos de postback.
 
+<div id="introduction" />
+
 ## Introdução
 
 Os postbacks para parceiros são uma parte crítica da integração entre a AppsFlyer e nossos parceiros. Como qualquer sistema pode apresentar problemas momentâneos de resposta, a AppsFlyer pode tentar novamente os postbacks com falha.
+
+<div id="important-information" />
 
 ## Informações importantes
 

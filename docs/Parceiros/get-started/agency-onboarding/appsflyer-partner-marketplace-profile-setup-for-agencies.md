@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral**: crie a página de perfil da sua agência no Partner Marketplace com informações sobre sua empresa, seus serviços e soluções.
 
+<div id="overview" />
+
 ## Visão geral
 
 O AppsFlyer Partner Marketplace é onde os anunciantes podem encontrar novas ad networks e plataformas de marketing para trabalhar. Forneça o máximo de informações possível para que eles façam uma escolha informada.
@@ -37,11 +39,15 @@ O AppsFlyer Partner Marketplace é onde os anunciantes podem encontrar novas ad 
 
 [![agency-setup-page.png](https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png)](https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png)
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Você pode ver uma prévia do rascunho salvo no momento:
 >
 > * Para visualizar seu rascunho salvo, clique em **Visualizar rascunho**.
+
+<div id="general" />
 
 ## Geral
 
@@ -52,17 +58,25 @@ As informações nesta seção se baseiam na sua configuração e atividade atua
 * Geografia do seu tráfego
 * Categorias e subcategorias da indústria
 
+<div id="profile" />
+
 ## Perfil
 
 Compartilhe detalhes importantes para os clientes verem no seu perfil no marketplace. Insira os dados da sua empresa em diferentes categorias, faça upload do seu logotipo, selecione as várias opções e adicione links de mídia relacionados à sua empresa. Recomendamos fornecer o máximo de informações possível para tornar sua página no Partner Marketplace mais atrativa para clientes em potencial.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
 > Se você não tiver uma empresa controladora, seu perfil será exibido como **Agência independente**.
 
+<div id="your-offering" />
+
 ## Sua oferta
 
 Nesta seção, adicione os detalhes dos serviços que você fornece. Recomendamos incluir o máximo de informações possíveis para uma melhor probabilidade de ser encontrado no Partner Marketplace.
+
+<div id="overview-1" />
 
 ### Escritórios
 
@@ -72,6 +86,8 @@ Nesta seção, adicione os detalhes dos serviços que você fornece. Recomendamo
 * **Descrição da oferta:** forneça uma descrição abrangente da sua oferta.
 
 [![partner_offering1.png](https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png)](https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png)
+
+<div id="characteristics" />
 
 ### Características
 
@@ -86,6 +102,8 @@ Forneça informações sobre seus serviços. Selecione todas as opções possív
 
 [![your-offering-2.png](https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png)](https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png)
 
+<div id="sales" />
+
 ### Vendas
 
 Insira os detalhes de venda sobre a oferta:
@@ -93,6 +111,8 @@ Insira os detalhes de venda sobre a oferta:
 * Link para os termos de serviço
 * Orçamento mínimo necessário para o serviço
 * Selecione a moeda
+
+<div id="marketing-collateral" />
 
 ### Materiais de marketing
 
@@ -103,7 +123,11 @@ Adicione links para informações adicionais de marketing que descrevam o que vo
 * Imagens (até 5)
 * Vídeo
 
+<div id="contacts" />
+
 ## Contatos
+
+<div id="methods-for-marketers-to-contact-you" />
 
 ### Métodos para os profissionais de marketing entrarem em contato com você
 
@@ -114,9 +138,13 @@ Selecione uma das seguintes maneiras pelas quais os anunciantes podem <Anchor ta
 * **Link para sua página inicial:** você pode optar por enviar os usuários diretamente para uma página de destino. Ao selecionar essa opção, os anunciantes verão o botão **Contatar parceiro** em vez do botão **Apresente-me**, e clicar nele leva ao seu URL.  
   **Dica:** adicione um parâmetro UTM ao seu link para fins de rastreamento.
 
+<div id="company-points-of-contact" />
+
 ### Pontos de contato da empresa
 
 Insira pontos de contato na sua empresa.
+
+<div id="offices" />
 
 ## Escritórios
 

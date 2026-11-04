@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral**: Visão geral: as ad networks carregam o relatório de performance agregada (também conhecido como relatório de cohort) em seus sistemas de BI para calcular as métricas de performance da campanha, como o KPI de retenção de 7 dias.
 
+<div id="aggregated-campaign-performance-report" />
+
 ## Relatório de performance agregada
 
 Esse relatório oferece dados sobre a performance da campanha, incluindo o número de usuários exclusivos que realizam um determinado evento. Você (a ad network) usa os dados em seus sistemas de BI para calcular métricas de performance da campanha no contexto dos KPIs dos anunciantes. O relatório está disponível diariamente através do <Anchor target="_blank" href="/partners/pt/docs/data-locker-for-partners">Data Locker para Parceiros</Anchor>
@@ -46,11 +48,15 @@ As métricas são fornecidas com a melhor granularidade possível usando as dime
 * Oferecido através do Data Locker para Parceiros. O relatório é atualizado <Anchor target="_blank" href="/marketers/pt/docs/about-data-freshness-and-timezone-support#daily">Diariamente em horário UTC</Anchor>.
 * Antes de começarmos a compartilhar os dados com você, os anunciantes devem [conceder permissões](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) no painel.
 
+<div id="about-the-report" />
+
 ## Sobre o relatório
 
 <div id="report-structure" />
 
 <Accordion title="Estrutura do relatório">
+
+<div id="dimensions" />
 
 #### Dimensões
 
@@ -251,6 +257,8 @@ As métricas são fornecidas com a melhor granularidade possível usando as dime
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Métricas
 
 | Nome | Campo | Usuários únicos que executam o evento |
@@ -305,6 +313,8 @@ Para criar métricas de retenção, por exemplo, dia 7 da retenção, faça isso
 Ao adicionar ou remover dimensões, você pode obter métricas com granularidades diferentes.
 
 </Accordion>
+
+<div id="permissions" />
 
 ## Authorization: Bearer
 

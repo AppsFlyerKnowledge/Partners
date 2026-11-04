@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral**: os relatórios listados neste artigo estão disponíveis para você (agências) no seu Data Locker. Antes de podermos compartilhar os dados com você, o anunciante (proprietário do aplicativo) deve lhe conceder acesso aos dados conforme detalhado neste artigo.
 
+<div id="data-locker-reports-for-agencies" />
+
 ## Relatórios do Data Locker para agências
 
 Os seguintes princípios de compartilhamento de dados são aplicáveis:
@@ -30,6 +32,8 @@ Os seguintes princípios de compartilhamento de dados são aplicáveis:
 * **Dados orgânicos**: requer permissão explícita do anunciante.
 * **Data Locker**: não é obrigatória uma assinatura para os anunciantes.
 * [Em breve] Dados não-orgânicos atribuídos a outros parceiros.
+
+<div id="permissions-required-per-report-granted-by-the-advertiser" />
 
 ### Permissões exigidas por relatório (concedidas pelo anunciante)
 
@@ -42,6 +46,8 @@ As permissões exigidas por relatório estão listadas na tabela a seguir. Você
 3. Selecione o parceiro de integração (agência).
 4. Acesse a aba **Permissões**.
 5. Conceda permissões de acesso aos dados usando a tabela a seguir como guia. Você deve conceder as permissões de acordo com suas políticas de compartilhamento de dados.
+
+<div id="reports-available-to-agencies" />
 
 #### Relatórios disponíveis para agências
 

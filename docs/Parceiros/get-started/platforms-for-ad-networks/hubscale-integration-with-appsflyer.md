@@ -31,6 +31,8 @@ x-zendesk:
 1. Seu link de atribuição
 2. Seu postback (para instalações e eventos in-app)
 
+<div id="creating-the-attribution-link" />
+
 ## Criação do link de atribuição
 
 o link de atribuição consiste no link de atribuição base da AppsFlyer abaixo e em macros adicionais acrescentadas pela ad network.
@@ -60,6 +62,8 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 ```
 
 <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">Lista completa de parâmetros da AppsFlyer</Anchor>
+
+<div id="global-postbacks-for-installs-and-in-app-events" />
 
 ## Postbacks globais para instalações e eventos in-app:
 
@@ -161,10 +165,14 @@ Link genérico de atribuição:
 https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction_id}&af_siteid={pub_id}-{sub_pub_id}&advertising_id={google_id}&idfa={ios_ifa}
 ```
 
+<div id="finalizing-your-registration" />
+
 ## Finalizar seu cadastro
 
 * Se você tem uma integração com a AppsFlyer, entre em contato conosco usando o <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget de assistente do parceiro</Anchor>.
 * Se você não tem uma integração com a AppsFlyer, preencha a solicitação de cadastro de Parceiros de anúncios <Anchor target="_blank" href="https://www.appsflyer.com/partners-registration/">aqui</Anchor>.
+
+<div id="mapping-of-appsflyer-parameters-and-hubscale-macros" />
 
 ## Mapeamento dos parâmetros da AppsFlyer e das macros da Hubscale
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Em resumo:** Teste sua integração do AppsFlyer no Android usando o aplicativo AppsFlyer Partner Integrations para acionar postbacks.
 
+<div id="android-integration-testing" />
+
 ## Teste de integração no Android
 
 O teste consiste nos seguintes elementos:
@@ -34,6 +36,8 @@ O teste consiste nos seguintes elementos:
 A tabela a seguir lista os cenários de teste de acordo com as combinações de configurações disponíveis.
 
 Para cada cenário, você pode testar instalações e eventos in-app. Para eventos in-app, você pode usar o <Anchor target="_blank" href="/partners/pt/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">mapeamento de eventos in-app</Anchor> para mapear os eventos do anunciante aos seus eventos.
+
+<div id="testing" />
 
 ## Testes
 
@@ -80,6 +84,8 @@ Conclua os pré-requisitos antes de começar a executar o procedimento de teste.
    3. Você consegue ingerir o postback.
 
 </Accordion>
+
+<div id="supplementary-information-and-procedures" />
 
 ## Informações e procedimentos complementares
 
@@ -166,6 +172,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 
 Instale o aplicativo usando o link de retargeting. O fluxo é o mesmo descrito em [teste de atribuição de instalação](/docs/android-integration-testing-for-ad-networks#test-install-attribution).
 
+<div id="viewing-retargeted-installs-in-the-dashboard" />
+
 ### Visualização de instalações retargeteadas no dashboard
 
 Acesse seu dashboard da AppsFlyer e clique em **Retargeting** no menu lateral esquerdo. Aguarde até 30 minutos para que a instalação de retargeting apareça no dashboard.
@@ -208,6 +216,8 @@ Acesse seu dashboard da AppsFlyer e clique em **Retargeting** no menu lateral es
 Observação
 
 Para obter resultados mais detalhados, repita o processo de instalação usando o link de atribuição view-through com o novo dispositivo de teste. Desinstale o aplicativo, altere os parâmetros no link (o nome da campanha, af\_siteid e advertising\_id) e instale novamente clicando na URL.
+
+<div id="view-installs-in-the-dashboard" />
 
 ### Ver instalações no dashboard
 

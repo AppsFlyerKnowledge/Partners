@@ -29,6 +29,8 @@ x-zendesk:
 
 Para iniciar a integração, você deve enviar à AppsFlyer o link de atribuição e o postback para fins de relatório.
 
+<div id="base-attribution-link" />
+
 ## Link de atribuição base
 
 Abaixo você pode encontrar o link de atribuição de base com uma explicação detalhada por cada parâmetro:
@@ -47,15 +49,21 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 Para obter a lista completa de parâmetros da AppsFlyer, <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">clique aqui</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ## Template de link de atribuição completo
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}
 ```
 
+<div id="install-and-in-app-event-postbacks" />
+
 ## Instalação e postbacks de eventos in-app
 
 A seguir estão exemplos de postbacks de instalação e de evento in-app:
+
+<div id="global-install-postback-ios" />
 
 ### Postback global de instalação iOS
 
@@ -63,17 +71,23 @@ A seguir estão exemplos de postbacks de instalação e de evento in-app:
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}
 ```
 
+<div id="global-install-postback-android" />
+
 ### Postback global de instalação Android
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
 
+<div id="global-in-app-event-postback-ios" />
+
 ### Postback global de evento in-app iOS
 
 ```http
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}&goal={event-name}
 ```
+
+<div id="global-in-app-event-postback-android" />
 
 ### Postback global de evento in-app Android
 
@@ -86,6 +100,8 @@ Domain.com é o nome do ID da network (domínio) fornecido pela Affise.
 e = definido como **Event Name** no dashboard da AppsFlyer para cada Aplicativo pelo anunciante - este é o nome real do evento in-app no aplicativo.
 
 Informações adicionais de atribuição podem ser incluídas no postback por solicitação, como Código do país, ID de publicidade, IDFA etc.
+
+<div id="finalizing-your-registration" />
 
 ## Finalizar seu registro
 

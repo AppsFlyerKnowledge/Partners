@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Visão geral:** As ad networks que usam a Affise podem usar a solução de modelo probabilístico da AppsFlyer para receber dados de atribuição sobre instalações e eventos in-app.
 
+<div id="starting-the-integration" />
+
 ## Iniciando a integração
 
 Para iniciar a integração, você deve enviar à AppsFlyer o link de atribuição e o postback para fins de relatório.
@@ -60,11 +62,15 @@ Para obter a lista completa de parâmetros da AppsFlyer, <Anchor target="_blank"
 
 Para obter a lista completa de macros do AppNexus, <Anchor target="_blank" href="https://wiki.appnexus.com/display/sdk/Welcome">clique aqui</Anchor>.
 
+<div id="complete-attribution-link-template" />
+
 ### Template de link de atribuição completo:
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=${SSP_DATA}&af_siteid=${PUBLISHER_ID}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### Instalação e postbacks de eventos in-app
 
@@ -76,11 +82,15 @@ https://sspx-router.adnxs.net/sspx?id={ID}&sspdata={clickid}
 
 `{ID}`, o ID da network fornecido pelo AppNexus, inserido no dashboard da AppsFlyer por aplicativo.
 
+<div id="appsflyer-install-dashboard" />
+
 ### Dashboard de instalações da AppsFlyer
 
 [![appnexus-pixelid.png](https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png)](https://support.appsflyer.com/hc/article_attachments/49929610810129)
 
 Informações adicionais de atribuição podem ser incluídas no postback por solicitação, como Código do país, ID de publicidade, IDFA e assim por diante.
+
+<div id="finalizing-your-registration" />
 
 ## Finalização do seu cadastro
 

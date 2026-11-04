@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **Visão geral:** Saiba quais tipos de dados os parceiros de gerenciamento de campanha do Meta podem receber da AppsFlyer.
 
+<div id="install-postbacks" />
+
 ## Postbacks de instalação
 
 Após a conversão, a AppsFlyer pode retornar os seguintes parâmetros:
@@ -51,9 +53,13 @@ Após a conversão, a AppsFlyer pode retornar os seguintes parâmetros:
 | Canal (Instagram, Meta Audience Network, Facebook, Messenger) | `{af_channel}` |
 | Geografia | `{user_country}` |
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > http://mcmp_postbackURL.........&mcmp_ADset_name =`{adset_name}`
+
+<div id="in-app-event-postbacks" />
 
 ## Aba Permissões
 
@@ -64,11 +70,15 @@ Após eventos in-app, a AppsFlyer pode retornar os seguintes parâmetros (além 
 | Nome do evento* | `{event_name}` |
 | Valor do evento | `{event_value}` |
 
+<div id="example-1" />
+
 > 📄 **Exemplo**
 >
 > `http://FMP_postbackURL.........&eventname={event_name}`
 
 * O parceiro de gerenciamento de campanhas da Meta pode optar por receber o nome do evento in-app da forma como o anunciante o configurou no SDK da AppsFlyer ou por fazer com que o anunciante preencha um campo de texto livre para cada evento.
+
+<div id="user-level-data-policy" />
 
 ## Política de dados em nível de usuário
 
@@ -80,9 +90,13 @@ Por exemplo: se uma instalação aconteceu às 4.32 pm e 42 segundos, podemos us
 
 * A AppsFlyer pode usar um ID aleatório, criado por ela mesma, para anexar a eventos. Esse ID não deve ser derivado do IDFA/ID do Android e deve ser exclusivo para anúncios da Meta. O mesmo ID aleatório pode ser transmitido adiante para postbacks de eventos in-app.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Com base nos Termos da Meta, o envio de postbacks está disponível apenas para empresas que obtenham o seguinte selo: Ad Technology
+
+<div id="example-2" />
 
 > 📄 **Exemplo**
 >

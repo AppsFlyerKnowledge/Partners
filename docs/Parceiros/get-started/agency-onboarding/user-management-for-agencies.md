@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** crie e gerencie os usuários da conta da sua agência na AppsFlyer e atribua permissões para acessar recursos e aplicativos.
 
+<div id="user-roles-and-access-permissions" />
+
 ## Funções de usuário e permissões de acesso
 
 As contas da AppsFlyer permitem vários usuários, cada um com permissões gerenciadas individualmente. As permissões de cada usuário são definidas com 2 dimensões principais:
@@ -33,7 +35,11 @@ As permissões dentro de cada uma dessas dimensões são atribuídas de forma in
 
 A única exceção é a [função de administrador](/docs/user-management-for-agencies#administrador--uma-função-especial), conforme discutido abaixo, que tem acesso a todos os recursos e aplicativos.
 
+<div id="predefined-roles" />
+
 ### Funções predefinidas
+
+<div id="predefined-roles-hash" />
 
 #### hash de funções predefinidas
 
@@ -48,6 +54,8 @@ Cada uma dessas funções define os recursos específicos da AppsFlyer que o usu
 
 Como regra geral, todas as funções são predefinidas e as capacidades de cada função são fixas: não é permitido combiná-las. No entanto, você pode alterar os recursos funcionais de um usuário a qualquer momento alterando sua função (exceto para o [proprietário da conta](/docs/user-management-for-agencies#hash-do-proprietário-da-conta), conforme discutido abaixo).
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > Você atribuiu a José Silva a função de **gerente de equipe.** Esta função permite que José gerencie as **Configurações do aplicativo**, mas não permite que ele acesse o **Log de auditoria.**
@@ -56,11 +64,15 @@ Como regra geral, todas as funções são predefinidas e as capacidades de cada 
 >
 > **Resposta:** Não. Enquanto José permanecer na função de Gerente da equipe, você não poderá dar a ele a capacidade de acessar o log de Auditoria. Você também não pode remover a capacidade dele de gerenciar as configurações do aplicativo. Claro, você pode atribuir José a uma função diferente, e seus recursos mudarão para aqueles definidos por essa função.
 
+<div id="temp-rolesan-exception-to-the-rule" />
+
 ### Funções temporárias — uma exceção à regra
 
 Se você já tinha uma conta da AppsFlyer em nosso antigo sistema de gerenciamento de usuários (quando os únicos tipos de conta disponíveis eram administrador e membro da equipe), todos os usuários foram trazidos para o novo sistema com permissões inalteradas. Como resultado, a maioria desses usuários possui **funções temporárias**.
 
 Saiba mais sobre como [gerenciar funções temporárias](/docs/user-management-for-agencies#managing-temp-roles).
+
+<div id="admina-special-role" />
 
 ### Administrador — uma função especial
 
@@ -71,6 +83,8 @@ Uma conta da AppsFlyer pode ter **um ou mais** administradores, mas cada conta t
   * Todos os aplicativos atuais e futuros
   * Todas as fontes de mídia e geolocalizaçõesEssa característica de "acesso total" da função de administrador não pode ser alterada ou limitada.
 
+  <div id="account-owner-hash" />
+
   #### hash do proprietário da conta
 * O usuário criado no momento em que a conta foi aberta (o **"proprietário da conta"**) recebe o papel de administrador por padrão.
   * O proprietário da conta não pode ser excluído, removido da função de administrador ou editado de outra forma da página [**Gerenciamento de usuários**](/docs/user-management-for-agencies#página-de-gerenciamento-de-usuários). Da mesma forma, o endereço de e-mail do titular da conta não pode ser alterado.
@@ -79,12 +93,16 @@ Uma conta da AppsFlyer pode ter **um ou mais** administradores, mas cada conta t
 * Somente um usuário com função de administrador pode <Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens">gerenciar tokens de API e S2S</Anchor>.
 * Qualquer administrador que não seja o proprietário da conta **pode** ser alterado para uma função diferente ou excluído da conta da AppsFlyer por meio da página de gerenciamento de usuários.
 
+<div id="user-management-page" />
+
 ## Página de gerenciamento de usuários
 
 **Para acessar a página de gerenciamento de usuários:**
 
 1. Na barra de menus na parte superior, abra o menu da conta (dropdown do endereço de e-mail).
 2. Selecione **Gerenciamento de usuários.**
+
+<div id="users-tab" />
 
 ### Aba usuários
 
@@ -95,6 +113,8 @@ A aba **usuários** exibe uma tabela de todos os usuários existentes em sua con
 * Clique no ícone de filtro <Image alt="filter_icon.png" src="https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png" width="25px" /> no cabeçalho da coluna **Função** para filtrar os usuários por sua função (incluindo funções temporárias).
   * Para limpar o filtro, selecione **nenhum** na lista suspensa de filtros.
 * Use as caixas de seleção para selecionar e [editar vários usuários](/docs/user-management-for-agencies#edição-multiusuário) ao mesmo tempo.
+
+<div id="roles-tab" />
 
 ### Aba Funções
 
@@ -109,6 +129,8 @@ Clique no nome de qualquer função no painel esquerdo para ver:
 * O número de usuários atualmente atribuídos a essa função (no canto superior direito da tela)
   * Passe o mouse sobre o ícone do usuário <Image alt="user_icon.png" src="https://files.readme.io/afd47a11e82e0cfac3240fe39582bd141639465952f6eef76bcf1f6e7532d6a9-16162513473937.png" width="21px" /> para ver uma lista dos 20 primeiros.
 
+<div id="creating-a-user" />
+
 ## Criando um usuário
 
 **Para criar um novo usuário:**
@@ -121,6 +143,8 @@ Clique no nome de qualquer função no painel esquerdo para ver:
    * Você pode incluir letras, números, apóstrofes ('), e comercial (&), cifrões ($), símbolos hash (#), hífens (-), sublinhados (\_) e pontos (.)
    * Dois pontos consecutivos (..) e outros caracteres especiais não são permitidos.
    * Você deve inserir um e-mail válido.
+
+   <div id="important" />
 
    > 🚧 **Importante!**
    >
@@ -140,14 +164,20 @@ Clique no nome de qualquer função no painel esquerdo para ver:
 
    * O usuário recebe um convite por e-mail para ativar sua conta.
 
+   <div id="account-activation-hash" />
+
    #### hash de ativação da conta
 
    * O usuário é exibido na tabela do usuário. O ícone de envelope ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png) indica que um convite foi enviado e a conta está aguardando ativação. Depois que o usuário ativar sua conta, o envelope desaparecerá.
    * O link de ativação enviado ao usuário é válido por 48 horas. Se o usuário não recebeu o convite ou se o link expirou, você pode [reenviar o convite](/docs/user-management-for-agencies#resending-a-user-invitation).
 
+<div id="editing-users" />
+
 ## Editando usuários
 
 Os usuários podem ser editados um de cada vez ou em grupos.
+
+<div id="individual-editing" />
 
 ### Edição individual
 
@@ -159,9 +189,13 @@ Os usuários podem ser editados um de cada vez ou em grupos.
 4. Todas as configurações, exceto o endereço de e-mail, são editáveis.
 5. Clique em **Salvar**.
 
+<div id="multi-user-editing" />
+
 ### Edição multiusuário
 
 A edição multiusuário é uma maneira eficiente de alterar as permissões da conta de vários usuários ao mesmo tempo. O uso desse recurso em combinação com os recursos de pesquisa e filtragem da aba **Usuários** pode torná-lo particularmente útil para gerenciar um grande número de usuários.
+
+<div id="note" />
 
 > 📘 **Observação**
 >
@@ -179,6 +213,8 @@ A edição multiusuário é uma maneira eficiente de alterar as permissões da c
    * Lembre-se de que suas alterações se aplicam a todos os usuários selecionados!
 5. Os usuários editados são destacados na tabela e aparecerão da forma devida assim que as alterações forem salvas. No entanto, você ainda tem a oportunidade de revisar suas alterações e confirmá-las ou cancelá-las na próxima etapa.
 6. Revise suas alterações. Clique em **Salvar** para confirmar ou em **Cancelar** para desfazer.
+
+<div id="example-1" />
 
 > 📄 **Exemplo**
 >
@@ -201,12 +237,16 @@ A edição multiusuário é uma maneira eficiente de alterar as permissões da c
 >    * Use a caixa de pesquisa para encontrar Alice e, em seguida, edite seu usuário individualmente para dar a ela acesso ao aplicativo Astounding.
 >    * Repita essas etapas para José e Pedro para dar a eles acesso a Beautiful and Charming, respectivamente.
 
+<div id="deleting-users" />
+
 ## Excluindo usuários
 
 **Para excluir um usuário:**
 
 1. Na aba **Usuários**, clique no botão **Ações** <Image alt="actions_icon.png" src="https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png" width="25px" /> no lado direito da linha do usuário.
 2. Selecione **Excluir** no menu.
+
+<div id="special-situations-and-additional-procedures" />
 
 ## Situações especiais e procedimentos adicionais
 
@@ -219,6 +259,8 @@ Se sua conta usou nosso sistema de gerenciamento de usuários anterior no passad
 * Os usuários com os mesmos recursos receberam a mesma função temporária.
 * Use os recursos da aba [Funções](/docs/user-management-for-agencies#aba-funções) para revisar os recursos de cada função temporária e uma lista de usuários que está atualmente nela.
 
+<div id="temp-role-limitations" />
+
 #### Limitações da função temporária
 
 As funções temporárias foram projetadas especificamente para permitir uma transição perfeita do nosso sistema anterior de gerenciamento de usuários. Como tal, eles estão disponíveis apenas em situações limitadas:
@@ -228,6 +270,8 @@ As funções temporárias foram projetadas especificamente para permitir uma tra
   * Observe que o acesso de um usuário a aplicativos futuros **não pode** ser alterado enquanto o usuário estiver em uma função temporária.
 * Quando um usuário com uma função temporária é alterado para uma função pré-definida, ele não pode ser retornado para a função temporária atribuída anteriormente (ou para qualquer outra função temporária).
 * Se o último usuário em uma função temporária for removido dela, a função não aparecerá mais na sua conta.
+
+<div id="example-2" />
 
 > 📄 **Exemplo**
 >
@@ -246,6 +290,8 @@ As funções temporárias foram projetadas especificamente para permitir uma tra
 
 Como todos os administradores têm as mesmas permissões que o proprietário da conta, geralmente não é necessário alterar o proprietário da conta. Mas se você achar que precisa fazer essa alteração, siga as etapas abaixo.
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Algumas coisas a considerar antes de começar:
@@ -253,12 +299,16 @@ Como todos os administradores têm as mesmas permissões que o proprietário da 
 > * Se você ainda estiver usando as APIs Pull, Master ou GDPR com token v1, alterar o proprietário da conta redefine automaticamente esses serviços. Para evitar a perda de dados, <Anchor target="_blank" href="/marketers/pt/docs/bulletin-api-token-changes">faça a transição para começar a usar essas APIs com o token v2</Anchor> **antes de alterar o proprietário da conta**.
 > * A alteração do proprietário da conta deve ser concluída manualmente de acordo com essas etapas. Não pode ser feito a partir da página **Gerenciamento de usuários**.
 
+<div id="1send-your-request-via-the-chat-widget" />
+
 #### #1–Envie sua solicitação através do widget de chat
 
 Para iniciar o processo de alteração do proprietário da conta, abra o widget de chat <Anchor target="_blank" href="https://hq1.appsflyer.com/apps/search?openAssistant=true">usando este link</Anchor> ou clicando no botão Ajuda na barra da parte superior. Inclua as seguintes informações no chat:
 
 * Nome do proprietário da conta que você deseja substituir
 * Nome, cargo e e-mail do novo proprietário da conta
+
+<div id="2next-steps" />
 
 #### #2–Próximas etapas
 

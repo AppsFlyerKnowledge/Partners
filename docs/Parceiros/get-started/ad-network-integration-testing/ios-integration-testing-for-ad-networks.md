@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Em resumo:** Teste sua integração do iOS com a AppsFlyer usando o aplicativo AppsFlyer Partner Integrations para acionar postbacks regulares e de Privacidade Avançada.
 
+<div id="ios-integration-testing" />
+
 ## teste de integração do iOS
 
 O teste consiste nos seguintes elementos:
@@ -29,11 +31,15 @@ O teste consiste nos seguintes elementos:
 * Use a versão para iOS do aplicativo AppsFlyer Partner Integrations para gerar eventos in-app de instalação e compra de teste. Esses testes, por sua vez, acionam postbacks enviados aos seus endpoints. Você também tem a opção de testar eventos in-app de login e registro.
 * Ao receber os postbacks, verifique se você consegue ingerí-los.
 
+<div id="testing-scope" />
+
 ### Escopo do teste
 
 Os anunciantes controlam os dados compartilhados com ad networks pela configuração de Privacidade Avançada. Essa configuração, em conjunto com a configuração de <Anchor target="_blank" href="/marketers/pt/docs/att-implications-ios-14-and-deprecation-of-lat">ATT</Anchor> do usuário do aplicativo, afeta o tipo de postback e os dados compartilhados com ad networks, conforme descrito no <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks">guia de postback de Privacidade Avançada</Anchor>. A tabela a seguir lista os cenários de teste de acordo com as combinações de configuração disponíveis.
 
 Para cada cenário, você pode testar instalações e eventos in-app. Em relação aos eventos in-app, você pode usar o <Anchor target="_blank" href="/partners/pt/docs/test-marketer-campaign-integration-with-the-ad-network#mapping-events">mapeamento de eventos in-app</Anchor> para mapear eventos do anunciante para os seus eventos.
+
+<div id="test-scenario-combinations" />
 
 #### Combinações de cenários de teste
 
@@ -41,6 +47,8 @@ Para cada cenário, você pode testar instalações e eventos in-app. Em relaç�
 | --- | --- | --- | --- |
 | E | Desligado | Permitir | Regular |
 | B | Ativado | Pedir ao aplicativo para não rastrear | Agregada da AppsFlyer |
+
+<div id="testing" />
 
 ## Testes
 
@@ -104,6 +112,8 @@ Conclua os pré-requisitos antes de começar a executar o procedimento de teste.
     2. O nome do evento está mapeado corretamente (se você mapeou eventos in-app).
     3. Você consegue receber o postback.
 
+<div id="advanced-privacy-offtest-results" />
+
 #### Privacidade avançada desativada — Resultados do teste
 
 | Postback | Horário em que você acionou o evento | Tipo de postback esperado | Postback efetivamente recebido (aprovado/reprovado) | Validação do postback (aprovado/reprovado) |
@@ -151,6 +161,8 @@ Conclua os pré-requisitos antes de começar a executar o procedimento de teste.
     2. O nome do evento está mapeado corretamente (se você mapeou eventos in-app).
     3. Você consegue ingerir o postback.
 
+<div id="advanced-privacy-ontest-results" />
+
 #### Privacidade avançada ativada — Resultados do teste
 
 | Postback | Horário em que você acionou o evento | Tipo de postback esperado | Postback real recebido (aprovado/reprovado) | Validação do postback (aprovado/reprovado) |
@@ -159,6 +171,8 @@ Conclua os pré-requisitos antes de começar a executar o procedimento de teste.
 | Evento in-app: Compra |  | Agregada da AppsFlyer |  |  |
 
 </Accordion>
+
+<div id="supplementary-information-and-procedures" />
 
 ## Informações e procedimentos complementares
 

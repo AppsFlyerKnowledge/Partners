@@ -25,19 +25,27 @@ x-zendesk:
 
 Esse novo padrão de qualidade reflete todo o espectro do engajamento e intencionalidade dos usuários quando eles visualizam ou interagem com um anúncio, desde uma exposição momentânea até uma resposta direta. Nesse artigo, explicamos como os parceiros devem relatar os tipos de engajamento nos links de atribuição da AppsFlyer com base em como os usuários interagem com seus anúncios.
 
+<div id="disclaimer" />
+
 > ❗️ **Isenção de responsabilidade**
 >
 > Esse artigo tem como foco os aspectos de EET relevantes para os parceiros. Para saber o que são EETs e obter informações mais completas, consulte o artigo <Anchor target="_blank" href="/marketers/pt/docs/about-enriched-engagement-types#which-ad-networks-report-enriched-engagement-types">Tipos de engajamento enriquecidos</Anchor>.
 
+<div id="which-networks-can-report-eet-to-appsflyer" />
+
 ## Quais ad networks podem relatar EETs à AppsFlyer?
 
 O suporte para engajamentos enriquecidos estará disponível para ad networks que atendam aos critérios Premier, Advance ou Engage do Programa de Parceiros da AppsFlyer. Esses níveis se referem a ad networks que têm um histórico significativo de fornecimento de tráfego de alta qualidade em grande escala para nossos clientes mútuos, enviam dados de engajamento de forma transparente e confiável e estão integrados com uma ampla variedade de serviços da AppsFlyer.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
 > Para começar a relatar engaged views e engaged clicks, as ad networks devem entrar em contato com o suporte da AppsFlyer.
 
 Consulte [a lista de ad networks elegíveis para relatórios de EET](#01JCAT81K2EJNH91YS6NJGMXMB-data-title)
+
+<div id="warning" />
 
 > ❗️ **Aviso**
 >
@@ -147,6 +155,8 @@ Veja abaixo um caso de engajamento do usuário que as ad networks **não** devem
 <Accordion title="Ad networks elegíveis para relatar EET">
 
 A lista de ad networks elegíveis inclui parceiros cujos eventos de engajamento enriquecido podem ser processados pela AppsFlyer, com a exclusão de engaged clicks e engaged views. As ad networks que fazem parte da lista e desejam que a AppsFlyer processe engaged clicks e engaged views devem entrar em contato com o suporte da AppsFlyer. Para saber quais ad networks já processam esses valores, veja o <Anchor target="_blank" href="/marketers/pt/docs/about-enriched-engagement-types#quais-networks-podem-relatar-engaged-views-e-engaged-clicks">artigo de EET para anunciantes</Anchor>.
+
+<div id="warning-1" />
 
 > ❗️ **Aviso**
 >

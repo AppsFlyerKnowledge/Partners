@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral:** As redes de anúncios que usam o PeerClick podem se beneficiar da solução de modelagem probabilística da AppsFlyer para receber dados de atribuição sobre instalações e eventos in-app.
 
+<div id="starting-the-integration" />
+
 ## Iniciando a integração
 
 Para iniciar a integração, você deve enviar à AppsFlyer o link de atribuição e o postback para fins de relatório.
@@ -47,16 +49,22 @@ Abaixo você pode encontrar o link de atribuição de base com uma explicação 
 | &clickid= | `{clickid}` | ID de transação exclusivo da sessão do usuário - **Obrigatório** |
 | &af\_siteid= | `{trafficsource.id}` | ID da origem do tráfego - **Opcional** |
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > * Para obter a lista completa de parâmetros da AppsFlyer, <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">clique aqui</Anchor>
 > * Para a lista completa do PeerClick, <Anchor target="_blank" href="https://help-center.peerclick.com/en/">clique aqui</Anchor>
+
+<div id="complete-attribution-link-template" />
 
 ### Template de link de atribuição completo
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### Instalação e postbacks de eventos in-app
 
@@ -72,6 +80,8 @@ https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 
 * **userid:** O ID do usuário fornecido pelo PeerClick
 * **txid:** O nome real do evento in-app do aplicativo, definido como **Event Tag** no painel da AppsFlyer para cada aplicativo pelo anunciante
+
+<div id="appsflyers-in-app-event-dashboard" />
 
 ### Painel de eventos in-app da AppsFlyer
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral**: FAQ e solução de problemas de integração para parceiros integrados.
 
+<div id="account-and-dashboard" />
+
 ## Conta e dashboard
 
 <div id="i-want-to-become-an-integrated-partner" />
@@ -131,6 +133,8 @@ Para visualizar os dados de eventos no dashboard, o anunciante precisa conceder 
 
 </Accordion>
 
+<div id="partner-permissions" />
+
 ## Permissões do parceiro
 
 <div id="what-are-the-partner-permissions" />
@@ -179,6 +183,8 @@ A jornada do usuário antes da instalação de um aplicativo anunciado pode impa
 A lista de permissões é gerenciada pelo anunciante. Para usar uma landing page específica, compartilhe a URL da página com seu anunciante e peça a ele que adicione o domínio à lista de permissões.
 
 </Accordion>
+
+<div id="data---postbacks-and-reports" />
 
 ## Dados - postbacks e relatórios
 
@@ -306,6 +312,8 @@ Certifique-se de que o ponto final do postback é o correto - entre em contato c
 
 Ad networks adquirem visibilidade para sua configuração feita pelos anunciantes, **mas não quando feita por agências.** Portanto, quando uma agência mapeia eventos in-app para postbacks para uma rede, embora esteja ativo para a agência, a ad network vê esta seção como inativa.
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > Pedro é o profissional de marketing do aplicativo **com.fused**, que é um aplicativo cliente da ad network **Sonnet**. Pedro mapeia o evento **af\_purchase** para ser enviado como um postback para o Sonnet quando um usuário atribuído ao Sonnet realiza uma compra.
@@ -375,6 +383,8 @@ Por exemplo, se seu *af\_prt* é *greatagency*, seu nome de campanha pode ser as
 <Anchor target="_blank" href="/partners/pt/docs/getting-started-agency-onboarding#campanhas-da-agência-de-skadnetwork">Mais informações sobre as campanhas SKAN.</Anchor>
 
 </Accordion>
+
+<div id="anti-fraud-protect360" />
 
 ## Protect360
 

@@ -33,6 +33,8 @@ Os anunciantes geralmente verificam seus parceiros com melhor performance usando
 
 ![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
 
+<div id="how-to-share-cost" />
+
 ## Como compartilhar o custo
 
 Há duas maneiras de enviar dados de custo a nível de usuário através de URLs de atribuição da AppsFlyer: de forma não criptografada e de forma criptografada. O envio de dados criptografados de custo permite que os parceiros enviem o valor de custo na URL de atribuição de cliques.
@@ -67,6 +69,8 @@ Exemplo de links de atribuição com transferência de valores criptografados:
 https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af_siteid=12345 **&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
 
 **Atenção:** Somente as ad networks que realizam a integração de custos criptografados com a AppsFlyer podem enviar dados de custos criptografados nos links de atribuição de seus clientes.
+
+<div id="aes-encryption-process" />
 
 ## Processo de criptografia AES
 
@@ -173,6 +177,8 @@ if end >= start:
 print(msg)
 print(urllib.quote_plus(base64.b64encode(enc)))
 ```
+
+<div id="which-networks-support-cost-reporting" />
 
 ## Quais ad networks oferecem suporte aos relatórios de custos?
 

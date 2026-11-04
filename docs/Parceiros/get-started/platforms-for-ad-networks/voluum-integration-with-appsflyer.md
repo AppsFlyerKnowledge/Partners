@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral:** As ad networks que usam o Voluum podem utilizar a solução de modelo probabilístico da AppsFlyer para receber dados de atribuição sobre instalações e eventos in-app.
 
+<div id="starting-the-integration" />
+
 ## Iniciando a integração
 
 Para iniciar a integração, você deve enviar à AppsFlyer o link de atribuição e o postback para fins de relatório.
@@ -51,11 +53,15 @@ Abaixo você pode encontrar o link de atribuição de base com uma explicação 
 
 ** Para obter a lista completa de macros do Voluum, <Anchor target="_blank" href="http://feedback.voluum.com/knowledgebase/articles/318681-click-urls">clique aqui</Anchor>
 
+<div id="complete-attribution-link-template" />
+
 ### Template de link de atribuição completo
 
 ```http
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
+
+<div id="install-and-in-app-event-postbacks" />
 
 ### Instalação e postbacks de eventos in-app
 
@@ -74,10 +80,14 @@ https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary
 ** `{Company-Domain}` é o nome do ID da network (domínio) fornecido pelo Voluum.  
 ** txid= Definido como **Event Tag** no dashboard da AppsFlyer para cada Aplicativo pelo anunciante. Este é o nome real do evento in-app do aplicativo.
 
+<div id="appsflyers-in-app-event-dashboard" />
+
 ### Painel de eventos in-app da AppsFlyer
 
 ![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
 ** Informações adicionais de atribuição podem ser incluídas no postback por solicitação, como Código do país, ID de publicidade, IDFA, etc.
+
+<div id="finalizing-your-registration" />
 
 ## Finalizando seu cadastro
 

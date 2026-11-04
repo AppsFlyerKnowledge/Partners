@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral**: veja o esquema SKAN CV conforme mapeado pelo anunciante.
 
+<div id="skan-cv-schema-api-for-ad-networks" />
+
 ## API de esquema CV SKAN para ad networks
 
 Com a atribuição SKAdNetwork (SKAN), os anunciantes classificam a qualidade do usuário definindo valores de conversão (CV) com base na atividade do usuário pós-instalação durante períodos de tempo específicos (janelas). <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide">Saiba mais sobre SKAN</Anchor>

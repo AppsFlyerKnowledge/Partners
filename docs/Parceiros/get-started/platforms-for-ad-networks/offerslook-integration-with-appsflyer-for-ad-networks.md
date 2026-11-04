@@ -39,6 +39,8 @@ Para iniciar a integração, envie à AppsFlyer:
    https://networkname.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}
    ```
 
+<div id="creating-your-attribution-link" />
+
 ## Como criar seu link de atribuição
 
 O link de atribuição consiste no link de atribuição base da AppsFlyer abaixo e em macros adicionais adicionadas pela ad network.
@@ -79,6 +81,8 @@ As seguintes macros estão disponíveis para uso no link gerado:
 | clickid | O identificador de clique único da rede de anúncios | `{click_id}` |
 | af\_siteid | ID do publisher da ad network | `{aff_id}` |
 
+<div id="new-macros" />
+
 #### Novas macros
 
 O novo conjunto de macros adiciona uma série de parâmetros adicionais de forma clara, padronizada e estruturada. Recomendamos fortemente usar essas macros antes de voltar às macros af\_sub1-5.
@@ -116,6 +120,8 @@ O novo conjunto de macros adiciona uma série de parâmetros adicionais de forma
 | sha1\_idfa | ID de anunciante da Apple com hash SHA1 — requer suporte da ad network |  |
 | mac | Endereço mac do dispositivo - Requer suporte da ad network | `{mac}` |
 | sha1\_mac | Endereço MAC do dispositivo com hash SHA1 — requer suporte da ad network |  |
+
+<div id="creating-your-install-postbacks" />
 
 ## Criando seus postbacks de instalação
 

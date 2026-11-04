@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Num relance:** Os parceiros integrados recebem postbacks de instalações e eventos in-app rejeitados devido a fraudes ou não conformidade com as regras de validação.
 
+<div id="rejected-attribution-postbacks-relating-to-fraud-and-validation-rules" />
+
 ## Atribuições de instalação rejeitadas relacionadas com fraude e regras de validação
 
 **Terminologia**:
@@ -57,6 +59,8 @@ A tabela seguinte lista a razão da rejeição, o valor da razão da rejeição 
 | validação\_sequestro | Nomes das regras | ✓ | Regra definida pelo cliente. |
 | camada\_ai | N/D | **X** | Modelos de IA são utilizados para analisar grandes quantidades de dados, aumentando a capacidade de detecção para identificar atividades fraudulentas de dispositivos e de instalações. |
 
+<div id="reject-reasons-for-in-app-events" />
+
 #### Razões para rejeição de eventos no aplicativo
 
 | Razão da rejeição | Valor da razão da rejeição | Explicação |
@@ -66,6 +70,8 @@ A tabela seguinte lista a razão da rejeição, o valor da razão da rejeição 
 | validação\_inapps | nome\_do\_evento\_inválido | Baseado na regra de validação solicitada ou definida manualmente |
 | validação\_inapps | valor\_do\_evento\_inválido | Baseado na regra de validação solicitada ou definida manualmente |
 | validação\_inapps | Nome da(s) regra(s) | Baseado em regras definidas manualmente |
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
