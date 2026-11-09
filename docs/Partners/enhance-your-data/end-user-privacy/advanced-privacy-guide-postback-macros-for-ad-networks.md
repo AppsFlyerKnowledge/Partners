@@ -35,7 +35,7 @@ x-zendesk:
 > * The user device is running iOS 14.5+
 > * Advanced Privacy is on
 
-![AdvancedPrivacy.png](https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png)
+<Image align="center" alt="AdvancedPrivacy.png" src="https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png" />
 
 This article discusses:
 
@@ -62,7 +62,7 @@ In the context of postbacks, different postback types are used depending on whet
 
 You can view the current AP setting, per app: In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations** > select your ad network > **Integration tab.** The default setting is on.
 
-![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
+<Image align="center" alt="APforPartners2.png" src="https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png" />
 
 <div id="types-of-templates-for-sending-postbacks" />
 
@@ -101,7 +101,7 @@ For any given event, multiple ad network partners may be entitled to a postback.
 * Attributed partner: Ad network credited with the event
 * Unattributed partner: Integrated partner not credited with the event, when the **In-app events postback** > **Sending option** is set to **All media sources including organic.** If the advertiser app has ATT consent, the postback contains user IDs without attributed data. (This option is not supported by all ad networks.)
 
-  ![InAppEventAll.png](https://files.readme.io/8167a7a133cd7a8e31947e7e26ba66b08363ddb9973b9626cc8874f7c4a57c42-360018213678.png)
+  <Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/8167a7a133cd7a8e31947e7e26ba66b08363ddb9973b9626cc8874f7c4a57c42-360018213678.png" />
 
 <div id="web-campaigns" />
 
@@ -321,7 +321,7 @@ Set up your AP postback using the Postback management option in the AppsFlyer da
 2. Select the postback type: **Advanced Privacy.**
 3. Activate the builder.
 
-   ![postback-management-enter-endpoint_en-us.png](https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png)
+   <Image align="center" alt="postback-management-enter-endpoint_en-us.png" src="https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png" />
 4. Enter the **endpoint address**: The endpoint URL to which AppsFlyer sends postbacks. Enter the relevant URLs for installs and/or in-app events.
 5. Enter the parameters to be included in the postbacks:
 
@@ -331,15 +331,15 @@ Set up your AP postback using the Postback management option in the AppsFlyer da
    * **Install**: check the box to include the parameter in the install postback.
    * **In-app event**: check the box to include the parameter in the in-app event postback.
 
-   ![postback-management-parameters_en-us.png](https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png)
+   <Image align="center" alt="postback-management-parameters_en-us.png" src="https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png" />
 
    Complete list of [Advanced Privacy postback macros.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
 6. **[Optional]** Add custom parameters that are not provided by AppsFlyer:
 
-   ![postback-management-custom-parameters_en-us.png](https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png)
+   <Image align="center" alt="postback-management-custom-parameters_en-us.png" src="https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png" />
 7. Check the final postback template preview to make sure everything is correct.
 
-   ![postback-management-template_en-us.png](https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png)
+   <Image align="center" alt="postback-management-template_en-us.png" src="https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png" />
 8. Click **Save**. Note that when you save the postback, the changes take effect immediately.
 
 In the case of any issues, reach out to us using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor>.

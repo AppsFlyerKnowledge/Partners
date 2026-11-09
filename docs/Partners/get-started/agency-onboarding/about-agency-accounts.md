@@ -190,7 +190,7 @@ The value of the `af_prt` parameter is the agency name. When the agency name is 
 
 When `af_prt` with your agency name is part of the attribution link, new installs can be attributed to your agency account. Otherwise, new installs are attributed directly to the ad network.
 
-[![agency-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
+<Image align="center" alt="agency-af-prt.png" src="https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png" />
 
 **Do not use links received from the marketer**: make sure to use the links from your own account to prevent wrong attribution.
 

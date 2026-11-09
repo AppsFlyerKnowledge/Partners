@@ -180,7 +180,7 @@ Install the app using the retargeting link. The flow is the same as described in
 
 Access your AppsFlyer dashboard and click on **Re-targeting** in the left-side menu. Allow up to 30 minutes for the retargeted install to appear in the dashboard.
 
-[![com_appsflyer_adNetworkTest-retargeting.png](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)
+<Image align="center" alt="com_appsflyer_adNetworkTest-retargeting.png" src="https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png" />
 
 </Accordion>
 
@@ -211,7 +211,7 @@ Access your AppsFlyer dashboard and click on **Re-targeting** in the left-side m
 8. Launch the app.  
    The following screen displays:
 
-   ![vta-testing-postback.png](https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png)
+   <Image align="center" alt="vta-testing-postback.png" src="https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png" />
 
    If you don't see this message, make sure that the view-through attribution link is formatted correctly. Uninstall the app and reinstall using the view-through attribution link with the new test device.
 

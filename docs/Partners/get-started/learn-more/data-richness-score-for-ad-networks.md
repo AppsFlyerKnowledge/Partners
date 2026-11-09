@@ -44,7 +44,7 @@ To maximize the score, ad networks must overcome the data gaps they have.
 3. Click **Active Integrations** in the left sidebar.  
    The score indicator is shown under your network name.
 
-   ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
+   <Image align="center" alt="integrated-partners-data-richness.png" src="https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png" />
 
 Advertisers can see the data richness score (low, medium, or high) for each ad network that has an integration with AppsFlyer.
 

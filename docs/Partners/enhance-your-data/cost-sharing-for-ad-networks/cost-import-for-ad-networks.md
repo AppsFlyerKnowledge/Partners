@@ -28,7 +28,7 @@ x-zendesk:
 
 ## Cost Import for ad networks
 
-![AdspendIngestion.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
+<Image align="center" alt="AdspendIngestion.jpg" src="https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg" />
 
 <div id="overview" />
 

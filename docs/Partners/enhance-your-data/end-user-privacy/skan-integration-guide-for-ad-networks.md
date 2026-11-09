@@ -49,7 +49,7 @@ x-zendesk:
 
 ## SKAN data flow
 
-![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
+<Image align="center" alt="5754_Postback_flow_for_SKAD__1_.png" src="https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png" />
 
 The full SKAN postback flow is as follows:
 
@@ -233,7 +233,7 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
 
 <Accordion title="Redirect">
 
-![Redirect_us-en__2_.png](https://files.readme.io/17d4a668cde784a2f823e702e04fc75a2bbbdb483e44d9d10edfad03d865bbb7-360012352758.png)
+<Image align="center" alt="Redirect_us-en__2_.png" src="https://files.readme.io/17d4a668cde784a2f823e702e04fc75a2bbbdb483e44d9d10edfad03d865bbb7-360012352758.png" />
 
 Using this method, the ad network responds to the device with an HTTP redirect command (307), requesting the device to send the postback directly to AppsFlyer.
 

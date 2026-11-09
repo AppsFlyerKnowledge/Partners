@@ -38,7 +38,7 @@ x-zendesk:
 
 Before you proceed, it’s essential to understand how AppsFlyer’s attribution works. This section explains what happens along the way from the first click or impression to the attribution of an install or an event — and beyond.
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+<Image align="center" alt="ua-agency-flow.png" src="https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png" />
 
 1. A marketer or an agency on behalf of the marketer configures a campaign with a certain ad network, using AppsFlyer attribution links.
 2. A user clicks on one of their ads – for example, a banner or an offer link.
@@ -94,7 +94,7 @@ When your account is up and running, the account admin (the person who opened th
 
 When you first create your account, it has no apps associated with it:
 
-![agency-start.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+<Image align="center" alt="agency-start.png" src="https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png" />
 
 Any agency individual or team requires permission from the app owner to:
 
@@ -134,7 +134,7 @@ Once you got permission from the marketer, the app appears on the app's page.
 
 The apps page in your account lists up to 1000 apps. If the list of apps you have permissions for exceeds 1000, some apps are not shown on the list. You can still find them using the search.
 
-![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+<Image align="center" alt="agency-apps.png" src="https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png" />
 
 <div id="searching-for-apps" />
 
@@ -152,7 +152,7 @@ The apps page in your account lists up to 1000 apps. If the list of apps you hav
 
 Click any app in the list of apps to access its <Anchor target="_blank" href="/marketers/docs/getting-started-with-appsflyer-dashboards">dashboard</Anchor>. When you start running campaigns, the aggregate data attributed to you is displayed here.
 
-![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
+<Image align="center" alt="agency-dashboard.png" src="https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png" />
 
 The Agency account dashboard includes default access to:
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** Set up your analytics partner integration with AppsFlyer, including configuration of postback templates. This article outlines the steps, timelines, and dependencies involved in the onboarding process.
 
-![54150 Partners onboarding KB.png](https://files.readme.io/f8d8abe52561baf06cb3125d7f49760d2510aaa1ed63c6c0515d3543418dad91-34615688043409.png)
+<Image align="center" alt="54150 Partners onboarding KB.png" src="https://files.readme.io/f8d8abe52561baf06cb3125d7f49760d2510aaa1ed63c6c0515d3543418dad91-34615688043409.png" />
 
 <div id="about-the-analytics-partner-integration" />
 

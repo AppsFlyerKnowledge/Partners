@@ -90,7 +90,7 @@ For complete CAKE postback structure Click Here
 
 ### AppsFlyer in-app events dashboard
 
-![IAEP.png](https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png)
+<Image align="center" alt="IAEP.png" src="https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png" />
 
 Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, and so on.
 

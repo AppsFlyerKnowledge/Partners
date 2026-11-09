@@ -79,7 +79,7 @@ To receive postbacks from AppsFlyer, partners must initiate a conversation with 
 
 To contact AppsFlyer partner support, open the **Help** menu in your dashboard and select **Contact our team**.
 
-[![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
+<Image align="center" alt="alt" src="https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif" />
 
 </Accordion>
 

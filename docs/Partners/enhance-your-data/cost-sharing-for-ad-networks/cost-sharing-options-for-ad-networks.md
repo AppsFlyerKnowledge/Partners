@@ -44,7 +44,7 @@ Ad networks share cost with AppsFlyer using any of the following: 
 
 ### Cost badge for ad networks
 
-![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
+<Image align="center" alt="CostBadge.jpg" src="https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg" />
 
 * A cost badge displays in the <Anchor target="_blank" href="/marketers/docs/partner-integrations#partner-details-and-performance">partner details page</Anchor> highlighting partners using the InCost or Cost API.
 * The badge certifies that the partner as a cost-capable partner.

@@ -35,7 +35,7 @@ Attribution links are used to notify AppsFlyer that a user engaged with an ad by
 
 What happens on the journey from a first click or impression to the attribution of an install or an event—and beyond.
 
-[![appsflyer-attribution-model-for-partners.png](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)
+<Image align="center" alt="appsflyer-attribution-model-for-partners.png" src="https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png" />
 
 1. A user clicks on a banner or an offer link.
 2. The banner or link redirects the user to an AppsFlyer attribution link. The AppsFlyer attribution link is then populated with information that is collected during the click.
