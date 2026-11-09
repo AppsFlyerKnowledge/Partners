@@ -40,7 +40,7 @@ O AppsFlyer Partner Marketplace é onde os anunciantes podem encontrar novas ad 
 1. No AppsFlyer, clique no menu suspenso no canto superior direito
 2. Selecione **Configuração de parceiro**.
 
-![parceiro](https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png)
+<Image align="center" alt="parceiro" src="https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png" />
 
 <div id="note" />
 
@@ -84,7 +84,7 @@ Nesta seção, adicione os detalhes dos serviços que você fornece. Recomendamo
 * **Destaques da oferta:** Liste os destaques da sua oferta como uma lista com marcadores.
 * **Descrição da oferta:** Forneça uma descrição abrangente da sua oferta.
 
-![parceiro](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
+<Image align="center" alt="parceiro" src="https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png" />
 
 <div id="characteristics" />
 
@@ -99,7 +99,7 @@ Forneça informações sobre seus serviços. Selecione todas as opções possív
 * **Plataformas compatíveis:** Selecione todas as plataformas com suporte.
 * **Padrões de compliance:** Selecione os padrões de compliance relevantes aos quais você adere.
 
-![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
+<Image align="center" alt="" src="https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png" />
 
 <div id="sales" />
 

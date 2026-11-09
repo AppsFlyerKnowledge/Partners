@@ -30,7 +30,7 @@ x-zendesk:
 
 Com as URLs de impressão cross-platform da AppsFlyer, você pode atribuir instalações de apps mobile a anúncios exibidos em CTV. Múltiplas instalações dentro da mesma residência podem ser atribuídas à mesma impressão de anúncio na CTV.
 
-![Diagrama do fluxo de atribuição de CTV para app mobile](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
+<Image align="center" alt="Diagrama do fluxo de atribuição de CTV para app mobile" src="https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg" />
 
 A atribuição de view-through no fluxo CTV-to-mobile usa uma <Anchor target="_blank" href="/marketers/pt/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup">URL de impressão do OneLink</Anchor> que se baseia em um template cross-platform do OneLink (e que possui um template ID) criado pelos anunciantes. Isso permite que os anunciantes agrupem múltiplos apps de diferentes plataformas (por exemplo, apps do Android e do iOS) usando uma única URL.
 

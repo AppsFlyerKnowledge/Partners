@@ -155,7 +155,7 @@ Para eventos pós-instalação, o Hubscale pode registrar até nove eventos pó
 
 A tag de evento é o que o anunciante insere ao mapear os eventos.
 
-![In-App_Events.png](https://files.readme.io/5fa9ea3c2428e0dce7ce6a8062ebdf9aca5b2f873cc4e3d76d815d83b3a72b64-360002301369.png)
+<Image align="center" alt="In-App_Events.png" src="https://files.readme.io/5fa9ea3c2428e0dce7ce6a8062ebdf9aca5b2f873cc4e3d76d815d83b3a72b64-360002301369.png" />
 
 Se o nome do parceiro que usa a Hubscale for PARTNER, então o domínio normalmente será: partner.156th.com.
 

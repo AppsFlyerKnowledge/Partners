@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Visão geral:** Conclua a integração com a AppsFlyer configurando e testando o seu link de atribuição e as integrações de postback. Entenda as etapas, prazos e dependências do processo.
 
-![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
+<Image align="center" alt="AdNetworks_-_Onboarding__2_.png" src="https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png" />
 
 <div id="what-is-appsflyer" />
 

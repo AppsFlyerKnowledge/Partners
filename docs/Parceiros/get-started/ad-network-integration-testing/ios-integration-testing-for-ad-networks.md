@@ -83,18 +83,18 @@ Conclua os pré-requisitos antes de começar a executar o procedimento de teste.
    1. Verifique se o aplicativo de teste não está instalado. Exclua-o se necessário.
    2. Nas configurações de Privacidade, verifique se **Permitir que Aplicativos Solicitem para Rastrear** está ativado.  
 
-      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
+      <Image align="center" alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. Envie o link de atribuição para o dispositivo de teste.
 4. Abra o link de atribuição no navegador do dispositivo.  
    Você é redirecionado para a App Store.
 5. Faça o download e abra o aplicativo.  
    A caixa de diálogo de consentimento do ATT é exibida.
 
-   ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
+   <Image align="center" alt="AppDialogue_us-en.png" src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" />
 6. Toque em **Permitir**.  
    A página **Dados de instalação** é exibida.
 
-   [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+   <Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 7. Toque em **ATT Status**.  
    O status **Authorized** é exibido.
 8. Valide a atribuição usando os seguintes parâmetros. Se a validação falhar, consulte [Solução de problemas](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
@@ -104,7 +104,7 @@ Conclua os pré-requisitos antes de começar a executar o procedimento de teste.
    3. `media_source`: sua ad network
 9. Toque em **Testes de eventos in-app.**
 
-   [![CompraNoAplicativo.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
+   <Image align="center" alt="CompraNoAplicativo.png" src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" />
 10. Toque em **Evento de compra.**  
     A confirmação do evento de compra é exibida.
 11. Verifique se:
@@ -134,17 +134,17 @@ Conclua os pré-requisitos antes de começar a executar o procedimento de teste.
    1. Verifique se o aplicativo de teste não está instalado. Exclua-o, se necessário.
    2. Nas configurações de Privacidade, verifique se a opção **Permitir que aplicativos solicitem rastreamento** está ativada.
 
-      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
+      <Image align="center" alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. Envie o link de atribuição para o dispositivo de teste.
 4. Abra o link de atribuição no navegador do dispositivo.  
    Você será redirecionado para a App Store.
 5. Faça o download e abra o aplicativo.  
    A caixa de diálogo de consentimento do ATT é exibida.
 
-   ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
+   <Image align="center" alt="AppDialogue_us-en.png" src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" />
 6. Toque em **Solicitar ao aplicativo que não rastreie.** A página **Dados de instalação** é exibida.
 
-   [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+   <Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 7. Toque em **Status do ATT**.  
    O status **Negado** é exibido.
 8. Valide a atribuição usando os parâmetros listados. Se a validação falhar, consulte [Solução de problemas](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
@@ -154,7 +154,7 @@ Conclua os pré-requisitos antes de começar a executar o procedimento de teste.
    3. `media_source`: sua ad network
 9. Toque em **Testes de Eventos in-app.**
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
+   <Image align="center" alt="AppPurchase.png" src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" />
 10. Toque em **Evento de compra.**
 11. Verifique se:
     1. Você recebeu postbacks de instalação e compra.
@@ -184,7 +184,7 @@ O aplicativo Partner Integrations está disponível na loja de aplicativos. O ap
 
 Quando o aplicativo é aberto pela primeira vez, a caixa de diálogo do iOS **Solicitar rastreamento** é exibida, seguida pela página **Dados de instalação**, que mostra os dados de conversão registrados na plataforma AppsFlyer. Os eventos in-app de teste são acionados na interface do usuário.
 
-[<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+<Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 
 As seguintes funções estão disponíveis:
 
@@ -229,7 +229,7 @@ https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 
 <Accordion title="Definir Privacidade avançada">
 
-<Image alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
+<Image align="center" alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
 
 **Para alterar a configuração Ativar Privacidade avançada:**
 

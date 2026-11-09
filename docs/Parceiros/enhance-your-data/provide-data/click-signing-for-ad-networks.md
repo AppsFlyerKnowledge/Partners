@@ -54,7 +54,7 @@ As assinaturas permitem que a AppsFlyer valide os cliques e verifique se as info
 
 O gráfico a seguir descreve o fluxo do desenvolvimento inicial e testes básicos para os testes de produção e, finalmente, para a produção.
 
-![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+<Image align="center" alt="Click_signing_integration_flow.png" src="https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png" />
 
 <div id="procedure" />
 

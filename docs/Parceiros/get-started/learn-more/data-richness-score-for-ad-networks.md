@@ -43,7 +43,7 @@ Para maximizar a pontuação, as ad networks devem superar as lacunas de dados q
 3. Clique em **Integrações ativas** na barra lateral esquerda.  
    O indicador de pontuação é exibido abaixo do nome da sua network.
 
-   ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
+   <Image align="center" alt="integrated-partners-data-richness.png" src="https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png" />
 
 Os anunciantes podem ver a pontuação de riqueza de dados (baixa, média ou alta) de cada ad network que tenha uma integração com a AppsFlyer.
 

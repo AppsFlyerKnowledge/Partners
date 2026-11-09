@@ -189,7 +189,7 @@ O valor do parâmetro `af_prt` é o nome da agência. Quando o nome da agência 
 
 Quando `af_prt` com o nome da sua agência faz parte do link de atribuição, novas instalações podem ser atribuídas à sua conta de agência. Caso contrário, novas instalações são atribuídas diretamente à rede de anúncios.
 
-[![agência-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
+<Image align="center" alt="agência-af-prt.png" src="https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png" />
 
 **Não utilize links recebidos do profissional de marketing**: certifique-se de que está a utilizar os links da sua própria conta para evitar atribuições incorretas.
 

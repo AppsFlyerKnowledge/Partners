@@ -37,7 +37,7 @@ x-zendesk:
 
 Antes de prosseguir, é importante entender como a atribuição da AppsFlyer funciona. Esta seção explica o que acontece desde o primeiro clique ou impressão até a atribuição de uma instalação ou evento, e muito mais.
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+<Image align="center" alt="ua-agency-flow.png" src="https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png" />
 
 1. Um profissional de marketing ou uma agência em nome do anunciante configura uma campanha com uma determinada ad network, usando links de atribuição da AppsFlyer.
 2. Um usuário clica em um de seus anúncios – por exemplo, um banner ou um link de oferta.
@@ -91,7 +91,7 @@ Quando sua conta estiver ativa, o administrador da conta (a pessoa que a abriu) 
 
 Quando você cria sua conta pela primeira vez, ela não possui aplicativos associados a ela:
 
-![agency-start.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+<Image align="center" alt="agency-start.png" src="https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png" />
 
 Qualquer pessoa ou equipe da agência deve ter a permissão do proprietário do aplicativo para:
 
@@ -131,7 +131,7 @@ Depois que você tiver permissão do profissional de marketing, o aplicativo apa
 
 A página de aplicativos na sua conta lista até 1000 aplicativos. Se a lista de aplicativos para os quais você tem permissões exceder 1000, alguns aplicativos não serão exibidos na lista. Você ainda pode encontrá-los usando a pesquisa.
 
-![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+<Image align="center" alt="agency-apps.png" src="https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png" />
 
 <div id="searching-for-apps" />
 
@@ -149,7 +149,7 @@ A página de aplicativos na sua conta lista até 1000 aplicativos. Se a lista de
 
 Clique em qualquer aplicativo na lista de aplicativos para acessar seu <Anchor target="_blank" href="/marketers/pt/docs/getting-started-with-appsflyer-dashboards">dashboard</Anchor>. Quando você começa a executar campanhas, os dados agregados atribuídos a você são exibidos aqui.
 
-![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
+<Image align="center" alt="agency-dashboard.png" src="https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png" />
 
 O dashboard Conta de agência inclui acesso padrão a:
 

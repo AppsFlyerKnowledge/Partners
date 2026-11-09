@@ -129,7 +129,7 @@ Para contas de agência que precisem de mais assistência, entre em contato com 
 
 Para visualizar os dados de eventos no dashboard, o anunciante precisa conceder a você permissão de acesso a dados agregados de eventos in-app. Se essa permissão não tiver sido habilitada, os dados de eventos não serão exibidos.
 
-<Image alt="截屏2025-12-01 15.03.05.png" src="https://files.readme.io/3a0c4a4f28c27479b0927ab33c97a46f1ad58963424c2368fd002af38f22ae81-42824303171601.png" width="578px" />
+<Image align="center" alt="截屏2025-12-01 15.03.05.png" src="https://files.readme.io/3a0c4a4f28c27479b0927ab33c97a46f1ad58963424c2368fd002af38f22ae81-42824303171601.png" width="578px" />
 
 </Accordion>
 

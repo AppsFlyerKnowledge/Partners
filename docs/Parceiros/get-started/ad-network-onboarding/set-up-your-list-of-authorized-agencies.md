@@ -38,7 +38,7 @@ A partir de 31 de julho de 2024, apenas o tráfego de agências autorizadas pela
 > * Somente administradores têm acesso a esta página
 > * A lista de agências autorizadas pode incluir até 200 agências
 
-[![authorized-agencies-5.jpg](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)
+<Image align="center" alt="authorized-agencies-5.jpg" src="https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg" />
 
 <div id="manage-authorized-agencies" />
 

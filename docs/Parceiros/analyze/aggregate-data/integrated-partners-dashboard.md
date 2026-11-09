@@ -74,7 +74,7 @@ Faça o download do relatório de Postbacks relevante e procure os campos **URL
 * Se o código de resposta for 200, a AppsFlyer enviará o postback e recebeu a confirmação da rede de anúncios.
 * Se o código de resposta estiver faltando, a AppsFlyer enviou o postback, mas não recebeu nenhuma resposta. O campo **Mensagem de erro do postback** descreve o problema.
 
-[![](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)
+<Image align="center" alt="" src="https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png" />
 
 <div id="viewing-configuration-settings-and-data" />
 

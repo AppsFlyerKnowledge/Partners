@@ -34,7 +34,7 @@ Links de atribuição são usados ​​para notificar a AppsFlyer de que um usu
 
 O que acontece na jornada desde o primeiro clique ou impressão até a atribuição de uma instalação ou evento e muito mais.
 
-[![appsflyer-modelo-de-atribuição-para-parceiros.png](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)
+<Image align="center" alt="appsflyer-modelo-de-atribuição-para-parceiros.png" src="https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png" />
 
 1. Um usuário clica em um banner ou em um link de oferta.
 2. O banner ou link redireciona o usuário para um link de atribuição da AppsFlyer. O link de atribuição da AppsFlyer é preenchido com informações coletadas durante o clique.

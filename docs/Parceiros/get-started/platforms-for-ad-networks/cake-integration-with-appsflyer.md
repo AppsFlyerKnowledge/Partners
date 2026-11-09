@@ -89,7 +89,7 @@ Para ver a estrutura completa do postback da CAKE, clique aqui
 
 ### Dashboard de eventos in-app da AppsFlyer
 
-![IAEP.png](https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png)
+<Image align="center" alt="IAEP.png" src="https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png" />
 
 Informações adicionais de atribuição podem ser incluídas no postback por solicitação, como Código do país, ID de publicidade, IDFA e assim por diante.
 

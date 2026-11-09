@@ -43,7 +43,7 @@ As ad networks compartilham dados de custo usando qualquer um desses métodos: 
 
 ### Cost badge para ad networks
 
-![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
+<Image align="center" alt="CostBadge.jpg" src="https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg" />
 
 * Um cost badge é exibido na <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#partner-details-and-performance">página de informações do parceiro</Anchor>, destacando os parceiros que usam a InCost ou Cost API.
 * Esse badge é a garantia de que o parceiro possui capacidades de custo.

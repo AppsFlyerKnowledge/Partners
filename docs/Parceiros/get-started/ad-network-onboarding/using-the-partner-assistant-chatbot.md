@@ -31,11 +31,11 @@ O Chatbot de assistência para parceiros encaminha seus problemas para a equipe 
 **Para acessar o Chatbot de assistência para parceiros:**
 
 1. No menu superior, selecione **Ajuda** > **Fale com a nossa equipe**. O chatbot de assistência é aberto.  
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 
 2. Selecione o **Tipo de tíquete** no item da lista e preencha todas as informações.
 
-<Image alt="voltado para parceiros" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
+<Image align="center" alt="voltado para parceiros" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
 
 **Observação:** As agências não têm a opção "Problemas de integração ou Atualizações".
 

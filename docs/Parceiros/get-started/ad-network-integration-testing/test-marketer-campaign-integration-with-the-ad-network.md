@@ -47,7 +47,7 @@ Abra o seu dashboard da AppsFlyer. Na tela **Busca de aplicativo**, insira o ID 
 
 Quando o visto verde aparecer no campo de entrada, clique na seta azul. Ao clicar na seta, o dashboard do aplicativo será aberto.
 
-[![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
+<Image align="center" alt="partner-app-search.png" src="https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png" />
 
 <div id="testing-live-apps" />
 
@@ -71,7 +71,7 @@ Agora você pode gerar um link de atribuição para testar a atribuição de ins
 
 Adicione parâmetros ao link de atribuição de acordo com suas necessidades e com os dados que você deseja registrar.
 
-[![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
+<Image align="center" alt="partner-configure-attribution-link.png" src="https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png" />
 
 <div id="tip" />
 
@@ -107,7 +107,7 @@ Gere um link de atribuição. Você pode usar as [mesmas instruções listadas a
 
 A seguinte tela aparecerá:
 
-[![app-not-available.png](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)
+<Image align="center" alt="app-not-available.png" src="https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png" />
 
 Esse é o resultado esperado. Como o aplicativo não está ativo, o link de atribuição não leva a nenhuma loja de aplicativos. No entanto, o link de atribuição ainda é válido para fins de atribuição. o link de atribuição e seus parâmetros são registrados pelos servidores da AppsFlyer, e os dados são usados para atribuição.
 
@@ -141,7 +141,7 @@ Se o profissional de marketing tiver habilitado a permissão <Anchor target="_bl
 
 No dashboard da AppsFlyer do seu aplicativo, no menu lateral, selecione **Active integrations** e escolha sua ad network. Na aba **Integration**, role para baixo até **In-app event settings**. Escolha o evento in-app e mapeie-o para o evento correspondente:
 
-[![partner-in-app-events-postbacks-mapping.png](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)
+<Image align="center" alt="partner-in-app-events-postbacks-mapping.png" src="https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png" />
 
 </Accordion>
 

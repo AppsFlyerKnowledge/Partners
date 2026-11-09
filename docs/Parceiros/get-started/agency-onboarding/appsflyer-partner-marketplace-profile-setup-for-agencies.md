@@ -37,7 +37,7 @@ O AppsFlyer Partner Marketplace é onde os anunciantes podem encontrar novas ad 
 1. No AppsFlyer, clique no menu suspenso no canto superior direito.
 2. Selecione **Configuração de Parceiros**.
 
-[![agency-setup-page.png](https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png)](https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png)
+<Image align="center" alt="agency-setup-page.png" src="https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png" />
 
 <div id="note" />
 
@@ -85,7 +85,7 @@ Nesta seção, adicione os detalhes dos serviços que você fornece. Recomendamo
 * **Destaques da oferta:** liste os destaques da sua oferta em marcadores.
 * **Descrição da oferta:** forneça uma descrição abrangente da sua oferta.
 
-[![partner_offering1.png](https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png)](https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png)
+<Image align="center" alt="partner_offering1.png" src="https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png" />
 
 <div id="characteristics" />
 
@@ -100,7 +100,7 @@ Forneça informações sobre seus serviços. Selecione todas as opções possív
 * **Plataformas compatíveis:** Selecione todas as plataformas compatíveis.
 * **Padrões de compliance:** selecione os padrões de compliance relevantes aos quais você adere.
 
-[![your-offering-2.png](https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png)](https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png)
+<Image align="center" alt="your-offering-2.png" src="https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png" />
 
 <div id="sales" />
 

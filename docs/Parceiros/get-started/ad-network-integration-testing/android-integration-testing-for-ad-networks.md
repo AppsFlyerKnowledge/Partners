@@ -179,7 +179,7 @@ Instale o aplicativo usando o link de retargeting. O fluxo é o mesmo descrito e
 
 Acesse seu dashboard da AppsFlyer e clique em **Retargeting** no menu lateral esquerdo. Aguarde até 30 minutos para que a instalação de retargeting apareça no dashboard.
 
-[![com_appsflyer_adNetworkTest-retargeting.png](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)
+<Image align="center" alt="com_appsflyer_adNetworkTest-retargeting.png" src="https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png" />
 
 </Accordion>
 
@@ -210,7 +210,7 @@ Acesse seu dashboard da AppsFlyer e clique em **Retargeting** no menu lateral es
 8. Inicie o aplicativo.  
    A tela a seguir é exibida:
 
-   ![vta-testing-postback.png](https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png)
+   <Image align="center" alt="vta-testing-postback.png" src="https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png" />
 
    Se você não vir esta mensagem, verifique se o link de atribuição view-through está formatado corretamente. Desinstale o aplicativo e reinstale-o usando o link de atribuição view-through com o novo dispositivo de teste.
 
