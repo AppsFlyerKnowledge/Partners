@@ -32,7 +32,7 @@ Advertisers use the AppsFlyer dashboard as their source of truth for all budget 
 
 Advertisers often check their top-performing partners using sort by ROI. Those that have no cost data always appear at the bottom of the list.
 
-![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
+<Image align="center" alt="" src="https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png" />
 
 ## How to share cost
 

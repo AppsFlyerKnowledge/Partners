@@ -76,7 +76,7 @@ https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 
 ### AppsFlyer's in-app event dashboard
 
-![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
+<Image align="center" alt="Voluum_msc_new_1.png" src="https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png" />
 Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, etc.
 
 <div data-zendesk-anchors="h_01HKHFT3RFWF5H349GP7MHDAYX=starting-the-integration h_01HM8M27S5WFJVKBG0JAFW548H=note h_01HKHFT3RFDW6GZM3E72SYPJSD=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks h_01HKHFT3RF1PTSJ4SF9RTQ93N8=install-and-in-app-event-postbacks appsflyers-inapp-event-dashboard=appsflyers-in-app-event-dashboard h_01HKHFT3RFDVPCSKJGZPRFB55V=appsflyers-in-app-event-dashboard" />

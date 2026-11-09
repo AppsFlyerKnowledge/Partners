@@ -61,4 +61,4 @@ When the app user completes level 20, AppsFlyer returns to the relevant value (i
 
 If the same or a different user then completes level 25 AppsFlyer again returns to the attribution link and dynamically populates the goal\_id with the relevant value (in this case YYY) and sends it in the postback.
 
-![Goadid.png](https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png)
+<Image align="center" alt="Goadid.png" src="https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png" />

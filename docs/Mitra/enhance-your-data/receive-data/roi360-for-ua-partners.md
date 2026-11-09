@@ -78,7 +78,7 @@ Untuk menerima postback dari AppsFlyer, mitra harus memulai percakapan dengan ti
 
 Untuk menghubungi dukungan mitra AppsFlyer, buka menu **Bantuan** di dashboard Anda dan pilih **Hubungi tim kami**.
 
-[![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
+<Image align="center" alt="alt" src="https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif" />
 
 </Accordion>
 

@@ -169,7 +169,7 @@ Nilai `af_prt` adalah nama agensi. Nama Agensi yang diteruskan dalam parameter `
 
 Penambahan `af_prt` ke nama agensi Anda di Link atribut yang menghasilkan install baru memungkinkan atribusi install baru ke akun agensi Anda.
 
-![agency-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
+<Image align="center" alt="agency-af-prt.png" src="https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png" />
 
 Tanpa `af_prt`, install baru tidak dapat diatribusikan ke akun agensi mana pun, oleh karena itu install baru tersebut diatribusikan langsung ke jaringan iklan.
 
