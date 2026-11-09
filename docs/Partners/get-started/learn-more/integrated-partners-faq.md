@@ -129,7 +129,7 @@ Si tienes una cuenta de agencia y necesitas más ayuda, ponte en contacto con Ap
 
 Si el anunciante te otorga permisos para la configuración de eventos in-app, asegúrate de habilitar los **postbacks de eventos in-app** en la pestaña **Integración**. Si este permiso no está habilitado, no se mostrarán datos de eventos.
 
-<Image alt="截屏2025-12-01 15.03.05.png" src="https://files.readme.io/3a0c4a4f28c27479b0927ab33c97a46f1ad58963424c2368fd002af38f22ae81-42824303171601.png" width="578px" />
+<Image align="center" alt="截屏2025-12-01 15.03.05.png" src="https://files.readme.io/3a0c4a4f28c27479b0927ab33c97a46f1ad58963424c2368fd002af38f22ae81-42824303171601.png" width="578px" />
 
 </Accordion>
 

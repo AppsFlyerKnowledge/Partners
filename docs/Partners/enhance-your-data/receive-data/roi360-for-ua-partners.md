@@ -78,7 +78,7 @@ Para recibir postbacks de AppsFlyer, los partners deben iniciar una conversació
 
 Para ponerte en contacto con el soporte técnico de AppsFlyer, abre el menú **Ayuda** en tu panel de control y selecciona **Contactar con nuestro equipo**.
 
-[![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
+<Image align="center" alt="alt" src="https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif" />
 
 </Accordion>
 

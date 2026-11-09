@@ -31,11 +31,11 @@ El chatbot Partner Assistant dirige tus problemas al equipo adecuado y abarca co
 **Para comunicarte con el Partner Assistant Chatbot:**
 
 1. En la barra de menú superior, selecciona **Ayuda** > **Contactar con nuestro equipo**. Se abre el chatbot del asistente.  
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 
 2. Selecciona el **tipo de ticket** en la lista y completa toda la información.
 
-<Image alt="partner-facing.png" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
+<Image align="center" alt="partner-facing.png" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
 
 **Nota:** Las agencias no tienen la opción "Problemas de integración o actualizaciones".
 

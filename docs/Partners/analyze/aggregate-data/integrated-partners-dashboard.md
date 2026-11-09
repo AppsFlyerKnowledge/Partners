@@ -74,7 +74,7 @@ Descarga el reporte de Postbacks correspondiente y busca los campos **URL de po
 * Si el código de respuesta es 200, AppsFlyer envió el postback y recibió un acuse de recibo de la red de publicidad.
 * Si falta el código de respuesta, AppsFlyer envió el postback pero no recibió respuesta. El campo **Mensaje de error de postback** describe el problema.
 
-[![](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)
+<Image align="center" alt="" src="https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png" />
 
 <div id="viewing-configuration-settings-and-data" />
 

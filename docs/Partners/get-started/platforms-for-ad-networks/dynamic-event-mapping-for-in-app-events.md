@@ -60,6 +60,6 @@ Cuando el usuario de la aplicación completa el nivel 20, AppsFlyer recupera el 
 
 Si ese mismo usuario u otro completa después el nivel 25, AppsFlyer vuelve a consultar el enlace de atribución, rellena dinámicamente el goal\_id con el valor correspondiente (en este caso, YYY) y lo envía en el postback.
 
-![Goadid.png](https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png)
+<Image align="center" alt="Goadid.png" src="https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png" />
 
 <div data-zendesk-anchors="introduction=introducci%C3%B3n attribution-link=enlace-de-atribuci%C3%B3n" />

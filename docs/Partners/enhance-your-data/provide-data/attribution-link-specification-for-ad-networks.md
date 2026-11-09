@@ -34,7 +34,7 @@ Los enlaces de atribución se utilizan para notificar a AppsFlyer que un usuario
 
 Qué sucede en la trayectoria desde un primer clic o impresión hasta la atribución de una instalación o un evento, y más allá.
 
-[![appsflyer-attribution-model-for-partners.png](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)
+<Image align="center" alt="appsflyer-attribution-model-for-partners.png" src="https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png" />
 
 1. Un usuario hace clic en un banner o en un enlace de oferta.
 2. El banner o enlace redirige al usuario a un enlace de atribución de AppsFlyer. El enlace de atribución de AppsFlyer se completa con la información que se recopila durante el clic.

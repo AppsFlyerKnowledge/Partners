@@ -65,13 +65,13 @@ Limitaciones:
 
 * Las redes publicitarias no tienen acceso al panel de anomalías.
 
-[![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
+<Image align="center" alt="p360_dashboard_1.jpg" src="https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg" />
 
 * Las ad networks y las agencias no pueden acceder al estudio de protección contra el fraude ni al nivel de raw data de los datos etiquetados. Sin embargo, pueden verlo de forma agregada en el dashboard de Protect360, en la atribución etiquetada y en los eventos in-app etiquetados. Además de identificar el fraude por tipo de etiqueta (nueva versión, etc.). Para saber más sobre FPS, consulta <Anchor target="_blank" href="/marketers/es/docs/beta-fraud-protection-studio">este artículo</Anchor>.
 
-  <Image alt="" src="https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png" width="624px" />
+  <Image align="center" alt="" src="https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png" width="624px" />
 
-  <Image alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
+  <Image align="center" alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
 
 <div id="raw-data-reports" />
 

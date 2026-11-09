@@ -57,6 +57,6 @@ x-zendesk:
    <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más</Anchor> sobre los parámetros del enlace de atribución.
 4. En Venedash, crea una oferta y pega el enlace de atribución de AppsFlyer en el campo URL de destino.
 
-   ![venedash-destination_url-es_es.png](https://files.readme.io/2a284eab8d25f57f1bfa2981e2d86bf16bce16b64b61858fdb819d5ac14eac20-360016242798.png)
+   <Image align="center" alt="venedash-destination_url-es_es.png" src="https://files.readme.io/2a284eab8d25f57f1bfa2981e2d86bf16bce16b64b61858fdb819d5ac14eac20-360016242798.png" />
 
 <div data-zendesk-anchors="venedash-integration-setup=configuraci%C3%B3n-de-la-integraci%C3%B3n-de-venedash h_01HKW87R2DGCXHZSVSV9D9203Z=configuraci%C3%B3n-de-la-integraci%C3%B3n-de-venedash" />

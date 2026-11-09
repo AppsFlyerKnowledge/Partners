@@ -100,7 +100,7 @@ Por ejemplo: Si una instalación se produjo a las 4.32 pm y 42 segundos, podemos
 
 > 📄 **Ejemplo**
 >
-> ![](https://files.readme.io/6832879dafaadb91a795988abdc5e51203c9c1775054e35829cfe60cb2175a66-360001440909.png)
+> <Image align="center" alt="" src="https://files.readme.io/6832879dafaadb91a795988abdc5e51203c9c1775054e35829cfe60cb2175a66-360001440909.png" />
 >
 > Para consultar la lista completa de Partners de gestión de campañas de Meta, haz clic <Anchor target="_blank" href="https://www.facebook.com/business/partner-directory/search?programBadges=ADTECH_FB.ADTECH_IG&solution_type=campaign_management">aquí</Anchor>.
 

@@ -43,7 +43,7 @@ Para maximizar la calificación, las ad networks deben subsanar las carencias de
 3. Haz clic en **Integraciones activas** en la barra lateral izquierda.  
    El indicador de la calificación se muestra debajo del nombre de tu red.
 
-   ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
+   <Image align="center" alt="integrated-partners-data-richness.png" src="https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png" />
 
 Los anunciantes pueden ver la calificación de riqueza de datos (baja, media o alta) de cada ad network que tenga una integración con AppsFlyer.
 

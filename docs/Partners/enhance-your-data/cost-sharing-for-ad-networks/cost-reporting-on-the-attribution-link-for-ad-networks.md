@@ -31,7 +31,7 @@ Los anunciantes utilizan el dashboard de AppsFlyer como fuente fiable para todas
 
 Los anunciantes suelen comprobar a sus partners con mejor rendimiento ordenándolos por el ROI. Los que no tienen datos de costos siempre aparecen al final de la lista.
 
-![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
+<Image align="center" alt="" src="https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png" />
 
 <div id="how-to-share-cost" />
 

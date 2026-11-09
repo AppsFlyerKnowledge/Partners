@@ -37,7 +37,7 @@ El Partner Marketplace de AppsFlyer es el lugar donde los anunciantes pueden enc
 1. En AppsFlyer, haz clic en el menú desplegable de la esquina superior derecha.
 2. Selecciona **Partner setup**.
 
-[![agency-setup-page.png](https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png)](https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png)
+<Image align="center" alt="agency-setup-page.png" src="https://files.readme.io/5164e255c0e37938084f6467f5666c81f0751d296ed0d92acd3db35839e3e916-22076054710929.png" />
 
 <div id="note" />
 
@@ -83,7 +83,7 @@ En esta sección, añade los detalles de los servicios que prestas. Te recomenda
 * **Aspectos destacados de la oferta:** Enumera los puntos más destacados de tu oferta en forma de viñetas.
 * **Descripción de la oferta:** Proporciona una descripción exhaustiva de tu oferta.
 
-[![partner_offering1.png](https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png)](https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png)
+<Image align="center" alt="partner_offering1.png" src="https://files.readme.io/3c466026053ce7b64068d9ad2fdd4af3c346d0ac10d7f7b9760f984c7de61cd3-22075920545169.png" />
 
 <div id="characteristics" />
 
@@ -98,7 +98,7 @@ Proporciona información sobre tus servicios. Selecciona todas las opciones posi
 * **Plataformas compatibles:** Selecciona todas las plataformas que admites.
 * **Estándares de cumplimiento:** Selecciona los estándares de cumplimiento pertinentes a los que te adhieres.
 
-[![tu-oferta-2.png](https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png)](https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png)
+<Image align="center" alt="tu-oferta-2.png" src="https://files.readme.io/31a2668d6756a74479618df00e7642f46c186f8d77fd686c1511839377cf0442-22075920558353.png" />
 
 <div id="sales" />
 

@@ -54,7 +54,7 @@ Las firmas permiten que AppsFlyer valide los clics y asegurarse de que la inform
 
 El siguiente gráfico describe el flujo desde el desarrollo inicial y las pruebas básicas hasta las pruebas de producción y, por último, hasta la producción.
 
-![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+<Image align="center" alt="Click_signing_integration_flow.png" src="https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png" />
 
 <div id="procedure" />
 

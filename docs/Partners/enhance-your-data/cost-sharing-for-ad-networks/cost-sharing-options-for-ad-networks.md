@@ -43,7 +43,7 @@ Las redes publicitarias comparten costos con AppsFlyer utilizando cualquiera de 
 
 ### Indicador de costo para redes publicitarias
 
-![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
+<Image align="center" alt="CostBadge.jpg" src="https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg" />
 
 * Se muestra un indicador de costo en la <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#partner-details-and-performance">página de detalles del partner</Anchor> que destaca a los partners que utilizan InCost o Cost API.
 * Esto certifica que es un partner con capacidad de costos.

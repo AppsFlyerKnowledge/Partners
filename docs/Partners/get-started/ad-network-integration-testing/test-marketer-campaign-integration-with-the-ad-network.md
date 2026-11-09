@@ -49,7 +49,7 @@ Abre tu Dashboard de AppsFlyer. En la pantalla **App search**, introduce el ID d
 
 Cuando aparezca la marca de verificación verde en el campo de entrada, haz clic en la flecha azul. Al hacer clic en la flecha, se abre el Dashboard de la aplicación.
 
-[![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
+<Image align="center" alt="partner-app-search.png" src="https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png" />
 
 <div id="testing-live-apps" />
 
@@ -73,7 +73,7 @@ Ahora puedes generar un enlace de atribución para probar la atribución de la i
 
 Añade parámetros al enlace de atribución según tus necesidades y los datos que quieras registrar.
 
-[![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
+<Image align="center" alt="partner-configure-attribution-link.png" src="https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png" />
 
 <div id="tip" />
 
@@ -109,7 +109,7 @@ Genera un enlace de atribución. Puedes usar las [mismas instrucciones indicadas
 
 Aparecerá la siguiente pantalla:
 
-[![app-not-available.png](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)
+<Image align="center" alt="app-not-available.png" src="https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png" />
 
 Este es el resultado esperado. Dado que la aplicación no está activa, el enlace de atribución no conduce a ninguna tienda de aplicaciones. Sin embargo, el enlace de atribución sigue siendo válido para fines de atribución. el enlace de atribución y sus parámetros se registran en los servidores de AppsFlyer y los datos se usan para la atribución.
 
@@ -143,7 +143,7 @@ Si el marketer ha habilitado el permiso <Anchor target="_blank" href="/marketers
 
 En el dashboard de AppsFlyer de tu aplicación, selecciona **Active integrations** en el menú lateral y elige tu ad network. En la pestaña **Integración**, desplázate hacia abajo hasta **In-app event settings**. Elige el evento in-app y asígnalo al evento correspondiente:
 
-[![partner-mapping-de-postbacks-de-eventos-in-app.png](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)
+<Image align="center" alt="partner-mapping-de-postbacks-de-eventos-in-app.png" src="https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png" />
 
 </Accordion>
 

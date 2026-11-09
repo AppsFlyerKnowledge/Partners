@@ -155,7 +155,7 @@ Para los eventos posteriores a la instalación, Hubscale puede registrar hasta 
 
 La etiqueta de evento es la que introduce el anunciante al asignar los eventos.
 
-![In-App_Events.png](https://files.readme.io/5fa9ea3c2428e0dce7ce6a8062ebdf9aca5b2f873cc4e3d76d815d83b3a72b64-360002301369.png)
+<Image align="center" alt="In-App_Events.png" src="https://files.readme.io/5fa9ea3c2428e0dce7ce6a8062ebdf9aca5b2f873cc4e3d76d815d83b3a72b64-360002301369.png" />
 
 Si el nombre del partner que usa Hubscale es PARTNER, entonces el dominio suele ser: partner.156th.com.
 

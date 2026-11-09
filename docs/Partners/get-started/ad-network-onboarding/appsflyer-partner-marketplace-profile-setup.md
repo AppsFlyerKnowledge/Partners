@@ -40,7 +40,7 @@ El Partner Marketplace de AppsFlyer es el lugar donde los anunciantes pueden enc
 1. En AppsFlyer, haz clic en el menú desplegable de la esquina superior derecha
 2. Selecciona **Configuración de Partners**.
 
-![Socio](https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png)
+<Image align="center" alt="Socio" src="https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png" />
 
 <div id="note" />
 
@@ -82,7 +82,7 @@ En esta sección, añade los detalles de los servicios que prestas. Te recomenda
 * **Aspectos destacados de la oferta:** Enumera los puntos más destacados de tu oferta en forma de viñetas.
 * **Descripción de la oferta:** Proporciona una descripción exhaustiva de tu oferta.
 
-![oferta del partner.png](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
+<Image align="center" alt="oferta del partner.png" src="https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png" />
 
 <div id="characteristics" />
 
@@ -97,7 +97,7 @@ Proporciona información sobre tus servicios. Selecciona todas las opciones posi
 * **Plataformas compatibles:** Selecciona todas las plataformas que admites.
 * **Estándares de cumplimiento:** Selecciona los estándares de cumplimiento pertinentes que cumples.
 
-![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
+<Image align="center" alt="" src="https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png" />
 
 <div id="sales" />
 

@@ -85,7 +85,7 @@ https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 
 ### Panel de control de eventos in-app de AppsFlyer
 
-![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
+<Image align="center" alt="Voluum_msc_new_1.png" src="https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png" />
 Se puede agregar información de atribución adicional al postback mediante solicitud, como el código de país, ID de publicidad, IDFA, etc.
 
 <div data-zendesk-anchors="starting-the-integration=comenzar-la-integraci%C3%B3n h_01HKHFT3RFWF5H349GP7MHDAYX=comenzar-la-integraci%C3%B3n h_01HM8M27S5WFJVKBG0JAFW548H=nota complete-attribution-link-template=plantilla-de-enlace-de-atribuci%C3%B3n-completa h_01HKHFT3RFDW6GZM3E72SYPJSD=plantilla-de-enlace-de-atribuci%C3%B3n-completa install-and-inapp-event-postbacks=postbacks-de-instalaciones-y-eventos-in-app h_01HKHFT3RF1PTSJ4SF9RTQ93N8=postbacks-de-instalaciones-y-eventos-in-app appsflyers-inapp-event-dashboard=panel-de-control-de-eventos-in-app-de-appsflyer h_01HKHFT3RFDVPCSKJGZPRFB55V=panel-de-control-de-eventos-in-app-de-appsflyer" />

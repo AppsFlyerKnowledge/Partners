@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **En resumen:** Data Locker para partners (ad networks y agencias) entrega los datos de la aplicación al almacenamiento del partner en AWS, GCS o BigQuery.
 
-![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
+<Image align="center" alt="6133DataLockerForPartners.png" src="https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png" />
 
 <div id="data-locker-for-partners" />
 
@@ -69,7 +69,7 @@ Los datos se escriben en la opción de almacenamiento seleccionada. Puedes alter
 
 Los datos del almacenamiento en el bucket en la nube están organizados en una estructura jerárquica de carpetas, según el tipo de reporte, la fecha y la hora. La siguiente figura contiene un ejemplo de esta estructura:
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 Los datos de un reporte determinado están incluidos en las carpetas de horas (h) asociadas con ese reporte.
 

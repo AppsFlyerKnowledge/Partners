@@ -34,7 +34,7 @@ x-zendesk:
 > * El dispositivo del usuario ejecuta iOS 14.5+.
 > * La privacidad avanzada está activada.
 
-![AdvancedPrivacy.png](https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png)
+<Image align="center" alt="AdvancedPrivacy.png" src="https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png" />
 
 En este artículo se explica lo siguiente:
 
@@ -61,7 +61,7 @@ En el contexto de los postbacks, se usan distintos tipos de postback en función
 
 Puedes ver la configuración de AP actual, por aplicación, en el panel de control de AppsFlyer. Ve a **Configuración** > **Integraciones activas** > selecciona tu red de publicidad > **pestaña Integración.** La configuración predeterminada está activada.
 
-![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
+<Image align="center" alt="APforPartners2.png" src="https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png" />
 
 <div id="types-of-templates-for-sending-postbacks" />
 
@@ -100,7 +100,7 @@ Para cualquier evento dado, varios partners de la red de publicidad pueden tener
 * Partner atribuido: red de publicidad acreditada con el evento
 * Partner no atribuido: partner integrado no acreditado con el evento, cuando **Postback de eventos in-app** > **Opción de envío** está establecido en **todas las fuentes de medios, incluidas las orgánicas.** Si la aplicación del anunciante tiene el consentimiento de ATT, el postback contiene los ID de usuario sin datos atribuidos. (Esta opción no es compatible con todas las redes de publicidad).
 
-  ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+  <Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 <div id="web-campaigns" />
 
@@ -320,7 +320,7 @@ Configura tu postback de AP con la opción de administración de postbacks en el
 2. Selecciona el tipo de postback: **Privacidad avanzada.**
 3. Activa el creador.
 
-   ![postback-management-enter-endpoint_en-us.png](https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png)
+   <Image align="center" alt="postback-management-enter-endpoint_en-us.png" src="https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png" />
 4. Introduce la **dirección de punto de conexión**: la URL del punto de conexión a la que AppsFlyer envía los postbacks. Introduce las URL relevantes para instalaciones y/o eventos in-app.
 5. Introduce los parámetros que se incluirán en los postbacks:
 
@@ -330,15 +330,15 @@ Configura tu postback de AP con la opción de administración de postbacks en el
    * **Instalación**: marca la casilla para incluir el parámetro en el postback de instalación.
    * **Evento in-app**: marca la casilla para incluir el parámetro en el postback de evento in-app.
 
-   ![postback-management-parameters_en-us.png](https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png)
+   <Image align="center" alt="postback-management-parameters_en-us.png" src="https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png" />
 
    Lista completa de [macros de postback de privacidad avanzada.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
 6. **[Opcional]** Agrega parámetros personalizados que no proporcione AppsFlyer:
 
-   ![postback-management-custom-parameters_en-us.png](https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png)
+   <Image align="center" alt="postback-management-custom-parameters_en-us.png" src="https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png" />
 7. Revisa la vista previa final de la plantilla de postback para asegurarte de que todo está correcto.
 
-   ![postback-management-template_en-us.png](https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png)
+   <Image align="center" alt="postback-management-template_en-us.png" src="https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png" />
 8. Haz clic en **Guardar**. Ten en cuenta que cuando guardas el postback, los cambios entran en vigor inmediatamente.
 
 Si tienes algún problema, ponte en contacto con nosotros a través del widget del asistente para partners.

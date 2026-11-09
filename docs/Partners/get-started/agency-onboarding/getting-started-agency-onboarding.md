@@ -37,7 +37,7 @@ x-zendesk:
 
 Antes de continuar, es esencial comprender cómo funciona la atribución de AppsFlyer. En esta sección se explica lo que sucede en todo el proceso, desde el primer clic o impresión hasta la atribución de una instalación o un evento, y posterior a ello.
 
-[![ua-flujo-agencia.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+<Image align="center" alt="ua-flujo-agencia.png" src="https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png" />
 
 1. Un marketer o una agencia en nombre del marketer configura una campaña con una determinada red de publicidad, utilizando los enlaces de atribución de AppsFlyer.
 2. Un usuario hace clic en uno de sus anuncios, por ejemplo, un banner o un enlace de oferta.
@@ -93,7 +93,7 @@ Cuando tu cuenta esté en funcionamiento, el administrador de la cuenta (la pers
 
 Cuando creas tu cuenta por primera vez, esta no tiene aplicaciones asociadas:
 
-![inicio-agencia.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+<Image align="center" alt="inicio-agencia.png" src="https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png" />
 
 Cualquier individuo o equipo de la agencia requiere permiso del propietario de la aplicación para:
 
@@ -134,7 +134,7 @@ Una vez que hayas obtenido el permiso del marketer, la aplicación aparecerá en
 
 La página de aplicaciones de tu cuenta enumera hasta 1000 aplicaciones. Si la lista de aplicaciones para las que tienes permisos supera las 1000, algunas aplicaciones no se muestran en la lista. Aún puedes encontrarlas usando la búsqueda.
 
-![aplicaciones-agencia.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+<Image align="center" alt="aplicaciones-agencia.png" src="https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png" />
 
 <div id="searching-for-apps" />
 
@@ -152,7 +152,7 @@ La página de aplicaciones de tu cuenta enumera hasta 1000 aplicaciones. Si la 
 
 Haz clic en cualquier aplicación de la lista de aplicaciones para acceder a su <Anchor target="_blank" href="/marketers/es/docs/getting-started-with-appsflyer-dashboards">panel de control</Anchor>. Cuando comienzas a ejecutar campañas, los datos agregados que se te atribuyen se muestran aquí.
 
-![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
+<Image align="center" alt="agency-dashboard.png" src="https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png" />
 
 El panel de control de la cuenta de agencia incluye acceso predeterminado a:
 

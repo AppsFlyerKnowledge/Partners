@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Completa la integración con AppsFlyer configurando y probando tu enlace de atribución e integraciones de postback. Entiende los pasos, las cronologías y las dependencias del proceso.
 
-![Redes publicitarias_-_Incorporación__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
+<Image align="center" alt="Redes publicitarias_-_Incorporación__2_.png" src="https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png" />
 
 <div id="what-is-appsflyer" />
 
