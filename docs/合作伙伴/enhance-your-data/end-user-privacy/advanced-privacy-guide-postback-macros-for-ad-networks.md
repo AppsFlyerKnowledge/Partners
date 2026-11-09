@@ -34,7 +34,7 @@ x-zendesk:
 > * 用户设备的操作系统为iOS 14.5+
 > * 高级隐私保护（Advanced Privacy）处于启用状态
 
-![AdvancedPrivacy.png](https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png)
+<Image align="center" alt="AdvancedPrivacy.png" src="https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png" />
 
 本文内容涵盖以下主题：
 
@@ -61,7 +61,7 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 
  该设置默认开启。
 
-![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
+<Image align="center" alt="APforPartners2.png" src="https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png" />
 
 <div id="types-of-templates-for-sending-postbacks" />
 
@@ -101,7 +101,7 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 
 * 未归因的合作伙伴：对接合作伙伴不归因于事件，当**应用内事件回传>** **发送选项**设置为<strong>包括自然渠道的所有媒体渠道。</strong>如果用户在广告主应用中授权了ATT，则回传中会包含不带归因数据的用户ID。(此选项不受所有广告平台的支持。)  
 
-  ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+  <Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 <div id="web-campaigns" />
 
@@ -317,7 +317,7 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
 2. 高级隐私保护：
 3. 激活配置工具。  
 
-   ![postback-management-enter-endpoint_en-us.png](https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png)
+   <Image align="center" alt="postback-management-enter-endpoint_en-us.png" src="https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png" />
 4. 输入**端点地址**。请输入激活和/或应用内事件的对应URL。
 5. 输入回传中需要包含的参数：
    * 参数名称
@@ -326,15 +326,15 @@ AP处于启用状态时，如果iOS 14.5+用户在ATT弹窗中拒绝授权广告
    * **激活**：勾选需要在激活回传中传递的参数。
    * **应用内事件**：勾选需要在应用内事件回传中传递的参数。
 
-   ![postback-management-parameters_en-us.png](https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png)
+   <Image align="center" alt="postback-management-parameters_en-us.png" src="https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png" />
 
    [高级隐私保护回传宏](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)完整列表。
 6. <strong>【可选】</strong>在AppsFlyer预定义参数之外添加自定义参数：
 
-   ![postback-management-custom-parameters_en-us.png](https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png)
+   <Image align="center" alt="postback-management-custom-parameters_en-us.png" src="https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png" />
 7. 查看最终的回传模板预览，检查各项配置是否正确无误。
 
-   ![postback-management-template_en-us.png](https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png)
+   <Image align="center" alt="postback-management-template_en-us.png" src="https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png" />
 8. 点击**保存**。请注意：保存回传配置后，新配置会立刻生效。
 
 如果出现任何问题，请通过<Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">渠道支持微件</Anchor>联系我们。

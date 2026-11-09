@@ -30,7 +30,7 @@ x-zendesk:
 
 您可以利用AppsFlyer的跨平台展示链接将应用激活归因到CTV上展示的广告。同一住宅内的多次激活可以归因到同一个CTV广告展示。
 
-![50310_CTV_flow_chart__2_.jpg](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
+<Image align="center" alt="50310_CTV_flow_chart__2_.jpg" src="https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg" />
 
 CTV到移动应用程序的视图归因使用一个<Anchor target="_blank" href="/marketers/zh/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup">OneLink展示URL</Anchor>，基于广告主创建的跨平台OneLink模板（带有模板ID）。这使广告主能够使用单个URL对来自不同平台的多个应用程序（例如，Android和iOS应用程序）进行分组。
 

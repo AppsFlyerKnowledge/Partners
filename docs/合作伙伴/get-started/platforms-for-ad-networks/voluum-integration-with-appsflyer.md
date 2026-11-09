@@ -68,6 +68,6 @@ https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary
 ```
 
 
-![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)
+<Image align="center" alt="Voluum_msc_new_1.png" src="https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png" />
 
 <div data-zendesk-anchors="starting-the-integration=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 01JFT0VZZ5KVMKYRD222JT55NH=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 complete-attribution-link-template=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 01JFT0VZZ7B1RRY82B65GWF4P7=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 install-and-inapp-event-postbacks=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 01JFT0VZZ86KYXSVE1QBD2V0HF=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 appsflyers-inapp-event-dashboard=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 finalizing-your-registration=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 01JFT0VZZ9A4JWG38KPH0CNQ72=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5 01JFT0VZZATFYY75QPCPKZF3S6=%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%8E%A5" />

@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了广告平台应如何设置并测试归因链接及回传对接，从而完成与AppsFlyer的对接，旨在帮助您了解相关的操作步骤、时间顺序以及流程中涉及的人员。
 
-![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
+<Image align="center" alt="AdNetworks_-_Onboarding__2_.png" src="https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png" />
 
 <div id="what-is-appsflyer" />
 

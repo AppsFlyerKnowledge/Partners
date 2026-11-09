@@ -65,7 +65,7 @@ AppsFlyer通过以下方式识别并拦截假量：
 
 * 广告平台无法访问异常数据面板。代理可以访问此面板，但仅当AppsFlyer认证的低作弊率渠道产生流量时才会看到数据，作为可供参考的基准水平，用于对比其他媒体渠道的表现。
 
-[![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
+<Image align="center" alt="p360_dashboard_1.jpg" src="https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg" />
 
 <div id="raw-data-reports" />
 

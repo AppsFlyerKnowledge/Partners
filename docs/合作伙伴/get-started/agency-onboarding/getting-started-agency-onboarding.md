@@ -36,7 +36,7 @@ x-zendesk:
 
 AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解相关内容后再着手下一步工作。本节解释了从首次点击/展示到激活/事件归因，再到数据呈现/回传的整条链路。
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+<Image align="center" alt="ua-agency-flow.png" src="https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png" />
 
 1. 广告主或代理代表广告主通过AppsFlyer归因链接配置某个广告平台上的广告投放。
 2. 用户点击了其中一则广告，比如横幅或优惠链接。
@@ -92,7 +92,7 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 账户创建之初，账户下没有任何关联的应用，界面如下：
 
-![agency-start.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+<Image align="center" alt="agency-start.png" src="https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png" />
 
 代理侧的任何团队或个人都需要广告主授权才能执行以下操作：
 
@@ -128,7 +128,7 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 代理账户的“应用”页面最多可显示1000个应用。如果您账户下的授权应用超过1000个，则部分应用不会显示在列表中，但您仍可以通过搜索找到这些应用。
 
-![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+<Image align="center" alt="agency-apps.png" src="https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png" />
 
 <div id="searching-for-apps" />
 
@@ -151,7 +151,7 @@ AppsFlyer的归因原理是非常重要的核心知识点，建议您先了解�
 
 您仅需点击应用列表中的相关应用，就能进入其<Anchor target="_blank" href="/marketers/zh/docs/getting-started-with-appsflyer-dashboards">面板</Anchor>。投放广告时，您可以在面板中查看归因给您的汇总数据。
 
-![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
+<Image align="center" alt="agency-dashboard.png" src="https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png" />
 
 代理账户的面板默认具备以下功能：
 

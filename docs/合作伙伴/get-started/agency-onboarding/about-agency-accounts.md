@@ -176,7 +176,7 @@ x-zendesk:
 
 如果归因链接中的`af_prt`参数填充了代理名称，那么新增激活就能被归因到您使用的代理账号。否则，这些激活会直接归因到相关的广告平台。
 
-[![agency-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
+<Image align="center" alt="agency-af-prt.png" src="https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png" />
 
 **请勿使用广告主侧的链接**：请务必使用您自己帐户中的链接，以防导致错误归因。
 

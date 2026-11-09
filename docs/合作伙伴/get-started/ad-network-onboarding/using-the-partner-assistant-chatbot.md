@@ -29,11 +29,11 @@ The Partner Assistant Chatbot directs your issues to the appropriate team, cover
 **To reach the Partner Assistant Chatbot:**
 
 1. From the top menu bar, select **Help** > **Contact our team**. The Assistant Chatbot opens.  
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 
 2. Select the **Ticket Type** from the list item and fill in all information.
 
-<Image alt="partner-facing.png" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
+<Image align="center" alt="partner-facing.png" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
 
 **Note:** Agencies don't have the "Integration issues or Updates" option.
 

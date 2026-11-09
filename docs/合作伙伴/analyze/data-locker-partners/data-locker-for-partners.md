@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 合作渠道（包括广告平台和代理）专用的Data Locker可将应用数据传输至合作渠道在AWS、GCS或BigQuery中的存储空间。
 
-![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
+<Image align="center" alt="6133DataLockerForPartners.png" src="https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png" />
 
 <div id="data-locker-for-partners" />
 
@@ -69,7 +69,7 @@ Data Locker会将数据写入您指定的存储工具中。您可随时切换存
 
 Data Locker以分级的目录结构将数据写入存储桶中，分级维度为报告类型、日期和时间。下图为目录结构示例：下图为目录结构示例：
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 具体报告的数据保存在该报告类型下的小时数（h）文件夹中。
 

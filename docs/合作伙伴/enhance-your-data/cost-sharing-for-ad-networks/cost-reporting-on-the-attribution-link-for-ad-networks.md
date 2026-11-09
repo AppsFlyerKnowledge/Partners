@@ -31,7 +31,7 @@ x-zendesk:
 
 广告主常常会通过“按ROI排序”查看表现最佳的合作渠道。未对接成本数据的渠道始终会排在列表底部，难以获得关注。
 
-![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
+<Image align="center" alt="" src="https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png" />
 
 <div id="how-to-share-cost" />
 
