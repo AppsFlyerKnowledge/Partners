@@ -76,7 +76,7 @@ Pour recevoir les postbacks AppsFlyer, les partenaires doivent contacter l'équi
 
 Pour contacter l'assistance des partenaires AppsFlyer, ouvrez le menu **Assistance** de votre tableau de bord et sélectionnez **Contacter notre équipe**.
 
-[![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
+<Image align="center" alt="alt" src="https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif" />
 
 </Accordion>
 

@@ -60,13 +60,13 @@ Limitations:
 
 * Ad networks cannot access the Anomalies dashboard.
 
-[![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
+<Image align="center" alt="p360_dashboard_1.jpg" src="https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg" />
 
 * Ad networks and Agencies cannot access the fraud protection studio, or the raw data level of tagged data. They can, however, see it aggregated in the Protect360 dashboard under tagged attribution and tagged in-app events. As well as identify fraud by tag type (new release etc) . To learn more about FPS see <Anchor target="_blank" href="/marketers/fr/docs/beta-fraud-protection-studio">this article</Anchor>.
 
-  <Image alt="" src="https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png" width="624px" />
+  <Image align="center" alt="" src="https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png" width="624px" />
 
-  <Image alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
+  <Image align="center" alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
 
 ### Raw-data reports
 

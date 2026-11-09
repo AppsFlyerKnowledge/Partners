@@ -176,7 +176,7 @@ La valeur de `af_prt` est le nom de l'agence. Le nom de l’agence présent dans
 
 Le fait de disposer de `af_prt` avec le nom de votre agence sur un lien d'attribution qui entraîne de nouvelles installations permet d'attribuer de nouvelles installations à votre compte agence.
 
-![agency-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
+<Image align="center" alt="agency-af-prt.png" src="https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png" />
 
 Sans `af_prt`, une nouvelle installation ne peut pas être attribuée à un compte agence, et par conséquent, elle est attribuée directement au réseau publicitaire.
 

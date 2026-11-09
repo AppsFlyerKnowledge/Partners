@@ -34,7 +34,7 @@ x-zendesk:
 
 Avec les URLs d'impression multiplateformes d'AppsFlyer, vous pouvez attribuer les installations d'applications mobiles aux publicités affichées sur CTV. Plusieurs installations au sein d’un même foyer peuvent être attribuées à la même impression publicitaire sur CTV.
 
-![50310_CTV_flow_chart__2_.jpg](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
+<Image align="center" alt="50310_CTV_flow_chart__2_.jpg" src="https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg" />
 
 L'attribution des publicités CTV aux applications mobiles utilise une <Anchor target="_blank" href="/marketers/fr/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup">URL d'impression OneLink</Anchor> basée sur un modèle OneLink multiplateforme (avec un ID de modèle) créé par les annonceurs. Cela permet aux annonceurs de regrouper plusieurs applications de différentes plates-formes (par exemple, applications Android et iOS) à l'aide d'une seule URL.
 

@@ -43,7 +43,7 @@ Les réseaux publicitaires partagent les coûts avec AppsFlyer en utilisant l'un
 
 ### Badge de coût pour les réseaux publicitaires
 
-![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
+<Image align="center" alt="CostBadge.jpg" src="https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg" />
 
 * Un badge de coût s'affiche dans la <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations#page-partenaire">page de profil du partenaire</Anchor>, mettant en évidence les partenaires utilisant l'API InCost ou Cost.
 * Le badge certifie que le partenaire en question sait maîtriser ses coûts.

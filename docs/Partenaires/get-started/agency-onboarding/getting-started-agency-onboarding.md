@@ -36,7 +36,7 @@ x-zendesk:
 
 Avant de continuer, vous devez comprendre comment fonctionne l'attribution d'AppsFlyer. Cette section explique ce qui se passe entre le premier clic ou la première impression et l'attribution d'une installation ou d'un événement — et ensuite.
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+<Image align="center" alt="ua-agency-flow.png" src="https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png" />
 
 1. Un marketeur ou une agence au nom du marketeur, configure une campagne avec un certain ad network à l'aide des liens d'attribution AppsFlyer.
 2. Un utilisateur clique sur l'une de ses annonces – par exemple une bannière ou un lien vers une offre.
@@ -92,7 +92,7 @@ Lorsque votre compte est opérationnel, l'admin du compte (la personne qui a ouv
 
 Lorsque vous créez votre compte pour la première fois, aucune app ne lui est associée :
 
-![agency-start.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+<Image align="center" alt="agency-start.png" src="https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png" />
 
 Tout employé ou équipe d'agence nécessite l'autorisation du propriétaire de l'app pour :
 
@@ -126,7 +126,7 @@ Une fois que vous avez obtenu la permission du marketeur, l'app apparaît sur la
 
 La page des apps de votre compte répertorie jusqu'à 1000 apps. Si la liste des apps pour lesquelles vous disposez d'autorisations dépasse 1000 apps, certaines d'entre elles ne s'affichent pas dans la liste. Vous pouvez les trouver à l'aide de la recherche.
 
-![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+<Image align="center" alt="agency-apps.png" src="https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png" />
 
 <div id="searching-for-apps" />
 
@@ -167,7 +167,7 @@ Alors que le secteur favorise un écosystème plus transparent, AppsFlyer soutie
 
 Cliquez sur une app dans la liste pour accéder à son <Anchor target="_blank" href="/marketers/fr/docs/getting-started-with-appsflyer-dashboards">tableau de bord</Anchor>. Lorsque vous commencez à mener des campagnes, les données agrégées qui vous sont attribuées s'affichent ici.
 
-![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
+<Image align="center" alt="agency-dashboard.png" src="https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png" />
 
 Le tableau de bord du compte de l'Agence comprend un accès par défaut aux éléments suivants :
 

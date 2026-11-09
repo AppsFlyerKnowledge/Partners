@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **At a glance:** Data Locker for partners (ad networks and agencies) delivers app data to the partner's storage in AWS, GCS, or BigQuery.
 
-![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
+<Image align="center" alt="6133DataLockerForPartners.png" src="https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png" />
 
 ## Data Locker for partners
 
@@ -66,7 +66,7 @@ Data is written to your selected storage option. You can switch from one option 
 
 Data in the cloud bucket storage is organized in a hierarchical folder structure, according to report type, date, and time. The following figure contains an example of this structure:
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 Data of a given report is contained in the hour (h) folders associated with that report.
 

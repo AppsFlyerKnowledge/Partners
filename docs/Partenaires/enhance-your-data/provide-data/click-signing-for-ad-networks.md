@@ -54,7 +54,7 @@ Les signatures permettent à AppsFlyer de valider les clics et de garantir que l
 
 Le tableau suivant décrit le flux depuis le développement initial et les tests de base jusqu'aux tests de production, et enfin, à la production. 
 
-![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+<Image align="center" alt="Click_signing_integration_flow.png" src="https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png" />
 
 <div id="procedure" />
 

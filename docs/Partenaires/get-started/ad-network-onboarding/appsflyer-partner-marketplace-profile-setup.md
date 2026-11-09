@@ -39,7 +39,7 @@ Pour modifier la page de votre Marketplace des partenaires : dans le tableau de 
 
 Dans cette section, vous pouvez ajouter et modifier les infos sur votre entreprise.
 
-![partenaire](https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png)
+<Image align="center" alt="partenaire" src="https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png" />
 
 Pour voir à quoi ressemble votre page dans le marketplace (sans possibilité de navigation), cliquez sur **Voir la page publiée**.
 
@@ -91,7 +91,7 @@ La liste des établissements de votre entreprise.
 
 Dans cette section, ajoutez les détails des services que vous proposez. Nous recommandons d'ajouter autant d'informations que possible pour faciliter la recherche dans le marketplace des partenaires.
 
-[![partenaire](https://files.readme.io/24be219c61499c8a404bc72eaa070c23f273aeb4026fdf8199ed4cc86bb4106b-16157082772625.png)](https://files.readme.io/24be219c61499c8a404bc72eaa070c23f273aeb4026fdf8199ed4cc86bb4106b-16157082772625.png)
+<Image align="center" alt="partenaire" src="https://files.readme.io/24be219c61499c8a404bc72eaa070c23f273aeb4026fdf8199ed4cc86bb4106b-16157082772625.png" />
 
 Pour ajouter ou modifier les informations sur vos services, cliquez sur le nom du service.
 

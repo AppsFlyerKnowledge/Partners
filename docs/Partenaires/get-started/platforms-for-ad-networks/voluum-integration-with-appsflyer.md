@@ -77,7 +77,7 @@ https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary
 
 ### AppsFlyer's in-app event dashboard
 
-![Voluum_msc_new_1.png](https://files.readme.io/bb58ccaabf1eb8d615288d259102b3dc7883c5c79448131c67374ad8fbdaf6c0-360002325069.png)  
+<Image align="center" alt="Voluum_msc_new_1.png" src="https://files.readme.io/bb58ccaabf1eb8d615288d259102b3dc7883c5c79448131c67374ad8fbdaf6c0-360002325069.png" />
 ** Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, etc.
 
 ## Finalizing your registration
