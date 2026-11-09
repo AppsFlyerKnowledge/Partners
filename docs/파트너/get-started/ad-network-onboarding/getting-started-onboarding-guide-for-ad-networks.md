@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 귀사의 어트리뷰션 링크 및 포스트백 연동을 설정하고 테스트하여 앱스플라이어와 완벽하게 연동하세요. 프로세스의 단계, 일정 및 종속성을 이해하세요.
 
-![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
+<Image align="center" alt="AdNetworks_-_Onboarding__2_.png" src="https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png" />
 
 <div id="what-is-appsflyer" />
 

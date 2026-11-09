@@ -30,7 +30,7 @@ x-zendesk:
 
 앱스플라이어 크로스 플랫폼 노출 URL을 사용하면 모바일 앱 인스톨을 CTV에 표시된 광고에 귀속시킬 수 있습니다. 한 가구 내에서 여러 번의 인스톨이 동일한 CTV 광고 노출에 의해 측정될 수 있습니다.
 
-![50310_CTV_흐름_차트__2_.jpg](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
+<Image align="center" alt="50310_CTV_흐름_차트__2_.jpg" src="https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg" />
 
 CTV-모바일 앱 뷰-쓰루 어트리뷰션은 광고주가 만든 크로스 플랫폼 원링크 템플릿(템플릿 ID 포함)을 기반으로 한 <Anchor target="_blank" href="/marketers/ko/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup">원링크 노출 URL</Anchor>을 사용합니다. 이를 통해 광고주는 단일 URL을 사용하여 다양한 플랫폼(예: 안드로이드 및 iOS 앱)의 여러 앱을 그룹화할 수 있습니다.
 

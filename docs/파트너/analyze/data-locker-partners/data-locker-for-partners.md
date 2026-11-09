@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 파트너(광고 네트워크 및 에이전시)용 데이터 락커는 앱 데이터를 AWS, GCS 또는 BigQuery에 있는 파트너의 스토리지로 전달합니다.
 
-![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
+<Image align="center" alt="6133DataLockerForPartners.png" src="https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png" />
 
 <div id="data-locker-for-partners" />
 
@@ -69,7 +69,7 @@ x-zendesk:
 
 클라우드 버킷 스토리지의 데이터는 보고서 유형, 날짜 및 시간에 따라 계층적 폴더 구조로 구성됩니다. 다음 그림은 이 구조의 예를 표시합니다:
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 지정된 리포트의 데이터는 해당 리포트와 연결된 시간(h) 폴더에 포함됩니다.
 

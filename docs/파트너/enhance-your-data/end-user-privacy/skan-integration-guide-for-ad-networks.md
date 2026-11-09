@@ -48,7 +48,7 @@ x-zendesk:
 
 ## SKAN 데이터 흐름
 
-![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
+<Image align="center" alt="5754_Postback_flow_for_SKAD__1_.png" src="https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png" />
 
 전체 SKAN 포스트백 흐름은 다음과 같습니다.
 
@@ -230,7 +230,7 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
 
 <Accordion title="리다이렉트">
 
-![Redirect_us-en__2_.png](https://files.readme.io/17d4a668cde784a2f823e702e04fc75a2bbbdb483e44d9d10edfad03d865bbb7-360012352758.png)
+<Image align="center" alt="Redirect_us-en__2_.png" src="https://files.readme.io/17d4a668cde784a2f823e702e04fc75a2bbbdb483e44d9d10edfad03d865bbb7-360012352758.png" />
 
 이 방법을 사용하여 광고 네트워크는 HTTP 리디렉션 명령(307)으로 디바이스에 응답하여 디바이스에 앱스플라이어에 직접 포스트백을 전송하도록 요청합니다. 
 

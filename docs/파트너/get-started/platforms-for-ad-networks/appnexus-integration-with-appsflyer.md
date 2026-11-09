@@ -78,7 +78,7 @@ https://sspx-router.adnxs.net/sspx?id={ID}&sspdata={clickid}
 
 ### AppsFlyer install dashboard
 
-[![appnexus-pixelid.png](https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png)](https://support.appsflyer.com/hc/article_attachments/51858346485393)
+[<Image align="center" alt="appnexus-pixelid.png" src="https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png" />](https://support.appsflyer.com/hc/article_attachments/51858346485393)
 
 Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, and so on.
 

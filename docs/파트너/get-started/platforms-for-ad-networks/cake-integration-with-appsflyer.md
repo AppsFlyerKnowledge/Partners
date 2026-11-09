@@ -84,7 +84,7 @@ Click-ID
 광고주가 각 앱의 앱스플라이어 대시보드에서 **이벤트 태그**로 설정한 앱의 실제 인앱 이벤트 이름
 
 
-![IAEP.png](https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png)
+<Image align="center" alt="IAEP.png" src="https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png" />
 
 <span id="appsflyer-in-app-events-dashboard"></span><span id="appsflyer-inapp-events-dashboard"></span>요청에 따라 국가 코드, 광고 ID, IDFA 등과 같은 추가 어트리뷰션 정보를 포스트백에 추가할 수 있습니다.
 

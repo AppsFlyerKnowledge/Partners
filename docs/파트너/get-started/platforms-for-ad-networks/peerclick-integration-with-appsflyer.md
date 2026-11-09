@@ -85,7 +85,7 @@ https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 
 ### 앱스플라이어의 인앱 이벤트 대시보드
 
-![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
+<Image align="center" alt="Voluum_msc_new_1.png" src="https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png" />
 요청에 따라 국가 코드, 광고 ID, IDFA 등과 같은 추가 어트리뷰션 정보를 포스트백에 추가할 수 있습니다.
 
 <div data-zendesk-anchors="starting-the-integration=%EC%97%B0%EB%8F%99-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0 h_01HKHFT3RFWF5H349GP7MHDAYX=%EC%97%B0%EB%8F%99-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0 h_01HM8M27S5WFJVKBG0JAFW548H=%EC%B0%B8%EA%B3%A0 complete-attribution-link-template=%EC%A0%84%EC%B2%B4-%EC%96%B4%ED%8A%B8%EB%A6%AC%EB%B7%B0%EC%85%98-%EB%A7%81%ED%81%AC-%ED%85%9C%ED%94%8C%EB%A6%BF h_01HKHFT3RFDW6GZM3E72SYPJSD=%EC%A0%84%EC%B2%B4-%EC%96%B4%ED%8A%B8%EB%A6%AC%EB%B7%B0%EC%85%98-%EB%A7%81%ED%81%AC-%ED%85%9C%ED%94%8C%EB%A6%BF install-and-inapp-event-postbacks=%EC%9D%B8%EC%8A%A4%ED%86%A8-%EB%B0%8F-%EC%9D%B8%EC%95%B1-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 h_01HKHFT3RF1PTSJ4SF9RTQ93N8=%EC%9D%B8%EC%8A%A4%ED%86%A8-%EB%B0%8F-%EC%9D%B8%EC%95%B1-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 appsflyers-inapp-event-dashboard=%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4%EC%9D%98-%EC%9D%B8%EC%95%B1-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C h_01HKHFT3RFDVPCSKJGZPRFB55V=%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4%EC%9D%98-%EC%9D%B8%EC%95%B1-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C" />

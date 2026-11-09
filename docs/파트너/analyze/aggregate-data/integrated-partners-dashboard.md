@@ -64,7 +64,7 @@ Download the relevant Postbacks report and look for the **Postback URL** and *
 * If the response code is 200, AppsFlyer sent the postback and received acknowledgment from the ad network.
 * If the response code is missing, AppsFlyer sent the postback but received no response. The **Postback Error Message** field describes the problem.
 
-[![](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)
+<Image align="center" alt="" src="https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png" />
 
 ## Viewing configuration settings and data
 

@@ -34,7 +34,7 @@ x-zendesk:
 > * 사용자 기기는 iOS 14.5 이상입니다.
 > * Advanced Privacy가 설정되어 있습니다.
 
-![AdvancedPrivacy.png](https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png)
+<Image align="center" alt="AdvancedPrivacy.png" src="https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png" />
 
 본 문서에서는 다음을 논의합니다. 
 
@@ -61,7 +61,7 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
  기본 설정은 켜기입니다.
 
-![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
+<Image align="center" alt="APforPartners2.png" src="https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png" />
 
 <div id="types-of-templates-for-sending-postbacks" />
 
@@ -101,7 +101,7 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 
 * 어트리뷰트 해제 파트너: **인앱이벤트 포스트백 >** **보내기 옵션**이 **오가닉을 포함한 모든 미디어소스**로 설정된 경우 이벤트로 대변되지 않는 연동 파트너. 만약 광고주 앱이 ATT 동의를 갖는다면, 포스트백은 어트리뷰트 데이터가 없는 사용자 ID를 포함합니다. (이 옵션은 모든 광고 네트워크에서 지원되지 않습니다.)  
 
-  ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+  <Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 <div id="web-campaigns" />
 
@@ -317,7 +317,7 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
 2. 프라이버시 강화 모드:
 3. 빌더를 활성화합니다.  
 
-   ![postback-management-enter-endpoint_en-us.png](https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png)
+   <Image align="center" alt="postback-management-enter-endpoint_en-us.png" src="https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png" />
 4. **엔드포인트 주소**를 입력하십시오.  설치 및/또는 인앱이벤트에 대한 해당 URL을 입력합니다.
 5. 다음과 같이 포스트백에 포함할 파라미터를 입력합니다.
    * 파라미터 이름
@@ -326,15 +326,15 @@ AP가 켜져 있을 때, iOS 14.5 이상을 실행하는 비동의 사용자에 
    * **인스톨**: 인스톨 포스트백에 파라미터를 포함하도록 상자를 선택합니다.
    * **인앱이벤트**: 인앱이벤트 포스트백에 파라미터를 포함하도록 상자를 선택합니다.
 
-   ![postback-management-parameters_en-us.png](https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png)
+   <Image align="center" alt="postback-management-parameters_en-us.png" src="https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png" />
 
    [Advanced Privacy 포스트백 매크로](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)의 전체 목록.
 6. **[선택사항]** 앱스플라이어에서 제공하지 않는 사용자정의 파라미터를 추가합니다.
 
-   ![postback-management-custom-parameters_en-us.png](https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png)
+   <Image align="center" alt="postback-management-custom-parameters_en-us.png" src="https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png" />
 7. 최종 포스트백 템플릿 미리보기를 확인하여 모든 것이 올바른지 확인하십시오.
 
-   ![postback-management-template_en-us.png](https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png)
+   <Image align="center" alt="postback-management-template_en-us.png" src="https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png" />
 8. **저장**을 클릭하세요. 포스트백을 저장하면 변경사항이 즉시 적용된다는 점을 알아두십시오.
 
 문제가 있는 경우 <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">Partner Assistant 위젯</Anchor>을 사용하여 당사에 문의하십시오.

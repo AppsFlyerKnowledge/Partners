@@ -31,7 +31,7 @@ x-zendesk:
 
 광고주는 ROI에 따라 정렬하여 성과가 가장 좋은 파트너를 확인합니다. 비용 데이터가 없는 항목은 항상 목록의 바닥에 표시됩니다.
 
-![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
+<Image align="center" alt="" src="https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png" />
 
 <div id="how-to-share-cost" />
 

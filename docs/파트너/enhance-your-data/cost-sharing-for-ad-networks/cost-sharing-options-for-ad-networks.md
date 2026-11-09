@@ -43,7 +43,7 @@ x-zendesk:
 
 ### 애드 네트워크를 위한 비용 배지
 
-![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
+<Image align="center" alt="CostBadge.jpg" src="https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg" />
 
 * 비용 배지는 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#partner-details-and-performance">파트너 세부 정보 페이지</Anchor>에 표시되며, InCost 또는 Cost API를 사용하는 파트너임을 강조합니다.
 * 배지는 파트너가 비용 처리 역량이 있는 파트너임을 인증합니다.

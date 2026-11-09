@@ -36,7 +36,7 @@ x-zendesk:
 
 진행하기 전에 앱스플라이어의 어트리뷰션 작업 방식을 이해하는 것이 필수입니다. 이 섹션에서는 첫 번째 클릭 또는 광고 노출로부터 인스톨 또는 이벤트의 어트리뷰션, 그리고 그 이후까지 이르는 길을 따라 발생하는 상황에 대해 설명합니다.
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+<Image align="center" alt="ua-agency-flow.png" src="https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png" />
 
 1. 마케터 또는 마케터를 대신하는 에이전시는 앱스플라이어 어트리뷰선 링크를 사용하여 특정 광고 네트워크를 통한 캠페인을 설정합니다.
 2. 사용자가 자신의 광고, 예를 들어, 배너 또는 오퍼 링크 중 하나를 클릭합니다.
@@ -92,7 +92,7 @@ x-zendesk:
 
 계정을 처음 생성했을 때는 이 계정과 연관된 앱이 없습니다.
 
-![agency-start.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+<Image align="center" alt="agency-start.png" src="https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png" />
 
 에이전시의 개인 또는 팀은 앱 소유자에게 다음 권한을 요구합니다.
 
@@ -128,7 +128,7 @@ x-zendesk:
 
 계정의 앱 페이지는 최대 1000 개의 앱을 나열합니다. 권한이 있는 앱 목록이 1,000을 초과하면 일부 앱이 목록에 표시되지 않습니다. 검색을 사용하면 여전히 찾을 수는 있습니다.
 
-![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+<Image align="center" alt="agency-apps.png" src="https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png" />
 
 <div id="searching-for-apps" />
 
@@ -152,7 +152,7 @@ x-zendesk:
 
 앱 목록에서 원하는 앱을 클릭하여 앱의 <Anchor target="_blank" href="/marketers/ko/docs/getting-started-with-appsflyer-dashboards">대시보드</Anchor>에 액세스합니다. 캠페인 실행을 시작하면 어트리뷰트된 집계 데이터가 여기에 표시됩니다.
 
-![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
+<Image align="center" alt="agency-dashboard.png" src="https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png" />
 
 에이전시 계정 대시보드에는 다음 항목에 대한 기본 액세스 권한이 포함되어 있습니다.
 
