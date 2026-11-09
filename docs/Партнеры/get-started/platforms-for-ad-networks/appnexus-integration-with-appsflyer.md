@@ -86,7 +86,7 @@ https://sspx-router.adnxs.net/sspx?id={ID}&sspdata={clickid}
 
 ### Дэшборд установок AppsFlyer
 
-[<Image align="center" alt="appnexus-pixelid.png" src="https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png" />](https://support.appsflyer.com/hc/article_attachments/49929594144273)
+<Image align="center" alt="appnexus-pixelid.png" src="https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png" />
 
 По запросу в постбэк можно добавить дополнительную информацию об атрибуции, например код страны, рекламный идентификатор, IDFA и т. д.
 
