@@ -57,6 +57,6 @@ x-zendesk:
    <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">Узнать больше</Anchor> о параметрах ссылки атрибуции.
 4. В Venedash создайте оффер и вставьте ссылку атрибуции AppsFlyer в поле URL-адрес назначения.
 
-   ![venedash-destination_url-en_us.png](https://files.readme.io/2a284eab8d25f57f1bfa2981e2d86bf16bce16b64b61858fdb819d5ac14eac20-360016242798.png)
+   <Image align="center" alt="venedash-destination_url-en_us.png" src="https://files.readme.io/2a284eab8d25f57f1bfa2981e2d86bf16bce16b64b61858fdb819d5ac14eac20-360016242798.png" />
 
 <div data-zendesk-anchors="venedash-integration-setup=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-venedash h_01HKW87R2DGCXHZSVSV9D9203Z=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-venedash" />

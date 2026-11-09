@@ -31,7 +31,7 @@ x-zendesk:
 
 Рекламодатели нередко смотрят, какие из партнёров являются наиболее эффективными, сортируя всех партнёров по ROI. Те, кто не передаёт данные о затратах, всегда оказываются внизу списка.
 
-![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
+<Image align="center" alt="" src="https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png" />
 
 <div id="how-to-share-cost" />
 

@@ -49,7 +49,7 @@ x-zendesk:
 
 Когда в поле ввода появится зелёная галочка, нажмите синюю стрелку. При клике по стрелке открывается дэшборд приложения.
 
-[![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
+<Image align="center" alt="partner-app-search.png" src="https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png" />
 
 <div id="testing-live-apps" />
 
@@ -73,7 +73,7 @@ x-zendesk:
 
 Добавьте в ссылку атрибуции параметры в соответствии с вашими требованиями и данными, которые вы хотите записывать.
 
-[![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
+<Image align="center" alt="partner-configure-attribution-link.png" src="https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png" />
 
 <div id="tip" />
 
@@ -109,7 +109,7 @@ x-zendesk:
 
 На экране появится такое окно:
 
-[![app-not-available.png](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)
+<Image align="center" alt="app-not-available.png" src="https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png" />
 
 Это ожидаемый результат. Поскольку приложение неактивно, ссылка атрибуции не ведет ни в один магазин приложений. Однако ссылка атрибуции по-прежнему действительна для целей атрибуции. Ссылка атрибуции и ее параметры записываются на серверах AppsFlyer, а эти данные используются для атрибуции.
 
@@ -143,7 +143,7 @@ x-zendesk:
 
 В дэшборде AppsFlyer для вашего приложения в боковом меню выберите **Активные интеграции** и выберите нужную рекламную сеть. На вкладке **Integration** прокрутите вниз до раздела **In-app event settings**. Выберите событие в приложении и сопоставьте его с соответствующим событием:
 
-[![partner-in-app-events-postbacks-mapping.png](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)
+<Image align="center" alt="partner-in-app-events-postbacks-mapping.png" src="https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png" />
 
 </Accordion>
 

@@ -43,7 +43,7 @@ x-zendesk:
 
 ### Значок затрат для рекламных сетей
 
-![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
+<Image align="center" alt="CostBadge.jpg" src="https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg" />
 
 * На <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#partner-details-and-performance">странице сведений о партнерах</Anchor> отображается значок затрат, указывающий партнеров, использующих InCost или Cost API.
 * Значок подтверждает, что партнер является экономически состоятельным.

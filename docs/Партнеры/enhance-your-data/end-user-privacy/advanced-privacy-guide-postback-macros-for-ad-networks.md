@@ -36,7 +36,7 @@ x-zendesk:
 > * Устройство пользователя под управлением iOS 14.5+
 > * Режим расширенной конфиденциальности включен
 
-![AdvancedPrivacy.png](https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png)
+<Image align="center" alt="AdvancedPrivacy.png" src="https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png" />
 
 Основные темы статьи:
 
@@ -63,7 +63,7 @@ AP не влияет на доступность агрегированных д
 
 Текущие настройки режима AP для каждого приложения можно просмотреть на дэшборде AppsFlyer. Перейдите в **Настройки** > **Активные интеграции** > выберите вашу рекламную сеть > **вкладка Интеграция.** По умолчанию режим включен.
 
-![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
+<Image align="center" alt="APforPartners2.png" src="https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png" />
 
 <div id="types-of-templates-for-sending-postbacks" />
 
@@ -102,7 +102,7 @@ AP не влияет на доступность агрегированных д
 * Атрибутированный партнер: рекламная сеть, которой засчитано событие
 * Неатрибутированный партнер: интегрированный партнер, которому событие не засчитано, когда в разделе **In-app events postback** (Постбэк по внутреннему событию) в качестве **Sending option** (Вариант отправки) задано значение **All media sources including organic** (Все медиа-источники, включая органические). Если для приложения рекламодателя есть согласие на ATT, постбэк содержит идентификаторы пользователей без данных атрибуции. (Этот вариант поддерживается не всеми рекламными сетями.)
 
-  ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+  <Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 <div id="web-campaigns" />
 
@@ -322,7 +322,7 @@ AP действует иначе, когда рекламная сеть пок�
 2. Выберите тип постбэка: **Advanced Privacy.**
 3. Активируйте конструктор.
 
-   ![postback-management-enter-endpoint_en-us.png](https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png)
+   <Image align="center" alt="postback-management-enter-endpoint_en-us.png" src="https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png" />
 4. Введите **адрес конечной точки**: URL-адрес конечной точки, на который AppsFlyer будет отправлять постбэки. Введите действительные URL-адреса для установок и/или внутренних событий приложения.
 5. Введите параметры, которые требуется включать в постбэки:
 
@@ -332,15 +332,15 @@ AP действует иначе, когда рекламная сеть пок�
    * **Установка**: установите флажок, чтобы включить параметр в постбэк установки.
    * **Внутреннее событие**: установите флажок, чтобы включить параметр в постбэк внутреннего события приложения.
 
-   ![postback-management-parameters_en-us.png](https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png)
+   <Image align="center" alt="postback-management-parameters_en-us.png" src="https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png" />
 
    Полный список [макросов, поддерживаемых в постбэках в режиме расширенной конфиденциальности](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification).
 6. **[Необязательно]** Добавьте свои параметры, которые не предоставляются AppsFlyer:
 
-   ![postback-management-custom-parameters_en-us.png](https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png)
+   <Image align="center" alt="postback-management-custom-parameters_en-us.png" src="https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png" />
 7. Откройте превью окончательного шаблона постбэка, чтобы убедиться, что все верно.
 
-   ![postback-management-template_en-us.png](https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png)
+   <Image align="center" alt="postback-management-template_en-us.png" src="https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png" />
 8. Нажмите **Сохранить**. Обратите внимание, что при сохранении постбэка изменения сразу вступают в силу.
 
 Если возникнут проблемы, свяжитесь с нами через <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">виджет помощи партнерам</Anchor>.

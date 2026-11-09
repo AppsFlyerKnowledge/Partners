@@ -179,7 +179,7 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 
 Откройте дэшборд AppsFlyer и кликните **Re-targeting** в меню слева. Данные об установке, выполненной в результате ретаргетинга, появятся на дэшборде в течение 30 минут.
 
-[![com_appsflyer_adNetworkTest-retargeting.png](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)
+<Image align="center" alt="com_appsflyer_adNetworkTest-retargeting.png" src="https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png" />
 
 </Accordion>
 
@@ -210,7 +210,7 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 8. Запустите приложение.  
    Откроется следующая страница:
 
-   ![vta-testing-postback.png](https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png)
+   <Image align="center" alt="vta-testing-postback.png" src="https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png" />
 
    Если вы не видите это сообщение, убедитесь, что ссылка атрибуции по просмотрам сформирована правильно. Удалите приложение и установите его заново, используя ссылку атрибуции по просмотрам на новом тестовом устройстве.
 

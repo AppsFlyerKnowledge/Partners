@@ -40,7 +40,7 @@ x-zendesk:
 1. В AppsFlyer кликните раскрывающееся меню в правом верхнем углу
 2. Выберите **Partner setup**.
 
-![партнер](https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png)
+<Image align="center" alt="партнер" src="https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png" />
 
 <div id="note" />
 
@@ -84,7 +84,7 @@ x-zendesk:
 * **Основные преимущества предложения:** Перечислите основные преимущества вашего предложения в виде маркированного списка.
 * **Описание предложения:** Предоставьте развернутое описание вашего предложения.
 
-![партнер](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
+<Image align="center" alt="партнер" src="https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png" />
 
 <div id="characteristics" />
 
@@ -99,7 +99,7 @@ x-zendesk:
 * **Поддерживаемые платформы:** Выберите все платформы, которые вы поддерживаете.
 * **Стандарты соблюдения правовых норм:** Выберите соответствующие стандарты соблюдения правовых норм, которых вы придерживаетесь.
 
-![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
+<Image align="center" alt="" src="https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png" />
 
 <div id="sales" />
 

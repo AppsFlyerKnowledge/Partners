@@ -65,13 +65,13 @@ AppsFlyer выявляет и блокирует мошенничество сл
 
 * Рекламные сети не могут получить доступ к дэшборду аномалий.
 
-[![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
+<Image align="center" alt="p360_dashboard_1.jpg" src="https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg" />
 
 * Рекламные сети и агентства не имеют доступа к Fraud protection studio или к уровню сырых данных размеченных данных. Однако они могут видеть их в агрегированном виде в дэшборде Protect360 в разделах Tagged attribution и Tagged in-app events. А также выявлять фрод по типу тега (новый релиз и т. д.). Чтобы узнать больше о FPS, смотрите <Anchor target="_blank" href="/marketers/ru/docs/beta-fraud-protection-studio">эту статью</Anchor>.
 
-  <Image alt="" src="https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png" width="624px" />
+  <Image align="center" alt="" src="https://files.readme.io/7e8bee04ecaf53148f65ae0aa9b2e3559a550bdbc5a5ebf9047a7e82dc093966-44928678660881.png" width="624px" />
 
-  <Image alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
+  <Image align="center" alt="" src="https://files.readme.io/fa35e6046d6c06579e602ccc1cb919e5312ec22055b3e29d3ead6b2a7ab5ea82-44928694758161.png" width="624px" />
 
 <div id="raw-data-reports" />
 

@@ -74,7 +74,7 @@ x-zendesk:
 * Если код ответа — 200, AppsFlyer отправил постбэк и получил подтверждение от рекламной сети.
 * Если код ответа отсутствует, AppsFlyer отправил постбэк, но не получил ответа. Поле **Postback Error Message** описывает проблему.
 
-[![](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)
+<Image align="center" alt="" src="https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png" />
 
 <div id="viewing-configuration-settings-and-data" />
 

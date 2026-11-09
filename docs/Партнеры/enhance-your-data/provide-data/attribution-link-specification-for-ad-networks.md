@@ -34,7 +34,7 @@ x-zendesk:
 
 Что происходит на пути от первого клика или просмотра до атрибуции установки или события и далее.
 
-[![appsflyer-attribution-model-for-partners.png](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)
+<Image align="center" alt="appsflyer-attribution-model-for-partners.png" src="https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png" />
 
 1. Пользователь кликает на баннер или на ссылку в предложении.
 2. Баннер или ссылка перенаправляют пользователя на ссылку атрибуции AppsFlyer. В ссылку атрибуции добавляются данные, собранные во время клика.

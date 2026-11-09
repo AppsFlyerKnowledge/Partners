@@ -155,7 +155,7 @@ https://companyname.156th.com/conv?transaction_id={publisher_ref_id}&ios_ifa={io
 
 Тег события — это значение, которое рекламодатель вводит при сопоставлении событий.
 
-![In-App_Events.png](https://files.readme.io/5fa9ea3c2428e0dce7ce6a8062ebdf9aca5b2f873cc4e3d76d815d83b3a72b64-360002301369.png)
+<Image align="center" alt="In-App_Events.png" src="https://files.readme.io/5fa9ea3c2428e0dce7ce6a8062ebdf9aca5b2f873cc4e3d76d815d83b3a72b64-360002301369.png" />
 
 Если имя партнера, использующего Hubscale, — PARTNER, то домен обычно будет таким: partner.156th.com.
 

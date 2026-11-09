@@ -83,18 +83,18 @@ x-zendesk:
    1. Проверьте, что тестовое приложение не установлено. При необходимости удалите его.
    2. В настройках конфиденциальности убедитесь, что параметр **Allow Apps to Request to Track** is on.  
 
-      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
+      <Image align="center" alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. Отправьте ссылку атрибуции на тестовое устройство.
 4. Откройте ссылку атрибуции в браузере устройства.  
    Вы будете перенаправлены в магазин приложений.
 5. Скачайте и откройте приложение.  
    Появится диалоговое окно согласия ATT.
 
-   ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
+   <Image align="center" alt="AppDialogue_us-en.png" src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" />
 6. Нажмите **Allow**.  
    Откроется страница **Install Data**.
 
-   [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+   <Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 7. Нажмите **ATT Status**.  
    Отобразится статус **Авторизовано**.
 8. Проверьте атрибуцию, используя следующие параметры. Если валидация не пройдена, см. раздел [Устранение неполадок](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
@@ -104,7 +104,7 @@ x-zendesk:
    3. `media_source`: ваша рекламная сеть
 9. Нажмите **Тесты in-app событий.**
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
+   <Image align="center" alt="AppPurchase.png" src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" />
 10. Нажмите **Событие покупки.**  
     Появится подтверждение события покупки.
 11. Проверьте, что:
@@ -134,17 +134,17 @@ x-zendesk:
    1. Убедитесь, что тестовое приложение не установлено. Удалите это при необходимости.
    2. В настройках конфиденциальности проверьте, что параметр **Allow Apps to Request to Track** включен.
 
-      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
+      <Image align="center" alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. Отправьте ссылку атрибуции на тестовое устройство.
 4. Откройте ссылку атрибуции в браузере на устройстве.  
    Вы будете перенаправлены в магазин приложений.
 5. Скачайте и откройте приложение.  
    Появится диалоговое окно согласия ATT.
 
-   ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
+   <Image align="center" alt="AppDialogue_us-en.png" src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" />
 6. Нажмите **Попросить приложение не отслеживать.** Отображается страница **Install Data**.
 
-   [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+   <Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 7. Нажмите **ATT Status**.  
    Отобразится статус **Denied**.
 8. Проверьте атрибуцию по перечисленным параметрам. Если валидация не пройдена, см. раздел [Troubleshooting](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
@@ -154,7 +154,7 @@ x-zendesk:
    3. `media_source`: ваша рекламная сеть
 9. Нажмите **In-App Event Tests.**
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
+   <Image align="center" alt="AppPurchase.png" src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" />
 10. Нажмите **Purchase Event.**
 11. Проверьте, что:
     1. Вы получили постбэки об установке и покупке.
@@ -184,7 +184,7 @@ x-zendesk:
 
 При первом открытии приложения появляется диалоговое окно iOS **запросить отслеживание**, после чего отображается страница **Данные установки** с данными конверсии, записанными на платформе AppsFlyer. Тестовые события в приложении запускаются в пользовательском интерфейсе.
 
-[<Image alt="PartnerIntegrationУстановкаData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+<Image align="center" alt="PartnerIntegrationУстановкаData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 
 Доступны следующие функции:
 
@@ -229,7 +229,7 @@ https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 
 <Accordion title="Настройте расширенную конфиденциальность">
 
-<Image alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
+<Image align="center" alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
 
 **Чтобы изменить настройку Enable Advanced Privacy:**
 

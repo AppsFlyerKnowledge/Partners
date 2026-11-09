@@ -37,7 +37,7 @@ x-zendesk:
 
 Прежде чем мы продолжим, важно разобраться, как работает атрибуция AppsFlyer. В этом разделе объясняется, что происходит на протяжении всего пути — от первого клика или просмотра до атрибуции установки или события — и далее.
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+<Image align="center" alt="ua-agency-flow.png" src="https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png" />
 
 1. Маркетолог или агентство от имени маркетолога настраивает кампанию с определенной рекламной сетью, используя ссылки атрибуции AppsFlyer.
 2. Пользователь кликает на одно из рекламных объявлений, например, на баннер или на ссылку в предложении.
@@ -93,7 +93,7 @@ x-zendesk:
 
 Когда вы только создали аккаунт, с ним еще не связаны приложения.
 
-![agency-start.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+<Image align="center" alt="agency-start.png" src="https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png" />
 
 Всем сотрудникам и командам агентства требуются разрешения от владельца приложения на:
 
@@ -133,7 +133,7 @@ x-zendesk:
 
 Страница приложений вашего аккаунта может содержать до 1000 приложений. Если приложений, по которым у вас есть разрешения, более 1000, в списке показываются не все приложения. Скрытые приложения можно найти через поиск.
 
-![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+<Image align="center" alt="agency-apps.png" src="https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png" />
 
 <div id="searching-for-apps" />
 
@@ -151,7 +151,7 @@ x-zendesk:
 
 Нажмите любое приложение из списка, чтобы открыть его <Anchor target="_blank" href="/marketers/ru/docs/getting-started-with-appsflyer-dashboards">дэшборд</Anchor>. Когда вы начнете проводить кампании, здесь будут отображаться агрегированные данные, атрибутированные вашему агентству.
 
-![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
+<Image align="center" alt="agency-dashboard.png" src="https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png" />
 
 C дэшборда аккаунта агентства есть доступ по умолчанию к следующим дэшбордам:
 

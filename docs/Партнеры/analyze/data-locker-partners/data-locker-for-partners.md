@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Data Locker для партнеров (рекламных сетей и агентств) доставляет данные приложения в хранилище партнера в AWS, GCS или BigQuery.
 
-![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
+<Image align="center" alt="6133DataLockerForPartners.png" src="https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png" />
 
 <div id="data-locker-for-partners" />
 
@@ -69,7 +69,7 @@ Data Locker для партнеров доставляет данные прил
 
 Данные в облачной корзине организованы с помощью иерархической структуры папок по типам отчетов, дате и времени. Ниже представлен пример такой структуры.
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 Данные конкретного отчета содержатся в папках по часам (h), связанных с этим отчетом.
 

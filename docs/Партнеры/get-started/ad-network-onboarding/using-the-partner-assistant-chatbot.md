@@ -31,11 +31,11 @@ x-zendesk:
 **Чтобы открыть чатбот «Помощник партнера»:**
 
 1. В верхнем меню выберите **Помощь** > **Связаться с нашей командой**. Откроется чатбот «Помощник».  
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 
 2. Выберите **тип тикета** из списка и заполните всю информацию.
 
-<Image alt="partner-facing.png" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
+<Image align="center" alt="partner-facing.png" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
 
 **Примечание:** у агентств нет варианта «Проблемы интеграции или обновления».
 

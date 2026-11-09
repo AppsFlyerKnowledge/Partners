@@ -78,7 +78,7 @@ AppsFlyer предоставляет партнерам информацию о 
 
 Чтобы связаться со службой поддержки партнеров AppsFlyer, откройте меню **Справка** на дэшборде и выберите **Связаться с нами**.
 
-[![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
+<Image align="center" alt="alt" src="https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif" />
 
 </Accordion>
 

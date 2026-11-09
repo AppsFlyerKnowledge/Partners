@@ -58,6 +58,6 @@ x-zendesk:
 
 Если тот же или другой пользователь затем завершает уровень 25, AppsFlyer снова обращается к ссылке атрибуции, динамически подставляет в goal\_id соответствующее значение (в данном случае YYY) и отправляет его в постбэке.
 
-![Goadid.png](https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png)
+<Image align="center" alt="Goadid.png" src="https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png" />
 
 <div data-zendesk-anchors="introduction=%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5 attribution-link=%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D0%B8" />
