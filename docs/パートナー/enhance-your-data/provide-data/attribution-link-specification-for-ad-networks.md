@@ -34,7 +34,7 @@ x-zendesk:
 
 このセクションでは、最初のクリックまたはインプレッションからインストール / イベントの紐付けに至るまでの過程で何が起こるかを説明しています。
 
-[![appsflyer-attribution-model-for-partners.png](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)](https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png)
+<Image align="center" alt="appsflyer-attribution-model-for-partners.png" src="https://files.readme.io/3f7536b15513a38dde0cdd82c889fc299a094a99339901cafcd6cd06c323b005-17990516210449.png" />
 
 1. ユーザーがバナーやリンクをクリック。
 2. そのバナーやリンクは、ユーザーをAppsFlyerの計測リンクへリダイレクトし、AppsFlyerの計測リンクには、このクリック中に収集された情報が入力される。

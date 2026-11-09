@@ -43,7 +43,7 @@ x-zendesk:
 
 ### コスト連携のバッジ
 
-![CostBadge.jpg](https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg)
+<Image align="center" alt="CostBadge.jpg" src="https://files.readme.io/6b660b68b932802f7982a3beb3a155ecc350de1b4cb3baede6e84ef0d704388c-360011247338.jpg" />
 
 * <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーページ">パートナー詳細ページに</Anchor>、InCostまたはCost APIを使用しているパートナーを示すコストバッジが表示されます。
 * このバッジは、そのパートナーがコスト計測に対応しているパートナーであることを証明します。

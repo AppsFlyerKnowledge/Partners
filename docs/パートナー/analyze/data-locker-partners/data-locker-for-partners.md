@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 概要：パートナー（アドネットワーク / 代理店）向けのData Lockerは、アプリのデータを AWS、GCSまたはBig Queryのパートナーのストレージへ配信します。
 
-![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
+<Image align="center" alt="6133DataLockerForPartners.png" src="https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png" />
 
 <div id="data-locker-for-partners" />
 
@@ -69,7 +69,7 @@ x-zendesk:
 
 クラウドバケットストレージ内のデータは、レポートタイプ、日付、時刻に従って階層フォルダ構造に編成されます。次の図は、この構造の例を示しています：
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 レポートデータは、そのレポートが関連している時間 (h) のフォルダに格納されます。
 

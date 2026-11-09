@@ -82,7 +82,7 @@ Click-ID
 アプリからの実際のアプリ内イベント名。広告主が各アプリの AppsFlyer 管理画面で**イベントタグ**として設定したもの
 
 
-![IAEP.png](https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png)
+<Image align="center" alt="IAEP.png" src="https://files.readme.io/3ce734c3930649fdb0b119cd6e12e135e6bcba19225862e9e93b93991451fc8b-360002326529.png" />
 
 <span id="appsflyer-in-app-events-dashboard"></span><span id="appsflyer-inapp-events-dashboard"></span>リクエストに応じて、国コード、広告ID、IDFA などのアトリビューション情報をポストバックに追加できます。
 

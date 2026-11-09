@@ -71,7 +71,7 @@ x-zendesk:
 * レスポンスコードの値が200の場合、AppsFlyerから送信されたポストバックデータは、アドネットワーク側でも正しく受け取られています。
 * レスポンスコードが空欄の場合には、AppsFlyerからポストバックは送信したものの、アドネットワーク側からレスポンスが受け取れていません。この場合、**Postback Error Message**のカラムに問題の詳細が記載されます。
 
-[![](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)](https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png)
+<Image align="center" alt="" src="https://files.readme.io/e846104ebdd43b6bdd5c635e645ba5806aa152e6fa84d92f957b754b22fd819a-360005578257.png" />
 
 <div id="viewing-configuration-settings-and-data" />
 

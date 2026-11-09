@@ -34,7 +34,7 @@ As of July 31, 2024, only traffic from agencies authorized by the ad networks wi
 > * Only admins have access to this page
 > * The list of authorized agencies can include up to 200 agencies
 
-[![authorized-agencies-5.jpg](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)
+<Image align="center" alt="authorized-agencies-5.jpg" src="https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg" />
 
 ## Manage authorized agencies
 

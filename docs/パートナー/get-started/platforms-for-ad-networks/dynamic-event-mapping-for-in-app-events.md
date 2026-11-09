@@ -60,6 +60,6 @@ Goal IDに基づいて、１つのアプリ内イベントについて異なる�
 
 もし同じユーザー、もしくは別のユーザーがレベル25に到達した場合には、AppsFlyerは計測URLクリック時にgoalid\_2のパラメータに渡されたYYYの値を載せてイベントのポストバックを送信します。
 
-![Goadid.png](https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png)
+<Image align="center" alt="Goadid.png" src="https://files.readme.io/35390305a93cc7a49f193fa1667b491827736252a9133bc01d01c07dfdc38586-360001400478.png" />
 
 <div data-zendesk-anchors="introduction=%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB attribution-link=%E8%A8%88%E6%B8%AC%E3%83%AA%E3%83%B3%E3%82%AF" />

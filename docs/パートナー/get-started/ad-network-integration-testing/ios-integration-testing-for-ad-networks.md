@@ -83,18 +83,18 @@ x-zendesk:
    1. テストアプリがまだインストールされていないことを確認してください。(必要に応じて、一旦テストアプリを削除してください。)
    2. iPhoneのプライバシー設定の項目内で、**アプリのトラッキング要求を許可** の設定がONになっていることを確認してください。  
 
-      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
+      <Image align="center" alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. テスト端末に計測リンクを送信し、
 4. 端末のブラウザ内で、計測リンクを開いてください。  
    そうすると、AppStoreへリダイレクトされます。
 5. アプリをダウンロードして開いてください。  
    そうすると、ATTの同意ダイアログが表示されます。
 
-   ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
+   <Image align="center" alt="AppDialogue_us-en.png" src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" />
 6. **許可**をタップしてください。  
    その後、以下のような**インストールデータ**のページが表示されます。
 
-   [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+   <Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 7. **ATT Status**のボタンをタップしてください。  
    [ **Authorized (承認済)** ] のステータスが表示されます。
 8. 以下のパラメータを使用して、アトリビューション内容を検証してください。検証がうまく行かない場合には、[トラブルシューティング](/docs/ios-integration-testing-for-ad-networks#troubleshooting)を確認してください。
@@ -102,7 +102,7 @@ x-zendesk:
    1. タイムゾーンはUTCで記録されます。
 9. **In-App Event Tests**をタップしてください。
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
+   <Image align="center" alt="AppPurchase.png" src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" />
 10. **Purchase Event**をタップしてください。  
     そうすると、購入イベントの確認が表示されます。
 11. 最後に以下を確認してください。
@@ -132,18 +132,18 @@ x-zendesk:
    1. テストアプリがまだインストールされていないことを確認してください。(必要に応じて、一旦テストアプリを削除してください。)
    2. iPhoneのプライバシー設定の項目内で、**アプリのトラッキング要求を許可** の設定がONになっていることを確認してください。
 
-      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
+      <Image align="center" alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. テスト端末に計測リンクを送信し、
 4. 端末のブラウザ内で、計測リンクを開いてください。  
    そうすると、AppStoreへリダイレクトされます。
 5. アプリをダウンロードして開いてください。  
    そうすると、ATTの同意ダイアログが表示されます。
 
-   ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
+   <Image align="center" alt="AppDialogue_us-en.png" src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" />
 6. **Appにトラッキングしないように要求**をタップしてください。  
    その後、以下のようなインストールデータ/strong>のページが表示されます。
 
-   [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+   <Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 7. **ATT Status**のボタンをタップしてください。  
    ［**拒否**］のステータスが表示されます。
 8. 以下のパラメータを使用して、アトリビューション内容を検証してください。検証がうまく行かない場合には、[トラブルシューティング](/docs/ios-integration-testing-for-ad-networks#troubleshooting)を確認してください。
@@ -151,7 +151,7 @@ x-zendesk:
    1. タイムゾーンはUTCで記録されます。
 9. **In-App Event Tests**をタップしてください。
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
+   <Image align="center" alt="AppPurchase.png" src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" />
 10. **Purchase Event**をタップしてください。
 11. 最後に以下を確認してください。
     1. インストールと購入イベントのポストバックを受け取ったこと。
@@ -179,7 +179,7 @@ x-zendesk:
 
 アプリを初めて開くと、**iOSのATTダイアログ**が表示され、**インストールデータ**のページにAppsFlyerのプラットフォーム上に記録されたコンバージョンデータが表示されます。また、アプリ内イベントのテストもアプリの画面内で発火可能です。
 
-[<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+<Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 
 以下のような機能が利用可能です：
 
@@ -223,7 +223,7 @@ https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 
 <Accordion title="高プライバシーポストバックの設定">
 
-<Image alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
+<Image align="center" alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
 
 **高プライバシーポストバックの設定を変更するには：**
 

@@ -31,7 +31,7 @@ x-zendesk:
 
 多くの場合、広告主はROIでソートして優れたパフォーマンスを発揮しているパートナーはどこなのかを確認しています。このとき、コストデータがないパートナーは常にリストの一番下の表示されてしまいます。
 
-![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
+<Image align="center" alt="" src="https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png" />
 
 <div id="how-to-share-cost" />
 

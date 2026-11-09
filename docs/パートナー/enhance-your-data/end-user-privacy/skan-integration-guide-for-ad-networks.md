@@ -48,7 +48,7 @@ x-zendesk:
 
 ## SKAdNetworkのデータフロー
 
-![5754_Postback_flow_for_SKAD__1_.png](https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png)
+<Image align="center" alt="5754_Postback_flow_for_SKAD__1_.png" src="https://files.readme.io/dff0fb00721802f59d199ae6a69f9ea7484bc0ef038c669904aa1a7c2b97dfc8-12574373654161.png" />
 
 SKANのポストバックの全体像は以下のような流れになっています：
 
@@ -230,7 +230,7 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
 
 <Accordion title="B：リダイレクト">
 
-![Redirect_us-en__2_.png](https://files.readme.io/17d4a668cde784a2f823e702e04fc75a2bbbdb483e44d9d10edfad03d865bbb7-360012352758.png)
+<Image align="center" alt="Redirect_us-en__2_.png" src="https://files.readme.io/17d4a668cde784a2f823e702e04fc75a2bbbdb483e44d9d10edfad03d865bbb7-360012352758.png" />
 
 この方法を使用する場合、アドネットワークはHTTPのリダイレクトコマンド(307)でiOS端末からのポストバックに応答し、AppsFlyerに対して直接ポストバックを送信するようにiOS端末に要求することになります： 
 

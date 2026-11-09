@@ -30,7 +30,7 @@ x-zendesk:
 
 AppsFlyerのクロスプラットフォーム向けインプレッションURLを使用すると、CTVに表示された広告にモバイルアプリのインストールを紐付けられます。同一世帯内の複数のインストールを、同じCTV広告のインプレッションに紐付けることができます。
 
-![CTVからモバイルアプリへのアトリビューションの流れを示す図](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
+<Image align="center" alt="CTVからモバイルアプリへのアトリビューションの流れを示す図" src="https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg" />
 
 CTVからモバイルアプリへのビュースルーアトリビューションでは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup">OneLinkのインプレッションURL</Anchor>を使用します。このURLは、広告主が作成したクロスプラットフォーム向けOneLinkテンプレート（テンプレートID付き）に基づいています。これにより、広告主は異なるプラットフォームの複数のアプリ（AndroidアプリとiOSアプリなど）を1つのURLにまとめられます。
 

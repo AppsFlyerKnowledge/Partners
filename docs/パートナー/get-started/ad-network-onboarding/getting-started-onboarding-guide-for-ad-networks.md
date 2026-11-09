@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **概要:** アトリビューションリンクとポストバック統合の設定とテストを行い、AppsFlyerとの統合を完了しましょう。プロセスの手順、タイムライン、依存関係を理解しましょう。
 
-![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
+<Image align="center" alt="AdNetworks_-_Onboarding__2_.png" src="https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png" />
 
 <div id="what-is-appsflyer" />
 

@@ -40,7 +40,7 @@ AppsFlyerが提供する指標であるデータ充実度スコアは、アド�
 2. 権限を付与されているアプリをどれか選択して管理画面を開いてください。
 3. 自分のアドネットワーク名の下にスコアが表示されます。
 
-   ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
+   <Image align="center" alt="integrated-partners-data-richness.png" src="https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png" />
 
 もちろん、広告主もAppsFlyerと連携している各アドネットワークのデータ充実度スコア（low / medium / high）を確認可能です。
 

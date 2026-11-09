@@ -36,7 +36,7 @@ x-zendesk:
 
 まずはじめに、AppsFlyerでの計測がどのように働いているのかを理解する必要があります。このセクションでは、最初のクリックまたはインプレッションからインストール / イベントの紐付けに至るまでの過程で何が起こるかを説明します。
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
+<Image align="center" alt="ua-agency-flow.png" src="https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png" />
 
 1. マーケティング担当者、またはマーケティング担当者の代わりに代理店が、AppsFlyerの計測リンクを使用して特定のアドネットワークでキャンペーンを設定。
 2. ユーザーがそれらの広告 (例: バナーやリンク)をクリック。
@@ -92,7 +92,7 @@ x-zendesk:
 
 アカウントを最初に作成したときには、紐付けられているアプリはありません。
 
-![agency-start.png](https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png)
+<Image align="center" alt="agency-start.png" src="https://files.readme.io/b536dde5f7cc886e7fc6ff22f15c402cea5cf68824fd92f242d13037824072d5-360003986997.png" />
 
 どの代理店アカウントも、まずはアプリ所有者からの権限付与が必要です。
 
@@ -128,7 +128,7 @@ x-zendesk:
 
 アプリページには、最大1000個までのアプリが表示されます。アプリのリストが1000を超えた場合、一部のアプリはリストに表示されなくなりますが、検索機能を使用してそれらを見つけることが可能です。
 
-![agency-apps.png](https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png)
+<Image align="center" alt="agency-apps.png" src="https://files.readme.io/6ec28125c938a5fb90d6a5bfe80ef40225432c222dcd4fafd747eeba529f1c49-360003722277.png" />
 
 <div id="searching-for-apps" />
 
@@ -152,7 +152,7 @@ x-zendesk:
 
 アプリ一覧にあるアプリをクリックして、 <Anchor target="_blank" href="/marketers/ja/docs/getting-started-with-appsflyer-dashboards">管理画面</Anchor>にアクセスしてください。広告出稿を開始すると、あなた代理店アカウントに紐付いた集計データがここに表示されます。
 
-![agency-dashboard.png](https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png)
+<Image align="center" alt="agency-dashboard.png" src="https://files.readme.io/5f541770f60ba7d212c9f18e3a14d625758c5d8911997ce4cc39333ee7530244-360003815398.png" />
 
 代理店アカウントの管理画面には、デフォルトで以下権限が含まれています。
 

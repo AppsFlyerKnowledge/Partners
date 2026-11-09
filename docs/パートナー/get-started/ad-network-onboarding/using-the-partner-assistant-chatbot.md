@@ -31,11 +31,11 @@ x-zendesk:
 **パートナー向けアシスタントチャットボットを開くには、次の手順に従ってください。**
 
 1. 画面上部のメニューバーで、**［ヘルプ（Help）］**><strong>［お問い合わせ（Contact our team）］</strong>を選択します。アシスタントチャットボットが開きます。  
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 
 2. リストから<strong>［お問い合わせの種類（Ticket Type）］</strong>を選択し、すべての項目を入力します。
 
-<Image alt="partner-facing.png" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
+<Image align="center" alt="partner-facing.png" src="https://files.readme.io/06f13de849f08fe9df084385fd96cdf9aa2bb1f414c235e991a1dfb24a301a32-50490825210129.png" width="720px" />
 
 **注意：** 代理店には［連携に関する問題・更新（Integration issues or Updates）］の選択肢は表示されません。
 

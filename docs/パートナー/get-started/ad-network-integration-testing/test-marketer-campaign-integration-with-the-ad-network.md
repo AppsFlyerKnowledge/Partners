@@ -49,7 +49,7 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 
 入力フィールドに緑色のチェックマークが表示されたら、青い矢印をクリックしてください。矢印をクリックすることで、アプリの管理画面が開きます。
 
-[![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
+<Image align="center" alt="partner-app-search.png" src="https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png" />
 
 <div id="testing-live-apps" />
 
@@ -73,7 +73,7 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 
 あなたのアドネットークの要件と計測したいデータに沿う形で、計測リンクにパラメータを追加してください。
 
-[![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
+<Image align="center" alt="partner-configure-attribution-link.png" src="https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png" />
 
 <div id="tip" />
 
@@ -107,7 +107,7 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 
 次の画面が表示されます。
 
-[![app-not-available.png](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)
+<Image align="center" alt="app-not-available.png" src="https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png" />
 
 この画面表示が理想の挙動の結果です。アプリはまだリリースされていないため、計測リンクはどのアプリストアにも遷移しません。
 
@@ -143,7 +143,7 @@ AppsFlyerダッシュボードを開いてください。**アプリ検索**画�
 
 アプリのAppsFlyer管理画面で、サイドメニューから **アクティブな連携**を選択し、アドネットワークを選択します。**連携**タブで**アプリ内イベントポストバック**の箇所までスクロールしてください。アプリ内イベントを選択して、必要な場合には対となるイベントにマッピングしてください：
 
-[![partner-in-app-events-postbacks-mapping.png](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)
+<Image align="center" alt="partner-in-app-events-postbacks-mapping.png" src="https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png" />
 
 </Accordion>
 

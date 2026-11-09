@@ -68,7 +68,7 @@ Parner Marketplace上での見つけやすさを向上させるために、で�
 
 ### 概要
 
-![partner offering.png](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
+<Image align="center" alt="partner offering.png" src="https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png" />
 
 <div id="characteristics" />
 
@@ -83,7 +83,7 @@ Parner Marketplace上での見つけやすさを向上させるために、で�
 * サポートされているプラットフォーム
 * コンプライアンス基準
 
-![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
+<Image align="center" alt="" src="https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png" />
 
 <div id="sales" />
 

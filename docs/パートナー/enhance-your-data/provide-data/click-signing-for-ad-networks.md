@@ -52,7 +52,7 @@ AppsFlyerによって媒体へ紐付けられたクリックが、不正業者�
 
 以下のチャートでは、初期の開発と基本テストから実稼働テスト、そして最終的な実稼働までの流れの概要を示しています。
 
-![Click_signing_integration_flow.png](https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png)
+<Image align="center" alt="Click_signing_integration_flow.png" src="https://files.readme.io/3bc0103090535c22db027fb09f72ad89d88210bba8f2b6f43d1166c2911d71cd-360017572558.png" />
 
 <div id="note" />
 

@@ -34,7 +34,7 @@ x-zendesk:
 > * ユーザーの端末がiOS 14.5以上を搭載していること
 > * 高プライバシーポストバックがONになっていること
 
-![AdvancedPrivacy.png](https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png)
+<Image align="center" alt="AdvancedPrivacy.png" src="https://files.readme.io/2a80740637c1003e03bc169df274bf0fa6240ee850c7fd6e967c4abea234e0d1-360018213598.png" />
 
 この記事では以下の内容について記載しています：
 
@@ -61,7 +61,7 @@ APがONになっている場合、iOS14.5以上のOSでATTに同意しなかっ�
 
  デフォルト設定はAPがONになっています。
 
-![APforPartners2.png](https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png)
+<Image align="center" alt="APforPartners2.png" src="https://files.readme.io/e4fb5617a47635f24dc83881c2be3d18b770200a576cb67bd3312e6fc2c123e1-360018154777.png" />
 
 
 * <span id="types-of-templates-for-sending-postbacks"></span>レギュラーテンプレートレギュラーポストバック：AppsFlyerとの既存のポストバック連携のテンプレートで、ユーザー識別子やclickID、アトリビューションデータに関するマクロが含まれています。
@@ -93,7 +93,7 @@ APがONになっている場合、iOS14.5以上のOSでATTに同意しなかっ�
 
 * 成果の紐付け先ではないパートナー：成果やイベントが紐付いていない連携済みパートナーも、**アプリ内イベントのポストバック設定**において、**送信オプション**の設定を、**オーガニックを含むすべてのメディアソース**にした場合に、ポストバックを受け取ります。広告主アプリにおいてATTダイアログにユーザーが同意した場合、ポストバックに他社媒体情報は含まれませんが、各種ユーザーIDは含まれます。(この送信オプションの機能は全てのアドネットワークでサポートしているわけではありません。)  
 
-  ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+  <Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 <div id="web-campaigns" />
 
@@ -304,7 +304,7 @@ AppsFlyerの管理画面上にある、ポストバック管理の機能を使�
 2. 高度なプライバシー:：
 3. トグルをONにして、設定画面をアクティブにしてください。  
 
-   ![postback-management-enter-endpoint_en-us.png](https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png)
+   <Image align="center" alt="postback-management-enter-endpoint_en-us.png" src="https://files.readme.io/4ea0ffc61d1ecdb11d3c745876c29a942fde4133b8ebb54a1426a73c1dc63b16-360018215218.png" />
 4. AppsFlyerからのポストバックを受け取る**エンドポイントのアドレス**をインストールとアプリ内イベントで、それぞれ関連するURLを入力してください。
 5. ポストバック内に含めたいパラメータを入力してください。
    * パラメータ名
@@ -313,15 +313,15 @@ AppsFlyerの管理画面上にある、ポストバック管理の機能を使�
    * **Install**: インストールのポストバックに含めたいパラメータにチェックを入れてください。
    * **In-app event**: アプリ内イベントのポストバックに含めたいパラメータにチェックを入れてください。
 
-   ![postback-management-parameters_en-us.png](https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png)
+   <Image align="center" alt="postback-management-parameters_en-us.png" src="https://files.readme.io/818ef31df9c4e349ca26b5421a0ba0582ed5f7f9fae39f1d0e4ec3b7562f4192-360018213698.png" />
 
    [高プライバシーポストバック用のマクロ一覧](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
 6. <strong>［任意］</strong>AppsFlyerでは提供していないカスタムパラメータも追加可能です。
 
-   ![postback-management-custom-parameters_en-us.png](https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png)
+   <Image align="center" alt="postback-management-custom-parameters_en-us.png" src="https://files.readme.io/6bca46e1d39c6822b0e041eb1dcbb1b2d40e42fa062c34877c8cbf0c2d2847d6-16589581250321.png" />
 7. 最後に、作成されたポストバックテンプレートのプレビューを確認して、全て正しく設定されていることを確認してください。
 
-   ![postback-management-template_en-us.png](https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png)
+   <Image align="center" alt="postback-management-template_en-us.png" src="https://files.readme.io/b5e41cad37859365c7818c4561620f8a78250c207d8326dae53ed9b522fe3716-360018213718.png" />
 8. **保存**をクリックしてください。この設定を保存すると、その変更内容がすぐに適用・有効になります。
 
 </Accordion>

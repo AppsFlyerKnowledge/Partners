@@ -65,7 +65,7 @@ ProtectLITE<Anchor target="_blank" href="/marketers/ja/docs/basic-fraud-detectio
 
 * 代理店アカウントはアクセス権を持っていますが、他のメディアソースと比較するための基準値を作成できるように、AppsFlyerによって保証されているメディアソースからのトラフィックにおいて不成立が低い場合にのみ、データが表示されます。
 
-[![p360_dashboard_1.jpg](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)](https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg)
+<Image align="center" alt="p360_dashboard_1.jpg" src="https://files.readme.io/234771b87c3343700d42b2cbbc283db5d65db7ea96af6bead7d55eb03d9bde01-44928678658833.jpg" />
 
 <div id="raw-data-reports" />
 

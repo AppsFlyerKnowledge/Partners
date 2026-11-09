@@ -172,7 +172,7 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=YOUR_PID&c=YOUR_CAMPAI
 
 AppsFlyerの管理画面を開いて、左メニューにある**リターゲティング**をクリックしてください。リターゲティングされたインストールが管理画面に表示されるまで、最大30分程度お待ちください。
 
-[![com_appsflyer_adNetworkTest-retargeting.png](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)
+<Image align="center" alt="com_appsflyer_adNetworkTest-retargeting.png" src="https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png" />
 
 </Accordion>
 
@@ -202,7 +202,7 @@ AppsFlyerの管理画面を開いて、左メニューにある**リターゲテ
 8. アプリを起動します。  
    以下の画面が表示されます。
 
-   ![vta-testing-postback.png](https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png)
+   <Image align="center" alt="vta-testing-postback.png" src="https://files.readme.io/88b6720928d7540eeb2fe8f42f39ecdccc04655aa49f95d08dba5741d5e39982-4831106525457.png" />
 
 ヒント
 
