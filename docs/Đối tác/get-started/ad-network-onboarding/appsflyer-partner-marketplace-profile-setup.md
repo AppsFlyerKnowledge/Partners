@@ -39,7 +39,7 @@ AppsFlyer Partner Marketplace is where advertisers can find new ad networks, age
 1. In AppsFlyer, click the top-right drop-down menu
 2. Select **Partner setup**.
 
-![partner](https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png)
+<Image align="center" alt="partner" src="https://files.readme.io/30d89cac0f595b2202f4125b111b501a901f0883a9f241dc3ded73a01ab0ee2d-16157066059153.png" />
 
 > ðŸ“˜ **Note**
 >
@@ -73,7 +73,7 @@ Add details about the services you provide. We recommend adding as much informat
 * **Offering highlights:** List the highlights of your offering as bullet points.
 * **Offering description:** Provide an extensive description of your offering.
 
-![partner offering.png](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
+<Image align="center" alt="partner offering.png" src="https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png" />
 
 ### Characteristics
 
@@ -86,7 +86,7 @@ Provide information about your services. Select all possible options that applyâ
 * **Supported platforms:** Select all the platforms you support.
 * **Compliance standards:** Select the relevant compliance standards to which you adhere.
 
-![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
+<Image align="center" alt="" src="https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png" />
 
 ### Sales
 

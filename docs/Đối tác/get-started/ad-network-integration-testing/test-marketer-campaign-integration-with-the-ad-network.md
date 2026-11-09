@@ -44,7 +44,7 @@ Open your AppsFlyer Dashboard. In the **App search** screen, enter the marketer'
 
 Once the green tick appears in the input field, click on the blue arrow. Clicking the arrow opens the app's dashboard.
 
-[![partner-app-search.png](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)](https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png)
+<Image align="center" alt="partner-app-search.png" src="https://files.readme.io/9fb3454de2eb7ea1cc7015151d75a9ae0835a60134b244227bf4da7f614a2a37-21414453165457.png" />
 
 ## Testing live apps
 
@@ -64,7 +64,7 @@ Now you can generate an attribution Link to test install attribution.
 
 Add parameters to the attribution link according to your requirements and the data that you want to record.
 
-[![partner-configure-attribution-link.png](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)](https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png)
+<Image align="center" alt="partner-configure-attribution-link.png" src="https://files.readme.io/9402ab5b3d1750ffd3ae8a2867c751545bdfd5b79202e09c8c90b9bc0bbbef95-21414453180817.png" />
 
 > 👍 **Tip**
 >
@@ -96,7 +96,7 @@ Generate an attribution link. You can use the [same instructions as listed above
 
 The following screen appears:
 
-[![app-not-available.png](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)](https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png)
+<Image align="center" alt="app-not-available.png" src="https://files.readme.io/fda6290e4f0f995dbf04966c0a36b24fb246c4665ec367907178ed1d04edcf0c-21414453195921.png" />
 
 This is the expected result. Since the app is not live, the attribution link doesn't lead to any app store. However, the attribution link is still valid for attribution purposes. the attribution link and its parameters are recorded by AppsFlyer servers and the data is used for attribution.
 
@@ -126,7 +126,7 @@ If the marketer has enabled the permission <Anchor target="_blank" href="/market
 
 In your app's AppsFlyer dashboard, from the side menu, select **Active integrations** and choose your ad network. Under the **Integration** tab scroll down to **In-app event settings**. Choose the in-app event and map it to the corresponding event:
 
-[![partner-in-app-events-postbacks-mapping.png](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)
+<Image align="center" alt="partner-in-app-events-postbacks-mapping.png" src="https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png" />
 
 </Accordion>
 

@@ -169,7 +169,7 @@ Giá trị của `af_prt` là tên của . Tên Đại lý được chuyển tro
 
 Có `af_prt` với tên đại lý của bạn trên liên kết phân bổ dẫn tới những lượt cài đặt mới sẽ cho phép phân bổ các lượt cài đặt mới cho tài khoản đại lý của bạn.
 
-![agency-af-prt.png](https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png)
+<Image align="center" alt="agency-af-prt.png" src="https://files.readme.io/61559e2e1628e9411665b7e8d3d3d440a55effb3bccda79c7fe1ee02fd43fb8c-32355631649937.png" />
 
 Khi không có `af_prt`, một lượt cài đặt mới không thể được phân bổ tới bất kỳ tài khoản đại lý nào, vì vậy nó được phân bố trực tiếp tới mạng quảng cáo.
 

@@ -78,7 +78,7 @@ AppsFlyer cung cấp cho đối tác thông tin về quảng cáo trong ứng d�
 
 Để liên hệ với bộ phận hỗ trợ đối tác của AppsFlyer, vui lòng mở menu **Help** trong bảng điều khiển của bạn và chọn **Contact our team**.
 
-[![alt](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)](https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif)
+<Image align="center" alt="alt" src="https://files.readme.io/02d80a38dfb950e01127ba8afa33dca1a8bbef9fe137fe11743afaad966244c8-17770060481809.gif" />
 
 </Accordion>
 

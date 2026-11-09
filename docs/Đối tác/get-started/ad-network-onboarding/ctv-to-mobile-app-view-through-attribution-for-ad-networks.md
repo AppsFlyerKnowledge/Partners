@@ -29,7 +29,7 @@ x-zendesk:
 
 With AppsFlyer cross-platform impression URLs, you can attribute mobile app installs to ads displayed on CTV. Multiple installs within the same household can be attributed to the same CTV ad impression.
 
-![Diagram of the CTV-to-mobile app attribution flow](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
+<Image align="center" alt="Diagram of the CTV-to-mobile app attribution flow" src="https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg" />
 
 CTV-to-mobile app view-through attribution uses a <Anchor target="_blank" href="/marketers/vi/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup">OneLink impression URL</Anchor> based on a cross-platform OneLink template (with a template ID) created by the advertisers. This lets advertisers group multiple apps from different platforms (for example, both Android and iOS apps) using a single URL.
 

@@ -101,7 +101,7 @@ For example: If an install happened at 4.32 pm and 42 seconds, we can pass 5 pm 
 
 > 📄 **Example**
 >
-> ![](https://files.readme.io/6832879dafaadb91a795988abdc5e51203c9c1775054e35829cfe60cb2175a66-360001440909.png)
+> <Image align="center" alt="" src="https://files.readme.io/6832879dafaadb91a795988abdc5e51203c9c1775054e35829cfe60cb2175a66-360001440909.png" />
 >
 > For the full list of Meta campaign management partners, click <Anchor target="_blank" href="https://www.facebook.com/business/partner-directory/search?programBadges=ADTECH_FB.ADTECH_IG&solution_type=campaign_management">here</Anchor>.
 

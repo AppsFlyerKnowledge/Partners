@@ -76,18 +76,18 @@ Complete the prerequisites before beginning to execute the test procedure.
    1. Verify that the test app is not installed. Delete it if necessary.
    2. In Privacy settings, verify that **Allow Apps to Request to Track** is on.  
 
-      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
+      <Image align="center" alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. Send the attribution link to the test device.
 4. Open the attribution link in the device browser.  
    You are redirected to the App Store.
 5. Download and open the app.  
    The ATT consent dialogue displays.
 
-   ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
+   <Image align="center" alt="AppDialogue_us-en.png" src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" />
 6. Tap **Allow**.  
    The **Install Data** page displays.
 
-   [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+   <Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 7. Tap **ATT Status**.  
    The **Authorized** status displays.
 8. Validate the attribution using the following parameters. If the validation fails, see [Troubleshooting](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
@@ -97,7 +97,7 @@ Complete the prerequisites before beginning to execute the test procedure.
    3. `media_source`: your ad network
 9. Tap **In-App Event Tests.**
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
+   <Image align="center" alt="AppPurchase.png" src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" />
 10. Tap **Purchase Event.**  
     The Purchase Event confirmation displays.
 11. Verify that:
@@ -125,18 +125,18 @@ Complete the prerequisites before beginning to execute the test procedure.
    1. Verify that the test app is not installed. Delete it if necessary.
    2. In Privacy settings, verify that **Allow Apps to Request to Track** is on.
 
-      <Image alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
+      <Image align="center" alt="PartnerIntegrationAllow.png" src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" width="201px" />
 3. Send the attribution link to the test device.
 4. Open the attribution link in the device browser.  
    You are redirected to the App Store.
 5. Download and open the app.  
    The ATT consent dialogue displays.
 
-   ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
+   <Image align="center" alt="AppDialogue_us-en.png" src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" />
 6. Tap **Ask App not to Track.**  
    The **Install Data** page displays.
 
-   [<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+   <Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 7. Tap **ATT Status**.  
    The **Denied** status displays.
 8. Validate the attribution using the parameters listed. If validation fails, see [Troubleshooting](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
@@ -146,7 +146,7 @@ Complete the prerequisites before beginning to execute the test procedure.
    3. `media_source`: your ad network
 9. Tap **In-App Event Tests.**
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
+   <Image align="center" alt="AppPurchase.png" src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" />
 10. Tap **Purchase Event.**
 11. Verify that:
     1. You received install and purchase postbacks.
@@ -172,7 +172,7 @@ The Partner Integrations app is available in the App Store. The app sends instal
 
 When the app is opened for the first time, the iOS **request to track** dialogue displays, followed by the **Install Data** page displaying the conversion data recorded in the AppsFlyer platform. Test in-app events are triggered in the user interface.
 
-[<Image alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
+<Image align="center" alt="PartnerIntegrationInstallData.png" src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" width="246px" />
 
 The following functions are available:
 
@@ -217,7 +217,7 @@ https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 
 <Accordion title="Set Advanced Privacy">
 
-<Image alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
+<Image align="center" alt="AdvancedPrivacyOff.png" src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" width="357px" />
 
 **To change the Enable Advanced Privacy setting:**
 
