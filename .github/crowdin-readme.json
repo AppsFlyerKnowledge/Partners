@@ -1,0 +1,50 @@
+{
+  "_comment": "Config for the Crowdin -> ReadMe language-branch sync. See CROWDIN_SYNC.md.",
+  "source_branch": "v1.0",
+  "translations_dir": "translations",
+  "target_branch_pattern": "v1.0-{lang}",
+  "english_category": "Partners",
+  "enabled_languages": [
+    "es",
+    "fr",
+    "id",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "vi",
+    "zh"
+  ],
+  "languages": {
+    "es": "es",
+    "fr": "fr",
+    "id": "id",
+    "ja": "ja",
+    "ko": "ko",
+    "pt": "pt",
+    "pt-BR": "pt",
+    "ru": "ru",
+    "vi": "vi",
+    "zh": "zh",
+    "zh-CN": "zh",
+    "zh-cn": "zh"
+  },
+  "category_names": {
+    "_comment": "Optional. If a language is missing here, the name is read from docs/_order.yaml on its branch."
+  },
+  "cross_project_slugs": [
+    "marketers",
+    "partners"
+  ],
+  "link_sections": [
+    "docs",
+    "reference"
+  ],
+  "site_domains": [
+    "support.appsflyer.com"
+  ],
+  "english_fallback": true,
+  "mirror_deletions": true,
+  "sync_order_files": true,
+  "auto_merge": false
+}
