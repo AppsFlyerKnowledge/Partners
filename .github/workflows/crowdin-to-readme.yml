@@ -1,0 +1,48 @@
+name: Crowdin → ReadMe language branches
+
+# Runs when translations (Crowdin PR) or English docs change on v1.0.
+# English changes matter too: deleted/renamed pages and new menu entries must
+# reach every language branch, not only translated text.
+on:
+  push:
+    branches: [v1.0]
+    paths: ['translations/**', 'docs/**']
+  workflow_dispatch:
+    inputs:
+      langs:
+        description: 'Comma-separated ReadMe language codes (blank = enabled_languages in config)'
+        required: false
+      dry_run:
+        description: 'Only report what would change'
+        type: boolean
+        default: false
+      auto_merge:
+        description: 'Merge the language PRs automatically'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: crowdin-to-readme
+  cancel-in-progress: false
+
+jobs:
+  distribute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Distribute translations
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          args=()
+          [ -n "${{ inputs.langs }}" ] && args+=(--langs "${{ inputs.langs }}")
+          [ "${{ inputs.dry_run }}" = "true" ] && args+=(--dry-run)
+          [ "${{ inputs.auto_merge }}" = "true" ] && args+=(--auto-merge)
+          python3 scripts/distribute_translations.py "${args[@]}"
