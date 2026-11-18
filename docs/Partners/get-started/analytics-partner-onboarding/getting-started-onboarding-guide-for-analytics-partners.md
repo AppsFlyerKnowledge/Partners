@@ -1,11 +1,12 @@
 ---
 title: Getting started—onboarding guide for analytics partners
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Partners
     - Marketers
     - Mobile Attribution
+  robots: index
 x-zendesk:
   category: Partners
   category_id: 6550456653457
