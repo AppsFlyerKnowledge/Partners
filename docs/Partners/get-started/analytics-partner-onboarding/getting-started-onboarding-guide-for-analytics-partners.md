@@ -1,5 +1,6 @@
 ---
 title: Getting started—onboarding guide for analytics partners
+hidden: true
 metadata:
   keywords:
     - Partners
@@ -18,8 +19,7 @@ x-zendesk:
   locale: en-us
   section: Analytics partner onboarding
   section_id: 34732438397841
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/34444156204689-Getting-started-onboarding-guide-for-analytics-partners
+  url: https://support.appsflyer.com/hc/en-us/articles/34444156204689-Getting-started-onboarding-guide-for-analytics-partners
 ---
 > **At a glance:** Set up your analytics partner integration with AppsFlyer, including configuration of postback templates. This article outlines the steps, timelines, and dependencies involved in the onboarding process.
 
